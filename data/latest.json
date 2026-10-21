@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-21T20:19:15+00:00",
+ "erzeugt": "2026-10-21T23:32:59+00:00",
  "kurse": {
-  "stand": "2026-10-21T20:19:15+00:00",
+  "stand": "2026-10-21T23:32:59+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 84510,
-    "aend24": 2.36368,
-    "aend7": 3.4819,
-    "marktkap": 1698031118079,
-    "volumen": 31756061468
+    "preis": 84279,
+    "aend24": 1.71665,
+    "aend7": 3.3714,
+    "marktkap": 1693559668196,
+    "volumen": 32210225868
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2492.15,
-    "aend24": 2.29577,
-    "aend7": 2.738,
-    "marktkap": 304346212856,
-    "volumen": 14252462956
+    "preis": 2475.14,
+    "aend24": 1.21254,
+    "aend7": 2.731,
+    "marktkap": 302257617507,
+    "volumen": 13740548873
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 108.11,
-    "aend24": 2.07157,
-    "aend7": 3.8724,
-    "marktkap": 63741759489,
-    "volumen": 2479172832
+    "preis": 106.97,
+    "aend24": 0.59264,
+    "aend7": 2.6686,
+    "marktkap": 63057153696,
+    "volumen": 2553981359
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.39,
-    "aend24": 4.79104,
-    "aend7": 4.8118,
-    "marktkap": 87836785202,
-    "volumen": 1932775087
+    "preis": 1.37,
+    "aend24": 2.34405,
+    "aend7": 2.8325,
+    "marktkap": 86149768506,
+    "volumen": 1952902633
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.082923,
-    "aend24": 1.73422,
-    "aend7": 1.2793,
-    "marktkap": 12966222820,
-    "volumen": 492685409
+    "preis": 0.08185,
+    "aend24": 0.14015,
+    "aend7": 0.5135,
+    "marktkap": 12797882827,
+    "volumen": 492943904
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-21T20:19:18+00:00",
+  "stand": "2026-10-21T23:33:02+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -269,7 +269,7 @@
      "o": 83028.14,
      "h": 84898.0,
      "l": 82635.32,
-     "c": 84525.52
+     "c": 84326.64
     }
    ],
    "ETH": [
@@ -481,7 +481,7 @@
      "o": 2449.19,
      "h": 2526.62,
      "l": 2436.87,
-     "c": 2491.6
+     "c": 2478.29
     }
    ],
    "SOL": [
@@ -693,7 +693,7 @@
      "o": 106.53,
      "h": 109.2,
      "l": 105.63,
-     "c": 108.04
+     "c": 107.09
     }
    ],
    "XRP": [
@@ -905,7 +905,7 @@
      "o": 1.3358,
      "h": 1.3992,
      "l": 1.3314,
-     "c": 1.3913
+     "c": 1.366
     }
    ],
    "DOGE": [
@@ -1117,15 +1117,42 @@
      "o": 0.08186,
      "h": 0.0838,
      "l": 0.08124,
-     "c": 0.08289
+     "c": 0.08192
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-21T20:19:18+00:00",
+  "stand": "2026-10-21T23:33:02+00:00",
   "quelle": "CoinDesk und Cointelegraph",
   "daten": [
+   {
+    "titel": "American Bankers Association: OCC’s GENIUS rules ‘undermine’ US Congress",
+    "link": "https://cointelegraph.com/news/american-bankers-association-occ-genius-rules-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-21T21:53:48+00:00",
+    "text": "Banking advocacy organizations are pushing back against the OCC’s finalized rules on a stablecoin law, arguing against changes to provisions on yield.",
+    "tags": []
+   },
+   {
+    "titel": "Tether backs Bolivian fintech bringing USDT payments to food delivery and banking",
+    "link": "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-21T20:26:07+00:00",
+    "text": "The investment will support Peso’s expansion across four Latin American markets, where it connects stablecoin payments to merchant services and local banking networks.",
+    "tags": []
+   },
+   {
+    "titel": "Trump didn‘t mention ‘crypto’ once in White House cybercrime roundtable",
+    "link": "https://cointelegraph.com/news/white-house-cybercrime-roundtable-donald-trump-crypto-ventures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-21T20:19:39+00:00",
+    "text": "The US President detailed many schemes defrauding Americans, but referred only to “cybercurrency“ related to scams.",
+    "tags": [
+     "Prominente",
+     "Hack/Betrug"
+    ]
+   },
    {
     "titel": "Here’s what happened in crypto today",
     "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1346,7 +1373,7 @@
     "tags": []
    },
    {
-    "titel": "Live updates: Bitcoin rises to $84,000, but rally cut short by Middle East worry",
+    "titel": "Live updates: Bitcoin holds above $84,000 as Middle East worries resurface",
     "link": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
     "quelle": "CoinDesk",
     "zeit": "2026-10-21T10:30:40+00:00",
@@ -1368,44 +1395,18 @@
     "zeit": "2026-10-21T10:15:00+00:00",
     "text": "Zcash extended triple-digit year-to-date gains as developers agreed on the NU7 mainnet activation height, targeting Nov. 5, with node synchronization work still pending.",
     "tags": []
-   },
-   {
-    "titel": "Drift exploiter sends $109M in Ether to Tornado Cash in 2 days",
-    "link": "https://cointelegraph.com/news/drift-exploiter-moves-109m-eth-tornado-cash-2-days?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T10:13:52+00:00",
-    "text": "Wallets linked to the $295 million April hack still held $138 million in Ether after sending another $46 million to the mixer Wednesday.",
-    "tags": [
-     "Hack/Betrug"
-    ]
-   },
-   {
-    "titel": "SpaceX and Tesla explore merger that would unite more than 30,000 bitcoin",
-    "link": "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T09:23:00+00:00",
-    "text": "Independent committees are assessing a potential tie-up, while strong SpaceX earnings lift shares ahead of Tesla’s results.",
-    "tags": []
-   },
-   {
-    "titel": "Monero futures are again heating with leverage, raising volatility risks",
-    "link": "https://www.coindesk.com/markets/2026/10/21/monero-futures-are-again-heating-with-leverage-raising-volatility-risks",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T08:57:29+00:00",
-    "text": "Open interest has topped $300 million and price is back above $600. A similar setup was seen before January's crash.",
-    "tags": []
    }
   ]
  },
  "chancen": {
-  "stand": "2026-10-21T20:19:18+00:00",
+  "stand": "2026-10-21T23:33:02+00:00",
   "regeln": "Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden",
   "daten": [
    {
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 6 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 5 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
      "Bitcoin price tags $84.6K as US stocks head higher on SpaceX Q3 earnings beat",
