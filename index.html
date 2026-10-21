@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trading-Dashboard</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --fg: #14181f; --muted: #5d6675; --line: #dfe3ea;
+  --up: #14804a; --down: #c2312d; --warn-bg: #fff4d6; --warn-fg: #6b4a00; --accent: #1f4fd8;
+  --grid: #e8ebf0;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1218; --panel: #171b23; --fg: #e8ebf1; --muted: #9aa3b2; --line: #2a303b;
+    --up: #3ecf8e; --down: #ff6b66; --warn-bg: #3a2f10; --warn-fg: #f4d27a; --accent: #7aa2ff; --grid: #232933; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 64rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; display: flex; flex-direction: column; gap: 1.5rem; }
+h1 { font-size: 1.6rem; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 1.05rem; margin: 0; }
+p { margin: 0; }
+.muted { color: var(--muted); font-size: 0.85rem; }
+.banner { background: var(--warn-bg); color: var(--warn-fg); border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.9rem; }
+.banner.err { background: color-mix(in srgb, var(--down) 18%, var(--panel)); color: var(--fg); }
+.row { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: baseline; justify-content: space-between; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1rem; min-width: 0; }
+#main { display: flex; flex-direction: column; gap: 1.5rem; width: 100%; min-width: 0; }
+.sec { display: flex; flex-direction: column; gap: 0.75rem; min-width: 0; }
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-size: 0.78rem; color: var(--muted); font-weight: 600; padding: 0.35rem 0.6rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+.num { text-align: right; }
+.up { color: var(--up); } .down { color: var(--down); }
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip { font: inherit; font-size: 0.82rem; color: var(--fg); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 0.2rem 0.7rem; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.chip:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 0.75rem; }
+.sig h3 { margin: 0; font-size: 1.05rem; }
+.sig .art { font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.sig .risk { border-top: 1px solid var(--line); padding-top: 0.5rem; margin-top: 0.5rem; font-size: 0.9rem; }
+.sig .risk b { color: var(--down); }
+.news-item { display: flex; flex-direction: column; gap: 0.3rem; padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
+.news-item:last-child { border-bottom: 0; }
+.news-item a { color: var(--fg); font-weight: 600; text-decoration: none; }
+.news-item a:hover { text-decoration: underline; }
+.tag { font-size: 0.72rem; border: 1px solid var(--line); border-radius: 999px; padding: 0.05rem 0.5rem; color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; color: var(--muted); font-size: 0.8rem; }
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; }
+.ax { fill: var(--muted); font-size: 11px; }
+.tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 0.3rem 0.6rem; font-size: 0.8rem; line-height: 1.5; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,.15); z-index: 3; font-variant-numeric: tabular-nums; }
+.todo { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.25rem; }
+.empty { text-align: center; padding: 2rem 1rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="sec">
+    <div class="row">
+      <h1>Trading-Dashboard</h1>
+      <span class="muted" id="status">Lade Daten …</span>
+    </div>
+    <div class="banner">
+      Lern-Projekt, keine Anlageberatung. Hier wird nichts gekauft oder verkauft. Kurse können sich in Minuten stark ändern, und die meisten Privatanleger verlieren beim Trading Geld. Setze nur Geld ein, dessen Verlust dich nicht trifft.
+    </div>
+    <div class="banner err" id="warn" hidden></div>
+  </header>
+
+  <main id="main"></main>
+
+  <footer class="muted">
+    Echte Daten von CoinGecko, Binance (Marktdaten), CoinDesk und Cointelegraph. Nachrichtentitel sind im englischen Original. Die Seite lädt sich alle 5 Minuten neu, die Daten werden alle 30 Minuten aktualisiert.
+  </footer>
+</div>
+
+<script>
+(function () {
+  const TZ = 'Europe/Berlin';
+  const fmtNum = (v, d) => new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
+  const fmtPrice = (v) => v >= 1000 ? fmtNum(v, 0) : v >= 1 ? fmtNum(v, 2) : fmtNum(v, 4);
+  const fmtPct = (v) => v == null ? '–' : (v > 0 ? '+' : '') + fmtNum(v, 2) + ' %';
+  const fmtBig = (v) => v == null ? '–' : new Intl.NumberFormat('de-DE', { notation: 'compact', maximumFractionDigits: 1 }).format(v);
+  const fmtTime = (iso) => new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short', timeZone: TZ }).format(new Date(iso));
+  const ago = (iso) => {
+    const m = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+    if (m < 1) return 'gerade eben';
+    if (m < 60) return 'vor ' + m + ' Min.';
+    const h = Math.round(m / 60);
+    return h < 48 ? 'vor ' + h + ' Std.' : 'vor ' + Math.round(h / 24) + ' Tagen';
+  };
+  const cls = (v) => v > 0 ? 'up' : v < 0 ? 'down' : '';
+
+  function el(tag, c, text) {
+    const e = document.createElement(tag);
+    if (c) e.className = c;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function section(title, note) {
+    const s = el('section', 'sec');
+    const r = el('div', 'row');
+    r.appendChild(el('h2', '', title));
+    if (note) r.appendChild(el('span', 'muted', note));
+    s.appendChild(r);
+    return s;
+  }
+  function stale(sec) {
+    return sec && sec.veraltet ? ' (veraltet, letzter erfolgreicher Abruf)' : '';
+  }
+
+  const state = { sym: null, tag: 'Alle', data: null };
+
+  // ---------------------------------------------------------- Kurse
+  function viewPrices(d) {
+    const s = section('Kurse', d.kurse ? d.kurse.quelle + ', Stand ' + fmtTime(d.kurse.stand) + stale(d.kurse) : '');
+    if (!d.kurse) { s.appendChild(el('p', 'muted', 'Keine Kursdaten verfügbar.')); return s; }
+    const card = el('div', 'card scroll');
+    const t = el('table');
+    const head = el('tr');
+    [['Coin', ''], ['Preis in $', 'num'], ['24 h', 'num'], ['7 Tage', 'num'], ['Marktwert', 'num'], ['Handelsvolumen 24 h', 'num']].forEach(([h, c]) => head.appendChild(el('th', c, h)));
+    const thead = el('thead'); thead.appendChild(head); t.appendChild(thead);
+    const tb = el('tbody');
+    d.kurse.daten.forEach((c) => {
+      const tr = el('tr');
+      tr.appendChild(el('td', '', c.name + ' (' + c.symbol + ')'));
+      tr.appendChild(el('td', 'num', fmtPrice(c.preis)));
+      tr.appendChild(el('td', 'num ' + cls(c.aend24), fmtPct(c.aend24)));
+      tr.appendChild(el('td', 'num ' + cls(c.aend7), fmtPct(c.aend7)));
+      tr.appendChild(el('td', 'num', fmtBig(c.marktkap) + ' $'));
+      tr.appendChild(el('td', 'num', fmtBig(c.volumen) + ' $'));
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb); card.appendChild(t); s.appendChild(card);
+    return s;
+  }
+
+  // ---------------------------------------------------------- Kerzen
+  function niceTicks(lo, hi, n) {
+    const span = hi - lo || 1;
+    const raw = span / n;
+    const pow = Math.pow(10, Math.floor(Math.log10(raw)));
+    const step = [1, 2, 2.5, 5, 10].map((m) => m * pow).find((s) => s >= raw) || raw;
+    const start = Math.floor(lo / step) * step;
+    const out = [];
+    for (let v = start; v <= hi + step; v += step) out.push(v);
+    return out;
+  }
+  function svgEl(name, attrs) {
+    const e = document.createElementNS('http://www.w3.org/2000/svg', name);
+    Object.keys(attrs || {}).forEach((k) => e.setAttribute(k, attrs[k]));
+    return e;
+  }
+
+  function drawCandles(box, rows, sym) {
+    box.replaceChildren();
+    const W = Math.max(box.clientWidth, 320), H = 320, mt = 12, mb = 28, mr = 8;
+    const lo = Math.min(...rows.map((r) => r.l)), hi = Math.max(...rows.map((r) => r.h));
+    let ticks = niceTicks(lo, hi, 5);
+    const yMin = ticks[0], yMax = ticks[ticks.length - 1];
+    ticks = ticks.filter((t) => t >= yMin && t <= yMax);
+    const y = (v) => mt + (H - mt - mb) * (1 - (v - yMin) / (yMax - yMin));
+    const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Kerzenchart ' + sym });
+    box.appendChild(svg);
+    const labels = ticks.map((t) => fmtPrice(t));
+    const probe = svgEl('text', { class: 'ax' }); svg.appendChild(probe);
+    let ml = 0;
+    labels.forEach((l) => { probe.textContent = l; ml = Math.max(ml, probe.getComputedTextLength()); });
+    svg.removeChild(probe);
+    ml = Math.ceil(ml) + 14;
+    const step = (W - ml - mr) / rows.length, bw = Math.max(3, step * 0.62);
+    ticks.forEach((t, i) => {
+      svg.appendChild(svgEl('line', { x1: ml, x2: W - mr, y1: y(t), y2: y(t), stroke: 'var(--grid)' }));
+      const tx = svgEl('text', { class: 'ax', x: ml - 8, y: y(t) + 4, 'text-anchor': 'end' });
+      tx.textContent = labels[i]; svg.appendChild(tx);
+    });
+    const dayFmt = new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'numeric', timeZone: 'UTC' });
+    rows.forEach((r, i) => {
+      const cx = ml + step * i + step / 2;
+      const col = r.c >= r.o ? 'var(--up)' : 'var(--down)';
+      svg.appendChild(svgEl('line', { x1: cx, x2: cx, y1: y(r.h), y2: y(r.l), stroke: col, 'stroke-width': 1.5, 'stroke-linecap': 'round' }));
+      const top = y(Math.max(r.o, r.c)), bot = y(Math.min(r.o, r.c));
+      svg.appendChild(svgEl('rect', { x: cx - bw / 2, y: top, width: bw, height: Math.max(1.5, bot - top), rx: 2, fill: col }));
+      if (i % 5 === 0 || i === rows.length - 1) {
+        const tx = svgEl('text', { class: 'ax', x: cx, y: H - 8, 'text-anchor': 'middle' });
+        tx.textContent = dayFmt.format(new Date(r.d + 'T00:00:00Z')); svg.appendChild(tx);
+      }
+    });
+    const rule = svgEl('line', { y1: mt, y2: H - mb, stroke: 'var(--muted)', visibility: 'hidden' });
+    svg.appendChild(rule);
+    const tip = el('div', 'tip'); tip.hidden = true; box.appendChild(tip);
+    const hit = svgEl('rect', { x: ml, y: 0, width: W - ml, height: H - mb, fill: 'transparent' });
+    svg.appendChild(hit);
+    hit.addEventListener('mousemove', (ev) => {
+      const b = box.getBoundingClientRect();
+      const sx = (ev.clientX - b.left) * (W / b.width);
+      const i = Math.max(0, Math.min(rows.length - 1, Math.floor((sx - ml) / step)));
+      const r = rows[i], cx = ml + step * i + step / 2;
+      rule.setAttribute('x1', cx); rule.setAttribute('x2', cx); rule.setAttribute('visibility', 'visible');
+      tip.replaceChildren(
+        el('div', 'muted', new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium', timeZone: 'UTC' }).format(new Date(r.d + 'T00:00:00Z'))),
+        el('div', '', 'Eröffnung ' + fmtPrice(r.o) + ' $'), el('div', '', 'Hoch ' + fmtPrice(r.h) + ' $'),
+        el('div', '', 'Tief ' + fmtPrice(r.l) + ' $'), el('div', '', 'Schluss ' + fmtPrice(r.c) + ' $'));
+      tip.hidden = false;
+      let left = cx * (b.width / W) + 12;
+      if (left + tip.offsetWidth > box.clientWidth) left = cx * (b.width / W) - tip.offsetWidth - 12;
+      tip.style.left = Math.max(0, left) + 'px';
+      tip.style.top = Math.max(0, Math.min(ev.clientY - b.top - tip.offsetHeight / 2, box.clientHeight - tip.offsetHeight)) + 'px';
+    });
+    hit.addEventListener('mouseleave', () => { tip.hidden = true; rule.setAttribute('visibility', 'hidden'); });
+  }
+
+  function viewCandles(d) {
+    const s = section('Kerzen, letzte 30 Tage', d.kerzen ? d.kerzen.quelle + ', Stand ' + fmtTime(d.kerzen.stand) + stale(d.kerzen) : '');
+    if (!d.kerzen) { s.appendChild(el('p', 'muted', 'Keine Kerzendaten verfügbar.')); return s; }
+    const syms = Object.keys(d.kerzen.daten);
+    if (!state.sym || !syms.includes(state.sym)) state.sym = syms[0];
+    const chips = el('div', 'chips');
+    const card = el('div', 'card');
+    const box = el('div', 'chart');
+    const draw = () => drawCandles(box, d.kerzen.daten[state.sym], state.sym);
+    syms.forEach((sym) => {
+      const b = el('button', 'chip', sym);
+      b.type = 'button';
+      b.setAttribute('aria-pressed', String(sym === state.sym));
+      b.addEventListener('click', () => {
+        state.sym = sym;
+        chips.querySelectorAll('.chip').forEach((x) => x.setAttribute('aria-pressed', String(x.textContent === sym)));
+        draw();
+      });
+      chips.appendChild(b);
+    });
+    s.appendChild(chips);
+    card.appendChild(box);
+    card.appendChild(el('p', 'muted', 'Jede Kerze ist ein Tag. Grün schloss höher als sie öffnete, rot tiefer. Der dünne Strich zeigt Tageshoch und -tief. Die letzte Kerze ist der laufende Tag.'));
+    s.appendChild(card);
+    requestAnimationFrame(draw);
+    window.__redraw = draw;
+    return s;
+  }
+
+  // ---------------------------------------------------------- Auffälligkeiten
+  function viewSignals(d) {
+    const s = section('Auffälligkeiten', 'automatisch nach festen Regeln, keine Empfehlung');
+    const list = (d.chancen && d.chancen.daten) || [];
+    if (!list.length) {
+      const c = el('div', 'card');
+      c.appendChild(el('p', '', 'Gerade fällt nichts Besonderes auf. Das ist normal und heißt: kein Anlass zur Eile.'));
+      if (d.chancen) c.appendChild(el('p', 'muted', 'Regeln: ' + d.chancen.regeln));
+      s.appendChild(c); return s;
+    }
+    const g = el('div', 'grid');
+    list.forEach((x) => {
+      const c = el('article', 'card sig');
+      c.appendChild(el('div', 'art', x.art));
+      c.appendChild(el('h3', '', x.coin + ' (' + x.symbol + ')'));
+      c.appendChild(el('p', '', x.erklaerung));
+      if (x.belege) x.belege.forEach((b) => c.appendChild(el('p', 'muted', 'Meldung: ' + b)));
+      const r = el('p', 'risk'); const b = el('b', '', 'Risiko: '); r.appendChild(b); r.appendChild(document.createTextNode(x.risiko));
+      c.appendChild(r);
+      g.appendChild(c);
+    });
+    s.appendChild(g);
+    s.appendChild(el('p', 'muted', 'Regeln: ' + d.chancen.regeln));
+    return s;
+  }
+
+  // ---------------------------------------------------------- News
+  function viewNews(d) {
+    const s = section('Nachrichten', d.news ? d.news.quelle + ', Stand ' + fmtTime(d.news.stand) + stale(d.news) : '');
+    if (!d.news) { s.appendChild(el('p', 'muted', 'Keine Nachrichten verfügbar.')); return s; }
+    const tags = ['Alle'].concat(Array.from(new Set(d.news.daten.flatMap((n) => n.tags))));
+    const chips = el('div', 'chips');
+    const card = el('div', 'card');
+    const draw = () => {
+      card.replaceChildren();
+      const items = d.news.daten.filter((n) => state.tag === 'Alle' || n.tags.includes(state.tag));
+      if (!items.length) card.appendChild(el('p', 'muted', 'Keine Meldungen in diesem Bereich.'));
+      items.forEach((n) => {
+        const it = el('article', 'news-item');
+        const a = el('a', '', n.titel); a.href = n.link; a.target = '_blank'; a.rel = 'noopener noreferrer';
+        it.appendChild(a);
+        if (n.text) it.appendChild(el('p', 'muted', n.text));
+        const m = el('div', 'meta');
+        m.appendChild(el('span', '', n.quelle + ', ' + ago(n.zeit)));
+        n.tags.forEach((t) => m.appendChild(el('span', 'tag', t)));
+        it.appendChild(m);
+        card.appendChild(it);
+      });
+    };
+    tags.forEach((t) => {
+      const b = el('button', 'chip', t);
+      b.type = 'button';
+      b.setAttribute('aria-pressed', String(t === state.tag));
+      b.addEventListener('click', () => {
+        state.tag = t;
+        chips.querySelectorAll('.chip').forEach((x) => x.setAttribute('aria-pressed', String(x.textContent === t)));
+        draw();
+      });
+      chips.appendChild(b);
+    });
+    s.appendChild(chips); s.appendChild(card); draw();
+    return s;
+  }
+
+  function viewNext() {
+    const s = section('Als Nächstes geplant');
+    const c = el('div', 'card');
+    const ul = el('ul', 'todo');
+    ['Aktien und ETFs ergänzen', 'Paper-Trading: Übungskäufe mit Spielgeld, ohne echtes Geld', 'Mehr Coins und eigene Beobachtungsliste'].forEach((t) => ul.appendChild(el('li', '', t)));
+    c.appendChild(ul); s.appendChild(c);
+    return s;
+  }
+
+  // ---------------------------------------------------------- Aufbau
+  function render(d) {
+    const main = document.getElementById('main');
+    const status = document.getElementById('status');
+    const warn = document.getElementById('warn');
+    main.replaceChildren();
+    warn.hidden = true;
+    if (!d || !d.erzeugt) {
+      status.textContent = 'Noch keine Daten';
+      const e = el('div', 'card empty');
+      e.appendChild(el('h2', '', 'Noch keine Daten vorhanden'));
+      e.appendChild(el('p', 'muted', 'Öffne bei GitHub den Reiter "Actions", wähle "Daten aktualisieren" und klicke auf "Run workflow". Nach etwa einer Minute erscheinen hier die Daten.'));
+      main.appendChild(e);
+      return;
+    }
+    status.textContent = 'Zuletzt aktualisiert: ' + fmtTime(d.erzeugt) + ' (' + ago(d.erzeugt) + ')';
+    const hours = (Date.now() - new Date(d.erzeugt).getTime()) / 3600000;
+    const msgs = [];
+    if (hours > 3) msgs.push('Die Daten sind über drei Stunden alt. Die automatische Aktualisierung scheint zu stocken, schau im Reiter "Actions" bei GitHub nach.');
+    if (d.fehler && d.fehler.length) msgs.push('Beim letzten Abruf hat nicht alles geklappt: ' + d.fehler.join('; '));
+    if (msgs.length) { warn.textContent = msgs.join(' '); warn.hidden = false; }
+    main.appendChild(viewPrices(d));
+    main.appendChild(viewCandles(d));
+    main.appendChild(viewSignals(d));
+    main.appendChild(viewNews(d));
+    main.appendChild(viewNext());
+  }
+
+  function load() {
+    fetch('data/latest.json?t=' + Date.now(), { cache: 'no-store' })
+      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then((d) => { state.data = d; render(d); })
+      .catch((e) => {
+        document.getElementById('status').textContent = 'Daten nicht ladbar';
+        const w = document.getElementById('warn');
+        w.textContent = 'Die Datei data/latest.json konnte nicht geladen werden (' + e.message + '). Wenn du die Seite direkt als Datei öffnest, geht das nicht. Sie muss über GitHub Pages aufgerufen werden.';
+        w.hidden = false;
+      });
+  }
+  load();
+  setInterval(load, 5 * 60 * 1000);
+  let rt;
+  window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => window.__redraw && window.__redraw(), 150); });
+})();
+</script>
+</body>
+</html>

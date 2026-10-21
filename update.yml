@@ -1,0 +1,38 @@
+name: Daten aktualisieren
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # alle 30 Minuten
+  workflow_dispatch:         # Knopf zum manuellen Starten
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Daten holen
+        run: python scripts/update_data.py
+
+      - name: Änderungen speichern
+        run: |
+          git config user.name "dashboard-bot"
+          git config user.email "dashboard-bot@users.noreply.github.com"
+          git add data/latest.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen"
+          else
+            git commit -m "Daten aktualisiert"
+            git push
+          fi
