@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-21T16:22:47+00:00",
+ "erzeugt": "2026-10-21T20:19:15+00:00",
  "kurse": {
-  "stand": "2026-10-21T16:22:47+00:00",
+  "stand": "2026-10-21T20:19:15+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 84627,
-    "aend24": 2.77592,
-    "aend7": 3.2132,
-    "marktkap": 1700643423541,
-    "volumen": 29332818042
+    "preis": 84510,
+    "aend24": 2.36368,
+    "aend7": 3.4819,
+    "marktkap": 1698031118079,
+    "volumen": 31756061468
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2509.92,
-    "aend24": 3.16304,
-    "aend7": 3.366,
-    "marktkap": 306522236443,
-    "volumen": 13240458256
+    "preis": 2492.15,
+    "aend24": 2.29577,
+    "aend7": 2.738,
+    "marktkap": 304346212856,
+    "volumen": 14252462956
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 108.49,
-    "aend24": 2.801,
-    "aend7": 4.0779,
-    "marktkap": 63957711853,
-    "volumen": 2426857899
+    "preis": 108.11,
+    "aend24": 2.07157,
+    "aend7": 3.8724,
+    "marktkap": 63741759489,
+    "volumen": 2479172832
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.38,
-    "aend24": 4.58803,
-    "aend7": 3.4995,
-    "marktkap": 87042946740,
-    "volumen": 1723635495
+    "preis": 1.39,
+    "aend24": 4.79104,
+    "aend7": 4.8118,
+    "marktkap": 87836785202,
+    "volumen": 1932775087
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.083145,
-    "aend24": 3.33186,
-    "aend7": 1.394,
-    "marktkap": 13001796660,
-    "volumen": 450518021
+    "preis": 0.082923,
+    "aend24": 1.73422,
+    "aend7": 1.2793,
+    "marktkap": 12966222820,
+    "volumen": 492685409
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-21T16:22:50+00:00",
+  "stand": "2026-10-21T20:19:18+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -267,9 +267,9 @@
     {
      "d": "2026-10-21",
      "o": 83028.14,
-     "h": 84828.0,
+     "h": 84898.0,
      "l": 82635.32,
-     "c": 84679.2
+     "c": 84525.52
     }
    ],
    "ETH": [
@@ -479,9 +479,9 @@
     {
      "d": "2026-10-21",
      "o": 2449.19,
-     "h": 2517.08,
+     "h": 2526.62,
      "l": 2436.87,
-     "c": 2509.21
+     "c": 2491.6
     }
    ],
    "SOL": [
@@ -691,9 +691,9 @@
     {
      "d": "2026-10-21",
      "o": 106.53,
-     "h": 108.92,
+     "h": 109.2,
      "l": 105.63,
-     "c": 108.57
+     "c": 108.04
     }
    ],
    "XRP": [
@@ -903,9 +903,9 @@
     {
      "d": "2026-10-21",
      "o": 1.3358,
-     "h": 1.3882,
+     "h": 1.3992,
      "l": 1.3314,
-     "c": 1.3786
+     "c": 1.3913
     }
    ],
    "DOGE": [
@@ -1117,15 +1117,65 @@
      "o": 0.08186,
      "h": 0.0838,
      "l": 0.08124,
-     "c": 0.08313
+     "c": 0.08289
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-21T16:22:50+00:00",
+  "stand": "2026-10-21T20:19:18+00:00",
   "quelle": "CoinDesk und Cointelegraph",
   "daten": [
+   {
+    "titel": "Here’s what happened in crypto today",
+    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-21T20:10:47+00:00",
+    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+    "tags": [
+     "Regulierung"
+    ]
+   },
+   {
+    "titel": "Cardano Foundation urges EU against expanding MiCA rules to DeFi and staking",
+    "link": "https://cointelegraph.com/news/cardano-foundation-urges-eu-against-expanding-mica-rules-to-defi-and-staking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-21T17:57:39+00:00",
+    "text": "The foundation called for regulation based on financial risks rather than technology, warning that overlapping rules could create uncertainty for crypto businesses across the EU.",
+    "tags": [
+     "Regulierung",
+     "Geopolitik"
+    ]
+   },
+   {
+    "titel": "UK financial watchdog opens consultations for DeFi guidance, crypto laws",
+    "link": "https://cointelegraph.com/news/uk-fca-consultations-defi-crypto-laws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-21T17:25:00+00:00",
+    "text": "The UK Financial Conduct Authority consultations came just weeks after the agency opened applications for companies under its new crypto regulatory regime.",
+    "tags": [
+     "Regulierung"
+    ]
+   },
+   {
+    "titel": "Treasury Secretary Bessent likens GENIUS Act to Lincoln-era banking reform",
+    "link": "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-21T17:10:54+00:00",
+    "text": "The OCC has finalized rules for stablecoin reserves and redemptions, with Bessent calling the GENIUS Act a “watershed moment for American finance.”",
+    "tags": []
+   },
+   {
+    "titel": "Trump to throw spotlight on overseas crypto abuses at White House event",
+    "link": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event",
+    "quelle": "CoinDesk",
+    "zeit": "2026-10-21T16:23:44+00:00",
+    "text": "The president is hosting a cybercrime event that will highlight U.S. authorities' efforts to crack down on crypto scams run by foreign criminal organizations.",
+    "tags": [
+     "Prominente",
+     "Hack/Betrug"
+    ]
+   },
    {
     "titel": "Chainlink, Cardano, other blockchain groups push SEC for clearer crypto rules",
     "link": "https://cointelegraph.com/news/chainlink-cardano-and-other-blockchain-groups-push-sec-for-clearer-crypto-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1175,16 +1225,6 @@
     "zeit": "2026-10-21T13:57:14+00:00",
     "text": "Solana’s first major consensus upgrade is targeting 99% finality reduction, seeking to offer users near-immediate transaction settlement and more responsive applications.",
     "tags": []
-   },
-   {
-    "titel": "Here’s what happened in crypto today",
-    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T13:34:54+00:00",
-    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-    "tags": [
-     "Regulierung"
-    ]
    },
    {
     "titel": "Big Tech’s eMudhra fixes may leave crypto bots exposed, CertiK warns",
@@ -1306,7 +1346,7 @@
     "tags": []
    },
    {
-    "titel": "Live updates: Bitcoin rises to $84,000 as SpaceX leads markets higher",
+    "titel": "Live updates: Bitcoin rises to $84,000, but rally cut short by Middle East worry",
     "link": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
     "quelle": "CoinDesk",
     "zeit": "2026-10-21T10:30:40+00:00",
@@ -1354,47 +1394,11 @@
     "zeit": "2026-10-21T08:57:29+00:00",
     "text": "Open interest has topped $300 million and price is back above $600. A similar setup was seen before January's crash.",
     "tags": []
-   },
-   {
-    "titel": "Tether leads $15 million funding round for AI-focused payment startup Mural",
-    "link": "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T08:47:11+00:00",
-    "text": "The Series A round, which included participation from North Island Ventures and existing investors, brings New York-based Mural's total funding to $28 million.",
-    "tags": []
-   },
-   {
-    "titel": "Ether ETF outflows continue, pass $1B in October so far",
-    "link": "https://cointelegraph.com/markets/ether-etf-outflows-near-1-1-billion-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T08:11:50+00:00",
-    "text": "US spot Ether ETFs have shed $1.08 billion so far in October, the biggest monthly outflow of 2026, while Bitcoin ETF inflows slowed after Monday’s spike.",
-    "tags": [
-     "ETF"
-    ]
-   },
-   {
-    "titel": "Zcash developers confirm November date for upgrade that triples payment speed",
-    "link": "https://www.coindesk.com/markets/2026/10/21/zcash-developers-confirm-november-date-for-upgrade-that-triples-payment-speed",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T08:10:12+00:00",
-    "text": "The NU7 upgrade will cut the time between Zcash blocks to 25 seconds from 75 seconds. The chosen block height still has to be merged into the spec and shipped in node software.",
-    "tags": [
-     "Geopolitik"
-    ]
-   },
-   {
-    "titel": "Malaysia central bank launches DLT platform for tokenized bonds",
-    "link": "https://cointelegraph.com/news/malaysia-central-bank-tokenized-bonds-sukuk-dlt-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T05:56:29+00:00",
-    "text": "The platform tracks tokenized securities ownership and transfers, linking to Malaysia’s RENTAS+ system to settle corresponding payments in central bank money.",
-    "tags": []
    }
   ]
  },
  "chancen": {
-  "stand": "2026-10-21T16:22:50+00:00",
+  "stand": "2026-10-21T20:19:18+00:00",
   "regeln": "Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden",
   "daten": [
    {
@@ -1406,17 +1410,6 @@
     "belege": [
      "Bitcoin price tags $84.6K as US stocks head higher on SpaceX Q3 earnings beat",
      "5 alternatives to Ledger to store your Bitcoin"
-    ]
-   },
-   {
-    "coin": "Ether",
-    "symbol": "ETH",
-    "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 2 Meldungen, in denen Ether im Titel steht.",
-    "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
-    "belege": [
-     "Drift exploiter sends $109M in Ether to Tornado Cash in 2 days",
-     "Ether ETF outflows continue, pass $1B in October so far"
     ]
    }
   ]
