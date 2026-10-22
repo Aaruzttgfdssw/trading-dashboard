@@ -1,73 +1,66 @@
 {
- "erzeugt": "2026-10-21T23:32:59+00:00",
+ "erzeugt": "2026-10-22T04:12:21+00:00",
  "kurse": {
-  "stand": "2026-10-21T23:32:59+00:00",
+  "stand": "2026-10-22T04:12:22+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 84279,
-    "aend24": 1.71665,
-    "aend7": 3.3714,
-    "marktkap": 1693559668196,
-    "volumen": 32210225868
+    "preis": 82834,
+    "aend24": 0.1488,
+    "aend7": 1.7027,
+    "marktkap": 1665242668999,
+    "volumen": 35497597156
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2475.14,
-    "aend24": 1.21254,
-    "aend7": 2.731,
-    "marktkap": 302257617507,
-    "volumen": 13740548873
+    "preis": 2442.19,
+    "aend24": -0.00544,
+    "aend7": 2.7061,
+    "marktkap": 298334068335,
+    "volumen": 14449877793
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 106.97,
-    "aend24": 0.59264,
-    "aend7": 2.6686,
-    "marktkap": 63057153696,
-    "volumen": 2553981359
+    "preis": 105.45,
+    "aend24": -0.30027,
+    "aend7": 2.095,
+    "marktkap": 62206591693,
+    "volumen": 2697670860
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.37,
-    "aend24": 2.34405,
-    "aend7": 2.8325,
-    "marktkap": 86149768506,
-    "volumen": 1952902633
+    "preis": 1.35,
+    "aend24": 0.99222,
+    "aend7": 2.0532,
+    "marktkap": 84939448524,
+    "volumen": 1845382025
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.08185,
-    "aend24": 0.14015,
-    "aend7": 0.5135,
-    "marktkap": 12797882827,
-    "volumen": 492943904
+    "preis": 0.08031,
+    "aend24": -1.43774,
+    "aend7": 0.2062,
+    "marktkap": 12563023223,
+    "volumen": 555821287
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-21T23:33:02+00:00",
+  "stand": "2026-10-22T04:12:25+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
-    {
-     "d": "2026-09-22",
-     "o": 86620.01,
-     "h": 86717.6,
-     "l": 85114.0,
-     "c": 86208.56
-    },
     {
      "d": "2026-09-23",
      "o": 86208.57,
@@ -269,17 +262,17 @@
      "o": 83028.14,
      "h": 84898.0,
      "l": 82635.32,
-     "c": 84326.64
+     "c": 84093.42
+    },
+    {
+     "d": "2026-10-22",
+     "o": 84093.42,
+     "h": 84377.21,
+     "l": 82670.74,
+     "c": 82891.65
     }
    ],
    "ETH": [
-    {
-     "d": "2026-09-22",
-     "o": 2776.2,
-     "h": 2777.55,
-     "l": 2715.91,
-     "c": 2753.63
-    },
     {
      "d": "2026-09-23",
      "o": 2753.63,
@@ -481,17 +474,17 @@
      "o": 2449.19,
      "h": 2526.62,
      "l": 2436.87,
-     "c": 2478.29
+     "c": 2473.76
+    },
+    {
+     "d": "2026-10-22",
+     "o": 2473.77,
+     "h": 2482.49,
+     "l": 2434.2,
+     "c": 2444.06
     }
    ],
    "SOL": [
-    {
-     "d": "2026-09-22",
-     "o": 118.91,
-     "h": 119.48,
-     "l": 115.54,
-     "c": 118.57
-    },
     {
      "d": "2026-09-23",
      "o": 118.57,
@@ -693,17 +686,17 @@
      "o": 106.53,
      "h": 109.2,
      "l": 105.63,
-     "c": 107.09
+     "c": 106.97
+    },
+    {
+     "d": "2026-10-22",
+     "o": 106.97,
+     "h": 107.5,
+     "l": 105.04,
+     "c": 105.51
     }
    ],
    "XRP": [
-    {
-     "d": "2026-09-22",
-     "o": 1.5363,
-     "h": 1.6094,
-     "l": 1.4934,
-     "c": 1.5727
-    },
     {
      "d": "2026-09-23",
      "o": 1.5727,
@@ -905,17 +898,17 @@
      "o": 1.3358,
      "h": 1.3992,
      "l": 1.3314,
-     "c": 1.366
+     "c": 1.3654
+    },
+    {
+     "d": "2026-10-22",
+     "o": 1.3654,
+     "h": 1.3698,
+     "l": 1.337,
+     "c": 1.3463
     }
    ],
    "DOGE": [
-    {
-     "d": "2026-09-22",
-     "o": 0.09987,
-     "h": 0.10589,
-     "l": 0.09716,
-     "c": 0.10044
-    },
     {
      "d": "2026-09-23",
      "o": 0.10044,
@@ -1117,15 +1110,38 @@
      "o": 0.08186,
      "h": 0.0838,
      "l": 0.08124,
-     "c": 0.08192
+     "c": 0.08197
+    },
+    {
+     "d": "2026-10-22",
+     "o": 0.08198,
+     "h": 0.08219,
+     "l": 0.07997,
+     "c": 0.08035
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-21T23:33:02+00:00",
+  "stand": "2026-10-22T04:12:26+00:00",
   "quelle": "CoinDesk und Cointelegraph",
   "daten": [
+   {
+    "titel": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
+    "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
+    "quelle": "CoinDesk",
+    "zeit": "2026-10-22T03:51:34+00:00",
+    "text": "BTC broke through its $84,000 ceiling late Wednesday, then slid back to the $82,500 support analysts are watching as tech futures fell.",
+    "tags": []
+   },
+   {
+    "titel": "PHP Foundation admits ‘structural failure’ delayed critical security fix",
+    "link": "https://cointelegraph.com/news/php-foundation-admits-structural-failure-delayed-critical-security-fix?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-22T00:44:00+00:00",
+    "text": "Government websites and online services were disrupted after concerns about a PHP bug that could allow attackers to take control of vulnerable servers.",
+    "tags": []
+   },
    {
     "titel": "American Bankers Association: OCC’s GENIUS rules ‘undermine’ US Congress",
     "link": "https://cointelegraph.com/news/american-bankers-association-occ-genius-rules-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1379,38 +1395,22 @@
     "zeit": "2026-10-21T10:30:40+00:00",
     "text": "South Korea data center player Elice surged 30% after plunging about the same amount following its IPO one day earlier.",
     "tags": []
-   },
-   {
-    "titel": "Shinhan, SBI make Japan-Korea tourist spending a test case for yen stablecoins",
-    "link": "https://cointelegraph.com/news/shinhan-sbi-japan-korea-travel-yen-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T10:22:44+00:00",
-    "text": "The companies will assess safeguards for travelers and whether stablecoins can speed up trade settlement between South Korea and Japan.",
-    "tags": []
-   },
-   {
-    "titel": "Zcash rallies 12% as developers finalize NU7 activation height",
-    "link": "https://cointelegraph.com/markets/zcash-zec-rallies-12-percent-nu7-mainnet-upgrade?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T10:15:00+00:00",
-    "text": "Zcash extended triple-digit year-to-date gains as developers agreed on the NU7 mainnet activation height, targeting Nov. 5, with node synchronization work still pending.",
-    "tags": []
    }
   ]
  },
  "chancen": {
-  "stand": "2026-10-21T23:33:02+00:00",
+  "stand": "2026-10-22T04:12:26+00:00",
   "regeln": "Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden",
   "daten": [
    {
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 5 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 6 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
-     "Bitcoin price tags $84.6K as US stocks head higher on SpaceX Q3 earnings beat",
-     "5 alternatives to Ledger to store your Bitcoin"
+     "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
+     "Bitcoin price tags $84.6K as US stocks head higher on SpaceX Q3 earnings beat"
     ]
    }
   ]
