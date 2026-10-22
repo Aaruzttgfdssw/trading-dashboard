@@ -110,6 +110,16 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
 .rk { border-top: 1px solid var(--line); padding-top: 6px; }
 .rk b { color: var(--down); }
 .note { font-size: 12px; color: var(--muted); margin-top: 10px; line-height: 1.5; }
+.form { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: 10px; }
+.form label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.form input, .form select { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; color: var(--fg); min-width: 0; }
+.form .wide { grid-column: 1 / -1; }
+.btn.primary { background: var(--accent); color: #0d1220; border-color: var(--accent); font-weight: 600; }
+.btn.danger { color: var(--down); }
+.okmsg { color: var(--up); font-size: 12px; } .errmsg { color: var(--down); font-size: 12px; }
+.sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 10px; }
+.sum .card b { font-size: 18px; font-variant-numeric: tabular-nums; }
+.banner { background: color-mix(in srgb, var(--accent) 14%, var(--panel)); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); border-radius: 10px; padding: 10px 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
 .back { display: none; }
 @media (max-width: 1049px) { .back { display: inline-block; } }
 </style>
@@ -128,6 +138,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       <button class="tab" role="tab" data-tab="news">Nachrichten</button>
       <button class="tab" role="tab" data-tab="lage">Lage</button>
       <button class="tab" role="tab" data-tab="trade">Handeln</button>
+      <button class="tab" role="tab" data-tab="journal">Journal</button>
     </nav>
     <div class="status">
       <span class="dot" id="st-live" data-s="none">Krypto live: verbinde …</span>
@@ -209,6 +220,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
         <div class="box-h"><h2>Handeln über Jupiter</h2><span class="muted small">Solana-Token tauschen mit deinem eigenen Wallet</span></div>
         <div class="box-b">
           <p class="small" id="j-state">Lade das Handelsfenster von Jupiter …</p>
+          <div class="banner" id="j-trade-banner" hidden><span>Trade erkannt. Trag ihn jetzt fürs Finanzamt ins Journal ein, die Felder sind schon vorausgefüllt.</span><a class="btn primary" href="#journal">Zum Journal</a></div>
           <div id="jupiter-plugin" style="min-height:560px"></div>
         </div>
       </div>
@@ -232,6 +244,67 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
           <div class="sub">Gebühren</div>
           <p class="small" style="margin:0;line-height:1.5">Jupiter nimmt je nach Token 0 bis 0,5 % (die App von Phantom etwa 0,85 %). Dazu kommt eine kleine Netzwerkgebühr von Solana. Diese Seite nimmt nichts.</p>
           <p class="note">Das Handelsfenster kommt direkt von Jupiter. Diese Seite sieht weder deine Schlüssel noch dein Guthaben und kann nichts ohne deine Bestätigung im Wallet ausführen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="view" id="v-journal" hidden>
+    <div class="split">
+      <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+        <div class="box">
+          <div class="box-h"><h2>Trade eintragen</h2><span class="muted small">Nach jedem Kauf oder Verkauf</span></div>
+          <div class="box-b">
+            <div id="j-hint"></div>
+            <form id="jf" class="form" autocomplete="off">
+              <label>Datum und Uhrzeit<input type="datetime-local" id="jf-ts" required></label>
+              <label>Plattform<select id="jf-pl"><option>Trade Republic</option><option>Bitvavo</option><option>Jupiter (Wallet)</option><option>Binance</option><option>Andere</option></select></label>
+              <label>Anlageart<select id="jf-kl"><option value="krypto">Krypto / Memecoin</option><option value="etf">ETF / Aktie</option></select></label>
+              <label>Art<select id="jf-art"><option value="kauf">Kauf</option><option value="verkauf">Verkauf</option><option value="tausch">Tausch (Coin gegen Coin)</option></select></label>
+              <label><span id="jf-a1l">Was (z. B. BTC, SOL, SPY)</span><input id="jf-a1" required placeholder="SOL"></label>
+              <label><span id="jf-m1l">Menge</span><input id="jf-m1" type="text" inputmode="decimal" required placeholder="0,5"></label>
+              <label class="tx2" hidden>Erhalten: was<input id="jf-a2" placeholder="BONK"></label>
+              <label class="tx2" hidden>Erhalten: Menge<input id="jf-m2" type="text" inputmode="decimal" placeholder="1000000"></label>
+              <label><span id="jf-wl">Gesamtwert in €</span><input id="jf-w" type="text" inputmode="decimal" required placeholder="50,00"></label>
+              <label>Gebühren in €<input id="jf-g" type="text" inputmode="decimal" placeholder="1,00"></label>
+              <label class="wide">Transaktions-ID oder Notiz (optional)<input id="jf-n" placeholder="z. B. Signatur aus dem Wallet"></label>
+              <div class="wide links" style="margin-top:0">
+                <button class="btn primary" type="submit">Speichern</button>
+                <button class="btn" type="button" id="jf-solw">Wert aus aktuellem SOL-Kurs berechnen</button>
+                <span id="jf-msg" class="small"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-h"><h2>Speicherort auf deinem Computer</h2></div>
+          <div class="box-b">
+            <p class="small" id="jfile-state" style="margin:0 0 8px">Noch keine Datei verbunden. Deine Einträge liegen bis dahin nur in diesem Browser.</p>
+            <div class="links" style="margin-top:0">
+              <button class="btn primary" type="button" id="jfile-new">Datei auf dem Desktop anlegen</button>
+              <button class="btn" type="button" id="jfile-open">Bestehende Datei öffnen</button>
+              <button class="btn" type="button" id="jfile-csv">Steuerliste als CSV herunterladen</button>
+            </div>
+            <p class="note">Nach jedem Eintrag speichert die Seite automatisch in die gewählte Datei. Beim ersten Speichern nach dem Öffnen der Seite fragt der Browser einmal nach Erlaubnis. Das funktioniert in Chrome und Edge am PC. Die CSV-Datei öffnest du mit Excel und gibst sie deinem Steuerberater oder einem Steuerprogramm.</p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+        <div class="box">
+          <div class="box-h"><h2>Steuer-Übersicht Krypto</h2><select id="jy" class="search" style="width:auto" aria-label="Jahr"></select></div>
+          <div class="box-b">
+            <div class="sum" id="jsum"></div>
+            <p class="note">So rechnet die Seite (Stand 2026, keine Steuerberatung): Krypto ist in Deutschland ein privates Veräußerungsgeschäft. Gewinne sind steuerfrei, wenn du länger als ein Jahr gehalten hast. Verkaufst du früher, zählt der Gewinn. Liegen alle steuerpflichtigen Gewinne und Verluste eines Jahres zusammen unter 1.000 €, bleibt alles steuerfrei (Freigrenze). Ab 1.000 € ist der ganze Betrag steuerpflichtig und kommt in die Anlage SO. Auch ein Tausch Coin gegen Coin zählt als Verkauf. Verkauft wird rechnerisch immer zuerst das, was du zuerst gekauft hast (FIFO). ETFs und Aktien bei einem deutschen Broker: Die Steuer zieht der Broker automatisch ab. Stelle dort einen Freistellungsauftrag (bis 1.000 € im Jahr steuerfrei).</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-h"><h2>Verkäufe mit Gewinn und Verlust</h2></div>
+          <div class="scroll" style="max-height:360px"><table id="jsales"><thead><tr><th>Datum</th><th>Was</th><th>Menge</th><th>Erlös €</th><th>Kosten €</th><th>Ergebnis €</th><th>Gehalten</th><th>Steuer</th></tr></thead><tbody></tbody></table></div>
+        </div>
+        <div class="box">
+          <div class="box-h"><h2>Alle Einträge</h2><span class="muted small" id="jcount"></span></div>
+          <div class="scroll" style="max-height:360px"><table id="jall"><thead><tr><th>Datum</th><th>Art</th><th>Was</th><th>Menge</th><th>Wert €</th><th>Plattform</th><th></th></tr></thead><tbody></tbody></table></div>
         </div>
       </div>
     </div>
@@ -424,6 +497,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   const STABLE = new Set(['USDC', 'FDUSD', 'TUSD', 'USDP', 'DAI', 'BUSD', 'EUR', 'AEUR', 'USD1', 'USDE', 'XUSD', 'BFUSD', 'RLUSD', 'EURI', 'PYUSD', 'USDS']);
   function okSym(s) { if (!s.endsWith('USDT')) return false; const b = s.slice(0, -4); if (STABLE.has(b)) return false; if (/^.{2,}(UP|DOWN|BULL|BEAR)$/.test(b)) return false; return true; }
   function putTick(s, c, o, h, l, v, q) {
+    if (s === 'EURUSDT' && c > 0) K.eur = c;
     if (!okSym(s) || !(c > 0)) return;
     K.map.set(s, { s, b: s.slice(0, -4), c, o, h, l, v, q, chg: o > 0 ? (c / o - 1) * 100 : null });
     K.dirty = true;
@@ -840,7 +914,8 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
         $('#jupiter-plugin').replaceChildren();
         const formProps = { initialInputMint: SOL_MINT };
         if (J.mint) formProps.initialOutputMint = J.mint;
-        window.Jupiter.init({ displayMode: 'integrated', integratedTargetId: 'jupiter-plugin', formProps });
+        window.Jupiter.init({ displayMode: 'integrated', integratedTargetId: 'jupiter-plugin', formProps,
+          onSuccess: (res) => { try { window.__mtsJupiterSuccess && window.__mtsJupiterSuccess(res); } catch (e) { /* Journal-Vorschlag optional */ } } });
         J.shown = J.mint;
         state.textContent = J.mint ? 'Vorausgewählt: ' + (J.sym || 'Token') + '. Prüfe die Adresse im Fenster, bevor du tauschst.' : '';
       } catch (e) { state.textContent = 'Das Handelsfenster konnte nicht starten (' + e.message + '). Du kannst direkt auf jup.ag handeln.'; }
@@ -855,8 +930,214 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     document.head.appendChild(s);
   }
 
+  // ------------------------------------------------------------------ JOURNAL (Trades, Steuer, Datei)
+  const JR = { items: [], handle: null, perm: false, pending: null, year: String(new Date().getFullYear()) };
+  const LSKEY = 'mts-journal-v1';
+  // Deutsche Schreibweise: Komma = Dezimal, Punkt = Tausender ("1.000.000" = eine Million, "0,5" = ein halb)
+  const num = (v) => {
+    if (v == null) return NaN; let t = String(v).trim().replace(/\s/g, ''); if (!t) return NaN;
+    if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.');
+    else if ((t.match(/\./g) || []).length > 1 || /^\d{1,3}\.\d{3}$/.test(t)) t = t.replace(/\./g, '');
+    return /^-?\d*\.?\d+$/.test(t) ? parseFloat(t) : NaN;
+  };
+  const fEur = (v) => (v == null || !isFinite(v)) ? '–' : nf(2).format(v) + ' €';
+  const fQty = (v) => !isFinite(v) ? '–' : new Intl.NumberFormat('de-DE', { maximumFractionDigits: 8 }).format(v);
+  const fDate = (iso) => new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short', timeZone: TZ }).format(new Date(iso));
+  function jLoadLocal() { try { const t = localStorage.getItem(LSKEY); if (t) JR.items = JSON.parse(t).eintraege || []; } catch (e) { /* kein Speicher */ } }
+  function jPayload() { return { app: 'MyTradingSinc', version: 1, gespeichert: new Date().toISOString(), hinweis: 'Trade-Journal. Keine Steuerberatung.', eintraege: JR.items }; }
+  function jSaveLocal() { try { localStorage.setItem(LSKEY, JSON.stringify(jPayload())); } catch (e) { /* kein Speicher */ } }
+  // Datei-Griff im Browser merken (IndexedDB), damit die Datei beim nächsten Besuch wieder verbunden ist
+  function idb(mode, fn) {
+    return new Promise((res, rej) => {
+      let req; try { req = indexedDB.open('mts', 1); } catch (e) { rej(e); return; }
+      req.onupgradeneeded = () => req.result.createObjectStore('kv');
+      req.onsuccess = () => { try { const tx = req.result.transaction('kv', mode); const st = tx.objectStore('kv'); const r = fn(st); tx.oncomplete = () => res(r && r.result); tx.onerror = () => rej(tx.error); } catch (e) { rej(e); } };
+      req.onerror = () => rej(req.error);
+    });
+  }
+  const fsOk = 'showSaveFilePicker' in window;
+  function jFileState(text, err) { const e = $('#jfile-state'); e.textContent = text; e.className = 'small ' + (err ? 'errmsg' : ''); }
+  async function jEnsurePerm(ask) {
+    if (!JR.handle) return false;
+    try {
+      let p = await JR.handle.queryPermission({ mode: 'readwrite' });
+      if (p !== 'granted' && ask) p = await JR.handle.requestPermission({ mode: 'readwrite' });
+      JR.perm = p === 'granted'; return JR.perm;
+    } catch (e) { return false; }
+  }
+  async function jWriteFile(ask) {
+    if (!JR.handle) return false;
+    if (!(await jEnsurePerm(ask))) { jFileState('Datei "' + JR.handle.name + '" ist verbunden, aber der Browser braucht deine Erlaubnis. Klicke beim nächsten Speichern auf "Zulassen".', true); return false; }
+    try {
+      const w = await JR.handle.createWritable(); await w.write(JSON.stringify(jPayload(), null, 1)); await w.close();
+      jFileState('Gespeichert in "' + JR.handle.name + '" um ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date()) + '.');
+      return true;
+    } catch (e) { jFileState('Speichern in die Datei hat nicht geklappt (' + e.message + '). Deine Einträge sind im Browser gesichert.', true); return false; }
+  }
+  async function jPersist(ask) { jSaveLocal(); renderJournal(); if (JR.handle) await jWriteFile(ask); }
+  $('#jfile-new').addEventListener('click', async () => {
+    if (!fsOk) { jFileState('Dein Browser kann keine Datei direkt speichern. Nutze Chrome oder Edge am PC, oder lade die CSV-Datei herunter.', true); return; }
+    try {
+      JR.handle = await window.showSaveFilePicker({ suggestedName: 'MyTradingSinc-Journal.json', startIn: 'desktop', types: [{ description: 'Trade-Journal', accept: { 'application/json': ['.json'] } }] });
+      await idb('readwrite', (st) => st.put(JR.handle, 'file')).catch(() => {});
+      await jWriteFile(true);
+    } catch (e) { if (e.name !== 'AbortError') jFileState('Datei konnte nicht angelegt werden (' + e.message + ').', true); }
+  });
+  $('#jfile-open').addEventListener('click', async () => {
+    if (!('showOpenFilePicker' in window)) { jFileState('Dein Browser kann keine Datei direkt öffnen. Nutze Chrome oder Edge am PC.', true); return; }
+    try {
+      const [h] = await window.showOpenFilePicker({ startIn: 'desktop', types: [{ description: 'Trade-Journal', accept: { 'application/json': ['.json'] } }] });
+      const data = JSON.parse(await (await h.getFile()).text());
+      if (!data || !Array.isArray(data.eintraege)) throw new Error('Das ist keine Journal-Datei von MyTradingSinc');
+      const ids = new Set(JR.items.map((x) => x.id));
+      data.eintraege.forEach((x) => { if (!ids.has(x.id)) JR.items.push(x); });
+      JR.handle = h; await idb('readwrite', (st) => st.put(h, 'file')).catch(() => {});
+      await jPersist(true);
+    } catch (e) { if (e.name !== 'AbortError') jFileState('Datei konnte nicht geöffnet werden (' + e.message + ').', true); }
+  });
+  // Formular
+  const ART = { kauf: 'Kauf', verkauf: 'Verkauf', tausch: 'Tausch' };
+  function jFormMode() {
+    const tausch = $('#jf-art').value === 'tausch';
+    document.querySelectorAll('#jf .tx2').forEach((e) => { e.hidden = !tausch; });
+    $('#jf-a1l').textContent = tausch ? 'Abgegeben: was' : 'Was (z. B. BTC, SOL, SPY)';
+    $('#jf-m1l').textContent = tausch ? 'Abgegeben: Menge' : 'Menge';
+    $('#jf-wl').textContent = tausch ? 'Wert des Tauschs in €' : ($('#jf-art').value === 'kauf' ? 'Bezahlt in € (ohne Gebühr)' : 'Erhalten in € (vor Gebühr)');
+  }
+  $('#jf-art').addEventListener('change', jFormMode);
+  function nowLocal(d) { const x = d || new Date(); const off = x.getTimezoneOffset(); return new Date(x.getTime() - off * 60000).toISOString().slice(0, 16); }
+  function jMsg(t, ok) { const m = $('#jf-msg'); m.textContent = t; m.className = ok ? 'okmsg' : 'errmsg'; }
+  $('#jf-solw').addEventListener('click', () => {
+    const sol = K.map.get('SOLUSDT'), eur = K.eur;
+    const a1 = $('#jf-a1').value.trim().toUpperCase(), a2 = $('#jf-a2').value.trim().toUpperCase();
+    const qty = a1 === 'SOL' ? num($('#jf-m1').value) : (a2 === 'SOL' ? num($('#jf-m2').value) : NaN);
+    if (!sol || !eur) { jMsg('Der SOL- oder Euro-Kurs ist gerade nicht geladen. Öffne kurz den Tab Krypto.', false); return; }
+    if (!isFinite(qty)) { jMsg('Trage zuerst ein, wie viel SOL abgegeben oder erhalten wurde.', false); return; }
+    const v = qty * sol.c / eur;
+    $('#jf-w').value = nf(2).format(v);
+    jMsg('1 SOL ≈ ' + fEur(sol.c / eur) + ' (jetzt). Für einen älteren Trade den Kurs zum Trade-Zeitpunkt nehmen.', true);
+  });
+  $('#jf').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const it = { id: 't' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), ts: new Date($('#jf-ts').value).toISOString(), plattform: $('#jf-pl').value, klasse: $('#jf-kl').value, art: $('#jf-art').value,
+      asset: $('#jf-a1').value.trim().toUpperCase(), menge: num($('#jf-m1').value), wert: num($('#jf-w').value), gebuehr: num($('#jf-g').value) || 0, notiz: $('#jf-n').value.trim() };
+    if (it.art === 'tausch') { it.asset2 = $('#jf-a2').value.trim().toUpperCase(); it.menge2 = num($('#jf-m2').value); }
+    if (!it.asset || !(it.menge > 0) || !(it.wert >= 0) || isNaN(new Date(it.ts))) { jMsg('Bitte Datum, Was, Menge und Wert ausfüllen. Zahlen mit Komma oder Punkt.', false); return; }
+    if (it.art === 'tausch' && (!it.asset2 || !(it.menge2 > 0))) { jMsg('Beim Tausch bitte auch eintragen, was und wie viel du erhalten hast.', false); return; }
+    if (JR.pending && JR.pending.txid) it.txid = JR.pending.txid;
+    JR.items.push(it); JR.pending = null; $('#j-hint').replaceChildren();
+    ['#jf-a1', '#jf-m1', '#jf-a2', '#jf-m2', '#jf-w', '#jf-g', '#jf-n'].forEach((s) => { $(s).value = ''; });
+    $('#jf-ts').value = nowLocal();
+    jMsg('Gespeichert: ' + ART[it.art] + ' ' + fQty(it.menge) + ' ' + it.asset + (it.art === 'tausch' ? ' gegen ' + fQty(it.menge2) + ' ' + it.asset2 : '') + ' für ' + fEur(it.wert) + '. Stimmt das nicht, lösch den Eintrag unten und trag ihn neu ein.', true);
+    await jPersist(true);
+    if (!JR.handle) jFileState('Im Browser gesichert. Lege eine Datei auf dem Desktop an, damit es auch außerhalb des Browsers gespeichert ist.', true);
+  });
+  // FIFO-Berechnung
+  function jCompute() {
+    const items = JR.items.slice().sort((a, b) => a.ts.localeCompare(b.ts));
+    const lots = {}, sales = [], warn = [];
+    const buy = (asset, qty, cost, ts) => { (lots[asset] = lots[asset] || []).push({ qty, unit: cost / qty, ts }); };
+    const sell = (asset, qty, proceeds, ts, klasse, ref) => {
+      let left = qty; const q = lots[asset] || [];
+      while (left > 1e-12 && q.length) {
+        const lot = q[0], take = Math.min(left, lot.qty), share = take / qty;
+        const held = (new Date(ts) - new Date(lot.ts)) / 86400000;
+        const oneYear = new Date(lot.ts); oneYear.setFullYear(oneYear.getFullYear() + 1);
+        sales.push({ ts, asset, qty: take, erloes: proceeds * share, kosten: lot.unit * take, tage: Math.floor(held), frei: new Date(ts) > oneYear, klasse, ref });
+        lot.qty -= take; left -= take; if (lot.qty <= 1e-12) q.shift();
+      }
+      if (left > 1e-9) { warn.push(asset); sales.push({ ts, asset, qty: left, erloes: proceeds * (left / qty), kosten: null, tage: null, frei: false, klasse, ref, fehlt: true }); }
+    };
+    items.forEach((it) => {
+      if (it.art === 'kauf') buy(it.asset, it.menge, it.wert + (it.gebuehr || 0), it.ts);
+      else if (it.art === 'verkauf') sell(it.asset, it.menge, it.wert - (it.gebuehr || 0), it.ts, it.klasse, it.id);
+      else if (it.art === 'tausch') { sell(it.asset, it.menge, it.wert - (it.gebuehr || 0), it.ts, it.klasse, it.id); buy(it.asset2, it.menge2, it.wert, it.ts); }
+    });
+    sales.forEach((s) => { s.ergebnis = s.kosten == null ? null : s.erloes - s.kosten; });
+    return { sales, warn: Array.from(new Set(warn)) };
+  }
+  function renderJournal() {
+    const { sales, warn } = jCompute();
+    const years = Array.from(new Set([String(new Date().getFullYear())].concat(sales.map((s) => s.ts.slice(0, 4))).concat(JR.items.map((i) => i.ts.slice(0, 4))))).sort().reverse();
+    const ys = $('#jy'); ys.replaceChildren(); years.forEach((y) => { const o = el('option', '', y); o.value = y; ys.appendChild(o); }); ys.value = JR.year;
+    const ySales = sales.filter((s) => s.ts.slice(0, 4) === JR.year && s.klasse === 'krypto');
+    const pflicht = ySales.filter((s) => !s.frei && s.ergebnis != null), frei = ySales.filter((s) => s.frei && s.ergebnis != null);
+    const gew = pflicht.filter((s) => s.ergebnis > 0).reduce((a, s) => a + s.ergebnis, 0);
+    const verl = pflicht.filter((s) => s.ergebnis < 0).reduce((a, s) => a + s.ergebnis, 0);
+    const netto = gew + verl, freiSum = frei.reduce((a, s) => a + s.ergebnis, 0);
+    const card = (k, v, t, c) => { const d = el('div', 'card'); d.appendChild(el('span', 'kicker', k)); d.appendChild(el('b', c || '', v)); if (t) d.appendChild(el('span', 'muted small', t)); return d; };
+    let fz, fzc;
+    if (netto < 1000) { fz = 'Unter der Freigrenze'; fzc = 'up'; } else { fz = 'Über der Freigrenze'; fzc = 'down'; }
+    const host = $('#jsum'); host.replaceChildren(
+      card('Steuerpflichtiges Ergebnis ' + JR.year, fEur(netto), 'Gewinne ' + fEur(gew) + ', Verluste ' + fEur(verl), cls(netto)),
+      card('Freigrenze 1.000 €', fz, netto < 1000 ? (netto > 0 ? 'Noch ' + fEur(1000 - netto) + ' bis zur Grenze. Ab 1.000 € zählt der ganze Betrag.' : 'Nach heutigem Stand steuerfrei.') : 'Der ganze Betrag gehört in die Anlage SO deiner Steuererklärung.', fzc),
+      card('Steuerfrei nach 1 Jahr', fEur(freiSum), 'Gewinne aus Coins, die du länger als ein Jahr gehalten hast'));
+    if (warn.length) host.appendChild(card('Fehlende Kaufdaten', warn.join(', '), 'Du hast mehr verkauft, als eingetragen gekauft wurde. Trage die fehlenden Käufe nach, sonst stimmt die Rechnung nicht.', 'down'));
+    const tb = $('#jsales tbody'); tb.replaceChildren();
+    sales.slice().reverse().forEach((s) => {
+      const tr = el('tr'); tr.style.cursor = 'default';
+      tr.append(el('td', '', fDate(s.ts)), el('td', '', s.asset), el('td', '', fQty(s.qty)), el('td', '', fEur(s.erloes)), el('td', '', s.kosten == null ? 'fehlt' : fEur(s.kosten)), el('td', cls(s.ergebnis), s.ergebnis == null ? '–' : fEur(s.ergebnis)),
+        el('td', 'muted', s.tage == null ? '–' : s.tage + ' Tage'), el('td', s.klasse !== 'krypto' ? 'muted' : (s.frei ? 'up' : ''), s.klasse !== 'krypto' ? 'zieht Broker ab' : s.frei ? 'steuerfrei' : 'steuerpflichtig'));
+      tb.appendChild(tr);
+    });
+    if (!sales.length) { const tr = el('tr'); const td = el('td', 'empty', 'Noch keine Verkäufe. Gewinne und Verluste erscheinen hier, sobald du etwas verkaufst oder tauschst.'); td.colSpan = 8; tr.appendChild(td); tb.appendChild(tr); }
+    const ta = $('#jall tbody'); ta.replaceChildren();
+    JR.items.slice().sort((a, b) => b.ts.localeCompare(a.ts)).forEach((it) => {
+      const tr = el('tr'); tr.style.cursor = 'default';
+      const what = it.art === 'tausch' ? it.asset + ' → ' + it.asset2 : it.asset;
+      const qty = it.art === 'tausch' ? fQty(it.menge) + ' → ' + fQty(it.menge2) : fQty(it.menge);
+      tr.append(el('td', '', fDate(it.ts)), el('td', '', ART[it.art]), el('td', '', what), el('td', '', qty), el('td', '', fEur(it.wert)), el('td', 'muted', it.plattform));
+      const td = el('td'); const del = el('button', 'btn danger', 'Löschen'); del.type = 'button';
+      del.addEventListener('click', async () => {
+        if (del.dataset.confirm !== '1') { del.dataset.confirm = '1'; del.textContent = 'Wirklich löschen?'; setTimeout(() => { if (del.isConnected) { del.dataset.confirm = ''; del.textContent = 'Löschen'; } }, 4000); return; }
+        JR.items = JR.items.filter((x) => x.id !== it.id); await jPersist(true);
+      });
+      td.appendChild(del); tr.appendChild(td); ta.appendChild(tr);
+    });
+    if (!JR.items.length) { const tr = el('tr'); const td = el('td', 'empty', 'Noch keine Einträge.'); td.colSpan = 7; tr.appendChild(td); ta.appendChild(tr); }
+    $('#jcount').textContent = JR.items.length + ' Einträge';
+  }
+  $('#jy').addEventListener('change', (e) => { JR.year = e.target.value; renderJournal(); });
+  $('#jfile-csv').addEventListener('click', () => {
+    const { sales } = jCompute();
+    const q = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+    const n2 = (v) => v == null || !isFinite(v) ? '' : v.toFixed(2).replace('.', ',');
+    const lines = [['Typ', 'Datum', 'Art', 'Was', 'Menge', 'Erhalten', 'Menge erhalten', 'Wert EUR', 'Gebuehr EUR', 'Plattform', 'Anlageart', 'Transaktions-ID', 'Notiz'].map(q).join(';')];
+    JR.items.slice().sort((a, b) => a.ts.localeCompare(b.ts)).forEach((it) => lines.push(['Eintrag', fDate(it.ts), ART[it.art], it.asset, String(it.menge).replace('.', ','), it.asset2 || '', it.menge2 != null ? String(it.menge2).replace('.', ',') : '', n2(it.wert), n2(it.gebuehr), it.plattform, it.klasse, it.txid || '', it.notiz || ''].map(q).join(';')));
+    lines.push('');
+    lines.push(['Typ', 'Datum Verkauf', 'Was', 'Menge', 'Erloes EUR', 'Anschaffungskosten EUR (FIFO)', 'Ergebnis EUR', 'Haltedauer Tage', 'Steuer'].map(q).join(';'));
+    sales.forEach((s) => lines.push(['Verkauf', fDate(s.ts), s.asset, String(s.qty).replace('.', ','), n2(s.erloes), s.kosten == null ? 'fehlt' : n2(s.kosten), n2(s.ergebnis), s.tage == null ? '' : s.tage, s.klasse !== 'krypto' ? 'Broker zieht ab' : s.frei ? 'steuerfrei (ueber 1 Jahr)' : 'steuerpflichtig'].map(q).join(';')));
+    const blob = new Blob(['﻿' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'MyTradingSinc-Steuerliste-' + new Date().toISOString().slice(0, 10) + '.csv';
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  });
+  // Vorschlag nach einem Jupiter-Trade
+  function jFromJupiter(res) {
+    const qr = res && res.quoteResponseMeta && (res.quoteResponseMeta.quoteResponse || res.quoteResponseMeta);
+    JR.pending = { txid: res && res.txid };
+    const inSol = qr && qr.inputMint === SOL_MINT, outSol = qr && qr.outputMint === SOL_MINT;
+    $('#jf-ts').value = nowLocal(); $('#jf-pl').value = 'Jupiter (Wallet)'; $('#jf-kl').value = 'krypto'; $('#jf-art').value = 'tausch'; jFormMode();
+    $('#jf-n').value = res && res.txid ? 'Signatur ' + res.txid : '';
+    if (inSol) { $('#jf-a1').value = 'SOL'; if (qr.inAmount) $('#jf-m1').value = nf(6).format(+qr.inAmount / 1e9); $('#jf-a2').value = J.sym || ''; }
+    if (outSol) { $('#jf-a2').value = 'SOL'; if (qr.outAmount) $('#jf-m2').value = nf(6).format(+qr.outAmount / 1e9); $('#jf-a1').value = J.sym || ''; }
+    const h = $('#j-hint'); h.replaceChildren();
+    const bn = el('div', 'banner');
+    bn.appendChild(el('span', '', 'Ein Trade über Jupiter wurde erkannt. Prüfe die vorausgefüllten Felder, ergänze die fehlende Menge und klicke auf Speichern.'));
+    if (res && res.txid) { const a = el('a', '', 'Transaktion ansehen'); a.href = 'https://solscan.io/tx/' + res.txid; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.className = 'btn'; bn.appendChild(a); }
+    h.appendChild(bn);
+    const tb = $('#j-trade-banner');
+    if (tb) { tb.hidden = false; }
+  }
+  window.__mtsJupiterSuccess = jFromJupiter;
+  async function jInit() {
+    jLoadLocal(); $('#jf-ts').value = nowLocal(); jFormMode(); renderJournal();
+    try { const h = await idb('readonly', (st) => st.get('file')); if (h) { JR.handle = h; const ok = await jEnsurePerm(false); jFileState(ok ? 'Verbunden mit "' + h.name + '". Neue Einträge werden automatisch dort gespeichert.' : 'Datei "' + h.name + '" ist bekannt. Beim nächsten Speichern fragt der Browser einmal nach Erlaubnis.'); } } catch (e) { /* kein IndexedDB */ }
+    if (!fsOk) jFileState('Dein Browser kann nicht direkt in eine Datei speichern. Deine Einträge liegen im Browser, nutze "Steuerliste als CSV herunterladen" für eine Kopie. Am PC mit Chrome oder Edge geht das automatische Speichern.', true);
+  }
+  jInit();
+
   // ------------------------------------------------------------------ Tabs und Start
-  const VIEWS = ['krypto', 'meme', 'etf', 'news', 'lage', 'trade'];
+  const VIEWS = ['krypto', 'meme', 'etf', 'news', 'lage', 'trade', 'journal'];
   function show(tab) {
     if (!VIEWS.includes(tab)) tab = 'krypto';
     VIEWS.forEach((v) => { document.getElementById('v-' + v).hidden = v !== tab; });
