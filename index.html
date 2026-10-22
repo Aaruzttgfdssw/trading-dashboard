@@ -73,8 +73,8 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
 .lvl-1 { color: var(--fg); background: var(--panel2); }
 @media (prefers-reduced-motion: no-preference) {
   .fu { animation: fu .8s ease-out; } .fd { animation: fd .8s ease-out; }
-  @keyframes fu { from { background: color-mix(in srgb, var(--up) 28%, transparent); } to { background: transparent; } }
-  @keyframes fd { from { background: color-mix(in srgb, var(--down) 28%, transparent); } to { background: transparent; } }
+  @keyframes fu { from { background: color-mix(in srgb, var(--up) 14%, transparent); } to { background: transparent; } }
+  @keyframes fd { from { background: color-mix(in srgb, var(--down) 14%, transparent); } to { background: transparent; } }
 }
 
 .dh { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
@@ -280,22 +280,21 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
         <div class="box">
           <div class="box-h"><h2>Speicherort auf deinem Computer</h2></div>
           <div class="box-b">
-            <p class="small" id="jfile-state" style="margin:0 0 8px">Noch keine Datei verbunden. Deine Einträge liegen bis dahin nur in diesem Browser.</p>
+            <p class="small" id="jfile-state" style="margin:0 0 8px">Noch kein Ordner verbunden. Deine Einträge liegen bis dahin nur in diesem Browser.</p>
             <div class="links" style="margin-top:0">
-              <button class="btn primary" type="button" id="jfile-new">Datei auf dem Desktop anlegen</button>
-              <button class="btn" type="button" id="jfile-open">Bestehende Datei öffnen</button>
+              <button class="btn primary" type="button" id="jfile-new">Ordner "Trading Historie" verbinden</button>
               <button class="btn" type="button" id="jfile-csv">Steuerliste als CSV herunterladen</button>
             </div>
-            <p class="note">Nach jedem Eintrag speichert die Seite automatisch in die gewählte Datei. Beim ersten Speichern nach dem Öffnen der Seite fragt der Browser einmal nach Erlaubnis. Das funktioniert in Chrome und Edge am PC. Die CSV-Datei öffnest du mit Excel und gibst sie deinem Steuerberater oder einem Steuerprogramm.</p>
+            <p class="note">Wähle im Fenster auf dem Desktop den Ordner "Trading Historie" und klicke auf "Ordner auswählen", dann auf "Änderungen speichern" oder "Zulassen". Danach speichert die Seite nach jedem Eintrag automatisch dort: das Journal und pro Jahr eine Steuerliste, die du mit Excel öffnest. Beim ersten Speichern nach dem Öffnen der Seite fragt der Browser einmal nach. Das funktioniert in Chrome und Edge am PC, nicht im Browser-Fenster neben dem Claude-Chat.</p>
           </div>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
         <div class="box">
-          <div class="box-h"><h2>Steuer-Übersicht Krypto</h2><select id="jy" class="search" style="width:auto" aria-label="Jahr"></select></div>
+          <div class="box-h"><h2>Steuer-Übersicht Krypto</h2><div class="tools"><label class="small muted" for="jrate">Dein Steuersatz</label><input id="jrate" class="search" style="width:4.5rem" type="text" inputmode="decimal" value="30" aria-label="Persönlicher Steuersatz in Prozent"><span class="small muted">%</span><select id="jy" class="search" style="width:auto" aria-label="Jahr"></select></div></div>
           <div class="box-b">
             <div class="sum" id="jsum"></div>
-            <p class="note">So rechnet die Seite (Stand 2026, keine Steuerberatung): Krypto ist in Deutschland ein privates Veräußerungsgeschäft. Gewinne sind steuerfrei, wenn du länger als ein Jahr gehalten hast. Verkaufst du früher, zählt der Gewinn. Liegen alle steuerpflichtigen Gewinne und Verluste eines Jahres zusammen unter 1.000 €, bleibt alles steuerfrei (Freigrenze). Ab 1.000 € ist der ganze Betrag steuerpflichtig und kommt in die Anlage SO. Auch ein Tausch Coin gegen Coin zählt als Verkauf. Verkauft wird rechnerisch immer zuerst das, was du zuerst gekauft hast (FIFO). ETFs und Aktien bei einem deutschen Broker: Die Steuer zieht der Broker automatisch ab. Stelle dort einen Freistellungsauftrag (bis 1.000 € im Jahr steuerfrei).</p>
+            <p class="note">So rechnet die Seite (Stand 2026, keine Steuerberatung): Krypto ist in Deutschland ein privates Veräußerungsgeschäft. Gewinne sind steuerfrei, wenn du länger als ein Jahr gehalten hast. Verkaufst du früher, zählt der Gewinn. Liegen alle steuerpflichtigen Gewinne und Verluste eines Jahres zusammen unter 1.000 €, bleibt alles steuerfrei (Freigrenze). Ab 1.000 € ist der ganze Betrag steuerpflichtig und kommt in die Anlage SO. Auch ein Tausch Coin gegen Coin zählt als Verkauf. Verkauft wird rechnerisch immer zuerst das, was du zuerst gekauft hast (FIFO). ETFs und Aktien bei einem deutschen Broker: Die Steuer zieht der Broker automatisch ab. Stelle dort einen Freistellungsauftrag (bis 1.000 € im Jahr steuerfrei). Die geschätzte Steuer rechnet mit deinem persönlichen Steuersatz. Den findest du in deinem letzten Steuerbescheid, für Arbeitnehmer liegt er oft zwischen 20 und 35 %. Kirchensteuer und Solidaritätszuschlag sind nicht eingerechnet.</p>
           </div>
         </div>
         <div class="box">
@@ -931,7 +930,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   }
 
   // ------------------------------------------------------------------ JOURNAL (Trades, Steuer, Datei)
-  const JR = { items: [], handle: null, perm: false, pending: null, year: String(new Date().getFullYear()) };
+  const JR = { items: [], dir: null, perm: false, pending: null, year: String(new Date().getFullYear()) };
   const LSKEY = 'mts-journal-v1';
   // Deutsche Schreibweise: Komma = Dezimal, Punkt = Tausender ("1.000.000" = eine Million, "0,5" = ein halb)
   const num = (v) => {
@@ -955,45 +954,45 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       req.onerror = () => rej(req.error);
     });
   }
-  const fsOk = 'showSaveFilePicker' in window;
+  const fsOk = 'showDirectoryPicker' in window;
   function jFileState(text, err) { const e = $('#jfile-state'); e.textContent = text; e.className = 'small ' + (err ? 'errmsg' : ''); }
   async function jEnsurePerm(ask) {
-    if (!JR.handle) return false;
+    if (!JR.dir) return false;
     try {
-      let p = await JR.handle.queryPermission({ mode: 'readwrite' });
-      if (p !== 'granted' && ask) p = await JR.handle.requestPermission({ mode: 'readwrite' });
+      let p = await JR.dir.queryPermission({ mode: 'readwrite' });
+      if (p !== 'granted' && ask) p = await JR.dir.requestPermission({ mode: 'readwrite' });
       JR.perm = p === 'granted'; return JR.perm;
     } catch (e) { return false; }
   }
-  async function jWriteFile(ask) {
-    if (!JR.handle) return false;
-    if (!(await jEnsurePerm(ask))) { jFileState('Datei "' + JR.handle.name + '" ist verbunden, aber der Browser braucht deine Erlaubnis. Klicke beim nächsten Speichern auf "Zulassen".', true); return false; }
-    try {
-      const w = await JR.handle.createWritable(); await w.write(JSON.stringify(jPayload(), null, 1)); await w.close();
-      jFileState('Gespeichert in "' + JR.handle.name + '" um ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date()) + '.');
-      return true;
-    } catch (e) { jFileState('Speichern in die Datei hat nicht geklappt (' + e.message + '). Deine Einträge sind im Browser gesichert.', true); return false; }
+  async function jWriteText(name, text) {
+    const fh = await JR.dir.getFileHandle(name, { create: true });
+    const w = await fh.createWritable(); await w.write(text); await w.close();
   }
-  async function jPersist(ask) { jSaveLocal(); renderJournal(); if (JR.handle) await jWriteFile(ask); }
+  async function jWriteFile(ask) {
+    if (!JR.dir) return false;
+    if (!(await jEnsurePerm(ask))) { jFileState('Ordner "' + JR.dir.name + '" ist verbunden, aber der Browser braucht deine Erlaubnis. Klicke beim nächsten Speichern auf "Zulassen".', true); return false; }
+    try {
+      await jWriteText('MyTradingSinc-Journal.json', JSON.stringify(jPayload(), null, 1));
+      const years = Array.from(new Set(JR.items.map((i) => i.ts.slice(0, 4))));
+      for (const y of years) await jWriteText('Steuerliste-' + y + '.csv', jCsv(y));
+      jFileState('Gespeichert im Ordner "' + JR.dir.name + '" um ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date()) + ' (Journal und ' + years.length + ' Steuerliste' + (years.length === 1 ? '' : 'n') + ').');
+      return true;
+    } catch (e) { jFileState('Speichern in den Ordner hat nicht geklappt (' + e.message + '). Deine Einträge sind im Browser gesichert.', true); return false; }
+  }
+  async function jPersist(ask) { jSaveLocal(); renderJournal(); if (JR.dir) await jWriteFile(ask); }
   $('#jfile-new').addEventListener('click', async () => {
-    if (!fsOk) { jFileState('Dein Browser kann keine Datei direkt speichern. Nutze Chrome oder Edge am PC, oder lade die CSV-Datei herunter.', true); return; }
+    if (!fsOk) { jFileState('Dieser Browser kann nicht direkt in einen Ordner speichern. Öffne die Seite in Chrome oder Edge am PC, oder lade die CSV-Datei herunter.', true); return; }
     try {
-      JR.handle = await window.showSaveFilePicker({ suggestedName: 'MyTradingSinc-Journal.json', startIn: 'desktop', types: [{ description: 'Trade-Journal', accept: { 'application/json': ['.json'] } }] });
-      await idb('readwrite', (st) => st.put(JR.handle, 'file')).catch(() => {});
-      await jWriteFile(true);
-    } catch (e) { if (e.name !== 'AbortError') jFileState('Datei konnte nicht angelegt werden (' + e.message + ').', true); }
-  });
-  $('#jfile-open').addEventListener('click', async () => {
-    if (!('showOpenFilePicker' in window)) { jFileState('Dein Browser kann keine Datei direkt öffnen. Nutze Chrome oder Edge am PC.', true); return; }
-    try {
-      const [h] = await window.showOpenFilePicker({ startIn: 'desktop', types: [{ description: 'Trade-Journal', accept: { 'application/json': ['.json'] } }] });
-      const data = JSON.parse(await (await h.getFile()).text());
-      if (!data || !Array.isArray(data.eintraege)) throw new Error('Das ist keine Journal-Datei von MyTradingSinc');
-      const ids = new Set(JR.items.map((x) => x.id));
-      data.eintraege.forEach((x) => { if (!ids.has(x.id)) JR.items.push(x); });
-      JR.handle = h; await idb('readwrite', (st) => st.put(h, 'file')).catch(() => {});
+      const dir = await window.showDirectoryPicker({ id: 'trading-historie', mode: 'readwrite', startIn: 'desktop' });
+      JR.dir = dir;
+      try {
+        const fh = await dir.getFileHandle('MyTradingSinc-Journal.json');
+        const data = JSON.parse(await (await fh.getFile()).text());
+        if (data && Array.isArray(data.eintraege)) { const ids = new Set(JR.items.map((x) => x.id)); data.eintraege.forEach((x) => { if (!ids.has(x.id)) JR.items.push(x); }); }
+      } catch (e) { /* noch kein Journal im Ordner */ }
+      await idb('readwrite', (st) => st.put(dir, 'dir')).catch(() => {});
       await jPersist(true);
-    } catch (e) { if (e.name !== 'AbortError') jFileState('Datei konnte nicht geöffnet werden (' + e.message + ').', true); }
+    } catch (e) { if (e.name !== 'AbortError') jFileState('Ordner konnte nicht verbunden werden (' + e.message + ').', true); }
   });
   // Formular
   const ART = { kauf: 'Kauf', verkauf: 'Verkauf', tausch: 'Tausch' };
@@ -1030,7 +1029,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     $('#jf-ts').value = nowLocal();
     jMsg('Gespeichert: ' + ART[it.art] + ' ' + fQty(it.menge) + ' ' + it.asset + (it.art === 'tausch' ? ' gegen ' + fQty(it.menge2) + ' ' + it.asset2 : '') + ' für ' + fEur(it.wert) + '. Stimmt das nicht, lösch den Eintrag unten und trag ihn neu ein.', true);
     await jPersist(true);
-    if (!JR.handle) jFileState('Im Browser gesichert. Lege eine Datei auf dem Desktop an, damit es auch außerhalb des Browsers gespeichert ist.', true);
+    if (!JR.dir) jFileState('Im Browser gesichert. Verbinde den Ordner "Trading Historie", damit es auch auf deinem Desktop gespeichert ist.', true);
   });
   // FIFO-Berechnung
   function jCompute() {
@@ -1071,6 +1070,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     const host = $('#jsum'); host.replaceChildren(
       card('Steuerpflichtiges Ergebnis ' + JR.year, fEur(netto), 'Gewinne ' + fEur(gew) + ', Verluste ' + fEur(verl), cls(netto)),
       card('Freigrenze 1.000 €', fz, netto < 1000 ? (netto > 0 ? 'Noch ' + fEur(1000 - netto) + ' bis zur Grenze. Ab 1.000 € zählt der ganze Betrag.' : 'Nach heutigem Stand steuerfrei.') : 'Der ganze Betrag gehört in die Anlage SO deiner Steuererklärung.', fzc),
+      card('Geschätzte Steuer ' + JR.year, fEur(netto >= 1000 ? netto * jRate() / 100 : 0), netto >= 1000 ? 'Bei ' + jRate() + ' % Steuersatz. Das zahlst du mit der Steuererklärung nach.' : 'Unter der Freigrenze fällt keine Steuer an.', netto >= 1000 ? 'down' : 'up'),
       card('Steuerfrei nach 1 Jahr', fEur(freiSum), 'Gewinne aus Coins, die du länger als ein Jahr gehalten hast'));
     if (warn.length) host.appendChild(card('Fehlende Kaufdaten', warn.join(', '), 'Du hast mehr verkauft, als eingetragen gekauft wurde. Trage die fehlenden Käufe nach, sonst stimmt die Rechnung nicht.', 'down'));
     const tb = $('#jsales tbody'); tb.replaceChildren();
@@ -1098,19 +1098,41 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     $('#jcount').textContent = JR.items.length + ' Einträge';
   }
   $('#jy').addEventListener('change', (e) => { JR.year = e.target.value; renderJournal(); });
-  $('#jfile-csv').addEventListener('click', () => {
+  function jRate() { const r = num($('#jrate').value); return isFinite(r) && r >= 0 && r <= 60 ? r : 30; }
+  function jTax(year) {
+    const { sales } = jCompute();
+    const ys = sales.filter((s) => s.ts.slice(0, 4) === year && s.klasse === 'krypto' && s.ergebnis != null);
+    const netto = ys.filter((s) => !s.frei).reduce((a, s) => a + s.ergebnis, 0);
+    const steuer = netto >= 1000 ? netto * jRate() / 100 : 0;
+    return { sales, netto, steuer };
+  }
+  function jCsv(year) {
     const { sales } = jCompute();
     const q = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
     const n2 = (v) => v == null || !isFinite(v) ? '' : v.toFixed(2).replace('.', ',');
-    const lines = [['Typ', 'Datum', 'Art', 'Was', 'Menge', 'Erhalten', 'Menge erhalten', 'Wert EUR', 'Gebuehr EUR', 'Plattform', 'Anlageart', 'Transaktions-ID', 'Notiz'].map(q).join(';')];
-    JR.items.slice().sort((a, b) => a.ts.localeCompare(b.ts)).forEach((it) => lines.push(['Eintrag', fDate(it.ts), ART[it.art], it.asset, String(it.menge).replace('.', ','), it.asset2 || '', it.menge2 != null ? String(it.menge2).replace('.', ',') : '', n2(it.wert), n2(it.gebuehr), it.plattform, it.klasse, it.txid || '', it.notiz || ''].map(q).join(';')));
+    const inYear = (ts) => !year || ts.slice(0, 4) === year;
+    const t = year ? jTax(year) : null;
+    const lines = [];
+    if (t) {
+      lines.push(q('MyTradingSinc Steuerliste ' + year + ' (Schaetzung, keine Steuerberatung)'));
+      lines.push([q('Steuerpflichtiges Ergebnis Krypto EUR'), q(n2(t.netto))].join(';'));
+      lines.push([q('Freigrenze 1.000 EUR'), q(t.netto < 1000 ? 'unterschritten, steuerfrei' : 'ueberschritten, ganzer Betrag in Anlage SO')].join(';'));
+      lines.push([q('Geschaetzte Steuer EUR bei ' + jRate() + ' %'), q(n2(t.steuer))].join(';'));
+      lines.push('');
+    }
+    lines.push(['Typ', 'Datum', 'Art', 'Was', 'Menge', 'Erhalten', 'Menge erhalten', 'Wert EUR', 'Gebuehr EUR', 'Plattform', 'Anlageart', 'Transaktions-ID', 'Notiz'].map(q).join(';'));
+    JR.items.slice().sort((a, b) => a.ts.localeCompare(b.ts)).filter((it) => inYear(it.ts)).forEach((it) => lines.push(['Eintrag', fDate(it.ts), ART[it.art], it.asset, String(it.menge).replace('.', ','), it.asset2 || '', it.menge2 != null ? String(it.menge2).replace('.', ',') : '', n2(it.wert), n2(it.gebuehr), it.plattform, it.klasse, it.txid || '', it.notiz || ''].map(q).join(';')));
     lines.push('');
     lines.push(['Typ', 'Datum Verkauf', 'Was', 'Menge', 'Erloes EUR', 'Anschaffungskosten EUR (FIFO)', 'Ergebnis EUR', 'Haltedauer Tage', 'Steuer'].map(q).join(';'));
-    sales.forEach((s) => lines.push(['Verkauf', fDate(s.ts), s.asset, String(s.qty).replace('.', ','), n2(s.erloes), s.kosten == null ? 'fehlt' : n2(s.kosten), n2(s.ergebnis), s.tage == null ? '' : s.tage, s.klasse !== 'krypto' ? 'Broker zieht ab' : s.frei ? 'steuerfrei (ueber 1 Jahr)' : 'steuerpflichtig'].map(q).join(';')));
-    const blob = new Blob(['﻿' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'MyTradingSinc-Steuerliste-' + new Date().toISOString().slice(0, 10) + '.csv';
+    sales.filter((s) => inYear(s.ts)).forEach((s) => lines.push(['Verkauf', fDate(s.ts), s.asset, String(s.qty).replace('.', ','), n2(s.erloes), s.kosten == null ? 'fehlt' : n2(s.kosten), n2(s.ergebnis), s.tage == null ? '' : s.tage, s.klasse !== 'krypto' ? 'Broker zieht ab' : s.frei ? 'steuerfrei (ueber 1 Jahr)' : 'steuerpflichtig'].map(q).join(';')));
+    return '﻿' + lines.join('\r\n');
+  }
+  $('#jfile-csv').addEventListener('click', () => {
+    const blob = new Blob([jCsv(JR.year)], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'Steuerliste-' + JR.year + '.csv';
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   });
+  $('#jrate').addEventListener('change', async () => { try { localStorage.setItem('mts-rate', String(jRate())); } catch (e) { /* egal */ } await jPersist(false); });
   // Vorschlag nach einem Jupiter-Trade
   function jFromJupiter(res) {
     const qr = res && res.quoteResponseMeta && (res.quoteResponseMeta.quoteResponse || res.quoteResponseMeta);
@@ -1131,8 +1153,10 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   window.__mtsJupiterSuccess = jFromJupiter;
   async function jInit() {
     jLoadLocal(); $('#jf-ts').value = nowLocal(); jFormMode(); renderJournal();
-    try { const h = await idb('readonly', (st) => st.get('file')); if (h) { JR.handle = h; const ok = await jEnsurePerm(false); jFileState(ok ? 'Verbunden mit "' + h.name + '". Neue Einträge werden automatisch dort gespeichert.' : 'Datei "' + h.name + '" ist bekannt. Beim nächsten Speichern fragt der Browser einmal nach Erlaubnis.'); } } catch (e) { /* kein IndexedDB */ }
-    if (!fsOk) jFileState('Dein Browser kann nicht direkt in eine Datei speichern. Deine Einträge liegen im Browser, nutze "Steuerliste als CSV herunterladen" für eine Kopie. Am PC mit Chrome oder Edge geht das automatische Speichern.', true);
+    try { const r = localStorage.getItem('mts-rate'); if (r) $('#jrate').value = r; } catch (e) { /* egal */ }
+    renderJournal();
+    try { const h = await idb('readonly', (st) => st.get('dir')); if (h) { JR.dir = h; const ok = await jEnsurePerm(false); jFileState(ok ? 'Verbunden mit dem Ordner "' + h.name + '". Neue Einträge werden automatisch dort gespeichert.' : 'Ordner "' + h.name + '" ist bekannt. Beim nächsten Speichern fragt der Browser einmal nach Erlaubnis.'); } } catch (e) { /* kein IndexedDB */ }
+    if (!fsOk) jFileState('Dieser Browser kann nicht direkt in einen Ordner speichern. Deine Einträge liegen im Browser. Öffne die Seite in Chrome oder Edge am PC für das automatische Speichern, oder lade die CSV-Datei herunter.', true);
   }
   jInit();
 
