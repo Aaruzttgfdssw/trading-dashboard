@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-22T04:12:21+00:00",
+ "erzeugt": "2026-10-22T09:34:03+00:00",
  "kurse": {
-  "stand": "2026-10-22T04:12:22+00:00",
+  "stand": "2026-10-22T09:34:03+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 82834,
-    "aend24": 0.1488,
-    "aend7": 1.7027,
-    "marktkap": 1665242668999,
-    "volumen": 35497597156
+    "preis": 81700,
+    "aend24": -2.18656,
+    "aend7": 0.4385,
+    "marktkap": 1642321260746,
+    "volumen": 37456750826
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2442.19,
-    "aend24": -0.00544,
-    "aend7": 2.7061,
-    "marktkap": 298334068335,
-    "volumen": 14449877793
+    "preis": 2398.98,
+    "aend24": -2.59625,
+    "aend7": 1.2671,
+    "marktkap": 293040805235,
+    "volumen": 14167763636
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 105.45,
-    "aend24": -0.30027,
-    "aend7": 2.095,
-    "marktkap": 62206591693,
-    "volumen": 2697670860
+    "preis": 103.67,
+    "aend24": -3.09593,
+    "aend7": 0.5883,
+    "marktkap": 61124699684,
+    "volumen": 2893732089
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.35,
-    "aend24": 0.99222,
-    "aend7": 2.0532,
-    "marktkap": 84939448524,
-    "volumen": 1845382025
+    "preis": 1.33,
+    "aend24": -2.6402,
+    "aend7": 1.123,
+    "marktkap": 83689516031,
+    "volumen": 1966574038
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.08031,
-    "aend24": -1.43774,
-    "aend7": 0.2062,
-    "marktkap": 12563023223,
-    "volumen": 555821287
+    "preis": 0.078926,
+    "aend24": -3.90263,
+    "aend7": -1.579,
+    "marktkap": 12344739185,
+    "volumen": 596102251
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-22T04:12:25+00:00",
+  "stand": "2026-10-22T09:34:07+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -268,8 +268,8 @@
      "d": "2026-10-22",
      "o": 84093.42,
      "h": 84377.21,
-     "l": 82670.74,
-     "c": 82891.65
+     "l": 81653.0,
+     "c": 81806.51
     }
    ],
    "ETH": [
@@ -480,8 +480,8 @@
      "d": "2026-10-22",
      "o": 2473.77,
      "h": 2482.49,
-     "l": 2434.2,
-     "c": 2444.06
+     "l": 2395.55,
+     "c": 2401.35
     }
    ],
    "SOL": [
@@ -692,8 +692,8 @@
      "d": "2026-10-22",
      "o": 106.97,
      "h": 107.5,
-     "l": 105.04,
-     "c": 105.51
+     "l": 103.55,
+     "c": 103.81
     }
    ],
    "XRP": [
@@ -904,8 +904,8 @@
      "d": "2026-10-22",
      "o": 1.3654,
      "h": 1.3698,
-     "l": 1.337,
-     "c": 1.3463
+     "l": 1.3252,
+     "c": 1.328
     }
    ],
    "DOGE": [
@@ -1116,16 +1116,104 @@
      "d": "2026-10-22",
      "o": 0.08198,
      "h": 0.08219,
-     "l": 0.07997,
-     "c": 0.08035
+     "l": 0.07878,
+     "c": 0.07901
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-22T04:12:26+00:00",
+  "stand": "2026-10-22T09:34:07+00:00",
   "quelle": "CoinDesk und Cointelegraph",
   "daten": [
+   {
+    "titel": "PHP flaw draws millions of exploit attempts, Cloudflare CEO warns",
+    "link": "https://cointelegraph.com/news/cloudflare-millions-exploit-attempts-php-vulnerability-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-22T09:06:02+00:00",
+    "text": "Cloudflare’s Matthew Prince said the network saw thousands of exploit attempts even before the PHP vulnerability was publicly disclosed.",
+    "tags": [
+     "Regulierung",
+     "Geopolitik",
+     "Hack/Betrug"
+    ]
+   },
+   {
+    "titel": "Asian stocks tumble, bitcoin retreats as China enters bear market",
+    "link": "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market",
+    "quelle": "CoinDesk",
+    "zeit": "2026-10-22T08:49:08+00:00",
+    "text": "Technology shares led regional losses as mixed U.S. earnings unsettled investors and Brent crude climbed above $112 a barrel.",
+    "tags": []
+   },
+   {
+    "titel": "Bitcoin ETFs bag another $528M, taking 3-day haul past $1B",
+    "link": "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-22T07:37:32+00:00",
+    "text": "US spot Bitcoin ETFs drew $1.08 billion over three trading sessions to push October flows back above water.",
+    "tags": [
+     "ETF"
+    ]
+   },
+   {
+    "titel": "China seeks to seize 61,800 BTC tied to $5.7 billion fraud scheme",
+    "link": "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme",
+    "quelle": "CoinDesk",
+    "zeit": "2026-10-22T06:24:10+00:00",
+    "text": "Chinese prosecutors are seeking to confiscate more than 61,800 Bitcoin tied to a $5.7 billion fraud scheme, days after a U.K. court ruled Chinese law governs victims’ claims to the coins.",
+    "tags": [
+     "Regulierung"
+    ]
+   },
+   {
+    "titel": "Here’s what happened in crypto today",
+    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-22T05:56:18+00:00",
+    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+    "tags": [
+     "Regulierung"
+    ]
+   },
+   {
+    "titel": "Move over memecoins: Crypto ‘meme games’ coming, bagholders and all",
+    "link": "https://cointelegraph.com/news/move-over-memecoins-crypto-meme-games-coming-bagholders-and-all?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "zeit": "2026-10-22T05:35:38+00:00",
+    "text": "“Plenty will be ponzis. Plenty will get exploited. Plenty will insta die. There will be ridiculous gains, and people will get absolutely f***ing rinsed,” says Illuvium co-founder Kieran Warwick.",
+    "tags": [
+     "Geopolitik",
+     "Hack/Betrug",
+     "Memecoins"
+    ]
+   },
+   {
+    "titel": "Solana’s biggest network change since 2020 is live. Here’s how users benefit",
+    "link": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users",
+    "quelle": "CoinDesk",
+    "zeit": "2026-10-22T05:24:58+00:00",
+    "text": "The new voting system targets settlement in about 150 milliseconds, potentially shortening waits for payments and deposits. Users can keep their existing wallets.",
+    "tags": []
+   },
+   {
+    "titel": "Bitcoin ETFs attract $1.08 billion in 3 days but it may not be enough for a steep rally",
+    "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally",
+    "quelle": "CoinDesk",
+    "zeit": "2026-10-22T04:41:59+00:00",
+    "text": "Past steep rallies ran on about $235 million a day of net inflows into ETFs. The funds are yet to match that pace, according to data analyzed by CoinDesk.",
+    "tags": [
+     "ETF"
+    ]
+   },
+   {
+    "titel": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
+    "link": "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours",
+    "quelle": "CoinDesk",
+    "zeit": "2026-10-22T04:36:20+00:00",
+    "text": "The fix lost its two-week countdown less than two days from the finish after support slipped to 26 of 35 validators. It’s now back at 31.",
+    "tags": []
+   },
    {
     "titel": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
     "link": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
@@ -1167,16 +1255,6 @@
     "tags": [
      "Prominente",
      "Hack/Betrug"
-    ]
-   },
-   {
-    "titel": "Here’s what happened in crypto today",
-    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T20:10:47+00:00",
-    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-    "tags": [
-     "Regulierung"
     ]
    },
    {
@@ -1326,91 +1404,33 @@
     "tags": [
      "Regulierung"
     ]
-   },
-   {
-    "titel": "Dogecoin wallet, app teams unite in push to give DOGE more everyday uses",
-    "link": "https://www.coindesk.com/tech/2026/10/21/dogecoin-wallet-app-teams-unite-in-push-to-give-doge-more-everyday-uses",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T12:00:00+00:00",
-    "text": "Dogecoin Labs will combine MyDoge, DogeOS and merchant payment tools as developers try to turn coin holders into customers for applications and businesses.",
-    "tags": [
-     "Memecoins"
-    ]
-   },
-   {
-    "titel": "Bitcoin risk management grows more popular as the 'just bet on price' era fades",
-    "link": "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T11:15:00+00:00",
-    "text": "Your day-ahead look for Oct. 21, 2026",
-    "tags": []
-   },
-   {
-    "titel": "OCC's final rule to start fresh in weighing stablecoin rewards against GENIUS Act ban",
-    "link": "https://www.coindesk.com/policy/2026/10/21/occ-s-final-rule-to-start-fresh-in-weighing-stablecoin-rewards-against-genius-act-ban",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T11:00:00+00:00",
-    "text": "The U.S. Office of the Comptroller of the Currency is the first of several federal agencies to finish writing regulations under the act.",
-    "tags": [
-     "Regulierung",
-     "Geopolitik"
-    ]
-   },
-   {
-    "titel": "PancakeSwap TVL tops $380M as major fee overhaul heads to vote",
-    "link": "https://cointelegraph.com/markets/pancakeswap-tvl-jumps-19-percent-fee-overhaul?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T10:50:52+00:00",
-    "text": "PancakeSwap’s proposed fee-sharing overhaul would give liquidity providers 88% of swap fees and cut CAKE emissions by 69%, as BNB Chain’s DeFi activity expands.",
-    "tags": []
-   },
-   {
-    "titel": "France proposes liability for crypto exchanges offering DeFi access",
-    "link": "https://cointelegraph.com/news/france-liability-crypto-exchange-defi-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T10:46:00+00:00",
-    "text": "French authorities want crypto exchanges to conduct checks on DeFi protocols and face liability for certain customer losses under proposed changes to EU crypto rules.",
-    "tags": []
-   },
-   {
-    "titel": "Bitcoin ‘top buyers’ halt BTC price upside with $87.7K now key: Glassnode",
-    "link": "https://cointelegraph.com/markets/bitcoin-top-buyers-halt-btc-price-upside-with-877k-now-key-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "zeit": "2026-10-21T10:39:13+00:00",
-    "text": "Bitcoin price current resistance near $87,000 was reinforced by investors who bought BTC in late 2025, per new research.",
-    "tags": []
-   },
-   {
-    "titel": "Crypto rises with Asian tech stocks, zcash extends gain after setting upgrade date",
-    "link": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T10:34:37+00:00",
-    "text": "Bitcoin rose to a one-week high as Asian tech stocks rebounded and SpaceX and Tesla formed committees to explore a merger.",
-    "tags": []
-   },
-   {
-    "titel": "Live updates: Bitcoin holds above $84,000 as Middle East worries resurface",
-    "link": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
-    "quelle": "CoinDesk",
-    "zeit": "2026-10-21T10:30:40+00:00",
-    "text": "South Korea data center player Elice surged 30% after plunging about the same amount following its IPO one day earlier.",
-    "tags": []
    }
   ]
  },
  "chancen": {
-  "stand": "2026-10-22T04:12:26+00:00",
+  "stand": "2026-10-22T09:34:07+00:00",
   "regeln": "Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden",
   "daten": [
    {
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 6 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 7 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
-     "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
-     "Bitcoin price tags $84.6K as US stocks head higher on SpaceX Q3 earnings beat"
+     "Asian stocks tumble, bitcoin retreats as China enters bear market",
+     "Bitcoin ETFs bag another $528M, taking 3-day haul past $1B"
+    ]
+   },
+   {
+    "coin": "Solana",
+    "symbol": "SOL",
+    "art": "Viele Meldungen",
+    "erklaerung": "In den letzten 24 Stunden gibt es 2 Meldungen, in denen Solana im Titel steht.",
+    "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
+    "belege": [
+     "Solana’s biggest network change since 2020 is live. Here’s how users benefit",
+     "Solana’s Alpenglow launches on mainnet, targets 99% faster finality"
     ]
    }
   ]
