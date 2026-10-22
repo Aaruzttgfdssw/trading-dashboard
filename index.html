@@ -56,6 +56,22 @@ tr:last-child td { border-bottom: 0; }
 .tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 0.3rem 0.6rem; font-size: 0.8rem; line-height: 1.5; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,.15); z-index: 3; font-variant-numeric: tabular-nums; }
 .todo { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.25rem; }
 .empty { text-align: center; padding: 2rem 1rem; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: 0.75rem; }
+.tile { display: flex; flex-direction: column; gap: 0.15rem; }
+.tile .nm { font-size: 0.8rem; color: var(--muted); }
+.tile .p { font-size: 1.45rem; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.tile .a24 { font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.tile .ts { font-size: 0.72rem; color: var(--muted); }
+.live { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--muted); }
+.live::before { content: ""; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--muted); }
+.live[data-s="live"]::before { background: var(--up); }
+.live[data-s="fallback"]::before { background: #d69e2e; }
+.live[data-s="getrennt"]::before { background: var(--down); }
+@media (prefers-reduced-motion: no-preference) {
+  .flash-up { animation: fu 0.9s ease-out; } .flash-down { animation: fd 0.9s ease-out; }
+  @keyframes fu { from { background: color-mix(in srgb, var(--up) 22%, transparent); } to { background: transparent; } }
+  @keyframes fd { from { background: color-mix(in srgb, var(--down) 22%, transparent); } to { background: transparent; } }
+}
 </style>
 </head>
 <body>
@@ -63,7 +79,10 @@ tr:last-child td { border-bottom: 0; }
   <header class="sec">
     <div class="row">
       <h1>Trading-Dashboard</h1>
-      <span class="muted" id="status">Lade Daten …</span>
+      <div class="row" style="justify-content:flex-end">
+        <span class="live" id="live" data-s="aus">Live-Kurse: starte …</span>
+        <span class="muted" id="status">Lade Daten …</span>
+      </div>
     </div>
     <div class="banner">
       Lern-Projekt, keine Anlageberatung. Hier wird nichts gekauft oder verkauft. Kurse können sich in Minuten stark ändern, und die meisten Privatanleger verlieren beim Trading Geld. Setze nur Geld ein, dessen Verlust dich nicht trifft.
@@ -74,7 +93,7 @@ tr:last-child td { border-bottom: 0; }
   <main id="main"></main>
 
   <footer class="muted">
-    Echte Daten von CoinGecko, Binance (Marktdaten), CoinDesk und Cointelegraph. Nachrichtentitel sind im englischen Original. Die Seite lädt sich alle 5 Minuten neu, die Daten werden alle 30 Minuten aktualisiert.
+    Echte Daten von CoinGecko, Binance (Marktdaten), CoinDesk und Cointelegraph. Nachrichtentitel sind im englischen Original. Die Seite lädt sich alle 5 Minuten neu, Live-Kurse kommen sekündlich direkt von Binance, Nachrichten und Auffälligkeiten alle 15 Minuten.
   </footer>
 </div>
 
@@ -115,9 +134,27 @@ tr:last-child td { border-bottom: 0; }
 
   const state = { sym: null, tag: 'Alle', data: null };
 
+  // ---------------------------------------------------------- Live-Kacheln
+  function viewTiles(d) {
+    const s = section('Live-Kurse', 'direkt von Binance, Preise in US-Dollar');
+    if (!d.kurse) { s.appendChild(el('p', 'muted', 'Keine Kursdaten verfügbar.')); return s; }
+    const g = el('div', 'tiles');
+    d.kurse.daten.forEach((c) => {
+      const t = el('div', 'card tile');
+      t.dataset.live = c.symbol;
+      t.appendChild(el('span', 'nm', c.name + ' (' + c.symbol + ')'));
+      t.appendChild(el('span', 'p', fmtPrice(c.preis) + ' $'));
+      t.appendChild(el('span', 'a24 ' + cls(c.aend24), fmtPct(c.aend24) + ' in 24 h'));
+      t.appendChild(el('span', 'ts', 'Stand ' + fmtTime(d.kurse.stand)));
+      g.appendChild(t);
+    });
+    s.appendChild(g);
+    return s;
+  }
+
   // ---------------------------------------------------------- Kurse
   function viewPrices(d) {
-    const s = section('Kurse', d.kurse ? d.kurse.quelle + ', Stand ' + fmtTime(d.kurse.stand) + stale(d.kurse) : '');
+    const s = section('Details', d.kurse ? 'Preis und 24 h live, Rest: ' + d.kurse.quelle + ', Stand ' + fmtTime(d.kurse.stand) + stale(d.kurse) : '');
     if (!d.kurse) { s.appendChild(el('p', 'muted', 'Keine Kursdaten verfügbar.')); return s; }
     const card = el('div', 'card scroll');
     const t = el('table');
@@ -127,9 +164,10 @@ tr:last-child td { border-bottom: 0; }
     const tb = el('tbody');
     d.kurse.daten.forEach((c) => {
       const tr = el('tr');
+      tr.dataset.live = c.symbol;
       tr.appendChild(el('td', '', c.name + ' (' + c.symbol + ')'));
-      tr.appendChild(el('td', 'num', fmtPrice(c.preis)));
-      tr.appendChild(el('td', 'num ' + cls(c.aend24), fmtPct(c.aend24)));
+      tr.appendChild(el('td', 'num p', fmtPrice(c.preis)));
+      tr.appendChild(el('td', 'num a24 ' + cls(c.aend24), fmtPct(c.aend24)));
       tr.appendChild(el('td', 'num ' + cls(c.aend7), fmtPct(c.aend7)));
       tr.appendChild(el('td', 'num', fmtBig(c.marktkap) + ' $'));
       tr.appendChild(el('td', 'num', fmtBig(c.volumen) + ' $'));
@@ -196,6 +234,7 @@ tr:last-child td { border-bottom: 0; }
     const hit = svgEl('rect', { x: ml, y: 0, width: W - ml, height: H - mb, fill: 'transparent' });
     svg.appendChild(hit);
     hit.addEventListener('mousemove', (ev) => {
+      state.hover = true;
       const b = box.getBoundingClientRect();
       const sx = (ev.clientX - b.left) * (W / b.width);
       const i = Math.max(0, Math.min(rows.length - 1, Math.floor((sx - ml) / step)));
@@ -211,7 +250,7 @@ tr:last-child td { border-bottom: 0; }
       tip.style.left = Math.max(0, left) + 'px';
       tip.style.top = Math.max(0, Math.min(ev.clientY - b.top - tip.offsetHeight / 2, box.clientHeight - tip.offsetHeight)) + 'px';
     });
-    hit.addEventListener('mouseleave', () => { tip.hidden = true; rule.setAttribute('visibility', 'hidden'); });
+    hit.addEventListener('mouseleave', () => { state.hover = false; tip.hidden = true; rule.setAttribute('visibility', 'hidden'); });
   }
 
   function viewCandles(d) {
@@ -337,17 +376,131 @@ tr:last-child td { border-bottom: 0; }
     if (hours > 3) msgs.push('Die Daten sind über drei Stunden alt. Die automatische Aktualisierung scheint zu stocken, schau im Reiter "Actions" bei GitHub nach.');
     if (d.fehler && d.fehler.length) msgs.push('Beim letzten Abruf hat nicht alles geklappt: ' + d.fehler.join('; '));
     if (msgs.length) { warn.textContent = msgs.join(' '); warn.hidden = false; }
-    main.appendChild(viewPrices(d));
-    main.appendChild(viewCandles(d));
+    main.appendChild(viewTiles(d));
     main.appendChild(viewSignals(d));
+    main.appendChild(viewCandles(d));
+    main.appendChild(viewPrices(d));
     main.appendChild(viewNews(d));
     main.appendChild(viewNext());
+  }
+
+  // ---------------------------------------------------------- Echtzeit
+  // Öffentliche Marktdaten von Binance, ohne Konto und ohne Schlüssel.
+  const SYMS = ['BTC', 'ETH', 'SOL', 'XRP', 'DOGE'];
+  const LIVE = { tries: 0, poll: null, redrawAt: 0, timer: null };
+  state.live = {};
+  state.kline = {};
+
+  function setLive(s, text) {
+    const e = document.getElementById('live');
+    e.dataset.s = s;
+    e.textContent = text;
+  }
+
+  function applyTick(sym, flash) {
+    const v = state.live[sym];
+    if (!v) return;
+    document.querySelectorAll('[data-live="' + sym + '"]').forEach((row) => {
+      const p = row.querySelector('.p'), a = row.querySelector('.a24'), ts = row.querySelector('.ts');
+      const isTile = row.classList.contains('tile');
+      if (p) {
+        const before = p.dataset.v ? +p.dataset.v : null;
+        p.textContent = fmtPrice(v.c) + (isTile ? ' $' : '');
+        p.dataset.v = v.c;
+        if (flash && before != null && before !== v.c) {
+          p.classList.remove('flash-up', 'flash-down');
+          void p.offsetWidth;
+          p.classList.add(v.c > before ? 'flash-up' : 'flash-down');
+        }
+      }
+      if (a) {
+        a.textContent = fmtPct(v.a24) + (isTile ? ' in 24 h' : '');
+        a.className = a.className.replace(/\b(up|down)\b/g, '').trim() + ' ' + cls(v.a24);
+      }
+      if (ts) ts.textContent = 'live, ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date(v.t));
+    });
+  }
+
+  function onTick(sym, last, open24) {
+    if (!(last > 0) || !(open24 > 0)) return;
+    state.live[sym] = { c: last, a24: (last - open24) / open24 * 100, t: Date.now() };
+    applyTick(sym, true);
+  }
+
+  function applyKline(sym) {
+    const k = state.kline[sym];
+    const rows = state.data && state.data.kerzen && state.data.kerzen.daten && state.data.kerzen.daten[sym];
+    if (!k || !rows || !rows.length) return false;
+    const last = rows[rows.length - 1];
+    if (last.d === k.d) rows[rows.length - 1] = k;
+    else if (k.d > last.d) { rows.push(k); if (rows.length > 30) rows.shift(); }
+    else return false;
+    return true;
+  }
+
+  function onKline(sym, k) {
+    state.kline[sym] = { d: new Date(k.t).toISOString().slice(0, 10), o: +k.o, h: +k.h, l: +k.l, c: +k.c };
+    if (applyKline(sym) && sym === state.sym) scheduleRedraw();
+  }
+
+  function scheduleRedraw() {
+    if (LIVE.timer) return;
+    const wait = Math.max(0, LIVE.redrawAt + 2000 - Date.now());
+    LIVE.timer = setTimeout(() => {
+      LIVE.timer = null;
+      if (state.hover) { scheduleRedraw(); return; }
+      LIVE.redrawAt = Date.now();
+      if (window.__redraw) window.__redraw();
+    }, wait);
+  }
+
+  function startSocket() {
+    const streams = SYMS.flatMap((s) => [s.toLowerCase() + 'usdt@miniTicker', s.toLowerCase() + 'usdt@kline_1d']).join('/');
+    let ws;
+    try { ws = new WebSocket('wss://data-stream.binance.vision/stream?streams=' + streams); }
+    catch (e) { startPolling(); return; }
+    setLive('aus', 'Live-Kurse: verbinde …');
+    ws.onopen = () => { LIVE.tries = 0; setLive('live', 'Live-Kurse: verbunden'); };
+    ws.onmessage = (ev) => {
+      let m; try { m = JSON.parse(ev.data); } catch (e) { return; }
+      const x = m && m.data;
+      if (!x || !x.s) return;
+      const sym = x.s.replace(/USDT$/, '');
+      if (x.e === '24hrMiniTicker') onTick(sym, +x.c, +x.o);
+      else if (x.e === 'kline' && x.k) onKline(sym, x.k);
+    };
+    ws.onerror = () => { try { ws.close(); } catch (e) { /* schon zu */ } };
+    ws.onclose = () => {
+      LIVE.tries += 1;
+      if (LIVE.tries > 3) { startPolling(); return; }
+      setLive('getrennt', 'Live-Kurse: getrennt, neuer Versuch …');
+      setTimeout(startSocket, 2000 * LIVE.tries);
+    };
+  }
+
+  function startPolling() {
+    if (LIVE.poll) return;
+    setLive('fallback', 'Live-Kurse: Ersatzmodus, alle 30 Sek.');
+    const url = 'https://data-api.binance.vision/api/v3/ticker/24hr?symbols=' +
+      encodeURIComponent(JSON.stringify(SYMS.map((s) => s + 'USDT')));
+    const run = () => fetch(url, { cache: 'no-store' })
+      .then((r) => r.json())
+      .then((rows) => rows.forEach((r) => onTick(r.symbol.replace(/USDT$/, ''), +r.lastPrice, +r.openPrice)))
+      .catch(() => setLive('getrennt', 'Live-Kurse: nicht erreichbar, zeige Stand der Datei'));
+    run();
+    LIVE.poll = setInterval(run, 30000);
+    // alle 5 Minuten wieder den schnellen Live-Weg probieren
+    setTimeout(() => { clearInterval(LIVE.poll); LIVE.poll = null; LIVE.tries = 0; startSocket(); }, 5 * 60 * 1000);
+  }
+
+  function reapplyLive() {
+    SYMS.forEach((s) => { applyTick(s, false); applyKline(s); });
   }
 
   function load() {
     fetch('data/latest.json?t=' + Date.now(), { cache: 'no-store' })
       .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then((d) => { state.data = d; render(d); })
+      .then((d) => { state.data = d; reapplyLive(); render(d); reapplyLive(); })
       .catch((e) => {
         document.getElementById('status').textContent = 'Daten nicht ladbar';
         const w = document.getElementById('warn');
@@ -357,6 +510,7 @@ tr:last-child td { border-bottom: 0; }
   }
   load();
   setInterval(load, 5 * 60 * 1000);
+  startSocket();
   let rt;
   window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => window.__redraw && window.__redraw(), 150); });
 })();
