@@ -37,18 +37,42 @@ COINS = [
 ]
 
 FEEDS = [
-    ("CoinDesk", "https://www.coindesk.com/arc/outboundfeeds/rss/"),
-    ("Cointelegraph", "https://cointelegraph.com/rss"),
+    # (Name, Adresse, Bereich)
+    ("CoinDesk", "https://www.coindesk.com/arc/outboundfeeds/rss/", "Krypto"),
+    ("Cointelegraph", "https://cointelegraph.com/rss", "Krypto"),
+    ("Decrypt", "https://decrypt.co/feed", "Krypto"),
+    ("BBC Welt", "https://feeds.bbci.co.uk/news/world/rss.xml", "Welt"),
+    ("BBC Wirtschaft", "https://feeds.bbci.co.uk/news/business/rss.xml", "Wirtschaft"),
+    ("OilPrice", "https://oilprice.com/rss/main", "Rohstoffe"),
+]
+
+# ETFs (US-Börse). Kurse kommen von Yahoo Finance, Ersatz: Stooq.
+ETFS = [
+    {"sym": "SPY", "name": "S&P 500", "gruppe": "Breiter Markt", "tv": "AMEX:SPY"},
+    {"sym": "QQQ", "name": "Nasdaq 100", "gruppe": "Breiter Markt", "tv": "NASDAQ:QQQ"},
+    {"sym": "URTH", "name": "MSCI World", "gruppe": "Breiter Markt", "tv": "AMEX:URTH"},
+    {"sym": "GLD", "name": "Gold", "gruppe": "Rohstoffe", "tv": "AMEX:GLD"},
+    {"sym": "SLV", "name": "Silber", "gruppe": "Rohstoffe", "tv": "AMEX:SLV"},
+    {"sym": "USO", "name": "Rohöl", "gruppe": "Rohstoffe", "tv": "AMEX:USO"},
+    {"sym": "UNG", "name": "Erdgas", "gruppe": "Rohstoffe", "tv": "AMEX:UNG"},
+    {"sym": "XLE", "name": "Energie-Aktien", "gruppe": "Branchen", "tv": "AMEX:XLE"},
+    {"sym": "ITA", "name": "Rüstung und Luftfahrt", "gruppe": "Branchen", "tv": "ITA"},
+    {"sym": "IBIT", "name": "Bitcoin (BlackRock)", "gruppe": "Krypto-ETFs", "tv": "NASDAQ:IBIT"},
+    {"sym": "ETHA", "name": "Ether (BlackRock)", "gruppe": "Krypto-ETFs", "tv": "NASDAQ:ETHA"},
 ]
 
 # Stichworte, mit denen Meldungen einem Bereich zugeordnet werden.
 TAGS = {
-    "Prominente": ["trump", "musk", "biden", "white house", "elon"],
+    "Prominente": ["trump", "musk", "biden", "white house", "elon", "powell", "xi jinping", "putin"],
     "ETF": [" etf", "etfs", "blackrock", "grayscale"],
-    "Regulierung": ["sec ", "regulat", "ban ", "lawmaker", "tax", "cftc", "parliament", "law "],
-    "Geopolitik": ["war", "iran", "hormuz", "oil", "sanction", "missile", "tariff"],
+    "Regulierung": ["sec ", "regulat", "ban ", "lawmaker", "tax", "cftc", "parliament", "law ", "sanction"],
+    "Krieg/Konflikt": ["war ", "war,", "war.", "iran", "israel", "ukraine", "russia", "hormuz", "missile",
+                       "attack", "houthi", "taiwan", "military", "troops", "ceasefire"],
+    "Rohstoffe": ["oil", "crude", "brent", "opec", "natural gas", "lng", "gold", "silver", "copper",
+                  "lithium", "uranium", "rare earth", "wheat"],
+    "Zinsen/Wirtschaft": ["fed ", "interest rate", "inflation", "ecb", "recession", "tariff", "jobs report", "gdp"],
     "Hack/Betrug": ["hack", "exploit", "rug pull", "scam", "stolen", "drain"],
-    "Memecoins": ["memecoin", "meme coin", "pump.fun", "dogecoin", "pepe", "shiba", "bonk"],
+    "Memecoins": ["memecoin", "meme coin", "pump.fun", "dogecoin", "pepe", "shiba", "bonk", "dogwifhat"],
 }
 
 
@@ -185,14 +209,16 @@ def tag_item(title, summary):
 def fetch_news():
     items, seen = [], set()
     ok_feeds = []
-    for name, url in FEEDS:
+    for name, url, bereich in FEEDS:
         try:
             root = ET.fromstring(http_get(url))
         except Exception as e:  # noqa: BLE001
             print(f"  Feed {name} nicht lesbar ({e})")
             continue
         ok_feeds.append(name)
-        for it in root.iter("item"):
+        for n, it in enumerate(root.iter("item")):
+            if n >= 25:
+                break
             title = clean(it.findtext("title"), 200)
             link = (it.findtext("link") or "").strip()
             if not title or not link or link in seen:
@@ -206,20 +232,87 @@ def fetch_news():
             seen.add(link)
             summary = clean(it.findtext("description"))
             items.append({
-                "titel": title, "link": link, "quelle": name,
+                "titel": title, "link": link, "quelle": name, "bereich": bereich,
                 "zeit": dt.astimezone(timezone.utc).isoformat(timespec="seconds"),
                 "text": summary, "tags": tag_item(title, summary),
             })
     if not items:
         raise RuntimeError("Keine Nachrichten erhalten")
     items.sort(key=lambda x: x["zeit"], reverse=True)
-    return {"stand": now_iso(), "quelle": " und ".join(ok_feeds), "daten": items[:30]}
+    return {"stand": now_iso(), "quelle": ", ".join(ok_feeds), "daten": items[:90]}
+
+
+# ----------------------------------------------------------------- ETFs
+def etf_yahoo(sym):
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=3mo&interval=1d"
+    r = json.loads(http_get(url))["chart"]["result"][0]
+    q = r["indicators"]["quote"][0]
+    rows = []
+    for i, ts in enumerate(r["timestamp"]):
+        vals = [q["open"][i], q["high"][i], q["low"][i], q["close"][i]]
+        if any(v is None for v in vals):
+            continue
+        d = datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d")
+        rows.append({"d": d, "o": round(vals[0], 4), "h": round(vals[1], 4), "l": round(vals[2], 4),
+                     "c": round(vals[3], 4), "v": q["volume"][i] or 0})
+    return rows
+
+
+def etf_stooq(sym):
+    url = f"https://stooq.com/q/d/l/?s={sym.lower()}.us&i=d"
+    lines = http_get(url).decode("utf-8", "replace").strip().splitlines()
+    rows = []
+    for line in lines[1:]:
+        p = line.split(",")
+        if len(p) < 5:
+            continue
+        try:
+            rows.append({"d": p[0], "o": float(p[1]), "h": float(p[2]), "l": float(p[3]), "c": float(p[4]),
+                         "v": float(p[5]) if len(p) > 5 and p[5] else 0})
+        except ValueError:
+            continue
+    return rows[-70:]
+
+
+def fetch_etfs():
+    out, quelle = [], set()
+    for e in ETFS:
+        rows = None
+        for name, fn in (("Yahoo Finance", etf_yahoo), ("Stooq", etf_stooq)):
+            try:
+                rows = fn(e["sym"])
+                if len(rows) >= 2:
+                    quelle.add(name)
+                    break
+            except Exception as ex:  # noqa: BLE001
+                print(f"  {name} für {e['sym']} ohne Ergebnis ({ex})")
+            rows = None
+        time.sleep(0.5)
+        if not rows:
+            continue
+        rows = rows[-60:]
+        last = rows[-1]["c"]
+        a1d = (last / rows[-2]["c"] - 1) * 100
+        a1m = (last / rows[-22]["c"] - 1) * 100 if len(rows) >= 22 else None
+        out.append({**e, "preis": last, "aend1d": a1d, "aend1m": a1m, "datum": rows[-1]["d"], "kerzen": rows})
+    if not out:
+        raise RuntimeError("Keine ETF-Kurse erhalten")
+    return {"stand": now_iso(), "quelle": " und ".join(sorted(quelle)), "daten": out}
 
 
 # -------------------------------------------------------------- Chancen
-def build_signals(kurse, news):
+def build_signals(kurse, news, etfs=None):
     """Regelbasierte Auffälligkeiten. Das ist keine Kaufempfehlung."""
     signals = []
+    for e in (etfs or {}).get("daten", []):
+        a = e.get("aend1d")
+        if a is not None and abs(a) >= 2.5:
+            richtung = "gestiegen" if a > 0 else "gefallen"
+            signals.append({
+                "coin": e["name"], "symbol": e["sym"], "art": "Starke Tagesbewegung (ETF)",
+                "erklaerung": f"Der ETF {e['sym']} ({e['name']}) ist am letzten Handelstag um {abs(a):.1f} % {richtung}. Für einen breit gestreuten Fonds ist das viel.",
+                "risiko": "Mittel. Große Tagesbewegungen bei ETFs hängen oft an einer Nachricht und können sich am nächsten Tag umkehren.",
+            })
     cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
     recent = [n for n in (news or {}).get("daten", [])
               if datetime.fromisoformat(n["zeit"]) >= cutoff]
@@ -255,7 +348,7 @@ def build_signals(kurse, news):
                 "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
                 "belege": belege,
             })
-    return {"stand": now_iso(), "regeln": "Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden",
+    return {"stand": now_iso(), "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
             "daten": signals}
 
 
@@ -272,7 +365,7 @@ def main():
     old = load_old()
     result = {"erzeugt": now_iso()}
     fresh = 0
-    for key, fn in (("kurse", fetch_prices), ("kerzen", fetch_candles), ("news", fetch_news)):
+    for key, fn in (("kurse", fetch_prices), ("kerzen", fetch_candles), ("news", fetch_news), ("etfs", fetch_etfs)):
         print(f"Hole {key} ...")
         try:
             result[key] = fn()
@@ -283,7 +376,7 @@ def main():
                 result[key] = dict(old[key])
                 result[key]["veraltet"] = True
             result.setdefault("fehler", []).append(f"{key}: {e}")
-    result["chancen"] = build_signals(result.get("kurse"), result.get("news"))
+    result["chancen"] = build_signals(result.get("kurse"), result.get("news"), result.get("etfs"))
     if fresh == 0:
         print("Keine Quelle erreichbar, nichts geschrieben.")
         return 1
@@ -292,7 +385,7 @@ def main():
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=1)
     os.replace(tmp, OUT)
-    print(f"Fertig: {fresh} von 3 Quellen frisch, geschrieben nach data/latest.json")
+    print(f"Fertig: {fresh} von 4 Quellen frisch, geschrieben nach data/latest.json")
     return 0
 
 
