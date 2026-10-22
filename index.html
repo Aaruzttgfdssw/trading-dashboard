@@ -127,6 +127,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       <button class="tab" role="tab" data-tab="etf">ETFs</button>
       <button class="tab" role="tab" data-tab="news">Nachrichten</button>
       <button class="tab" role="tab" data-tab="lage">Lage</button>
+      <button class="tab" role="tab" data-tab="trade">Handeln</button>
     </nav>
     <div class="status">
       <span class="dot" id="st-live" data-s="none">Krypto live: verbinde …</span>
@@ -198,6 +199,41 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
         <div class="tools"><input class="search" id="n-q" type="search" placeholder="Stichwort" aria-label="Nachrichten durchsuchen"></div>
       </div>
       <div class="box-b"><div class="tabs" id="n-tags" style="margin-bottom:6px"></div><div class="news" id="n-list"></div></div>
+    </div>
+  </section>
+
+  <!-- HANDELN -->
+  <section class="view" id="v-trade" hidden>
+    <div class="split">
+      <div class="box">
+        <div class="box-h"><h2>Handeln über Jupiter</h2><span class="muted small">Solana-Token tauschen mit deinem eigenen Wallet</span></div>
+        <div class="box-b">
+          <p class="small" id="j-state">Lade das Handelsfenster von Jupiter …</p>
+          <div id="jupiter-plugin" style="min-height:560px"></div>
+        </div>
+      </div>
+      <div class="box detail">
+        <div class="box-b">
+          <div class="sub" style="margin-top:0">So funktioniert es</div>
+          <ol class="small" style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:6px;line-height:1.5">
+            <li>Im Fenster links auf <b>Connect Wallet</b> klicken und dein Wallet wählen (zum Beispiel Phantom).</li>
+            <li>Oben den Token wählen, den du abgibst (meist SOL), unten den, den du bekommst. Aus den Memecoin-Details kommst du mit "Im Handelsfenster öffnen" direkt hierher.</li>
+            <li>Betrag eingeben, Preis und Gebühren prüfen, auf <b>Swap</b> klicken.</li>
+            <li>Dein Wallet öffnet sich. Erst wenn du dort bestätigst, wird gehandelt.</li>
+          </ol>
+          <div class="sub">Sicherheitsregeln</div>
+          <ul class="small" style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:6px;line-height:1.5">
+            <li>Gib deine Wiederherstellungsphrase (die 12 oder 24 Wörter) <b>niemals</b> ein, auch nicht hier, nicht bei Jupiter und nicht bei Claude. Wer danach fragt, will dich bestehlen.</li>
+            <li>Prüfe vor dem Bestätigen im Wallet, ob Token und Betrag stimmen.</li>
+            <li>Fang mit einem sehr kleinen Betrag an, zum Beispiel 5 Euro.</li>
+            <li>Lege dir eine feste Grenze pro Trade und pro Monat fest und halte sie ein.</li>
+            <li>Memecoins mit Risiko "Extrem" sind oft Fallen, aus denen man nicht mehr verkaufen kann.</li>
+          </ul>
+          <div class="sub">Gebühren</div>
+          <p class="small" style="margin:0;line-height:1.5">Jupiter nimmt je nach Token 0 bis 0,5 % (die App von Phantom etwa 0,85 %). Dazu kommt eine kleine Netzwerkgebühr von Solana. Diese Seite nimmt nichts.</p>
+          <p class="note">Das Handelsfenster kommt direkt von Jupiter. Diese Seite sieht weder deine Schlüssel noch dein Guthaben und kann nichts ohne deine Bestätigung im Wallet ausführen.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -623,10 +659,10 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     });
     tb.replaceChildren(frag);
     if (!rows.length) {
-      const tr = el('tr'); const td = el('td', 'empty', M.loading ? 'Lade …' : M.err ? 'DexScreener gerade nicht erreichbar (' + M.err + '). Neuer Versuch in 30 Sek.' : M.src === 'suche' ? 'Gib oben einen Namen oder eine Adresse ein.' : 'Keine Token gefunden.');
+      const tr = el('tr'); const td = el('td', 'empty', M.loading ? 'Lade …' : M.err ? 'DexScreener gerade nicht erreichbar (' + M.err + '). Neuer Versuch in 10 Sek.' : M.src === 'suche' ? 'Gib oben einen Namen oder eine Adresse ein.' : 'Keine Token gefunden.');
       td.colSpan = 9; tr.appendChild(td); tb.appendChild(tr);
     }
-    $('#m-note').textContent = (M.at ? 'Stand ' + fTime(M.at) + ', aktualisiert alle 30 Sekunden. ' : '') +
+    $('#m-note').textContent = (M.at ? 'Stand ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date(M.at)) + ', aktualisiert alle 10 Sekunden. Der Chart rechts ist live. ' : '') +
       (M.src === 'werbung' ? '"Meist beworben" heißt: Die Ersteller haben für Sichtbarkeit bezahlt. Das ist Werbung, kein Qualitätsmerkmal. ' : '') +
       'Risiko ist nie "niedrig": Die Stufen Hoch, Sehr hoch und Extrem zählen Warnzeichen wie geringes Alter, wenig Liquidität und viele Verkäufe.';
   }
@@ -670,6 +706,11 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       .concat(r.links.slice(0, 6).map((l) => [l.label, l.url])).filter(Boolean)
       .forEach(([t, u]) => { if (!/^https?:\/\//.test(u)) return; const a = el('a', '', t); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; ln.appendChild(a); });
     b.appendChild(ln);
+    if (r.chain === 'solana') {
+      const tb = el('button', 'btn', 'Im Handelsfenster öffnen'); tb.type = 'button'; tb.style.marginTop = '8px';
+      tb.addEventListener('click', () => { J.mint = r.addr; J.sym = r.sym; show('trade'); });
+      b.appendChild(tb);
+    }
     b.appendChild(el('div', 'sub', 'Passende Nachrichten'));
     const nw = el('div', 'news'); b.appendChild(nw);
     newsList(nw, matchNews([r.name.toLowerCase(), r.sym.length > 2 ? '$' + r.sym.toLowerCase() : r.name.toLowerCase()]), 6);
@@ -788,14 +829,41 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     $('#l-rules').textContent = ch ? 'Regeln: ' + ch.regeln : '';
   }
 
+  // ------------------------------------------------------------------ HANDELN (offizielles Jupiter-Fenster)
+  const SOL_MINT = 'So11111111111111111111111111111111111111112';
+  const J = { mint: null, sym: null, shown: undefined, loading: false };
+  function initJup() {
+    const state = $('#j-state');
+    const go = () => {
+      if (J.shown === J.mint) { return; }
+      try {
+        $('#jupiter-plugin').replaceChildren();
+        const formProps = { initialInputMint: SOL_MINT };
+        if (J.mint) formProps.initialOutputMint = J.mint;
+        window.Jupiter.init({ displayMode: 'integrated', integratedTargetId: 'jupiter-plugin', formProps });
+        J.shown = J.mint;
+        state.textContent = J.mint ? 'Vorausgewählt: ' + (J.sym || 'Token') + '. Prüfe die Adresse im Fenster, bevor du tauschst.' : '';
+      } catch (e) { state.textContent = 'Das Handelsfenster konnte nicht starten (' + e.message + '). Du kannst direkt auf jup.ag handeln.'; }
+    };
+    if (window.Jupiter && window.Jupiter.init) { go(); return; }
+    if (J.loading) return;
+    J.loading = true;
+    const s = document.createElement('script');
+    s.src = 'https://plugin.jup.ag/plugin-v1.js';
+    s.onload = () => { J.loading = false; go(); };
+    s.onerror = () => { J.loading = false; state.textContent = 'Das Handelsfenster von Jupiter ist gerade nicht erreichbar. Du kannst direkt auf jup.ag handeln.'; };
+    document.head.appendChild(s);
+  }
+
   // ------------------------------------------------------------------ Tabs und Start
-  const VIEWS = ['krypto', 'meme', 'etf', 'news', 'lage'];
+  const VIEWS = ['krypto', 'meme', 'etf', 'news', 'lage', 'trade'];
   function show(tab) {
     if (!VIEWS.includes(tab)) tab = 'krypto';
     VIEWS.forEach((v) => { document.getElementById('v-' + v).hidden = v !== tab; });
     document.querySelectorAll('.tab[data-tab]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
     if (location.hash.slice(1) !== tab) history.replaceState(null, '', '#' + tab);
-    if (tab === 'meme' && (!M.at || Date.now() - M.at > 30000)) loadMemes();
+    if (tab === 'meme' && (!M.at || Date.now() - M.at > 10000)) loadMemes();
+    if (tab === 'trade') initJup();
     if (tab === 'krypto' && K.kl.length) requestAnimationFrame(drawK);
     if (tab === 'etf' && !E.sel && D.data && D.data.etfs && D.data.etfs.daten.length) openEtf(D.data.etfs.daten[0].sym);
     else if (tab === 'etf' && E.sel) openEtf(E.sel, true);
@@ -813,7 +881,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
-  setInterval(() => { if (!document.getElementById('v-meme').hidden && M.src !== 'suche') loadMemes(); }, 30000);
+  setInterval(() => { if (!document.getElementById('v-meme').hidden && M.src !== 'suche') loadMemes(); }, 10000);
   let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (K.kl.length) drawK(); if (E.sel) openEtf(E.sel, true); }, 200); });
 
   show(location.hash.slice(1) || 'krypto');
