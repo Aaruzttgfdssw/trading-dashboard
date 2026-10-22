@@ -121,6 +121,11 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
 .sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 10px; }
 .sum .card b { font-size: 18px; font-variant-numeric: tabular-nums; }
 .banner { background: color-mix(in srgb, var(--accent) 14%, var(--panel)); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); border-radius: 10px; padding: 10px 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.strong { font-weight: 700; }
+.rankbar { display: flex; flex-wrap: wrap; gap: 6px 14px; width: 100%; }
+.toast { position: fixed; right: 16px; bottom: 16px; z-index: 50; max-width: 22rem; background: var(--panel2); border: 1px solid var(--accent); border-radius: 12px; padding: 10px 14px; font-size: 13px; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+.valfix { display: flex; gap: 4px; align-items: center; justify-content: flex-end; }
+.valfix input { width: 6rem; background: var(--bg); border: 1px solid var(--down); border-radius: 6px; padding: 3px 6px; color: var(--fg); }
 .back { display: none; }
 @media (max-width: 1049px) { .back { display: inline-block; } }
 </style>
@@ -157,10 +162,10 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
         <div class="box-h">
           <h2>Krypto (Binance, live)</h2>
           <div class="tools"><input class="search" id="k-q" type="search" placeholder="Coin suchen" aria-label="Coin suchen"></div>
+          <div class="rankbar" id="k-rank"></div>
         </div>
-        <div class="scroll"><table id="k-table"><thead><tr>
-          <th data-k="b">Coin</th><th data-k="c">Preis $</th><th data-k="chg">24 h</th><th data-k="q">Volumen 24 h</th><th data-k="h">Hoch</th><th data-k="l">Tief</th>
-        </tr></thead><tbody></tbody></table></div>
+        <div class="scroll"><table id="k-table"><thead></thead><tbody></tbody></table></div>
+        <div class="box-b note" id="k-note"></div>
       </div>
       <div class="box detail" id="k-detail"><div class="empty">Klicke links auf einen Coin.</div></div>
     </div>
@@ -180,9 +185,8 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
             <input class="search" id="m-q" type="search" placeholder="Name oder Adresse" aria-label="Memecoin suchen">
           </div>
         </div>
-        <div class="scroll"><table id="m-table"><thead><tr>
-          <th data-k="sym">Token</th><th data-k="risk">Risiko</th><th data-k="price">Preis $</th><th data-k="m5">5 Min</th><th data-k="h1">1 h</th><th data-k="h24">24 h</th><th data-k="vol">Volumen</th><th data-k="liq">Liquidität</th><th data-k="age">Alter</th>
-        </tr></thead><tbody></tbody></table></div>
+        <div class="box-h" style="padding-top:0;border-bottom:1px solid var(--line)"><div class="rankbar" id="m-rank"></div></div>
+        <div class="scroll"><table id="m-table"><thead></thead><tbody></tbody></table></div>
         <div class="box-b note" id="m-note"></div>
       </div>
       <div class="box detail" id="m-detail"><div class="empty">Klicke links auf einen Token.</div></div>
@@ -193,11 +197,9 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   <section class="view" id="v-etf" hidden>
     <div class="split">
       <div class="box">
-        <div class="box-h"><h2>ETFs</h2><span class="muted small" id="e-src"></span></div>
-        <div class="scroll"><table id="e-table"><thead><tr>
-          <th data-k="sym">ETF</th><th data-k="gruppe">Bereich</th><th data-k="preis">Preis $</th><th data-k="aend1d">1 Tag</th><th data-k="aend1m">1 Monat</th>
-        </tr></thead><tbody></tbody></table></div>
-        <div class="box-b note">US-ETFs kannst du in der EU meist nicht direkt kaufen. Dafür gibt es UCITS-Versionen, die dasselbe abbilden. Die Kurse hier sind Tagesschlusskurse und werden alle 15 Minuten geprüft. Für einen Live-Chart lädst du im Detail den Chart von TradingView.</div>
+        <div class="box-h"><h2>ETFs</h2><span class="muted small" id="e-src"></span><div class="rankbar" id="e-rank"></div></div>
+        <div class="scroll"><table id="e-table"><thead></thead><tbody></tbody></table></div>
+        <div class="box-b note">US-ETFs kannst du in der EU meist nicht direkt kaufen. Dafür gibt es UCITS-Versionen, die dasselbe abbilden. Die Werte in der Liste sind Tagesschlusskurse. Der Chart in den Details kommt live von TradingView (US-Börsenzeiten, teils verzögert).</div>
       </div>
       <div class="box detail" id="e-detail"><div class="empty">Klicke links auf einen ETF.</div></div>
     </div>
@@ -210,7 +212,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
         <h2>Nachrichten, neueste zuerst</h2>
         <div class="tools"><input class="search" id="n-q" type="search" placeholder="Stichwort" aria-label="Nachrichten durchsuchen"></div>
       </div>
-      <div class="box-b"><div class="tabs" id="n-tags" style="margin-bottom:6px"></div><div class="news" id="n-list"></div></div>
+      <div class="box-b"><div class="tabs" id="n-mode" style="margin-bottom:8px"></div><div class="tabs" id="n-tags" style="margin-bottom:6px"></div><p class="note" style="margin:0 0 6px">"Nur wichtige" zeigt Meldungen, die Kurse wirklich bewegen können: Zinsen, Kriege, Regulierung, ETFs, Hacks, Aussagen wichtiger Politiker. Preisprognosen, Ratgeber und Werbung sind ausgeblendet.</p><div class="news" id="n-list"></div></div>
     </div>
   </section>
 
@@ -255,7 +257,18 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     <div class="split">
       <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
         <div class="box">
-          <div class="box-h"><h2>Trade eintragen</h2><span class="muted small">Nach jedem Kauf oder Verkauf</span></div>
+          <div class="box-h"><h2>Automatisch aus deinem Wallet</h2><span class="muted small">Solana, zum Beispiel Phantom</span></div>
+          <div class="box-b">
+            <div class="form">
+              <label class="wide">Deine Wallet-Adresse (öffentlich)<input id="jw-addr" placeholder="z. B. 7xKX…" autocomplete="off" spellcheck="false"></label>
+            </div>
+            <div class="links"><button class="btn primary" type="button" id="jw-save">Speichern und abgleichen</button><button class="btn" type="button" id="jw-remove">Entfernen</button></div>
+            <p id="jw-state" class="small" style="margin:8px 0 0"></p>
+            <p class="note">Die Seite liest alle 2 Minuten aus der Blockchain, was du getauscht hast, auch Trades direkt in der Phantom-App, und trägt sie mit Wert in Euro ins Journal ein. Dafür braucht sie nur deine öffentliche Adresse, wie eine Kontonummer zum Empfangen. Gib hier niemals deine Wiederherstellungsphrase oder einen privaten Schlüssel ein. Trades bei Trade Republic oder Bitvavo kann die Seite nicht sehen, die trägst du unten ein.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-h"><h2>Trade von Hand eintragen</h2><span class="muted small">Nach jedem Kauf oder Verkauf</span></div>
           <div class="box-b">
             <div id="j-hint"></div>
             <form id="jf" class="form" autocomplete="off">
@@ -492,9 +505,48 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     });
   }
 
+  // ------------------------------------------------------------------ Gemeinsame Bausteine (Ranglisten, Charts)
+  // Sortiert nach einem Zeitraum, leere Werte immer nach unten
+  function cmpN(a, b, k, dir) {
+    const x = a[k], y = b[k], nx = x == null || !isFinite(x), ny = y == null || !isFinite(y);
+    if (nx && ny) return 0; if (nx) return 1; if (ny) return -1;
+    return dir * (x - y);
+  }
+  function rankBar(host, periods, st, onChange) {
+    host.replaceChildren();
+    const g1 = el('div', 'tabs'), g2 = el('div', 'tabs');
+    periods.forEach(([k, l]) => { const b = el('button', 'chip', l); b.type = 'button'; b.setAttribute('aria-pressed', String(!st.manual && st.per === k)); b.addEventListener('click', () => { st.per = k; st.manual = false; onChange(); }); g1.appendChild(b); });
+    [['best', 'Beste zuerst'], ['worst', 'Schlechteste zuerst']].forEach(([k, l]) => { const b = el('button', 'chip', l); b.type = 'button'; b.setAttribute('aria-pressed', String(!st.manual && st.rank === k)); b.addEventListener('click', () => { st.rank = k; st.manual = false; onChange(); }); g2.appendChild(b); });
+    host.append(g1, g2);
+  }
+  function headRow(table, cols, st, activeKey, onSort) {
+    const tr = el('tr');
+    cols.forEach(([k, l]) => {
+      const th = el('th', '', l); th.dataset.k = k; th.tabIndex = 0;
+      if (st.manual && st.sort.k === k) th.setAttribute('aria-sort', st.sort.dir < 0 ? 'descending' : 'ascending');
+      if (!st.manual && k === activeKey) th.style.color = 'var(--accent)';
+      const go = () => { if (st.manual && st.sort.k === k) st.sort.dir *= -1; else { st.sort = { k, dir: -1 }; } st.manual = true; onSort(); };
+      th.addEventListener('click', go); th.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
+      tr.appendChild(th);
+    });
+    table.tHead.replaceChildren(tr);
+  }
+  // Profi-Chart von TradingView: zoomen, verschieben, Indikatoren und Zeichenwerkzeuge
+  function tvWidget(host, symbol, interval) {
+    host.replaceChildren();
+    const c = el('div', 'tradingview-widget-container'); c.style.height = '480px'; c.style.marginTop = '10px';
+    const w = el('div', 'tradingview-widget-container__widget'); w.style.height = '100%'; c.appendChild(w);
+    const s = document.createElement('script'); s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js'; s.async = true;
+    s.textContent = JSON.stringify({ autosize: true, symbol, interval: interval || '60', timezone: 'Europe/Berlin', theme: 'dark', style: '1', locale: 'de_DE', allow_symbol_change: false, hide_side_toolbar: false, withdateranges: true, studies: ['Volume@tv-basicstudies'], backgroundColor: '#161d2a', gridColor: 'rgba(255,255,255,0.04)', support_host: 'https://www.tradingview.com' });
+    c.appendChild(s); host.appendChild(c);
+    host.appendChild(el('p', 'note', 'Zoomen mit dem Mausrad, verschieben mit gedrückter Maustaste. Zeitraum unten oder oben wählen, Indikatoren (zum Beispiel RSI oder gleitende Durchschnitte) über "Indikatoren" oben im Chart. Chart von TradingView.'));
+  }
+
   // ------------------------------------------------------------------ KRYPTO
-  const K = { map: new Map(), prev: new Map(), sort: { k: 'q', dir: -1 }, q: '', sel: null, iv: '1h', kl: [], ws: null, sws: null, tries: 0, trades: [], dirty: false };
+  const K = { map: new Map(), prev: new Map(), sort: { k: 'q', dir: -1 }, manual: false, per: 'chg', rank: 'best', q: '', sel: null, ws: null, sws: null, tries: 0, trades: [], dirty: false, cg: new Map(), eur: null };
   const STABLE = new Set(['USDC', 'FDUSD', 'TUSD', 'USDP', 'DAI', 'BUSD', 'EUR', 'AEUR', 'USD1', 'USDE', 'XUSD', 'BFUSD', 'RLUSD', 'EURI', 'PYUSD', 'USDS']);
+  const K_PER = [['chg', 'Tag'], ['w', 'Woche'], ['m', 'Monat'], ['y', 'Jahr']];
+  const K_COLS = [['b', 'Coin'], ['c', 'Preis $'], ['chg', '24 Std'], ['w', '7 Tage'], ['m', '30 Tage'], ['y', '1 Jahr'], ['q', 'Volumen 24 h']];
   function okSym(s) { if (!s.endsWith('USDT')) return false; const b = s.slice(0, -4); if (STABLE.has(b)) return false; if (/^.{2,}(UP|DOWN|BULL|BEAR)$/.test(b)) return false; return true; }
   function putTick(s, c, o, h, l, v, q) {
     if (s === 'EURUSDT' && c > 0) K.eur = c;
@@ -508,6 +560,13 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       renderK();
       if (!K.sel) openK('BTCUSDT');
     }).catch(() => {});
+  }
+  function loadCG() {
+    getJSON('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&price_change_percentage=24h,7d,30d,1y')
+      .then((rows) => {
+        rows.forEach((r) => { const s = (r.symbol || '').toUpperCase(); if (!K.cg.has(s)) K.cg.set(s, { name: r.name, img: r.image, mcap: r.market_cap, w: r.price_change_percentage_7d_in_currency, m: r.price_change_percentage_30d_in_currency, y: r.price_change_percentage_1y_in_currency }); });
+        K.cgAt = Date.now(); K.dirty = true; if (K.sel) updateKHead();
+      }).catch(() => { K.cgErr = true; });
   }
   function connectKAll() {
     let ws;
@@ -525,111 +584,104 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     kPoll = setInterval(loadKAll, 20000);
     setTimeout(() => { clearInterval(kPoll); kPoll = null; K.tries = 0; connectKAll(); }, 5 * 60000);
   }
+  function kRows() {
+    return Array.from(K.map.values()).map((r) => { const g = K.cg.get(r.b) || {}; return Object.assign({}, r, { w: g.w, m: g.m, y: g.y, name: g.name, img: g.img }); });
+  }
   function renderK() {
     K.dirty = false;
+    rankBar($('#k-rank'), K_PER, K, renderK);
+    headRow($('#k-table'), K_COLS, K, K.per, renderK);
     const tb = $('#k-table tbody'), q = K.q.trim().toUpperCase();
-    let rows = Array.from(K.map.values());
-    if (q) rows = rows.filter((r) => r.b.includes(q) || (NAMES[r.b] || []).some((n) => n.toUpperCase().includes(q)));
-    else rows = rows.sort((a, b) => b.q - a.q).slice(0, 120);
-    rows.sort((a, b) => cmp(a, b, K.sort.k, K.sort.dir));
-    rows = rows.slice(0, 120);
+    let rows = kRows();
+    if (q) rows = rows.filter((r) => r.b.includes(q) || (r.name || '').toUpperCase().includes(q) || (NAMES[r.b] || []).some((n) => n.toUpperCase().includes(q)));
+    else rows = rows.sort((a, b) => b.q - a.q).slice(0, 150);
+    if (K.manual) rows.sort((a, b) => K.sort.k === 'b' ? cmp(a, b, 'b', K.sort.dir) : cmpN(a, b, K.sort.k, K.sort.dir));
+    else rows.sort((a, b) => cmpN(a, b, K.per, K.rank === 'best' ? -1 : 1));
+    rows = rows.slice(0, 150);
     const frag = document.createDocumentFragment();
     rows.forEach((r) => {
       const tr = el('tr'); tr.dataset.s = r.s; tr.setAttribute('aria-selected', String(r.s === K.sel));
-      const t = el('td'); const tk = el('div', 'tok'); tk.appendChild(el('b', '', r.b)); tk.appendChild(el('span', 'muted small', '/USDT')); t.appendChild(tk); tr.appendChild(t);
+      const t = el('td'); const tk = el('div', 'tok');
+      if (r.img) { const im = el('img'); im.src = r.img; im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; tk.appendChild(im); }
+      tk.appendChild(el('b', '', r.b)); if (r.name) tk.appendChild(el('span', 'muted small', r.name)); t.appendChild(tk); tr.appendChild(t);
       const p = el('td', '', fP(r.c)); const pv = K.prev.get(r.s);
       if (pv != null && pv !== r.c) p.className = r.c > pv ? 'fu' : 'fd';
       tr.appendChild(p);
-      tr.appendChild(el('td', cls(r.chg), fPct(r.chg)));
-      tr.appendChild(el('td', '', fBig(r.q) + ' $'));
-      tr.appendChild(el('td', 'muted', fP(r.h)));
-      tr.appendChild(el('td', 'muted', fP(r.l)));
+      ['chg', 'w', 'm', 'y'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === K.per && !K.manual ? ' strong' : ''), fPct(r[k]))));
+      tr.appendChild(el('td', 'muted', fBig(r.q) + ' $'));
       frag.appendChild(tr);
     });
     rows.forEach((r) => K.prev.set(r.s, r.c));
     tb.replaceChildren(frag);
-    if (!rows.length) { const tr = el('tr'); const td = el('td', 'empty', K.map.size ? 'Kein Coin gefunden.' : 'Lade Kurse …'); td.colSpan = 6; tr.appendChild(td); tb.appendChild(tr); }
+    if (!rows.length) { const tr = el('tr'); const td = el('td', 'empty', K.map.size ? 'Kein Coin gefunden.' : 'Lade Kurse …'); td.colSpan = 7; tr.appendChild(td); tb.appendChild(tr); }
+    $('#k-note').textContent = (K.per !== 'chg' && !K.cgAt ? 'Woche, Monat und Jahr kommen von CoinGecko und laden noch. ' : '') + 'Gezeigt werden die 150 meistgehandelten Coins bei Binance. Tag ist live, Woche, Monat und Jahr werden alle 5 Minuten aktualisiert (CoinGecko).';
     if (K.sel) updateKHead();
   }
   $('#k-table tbody').addEventListener('click', (e) => { const tr = e.target.closest('tr[data-s]'); if (tr) openK(tr.dataset.s, true); });
   $('#k-q').addEventListener('input', (e) => { K.q = e.target.value; renderK(); });
-  sortable($('#k-table'), K, renderK);
 
   function openK(sym, scroll) {
     K.sel = sym; K.trades = [];
     document.querySelectorAll('#k-table tbody tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.s === sym)));
     const box = $('#k-detail'); box.replaceChildren();
-    const b = el('div', 'box-b');
+    const b = el('div', 'box-b'); box.appendChild(b);
     const back = el('button', 'btn back', '← zur Liste'); back.type = 'button'; back.addEventListener('click', () => $('#k-table').scrollIntoView({ behavior: 'smooth' }));
     b.appendChild(back);
-    const base = sym.slice(0, -4);
-    const dh = el('div', 'dh'); dh.appendChild(el('h2', '', base + ' / USDT'));
-    if (NAMES[base]) dh.appendChild(el('span', 'muted', NAMES[base][0].replace(/^./, (c) => c.toUpperCase())));
+    const base = sym.slice(0, -4), g = K.cg.get(base) || {};
+    const dh = el('div', 'dh'); const tk = el('div', 'tok');
+    if (g.img) { const im = el('img'); im.src = g.img; im.alt = ''; im.referrerPolicy = 'no-referrer'; im.style.width = im.style.height = '28px'; tk.appendChild(im); }
+    tk.appendChild(el('h2', '', base + ' / USDT')); dh.appendChild(tk);
+    if (g.name) dh.appendChild(el('span', 'muted', g.name));
     b.appendChild(dh);
     const pr = el('div', 'dh'); pr.appendChild(el('span', 'big', '–')); pr.appendChild(el('span', '', '')); pr.id = 'k-head'; b.appendChild(pr);
     const st = el('div', 'stats'); st.id = 'k-stats'; b.appendChild(st);
-    const ivs = el('div', 'tabs'); ivs.style.marginTop = '10px'; ivs.id = 'k-ivs'; b.appendChild(ivs);
-    const ch = el('div', 'chart'); ch.id = 'k-chart'; b.appendChild(ch);
-    b.appendChild(el('div', 'sub', 'Letzte Trades (live, jeder einzelne)'));
+    const ch = el('div'); b.appendChild(ch);
+    tvWidget(ch, 'BINANCE:' + sym, '60');
+    b.appendChild(el('div', 'sub', 'Kaufen und verkaufen'));
+    if (base === 'SOL') {
+      b.appendChild(el('p', 'small muted', 'Mit deinem Wallet über Jupiter. Jeder Tausch wird erst nach deiner Bestätigung im Wallet ausgeführt.'));
+      const js = el('p', 'small'); b.appendChild(js);
+      const jt = el('div'); jt.id = 'k-jup'; jt.style.minHeight = '480px'; b.appendChild(jt);
+      requestAnimationFrame(() => mountJup('k-jup', USDC_MINT, SOL_MINT, js));
+    } else {
+      b.appendChild(el('p', 'small', base + ' kaufst du bei deinem Broker, zum Beispiel in der App von Trade Republic oder Bitvavo. Solana-Token und Memecoins kannst du direkt hier über dein Wallet handeln: im Tab Memecoins oder bei SOL.'));
+    }
+    b.appendChild(el('div', 'sub', 'Letzte Trades bei Binance (live, jeder einzelne)'));
     const tp = el('div', 'tape'); tp.id = 'k-tape'; b.appendChild(tp);
-    b.appendChild(el('div', 'sub', 'Passende Nachrichten'));
+    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
     const nw = el('div', 'news'); nw.id = 'k-news'; b.appendChild(nw);
     const ln = el('div', 'links');
     [['Auf Binance ansehen', 'https://www.binance.com/de/trade/' + base + '_USDT?type=spot'], ['In TradingView öffnen', 'https://www.tradingview.com/chart/?symbol=BINANCE:' + sym]].forEach(([t, u]) => { const a = el('a', '', t); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; ln.appendChild(a); });
     b.appendChild(ln);
-    box.appendChild(b);
-    const IVS = [['1m', '1 Min'], ['15m', '15 Min'], ['1h', '1 Std'], ['4h', '4 Std'], ['1d', '1 Tag']];
-    const pickIv = (v) => { K.iv = v; chips(ivs, IVS, K.iv, pickIv); loadKl(); };
-    chips(ivs, IVS, K.iv, pickIv);
-    updateKHead(); renderKNews(); loadKl();
+    updateKHead(); renderKNews(); connectKSym();
     if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' });
   }
   function updateKHead() {
     const r = K.map.get(K.sel), h = $('#k-head'); if (!r || !h) return;
+    const g = K.cg.get(r.b) || {};
     const lastTrade = K.trades[0];
     h.children[0].textContent = fP(lastTrade ? lastTrade.p : r.c) + ' $';
     h.children[1].textContent = fPct(r.chg) + ' in 24 h'; h.children[1].className = cls(r.chg);
-    const st = $('#k-stats');
-    st.replaceChildren(stat('24 h Hoch', fP(r.h)), stat('24 h Tief', fP(r.l)), stat('Volumen 24 h', fBig(r.q) + ' $'), stat('Eröffnung 24 h', fP(r.o)));
+    $('#k-stats').replaceChildren(stat('24 h Hoch', fP(r.h)), stat('24 h Tief', fP(r.l)), stat('Volumen 24 h', fBig(r.q) + ' $'), stat('7 Tage', fPct(g.w), cls(g.w)), stat('30 Tage', fPct(g.m), cls(g.m)), stat('1 Jahr', fPct(g.y), cls(g.y)));
   }
   function renderKNews() {
     const host = $('#k-news'); if (!host || !K.sel) return;
-    const base = K.sel.slice(0, -4);
-    newsList(host, matchNews(NAMES[base] || [base.toLowerCase()]), 8);
-  }
-  function loadKl() {
-    const sym = K.sel, iv = K.iv;
-    $('#k-chart').replaceChildren(el('div', 'empty', 'Lade Chart …'));
-    getJSON(BIN_REST + '/klines?symbol=' + sym + '&interval=' + iv + '&limit=150').then((rows) => {
-      if (sym !== K.sel || iv !== K.iv) return;
-      K.kl = rows.map((r) => ({ t: r[0], o: +r[1], h: +r[2], l: +r[3], c: +r[4], v: +r[7] }));
-      drawK(); connectKSym();
-    }).catch(() => { $('#k-chart').replaceChildren(el('div', 'empty', 'Chart gerade nicht ladbar.')); connectKSym(); });
-  }
-  let kDrawT = 0, kDrawTimer = null;
-  function drawK() { drawChart($('#k-chart'), K.kl, { intraday: K.iv !== '1d' }); kDrawT = Date.now(); }
-  function schedK() {
-    if (kDrawTimer) return;
-    kDrawTimer = setTimeout(() => { kDrawTimer = null; if (S.hover) { schedK(); return; } drawK(); }, Math.max(0, kDrawT + 1000 - Date.now()));
+    const base = K.sel.slice(0, -4), g = K.cg.get(base);
+    const words = NAMES[base] || [base.toLowerCase()].concat(g && g.name ? [g.name.toLowerCase()] : []);
+    newsList(host, matchNews(words).filter((n) => (n.wichtig == null ? 2 : n.wichtig) >= 1), 8);
   }
   function connectKSym() {
     if (K.sws) { K.sws.onclose = null; try { K.sws.close(); } catch (e) { /* zu */ } }
-    const s = K.sel.toLowerCase(), iv = K.iv;
-    let ws; try { ws = new WebSocket(BIN_WS + '/stream?streams=' + s + '@kline_' + iv + '/' + s + '@aggTrade'); } catch (e) { return; }
+    const s = K.sel.toLowerCase();
+    let ws; try { ws = new WebSocket(BIN_WS + '/ws/' + s + '@aggTrade'); } catch (e) { return; }
     K.sws = ws;
     ws.onmessage = (ev) => {
-      let m; try { m = JSON.parse(ev.data); } catch (e) { return; }
-      const x = m && m.data; if (!x || x.s !== K.sel) return;
-      if (x.e === 'kline' && x.k && x.k.i === K.iv) {
-        const k = x.k, row = { t: k.t, o: +k.o, h: +k.h, l: +k.l, c: +k.c, v: +k.q };
-        const last = K.kl[K.kl.length - 1];
-        if (last && last.t === row.t) K.kl[K.kl.length - 1] = row; else if (!last || row.t > last.t) { K.kl.push(row); if (K.kl.length > 150) K.kl.shift(); }
-        schedK();
-      } else if (x.e === 'aggTrade') {
-        K.trades.unshift({ t: x.T, p: +x.p, q: +x.q, sell: !!x.m });
-        if (K.trades.length > 40) K.trades.length = 40;
-        tapeDirty = true;
-      }
+      let x; try { x = JSON.parse(ev.data); } catch (e) { return; }
+      if (x && x.data) x = x.data;
+      if (!x || x.e !== 'aggTrade' || x.s !== K.sel) return;
+      K.trades.unshift({ t: x.T, p: +x.p, q: +x.q, sell: !!x.m });
+      if (K.trades.length > 40) K.trades.length = 40;
+      tapeDirty = true;
     };
     ws.onclose = () => { if (K.sws === ws) setTimeout(() => { if (K.sws === ws) connectKSym(); }, 3000); };
   }
@@ -649,8 +701,13 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   }
 
   // ------------------------------------------------------------------ MEMECOINS
-  const M = { rows: [], src: 'neu', chain: 'solana', q: '', sel: null, sort: { k: 'vol', dir: -1 }, loading: false, timer: null, err: null, at: 0 };
-  const SRC = [['neu', 'Neu gelistet'], ['werbung', 'Meist beworben'], ['suche', 'Suche']];
+  const M = { rows: [], src: 'neu', chain: 'solana', q: '', sel: null, sort: { k: 'vol', dir: -1 }, manual: false, per: 'h24', rank: 'best', loading: false, err: null, at: 0 };
+  const SRC = [['neu', 'Neu gelistet'], ['werbung', 'Meist beworben'], ['etabliert', 'Bekannte Memecoins'], ['suche', 'Suche']];
+  const M_PER_DEX = [['m5', '5 Min'], ['h1', '1 Std'], ['h6', '6 Std'], ['h24', '24 Std']];
+  const M_PER_CG = [['h24', 'Tag'], ['w', 'Woche'], ['m', 'Monat'], ['y', 'Jahr']];
+  const M_COLS_DEX = [['sym', 'Token'], ['risk', 'Risiko'], ['price', 'Preis $'], ['m5', '5 Min'], ['h1', '1 Std'], ['h24', '24 Std'], ['vol', 'Volumen'], ['liq', 'Liquidität'], ['age', 'Alter']];
+  const M_COLS_CG = [['sym', 'Token'], ['price', 'Preis $'], ['h24', '24 Std'], ['w', '7 Tage'], ['m', '30 Tage'], ['y', '1 Jahr'], ['mcap', 'Marktwert'], ['vol', 'Volumen']];
+  const isCG = () => M.src === 'etabliert';
   function memeFlags(r) {
     const f = []; const ageH = r.created ? (Date.now() - r.created) / 3.6e6 : null;
     if (ageH == null) f.push(['Alter unbekannt', 2]); else if (ageH < 1) f.push(['Jünger als 1 Stunde', 3]); else if (ageH < 24) f.push(['Jünger als 24 Stunden', 2]); else if (ageH < 24 * 7) f.push(['Jünger als 7 Tage', 1]);
@@ -668,12 +725,11 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   function pairToRow(p, extra) {
     const info = p.info || {};
     const r = {
-      chain: p.chainId, addr: p.baseToken.address, name: p.baseToken.name, sym: p.baseToken.symbol,
+      key: p.chainId + ':' + p.baseToken.address, chain: p.chainId, addr: p.baseToken.address, name: p.baseToken.name, sym: p.baseToken.symbol,
       pair: p.pairAddress, url: p.url, dex: p.dexId, price: p.priceUsd != null ? +p.priceUsd : null,
       m5: p.priceChange && p.priceChange.m5, h1: p.priceChange && p.priceChange.h1, h6: p.priceChange && p.priceChange.h6, h24: p.priceChange && p.priceChange.h24,
-      vol: p.volume ? p.volume.h24 : 0, vol1: p.volume ? p.volume.h1 : 0, liq: p.liquidity ? p.liquidity.usd || 0 : 0, fdv: p.fdv || 0, mcap: p.marketCap || 0,
+      vol: p.volume ? p.volume.h24 : 0, liq: p.liquidity ? p.liquidity.usd || 0 : 0, fdv: p.fdv || 0, mcap: p.marketCap || 0,
       created: p.pairCreatedAt || null, b1: p.txns && p.txns.h1 ? p.txns.h1.buys : 0, s1: p.txns && p.txns.h1 ? p.txns.h1.sells : 0,
-      b24: p.txns && p.txns.h24 ? p.txns.h24.buys : 0, s24: p.txns && p.txns.h24 ? p.txns.h24.sells : 0,
       icon: info.imageUrl || (extra && extra.icon) || null,
       links: [].concat((info.websites || []).map((w) => ({ label: w.label || 'Website', url: w.url })), (info.socials || []).map((s) => ({ label: s.type || 'Social', url: s.url })), (extra && extra.links) || []),
       boost: (p.boosts && p.boosts.active) || (extra && extra.boost) || 0, desc: extra && extra.desc,
@@ -687,8 +743,11 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     if (M.loading) return; M.loading = true; M.err = null;
     try {
       let rows = [];
-      if (M.src === 'suche') {
-        if (M.q.trim().length < 2) { M.rows = []; renderM(); return; }
+      if (M.src === 'etabliert') {
+        const list = await getJSON('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=meme-token&order=market_cap_desc&per_page=100&page=1&price_change_percentage=1h,24h,7d,30d,1y');
+        rows = list.map((c) => ({ key: 'cg:' + c.id, cg: c.id, sym: (c.symbol || '').toUpperCase(), name: c.name, icon: c.image, price: c.current_price, h1: c.price_change_percentage_1h_in_currency, h24: c.price_change_percentage_24h_in_currency != null ? c.price_change_percentage_24h_in_currency : c.price_change_percentage_24h, w: c.price_change_percentage_7d_in_currency, m: c.price_change_percentage_30d_in_currency, y: c.price_change_percentage_1y_in_currency, mcap: c.market_cap, vol: c.total_volume }));
+      } else if (M.src === 'suche') {
+        if (M.q.trim().length < 2) { M.rows = []; return; }
         const j = await getJSON(DEX + '/latest/dex/search?q=' + encodeURIComponent(M.q.trim()));
         const best = new Map();
         (j.pairs || []).forEach((p) => { if (M.chain !== 'alle' && p.chainId !== M.chain) return; const k = p.chainId + ':' + p.baseToken.address; const o = best.get(k); if (!o || ((p.liquidity || {}).usd || 0) > ((o.liquidity || {}).usd || 0)) best.set(k, p); });
@@ -702,54 +761,65 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
           extra.set(k, { icon: x.icon || null, desc: x.description || '', links: (x.links || []).map((l) => ({ label: l.label || l.type || 'Link', url: l.url })), boost: x.totalAmount || x.amount || 0 });
           (byChain[x.chainId] = byChain[x.chainId] || []).push(x.tokenAddress);
         });
-        const calls = Object.keys(byChain).map((c) => getJSON(DEX + '/tokens/v1/' + c + '/' + byChain[c].slice(0, 30).join(',')).catch(() => []));
-        const res = await Promise.all(calls);
+        const res = await Promise.all(Object.keys(byChain).map((c) => getJSON(DEX + '/tokens/v1/' + c + '/' + byChain[c].slice(0, 30).join(',')).catch(() => [])));
         const best = new Map();
         res.flat().forEach((p) => { const k = p.chainId + ':' + p.baseToken.address; if (!extra.has(k)) return; const o = best.get(k); if (!o || ((p.liquidity || {}).usd || 0) > ((o.liquidity || {}).usd || 0)) best.set(k, p); });
         rows = Array.from(best.entries()).map(([k, p]) => pairToRow(p, extra.get(k)));
       }
       M.rows = rows; M.at = Date.now();
-      if (M.sel) { const s = rows.find((r) => r.chain + ':' + r.addr === M.sel); if (s) updateMHead(s); }
+      if (M.sel) { const s = rows.find((r) => r.key === M.sel); if (s && !s.cg) updateMHead(s); }
     } catch (e) { M.err = e.message; }
     finally { M.loading = false; renderM(); }
   }
   function renderM() {
+    const cg = isCG();
+    const per = cg ? M_PER_CG : M_PER_DEX;
+    if (!per.some(([k]) => k === M.per)) M.per = 'h24';
+    rankBar($('#m-rank'), per, M, renderM);
+    const cols = cg ? M_COLS_CG : M_COLS_DEX;
+    headRow($('#m-table'), cols, M, M.per, renderM);
     const tb = $('#m-table tbody');
-    const rows = M.rows.slice().sort((a, b) => cmp(a, b, M.sort.k, M.sort.dir));
+    const rows = M.rows.slice().sort((a, b) => M.manual ? (M.sort.k === 'sym' ? cmp(a, b, 'sym', M.sort.dir) : cmpN(a, b, M.sort.k, M.sort.dir)) : cmpN(a, b, M.per, M.rank === 'best' ? -1 : 1));
     const frag = document.createDocumentFragment();
     rows.forEach((r) => {
-      const key = r.chain + ':' + r.addr;
-      const tr = el('tr'); tr.dataset.key = key; tr.setAttribute('aria-selected', String(key === M.sel));
+      const tr = el('tr'); tr.dataset.key = r.key; tr.setAttribute('aria-selected', String(r.key === M.sel));
       const t = el('td'); const tk = el('div', 'tok');
       if (r.icon) { const im = el('img'); im.src = r.icon; im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; tk.appendChild(im); }
-      tk.appendChild(el('b', '', r.sym)); tk.appendChild(el('span', 'muted small', r.chain)); t.appendChild(tk); tr.appendChild(t);
-      const rk = el('td'); rk.appendChild(el('span', 'badge lvl-' + r.risk, r.riskInfo.label)); tr.appendChild(rk);
-      tr.appendChild(el('td', '', fP(r.price)));
-      ['m5', 'h1', 'h24'].forEach((k) => tr.appendChild(el('td', cls(r[k]), fPct(r[k]))));
-      tr.appendChild(el('td', '', fBig(r.vol) + ' $'));
-      tr.appendChild(el('td', r.liq < 50000 ? 'down' : '', fBig(r.liq) + ' $'));
-      tr.appendChild(el('td', 'muted', r.created ? ago(r.created).replace('vor ', '') : '–'));
+      tk.appendChild(el('b', '', r.sym)); tk.appendChild(el('span', 'muted small', cg ? r.name : r.chain)); t.appendChild(tk); tr.appendChild(t);
+      if (cg) {
+        tr.appendChild(el('td', '', fP(r.price)));
+        ['h24', 'w', 'm', 'y'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === M.per && !M.manual ? ' strong' : ''), fPct(r[k]))));
+        tr.appendChild(el('td', 'muted', fBig(r.mcap) + ' $')); tr.appendChild(el('td', 'muted', fBig(r.vol) + ' $'));
+      } else {
+        const rk = el('td'); rk.appendChild(el('span', 'badge lvl-' + r.risk, r.riskInfo.label)); tr.appendChild(rk);
+        tr.appendChild(el('td', '', fP(r.price)));
+        ['m5', 'h1', 'h24'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === M.per && !M.manual ? ' strong' : ''), fPct(r[k]))));
+        tr.appendChild(el('td', '', fBig(r.vol) + ' $'));
+        tr.appendChild(el('td', r.liq < 50000 ? 'down' : '', fBig(r.liq) + ' $'));
+        tr.appendChild(el('td', 'muted', r.created ? ago(r.created).replace('vor ', '') : '–'));
+      }
       frag.appendChild(tr);
     });
     tb.replaceChildren(frag);
     if (!rows.length) {
-      const tr = el('tr'); const td = el('td', 'empty', M.loading ? 'Lade …' : M.err ? 'DexScreener gerade nicht erreichbar (' + M.err + '). Neuer Versuch in 10 Sek.' : M.src === 'suche' ? 'Gib oben einen Namen oder eine Adresse ein.' : 'Keine Token gefunden.');
-      td.colSpan = 9; tr.appendChild(td); tb.appendChild(tr);
+      const tr = el('tr'); const td = el('td', 'empty', M.loading ? 'Lade …' : M.err ? 'Datenquelle gerade nicht erreichbar (' + M.err + '). Neuer Versuch in Kürze.' : M.src === 'suche' ? 'Gib oben einen Namen oder eine Adresse ein.' : 'Keine Token gefunden.');
+      td.colSpan = cols.length; tr.appendChild(td); tb.appendChild(tr);
     }
-    $('#m-note').textContent = (M.at ? 'Stand ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date(M.at)) + ', aktualisiert alle 10 Sekunden. Der Chart rechts ist live. ' : '') +
+    $('#m-note').textContent = (M.at ? 'Stand ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date(M.at)) + '. ' : '') +
+      (cg ? 'Die 100 größten Memecoins nach Marktwert (CoinGecko), alle 60 Sekunden aktualisiert. ' : 'Neue Token von DexScreener, alle 10 Sekunden aktualisiert. Die Charts in den Details sind live. ') +
       (M.src === 'werbung' ? '"Meist beworben" heißt: Die Ersteller haben für Sichtbarkeit bezahlt. Das ist Werbung, kein Qualitätsmerkmal. ' : '') +
-      'Risiko ist nie "niedrig": Die Stufen Hoch, Sehr hoch und Extrem zählen Warnzeichen wie geringes Alter, wenig Liquidität und viele Verkäufe.';
+      (cg ? '' : 'Risiko ist nie "niedrig": Die Stufen zählen Warnzeichen wie geringes Alter, wenig Liquidität und viele Verkäufe.');
   }
-  chips($('#m-src'), SRC, M.src, function pick(v) { M.src = v; chips($('#m-src'), SRC, M.src, pick); M.rows = []; renderM(); loadMemes(); });
+  function pickSrc(v) { M.src = v; chips($('#m-src'), SRC, M.src, pickSrc); $('#m-chain').disabled = v === 'etabliert'; M.rows = []; M.manual = false; M.per = v === 'etabliert' ? 'h24' : M.per; renderM(); loadMemes(); }
+  chips($('#m-src'), SRC, M.src, pickSrc);
   $('#m-chain').addEventListener('change', (e) => { M.chain = e.target.value; M.rows = []; renderM(); loadMemes(); });
   let mqT = null;
-  $('#m-q').addEventListener('input', (e) => { M.q = e.target.value; clearTimeout(mqT); mqT = setTimeout(() => { if (M.src !== 'suche') { M.src = 'suche'; chips($('#m-src'), SRC, M.src, function pick(v) { M.src = v; chips($('#m-src'), SRC, M.src, pick); M.rows = []; renderM(); loadMemes(); }); } loadMemes(); }, 500); });
+  $('#m-q').addEventListener('input', (e) => { M.q = e.target.value; clearTimeout(mqT); mqT = setTimeout(() => { if (M.src !== 'suche') pickSrc('suche'); else loadMemes(); }, 500); });
   $('#m-table tbody').addEventListener('click', (e) => { const tr = e.target.closest('tr[data-key]'); if (tr) openM(tr.dataset.key, true); });
-  sortable($('#m-table'), M, renderM);
 
   const EXPLORER = { solana: 'https://solscan.io/token/', ethereum: 'https://etherscan.io/token/', base: 'https://basescan.org/token/', bsc: 'https://bscscan.com/token/' };
   function openM(key, scroll) {
-    const r = M.rows.find((x) => x.chain + ':' + x.addr === key); if (!r) return;
+    const r = M.rows.find((x) => x.key === key); if (!r) return;
     M.sel = key;
     document.querySelectorAll('#m-table tbody tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.key === key)));
     const box = $('#m-detail'); box.replaceChildren();
@@ -757,13 +827,24 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     const back = el('button', 'btn back', '← zur Liste'); back.type = 'button'; back.addEventListener('click', () => $('#m-table').scrollIntoView({ behavior: 'smooth' })); b.appendChild(back);
     const dh = el('div', 'dh'); const tk = el('div', 'tok');
     if (r.icon) { const im = el('img'); im.src = r.icon; im.alt = ''; im.referrerPolicy = 'no-referrer'; im.style.width = im.style.height = '28px'; tk.appendChild(im); }
-    tk.appendChild(el('h2', '', r.name + ' (' + r.sym + ')')); dh.appendChild(tk); dh.appendChild(el('span', 'badge lvl-' + r.risk, 'Risiko: ' + r.riskInfo.label)); b.appendChild(dh);
+    tk.appendChild(el('h2', '', r.name + ' (' + r.sym + ')')); dh.appendChild(tk);
+    if (!r.cg) dh.appendChild(el('span', 'badge lvl-' + r.risk, 'Risiko: ' + r.riskInfo.label));
+    b.appendChild(dh);
     const hd = el('div', 'dh'); hd.id = 'm-head'; b.appendChild(hd);
     const st = el('div', 'stats'); st.id = 'm-stats'; b.appendChild(st);
+    if (r.cg) { openMcg(b, r); if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' }); return; }
     updateMHead(r);
     const fr = el('iframe', 'frame'); fr.title = 'Live-Chart von DexScreener';
     fr.src = 'https://dexscreener.com/' + r.chain + '/' + r.pair + '?embed=1&theme=dark&trades=0&info=0';
-    fr.loading = 'lazy'; fr.referrerPolicy = 'no-referrer'; b.appendChild(fr);
+    fr.loading = 'lazy'; fr.referrerPolicy = 'no-referrer'; fr.style.height = '480px'; b.appendChild(fr);
+    b.appendChild(el('p', 'note', 'Live-Chart von DexScreener. Zoomen mit dem Mausrad, Indikatoren über das Symbol "fx" oben im Chart.'));
+    if (r.chain === 'solana') {
+      b.appendChild(el('div', 'sub', 'Kaufen und verkaufen'));
+      b.appendChild(el('p', 'small muted', 'Mit deinem Wallet über Jupiter. Prüfe, ob oben im Fenster genau diese Adresse steht: ' + r.addr.slice(0, 6) + '…' + r.addr.slice(-6) + '. Jeder Tausch wird erst nach deiner Bestätigung im Wallet ausgeführt.'));
+      const js = el('p', 'small'); b.appendChild(js);
+      const jt = el('div'); jt.id = 'm-jup'; jt.style.minHeight = '480px'; b.appendChild(jt);
+      requestAnimationFrame(() => mountJup('m-jup', SOL_MINT, r.addr, js));
+    }
     b.appendChild(el('div', 'sub', 'Warnzeichen'));
     const ul = el('ul', 'flags');
     if (!r.riskInfo.flags.length) ul.appendChild(el('li', 'muted', 'Keine der geprüften Warnzeichen. Das Risiko bleibt trotzdem hoch.'));
@@ -780,16 +861,28 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       .concat(r.links.slice(0, 6).map((l) => [l.label, l.url])).filter(Boolean)
       .forEach(([t, u]) => { if (!/^https?:\/\//.test(u)) return; const a = el('a', '', t); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; ln.appendChild(a); });
     b.appendChild(ln);
-    if (r.chain === 'solana') {
-      const tb = el('button', 'btn', 'Im Handelsfenster öffnen'); tb.type = 'button'; tb.style.marginTop = '8px';
-      tb.addEventListener('click', () => { J.mint = r.addr; J.sym = r.sym; show('trade'); });
-      b.appendChild(tb);
-    }
-    b.appendChild(el('div', 'sub', 'Passende Nachrichten'));
+    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
     const nw = el('div', 'news'); b.appendChild(nw);
     newsList(nw, matchNews([r.name.toLowerCase(), r.sym.length > 2 ? '$' + r.sym.toLowerCase() : r.name.toLowerCase()]), 6);
     b.appendChild(el('p', 'note', 'Vor jedem Kauf prüfen: Wer hat ihn angekündigt und steht das auch bei einer Nachrichtenseite? Halten wenige Wallets den Großteil? Ist die Liquidität gesperrt? Lässt er sich wieder verkaufen? Erfährst du es aus einer Schlagzeile, waren andere schneller.'));
     if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' });
+  }
+  function openMcg(b, r) {
+    $('#m-head').replaceChildren(el('span', 'big', fP(r.price) + ' $'), el('span', cls(r.h24), fPct(r.h24) + ' in 24 h'));
+    $('#m-stats').replaceChildren(stat('1 Std', fPct(r.h1), cls(r.h1)), stat('7 Tage', fPct(r.w), cls(r.w)), stat('30 Tage', fPct(r.m), cls(r.m)), stat('1 Jahr', fPct(r.y), cls(r.y)), stat('Marktwert', fBig(r.mcap) + ' $'), stat('Volumen 24 h', fBig(r.vol) + ' $'));
+    const ch = el('div'); b.appendChild(ch);
+    const onBinance = K.map.has(r.sym + 'USDT');
+    if (onBinance) tvWidget(ch, 'BINANCE:' + r.sym + 'USDT', '240');
+    else ch.appendChild(el('p', 'small muted', 'Für diesen Memecoin gibt es keinen Binance-Chart. Den Verlauf siehst du bei CoinGecko.'));
+    const ln = el('div', 'links');
+    if (onBinance) { const bt = el('button', 'btn', 'Im Krypto-Tab mit Live-Trades öffnen'); bt.type = 'button'; bt.addEventListener('click', () => { show('krypto'); openK(r.sym + 'USDT', true); }); ln.appendChild(bt); }
+    const a = el('a', '', 'Auf CoinGecko'); a.href = 'https://www.coingecko.com/de/munze/' + r.cg; a.target = '_blank'; a.rel = 'noopener noreferrer'; ln.appendChild(a);
+    const s = el('button', 'btn', 'Auf DexScreener suchen (zum Handeln)'); s.type = 'button'; s.addEventListener('click', () => { $('#m-q').value = r.sym; M.q = r.sym; pickSrc('suche'); }); ln.appendChild(s);
+    b.appendChild(ln);
+    b.appendChild(el('p', 'note', 'Zum Kaufen über dein Wallet suche den Token über "Auf DexScreener suchen" und wähle den Eintrag mit der höchsten Liquidität. Achtung: Es gibt viele Kopien mit gleichem Namen. Prüfe die Adresse auf der offiziellen Seite des Projekts.'));
+    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
+    const nw = el('div', 'news'); b.appendChild(nw);
+    newsList(nw, matchNews([r.name.toLowerCase()].concat(r.sym.length > 2 ? [r.sym.toLowerCase()] : [])), 6);
   }
   function updateMHead(r) {
     const hd = $('#m-head'), st = $('#m-stats'); if (!hd || !st) return;
@@ -799,72 +892,62 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   }
 
   // ------------------------------------------------------------------ ETFS
-  const E = { sort: { k: 'gruppe', dir: 1 }, sel: null };
+  const E = { sort: { k: 'aend1d', dir: -1 }, manual: false, per: 'aend1d', rank: 'best', sel: null };
+  const E_PER = [['aend1d', 'Tag'], ['aend1w', 'Woche'], ['aend1m', 'Monat'], ['aend1y', 'Jahr']];
+  const E_COLS = [['sym', 'ETF'], ['gruppe', 'Bereich'], ['preis', 'Preis $'], ['aend1d', '1 Tag'], ['aend1w', '1 Woche'], ['aend1m', '1 Monat'], ['aend1y', '1 Jahr']];
   function renderEtfs() {
     const e = D.data && D.data.etfs; const tb = $('#e-table tbody');
-    if (!e) { tb.replaceChildren(); const tr = el('tr'); const td = el('td', 'empty', 'Noch keine ETF-Daten. Sie kommen mit dem nächsten automatischen Abruf.'); td.colSpan = 5; tr.appendChild(td); tb.appendChild(tr); return; }
+    rankBar($('#e-rank'), E_PER, E, renderEtfs);
+    headRow($('#e-table'), E_COLS, E, E.per, renderEtfs);
+    if (!e) { tb.replaceChildren(); const tr = el('tr'); const td = el('td', 'empty', 'Noch keine ETF-Daten. Sie kommen mit dem nächsten automatischen Abruf.'); td.colSpan = 7; tr.appendChild(td); tb.appendChild(tr); return; }
     $('#e-src').textContent = e.quelle + ', geprüft ' + fTime(new Date(e.stand).getTime()) + (e.veraltet ? ' (veraltet)' : '');
-    const rows = e.daten.slice().sort((a, b) => cmp(a, b, E.sort.k, E.sort.dir) || cmp(a, b, 'sym', 1));
+    const rows = e.daten.slice().sort((a, b) => E.manual ? ((E.sort.k === 'sym' || E.sort.k === 'gruppe') ? cmp(a, b, E.sort.k, E.sort.dir) : cmpN(a, b, E.sort.k, E.sort.dir)) : cmpN(a, b, E.per, E.rank === 'best' ? -1 : 1));
     const frag = document.createDocumentFragment();
     rows.forEach((r) => {
       const tr = el('tr'); tr.dataset.s = r.sym; tr.setAttribute('aria-selected', String(r.sym === E.sel));
       const t = el('td'); const tk = el('div', 'tok'); tk.appendChild(el('b', '', r.sym)); tk.appendChild(el('span', 'muted small', r.name)); t.appendChild(tk); tr.appendChild(t);
       tr.appendChild(el('td', 'muted', r.gruppe)); tr.appendChild(el('td', '', fP(r.preis)));
-      tr.appendChild(el('td', cls(r.aend1d), fPct(r.aend1d))); tr.appendChild(el('td', cls(r.aend1m), fPct(r.aend1m)));
+      ['aend1d', 'aend1w', 'aend1m', 'aend1y'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === E.per && !E.manual ? ' strong' : ''), fPct(r[k]))));
       frag.appendChild(tr);
     });
     tb.replaceChildren(frag);
   }
   $('#e-table tbody').addEventListener('click', (ev) => { const tr = ev.target.closest('tr[data-s]'); if (tr) openEtf(tr.dataset.s, false, true); });
-  sortable($('#e-table'), E, renderEtfs);
   const UCITS = { SPY: 'iShares Core S&P 500 UCITS (IE00B5BMR087)', QQQ: 'iShares Nasdaq 100 UCITS (IE00B53SZB19)', URTH: 'iShares Core MSCI World UCITS (IE00B4L5Y983)', GLD: 'Xetra-Gold, ein ETC (DE000A0S9GB0)', ITA: 'VanEck Defense UCITS (IE000YYE6WK5)' };
   function openEtf(sym, refresh, scroll) {
     const r = D.data && D.data.etfs && D.data.etfs.daten.find((x) => x.sym === sym); if (!r) return;
-    const keepTv = refresh && $('#e-tv') && $('#e-tv').dataset.loaded === sym;
+    if (refresh && E.sel === sym && $('#e-detail .tradingview-widget-container')) {
+      const h = $('#e-head'); if (h) h.replaceChildren(el('span', 'big', fP(r.preis) + ' $'), el('span', cls(r.aend1d), fPct(r.aend1d) + ' am letzten Handelstag'));
+      return;
+    }
     E.sel = sym;
     document.querySelectorAll('#e-table tbody tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.s === sym)));
-    const box = $('#e-detail'); const oldTv = keepTv ? $('#e-tv') : null; box.replaceChildren();
-    const b = el('div', 'box-b');
+    const box = $('#e-detail'); box.replaceChildren();
+    const b = el('div', 'box-b'); box.appendChild(b);
     const back = el('button', 'btn back', '← zur Liste'); back.type = 'button'; back.addEventListener('click', () => $('#e-table').scrollIntoView({ behavior: 'smooth' })); b.appendChild(back);
     const dh = el('div', 'dh'); dh.appendChild(el('h2', '', r.sym)); dh.appendChild(el('span', 'muted', r.name + ', ' + r.gruppe)); b.appendChild(dh);
-    const hd = el('div', 'dh'); hd.appendChild(el('span', 'big', fP(r.preis) + ' $')); hd.appendChild(el('span', cls(r.aend1d), fPct(r.aend1d) + ' am letzten Handelstag')); b.appendChild(hd);
-    const k = r.kerzen || [];
-    const hi = Math.max(...k.map((x) => x.h)), lo = Math.min(...k.map((x) => x.l));
-    const st = el('div', 'stats'); st.append(stat('1 Monat', fPct(r.aend1m), cls(r.aend1m)), stat('Hoch (' + k.length + ' Tage)', fP(hi)), stat('Tief (' + k.length + ' Tage)', fP(lo)), stat('Letzter Handelstag', r.datum)); b.appendChild(st);
-    const ch = el('div', 'chart'); b.appendChild(ch);
-    const tvWrap = oldTv || el('div'); tvWrap.id = 'e-tv';
-    if (!oldTv) {
-      const btn = el('button', 'btn', 'Live-Chart von TradingView laden'); btn.type = 'button'; btn.style.marginTop = '10px';
-      btn.addEventListener('click', () => loadTv(tvWrap, r));
-      tvWrap.appendChild(btn);
-    }
-    b.appendChild(tvWrap);
-    b.appendChild(el('div', 'sub', 'In der EU kaufbar'));
-    b.appendChild(el('p', 'small', UCITS[r.sym] ? 'Vergleichbar: ' + UCITS[r.sym] + '. Bitte vor dem Kauf bei deinem Broker prüfen.' : 'Suche bei deinem Broker nach einer UCITS-Version oder einem ETC auf ' + r.name + '.'));
-    b.appendChild(el('div', 'sub', 'Passende Nachrichten'));
-    const nw = el('div', 'news'); b.appendChild(nw); newsList(nw, matchNews(ETF_WORDS[r.sym] || [r.name.toLowerCase()]), 6);
-    box.appendChild(b);
-    requestAnimationFrame(() => drawChart(ch, k.map((x) => ({ t: Date.parse(x.d + 'T00:00:00Z'), o: x.o, h: x.h, l: x.l, c: x.c, v: x.v })), { intraday: false }));
+    const hd = el('div', 'dh'); hd.id = 'e-head'; hd.appendChild(el('span', 'big', fP(r.preis) + ' $')); hd.appendChild(el('span', cls(r.aend1d), fPct(r.aend1d) + ' am letzten Handelstag')); b.appendChild(hd);
+    const st = el('div', 'stats'); st.append(stat('1 Woche', fPct(r.aend1w), cls(r.aend1w)), stat('1 Monat', fPct(r.aend1m), cls(r.aend1m)), stat('1 Jahr', fPct(r.aend1y), cls(r.aend1y)), stat('Letzter Handelstag', r.datum)); b.appendChild(st);
+    const ch = el('div'); b.appendChild(ch); tvWidget(ch, r.tv || r.sym, 'D');
+    b.appendChild(el('div', 'sub', 'In der EU kaufen'));
+    b.appendChild(el('p', 'small', (UCITS[r.sym] ? 'Vergleichbar: ' + UCITS[r.sym] + '. ' : 'Suche bei deinem Broker nach einer UCITS-Version oder einem ETC auf ' + r.name + '. ') + 'Kaufen kannst du ETFs in der App deines Brokers, zum Beispiel Trade Republic. Bitte vor dem Kauf dort prüfen.'));
+    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
+    const nw = el('div', 'news'); b.appendChild(nw); newsList(nw, matchNews(ETF_WORDS[r.sym] || [r.name.toLowerCase()]).filter((n) => (n.wichtig == null ? 2 : n.wichtig) >= 1), 6);
     if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' });
-  }
-  function loadTv(wrap, r) {
-    wrap.replaceChildren(); wrap.dataset.loaded = r.sym;
-    const c = el('div', 'tradingview-widget-container'); c.style.height = '440px'; c.style.marginTop = '10px';
-    const w = el('div', 'tradingview-widget-container__widget'); w.style.height = '100%'; c.appendChild(w);
-    const s = document.createElement('script'); s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js'; s.async = true;
-    s.textContent = JSON.stringify({ autosize: true, symbol: r.tv || r.sym, interval: '60', timezone: 'Europe/Berlin', theme: 'dark', style: '1', locale: 'de_DE', allow_symbol_change: false, hide_side_toolbar: true, support_host: 'https://www.tradingview.com' });
-    c.appendChild(s); wrap.appendChild(c);
-    wrap.appendChild(el('p', 'note', 'Chart von TradingView. US-Börsenkurse können dort verzögert sein, außerhalb der Handelszeiten bewegt sich nichts.'));
   }
 
   // ------------------------------------------------------------------ NACHRICHTEN
-  const N = { tag: 'Alle', q: '' };
+  const N = { tag: 'Alle', q: '', only: true };
   function renderNews() {
     const all = (D.data && D.data.news && D.data.news.daten) || [];
-    const tags = ['Alle'].concat(Array.from(new Set(all.flatMap((n) => n.tags || []))));
+    const imp = (n) => (n.wichtig == null ? 2 : n.wichtig);
+    const base = N.only ? all.filter((n) => imp(n) >= 2) : all;
+    chips($('#n-mode'), [['wichtig', 'Nur wichtige (' + all.filter((n) => imp(n) >= 2).length + ')'], ['alle', 'Alle (' + all.length + ')']], N.only ? 'wichtig' : 'alle', (v) => { N.only = v === 'wichtig'; renderNews(); });
+    const tags = ['Alle'].concat(Array.from(new Set(base.flatMap((n) => n.tags || []))));
+    if (!tags.includes(N.tag)) N.tag = 'Alle';
     chips($('#n-tags'), tags.map((t) => [t, t]), N.tag, (t) => { N.tag = t; renderNews(); });
     const q = N.q.trim().toLowerCase();
-    const items = all.filter((n) => (N.tag === 'Alle' || (n.tags || []).includes(N.tag)) && (!q || (n.titel + ' ' + (n.text || '')).toLowerCase().includes(q)));
+    const items = base.filter((n) => (N.tag === 'Alle' || (n.tags || []).includes(N.tag)) && (!q || (n.titel + ' ' + (n.text || '')).toLowerCase().includes(q)));
     newsList($('#n-list'), items);
   }
   $('#n-q').addEventListener('input', (e) => { N.q = e.target.value; renderNews(); });
@@ -905,29 +988,37 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
 
   // ------------------------------------------------------------------ HANDELN (offizielles Jupiter-Fenster)
   const SOL_MINT = 'So11111111111111111111111111111111111111112';
-  const J = { mint: null, sym: null, shown: undefined, loading: false };
-  function initJup() {
-    const state = $('#j-state');
-    const go = () => {
-      if (J.shown === J.mint) { return; }
-      try {
-        $('#jupiter-plugin').replaceChildren();
-        const formProps = { initialInputMint: SOL_MINT };
-        if (J.mint) formProps.initialOutputMint = J.mint;
-        window.Jupiter.init({ displayMode: 'integrated', integratedTargetId: 'jupiter-plugin', formProps,
-          onSuccess: (res) => { try { window.__mtsJupiterSuccess && window.__mtsJupiterSuccess(res); } catch (e) { /* Journal-Vorschlag optional */ } } });
-        J.shown = J.mint;
-        state.textContent = J.mint ? 'Vorausgewählt: ' + (J.sym || 'Token') + '. Prüfe die Adresse im Fenster, bevor du tauschst.' : '';
-      } catch (e) { state.textContent = 'Das Handelsfenster konnte nicht starten (' + e.message + '). Du kannst direkt auf jup.ag handeln.'; }
-    };
-    if (window.Jupiter && window.Jupiter.init) { go(); return; }
+  const USDC_MINT = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v';
+  const J = { mint: null, sym: null, key: null, loading: false, queue: null };
+  function loadJupScript(cb, stateEl) {
+    if (window.Jupiter && window.Jupiter.init) { cb(); return; }
+    J.queue = cb;
     if (J.loading) return;
     J.loading = true;
+    if (stateEl) stateEl.textContent = 'Lade das Handelsfenster von Jupiter …';
     const s = document.createElement('script');
     s.src = 'https://plugin.jup.ag/plugin-v1.js';
-    s.onload = () => { J.loading = false; go(); };
-    s.onerror = () => { J.loading = false; state.textContent = 'Das Handelsfenster von Jupiter ist gerade nicht erreichbar. Du kannst direkt auf jup.ag handeln.'; };
+    s.onload = () => { J.loading = false; if (J.queue) J.queue(); };
+    s.onerror = () => { J.loading = false; if (stateEl) stateEl.textContent = 'Das Handelsfenster von Jupiter ist gerade nicht erreichbar. Du kannst direkt auf jup.ag handeln.'; };
     document.head.appendChild(s);
+  }
+  function mountJup(targetId, inMint, outMint, stateEl) {
+    loadJupScript(() => {
+      const target = document.getElementById(targetId); if (!target) return;
+      const key = targetId + '|' + inMint + '|' + outMint;
+      if (J.key === key && target.childElementCount) return;
+      try {
+        target.replaceChildren();
+        window.Jupiter.init({ displayMode: 'integrated', integratedTargetId: targetId, formProps: { initialInputMint: inMint, initialOutputMint: outMint },
+          onSuccess: (res) => { try { window.__mtsJupiterSuccess && window.__mtsJupiterSuccess(res); } catch (e) { /* Journal optional */ } } });
+        J.key = key;
+        if (stateEl) stateEl.textContent = '';
+      } catch (e) { if (stateEl) stateEl.textContent = 'Das Handelsfenster konnte nicht starten (' + e.message + '). Du kannst direkt auf jup.ag handeln.'; }
+    }, stateEl);
+  }
+  function initJup() {
+    mountJup('jupiter-plugin', SOL_MINT, J.mint || USDC_MINT, $('#j-state'));
+    if (J.mint) setTimeout(() => { $('#j-state').textContent = 'Vorausgewählt: ' + (J.sym || 'Token') + '. Prüfe die Adresse im Fenster, bevor du tauschst.'; }, 50);
   }
 
   // ------------------------------------------------------------------ JOURNAL (Trades, Steuer, Datei)
@@ -1049,6 +1140,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       if (left > 1e-9) { warn.push(asset); sales.push({ ts, asset, qty: left, erloes: proceeds * (left / qty), kosten: null, tage: null, frei: false, klasse, ref, fehlt: true }); }
     };
     items.forEach((it) => {
+      if (it.wert == null || !isFinite(it.wert)) { warn.push(it.asset + ' (Wert fehlt)'); return; }
       if (it.art === 'kauf') buy(it.asset, it.menge, it.wert + (it.gebuehr || 0), it.ts);
       else if (it.art === 'verkauf') sell(it.asset, it.menge, it.wert - (it.gebuehr || 0), it.ts, it.klasse, it.id);
       else if (it.art === 'tausch') { sell(it.asset, it.menge, it.wert - (it.gebuehr || 0), it.ts, it.klasse, it.id); buy(it.asset2, it.menge2, it.wert, it.ts); }
@@ -1073,7 +1165,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       card('Freigrenze 1.000 €', fz, netto < 1000 ? (netto > 0 ? 'Noch ' + fEur(1000 - netto) + ' bis zur Grenze. Ab 1.000 € zählt der ganze Betrag.' : 'Nach heutigem Stand steuerfrei.') : 'Der ganze Betrag gehört in die Anlage SO deiner Steuererklärung.', fzc),
       card('Geschätzte Steuer ' + JR.year, fEur(netto >= 1000 ? netto * jRate() / 100 : 0), netto >= 1000 ? 'Bei ' + jRate() + ' % Steuersatz. Das zahlst du mit der Steuererklärung nach.' : 'Unter der Freigrenze fällt keine Steuer an.', netto >= 1000 ? 'down' : 'up'),
       card('Steuerfrei nach 1 Jahr', fEur(freiSum), 'Gewinne aus Coins, die du länger als ein Jahr gehalten hast'));
-    if (warn.length) host.appendChild(card('Fehlende Kaufdaten', warn.join(', '), 'Du hast mehr verkauft, als eingetragen gekauft wurde. Trage die fehlenden Käufe nach, sonst stimmt die Rechnung nicht.', 'down'));
+    if (warn.length) host.appendChild(card('Bitte prüfen', warn.join(', '), 'Bei diesen Werten fehlt ein Kauf oder der Wert in Euro. Trage ihn unten bei "Alle Einträge" nach, sonst stimmt die Rechnung nicht.', 'down'));
     const tb = $('#jsales tbody'); tb.replaceChildren();
     sales.slice().reverse().forEach((s) => {
       const tr = el('tr'); tr.style.cursor = 'default';
@@ -1087,7 +1179,14 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       const tr = el('tr'); tr.style.cursor = 'default';
       const what = it.art === 'tausch' ? it.asset + ' → ' + it.asset2 : it.asset;
       const qty = it.art === 'tausch' ? fQty(it.menge) + ' → ' + fQty(it.menge2) : fQty(it.menge);
-      tr.append(el('td', '', fDate(it.ts)), el('td', '', ART[it.art]), el('td', '', what), el('td', '', qty), el('td', '', fEur(it.wert)), el('td', 'muted', it.plattform));
+      let wtd;
+      if (it.wert == null || !isFinite(it.wert)) {
+        wtd = el('td'); const wrap = el('div', 'valfix'); const inp = el('input'); inp.placeholder = 'Wert in €'; inp.setAttribute('aria-label', 'Wert in Euro nachtragen');
+        const ok = el('button', 'btn', 'OK'); ok.type = 'button';
+        ok.addEventListener('click', async () => { const v = num(inp.value); if (!(v >= 0)) { inp.focus(); return; } it.wert = v; it.notiz = 'Wert von Hand nachgetragen'; await jPersist(true); });
+        wrap.append(inp, ok); wtd.appendChild(wrap);
+      } else wtd = el('td', '', fEur(it.wert));
+      tr.append(el('td', '', fDate(it.ts)), el('td', '', ART[it.art]), el('td', '', what), el('td', '', qty), wtd, el('td', 'muted', it.plattform));
       const td = el('td'); const del = el('button', 'btn danger', 'Löschen'); del.type = 'button';
       del.addEventListener('click', async () => {
         if (del.dataset.confirm !== '1') { del.dataset.confirm = '1'; del.textContent = 'Wirklich löschen?'; setTimeout(() => { if (del.isConnected) { del.dataset.confirm = ''; del.textContent = 'Löschen'; } }, 4000); return; }
@@ -1161,6 +1260,114 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   }
   jInit();
 
+  // ------------------------------------------------------------------ WALLET-ABGLEICH (Trades automatisch aus der Solana-Blockchain)
+  // Liest nur die öffentliche Adresse. Keine Schlüssel, keine Phrase, kein Zugriff auf dein Guthaben.
+  const WS = { addr: null, busy: false, seen: {}, timer: null };
+  const RPC = 'https://api.mainnet-beta.solana.com';
+  const STABLE_MINTS = { [USDC_MINT]: 'USDC', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB': 'USDT' };
+  const SWAP_LOG = /Instruction: (Swap|SwapV2|Route|RouteV2|SharedAccountsRoute|SharedAccountsRouteV2|ExactOutRoute|Buy|Sell|SwapBaseIn|SwapBaseOut)\b/;
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  function rpc(method, params) {
+    return fetch(RPC, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method, params }) })
+      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then((j) => { if (j.error) throw new Error(j.error.message); return j.result; });
+  }
+  const symCache = {};
+  async function mintSymbol(mint) {
+    if (mint === SOL_MINT) return 'SOL';
+    if (STABLE_MINTS[mint]) return STABLE_MINTS[mint];
+    if (symCache[mint]) return symCache[mint];
+    try {
+      const pairs = await getJSON(DEX + '/tokens/v1/solana/' + mint);
+      const p = pairs && pairs[0];
+      const t = p ? (p.baseToken.address === mint ? p.baseToken : p.quoteToken) : null;
+      symCache[mint] = (t && t.symbol) || mint.slice(0, 4) + '…' + mint.slice(-4);
+    } catch (e) { symCache[mint] = mint.slice(0, 4) + '…' + mint.slice(-4); }
+    return symCache[mint];
+  }
+  async function eurAt(asset, qty, tsMs) {
+    const start = Math.floor(tsMs / 60000) * 60000;
+    if (asset === 'SOL') { const k = await getJSON(BIN_REST + '/klines?symbol=SOLEUR&interval=1m&limit=1&startTime=' + start); if (k && k[0]) return qty * (+k[0][4]); }
+    if (asset === 'USDC' || asset === 'USDT') { const k = await getJSON(BIN_REST + '/klines?symbol=EURUSDT&interval=1m&limit=1&startTime=' + start); if (k && k[0]) return qty / (+k[0][4]); }
+    return null;
+  }
+  function parseSwap(tx, owner) {
+    const meta = tx && tx.meta; if (!meta || meta.err) return null;
+    const keys = tx.transaction.message.accountKeys.map((k) => (typeof k === 'string' ? k : k.pubkey));
+    const idx = keys.indexOf(owner);
+    const d = {};
+    if (idx >= 0) { let v = meta.postBalances[idx] - meta.preBalances[idx]; if (idx === 0) v += meta.fee; d[SOL_MINT] = (d[SOL_MINT] || 0) + v / 1e9; }
+    const add = (arr, sign) => (arr || []).forEach((bal) => { if (bal.owner !== owner) return; const ui = bal.uiTokenAmount || {}; const v = ui.uiAmount != null ? ui.uiAmount : (+ui.amount / Math.pow(10, ui.decimals || 0)); d[bal.mint] = (d[bal.mint] || 0) + sign * (v || 0); });
+    add(meta.postTokenBalances, 1); add(meta.preTokenBalances, -1);
+    const out = [], inn = [];
+    Object.entries(d).forEach(([m, v]) => {
+      const min = m === SOL_MINT ? 0.0025 : 1e-12;   // kleine SOL-Beträge sind Netzwerkgebühren und Kontomiete
+      if (v < -min) out.push([m, -v]); else if (v > min) inn.push([m, v]);
+    });
+    if (out.length !== 1 || inn.length !== 1) return null;
+    return { outMint: out[0][0], outQty: out[0][1], inMint: inn[0][0], inQty: inn[0][1] };
+  }
+  function setWState(t, err) { const e = $('#jw-state'); if (e) { e.textContent = t; e.className = 'small ' + (err ? 'errmsg' : 'okmsg'); } }
+  function wSaveSeen() { try { localStorage.setItem('mts-seen', JSON.stringify(WS.seen)); } catch (e) { /* egal */ } }
+  async function jSync() {
+    if (!WS.addr || WS.busy) return;
+    WS.busy = true; setWState('Gleiche mit deinem Wallet ab …');
+    try {
+      const known = new Set(JR.items.filter((i) => i.txid).map((i) => i.txid));
+      const sigs = await rpc('getSignaturesForAddress', [WS.addr, { limit: 60 }]);
+      const fresh = sigs.filter((s) => !s.err && !known.has(s.signature) && !WS.seen[s.signature]).reverse();
+      let added = 0, missing = 0;
+      for (const s of fresh) {
+        await sleep(300);
+        let tx;
+        try { tx = await rpc('getTransaction', [s.signature, { maxSupportedTransactionVersion: 0, encoding: 'jsonParsed', commitment: 'confirmed' }]); }
+        catch (e) { if (/429|Too many/i.test(e.message)) { await sleep(3000); continue; } throw e; }
+        if (!tx) continue;
+        WS.seen[s.signature] = 1;
+        const logs = ((tx.meta && tx.meta.logMessages) || []).join('\n');
+        if (!SWAP_LOG.test(logs)) continue;
+        const sw = parseSwap(tx, WS.addr); if (!sw) continue;
+        const ts = (tx.blockTime || s.blockTime || Date.now() / 1000) * 1000;
+        const a1 = await mintSymbol(sw.outMint), a2 = await mintSymbol(sw.inMint);
+        let wert = null;
+        try { wert = await eurAt(a1, sw.outQty, ts); if (wert == null) wert = await eurAt(a2, sw.inQty, ts); } catch (e) { wert = null; }
+        if (wert == null) missing++;
+        JR.items.push({ id: 'sig-' + s.signature.slice(0, 20), ts: new Date(ts).toISOString(), plattform: 'Wallet (automatisch)', klasse: 'krypto', art: 'tausch',
+          asset: a1, menge: sw.outQty, asset2: a2, menge2: sw.inQty, wert: wert == null ? null : Math.round(wert * 100) / 100, gebuehr: 0, txid: s.signature,
+          notiz: wert == null ? 'Wert fehlt, bitte in Euro nachtragen' : 'automatisch aus der Blockchain', mintOut: sw.outMint, mintIn: sw.inMint });
+        added++;
+      }
+      wSaveSeen();
+      if (added) await jPersist(false);
+      const now = new Intl.DateTimeFormat('de-DE', { timeStyle: 'short', timeZone: TZ }).format(new Date());
+      setWState((added ? added + ' neue Trades übernommen' + (missing ? ', bei ' + missing + ' fehlt noch der Wert in Euro (siehe unten)' : '') + '. ' : 'Keine neuen Trades. ') + 'Zuletzt abgeglichen um ' + now + ', nächster Abgleich in 2 Minuten.');
+    } catch (e) { setWState('Abgleich gerade nicht möglich (' + e.message + '). Neuer Versuch in 2 Minuten.', true); }
+    finally { WS.busy = false; }
+  }
+  function wStart() {
+    try { WS.addr = localStorage.getItem('mts-wallet'); WS.seen = JSON.parse(localStorage.getItem('mts-seen') || '{}'); } catch (e) { /* egal */ }
+    if (WS.addr) { $('#jw-addr').value = WS.addr; jSync(); }
+    else setWState('Noch keine Wallet-Adresse eingetragen.', false);
+    clearInterval(WS.timer); WS.timer = setInterval(jSync, 2 * 60000);
+  }
+  $('#jw-save').addEventListener('click', () => {
+    const a = $('#jw-addr').value.trim();
+    if (!/^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(a)) { setWState('Das sieht nicht wie eine Solana-Adresse aus. Kopiere sie in Phantom über "Empfangen" oder das Kopier-Symbol neben deinem Konto.', true); return; }
+    WS.addr = a; try { localStorage.setItem('mts-wallet', a); } catch (e) { /* egal */ }
+    jSync();
+  });
+  $('#jw-remove').addEventListener('click', () => { WS.addr = null; $('#jw-addr').value = ''; try { localStorage.removeItem('mts-wallet'); } catch (e) { /* egal */ } setWState('Wallet entfernt. Bereits übernommene Trades bleiben im Journal.', false); });
+  // Nach einem Tausch im Handelsfenster gleich abgleichen
+  const prevSuccess = window.__mtsJupiterSuccess;
+  window.__mtsJupiterSuccess = (res) => {
+    if (WS.addr) { showToast('Trade erkannt. Er wird in wenigen Sekunden automatisch ins Journal übernommen.'); setTimeout(jSync, 8000); setTimeout(jSync, 30000); }
+    else if (prevSuccess) { prevSuccess(res); showToast('Trade erkannt. Trag deine Wallet-Adresse im Journal ein, dann geht das künftig automatisch.'); }
+  };
+  function showToast(t) {
+    let e = $('#toast'); if (!e) { e = el('div', 'toast'); e.id = 'toast'; document.body.appendChild(e); }
+    e.textContent = t; e.hidden = false; clearTimeout(showToast.t); showToast.t = setTimeout(() => { e.hidden = true; }, 7000);
+  }
+
   // ------------------------------------------------------------------ Tabs und Start
   const VIEWS = ['krypto', 'meme', 'etf', 'news', 'lage', 'trade', 'journal'];
   function show(tab) {
@@ -1170,9 +1377,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     if (location.hash.slice(1) !== tab) history.replaceState(null, '', '#' + tab);
     if (tab === 'meme' && (!M.at || Date.now() - M.at > 10000)) loadMemes();
     if (tab === 'trade') initJup();
-    if (tab === 'krypto' && K.kl.length) requestAnimationFrame(drawK);
-    if (tab === 'etf' && !E.sel && D.data && D.data.etfs && D.data.etfs.daten.length) openEtf(D.data.etfs.daten[0].sym);
-    else if (tab === 'etf' && E.sel) openEtf(E.sel, true);
+    if (tab === 'etf' && !E.sel && D.data && D.data.etfs && D.data.etfs.daten.length) openEtf(D.data.etfs.daten.slice().sort((a, b) => cmpN(a, b, E.per, -1))[0].sym);
   }
   document.querySelectorAll('.tab[data-tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   window.addEventListener('hashchange', () => show(location.hash.slice(1)));
@@ -1187,12 +1392,12 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
-  setInterval(() => { if (!document.getElementById('v-meme').hidden && M.src !== 'suche') loadMemes(); }, 10000);
-  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (K.kl.length) drawK(); if (E.sel) openEtf(E.sel, true); }, 200); });
+  setInterval(() => { if (!document.getElementById('v-meme').hidden && M.src !== 'suche') { if (M.src !== 'etabliert' || Date.now() - M.at > 60000) loadMemes(); } }, 10000);
 
   show(location.hash.slice(1) || 'krypto');
   loadData(); setInterval(loadData, 2 * 60000);
-  loadKAll(); connectKAll();
+  loadKAll(); connectKAll(); loadCG(); setInterval(loadCG, 5 * 60000);
+  wStart();
 })();
 </script>
 </body>

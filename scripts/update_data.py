@@ -201,6 +201,29 @@ def clean(text, limit=240):
     return text if len(text) <= limit else text[: limit - 1].rstrip() + "…"
 
 
+# Wie stark kann eine Meldung Kurse bewegen? 0 = kaum, 3 = stark.
+STRONG = ["approv", "reject", "ban ", "bans ", "banned", "hack", "exploit", "rate cut", "rate hike", "cuts rates",
+          "raises rates", "lawsuit", "sues ", "charged", "sanction", "attack", "invasion", "ceasefire", "record high",
+          "all-time high", "crash", "plunge", "tumbl", "soar", "surge", "delist", "listing", "bankrupt", "liquidat",
+          "executive order", "tariff", "etf", "inflows", "outflows", "fed ", "sec ", "opec", "strait of hormuz",
+          "missile", "default", "emergency", "halt", "freez", "seiz", "arrest", "merger", "acquisition", "earnings"]
+NOISE = ["price prediction", "prediction:", "could reach", "how to ", "guide", "best ", "top 10", "top 5", "podcast",
+         "opinion", "sponsored", "review", "quiz", "explained", "what is ", "newsletter", "week in review",
+         "here's why", "analyst says", "should you", "watch:", "video:", "live updates"]
+
+
+def importance(title, summary, tags):
+    t = " " + title.lower() + " "
+    if any(n in t for n in NOISE):
+        return 0
+    score = min(2, len(tags))
+    if any(w in t for w in STRONG):
+        score += 1
+    if "Prominente" in tags and any(w in t for w in ["crypto", "bitcoin", "coin", "token", "tariff", "order", "oil", "rate"]):
+        score += 1
+    return min(3, score)
+
+
 def tag_item(title, summary):
     hay = " " + (title + " " + summary).lower() + " "
     return [tag for tag, words in TAGS.items() if any(w in hay for w in words)]
@@ -234,7 +257,7 @@ def fetch_news():
             items.append({
                 "titel": title, "link": link, "quelle": name, "bereich": bereich,
                 "zeit": dt.astimezone(timezone.utc).isoformat(timespec="seconds"),
-                "text": summary, "tags": tag_item(title, summary),
+                "text": summary, "tags": (tg := tag_item(title, summary)), "wichtig": importance(title, summary, tg),
             })
     if not items:
         raise RuntimeError("Keine Nachrichten erhalten")
@@ -244,7 +267,7 @@ def fetch_news():
 
 # ----------------------------------------------------------------- ETFs
 def etf_yahoo(sym):
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=3mo&interval=1d"
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1y&interval=1d"
     r = json.loads(http_get(url))["chart"]["result"][0]
     q = r["indicators"]["quote"][0]
     rows = []
@@ -271,7 +294,7 @@ def etf_stooq(sym):
                          "v": float(p[5]) if len(p) > 5 and p[5] else 0})
         except ValueError:
             continue
-    return rows[-70:]
+    return rows[-270:]
 
 
 def fetch_etfs():
@@ -290,11 +313,13 @@ def fetch_etfs():
         time.sleep(0.5)
         if not rows:
             continue
-        rows = rows[-60:]
         last = rows[-1]["c"]
-        a1d = (last / rows[-2]["c"] - 1) * 100
-        a1m = (last / rows[-22]["c"] - 1) * 100 if len(rows) >= 22 else None
-        out.append({**e, "preis": last, "aend1d": a1d, "aend1m": a1m, "datum": rows[-1]["d"], "kerzen": rows})
+        def chg(n):
+            return (last / rows[-1 - n]["c"] - 1) * 100 if len(rows) > n else None
+        a1d, a1w, a1m = chg(1), chg(5), chg(21)
+        a1y = chg(250) if len(rows) > 250 else ((last / rows[0]["c"] - 1) * 100 if len(rows) > 200 else None)
+        out.append({**e, "preis": last, "aend1d": a1d, "aend1w": a1w, "aend1m": a1m, "aend1y": a1y,
+                    "datum": rows[-1]["d"], "kerzen": rows[-90:]})
     if not out:
         raise RuntimeError("Keine ETF-Kurse erhalten")
     return {"stand": now_iso(), "quelle": " und ".join(sorted(quelle)), "daten": out}
