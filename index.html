@@ -91,7 +91,11 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
 .tip { position: absolute; pointer-events: none; background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; font-size: 12px; line-height: 1.5; white-space: nowrap; z-index: 3; font-variant-numeric: tabular-nums; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
 .frame { width: 100%; height: 420px; border: 0; border-radius: 8px; margin-top: 10px; background: var(--panel2); display: block; }
 .sub { margin: 16px 0 6px; font-size: 13px; font-weight: 600; }
-.tape { display: grid; grid-template-columns: auto 1fr 1fr; gap: 2px 12px; font-size: 12px; font-variant-numeric: tabular-nums; max-height: 210px; overflow: auto; }
+.tape { display: grid; grid-template-columns: auto auto 1fr 1fr 1fr; gap: 3px 12px; font-size: 12px; font-variant-numeric: tabular-nums; max-height: 260px; overflow: auto; align-items: center; }
+.tape .th { color: var(--muted); font-size: 11px; position: sticky; top: 0; background: var(--panel); }
+.tape .r { text-align: right; }
+.tape .big { font-weight: 700; }
+.whale { background: color-mix(in srgb, var(--accent) 22%, transparent); border-radius: 4px; padding: 0 4px; font-size: 10px; color: var(--fg); }
 .tape span:nth-child(3n+2), .tape span:nth-child(3n) { text-align: right; }
 .flags { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .flags li { display: flex; gap: 8px; align-items: baseline; }
@@ -212,7 +216,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
         <h2>Nachrichten, neueste zuerst</h2>
         <div class="tools"><input class="search" id="n-q" type="search" placeholder="Stichwort" aria-label="Nachrichten durchsuchen"></div>
       </div>
-      <div class="box-b"><div class="tabs" id="n-mode" style="margin-bottom:8px"></div><div class="tabs" id="n-tags" style="margin-bottom:6px"></div><p class="note" style="margin:0 0 6px">"Nur wichtige" zeigt Meldungen, die Kurse wirklich bewegen können: Zinsen, Kriege, Regulierung, ETFs, Hacks, Aussagen wichtiger Politiker. Preisprognosen, Ratgeber und Werbung sind ausgeblendet.</p><div class="news" id="n-list"></div></div>
+      <div class="box-b"><div id="n-tr" class="links" style="margin:0 0 8px"></div><div class="tabs" id="n-mode" style="margin-bottom:8px"></div><div class="tabs" id="n-tags" style="margin-bottom:6px"></div><p class="note" style="margin:0 0 6px">"Nur wichtige" zeigt Meldungen, die Kurse wirklich bewegen können: Zinsen, Kriege, Regulierung, ETFs, Hacks, Aussagen wichtiger Politiker. Preisprognosen, Ratgeber und Werbung sind ausgeblendet.</p><div class="news" id="n-list"></div></div>
     </div>
   </section>
 
@@ -492,16 +496,82 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       return words.some((w, i) => res[i] ? res[i].test(hay) : hay.includes(w));
     });
   }
+  // Übersetzung ins Deutsche direkt im Browser (Chrome am PC, ohne fremden Server)
+  const TR = { t: null, state: 'unbekannt', cache: {}, queue: [], busy: false };
+  try { TR.cache = JSON.parse(localStorage.getItem('mts-tr') || '{}'); } catch (e) { TR.cache = {}; }
+  async function trInit(userClick) {
+    if (TR.t) return true;
+    if (!('Translator' in self)) { TR.state = 'nicht verfügbar'; return false; }
+    try {
+      const av = await self.Translator.availability({ sourceLanguage: 'en', targetLanguage: 'de' });
+      if (av === 'unavailable') { TR.state = 'nicht verfügbar'; return false; }
+      if (av !== 'available' && !userClick) { TR.state = 'braucht Klick'; return false; }
+      TR.t = await self.Translator.create({ sourceLanguage: 'en', targetLanguage: 'de' });
+      TR.state = 'aktiv'; return true;
+    } catch (e) { TR.state = 'braucht Klick'; return false; }
+  }
+  function trSave() { try { const k = Object.keys(TR.cache); if (k.length > 600) k.slice(0, k.length - 600).forEach((x) => delete TR.cache[x]); localStorage.setItem('mts-tr', JSON.stringify(TR.cache)); } catch (e) { /* egal */ } }
+  async function trText(t) {
+    if (!t) return t;
+    if (TR.cache[t]) return TR.cache[t];
+    if (!TR.t) return null;
+    try { const r = await TR.t.translate(t); TR.cache[t] = r; return r; } catch (e) { return null; }
+  }
+  function trApply(node, text) {
+    if (!text) return;
+    if (TR.cache[text]) { node.textContent = TR.cache[text]; return; }
+    if (!TR.t) return;
+    TR.queue.push([node, text]); trRun();
+  }
+  async function trRun() {
+    if (TR.busy) return; TR.busy = true;
+    while (TR.queue.length) { const [node, text] = TR.queue.shift(); const r = await trText(text); if (r && node.isConnected) node.textContent = r; }
+    trSave(); TR.busy = false;
+  }
+  function isGerman(n) { return n.sprache === 'de'; }
+  // Welche Coins und ETFs betrifft eine Meldung? Wird zu Knöpfen, die direkt zur Ansicht mit Chart und Handel springen.
+  function newsAssets(n) {
+    const hay = ' ' + (n.titel + ' ' + (n.text || '')).toLowerCase() + ' ';
+    const out = [];
+    Object.keys(NAMES).forEach((sym) => {
+      if (!K.map.has(sym + 'USDT')) return;
+      if (NAMES[sym].some((w) => (w.length <= 4 && /^[a-z$]+$/.test(w)) ? new RegExp('\\b' + w.replace('$', '\\$') + '\\b').test(hay) : hay.includes(w))) out.push({ typ: 'krypto', sym, label: sym });
+    });
+    const etfs = (D.data && D.data.etfs && D.data.etfs.daten) || [];
+    Object.keys(ETF_WORDS).forEach((sym) => {
+      if (!etfs.some((e) => e.sym === sym)) return;
+      if (ETF_WORDS[sym].some((w) => hay.includes(w))) { const e = etfs.find((x) => x.sym === sym); out.push({ typ: 'etf', sym, label: e.name + ' (' + sym + ')' }); }
+    });
+    return out.slice(0, 5);
+  }
+  function goAsset(a) {
+    if (a.typ === 'krypto') { show('krypto'); openK(a.sym + 'USDT', true); }
+    else { show('etf'); openEtf(a.sym, false, true); }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   function newsList(host, items, limit) {
     host.replaceChildren();
     if (!items.length) { host.appendChild(el('p', 'muted small', 'Keine passenden Meldungen in den letzten Tagen.')); return; }
     items.slice(0, limit || 999).forEach((n) => {
       const it = el('article', 'ni');
+      const top = el('div', 'meta');
+      const imp = n.wichtig == null ? 2 : n.wichtig;
+      if (imp >= 3) top.appendChild(el('span', 'badge lvl-3', 'Sehr wichtig')); else if (imp === 2) top.appendChild(el('span', 'badge lvl-2', 'Wichtig'));
+      top.appendChild(el('span', '', n.quelle + ', ' + ago(new Date(n.zeit).getTime())));
+      (n.tags || []).forEach((t) => top.appendChild(el('span', 'badge', t)));
+      it.appendChild(top);
       const a = el('a', '', n.titel); a.href = n.link; a.target = '_blank'; a.rel = 'noopener noreferrer'; it.appendChild(a);
-      if (n.text) it.appendChild(el('span', 'muted small', n.text));
-      const m = el('div', 'meta'); m.appendChild(el('span', '', n.quelle + ', ' + ago(new Date(n.zeit).getTime())));
-      (n.tags || []).forEach((t) => m.appendChild(el('span', 'badge', t)));
-      it.appendChild(m); host.appendChild(it);
+      let tx = null;
+      if (n.text) { tx = el('span', 'muted small', n.text); it.appendChild(tx); }
+      if (!isGerman(n)) { trApply(a, n.titel); if (tx) trApply(tx, n.text); }
+      const as = newsAssets(n);
+      if (as.length) {
+        const row = el('div', 'links'); row.style.marginTop = '4px';
+        row.appendChild(el('span', 'small muted', 'Betrifft:'));
+        as.forEach((x) => { const b = el('button', 'btn', x.label + ' ansehen'); b.type = 'button'; b.addEventListener('click', () => goAsset(x)); row.appendChild(b); });
+        it.appendChild(row);
+      }
+      host.appendChild(it);
     });
   }
 
@@ -558,7 +628,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     getJSON(BIN_REST + '/ticker/24hr?type=MINI').then((rows) => {
       rows.forEach((r) => putTick(r.symbol, +r.lastPrice, +r.openPrice, +r.highPrice, +r.lowPrice, +r.volume, +r.quoteVolume));
       renderK();
-      if (!K.sel) openK('BTCUSDT');
+      if (!K.sel) { openK('BTCUSDT'); renderNews(); }
     }).catch(() => {});
   }
   function loadCG() {
@@ -647,6 +717,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
       b.appendChild(el('p', 'small', base + ' kaufst du bei deinem Broker, zum Beispiel in der App von Trade Republic oder Bitvavo. Solana-Token und Memecoins kannst du direkt hier über dein Wallet handeln: im Tab Memecoins oder bei SOL.'));
     }
     b.appendChild(el('div', 'sub', 'Letzte Trades bei Binance (live, jeder einzelne)'));
+    b.appendChild(el('p', 'note', 'Kauf heißt: Jemand hat zum Verkaufspreis gekauft, der Käufer war ungeduldig. Verkauf umgekehrt. Wer handelt, ist an einer Börse wie Binance anonym, das zeigt niemand. "Großer Trade" markiert ungewöhnlich große Beträge, oft von großen Anlegern.'));
     const tp = el('div', 'tape'); tp.id = 'k-tape'; b.appendChild(tp);
     b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
     const nw = el('div', 'news'); nw.id = 'k-news'; b.appendChild(nw);
@@ -691,14 +762,23 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     tapeDirty = false;
     const tp = $('#k-tape'); if (!tp) return;
     const frag = document.createDocumentFragment();
-    K.trades.slice(0, 25).forEach((t) => {
+    ['Zeit', 'Art', 'Preis $', 'Menge', 'Wert $'].forEach((h, i) => frag.appendChild(el('span', 'th' + (i >= 2 ? ' r' : ''), h)));
+    const vals = K.trades.map((t) => t.p * t.q).sort((a, b) => a - b);
+    const big = Math.max(10000, (vals[Math.floor(vals.length / 2)] || 0) * 20);
+    K.trades.slice(0, 30).forEach((t) => {
+      const v = t.p * t.q, isBig = v >= big;
       frag.appendChild(el('span', 'muted', tf.format(new Date(t.t)) + '.' + String(t.t % 1000).padStart(3, '0')));
-      frag.appendChild(el('span', t.sell ? 'down' : 'up', fP(t.p)));
-      frag.appendChild(el('span', '', nf(4).format(t.q)));
+      const art = el('span', t.sell ? 'down' : 'up', t.sell ? 'Verkauf' : 'Kauf');
+      if (isBig) { art.appendChild(document.createTextNode(' ')); art.appendChild(el('span', 'whale', 'großer Trade')); }
+      frag.appendChild(art);
+      frag.appendChild(el('span', 'r ' + (t.sell ? 'down' : 'up'), fP(t.p)));
+      frag.appendChild(el('span', 'r', new Intl.NumberFormat('de-DE', { maximumFractionDigits: t.q < 1 ? 5 : 2 }).format(t.q)));
+      frag.appendChild(el('span', 'r' + (isBig ? ' big' : ''), new Intl.NumberFormat('de-DE', { maximumFractionDigits: 0 }).format(v) + ' $'));
     });
     tp.replaceChildren(frag);
     updateKHead();
   }
+
 
   // ------------------------------------------------------------------ MEMECOINS
   const M = { rows: [], src: 'neu', chain: 'solana', q: '', sel: null, sort: { k: 'vol', dir: -1 }, manual: false, per: 'h24', rank: 'best', loading: false, err: null, at: 0 };
@@ -835,9 +915,9 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     if (r.cg) { openMcg(b, r); if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' }); return; }
     updateMHead(r);
     const fr = el('iframe', 'frame'); fr.title = 'Live-Chart von DexScreener';
-    fr.src = 'https://dexscreener.com/' + r.chain + '/' + r.pair + '?embed=1&theme=dark&trades=0&info=0';
-    fr.loading = 'lazy'; fr.referrerPolicy = 'no-referrer'; fr.style.height = '480px'; b.appendChild(fr);
-    b.appendChild(el('p', 'note', 'Live-Chart von DexScreener. Zoomen mit dem Mausrad, Indikatoren über das Symbol "fx" oben im Chart.'));
+    fr.src = 'https://dexscreener.com/' + r.chain + '/' + r.pair + '?embed=1&theme=dark&trades=1&info=0';
+    fr.loading = 'lazy'; fr.referrerPolicy = 'no-referrer'; fr.style.height = '640px'; b.appendChild(fr);
+    b.appendChild(el('p', 'note', 'Live-Chart von DexScreener. Zoomen mit dem Mausrad, Indikatoren über das Symbol "fx" oben im Chart. Unter dem Chart siehst du jeden Kauf und Verkauf mit Betrag und Wallet-Adresse (Maker). Klickst du auf eine Adresse, siehst du, was diese Wallet sonst handelt. Wem eine Wallet gehört, ist nicht öffentlich.'));
     if (r.chain === 'solana') {
       b.appendChild(el('div', 'sub', 'Kaufen und verkaufen'));
       b.appendChild(el('p', 'small muted', 'Mit deinem Wallet über Jupiter. Prüfe, ob oben im Fenster genau diese Adresse steht: ' + r.addr.slice(0, 6) + '…' + r.addr.slice(-6) + '. Jeder Tausch wird erst nach deiner Bestätigung im Wallet ausgeführt.'));
@@ -938,7 +1018,18 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
 
   // ------------------------------------------------------------------ NACHRICHTEN
   const N = { tag: 'Alle', q: '', only: true };
+  function trBar() {
+    const h = $('#n-tr'); if (!h) return; h.replaceChildren();
+    if (TR.state === 'aktiv') { h.appendChild(el('span', 'small okmsg', 'Englische Meldungen werden automatisch ins Deutsche übersetzt (in deinem Browser).')); return; }
+    if (TR.state === 'braucht Klick') {
+      const b = el('button', 'btn primary', 'Nachrichten auf Deutsch übersetzen'); b.type = 'button';
+      b.addEventListener('click', async () => { b.textContent = 'Lade Übersetzung …'; const ok = await trInit(true); if (ok) { try { localStorage.setItem('mts-tr-on', '1'); } catch (e) { /* egal */ } renderNews(); } else { b.textContent = 'Übersetzung hat nicht geklappt'; } });
+      h.append(b, el('span', 'small muted', 'Einmal klicken, danach übersetzt Chrome alle Meldungen selbst.')); return;
+    }
+    h.appendChild(el('span', 'small muted', 'Deutsche Quellen erscheinen auf Deutsch. Englische Meldungen übersetzt die Seite in Chrome am PC automatisch, in diesem Browser geht das nicht.'));
+  }
   function renderNews() {
+    trBar();
     const all = (D.data && D.data.news && D.data.news.daten) || [];
     const imp = (n) => (n.wichtig == null ? 2 : n.wichtig);
     const base = N.only ? all.filter((n) => imp(n) >= 2) : all;
@@ -1377,6 +1468,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
     if (location.hash.slice(1) !== tab) history.replaceState(null, '', '#' + tab);
     if (tab === 'meme' && (!M.at || Date.now() - M.at > 10000)) loadMemes();
     if (tab === 'trade') initJup();
+    if (tab === 'news') renderNews();
     if (tab === 'etf' && !E.sel && D.data && D.data.etfs && D.data.etfs.daten.length) openEtf(D.data.etfs.daten.slice().sort((a, b) => cmpN(a, b, E.per, -1))[0].sym);
   }
   document.querySelectorAll('.tab[data-tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
@@ -1398,6 +1490,7 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   loadData(); setInterval(loadData, 2 * 60000);
   loadKAll(); connectKAll(); loadCG(); setInterval(loadCG, 5 * 60000);
   wStart();
+  trInit(false).then((ok) => { if (ok || TR.state === 'braucht Klick') renderNews(); });
 })();
 </script>
 </body>

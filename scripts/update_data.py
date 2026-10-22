@@ -44,7 +44,10 @@ FEEDS = [
     ("BBC Welt", "https://feeds.bbci.co.uk/news/world/rss.xml", "Welt"),
     ("BBC Wirtschaft", "https://feeds.bbci.co.uk/news/business/rss.xml", "Wirtschaft"),
     ("OilPrice", "https://oilprice.com/rss/main", "Rohstoffe"),
+    ("tagesschau Wirtschaft", "https://www.tagesschau.de/wirtschaft/index~rss2.xml", "Wirtschaft"),
+    ("BTC-ECHO", "https://www.btc-echo.de/feed/", "Krypto"),
 ]
+GERMAN_FEEDS = {"tagesschau Wirtschaft", "BTC-ECHO"}
 
 # ETFs (US-Börse). Kurse kommen von Yahoo Finance, Ersatz: Stooq.
 ETFS = [
@@ -63,15 +66,18 @@ ETFS = [
 
 # Stichworte, mit denen Meldungen einem Bereich zugeordnet werden.
 TAGS = {
-    "Prominente": ["trump", "musk", "biden", "white house", "elon", "powell", "xi jinping", "putin"],
+    "Prominente": ["trump", "musk", "biden", "white house", "weißes haus", "elon", "powell", "xi jinping", "putin", "lagarde"],
     "ETF": [" etf", "etfs", "blackrock", "grayscale"],
-    "Regulierung": ["sec ", "regulat", "ban ", "lawmaker", "tax", "cftc", "parliament", "law ", "sanction"],
+    "Regulierung": ["sec ", "regulat", "ban ", "lawmaker", "tax", "cftc", "parliament", "law ", "sanction",
+                    "regulier", "verbot", "steuer", "bafin", "gesetz", "sanktion", "mica"],
     "Krieg/Konflikt": ["war ", "war,", "war.", "iran", "israel", "ukraine", "russia", "hormuz", "missile",
-                       "attack", "houthi", "taiwan", "military", "troops", "ceasefire"],
+                       "attack", "houthi", "taiwan", "military", "troops", "ceasefire",
+                       "krieg", "angriff", "rakete", "militär", "waffenruhe", "konflikt", "nahost"],
     "Rohstoffe": ["oil", "crude", "brent", "opec", "natural gas", "lng", "gold", "silver", "copper",
-                  "lithium", "uranium", "rare earth", "wheat"],
-    "Zinsen/Wirtschaft": ["fed ", "interest rate", "inflation", "ecb", "recession", "tariff", "jobs report", "gdp"],
-    "Hack/Betrug": ["hack", "exploit", "rug pull", "scam", "stolen", "drain"],
+                  "lithium", "uranium", "rare earth", "wheat", "ölpreis", "rohöl", "erdgas", "silber", "kupfer", "seltene erden"],
+    "Zinsen/Wirtschaft": ["fed ", "interest rate", "inflation", "ecb", "recession", "tariff", "jobs report", "gdp",
+                          "zins", "ezb", "notenbank", "rezession", "zoll", "zölle", "konjunktur", "dax"],
+    "Hack/Betrug": ["hack", "exploit", "rug pull", "scam", "stolen", "drain", "betrug", "gestohlen"],
     "Memecoins": ["memecoin", "meme coin", "pump.fun", "dogecoin", "pepe", "shiba", "bonk", "dogwifhat"],
 }
 
@@ -206,10 +212,13 @@ STRONG = ["approv", "reject", "ban ", "bans ", "banned", "hack", "exploit", "rat
           "raises rates", "lawsuit", "sues ", "charged", "sanction", "attack", "invasion", "ceasefire", "record high",
           "all-time high", "crash", "plunge", "tumbl", "soar", "surge", "delist", "listing", "bankrupt", "liquidat",
           "executive order", "tariff", "etf", "inflows", "outflows", "fed ", "sec ", "opec", "strait of hormuz",
-          "missile", "default", "emergency", "halt", "freez", "seiz", "arrest", "merger", "acquisition", "earnings"]
+          "missile", "default", "emergency", "halt", "freez", "seiz", "arrest", "merger", "acquisition", "earnings",
+          "genehmig", "verbot", "angriff", "zinssenkung", "zinserhöhung", "rekordhoch", "absturz", "einbruch", "zölle",
+          "sanktion", "pleite", "insolvenz", "übernahme", "ölpreis", "notenbank"]
 NOISE = ["price prediction", "prediction:", "could reach", "how to ", "guide", "best ", "top 10", "top 5", "podcast",
          "opinion", "sponsored", "review", "quiz", "explained", "what is ", "newsletter", "week in review",
-         "here's why", "analyst says", "should you", "watch:", "video:", "live updates"]
+         "here's why", "analyst says", "should you", "watch:", "video:", "live updates",
+         "prognose:", "kursziel", "so kaufen", "anleitung", "ratgeber", "podcast", "kommentar", "meinung", "liveblog", "quiz"]
 
 
 def importance(title, summary, tags):
@@ -256,6 +265,7 @@ def fetch_news():
             summary = clean(it.findtext("description"))
             items.append({
                 "titel": title, "link": link, "quelle": name, "bereich": bereich,
+                "sprache": "de" if name in GERMAN_FEEDS else "en",
                 "zeit": dt.astimezone(timezone.utc).isoformat(timespec="seconds"),
                 "text": summary, "tags": (tg := tag_item(title, summary)), "wichtig": importance(title, summary, tg),
             })
