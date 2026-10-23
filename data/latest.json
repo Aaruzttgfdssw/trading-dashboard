@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-23T00:05:40+00:00",
+ "erzeugt": "2026-10-23T04:49:01+00:00",
  "kurse": {
-  "stand": "2026-10-23T00:05:40+00:00",
+  "stand": "2026-10-23T04:49:01+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 81265,
-    "aend24": -3.49015,
-    "aend7": -1.2796,
-    "marktkap": 1633611735953,
-    "volumen": 33149332166
+    "preis": 81575,
+    "aend24": -1.44122,
+    "aend7": -0.1577,
+    "marktkap": 1639794811400,
+    "volumen": 30753642137
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2385.05,
-    "aend24": -3.74195,
-    "aend7": -2.7413,
-    "marktkap": 291348294174,
-    "volumen": 12723780692
+    "preis": 2395.98,
+    "aend24": -1.82963,
+    "aend7": -1.1491,
+    "marktkap": 292680147755,
+    "volumen": 12308586003
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 103.56,
-    "aend24": -3.44775,
-    "aend7": -2.05,
-    "marktkap": 61063423073,
-    "volumen": 2458589570
+    "preis": 103.86,
+    "aend24": -1.35978,
+    "aend7": -0.988,
+    "marktkap": 61238669390,
+    "volumen": 2321648923
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.31,
-    "aend24": -4.3557,
-    "aend7": -2.3054,
-    "marktkap": 82579975464,
-    "volumen": 1554940555
+    "preis": 1.32,
+    "aend24": -1.98054,
+    "aend7": -0.934,
+    "marktkap": 83183649347,
+    "volumen": 1489116710
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.078769,
-    "aend24": -4.04202,
-    "aend7": -3.2551,
-    "marktkap": 12321557072,
-    "volumen": 591789086
+    "preis": 0.079457,
+    "aend24": -0.72489,
+    "aend7": -2.1246,
+    "marktkap": 12429429655,
+    "volumen": 545590649
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-23T00:05:43+00:00",
+  "stand": "2026-10-23T04:49:04+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -267,9 +267,9 @@
     {
      "d": "2026-10-23",
      "o": 81416.09,
-     "h": 81416.09,
-     "l": 81250.0,
-     "c": 81349.55
+     "h": 82033.84,
+     "l": 81118.42,
+     "c": 81670.01
     }
    ],
    "ETH": [
@@ -479,9 +479,9 @@
     {
      "d": "2026-10-23",
      "o": 2389.13,
-     "h": 2389.13,
-     "l": 2385.01,
-     "c": 2387.76
+     "h": 2417.46,
+     "l": 2381.11,
+     "c": 2397.53
     }
    ],
    "SOL": [
@@ -691,9 +691,9 @@
     {
      "d": "2026-10-23",
      "o": 103.65,
-     "h": 103.71,
-     "l": 103.51,
-     "c": 103.62
+     "h": 104.85,
+     "l": 103.46,
+     "c": 103.97
     }
    ],
    "XRP": [
@@ -903,9 +903,9 @@
     {
      "d": "2026-10-23",
      "o": 1.3093,
-     "h": 1.31,
-     "l": 1.3081,
-     "c": 1.3095
+     "h": 1.3257,
+     "l": 1.3065,
+     "c": 1.3193
     }
    ],
    "DOGE": [
@@ -1115,27 +1115,116 @@
     {
      "d": "2026-10-23",
      "o": 0.07882,
-     "h": 0.07891,
-     "l": 0.07878,
-     "c": 0.0789
+     "h": 0.07979,
+     "l": 0.0787,
+     "c": 0.07955
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-23T00:05:45+00:00",
+  "stand": "2026-10-23T04:49:06+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
    {
-    "titel": "Powerful earthquake hits Tibet killing 16 people, reports say",
-    "link": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
+    "titel": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
+    "link": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-23T04:36:51+00:00",
+    "text": "Toto Finance wants 22 million ADA from Cardano’s treasury to buy tokenized copper, and the metal would have to trade well above its all-time high for holders to get their money back.",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Bitcoin Core changes security policy as AI makes bugs easier to find",
+    "link": "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-23T04:34:14+00:00",
+    "text": "Bitcoin Core says keeping certain vulnerabilities secret no longer offers much protection in the wake of AI-assisted bug hunting.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "“Bitcoin, XRP, und Cardano”: Manipulieren große Akteure die Kurse?",
+    "link": "https://www.btc-echo.de/news/bitcoin-xrp-und-cardano-krypto-preise-manipuliert-239724/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-23T04:00:00+00:00",
+    "text": "Schlagartige Kursbewegungen am Krypto-Markt wecken Manipulationsvorwürfe. Was hinter den Schwankungen bei Bitcoin, XRP und Co. stecken könnte. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
+    "link": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-23T03:13:01+00:00",
+    "text": "Bitcoin and gold pared early losses as the yen gave up gains and Asian stocks rebounded, though oil near $100 keeps inflation risks in focus.",
+    "tags": [
+     "Rohstoffe",
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "Why Trump Can't Afford to Lose The Rare Earth Race",
+    "link": "https://oilprice.com/Energy/Energy-General/Why-Trump-Cant-Afford-to-Lose-The-Rare-Earth-Race.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-23T02:00:00+00:00",
+    "text": "For years, the West has searched for a technological escape hatch from rare earths. Engineers have developed new motor designs, alternative magnet chemistries, and materials that reduce or even eliminate the need for some critical minerals…",
+    "tags": [
+     "Prominente",
+     "Rohstoffe"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "Lückenlose Krypto-Überwachung? Was das Finanzamt bald über Anleger weiß",
+    "link": "https://www.btc-echo.de/news/krypto-ueberwachung-was-das-finanzamt-bald-weiss-239667/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-23T02:00:00+00:00",
+    "text": "Ab 2027 verlangen die Finanzämter deutlich umfassendere Einblicke in deutsche Krypto-Transaktionen. Warum Privatanleger schon jetzt Post von ihren Börsen bekommen – und diese besser nicht ignorieren sollten. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Trump ordered to answer questions under oath in BBC lawsuit",
+    "link": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-10-23T00:00:38+00:00",
-    "text": "The quake hit a mountainous, sparsely-populated region in north-eastern Tibet.",
-    "tags": [],
-    "wichtig": 0
+    "zeit": "2026-10-23T01:38:44+00:00",
+    "text": "Trump is suing the BBC over an episode of Panorama that edited together two different sections of a speech he gave in 2021.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 3
+   },
+   {
+    "titel": "Switzerland approves first spot Bitcoin ETF for retail investors",
+    "link": "https://cointelegraph.com/news/switzerland-approves-first-spot-bitcoin-etf-for-retail-investors?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-23T00:59:35+00:00",
+    "text": "BIT Asset Management’s Bitcoin Fund ETF is expected to begin trading on SIX Swiss Exchange in November, with its public offering restricted to Switzerland.",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 2
    },
    {
     "titel": "LNG Canada Doubles Capacity as Asia Looks Beyond the Gulf",
@@ -1175,6 +1264,17 @@
      "Krieg/Konflikt"
     ],
     "wichtig": 1
+   },
+   {
+    "titel": "Grid operator says lights will stay on this winter after concerns",
+    "link": "https://www.bbc.co.uk/news/articles/cmy56q2n1veqo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-22T23:04:38+00:00",
+    "text": "The assurance from the National Energy System Operator comes amid concern from its engineers about their ability to ensure adequate supply.",
+    "tags": [],
+    "wichtig": 0
    },
    {
     "titel": "Rising Crude Oil Imports Reduce China’s Need to Draw from Stocks",
@@ -1553,19 +1653,6 @@
     "wichtig": 0
    },
    {
-    "titel": "Trump ordered to answer questions under oath in BBC lawsuit",
-    "link": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-22T17:14:04+00:00",
-    "text": "Trump is suing the BBC over an episode of Panorama that edited together two different sections of a speech he gave in 2021.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 3
-   },
-   {
     "titel": "Race to update services' computer systems after cyber-security flaw found",
     "link": "https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -1886,19 +1973,6 @@
     "wichtig": 0
    },
    {
-    "titel": "European Natural Gas Prices Rise on Middle East Escalation",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Rise-on-Middle-East-Escalation.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-22T14:30:00+00:00",
-    "text": "Europe’s benchmark natural gas prices rose on Thursday to nearly 90 euros per megawatt-hour, or the equivalent of $29.50 per million British thermal units (MMBtu), as the escalation in the Middle East raised concerns about European winter…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1
-   },
-   {
     "titel": "Barclays cutting 5,000 jobs as it increases reliance on AI",
     "link": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Wirtschaft",
@@ -2141,81 +2215,11 @@
      "Regulierung"
     ],
     "wichtig": 1
-   },
-   {
-    "titel": "Monero im Höhenflug: Greift XMR jetzt sein Allzeithoch an?",
-    "link": "https://www.btc-echo.de/news/monero-im-hoehenflug-greift-xmr-jetzt-sein-allzeithoch-an-239679/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-22T12:00:00+00:00",
-    "text": "Millionen aus illegalen Quellen flossen über einen Tauschdienst in Monero. Beweist das die Stärke der Technologie? Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "At least four dead after storm brings flooding to southern France",
-    "link": "https://www.bbc.co.uk/news/articles/cm5ynl4v4wgwo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-22T11:23:16+00:00",
-    "text": "The deaths include two women found drowned in a cellar in the Bouches-du-Rhône region.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Crypto traders seek shelter in bitcoin as altcoins slide and ETF flows wobble",
-    "link": "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-22T11:20:04+00:00",
-    "text": "Your day-ahead look for Oct. 21, 2026",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 2
-   },
-   {
-    "titel": "What is PHP and why did it spark a global cyber-security scramble?",
-    "link": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-22T11:15:58+00:00",
-    "text": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Was beim neuen Altersvorsorgedepot zu beachten ist",
-    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-22T11:09:07+00:00",
-    "text": "Neben der Kapitalrente wird es auch eine neue staatlich geförderte Zusatzrente geben, das Altersvorsorgedepot. Es soll die \"Riester-Rente\" ablösen. Das Versprechen: mehr Aktien, ETFs und Renditechancen. Was es zu beachten gilt, erklärt Chr…",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "CoinDCX admits ‘operational losses’ after $16M wallet transfers draw scrutiny",
-    "link": "https://cointelegraph.com/news/coindcx-suspicious-outflows-wallet-compromised-2025-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-22T10:53:10+00:00",
-    "text": "CoinDCX said it covered losses caused by a failed transfer process involving compromised wallets and credited all affected user accounts.",
-    "tags": [],
-    "wichtig": 0
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-23T00:05:52+00:00",
+  "stand": "2026-10-23T04:49:13+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -2223,21 +2227,13 @@
     "name": "S&P 500",
     "gruppe": "Breiter Markt",
     "tv": "AMEX:SPY",
-    "preis": 773.09,
-    "aend1d": 0.525323451010995,
-    "aend1w": 0.45348232848232417,
-    "aend1m": -0.0374977372055052,
-    "aend1y": 15.084256282005493,
-    "datum": "2026-10-21",
+    "preis": 763.96,
+    "aend1d": -1.1809750481832637,
+    "aend1w": -1.014524676401607,
+    "aend1m": -0.5014261340696158,
+    "aend1y": 13.725139930927721,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 751.85,
-      "h": 756.68,
-      "l": 751.76,
-      "c": 754.83,
-      "v": 60176400
-     },
      {
       "d": "2026-06-16",
       "o": 754.55,
@@ -2949,6 +2945,14 @@
       "l": 768.4,
       "c": 773.09,
       "v": 31943800
+     },
+     {
+      "d": "2026-10-22",
+      "o": 766.37,
+      "h": 767.71,
+      "l": 761.17,
+      "c": 763.96,
+      "v": 54035400
      }
     ]
    },
@@ -2957,21 +2961,13 @@
     "name": "Nasdaq 100",
     "gruppe": "Breiter Markt",
     "tv": "NASDAQ:QQQ",
-    "preis": 725.2,
-    "aend1d": 1.0548611401418606,
-    "aend1w": -0.5144385760340264,
-    "aend1m": -2.978085783854656,
-    "aend1y": 18.77231484817714,
-    "datum": "2026-10-21",
+    "preis": 704.47,
+    "aend1d": -2.8585217870932156,
+    "aend1w": -3.23214285714285,
+    "aend1m": -4.956759892608032,
+    "aend1y": 15.377182351207042,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 738.1,
-      "h": 744.76,
-      "l": 737.38,
-      "c": 744.0,
-      "v": 46710200
-     },
      {
       "d": "2026-06-16",
       "o": 742.25,
@@ -3683,6 +3679,14 @@
       "l": 719.71,
       "c": 725.2,
       "v": 32476200
+     },
+     {
+      "d": "2026-10-22",
+      "o": 713.61,
+      "h": 715.43,
+      "l": 701.9,
+      "c": 704.47,
+      "v": 64165300
      }
     ]
    },
@@ -3691,21 +3695,13 @@
     "name": "MSCI World",
     "gruppe": "Breiter Markt",
     "tv": "AMEX:URTH",
-    "preis": 208.49,
-    "aend1d": 0.5255544840887083,
-    "aend1w": 0.5934574930039682,
-    "aend1m": -0.7285020474240511,
-    "aend1y": 13.829438742083422,
-    "datum": "2026-10-21",
+    "preis": 206.17,
+    "aend1d": -1.1127632020720535,
+    "aend1w": -0.9321993176685583,
+    "aend1m": -0.8035026943802981,
+    "aend1y": 12.56278663463637,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 203.62,
-      "h": 204.45,
-      "l": 203.46,
-      "c": 203.63,
-      "v": 1172400
-     },
      {
       "d": "2026-06-16",
       "o": 204.1,
@@ -4417,6 +4413,14 @@
       "l": 207.7,
       "c": 208.49,
       "v": 1155700
+     },
+     {
+      "d": "2026-10-22",
+      "o": 207.0,
+      "h": 207.16,
+      "l": 205.58,
+      "c": 206.17,
+      "v": 638400
      }
     ]
    },
@@ -4425,21 +4429,13 @@
     "name": "Gold",
     "gruppe": "Rohstoffe",
     "tv": "AMEX:GLD",
-    "preis": 378.95,
-    "aend1d": 0.344234079173833,
-    "aend1w": 0.7872549801856366,
-    "aend1m": -5.279076161671714,
-    "aend1y": 0.04223976345731906,
-    "datum": "2026-10-21",
+    "preis": 369.0,
+    "aend1d": -2.625676210581873,
+    "aend1w": -3.5823469467743174,
+    "aend1m": -6.078191814294442,
+    "aend1y": -2.5845455265450568,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 399.49,
-      "h": 401.0,
-      "l": 396.15,
-      "c": 396.55,
-      "v": 10477100
-     },
      {
       "d": "2026-06-16",
       "o": 397.83,
@@ -5151,6 +5147,14 @@
       "l": 376.2,
       "c": 378.95,
       "v": 6880800
+     },
+     {
+      "d": "2026-10-22",
+      "o": 373.54,
+      "h": 373.87,
+      "l": 368.35,
+      "c": 369.0,
+      "v": 17010400
      }
     ]
    },
@@ -5159,21 +5163,13 @@
     "name": "Silber",
     "gruppe": "Rohstoffe",
     "tv": "AMEX:SLV",
-    "preis": 52.26,
-    "aend1d": 0.26861089792786785,
-    "aend1w": 4.062126642771813,
-    "aend1m": -13.946978429112466,
-    "aend1y": 18.288818469895872,
-    "datum": "2026-10-21",
+    "preis": 49.34,
+    "aend1d": -5.58744737849215,
+    "aend1w": -4.969183359013862,
+    "aend1m": -15.165061898211817,
+    "aend1y": 11.67949298325035,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 64.28,
-      "h": 64.5,
-      "l": 63.24,
-      "c": 63.47,
-      "v": 19878900
-     },
      {
       "d": "2026-06-16",
       "o": 63.7,
@@ -5885,6 +5881,14 @@
       "l": 51.4,
       "c": 52.26,
       "v": 10317500
+     },
+     {
+      "d": "2026-10-22",
+      "o": 50.26,
+      "h": 50.33,
+      "l": 49.2,
+      "c": 49.34,
+      "v": 24620500
      }
     ]
    },
@@ -5893,21 +5897,13 @@
     "name": "Rohöl",
     "gruppe": "Rohstoffe",
     "tv": "AMEX:USO",
-    "preis": 159.8,
-    "aend1d": -0.5043272523504116,
-    "aend1w": 4.063558218286012,
-    "aend1m": 10.910605219322589,
-    "aend1y": 118.03793150498021,
-    "datum": "2026-10-21",
+    "preis": 162.51,
+    "aend1d": 1.6958698372966152,
+    "aend1w": 3.3055749793401423,
+    "aend1m": 9.191695222737328,
+    "aend1y": 121.73557101923862,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 119.84,
-      "h": 121.48,
-      "l": 119.02,
-      "c": 121.21,
-      "v": 5839100
-     },
      {
       "d": "2026-06-16",
       "o": 116.34,
@@ -6619,6 +6615,14 @@
       "l": 157.33,
       "c": 159.8,
       "v": 5942400
+     },
+     {
+      "d": "2026-10-22",
+      "o": 163.3,
+      "h": 163.77,
+      "l": 160.09,
+      "c": 162.51,
+      "v": 4362200
      }
     ]
    },
@@ -6627,21 +6631,13 @@
     "name": "Erdgas",
     "gruppe": "Rohstoffe",
     "tv": "AMEX:UNG",
-    "preis": 9.97,
-    "aend1d": -5.047619047619046,
-    "aend1w": -11.14081996434938,
-    "aend1m": -8.195211786371992,
-    "aend1y": -22.89249806651198,
-    "datum": "2026-10-21",
+    "preis": 9.89,
+    "aend1d": -0.8024072216649913,
+    "aend1w": -10.820559062218205,
+    "aend1m": -9.01563937442501,
+    "aend1y": -23.511214230471765,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 11.21,
-      "h": 11.44,
-      "l": 11.21,
-      "c": 11.43,
-      "v": 4717800
-     },
      {
       "d": "2026-06-16",
       "o": 11.46,
@@ -7353,6 +7349,14 @@
       "l": 9.94,
       "c": 9.97,
       "v": 25490600
+     },
+     {
+      "d": "2026-10-22",
+      "o": 10.0,
+      "h": 10.1,
+      "l": 9.88,
+      "c": 9.89,
+      "v": 21680500
      }
     ]
    },
@@ -7361,21 +7365,13 @@
     "name": "Energie-Aktien",
     "gruppe": "Branchen",
     "tv": "AMEX:XLE",
-    "preis": 68.16,
-    "aend1d": 0.27953508900986357,
-    "aend1w": 0.7836758834836699,
-    "aend1m": 10.32696665587569,
-    "aend1y": 53.22018657974596,
-    "datum": "2026-10-21",
+    "preis": 67.57,
+    "aend1d": -0.8656103286384997,
+    "aend1w": 1.5174278846153744,
+    "aend1m": 8.337341670674991,
+    "aend1y": 51.89389681915251,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 55.2,
-      "h": 56.05,
-      "l": 55.02,
-      "c": 55.55,
-      "v": 44319100
-     },
      {
       "d": "2026-06-16",
       "o": 55.0,
@@ -8087,6 +8083,14 @@
       "l": 67.51,
       "c": 68.16,
       "v": 26469900
+     },
+     {
+      "d": "2026-10-22",
+      "o": 68.74,
+      "h": 68.78,
+      "l": 66.29,
+      "c": 67.57,
+      "v": 41617500
      }
     ]
    },
@@ -8095,21 +8099,13 @@
     "name": "Rüstung und Luftfahrt",
     "gruppe": "Branchen",
     "tv": "ITA",
-    "preis": 205.79,
-    "aend1d": -0.1746301236963399,
-    "aend1w": 0.7589110849980374,
-    "aend1m": -3.8364485981308483,
-    "aend1y": -4.603189319488232,
-    "datum": "2026-10-21",
+    "preis": 204.48,
+    "aend1d": -0.636571261966079,
+    "aend1w": -1.1791996907017155,
+    "aend1m": -4.412864622288703,
+    "aend1y": -5.210458001112562,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 236.76,
-      "h": 239.13,
-      "l": 236.76,
-      "c": 237.4,
-      "v": 697800
-     },
      {
       "d": "2026-06-16",
       "o": 237.06,
@@ -8821,6 +8817,14 @@
       "l": 204.05,
       "c": 205.79,
       "v": 1060400
+     },
+     {
+      "d": "2026-10-22",
+      "o": 204.51,
+      "h": 206.53,
+      "l": 201.79,
+      "c": 204.48,
+      "v": 849400
      }
     ]
    },
@@ -8829,21 +8833,13 @@
     "name": "Bitcoin (BlackRock)",
     "gruppe": "Krypto-ETFs",
     "tv": "NASDAQ:IBIT",
-    "preis": 47.84,
-    "aend1d": 2.4191821879683273,
-    "aend1w": 3.460207612456756,
-    "aend1m": -2.0274421462215697,
-    "aend1y": -23.529411764705877,
-    "datum": "2026-10-21",
+    "preis": 46.06,
+    "aend1d": -3.7207357859531776,
+    "aend1w": -1.1375831723545837,
+    "aend1m": -3.801169590643272,
+    "aend1y": -26.374680306905375,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 37.84,
-      "h": 38.105,
-      "l": 37.515,
-      "c": 37.74,
-      "v": 52951400
-     },
      {
       "d": "2026-06-16",
       "o": 37.36,
@@ -9555,6 +9551,14 @@
       "l": 47.08,
       "c": 47.84,
       "v": 50839300
+     },
+     {
+      "d": "2026-10-22",
+      "o": 46.28,
+      "h": 46.4,
+      "l": 45.71,
+      "c": 46.06,
+      "v": 43191400
      }
     ]
    },
@@ -9563,21 +9567,13 @@
     "name": "Ether (BlackRock)",
     "gruppe": "Krypto-ETFs",
     "tv": "NASDAQ:ETHA",
-    "preis": 56.43,
-    "aend1d": 2.469584165607408,
-    "aend1w": 2.8056112224448926,
-    "aend1m": -9.393063583815032,
-    "aend1y": -35.5601233299075,
-    "datum": "2026-10-21",
+    "preis": 53.88,
+    "aend1d": -4.518872939925567,
+    "aend1w": -2.761234434217641,
+    "aend1m": -11.133102424542308,
+    "aend1y": -38.47207947927372,
+    "datum": "2026-10-22",
     "kerzen": [
-     {
-      "d": "2026-06-15",
-      "o": 41.19,
-      "h": 41.85,
-      "l": 40.83,
-      "c": 41.28,
-      "v": 13774367
-     },
      {
       "d": "2026-06-16",
       "o": 40.785,
@@ -10289,31 +10285,78 @@
       "l": 55.53,
       "c": 56.43,
       "v": 9143200
+     },
+     {
+      "d": "2026-10-22",
+      "o": 54.34,
+      "h": 54.63,
+      "l": 53.31,
+      "c": 53.88,
+      "v": 7711600
      }
     ]
    }
   ]
  },
  "chancen": {
-  "stand": "2026-10-23T00:05:52+00:00",
+  "stand": "2026-10-23T04:49:13+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
-    "coin": "Erdgas",
-    "symbol": "UNG",
+    "coin": "Nasdaq 100",
+    "symbol": "QQQ",
     "art": "Starke Tagesbewegung (ETF)",
-    "erklaerung": "Der ETF UNG (Erdgas) ist am letzten Handelstag um 5.0 % gefallen. Für einen breit gestreuten Fonds ist das viel.",
+    "erklaerung": "Der ETF QQQ (Nasdaq 100) ist am letzten Handelstag um 2.9 % gefallen. Für einen breit gestreuten Fonds ist das viel.",
+    "risiko": "Mittel. Große Tagesbewegungen bei ETFs hängen oft an einer Nachricht und können sich am nächsten Tag umkehren."
+   },
+   {
+    "coin": "Gold",
+    "symbol": "GLD",
+    "art": "Starke Tagesbewegung (ETF)",
+    "erklaerung": "Der ETF GLD (Gold) ist am letzten Handelstag um 2.6 % gefallen. Für einen breit gestreuten Fonds ist das viel.",
+    "risiko": "Mittel. Große Tagesbewegungen bei ETFs hängen oft an einer Nachricht und können sich am nächsten Tag umkehren."
+   },
+   {
+    "coin": "Silber",
+    "symbol": "SLV",
+    "art": "Starke Tagesbewegung (ETF)",
+    "erklaerung": "Der ETF SLV (Silber) ist am letzten Handelstag um 5.6 % gefallen. Für einen breit gestreuten Fonds ist das viel.",
+    "risiko": "Mittel. Große Tagesbewegungen bei ETFs hängen oft an einer Nachricht und können sich am nächsten Tag umkehren."
+   },
+   {
+    "coin": "Bitcoin (BlackRock)",
+    "symbol": "IBIT",
+    "art": "Starke Tagesbewegung (ETF)",
+    "erklaerung": "Der ETF IBIT (Bitcoin (BlackRock)) ist am letzten Handelstag um 3.7 % gefallen. Für einen breit gestreuten Fonds ist das viel.",
+    "risiko": "Mittel. Große Tagesbewegungen bei ETFs hängen oft an einer Nachricht und können sich am nächsten Tag umkehren."
+   },
+   {
+    "coin": "Ether (BlackRock)",
+    "symbol": "ETHA",
+    "art": "Starke Tagesbewegung (ETF)",
+    "erklaerung": "Der ETF ETHA (Ether (BlackRock)) ist am letzten Handelstag um 4.5 % gefallen. Für einen breit gestreuten Fonds ist das viel.",
     "risiko": "Mittel. Große Tagesbewegungen bei ETFs hängen oft an einer Nachricht und können sich am nächsten Tag umkehren."
    },
    {
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 7 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 10 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
-     "Bitcoin hashrate hits seven-month high as AI shift fails to ease mining competition",
-     "Bitcoin ETFs Erase October Losses With $1 Billion in Three Days"
+     "Bitcoin Core changes security policy as AI makes bugs easier to find",
+     "“Bitcoin, XRP, und Cardano”: Manipulieren große Akteure die Kurse?"
+    ]
+   },
+   {
+    "coin": "XRP",
+    "symbol": "XRP",
+    "art": "Viele Meldungen",
+    "erklaerung": "In den letzten 24 Stunden gibt es 2 Meldungen, in denen XRP im Titel steht.",
+    "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
+    "belege": [
+     "“Bitcoin, XRP, und Cardano”: Manipulieren große Akteure die Kurse?",
+     "Binance verschenkt 600.000 XRP: So funktioniert die neue Aktion"
     ]
    }
   ]
