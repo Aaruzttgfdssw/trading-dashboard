@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-24T16:48:14+00:00",
+ "erzeugt": "2026-10-24T19:15:34+00:00",
  "kurse": {
-  "stand": "2026-10-24T16:48:15+00:00",
+  "stand": "2026-10-24T19:15:34+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 79820,
-    "aend24": -2.3483,
-    "aend7": -2.1857,
-    "marktkap": 1604662178007,
-    "volumen": 23192791023
+    "preis": 80442,
+    "aend24": -0.98116,
+    "aend7": -0.9524,
+    "marktkap": 1617201913178,
+    "volumen": 23865375652
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2304.12,
-    "aend24": -4.4012,
-    "aend7": -5.0249,
-    "marktkap": 281485272212,
-    "volumen": 9434200047
+    "preis": 2336.81,
+    "aend24": -2.37567,
+    "aend7": -2.9718,
+    "marktkap": 285470221995,
+    "volumen": 9786229047
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 100.0,
-    "aend24": -4.59228,
-    "aend7": -4.3736,
-    "marktkap": 58977761071,
-    "volumen": 2534608730
+    "preis": 101.07,
+    "aend24": -2.57798,
+    "aend7": -2.0217,
+    "marktkap": 59614957239,
+    "volumen": 2591181379
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.27,
-    "aend24": -3.30189,
-    "aend7": -2.6463,
-    "marktkap": 80169546946,
-    "volumen": 1334983257
+    "preis": 1.29,
+    "aend24": -1.34782,
+    "aend7": -0.4089,
+    "marktkap": 81155586336,
+    "volumen": 1384129017
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.075982,
-    "aend24": -5.21476,
-    "aend7": -5.3813,
-    "marktkap": 11890185441,
-    "volumen": 535107721
+    "preis": 0.076995,
+    "aend24": -2.68898,
+    "aend7": -2.7783,
+    "marktkap": 12046910661,
+    "volumen": 563343185
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-24T16:48:18+00:00",
+  "stand": "2026-10-24T19:15:37+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -269,7 +269,7 @@
      "o": 81189.44,
      "h": 81213.64,
      "l": 79220.74,
-     "c": 79880.1
+     "c": 80512.3
     }
    ],
    "ETH": [
@@ -481,7 +481,7 @@
      "o": 2387.61,
      "h": 2390.24,
      "l": 2282.46,
-     "c": 2306.0
+     "c": 2338.72
     }
    ],
    "SOL": [
@@ -693,7 +693,7 @@
      "o": 102.85,
      "h": 103.13,
      "l": 98.62,
-     "c": 100.06
+     "c": 101.17
     }
    ],
    "XRP": [
@@ -905,7 +905,7 @@
      "o": 1.295,
      "h": 1.2961,
      "l": 1.2546,
-     "c": 1.2701
+     "c": 1.2871
     }
    ],
    "DOGE": [
@@ -1117,15 +1117,109 @@
      "o": 0.07864,
      "h": 0.0791,
      "l": 0.07478,
-     "c": 0.07604
+     "c": 0.07705
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-24T16:48:21+00:00",
+  "stand": "2026-10-24T19:15:39+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Vanessa Trump says she is cancer-free six months after revealing diagnosis",
+    "link": "https://www.bbc.co.uk/news/articles/cm1dwzvn6227o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T19:12:51+00:00",
+    "text": "The ex-wife of Donald Trump Jr, with whom she shares five children, announced in May that she had been diagnosed with breast cancer.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Syria's Energy Comeback Could Reshape Middle East Oil and Gas",
+    "link": "https://oilprice.com/Energy/Energy-General/Syrias-Energy-Comeback-Could-Reshape-Middle-East-Oil-and-Gas.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-24T19:00:00+00:00",
+    "text": "Syria is undergoing countrywide reconstruction after more than a decade of conflict, which caused extensive infrastructure damage and led to millions of people being displaced. As Syrians rebuild their lives, the government has big plans f…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Two rescued after Nairobi building collapse with five still missing",
+    "link": "https://www.bbc.co.uk/news/articles/c317kxyknwp2o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T17:25:46+00:00",
+    "text": "Police have launched a manhunt for the building's owner and contractor after the multi-storey building collapsed while still under construction.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Palestinian families displaced as Israeli forces demolish Hebron homes, local officials say",
+    "link": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T17:21:42+00:00",
+    "text": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "British woman dies after trying to rescue sons swept away at sea in the Bahamas",
+    "link": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T17:11:56+00:00",
+    "text": "Nathan Gregory says the loss of childhood sweetheart Leanne \"is unimaginable for our family\".",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Google Quietly Updates Privacy Policy to Let Gmail and Photos Data Feed Ads",
+    "link": "https://decrypt.co/381775/google-quietly-updates-privacy-policy-gmail-photos-ads",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-24T17:01:02+00:00",
+    "text": "A policy change effective Oct. 16 carves out an exception to Google’s long-standing pledge—letting connected Gmail, Drive, and Photos data personalize ads through its Personal Intelligence AI features.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Can Undersea Volcanoes Power Cities? A Seattle Startup Just Took the First Step",
+    "link": "https://oilprice.com/Energy/Energy-General/Can-Undersea-Volcanoes-Power-Cities-A-Seattle-Startup-Just-Took-the-First-Step.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-24T17:00:00+00:00",
+    "text": "A geothermal startup aiming to source energy directly from undersea volcanoes just hit a major milestone that could bring round-the-clock clean energy to cities on the northwest coast of the United States and serve as a critical proof of c…",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "NEAR-Kurs vor der nächsten Rallye? Diese News machen Hoffnung",
+    "link": "https://www.btc-echo.de/news/near-kurs-vor-der-naechsten-rallye-diese-news-machen-hoffnung-239650/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-24T17:00:00+00:00",
+    "text": "NEAR überrascht mit starkem Wachstum, einer neuen Plattform für Unternehmen und Fortschritten im KI-Geschäft. Auch der Kurs zieht wieder kräftig an. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0
+   },
    {
     "titel": "Sweden's Government Offices Block ChatGPT and Claude, Keep Microsoft Copilot",
     "link": "https://decrypt.co/381763/sweden-government-offices-block-chatgpt-claude",
@@ -1254,19 +1348,6 @@
     "wichtig": 0
    },
    {
-    "titel": "Vanessa Trump says she is cancer-free six months after revealing diagnosis",
-    "link": "https://www.bbc.co.uk/news/articles/cm1dwzvn6227o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-24T14:45:30+00:00",
-    "text": "The ex-wife of Donald Trump Jr, with whom she shares five children, announced in May that she had been diagnosed with breast cancer.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1
-   },
-   {
     "titel": "Argentina drops criminal probe into President Milei over crashed memecoin LIBRA",
     "link": "https://www.coindesk.com/business/2026/10/24/argentina-drops-criminal-probe-into-president-milei-over-crashed-memecoin-libra",
     "quelle": "CoinDesk",
@@ -1303,7 +1384,7 @@
    },
    {
     "titel": "Bitcoin’s wealthy holders turning to loans and yield as investment habits mature: Xapo CEO",
-    "link": "https://www.coindesk.com/",
+    "link": "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo",
     "quelle": "CoinDesk",
     "bereich": "Krypto",
     "sprache": "en",
@@ -1393,28 +1474,6 @@
     "sprache": "en",
     "zeit": "2026-10-24T09:46:53+00:00",
     "text": "She was a close family member of the first victim, a man who had travelled from the Democratic Republic of Congo.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "British woman dies after trying to rescue sons swept away at sea in the Bahamas",
-    "link": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-24T09:45:47+00:00",
-    "text": "The children were subsequently rescued from the water, police say.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Seven missing after multi-storey building collapses in Kenya's capital",
-    "link": "https://www.bbc.co.uk/news/articles/c317kxyknwp2o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-24T09:44:01+00:00",
-    "text": "Rescue efforts are under way to find people trapped under the block, which was still under construction when it buckled.",
     "tags": [],
     "wichtig": 0
    },
@@ -2016,19 +2075,6 @@
     "wichtig": 1
    },
    {
-    "titel": "Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead",
-    "link": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T15:37:07+00:00",
-    "text": "The soldiers were killed in an attack by two Palestinian gunmen at a checkpoint outside the West Bank city on Friday morning.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1
-   },
-   {
     "titel": "Oil spill washes up on UAE beaches after tanker strike",
     "link": "https://www.bbc.co.uk/news/articles/c6rey3n974g5o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -2186,57 +2232,11 @@
     "text": "Operation Serengeti III led to 1,462 arrests across 21 countries, while Angolan police seized more than 2,000 crypto mining devices.",
     "tags": [],
     "wichtig": 0
-   },
-   {
-    "titel": "New York AG seeks $1.37B from NovaTech founders over Ponzi scheme",
-    "link": "https://cointelegraph.com/news/new-york-ag-novatech-founders-companies-crypto-ponzi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T12:33:37+00:00",
-    "text": "The request follows an August 2025 default judgment, with the AG also announcing nearly $6 million in settlements with four promoters.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "U.S. Partner in Venezuela Oil Deal Looks to Hike Crude Production",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/US-Partner-in-Venezuela-Oil-Deal-Looks-to-Hike-Crude-Production.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-23T12:30:00+00:00",
-    "text": "The privately held company that’s partnering with the U.S. Administration to boost oil production in Venezuela has raised output by about 20,000 barrels per day (bpd) since August and plans to soon add more rigs to further hike production.…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "What is PHP and why did it spark a global cyber-security scramble?",
-    "link": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-23T12:24:17+00:00",
-    "text": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Bitcoin consolidates after 3% loss as AI fears stoke fresh stock-market weakness",
-    "link": "https://cointelegraph.com/markets/bitcoin-consolidates-after-3-loss-as-ai-fears-stoke-fresh-stock-market-weakness?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T12:23:58+00:00",
-    "text": "Bitcoin price volatility cooled as stock markets battled another day of resurgent AI fears during Friday’s Asia trading session.",
-    "tags": [],
-    "wichtig": 0
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-24T16:48:29+00:00",
+  "stand": "2026-10-24T19:15:46+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10316,7 +10316,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-24T16:48:29+00:00",
+  "stand": "2026-10-24T19:15:46+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
@@ -10344,7 +10344,7 @@
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 9 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 7 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
      "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
