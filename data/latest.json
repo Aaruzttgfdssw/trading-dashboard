@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-24T04:36:06+00:00",
+ "erzeugt": "2026-10-24T09:07:58+00:00",
  "kurse": {
-  "stand": "2026-10-24T04:36:06+00:00",
+  "stand": "2026-10-24T09:07:58+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 80811,
-    "aend24": -0.93931,
-    "aend7": -0.6415,
-    "marktkap": 1624477971197,
-    "volumen": 22362343583
+    "preis": 80571,
+    "aend24": -1.38989,
+    "aend7": -1.2056,
+    "marktkap": 1619585744875,
+    "volumen": 22392284932
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2378.84,
-    "aend24": -0.76691,
-    "aend7": -1.6431,
-    "marktkap": 290590634490,
-    "volumen": 9305447157
+    "preis": 2364.38,
+    "aend24": -1.65033,
+    "aend7": -2.639,
+    "marktkap": 288804676827,
+    "volumen": 8158296101
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 102.59,
-    "aend24": -1.19363,
-    "aend7": -1.8024,
-    "marktkap": 60495641931,
-    "volumen": 2187041750
+    "preis": 101.75,
+    "aend24": -2.60863,
+    "aend7": -2.9526,
+    "marktkap": 59997696098,
+    "volumen": 2260000308
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.29,
-    "aend24": -1.97807,
-    "aend7": -1.1248,
-    "marktkap": 81452140480,
-    "volumen": 1240938505
+    "preis": 1.28,
+    "aend24": -3.48941,
+    "aend7": -2.0718,
+    "marktkap": 80696184320,
+    "volumen": 1191458833
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.078757,
-    "aend24": -0.78392,
-    "aend7": -1.7654,
-    "marktkap": 12319804206,
-    "volumen": 442452319
+    "preis": 0.077422,
+    "aend24": -3.75403,
+    "aend7": -3.8033,
+    "marktkap": 12110215678,
+    "volumen": 408246270
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-24T04:36:09+00:00",
+  "stand": "2026-10-24T09:08:02+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -269,7 +269,7 @@
      "o": 81189.44,
      "h": 81213.64,
      "l": 80601.99,
-     "c": 80860.0
+     "c": 80630.81
     }
    ],
    "ETH": [
@@ -480,8 +480,8 @@
      "d": "2026-10-24",
      "o": 2387.61,
      "h": 2390.24,
-     "l": 2369.8,
-     "c": 2381.15
+     "l": 2364.62,
+     "c": 2366.17
     }
    ],
    "SOL": [
@@ -692,8 +692,8 @@
      "d": "2026-10-24",
      "o": 102.85,
      "h": 103.13,
-     "l": 101.99,
-     "c": 102.67
+     "l": 101.71,
+     "c": 101.79
     }
    ],
    "XRP": [
@@ -904,8 +904,8 @@
      "d": "2026-10-24",
      "o": 1.295,
      "h": 1.2961,
-     "l": 1.2831,
-     "c": 1.2908
+     "l": 1.2776,
+     "c": 1.2789
     }
    ],
    "DOGE": [
@@ -1116,16 +1116,135 @@
      "d": "2026-10-24",
      "o": 0.07864,
      "h": 0.0791,
-     "l": 0.0781,
-     "c": 0.07881
+     "l": 0.07733,
+     "c": 0.0775
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-24T04:36:12+00:00",
+  "stand": "2026-10-24T09:08:04+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Arrest made after fire at Hitler's mountaintop Eagle's Nest retreat",
+    "link": "https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T09:03:15+00:00",
+    "text": "Around 200 emergency personnel are deployed to fight the blaze at the Nazi dictator's Alpine residence in Germany.",
+    "tags": [],
+    "wichtig": 1
+   },
+   {
+    "titel": "Bitcoin-Allzeithoch im Sommer 2027? Warum geduldige Anleger hoffen dürfen",
+    "link": "https://www.btc-echo.de/news/neues-bitcoin-allzeithoch-im-sommer-2027-239792/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-24T08:53:39+00:00",
+    "text": "Die Krypto-Euphorie des Augusts ist abgeflaut, der Bitcoin-Kurs stagniert zwischen 80.000 und 85.000 Dollar. Doch Anleger sollten jetzt nicht vorschnell die Flinte ins Korn werfen. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Energie-Entkoppelung: So abhängig ist Europa noch von Russland",
+    "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/abhaengigkeit-russische-energie-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-10-24T08:27:08+00:00",
+    "text": "Nach dem Vollangriff auf die Ukraine wollte Europa schnell unabhängig werden von russischer Energie. Teilweise ist das auch gelungen. Vor allem bei Öl und Uran bleiben aber alte Abhängigkeiten. Von Jean-Marie Magro.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Krypto-Skandal: Ermittlungen gegen Javier Milei wegen LIBRA eingestellt",
+    "link": "https://www.btc-echo.de/news/krypto-skandal-ermittlungen-gegen-milei-wegen-libra-eingestellt-239790/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-24T07:58:59+00:00",
+    "text": "Der argentinische Präsident warb 2025 für einen Memecoin, dessen Kurs wenig später kollabierte. Warum das zuständige Bundesgericht die strafrechtlichen Ermittlungen gegen ihn und seine Schwester nun einstellt. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Memecoins"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
+    "link": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T07:17:44+00:00",
+    "text": "Ukraine and Russia confirm the truce in Russian-occupied Oleshky, where residents have had to eat garden weeds to survive.",
+    "tags": [
+     "Prominente",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "France prepares for day of protest a week after nationwide riots",
+    "link": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T06:19:46+00:00",
+    "text": "Hundreds of thousands are expected to turn out, as more than 70,000 police officers are to be deployed over some may defy restrictions.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Minneapolis withdrawal was 'surrender', Trump's ex-border patrol chief tells BBC",
+    "link": "https://www.bbc.co.uk/news/articles/ck20rery78lro?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T05:31:01+00:00",
+    "text": "Greg Bovino was the public face of the controversial immigration enforcement operation in the city earlier this year.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "How Brazil's changing working class is reshaping the presidential race",
+    "link": "https://www.bbc.co.uk/news/articles/cw80zx79nkvno?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T05:05:44+00:00",
+    "text": "Calls for change present a challenge to President Lula in the second round of the election on Sunday.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "The rise of AI election ads in US midterms campaign",
+    "link": "https://www.bbc.co.uk/news/videos/cm62y59zw8zko?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T05:03:44+00:00",
+    "text": "BBC Verify has tracked dozens of AI ads to assess how they are being used by campaigns in the midterms.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
+    "link": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-24T04:45:43+00:00",
+    "text": "Two subscriptions on Thursday nearly quadrupled the fund’s tokens on the network. The receiving wallet shares its authorized signers with the issuer.",
+    "tags": [],
+    "wichtig": 0
+   },
    {
     "titel": "Bitcoin kaufen, verkaufen oder abwarten? Das sagt ein Krypto-Experte",
     "link": "https://www.btc-echo.de/news/bitcoin-kaufen-verkaufen-oder-abwarten-das-sagt-ein-krypto-experte-239787/",
@@ -1136,28 +1255,6 @@
     "text": "Dass der Bitcoin-Kurs seit Wochen zwischen 80.000 und 85.000 US-Dollar pendelt, lässt viele Anleger verunsichert zurück. So schätzt ein Krypto-Insider die derzeitige Lage ein. Source: BTC-ECHO BTC-ECHO",
     "tags": [],
     "wichtig": 0
-   },
-   {
-    "titel": "France prepares for day of protest a week after nationwide riots",
-    "link": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-24T04:03:46+00:00",
-    "text": "More than 70,000 police officers are to be deployed over fears protesters will defy restrictions on demonstrations.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Arrest made after fire at Hitler's Eagle's Nest retreat",
-    "link": "https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-24T03:51:25+00:00",
-    "text": "Around 200 emergency personnel are deployed to fight the blaze at the Nazi dictator's Alpine residence in Germany.",
-    "tags": [],
-    "wichtig": 1
    },
    {
     "titel": "“Verkauft jetzt, bevor der Sturm losbricht”",
@@ -1173,10 +1270,23 @@
     "wichtig": 1
    },
    {
+    "titel": "Australian MP's condition improves after alleged car attack",
+    "link": "https://www.bbc.co.uk/news/articles/c670pr1ryxyno?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T01:55:15+00:00",
+    "text": "The independent MP is now in a serious but stable condition, according to the Melbourne hospital.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2
+   },
+   {
     "titel": "White House lifts tariffs on some Canadian goods as midterm elections loom",
     "link": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
     "sprache": "en",
     "zeit": "2026-10-24T00:36:47+00:00",
     "text": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
@@ -1220,6 +1330,28 @@
     "wichtig": 0
    },
    {
+    "titel": "Ruins of Limoges city hall a symbol of France divided by national protests",
+    "link": "https://www.bbc.co.uk/news/articles/cxyvrged14d0o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-23T23:09:16+00:00",
+    "text": "Younger Limoges residents see the destruction of their town hall as unfortunate collateral damage in a wider movement. For others, the fire was an unacceptable tragedy.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Student movement takes Serbia's Vučić to the wire in neck-and-neck election",
+    "link": "https://www.bbc.co.uk/news/articles/cm1dwz311476o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-23T23:08:23+00:00",
+    "text": "The Student List has emerged from almost two years of anti-corruption protests to form the biggest challenge to Vučić's rule.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
     "titel": "Trump's Reverse Nixon Strategy: Bring Russia In, Shut China Out",
     "link": "https://oilprice.com/Energy/Energy-General/Trumps-Reverse-Nixon-Strategy-Bring-Russia-In-Shut-China-Out.html",
     "quelle": "OilPrice",
@@ -1234,6 +1366,17 @@
     "wichtig": 3
    },
    {
+    "titel": "Father who killed Oregon school gunman describes anguish over children he couldn't save",
+    "link": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-23T22:47:07+00:00",
+    "text": "Kaylub Giamanco, has been hailed as a hero for killing a teenager who fatally shot three children and a teacher.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
     "titel": "U.S. Dips Into Strategic Oil Reserve Again Amid Supply Disruptions",
     "link": "https://oilprice.com/Latest-Energy-News/World-News/US-Dips-Into-Strategic-Oil-Reserve-Again-Amid-Supply-Disruptions.html",
     "quelle": "OilPrice",
@@ -1245,6 +1388,20 @@
      "Rohstoffe"
     ],
     "wichtig": 1
+   },
+   {
+    "titel": "Who actually controls Ukraine's access to Starlink?",
+    "link": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-23T22:24:36+00:00",
+    "text": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
+    "tags": [
+     "Prominente",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2
    },
    {
     "titel": "Why Trump and Carney Haven’t Touched Energy in Their Tariff War",
@@ -1388,20 +1545,6 @@
     "wichtig": 2
    },
    {
-    "titel": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
-    "link": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T19:30:19+00:00",
-    "text": "Ukraine and Russia confirm the truce in Russian-occupied Oleshky, where residents have had to eat garden weeds to survive.",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2
-   },
-   {
     "titel": "SEC Flags AI 'Super Intelligence' and Tokenization as Systemic Market Risks",
     "link": "https://decrypt.co/381745/sec-ai-super-intelligence-tokenization-2027-exam-list",
     "quelle": "Decrypt",
@@ -1425,6 +1568,19 @@
     "tags": [
      "Prominente",
      "Krieg/Konflikt"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "Trump administration sues to block certification of upcoming Alaska election",
+    "link": "https://www.bbc.co.uk/news/articles/c678pv4krx37o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-23T18:49:14+00:00",
+    "text": "The justice department has filed a lawsuit arguing that the inclusion of two candidates named Dan Sullivan could confuse voters.",
+    "tags": [
+     "Prominente"
     ],
     "wichtig": 2
    },
@@ -1607,17 +1763,6 @@
      "Krieg/Konflikt"
     ],
     "wichtig": 1
-   },
-   {
-    "titel": "Watch: CCTV footage shows gunmen near church in Jordan",
-    "link": "https://www.bbc.co.uk/news/videos/c39wz712q0kzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T15:59:36+00:00",
-    "text": "Dozens of people had been inside the church for a funeral when the shooting began, local media report.",
-    "tags": [],
-    "wichtig": 0
    },
    {
     "titel": "Bitcoin ETFs Bleed $636 Million as October Turns Red Again",
@@ -1875,19 +2020,6 @@
     "wichtig": 0
    },
    {
-    "titel": "Denmark to ban mink farming in government U-turn",
-    "link": "https://www.bbc.co.uk/news/articles/c59vzjm118j1o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T12:17:45+00:00",
-    "text": "Once the world's largest producer of mink pelts, the nation's industry has declined in recent years.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 2
-   },
-   {
     "titel": "Bitcoin Core changes security rules as AI makes finding code bugs dangerously easy",
     "link": "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt",
     "quelle": "CoinDesk",
@@ -2099,140 +2231,11 @@
     "text": "Finnland setzt zur Stromgewinnung auch auf Kernenergie - und hat nun grünes Licht für den Betrieb eines unterirdischen Endlagers für Tausende Tonnen hochradioaktiven Atommüll gegeben. Noch fehlt allerdings eine letzte Genehmigung.",
     "tags": [],
     "wichtig": 1
-   },
-   {
-    "titel": "Bybit secures first full Dubai license for spot trading services",
-    "link": "https://cointelegraph.com/news/bybit-first-full-dubai-spot-trading-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T09:50:04+00:00",
-    "text": "Bybit’s new VARA licence authorizes spot trading services in Dubai, but the exchange must complete additional regulatory requirements before launching.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "HSBC bringt seinen eigenen Stablecoin direkt zu Millionen von Privatkunden",
-    "link": "https://www.btc-echo.de/news/hsbc-redcoin-stablecoin-hongkong-239736/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-23T09:49:29+00:00",
-    "text": "Die HSBC bringt ihren ersten Stablecoin an den Start. Bezahlen lässt sich damit ab sofort bei über 100.000 Händlern in Hongkong. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Hispanic voters helped bring Trump to power - in Texas, the tide may be turning",
-    "link": "https://www.bbc.co.uk/news/articles/cmwyqn6ejyd4o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T09:23:53+00:00",
-    "text": "Recent polls suggest the president is facing challenging headwinds in the state ahead of the midterms.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "Frankreichs Schuldenkrise: Droht eine neue Eurokrise?",
-    "link": "https://www.tagesschau.de/wirtschaft/finanzen/frankreich-anleiherenditen-schuldenkrise-eurokrise-ezb-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-23T09:13:15+00:00",
-    "text": "Frankreichs Anleiherenditen sind auf den höchsten Stand seit 2002 gestiegen. Wie groß ist die Ansteckungsgefahr für andere hochverschuldete Euroländer - und was kann die EZB dagegen tun? Von Angela Göpfert.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "Ringen um Sparkurs bei Autobauer Volkswagen geht weiter",
-    "link": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-ig-metall-ueberpruefungsgespraech-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-23T09:12:00+00:00",
-    "text": "Stellenabbau, Sparrunden und drohende Werkschließungen: Die Stimmung bei Volkswagen ist aufgeheizt, die Gewerkschaft IG Metall droht mit Streiks ab Januar. Heute spricht die Konzernspitze mit der IG Metall. Worum es bei dem Krisentreffen g…",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Bitcoin als Vermögenschance: Ist der beste Zeitpunkt schon vorbei?",
-    "link": "https://www.btc-echo.de/news/ist-es-zu-spaet-um-mit-bitcoin-reich-zu-werden-239165/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-23T09:00:00+00:00",
-    "text": "Viele halten Bitcoin inzwischen für zu groß für die ganz großen Gewinne. Der Preis allein sagt aber wenig darüber aus, wie viel Spielraum noch bleibt. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Sweden’s central bank revives e-krona debate as stablecoins and digital euro loom",
-    "link": "https://www.coindesk.com/business/2026/10/23/sweden-s-central-bank-revives-e-krona-debate-as-stablecoins-and-digital-euro-loom",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T08:57:34+00:00",
-    "text": "The Riksbank sees an e-krona as critical to securing national payments and monetary control.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Bitcoin in 'Wait and See Mode'—And That Might Be a Good Thing",
-    "link": "https://decrypt.co/381666/bitcoin-in-wait-and-see-mode-and-that-might-be-a-good-thing",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T08:55:35+00:00",
-    "text": "The crypto market has been quiet as of late. Market analysts think that might actually be a good sign and that a bull market might be near.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "HSBC launches Hong Kong dollar stablecoin for retail payments",
-    "link": "https://cointelegraph.com/news/hsbc-launches-redcoin-hong-kong-dollar-stablecoin-payme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T08:47:34+00:00",
-    "text": "HSBC is rolling out RedCoin wallets to PayMe users, with plans to support tokenized investment subscriptions and expand into institutional uses.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Rubio turns to small Indian town as US faces high oil prices",
-    "link": "https://www.bbc.co.uk/news/articles/c3x2wnk8ejq5o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T08:39:42+00:00",
-    "text": "US Secretary of State Marco Rubio pushed a business and energy agenda over diplomacy on his second trip to India this year.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "Ethereum stoppt Glamsterdam-Test nach Warnung von Sicherheitsexperten",
-    "link": "https://www.btc-echo.de/news/ethereum-glamsterdam-test-verschoben-239732/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-23T08:21:19+00:00",
-    "text": "Vier Tage vor dem Start haben Ethereum-Entwickler die nächste Generalprobe für Glamsterdam gestoppt. Schuld ist ausgerechnet eine Änderung, die das Netzwerk entlasten sollte. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-24T04:36:19+00:00",
+  "stand": "2026-10-24T09:08:11+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10312,7 +10315,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-24T04:36:19+00:00",
+  "stand": "2026-10-24T09:08:11+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
@@ -10340,11 +10343,22 @@
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 17 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 16 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
-     "Bitcoin kaufen, verkaufen oder abwarten? Das sagt ein Krypto-Experte",
-     "Bitcoin Core Rewrites Its Security Policy for a World Where AI Finds Bugs in One Prompt"
+     "Bitcoin-Allzeithoch im Sommer 2027? Warum geduldige Anleger hoffen dürfen",
+     "Bitcoin kaufen, verkaufen oder abwarten? Das sagt ein Krypto-Experte"
+    ]
+   },
+   {
+    "coin": "XRP",
+    "symbol": "XRP",
+    "art": "Viele Meldungen",
+    "erklaerung": "In den letzten 24 Stunden gibt es 2 Meldungen, in denen XRP im Titel steht.",
+    "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
+    "belege": [
+     "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
+     "Milliardenmarkt im Visier: Das planen Ripple und Arf auf dem XRP Ledger"
     ]
    }
   ]
