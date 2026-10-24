@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-24T21:44:39+00:00",
+ "erzeugt": "2026-10-24T23:46:03+00:00",
  "kurse": {
-  "stand": "2026-10-24T21:44:39+00:00",
+  "stand": "2026-10-24T23:46:03+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 80346,
-    "aend24": -1.14693,
-    "aend7": -1.3163,
-    "marktkap": 1615335660504,
-    "volumen": 23470923546
+    "preis": 80781,
+    "aend24": -0.17255,
+    "aend7": -0.6928,
+    "marktkap": 1623900644415,
+    "volumen": 22019669477
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2337.48,
-    "aend24": -2.48457,
-    "aend7": -2.969,
-    "marktkap": 285608056374,
-    "volumen": 9753173328
+    "preis": 2355.4,
+    "aend24": -0.99055,
+    "aend7": -1.5426,
+    "marktkap": 287730670661,
+    "volumen": 9098579175
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 101.31,
-    "aend24": -2.27524,
-    "aend7": -2.4191,
-    "marktkap": 59764232926,
-    "volumen": 2556978624
+    "preis": 102.32,
+    "aend24": -0.23051,
+    "aend7": -0.722,
+    "marktkap": 60345470677,
+    "volumen": 2397220287
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.29,
-    "aend24": -1.00429,
-    "aend7": -0.6606,
-    "marktkap": 81565937515,
-    "volumen": 1390220894
+    "preis": 1.3,
+    "aend24": 0.56272,
+    "aend7": 0.4306,
+    "marktkap": 82260893455,
+    "volumen": 1297056501
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.077125,
-    "aend24": -2.61035,
-    "aend7": -3.4237,
-    "marktkap": 12069564663,
-    "volumen": 556339888
+    "preis": 0.077626,
+    "aend24": -0.93181,
+    "aend7": -1.3595,
+    "marktkap": 12145393022,
+    "volumen": 522405728
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-24T21:44:42+00:00",
+  "stand": "2026-10-24T23:46:07+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -269,7 +269,7 @@
      "o": 81189.44,
      "h": 81213.64,
      "l": 79220.74,
-     "c": 80391.01
+     "c": 80881.58
     }
    ],
    "ETH": [
@@ -481,7 +481,7 @@
      "o": 2387.61,
      "h": 2390.24,
      "l": 2282.46,
-     "c": 2339.04
+     "c": 2358.82
     }
    ],
    "SOL": [
@@ -693,7 +693,7 @@
      "o": 102.85,
      "h": 103.13,
      "l": 98.62,
-     "c": 101.39
+     "c": 102.4
     }
    ],
    "XRP": [
@@ -903,9 +903,9 @@
     {
      "d": "2026-10-24",
      "o": 1.295,
-     "h": 1.2961,
+     "h": 1.3016,
      "l": 1.2546,
-     "c": 1.2926
+     "c": 1.2996
     }
    ],
    "DOGE": [
@@ -1117,15 +1117,66 @@
      "o": 0.07864,
      "h": 0.0791,
      "l": 0.07478,
-     "c": 0.07717
+     "c": 0.07771
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-24T21:44:46+00:00",
+  "stand": "2026-10-24T23:46:09+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Rosebank: Life on the oil field at the centre of a political storm",
+    "link": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-24T23:15:18+00:00",
+    "text": "Scotland editor James Cook finds out what life is like on board a ship in an untapped oil field awaiting its fate.",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Palestinian families displaced as Israeli forces demolish Hebron homes",
+    "link": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T23:02:06+00:00",
+    "text": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Record Tanker Rates Cripple U.S. Crude Oil Flows to Asia",
+    "link": "https://oilprice.com/Energy/Crude-Oil/Record-Tanker-Rates-Cripple-US-Crude-Oil-Flows-to-Asia.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-24T23:00:00+00:00",
+    "text": "The Iran war has made oil tanker voyages so inefficient that vessel availability has crumbled and freight costs have soared to record-highs, all but erasing the incentive for shipping crude oil from the U.S. Gulf Coast to Asia. The cost of…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "Who are the candidates in Brazil's presidential election?",
+    "link": "https://www.bbc.co.uk/news/videos/cm0e0del4jewo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T22:08:47+00:00",
+    "text": "Voters in Sunday's election are choosing between two very different candidates, as Americas correspondent Ione Wells reports from Rio de Janeiro.",
+    "tags": [],
+    "wichtig": 0
+   },
    {
     "titel": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
     "link": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
@@ -1198,19 +1249,6 @@
     "text": "Police have launched a manhunt for the building's owner and contractor after the multi-storey building collapsed while still under construction.",
     "tags": [],
     "wichtig": 0
-   },
-   {
-    "titel": "Palestinian families displaced as Israeli forces demolish Hebron homes",
-    "link": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-24T17:21:42+00:00",
-    "text": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1
    },
    {
     "titel": "British woman dies after trying to rescue sons swept away at sea in the Bahamas",
@@ -2185,19 +2223,6 @@
     "wichtig": 1
    },
    {
-    "titel": "The Hidden $40-Per-Barrel Cost Driving Oil Prices Higher",
-    "link": "https://oilprice.com/Energy/Energy-General/The-Hidden-40-Per-Barrel-Cost-Driving-Oil-Prices-Higher.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-23T14:00:00+00:00",
-    "text": "When Americans think about the price of oil, they usually focus on the number quoted every day in financial markets. If Brent crude is trading above $100 a barrel or West Texas Intermediate is near $100, those numbers become shorthand for…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1
-   },
-   {
     "titel": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
     "link": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
     "quelle": "CoinDesk",
@@ -2209,35 +2234,11 @@
      "Rohstoffe"
     ],
     "wichtig": 2
-   },
-   {
-    "titel": "Here’s what happened in crypto today",
-    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T13:38:53+00:00",
-    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "Morning Minute: a16z Drops 'Crypto' From Its Fund",
-    "link": "https://decrypt.co/381691/morning-minute-a16z-drops-crypto-from-its-fund",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T13:29:21+00:00",
-    "text": "The name change is symbolic of the fund’s future investing focus, though the firm will continue investing in crypto.",
-    "tags": [],
-    "wichtig": 0
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-24T21:44:54+00:00",
+  "stand": "2026-10-24T23:46:16+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10317,7 +10318,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-24T21:44:54+00:00",
+  "stand": "2026-10-24T23:46:16+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
