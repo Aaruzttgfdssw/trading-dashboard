@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-24T19:15:34+00:00",
+ "erzeugt": "2026-10-24T21:44:39+00:00",
  "kurse": {
-  "stand": "2026-10-24T19:15:34+00:00",
+  "stand": "2026-10-24T21:44:39+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 80442,
-    "aend24": -0.98116,
-    "aend7": -0.9524,
-    "marktkap": 1617201913178,
-    "volumen": 23865375652
+    "preis": 80346,
+    "aend24": -1.14693,
+    "aend7": -1.3163,
+    "marktkap": 1615335660504,
+    "volumen": 23470923546
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2336.81,
-    "aend24": -2.37567,
-    "aend7": -2.9718,
-    "marktkap": 285470221995,
-    "volumen": 9786229047
+    "preis": 2337.48,
+    "aend24": -2.48457,
+    "aend7": -2.969,
+    "marktkap": 285608056374,
+    "volumen": 9753173328
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 101.07,
-    "aend24": -2.57798,
-    "aend7": -2.0217,
-    "marktkap": 59614957239,
-    "volumen": 2591181379
+    "preis": 101.31,
+    "aend24": -2.27524,
+    "aend7": -2.4191,
+    "marktkap": 59764232926,
+    "volumen": 2556978624
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
     "preis": 1.29,
-    "aend24": -1.34782,
-    "aend7": -0.4089,
-    "marktkap": 81155586336,
-    "volumen": 1384129017
+    "aend24": -1.00429,
+    "aend7": -0.6606,
+    "marktkap": 81565937515,
+    "volumen": 1390220894
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.076995,
-    "aend24": -2.68898,
-    "aend7": -2.7783,
-    "marktkap": 12046910661,
-    "volumen": 563343185
+    "preis": 0.077125,
+    "aend24": -2.61035,
+    "aend7": -3.4237,
+    "marktkap": 12069564663,
+    "volumen": 556339888
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-24T19:15:37+00:00",
+  "stand": "2026-10-24T21:44:42+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -269,7 +269,7 @@
      "o": 81189.44,
      "h": 81213.64,
      "l": 79220.74,
-     "c": 80512.3
+     "c": 80391.01
     }
    ],
    "ETH": [
@@ -481,7 +481,7 @@
      "o": 2387.61,
      "h": 2390.24,
      "l": 2282.46,
-     "c": 2338.72
+     "c": 2339.04
     }
    ],
    "SOL": [
@@ -693,7 +693,7 @@
      "o": 102.85,
      "h": 103.13,
      "l": 98.62,
-     "c": 101.17
+     "c": 101.39
     }
    ],
    "XRP": [
@@ -905,7 +905,7 @@
      "o": 1.295,
      "h": 1.2961,
      "l": 1.2546,
-     "c": 1.2871
+     "c": 1.2926
     }
    ],
    "DOGE": [
@@ -1117,15 +1117,51 @@
      "o": 0.07864,
      "h": 0.0791,
      "l": 0.07478,
-     "c": 0.07705
+     "c": 0.07717
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-24T19:15:39+00:00",
+  "stand": "2026-10-24T21:44:46+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
+    "link": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T21:09:27+00:00",
+    "text": "Officials have so far managed to avoid a repeat of last weekend's rioting and looting as hundreds of thousands took part in demonstrations.",
+    "tags": [],
+    "wichtig": 1
+   },
+   {
+    "titel": "Fuel Oil Becomes Asia’s Next Cost Shock",
+    "link": "https://oilprice.com/Energy/Crude-Oil/Fuel-Oil-Becomes-Asias-Next-Cost-Shock.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-24T21:00:00+00:00",
+    "text": "Singapore’s shipping-fuel market is adding another layer of cost to Asian trade. Disrupted supplies from the Middle East and Russia, resilient bunker demand and prohibitive freight rates have pushed high-sulphur fuel oil above the price of…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "Fireworks and tear gas as protesters and riot police clash in Paris",
+    "link": "https://www.bbc.co.uk/news/videos/cm89zqw9lx1do?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-24T19:37:35+00:00",
+    "text": "Europe correspondent Nick Beake reports from Paris where mostly peaceful protests turned into unrest after nightfall.",
+    "tags": [],
+    "wichtig": 0
+   },
    {
     "titel": "Vanessa Trump says she is cancer-free six months after revealing diagnosis",
     "link": "https://www.bbc.co.uk/news/articles/cm1dwzvn6227o?at_medium=RSS&at_campaign=rss",
@@ -1164,7 +1200,7 @@
     "wichtig": 0
    },
    {
-    "titel": "Palestinian families displaced as Israeli forces demolish Hebron homes, local officials say",
+    "titel": "Palestinian families displaced as Israeli forces demolish Hebron homes",
     "link": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
@@ -1245,7 +1281,7 @@
     "wichtig": 1
    },
    {
-    "titel": "Watch as fire engulfs Hitler's mountaintop Eagle's Nest retreat",
+    "titel": "Fire engulfs Hitler's mountaintop Eagle's Nest retreat",
     "link": "https://www.bbc.co.uk/news/videos/cq98z9xxy2n2o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
@@ -2188,19 +2224,6 @@
     "wichtig": 1
    },
    {
-    "titel": "U.S. Diesel at $6.30 a Gallon as First Russian Cargo Sets Sail for New York",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/US-Diesel-at-630-a-Gallon-as-First-Russian-Cargo-Sets-Sail-for-New-York.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-23T13:30:00+00:00",
-    "text": "The first tanker shipping diesel out of Russia to the U.S. departed from the Russian Baltic Sea port of Primorsk early on Friday local time and is en route to New York where it is expected to arrive on November 7, shipping data show. The m…",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1
-   },
-   {
     "titel": "Morning Minute: a16z Drops 'Crypto' From Its Fund",
     "link": "https://decrypt.co/381691/morning-minute-a16z-drops-crypto-from-its-fund",
     "quelle": "Decrypt",
@@ -2210,33 +2233,11 @@
     "text": "The name change is symbolic of the fund’s future investing focus, though the firm will continue investing in crypto.",
     "tags": [],
     "wichtig": 0
-   },
-   {
-    "titel": "China targets 2030 for its national blockchain network buildout",
-    "link": "https://cointelegraph.com/news/china-2030-national-blockchain-network-buildout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T13:21:07+00:00",
-    "text": "China’s five-year digital development plan calls for wider blockchain use in trade and manufacturing alongside stronger technical standards.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Interpol Recovers $105M in African Cybercrime Sweep That Shut Illegal Crypto Mines",
-    "link": "https://decrypt.co/381690/interpol-recovers-105m-in-african-cybercrime-sweep-that-shut-illegal-crypto-mines",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T13:18:18+00:00",
-    "text": "Operation Serengeti III led to 1,462 arrests across 21 countries, while Angolan police seized more than 2,000 crypto mining devices.",
-    "tags": [],
-    "wichtig": 0
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-24T19:15:46+00:00",
+  "stand": "2026-10-24T21:44:54+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10316,7 +10317,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-24T19:15:46+00:00",
+  "stand": "2026-10-24T21:44:54+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
