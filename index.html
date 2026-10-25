@@ -1437,6 +1437,12 @@ tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0
   }
   function wStart() {
     try { WS.addr = localStorage.getItem('mts-wallet'); WS.seen = JSON.parse(localStorage.getItem('mts-seen') || '{}'); } catch (e) { /* egal */ }
+    // Adresse per Link übernehmen (?wallet=...), danach aus der Adresszeile entfernen
+    try {
+      const u = new URL(location.href), w = u.searchParams.get('wallet');
+      if (w && /^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(w)) { WS.addr = w; localStorage.setItem('mts-wallet', w); }
+      if (w) { u.searchParams.delete('wallet'); history.replaceState(null, '', u.pathname + u.search + u.hash); }
+    } catch (e) { /* egal */ }
     if (WS.addr) { $('#jw-addr').value = WS.addr; jSync(); }
     else setWState('Noch keine Wallet-Adresse eingetragen.', false);
     clearInterval(WS.timer); WS.timer = setInterval(jSync, 2 * 60000);
