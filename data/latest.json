@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-25T17:09:48+00:00",
+ "erzeugt": "2026-10-25T19:36:51+00:00",
  "kurse": {
-  "stand": "2026-10-25T17:09:49+00:00",
+  "stand": "2026-10-25T19:36:51+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 80721,
-    "aend24": 0.72566,
-    "aend7": -0.4514,
-    "marktkap": 1622594884772,
-    "volumen": 13545589513
+    "preis": 80502,
+    "aend24": 0.05243,
+    "aend7": -0.6903,
+    "marktkap": 1618466168457,
+    "volumen": 13086639752
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2353.79,
-    "aend24": 1.6332,
-    "aend7": -0.9379,
-    "marktkap": 287455362874,
-    "volumen": 6232355652
+    "preis": 2348.91,
+    "aend24": 0.47602,
+    "aend7": -0.66,
+    "marktkap": 286949612776,
+    "volumen": 5912603487
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 101.87,
-    "aend24": 1.52581,
-    "aend7": -0.2432,
-    "marktkap": 60064457682,
-    "volumen": 1452598568
+    "preis": 101.6,
+    "aend24": 0.54624,
+    "aend7": -0.3465,
+    "marktkap": 59917048401,
+    "volumen": 1394778505
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.31,
-    "aend24": 2.39907,
-    "aend7": 2.5828,
-    "marktkap": 82679727724,
-    "volumen": 1011984937
+    "preis": 1.3,
+    "aend24": 0.85899,
+    "aend7": 2.1058,
+    "marktkap": 82308712798,
+    "volumen": 982096945
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.077403,
-    "aend24": 1.42669,
-    "aend7": -0.0228,
-    "marktkap": 12109039428,
-    "volumen": 335914552
+    "preis": 0.077121,
+    "aend24": 0.06483,
+    "aend7": -0.617,
+    "marktkap": 12067123476,
+    "volumen": 317129353
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-25T17:09:51+00:00",
+  "stand": "2026-10-25T19:36:53+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -269,7 +269,7 @@
      "o": 80888.15,
      "h": 81033.69,
      "l": 80087.7,
-     "c": 80790.0
+     "c": 80616.01
     }
    ],
    "ETH": [
@@ -481,7 +481,7 @@
      "o": 2358.82,
      "h": 2371.52,
      "l": 2318.0,
-     "c": 2354.94
+     "c": 2353.0
     }
    ],
    "SOL": [
@@ -693,7 +693,7 @@
      "o": 102.37,
      "h": 102.77,
      "l": 100.37,
-     "c": 101.89
+     "c": 101.81
     }
    ],
    "XRP": [
@@ -905,7 +905,7 @@
      "o": 1.2996,
      "h": 1.3159,
      "l": 1.2891,
-     "c": 1.3061
+     "c": 1.3014
     }
    ],
    "DOGE": [
@@ -1117,15 +1117,59 @@
      "o": 0.07767,
      "h": 0.07807,
      "l": 0.07595,
-     "c": 0.07742
+     "c": 0.07727
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-25T17:09:54+00:00",
+  "stand": "2026-10-25T19:36:56+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Death toll in Nigeria village raided by gunmen rises to 48, police say",
+    "link": "https://www.bbc.co.uk/news/articles/cq1kdlm1ze7do?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-25T19:14:27+00:00",
+    "text": "Unidentified gunmen on motorcycles swooped on a remote village on Friday, looting shops and setting houses ablaze.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Britain's Renewable Energy Boom Is Hitting a Grid Bottleneck",
+    "link": "https://oilprice.com/Energy/Energy-General/Britains-Renewable-Energy-Boom-Is-Hitting-a-Grid-Bottleneck.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-25T19:00:00+00:00",
+    "text": "The United Kingdom has invested heavily in expanding its renewable energy capacity in recent years to reduce its dependence on fossil fuels and support a green transition. However, one major problem stands in the way of it achieving this g…",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Venezuelan opposition leader María Machado returns after months in exile",
+    "link": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-25T18:29:00+00:00",
+    "text": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "“Der KI-Abverkauf nähert sich seinem Ende”",
+    "link": "https://www.btc-echo.de/news/ki-ausverkauf-vor-dem-ende-ethereum-bulle-tom-lee-239816/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-25T18:00:00+00:00",
+    "text": "Andere warnen vor dem Platzen der KI-Blase, aber Tom Lee prognostiziert eine baldige Erholung bei Nvidia und Co. Das sind die Gründe des Krypto-Experten. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0
+   },
    {
     "titel": "World Is on Track for Up to 2.8 Degrees of Warming Despite Clean Energy Boom",
     "link": "https://oilprice.com/Energy/Energy-General/World-Is-on-Track-for-Up-to-28-Degrees-of-Warming-Despite-Clean-Energy-Boom.html",
@@ -1145,17 +1189,6 @@
     "sprache": "de",
     "zeit": "2026-10-25T16:48:00+00:00",
     "text": "Laut einer Coinbase-Studie laufen 73 Prozent des Stablecoin-Volumens außerhalb regulärer Bankzeiten. Weshalb Unternehmen auf Krypto-Rails ausweichen. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Venezuelan opposition leader María Machado returns after months in exile",
-    "link": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-25T16:21:40+00:00",
-    "text": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.",
     "tags": [],
     "wichtig": 0
    },
@@ -1472,17 +1505,6 @@
      "Krieg/Konflikt"
     ],
     "wichtig": 1
-   },
-   {
-    "titel": "Gunmen kill at least 10 villagers and loot shops in north-east Nigeria",
-    "link": "https://www.bbc.co.uk/news/articles/cq1kdlm1ze7do?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-25T03:20:16+00:00",
-    "text": "Police are searching for other casualties, with officials warning the actual death toll could rise further.",
-    "tags": [],
-    "wichtig": 0
    },
    {
     "titel": "Bitcoin-Wende bei Sparkassen: JPMorgan erwartet 10 Prozent Rendite",
@@ -2190,37 +2212,11 @@
      "Regulierung"
     ],
     "wichtig": 2
-   },
-   {
-    "titel": "Trump administration sues to block certification of upcoming Alaska election",
-    "link": "https://www.bbc.co.uk/news/articles/c678pv4krx37o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T18:49:14+00:00",
-    "text": "The justice department has filed a lawsuit arguing that the inclusion of two candidates named Dan Sullivan could confuse voters.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 2
-   },
-   {
-    "titel": "Initia halts blockchain after exploit reportedly drains over $2.6M",
-    "link": "https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T18:39:02+00:00",
-    "text": "The blockchain suspended its layer-1 network and rollups after security researchers identified unauthorized token minting and millions in assets transferred to Ethereum.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 2
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-25T17:10:01+00:00",
+  "stand": "2026-10-25T19:37:02+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10300,7 +10296,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-25T17:10:01+00:00",
+  "stand": "2026-10-25T19:37:02+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
