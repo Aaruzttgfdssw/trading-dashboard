@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-25T19:36:51+00:00",
+ "erzeugt": "2026-10-25T22:04:15+00:00",
  "kurse": {
-  "stand": "2026-10-25T19:36:51+00:00",
+  "stand": "2026-10-25T22:04:15+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 80502,
-    "aend24": 0.05243,
-    "aend7": -0.6903,
-    "marktkap": 1618466168457,
-    "volumen": 13086639752
+    "preis": 80394,
+    "aend24": -0.03199,
+    "aend7": -0.9344,
+    "marktkap": 1615470343978,
+    "volumen": 12944114053
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2348.91,
-    "aend24": 0.47602,
-    "aend7": -0.66,
-    "marktkap": 286949612776,
-    "volumen": 5912603487
+    "preis": 2337.73,
+    "aend24": -0.12114,
+    "aend7": -0.8521,
+    "marktkap": 285383223678,
+    "volumen": 5795273507
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 101.6,
-    "aend24": 0.54624,
-    "aend7": -0.3465,
-    "marktkap": 59917048401,
-    "volumen": 1394778505
+    "preis": 101.39,
+    "aend24": 0.05474,
+    "aend7": -0.16,
+    "marktkap": 59747565307,
+    "volumen": 1403355917
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
     "preis": 1.3,
-    "aend24": 0.85899,
-    "aend7": 2.1058,
-    "marktkap": 82308712798,
-    "volumen": 982096945
+    "aend24": 0.222,
+    "aend7": 2.2471,
+    "marktkap": 82017821426,
+    "volumen": 969220772
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.077121,
-    "aend24": 0.06483,
-    "aend7": -0.617,
-    "marktkap": 12067123476,
-    "volumen": 317129353
+    "preis": 0.076929,
+    "aend24": -0.23426,
+    "aend7": 0.0263,
+    "marktkap": 12028421834,
+    "volumen": 315800081
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-25T19:36:53+00:00",
+  "stand": "2026-10-25T22:04:18+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -269,7 +269,7 @@
      "o": 80888.15,
      "h": 81033.69,
      "l": 80087.7,
-     "c": 80616.01
+     "c": 80680.0
     }
    ],
    "ETH": [
@@ -481,7 +481,7 @@
      "o": 2358.82,
      "h": 2371.52,
      "l": 2318.0,
-     "c": 2353.0
+     "c": 2348.12
     }
    ],
    "SOL": [
@@ -693,7 +693,7 @@
      "o": 102.37,
      "h": 102.77,
      "l": 100.37,
-     "c": 101.81
+     "c": 101.95
     }
    ],
    "XRP": [
@@ -905,7 +905,7 @@
      "o": 1.2996,
      "h": 1.3159,
      "l": 1.2891,
-     "c": 1.3014
+     "c": 1.3016
     }
    ],
    "DOGE": [
@@ -1117,15 +1117,26 @@
      "o": 0.07767,
      "h": 0.07807,
      "l": 0.07595,
-     "c": 0.07727
+     "c": 0.07737
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-25T19:36:56+00:00",
+  "stand": "2026-10-25T22:04:21+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Serbia's veteran ruler Vučić concedes election to student-led protest movement",
+    "link": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-25T21:25:04+00:00",
+    "text": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
+    "tags": [],
+    "wichtig": 0
+   },
    {
     "titel": "Death toll in Nigeria village raided by gunmen rises to 48, police say",
     "link": "https://www.bbc.co.uk/news/articles/cq1kdlm1ze7do?at_medium=RSS&at_campaign=rss",
@@ -1191,17 +1202,6 @@
     "text": "Laut einer Coinbase-Studie laufen 73 Prozent des Stablecoin-Volumens außerhalb regulärer Bankzeiten. Weshalb Unternehmen auf Krypto-Rails ausweichen. Source: BTC-ECHO BTC-ECHO",
     "tags": [],
     "wichtig": 0
-   },
-   {
-    "titel": "Early reports suggest record high turnout in Serbia elections",
-    "link": "https://www.bbc.co.uk/news/articles/c6jdmj1ej715o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-25T16:05:15+00:00",
-    "text": "Serbia is heading to the polls as a student movement attempts to oust longtime populist leader Aleksandar Vučić.",
-    "tags": [],
-    "wichtig": 1
    },
    {
     "titel": "Wells Fargo, Cisco, Intuit Among 6 More Companies Objecting to Tokenized Stocks",
@@ -2216,7 +2216,7 @@
   ]
  },
  "etfs": {
-  "stand": "2026-10-25T19:37:02+00:00",
+  "stand": "2026-10-25T22:04:27+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10296,7 +10296,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-25T19:37:02+00:00",
+  "stand": "2026-10-25T22:04:27+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
