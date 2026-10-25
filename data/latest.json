@@ -1,73 +1,66 @@
 {
- "erzeugt": "2026-10-24T23:46:03+00:00",
+ "erzeugt": "2026-10-25T03:21:38+00:00",
  "kurse": {
-  "stand": "2026-10-24T23:46:03+00:00",
+  "stand": "2026-10-25T03:21:38+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 80781,
-    "aend24": -0.17255,
-    "aend7": -0.6928,
-    "marktkap": 1623900644415,
-    "volumen": 22019669477
+    "preis": 80942,
+    "aend24": 0.04998,
+    "aend7": -0.9053,
+    "marktkap": 1627113038543,
+    "volumen": 21329165690
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2355.4,
-    "aend24": -0.99055,
-    "aend7": -1.5426,
-    "marktkap": 287730670661,
-    "volumen": 9098579175
+    "preis": 2366.14,
+    "aend24": -0.72978,
+    "aend7": -1.7401,
+    "marktkap": 289035538210,
+    "volumen": 8931872168
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 102.32,
-    "aend24": -0.23051,
-    "aend7": -0.722,
-    "marktkap": 60345470677,
-    "volumen": 2397220287
+    "preis": 102.59,
+    "aend24": -0.09891,
+    "aend7": -1.1123,
+    "marktkap": 60496869313,
+    "volumen": 2301021686
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.3,
-    "aend24": 0.56272,
-    "aend7": 0.4306,
-    "marktkap": 82260893455,
-    "volumen": 1297056501
+    "preis": 1.31,
+    "aend24": 1.47515,
+    "aend7": 1.0491,
+    "marktkap": 83008676708,
+    "volumen": 1318600621
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.077626,
-    "aend24": -0.93181,
-    "aend7": -1.3595,
-    "marktkap": 12145393022,
-    "volumen": 522405728
+    "preis": 0.077837,
+    "aend24": -1.26942,
+    "aend7": -1.9118,
+    "marktkap": 12176529557,
+    "volumen": 522681836
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-24T23:46:07+00:00",
+  "stand": "2026-10-25T03:21:41+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
-    {
-     "d": "2026-09-25",
-     "o": 84410.24,
-     "h": 85255.0,
-     "l": 83183.0,
-     "c": 84099.99
-    },
     {
      "d": "2026-09-26",
      "o": 84100.0,
@@ -269,17 +262,17 @@
      "o": 81189.44,
      "h": 81213.64,
      "l": 79220.74,
-     "c": 80881.58
+     "c": 80888.16
+    },
+    {
+     "d": "2026-10-25",
+     "o": 80888.15,
+     "h": 81033.69,
+     "l": 80771.72,
+     "c": 81028.11
     }
    ],
    "ETH": [
-    {
-     "d": "2026-09-25",
-     "o": 2688.06,
-     "h": 2743.0,
-     "l": 2667.33,
-     "c": 2691.61
-    },
     {
      "d": "2026-09-26",
      "o": 2691.62,
@@ -482,16 +475,16 @@
      "h": 2390.24,
      "l": 2282.46,
      "c": 2358.82
+    },
+    {
+     "d": "2026-10-25",
+     "o": 2358.82,
+     "h": 2371.52,
+     "l": 2355.57,
+     "c": 2368.0
     }
    ],
    "SOL": [
-    {
-     "d": "2026-09-25",
-     "o": 117.04,
-     "h": 122.94,
-     "l": 115.86,
-     "c": 122.15
-    },
     {
      "d": "2026-09-26",
      "o": 122.15,
@@ -693,17 +686,17 @@
      "o": 102.85,
      "h": 103.13,
      "l": 98.62,
-     "c": 102.4
+     "c": 102.38
+    },
+    {
+     "d": "2026-10-25",
+     "o": 102.37,
+     "h": 102.73,
+     "l": 102.18,
+     "c": 102.69
     }
    ],
    "XRP": [
-    {
-     "d": "2026-09-25",
-     "o": 1.5347,
-     "h": 1.63,
-     "l": 1.5191,
-     "c": 1.5685
-    },
     {
      "d": "2026-09-26",
      "o": 1.5684,
@@ -906,16 +899,16 @@
      "h": 1.3016,
      "l": 1.2546,
      "c": 1.2996
+    },
+    {
+     "d": "2026-10-25",
+     "o": 1.2996,
+     "h": 1.3133,
+     "l": 1.2985,
+     "c": 1.3116
     }
    ],
    "DOGE": [
-    {
-     "d": "2026-09-25",
-     "o": 0.09578,
-     "h": 0.09984,
-     "l": 0.09456,
-     "c": 0.09897
-    },
     {
      "d": "2026-09-26",
      "o": 0.09896,
@@ -1117,15 +1110,35 @@
      "o": 0.07864,
      "h": 0.0791,
      "l": 0.07478,
-     "c": 0.07771
+     "c": 0.07766
+    },
+    {
+     "d": "2026-10-25",
+     "o": 0.07767,
+     "h": 0.07807,
+     "l": 0.07757,
+     "c": 0.07793
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-24T23:46:09+00:00",
+  "stand": "2026-10-25T03:21:45+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Bitcoin-Wende bei Sparkassen: JPMorgan erwartet 10 Prozent Rendite",
+    "link": "https://www.btc-echo.de/news/bitcoin-wende-bei-sparkassen-jpmorgan-erwartet-10-prozent-rendite-239707/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-25T03:00:00+00:00",
+    "text": "Die Sparkassen öffnen sich für Bitcoin, JPMorgan prognostiziert höhere Renditen als bei Aktien und die Schweiz genehmigt ihren ersten echten Bitcoin ETF: die Krypto-News der Woche. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 1
+   },
    {
     "titel": "Rosebank: Life on the oil field at the centre of a political storm",
     "link": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
@@ -2221,24 +2234,11 @@
      "Rohstoffe"
     ],
     "wichtig": 1
-   },
-   {
-    "titel": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
-    "link": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T13:58:56+00:00",
-    "text": "The company's head of futures and prediction markets said bitcoin, gold and oil contracts are among its fastest-growing prediction markets.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 2
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-24T23:46:16+00:00",
+  "stand": "2026-10-25T03:21:53+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10318,7 +10318,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-24T23:46:16+00:00",
+  "stand": "2026-10-25T03:21:53+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
@@ -10346,11 +10346,11 @@
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 7 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 8 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
-     "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
-     "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations"
+     "Bitcoin-Wende bei Sparkassen: JPMorgan erwartet 10 Prozent Rendite",
+     "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends"
     ]
    },
    {
