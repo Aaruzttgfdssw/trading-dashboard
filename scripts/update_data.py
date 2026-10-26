@@ -231,7 +231,7 @@ def clean(text, limit=240):
 
 
 # Wie stark kann eine Meldung Kurse bewegen? 0 = kaum, 3 = stark.
-STRONG = ["approv", "reject", "ban ", "bans ", "banned", "hack", "exploit", "rate cut", "rate hike", "cuts rates",
+STRONG = ["approv", "reject", "ban ", "bans ", "banned", "rate cut", "rate hike", "cuts rates",
           "raises rates", "lawsuit", "sues ", "charged", "sanction", "attack", "invasion", "ceasefire", "record high",
           "all-time high", "crash", "plunge", "tumbl", "soar", "surge", "delist", "listing", "bankrupt", "liquidat",
           "executive order", "tariff", "etf", "inflows", "outflows", "fed ", "sec ", "opec", "strait of hormuz",
@@ -258,7 +258,11 @@ def importance(title, summary, tags):
 
 def tag_item(title, summary):
     hay = " " + (title + " " + summary).lower() + " "
-    return [tag for tag, words in TAGS.items() if any(w in hay for w in words)]
+    tags = [tag for tag, words in TAGS.items() if any(w in hay for w in words)]
+    # "Hack/Betrug" nur, wenn es wirklich um Krypto oder Finanzen geht (nicht z. B. "ausgenutzt" in der Politik)
+    if "Hack/Betrug" in tags and not any(w in hay for w in ["crypto", "krypto", "bitcoin", "token", "exchange", "börse", "defi", "wallet", "protocol", "bank"]):
+        tags.remove("Hack/Betrug")
+    return tags
 
 
 def fetch_news():
