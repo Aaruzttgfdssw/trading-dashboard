@@ -45,7 +45,13 @@ tbody tr:hover, tbody tr[aria-selected="true"] { background: var(--panel2); }
 .nm b { display: block; font-weight: 600; }
 .nm span { font-size: 12px; color: var(--muted); }
 .spark { display: block; }
-.chartbox { margin-top: 12px; }
+.chartbox { margin-top: 14px; }
+.chartbox .tradingview-widget-container { height: clamp(420px, 72vh, 820px) !important; }
+details.box > summary { cursor: pointer; list-style: none; }
+details.box > summary::-webkit-details-marker { display: none; }
+details.box > summary h2 { display: inline; }
+details.box > summary::after { content: ' ▾'; color: var(--muted); }
+details.box[open] > summary::after { content: ' ▴'; }
 .calc { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 12px; align-items: end; }
 .calc label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
 .calc input { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; color: var(--fg); font: inherit; min-width: 0; }
@@ -91,12 +97,12 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
 
   <section class="box">
     <h2>ETFs, die du in Deutschland kaufen kannst</h2>
-    <p class="sub">Kurse in Euro von der Börse Xetra. Klicke auf eine Zeile für den Live-Chart. <span id="e-src"></span></p>
-    <div class="scroll"><table id="etf">
+    <p class="sub">Kurse in Euro von der Börse Xetra. Klicke auf einen ETF, um ihn oben im großen Chart zu sehen. <span id="e-src"></span></p>
+    <div class="chartbox" id="chart"></div>
+    <div class="scroll" style="margin-top:14px"><table id="etf">
       <thead><tr><th>ETF</th><th>Kosten pro Jahr</th><th>Kurs €</th><th>Heute</th><th>1 Jahr</th><th>3 Jahre</th><th>5 Jahre</th><th>Ø pro Jahr</th><th>Verlauf 5 Jahre</th></tr></thead>
       <tbody></tbody>
     </table></div>
-    <div class="chartbox" id="chart"></div>
   </section>
 
   <section class="box">
@@ -129,8 +135,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
     <div class="news" id="news"></div>
   </section>
 
-  <section class="box tax">
-    <h2>Steuerregeln zum Nachlesen</h2>
+  <details class="box tax">
+    <summary><h2>Steuerregeln zum Nachlesen</h2></summary>
     <p class="sub">Stand: Oktober 2026, zuletzt von Claude geprüft am 26.10.2026. Ändert sich ein Gesetz, aktualisiere ich diesen Teil, wenn du mir "Steuer-Update" schreibst. Keine Steuerberatung.</p>
     <div class="grid">
       <div class="step">
@@ -158,7 +164,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
       </div>
     </div>
     <p class="small" style="margin:12px 0 0">Aktuell nachlesen: <a href="https://www.steuertipps.de/altersvorsorge-rente-finanzen/krypto-anlage/steuern-optimieren/themen" target="_blank" rel="noopener noreferrer">Steuertipps zu Krypto-Steuern</a> · <a href="https://www.finanztip.de/indexfonds-etf/etf-steuern/" target="_blank" rel="noopener noreferrer">Finanztip zu ETF-Steuern</a> · <a href="https://www.verbraucherzentrale.de/wissen/geld-versicherungen/sparen-und-anlegen" target="_blank" rel="noopener noreferrer">Verbraucherzentrale: Sparen und Anlegen</a></p>
-  </section>
+  </details>
 
   <footer>Daten: Yahoo Finance oder Stooq (ETFs), Binance und CoinGecko (Krypto), tagesschau, BTC-ECHO, BBC und weitere (Nachrichten). Live-Charts von TradingView.</footer>
 </div>
@@ -216,8 +222,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
     D.sel = r.sym;
     document.querySelectorAll('#etf tbody tr').forEach((tr, i) => tr.setAttribute('aria-selected', String(D.data.etfs.daten[i] && D.data.etfs.daten[i].sym === r.sym)));
     const host = $('#chart'); host.replaceChildren();
-    host.appendChild(el('p', 'small', r.name + ' (' + r.isin + '). Kaufen kannst du ihn bei deinem Broker, zum Beispiel per Sparplan in der App von Trade Republic. Suche dort nach der ISIN.'));
-    const c = el('div', 'tradingview-widget-container'); c.style.height = '420px';
+    host.appendChild(el('p', 'small', r.name + ' · ISIN ' + r.isin + ' · per Sparplan bei deinem Broker kaufbar (in der App nach der ISIN suchen)'));
+    const c = el('div', 'tradingview-widget-container');
     const w = el('div', 'tradingview-widget-container__widget'); w.style.height = '100%'; c.appendChild(w);
     const s = document.createElement('script'); s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js'; s.async = true;
     s.textContent = JSON.stringify({ autosize: true, symbol: r.tv, interval: 'W', range: '60M', timezone: 'Europe/Berlin', theme: 'dark', style: '2', locale: 'de_DE', allow_symbol_change: false, hide_side_toolbar: true, backgroundColor: '#161d2a', support_host: 'https://www.tradingview.com' });
