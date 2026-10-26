@@ -1,63 +1,63 @@
 {
- "erzeugt": "2026-10-26T00:23:17+00:00",
+ "erzeugt": "2026-10-26T05:08:44+00:00",
  "kurse": {
-  "stand": "2026-10-26T00:23:17+00:00",
+  "stand": "2026-10-26T05:08:44+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 79993,
-    "aend24": -0.90781,
-    "aend7": -2.0325,
-    "marktkap": 1607970938700,
-    "volumen": 14248010036
+    "preis": 80032,
+    "aend24": -0.99691,
+    "aend7": -2.9687,
+    "marktkap": 1609215767805,
+    "volumen": 17795674654
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2326.43,
-    "aend24": -1.18672,
-    "aend7": -2.7881,
-    "marktkap": 284164689563,
-    "volumen": 6428986156
+    "preis": 2321.01,
+    "aend24": -1.84591,
+    "aend7": -4.2821,
+    "marktkap": 283635274340,
+    "volumen": 7927442623
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 101.27,
-    "aend24": -0.92424,
-    "aend7": -2.4615,
-    "marktkap": 59727807781,
-    "volumen": 1495202457
+    "preis": 101.3,
+    "aend24": -1.10383,
+    "aend7": -3.7905,
+    "marktkap": 59762874365,
+    "volumen": 1807268205
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
     "preis": 1.29,
-    "aend24": -0.27539,
-    "aend7": -0.452,
-    "marktkap": 82005273988,
-    "volumen": 995874788
+    "aend24": -1.7154,
+    "aend7": -1.7165,
+    "marktkap": 81625105056,
+    "volumen": 1115851349
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.076926,
-    "aend24": -0.82846,
-    "aend7": -2.9209,
-    "marktkap": 12034700083,
-    "volumen": 339513101
+    "preis": 0.077106,
+    "aend24": -0.71106,
+    "aend7": -3.3563,
+    "marktkap": 12065742591,
+    "volumen": 380251108
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-26T00:23:21+00:00",
+  "stand": "2026-10-26T05:08:48+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
@@ -267,9 +267,9 @@
     {
      "d": "2026-10-26",
      "o": 80154.09,
-     "h": 80226.0,
-     "l": 80006.0,
-     "c": 80131.39
+     "h": 80386.01,
+     "l": 79368.67,
+     "c": 80076.0
     }
    ],
    "ETH": [
@@ -479,9 +479,9 @@
     {
      "d": "2026-10-26",
      "o": 2329.86,
-     "h": 2335.9,
-     "l": 2323.67,
-     "c": 2330.73
+     "h": 2338.45,
+     "l": 2293.09,
+     "c": 2322.29
     }
    ],
    "SOL": [
@@ -691,9 +691,9 @@
     {
      "d": "2026-10-26",
      "o": 101.39,
-     "h": 101.65,
-     "l": 101.21,
-     "c": 101.46
+     "h": 101.67,
+     "l": 99.88,
+     "c": 101.33
     }
    ],
    "XRP": [
@@ -904,8 +904,8 @@
      "d": "2026-10-26",
      "o": 1.2961,
      "h": 1.3006,
-     "l": 1.2948,
-     "c": 1.2966
+     "l": 1.2733,
+     "c": 1.2889
     }
    ],
    "DOGE": [
@@ -1115,17 +1115,141 @@
     {
      "d": "2026-10-26",
      "o": 0.07693,
-     "h": 0.0772,
-     "l": 0.07675,
-     "c": 0.07703
+     "h": 0.07725,
+     "l": 0.07598,
+     "c": 0.0771
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-26T00:23:23+00:00",
+  "stand": "2026-10-26T05:08:50+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
+    "link": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-26T04:37:02+00:00",
+    "text": "Ether and XRP led losses among the majors as the AI trade took another hit in Asia, where Goldman Sachs cut its Kospi target by 25%.",
+    "tags": [
+     "Rohstoffe",
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 3
+   },
+   {
+    "titel": "ChatGPT-6-Prognose: So könnte eine Trump-Niederlage den Bitcoin-Kurs treffen",
+    "link": "https://www.btc-echo.de/news/chatgpt-prognose-das-bedeutet-ein-demokratischer-sieg-fuer-bitcoin-239824/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-26T04:30:00+00:00",
+    "text": "Donald Trump droht bei den US-Zwischenwahlen eine schwere Niederlage. ChatGPT-6 prognostiziert, was ein Sieg der Demokraten für den Bitcoin-Kurs bedeuten könnte. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 0
+   },
+   {
+    "titel": "Hong Kong names Nasdaq-listed Solana Company a strategic enterprise",
+    "link": "https://cointelegraph.com/news/hong-kong-names-nasdaq-listed-solana-company-a-strategic-enterprise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-26T03:21:26+00:00",
+    "text": "The Nasdaq-listed firm said it plans to establish Solana validator operations in Hong Kong.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Elon Musk issues a warning for 'AI neoclouds' as SpaceX borrows $40 billion for chips",
+    "link": "https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-26T03:11:39+00:00",
+    "text": "SpaceX has raised $40 billion in debt to buy GPUs, while Musk predicts a major shakeout among smaller AI cloud providers.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "Venezuelan opposition leader María Machado returns after months in exile",
+    "link": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-26T03:05:22+00:00",
+    "text": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Was wird für Bitcoin und Krypto diese Woche wichtig?",
+    "link": "https://www.btc-echo.de/news/was-wird-fuer-bitcoin-und-krypto-diese-woche-wichtig-66-239734/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-26T03:00:00+00:00",
+    "text": "Die Fed-Zinsentscheidung sowie die US-Kerninflationsdaten könnten die Kursentwicklung von Bitcoin (BTC) maßgeblich beeinflussen. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Keystone says website breach exposed hardware wallet buyers’ addresses",
+    "link": "https://cointelegraph.com/news/keystone-says-website-breach-exposed-hardware-wallet-buyers-addresses?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-26T02:24:04+00:00",
+    "text": "A security researcher warned that the leaked shipping details could expose crypto holders to targeted scams and physical attacks.",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 2
+   },
+   {
+    "titel": "What is the Budget and what could be in it?",
+    "link": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-26T02:16:37+00:00",
+    "text": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 0
+   },
+   {
+    "titel": "Elation across Serbia after veteran ruler Vučić concedes to student-led protest movement",
+    "link": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-26T01:07:05+00:00",
+    "text": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Healey's Budget needs to sustain the stronger economy through gathering clouds",
+    "link": "https://www.bbc.co.uk/news/articles/ck87z4ng2l03o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-26T00:26:49+00:00",
+    "text": "The economic is positive now but come January things could become trickier for the Labour government",
+    "tags": [],
+    "wichtig": 0
+   },
    {
     "titel": "Standard Chartered-led Anchorpoint says it’s not rushing retail stablecoin",
     "link": "https://cointelegraph.com/news/standard-chartered-led-anchorpoint-says-its-not-rushing-retail-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1151,13 +1275,13 @@
     "wichtig": 1
    },
    {
-    "titel": "Venezuelan opposition leader María Machado returns after months in exile",
-    "link": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
+    "titel": "Data centre debate heats up ahead of US midterms - here's what you need to know",
+    "link": "https://www.bbc.co.uk/news/articles/cq2e9we7w2ejo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
     "sprache": "en",
-    "zeit": "2026-10-25T23:33:14+00:00",
-    "text": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.",
+    "zeit": "2026-10-25T23:44:34+00:00",
+    "text": "Data centres are the lifeblood of our digital world, but there are growing concerns about their environmental impact. The BBC explores their rise in charts.",
     "tags": [],
     "wichtig": 0
    },
@@ -1188,24 +1312,13 @@
     "wichtig": 1
    },
    {
-    "titel": "Serbia's veteran ruler Vučić concedes election to student-led protest movement",
-    "link": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-25T22:54:57+00:00",
-    "text": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
     "titel": "AI agents help rescue ETH’s Glamsterdam fork, ‘Steal My Bitcoin’ site: Hodler’s Digest",
     "link": "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
     "bereich": "Krypto",
     "sprache": "en",
     "zeit": "2026-10-25T22:48:40+00:00",
-    "text": "Similar to the Hugging Face hack, Ethereum researchers have set up an AI Agent message board to help rescue the Glamsterdam fork. New site says ‘Steal My Bitcoin’... if you can.",
+    "text": "Similar to the Hugging Face hack, Ethereum researchers have set up an AI Agent message board to help rescue the Glamsterdam fork. ‘Steal My Bitcoin’ site successfully hacked.",
     "tags": [
      "Hack/Betrug"
     ],
@@ -2099,125 +2212,11 @@
     "text": "Do British pensioners have it better or worse than those in other countries?",
     "tags": [],
     "wichtig": 0
-   },
-   {
-    "titel": "UK to invest £100m in 'world first' AI Biosecurity Lab",
-    "link": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-24T00:05:45+00:00",
-    "text": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Are California voters about to impose 'world's first' tax on billionaires?",
-    "link": "https://www.bbc.co.uk/news/articles/ck4g1jg4n9dno?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-23T23:11:31+00:00",
-    "text": "Voters are about to decide if the mega-rich among them should hand over billions of dollars to pay for improvements to healthcare.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "Student movement takes Serbia's Vučić to the wire in neck-and-neck election",
-    "link": "https://www.bbc.co.uk/news/articles/cm1dwz311476o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T23:08:23+00:00",
-    "text": "The Student List has emerged from almost two years of anti-corruption protests to form the biggest challenge to Vučić's rule.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Trump's Reverse Nixon Strategy: Bring Russia In, Shut China Out",
-    "link": "https://oilprice.com/Energy/Energy-General/Trumps-Reverse-Nixon-Strategy-Bring-Russia-In-Shut-China-Out.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-23T23:00:00+00:00",
-    "text": "On October 9, hours after a phone call between President Trump and President Putin, the Treasury Department issued a six-month waiver allowing Russian diesel to be sold on the global market. The stated aim is to bring down fuel prices befo…",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 3
-   },
-   {
-    "titel": "Father who killed Oregon school gunman describes anguish over children he couldn't save",
-    "link": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T22:47:07+00:00",
-    "text": "Kaylub Giamanco has been hailed as a hero for killing a teenager who fatally shot three children and a teacher.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "U.S. Dips Into Strategic Oil Reserve Again Amid Supply Disruptions",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/US-Dips-Into-Strategic-Oil-Reserve-Again-Amid-Supply-Disruptions.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-23T22:30:00+00:00",
-    "text": "The United States is dipping into its Strategic Petroleum Reserve again, this time to keep crude flowing to a Louisiana refinery while oil prices climb above $117 per barrel. The reserve, meanwhile, is already at its lowest level since 198…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "Why Trump and Carney Haven’t Touched Energy in Their Tariff War",
-    "link": "https://oilprice.com/Energy/Energy-General/Why-Trump-and-Carney-Havent-Touched-Energy-in-Their-Tariff-War.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-23T22:00:00+00:00",
-    "text": "The United States and Canada are locked in an energy trade war – sort of. Although United States President Donald Trump and Canadian Prime Minister Mark Carney have lobbed plenty of blisteringly high tariffs, not to mention threats and ins…",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt",
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 3
-   },
-   {
-    "titel": "Wells Fargo and five others object to OKX-ICE tokenized stock listings: Report",
-    "link": "https://cointelegraph.com/news/nasdaq-companies-object-tokenized-stock-listings-okx-ice?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T21:32:16+00:00",
-    "text": "As of Friday, 22 companies had filed objections as part of the joint venture’s proposed tokenized stock platform under the SEC’s innovation exemption.",
-    "tags": [],
-    "wichtig": 1
-   },
-   {
-    "titel": "Netanyahu Considering Crypto Plan to Dodge Banking Sanctions on Israel",
-    "link": "https://decrypt.co/381758/netanyahu-crypto-plan-banking-sanctions-israel",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T21:16:03+00:00",
-    "text": "Days before Israel’s election, Netanyahu said he has asked for a blockchain plan in case banks are hit with sanctions, and told Israelis to prepare for a rainy day after Trump.",
-    "tags": [
-     "Prominente",
-     "Regulierung",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 3
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-26T00:23:29+00:00",
+  "stand": "2026-10-26T05:08:56+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10297,7 +10296,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-26T00:23:29+00:00",
+  "stand": "2026-10-26T05:08:56+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
@@ -10325,11 +10324,11 @@
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 6 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 8 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
-     "AI agents help rescue ETH’s Glamsterdam fork, ‘Steal My Bitcoin’ site: Hodler’s Digest",
-     "Krypto-Steuer reduzieren? Wie Anleger ihre Bitcoin-Verluste nutzen können"
+     "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
+     "ChatGPT-6-Prognose: So könnte eine Trump-Niederlage den Bitcoin-Kurs treffen"
     ]
    }
   ]
