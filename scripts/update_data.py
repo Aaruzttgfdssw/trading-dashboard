@@ -62,6 +62,28 @@ ETFS = [
      "ter": "ca. 0,30 %", "region": "US-Technologie", "tv": "XETR:SXRV", "art": "ETF"},
     {"sym": "4GLD", "yahoo": "4GLD.DE", "stooq": "4gld.de", "name": "Xetra-Gold", "isin": "DE000A0S9GB0",
      "ter": "ca. 0,3 %", "region": "Gold", "tv": "XETR:4GLD", "art": "ETC"},
+    {"sym": "XDWD", "yahoo": "XDWD.DE", "stooq": "xdwd.de", "name": "Xtrackers MSCI World", "isin": "IE00BJ0KDQ92",
+     "ter": "ca. 0,19 %", "region": "Welt (Industrieländer)", "tv": "XETR:XDWD", "art": "ETF"},
+    {"sym": "IUSQ", "yahoo": "IUSQ.DE", "stooq": "iusq.de", "name": "iShares MSCI ACWI", "isin": "IE00B6R52259",
+     "ter": "ca. 0,20 %", "region": "Ganze Welt inkl. Schwellenländer", "tv": "XETR:IUSQ", "art": "ETF"},
+    {"sym": "VGWL", "yahoo": "VGWL.DE", "stooq": "vgwl.de", "name": "Vanguard FTSE All-World (ausschüttend)", "isin": "IE00B3RBWM25",
+     "ter": "ca. 0,22 %", "region": "Ganze Welt inkl. Schwellenländer", "tv": "XETR:VGWL", "art": "ETF"},
+    {"sym": "EXS1", "yahoo": "EXS1.DE", "stooq": "exs1.de", "name": "iShares Core DAX", "isin": "DE0005933931",
+     "ter": "ca. 0,16 %", "region": "Deutschland", "tv": "XETR:EXS1", "art": "ETF"},
+    {"sym": "EXSA", "yahoo": "EXSA.DE", "stooq": "exsa.de", "name": "iShares STOXX Europe 600", "isin": "DE0002635307",
+     "ter": "ca. 0,20 %", "region": "Europa", "tv": "XETR:EXSA", "art": "ETF"},
+    {"sym": "XDWT", "yahoo": "XDWT.DE", "stooq": "xdwt.de", "name": "Xtrackers MSCI World IT", "isin": "IE00BM67HT60",
+     "ter": "ca. 0,25 %", "region": "Technologie weltweit", "tv": "XETR:XDWT", "art": "ETF"},
+    {"sym": "DFEN", "yahoo": "DFEN.DE", "stooq": "dfen.de", "name": "VanEck Defense", "isin": "IE000YYE6WK5",
+     "ter": "ca. 0,55 %", "region": "Rüstung", "tv": "XETR:DFEN", "art": "ETF"},
+    {"sym": "IQQH", "yahoo": "IQQH.DE", "stooq": "iqqh.de", "name": "iShares Global Clean Energy", "isin": "IE00B1XNHC34",
+     "ter": "ca. 0,65 %", "region": "Saubere Energie", "tv": "XETR:IQQH", "art": "ETF"},
+    {"sym": "XAIX", "yahoo": "XAIX.DE", "stooq": "xaix.de", "name": "Xtrackers Artificial Intelligence & Big Data", "isin": "IE00BGV5VN51",
+     "ter": "ca. 0,35 %", "region": "KI (Künstliche Intelligenz)", "tv": "XETR:XAIX", "art": "ETF"},
+    {"sym": "VVSM", "yahoo": "VVSM.DE", "stooq": "vvsm.de", "name": "VanEck Semiconductor (Chips, u. a. Nvidia)", "isin": "IE00BMC38736",
+     "ter": "ca. 0,35 %", "region": "KI-Chips (Halbleiter)", "tv": "XETR:VVSM", "art": "ETF"},
+    {"sym": "2B76", "yahoo": "2B76.DE", "stooq": "2b76.de", "name": "iShares Automation & Robotics", "isin": "IE00BYZK4552",
+     "ter": "ca. 0,40 %", "region": "KI und Robotik", "tv": "XETR:2B76", "art": "ETF"},
 ]
 
 # Stichworte, mit denen Meldungen einem Bereich zugeordnet werden.
@@ -276,6 +298,51 @@ def fetch_news():
     return {"stand": now_iso(), "quelle": ", ".join(ok_feeds), "daten": items[:90]}
 
 
+# ----------------------------------------------------- Deutsche Kurzfassung
+def first_sentence(text, limit=200):
+    text = (text or "").strip()
+    m = re.search(r"^(.{40,}?[.!?])(\s|$)", text)
+    t = m.group(1) if m else text
+    return t if len(t) <= limit else t[: limit - 1].rstrip() + "…"
+
+
+def translate_de(text):
+    if not text:
+        return text
+    url = "https://api.mymemory.translated.net/get?" + urllib.parse.urlencode({"q": text[:450], "langpair": "en|de"})
+    j = json.loads(http_get(url, timeout=15))
+    out = (j.get("responseData") or {}).get("translatedText")
+    if j.get("responseStatus") != 200 or not out or "MYMEMORY WARNING" in out.upper():
+        raise RuntimeError("Übersetzung nicht verfügbar")
+    return unescape(out)
+
+
+def add_german(news, old):
+    """Gibt den wichtigsten Meldungen einen deutschen Titel und einen deutschen Satz. Bereits übersetzte werden wiederverwendet."""
+    cache = {n["link"]: n for n in (old or {}).get("daten", []) if n.get("titel_de")}
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
+    todo = [n for n in news["daten"] if n.get("wichtig", 0) >= 2 and datetime.fromisoformat(n["zeit"]) >= cutoff][:6]
+    for n in news["daten"]:
+        n["kurz"] = first_sentence(n.get("text"))
+        if n.get("sprache") == "de":
+            n["titel_de"], n["kurz_de"] = n["titel"], n["kurz"]
+        elif n["link"] in cache:
+            n["titel_de"], n["kurz_de"] = cache[n["link"]].get("titel_de"), cache[n["link"]].get("kurz_de")
+    done = 0
+    for n in todo:
+        if n.get("titel_de"):
+            continue
+        try:
+            n["titel_de"] = translate_de(n["titel"])
+            n["kurz_de"] = translate_de(n["kurz"]) if n["kurz"] else ""
+            done += 1
+            time.sleep(0.5)
+        except Exception as e:  # noqa: BLE001
+            print(f"  Übersetzung übersprungen ({e})")
+            break
+    print(f"  {done} Meldungen neu übersetzt")
+
+
 # ----------------------------------------------------------------- ETFs
 def etf_yahoo(e):
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{e['yahoo']}?range=5y&interval=1d"
@@ -338,6 +405,7 @@ def fetch_etfs():
         spark = rows[::5][-260:]
         out.append({k: v for k, v in e.items() if k not in ("yahoo", "stooq")} | {
             "preis": rows[-1]["c"], "datum": rows[-1]["d"], "aend1d": (rows[-1]["c"] / rows[-2]["c"] - 1) * 100,
+            "aend1w": _chg_since(rows, 7), "aend1m": _chg_since(rows, 30),
             "aend1y": _chg_since(rows, 365), "aend3y": _chg_since(rows, 3 * 365), "aend5y": a5, "pa5y": pa5,
             "verlauf": [round(x["c"], 2) for x in spark]})
     if not out:
@@ -421,6 +489,11 @@ def main():
                 result[key] = dict(old[key])
                 result[key]["veraltet"] = True
             result.setdefault("fehler", []).append(f"{key}: {e}")
+    if result.get("news") and not result["news"].get("veraltet"):
+        try:
+            add_german(result["news"], old.get("news"))
+        except Exception as e:  # noqa: BLE001
+            print(f"  Deutsche Kurzfassung nicht möglich ({e})")
     if fresh == 0:
         print("Keine Quelle erreichbar, nichts geschrieben.")
         return 1

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyTradingSinc</title>
 <style>
-/* Eine ruhige Seite: oben die Regeln, darunter ETFs, Rechner, Krypto und drei Kurz-Nachrichten */
+/* Schlank: ein Satz Grundregel, großer Chart, ETFs und Krypto sortierbar, Rechner, drei Kurz-Nachrichten */
 :root {
   --bg: #10151f; --panel: #161d2a; --panel2: #1d2636; --line: #273145; --fg: #eef1f7; --muted: #97a3b8;
   --up: #36c08e; --down: #f2697a; --accent: #8aa4ff; --warn: #f1b44c; --r: 14px;
@@ -16,43 +16,41 @@
 html, body { margin: 0; background: var(--bg); color: var(--fg); }
 body { font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 a { color: var(--accent); }
-.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; display: flex; flex-direction: column; gap: 22px; }
-header { text-align: center; padding: 22px 16px 6px; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; display: flex; flex-direction: column; gap: 20px; }
+header { text-align: center; padding: 22px 16px 4px; }
 h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
 h1 span { color: var(--accent); }
-.tag { color: var(--muted); font-size: 14px; margin-top: 2px; }
-.status { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.status { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .dot { display: inline-flex; align-items: center; gap: 6px; }
 .dot::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
 .dot[data-s="ok"]::before { background: var(--up); } .dot[data-s="warn"]::before { background: var(--warn); } .dot[data-s="off"]::before { background: var(--down); }
-.note-bar { background: color-mix(in srgb, var(--warn) 9%, var(--bg)); color: #f0d9a6; font-size: 13px; text-align: center; padding: 8px 16px; border-radius: 10px; }
-h2 { margin: 0 0 10px; font-size: 18px; }
-.sub { color: var(--muted); font-size: 13px; margin: -6px 0 12px; }
+.rule { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 12px 14px; font-size: 14px; }
+.rule .muted { display: block; font-size: 12px; margin-top: 2px; }
+h2 { margin: 0; font-size: 18px; }
 .box { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; min-width: 0; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 12px; }
-.step { background: var(--panel2); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
-.step .n { font-size: 12px; color: var(--accent); font-weight: 700; letter-spacing: .04em; }
-.step b { font-size: 15px; }
-.step p { margin: 0; font-size: 14px; color: #d6dbe5; }
+.bh { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; margin-bottom: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: inherit; font-size: 12px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: color-mix(in srgb, var(--accent) 18%, var(--panel)); border-color: color-mix(in srgb, var(--accent) 50%, transparent); color: var(--fg); }
+.chip:focus-visible, tbody tr:focus-visible, .calc input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .up { color: var(--up); } .down { color: var(--down); } .muted { color: var(--muted); } .small { font-size: 13px; }
 .scroll { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 th { text-align: right; font-weight: 500; color: var(--muted); font-size: 12px; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-td { padding: 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+th.on { color: var(--accent); }
+td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+td.on { font-weight: 700; }
 th:first-child, td:first-child { text-align: left; }
 tbody tr { cursor: pointer; }
 tbody tr:hover, tbody tr[aria-selected="true"] { background: var(--panel2); }
-.nm b { display: block; font-weight: 600; }
-@media (max-width: 900px) { #etf th:nth-child(6), #etf td:nth-child(6), #etf th:nth-child(9), #etf td:nth-child(9), #etf th:nth-child(2), #etf td:nth-child(2) { display: none; } }
+.nm { display: flex; align-items: center; gap: 8px; }
+.nm img { width: 20px; height: 20px; border-radius: 50%; }
+.nm b { font-weight: 600; }
 .nm span { font-size: 12px; color: var(--muted); }
-.spark { display: block; }
-.chartbox { margin-top: 14px; }
-.chartbox .tradingview-widget-container { height: clamp(420px, 72vh, 820px) !important; }
-details.box > summary { cursor: pointer; list-style: none; }
-details.box > summary::-webkit-details-marker { display: none; }
-details.box > summary h2 { display: inline; }
-details.box > summary::after { content: ' ▾'; color: var(--muted); }
-details.box[open] > summary::after { content: ' ▴'; }
+.nm .col { display: flex; flex-direction: column; }
+.chartbox .tradingview-widget-container { height: clamp(420px, 72vh, 820px); }
+.charthead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 14px; align-items: baseline; margin-bottom: 8px; }
+.charthead b { font-size: 17px; }
 .calc { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 12px; align-items: end; }
 .calc label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
 .calc input { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; color: var(--fg); font: inherit; min-width: 0; }
@@ -60,55 +58,55 @@ details.box[open] > summary::after { content: ' ▴'; }
 .res div { background: var(--panel2); border-radius: 12px; padding: 12px; }
 .res span { display: block; font-size: 12px; color: var(--muted); }
 .res b { font-size: 22px; font-variant-numeric: tabular-nums; }
-.coins { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 12px; }
-.coin { background: var(--panel2); border-radius: 12px; padding: 14px; }
-.coin .p { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .news { display: flex; flex-direction: column; gap: 10px; }
-.ni { background: var(--panel2); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.ni { background: var(--panel2); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 3px; }
+.ni .src { font-size: 12px; color: var(--muted); }
 .ni a { color: var(--fg); font-weight: 600; text-decoration: none; }
 .ni a:hover { text-decoration: underline; }
-.btn { font: inherit; font-size: 13px; background: var(--panel2); color: var(--fg); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
-.btn:focus-visible, tbody tr:focus-visible, .calc input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.tax p { margin: 0 0 8px; font-size: 14px; }
+.ni p { margin: 0; font-size: 14px; color: #d6dbe5; }
+details.box > summary { cursor: pointer; list-style: none; }
+details.box > summary::-webkit-details-marker { display: none; }
+details.box > summary h2 { display: inline; }
+details.box > summary::after { content: ' ▾'; color: var(--muted); }
+details.box[open] > summary::after { content: ' ▴'; }
+.tax .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 12px; margin-top: 12px; }
+.tax .grid > div { background: var(--panel2); border-radius: 12px; padding: 12px; }
+.tax p { margin: 0 0 6px; font-size: 14px; }
+.tax .k { font-size: 12px; color: var(--accent); font-weight: 700; letter-spacing: .04em; }
 footer { text-align: center; color: var(--muted); font-size: 12px; }
-@media (prefers-reduced-motion: no-preference) { .fu { animation: fu .8s ease-out; } .fd { animation: fd .8s ease-out; }
+@media (max-width: 760px) { .hide-s { display: none; } }
+@media (prefers-reduced-motion: no-preference) { .fu { animation: fu .9s ease-out; } .fd { animation: fd .9s ease-out; }
   @keyframes fu { from { color: var(--up); } } @keyframes fd { from { color: var(--down); } } }
 </style>
 </head>
 <body>
 <header>
   <h1>My<span>Trading</span>Sinc</h1>
-  <div class="tag">Langfristig Geld anlegen, einfach erklärt</div>
   <div class="status"><span class="dot" id="st-data">Daten: lade …</span><span class="dot" id="st-live">Krypto live: verbinde …</span></div>
 </header>
 <div class="wrap">
-  <div class="note-bar">Keine Anlageberatung. Die Seite zeigt Fakten und bewährte Grundregeln. Was zu dir passt, entscheidest du selbst.</div>
+  <div class="rule"><b>Kurz gesagt:</b> Erst 3 Monatsausgaben als Notgroschen zurücklegen, dann jeden Monat in einen breiten Welt-ETF sparen. Krypto höchstens als kleiner Teil.
+    <span class="muted">Keine Anlageberatung. Vergangene Renditen sind keine Garantie.</span></div>
 
-  <section class="box">
-    <h2>So legst du langfristig an</h2>
-    <p class="sub">Die Reihenfolge, nach der die meisten Ratgeber (zum Beispiel Finanztip und Verbraucherzentrale) vorgehen.</p>
-    <div class="grid">
-      <div class="step"><span class="n">ZUERST</span><b>Notgroschen</b><p>Drei Monatsausgaben auf ein Tagesgeldkonto. Dieses Geld legst du nicht an, es ist für Notfälle.</p></div>
-      <div class="step"><span class="n">BASIS</span><b>Ein Welt-ETF als Sparplan</b><p>Ein breiter ETF auf die ganze Welt, jeden Monat ein fester Betrag. Viele Tausend Firmen, sehr geringe Kosten.</p></div>
-      <div class="step"><span class="n">OPTIONAL</span><b>Etwas beimischen</b><p>Wer will, ergänzt Schwellenländer oder einen kleinen Teil Gold. Nötig ist das nicht.</p></div>
-      <div class="step"><span class="n">VORSICHT</span><b>Krypto nur klein</b><p>Krypto schwankt sehr stark. Viele begrenzen es auf einen kleinen Anteil, den sie notfalls verlieren könnten.</p></div>
-    </div>
-    <p class="small muted" id="summary" style="margin:12px 0 0"></p>
+  <section class="box chartbox">
+    <div class="charthead"><b id="ch-title">Chart</b><span class="small muted" id="ch-sub"></span></div>
+    <div id="chart"></div>
   </section>
 
   <section class="box">
-    <h2>ETFs, die du in Deutschland kaufen kannst</h2>
-    <p class="sub">Kurse in Euro von der Börse Xetra. Klicke auf einen ETF, um ihn oben im großen Chart zu sehen. <span id="e-src"></span></p>
-    <div class="chartbox" id="chart"></div>
-    <div class="scroll" style="margin-top:14px"><table id="etf">
-      <thead><tr><th>ETF</th><th>Kosten pro Jahr</th><th>Kurs €</th><th>Heute</th><th>1 Jahr</th><th>3 Jahre</th><th>5 Jahre</th><th>Ø pro Jahr</th><th>Verlauf 5 Jahre</th></tr></thead>
-      <tbody></tbody>
-    </table></div>
+    <div class="bh"><h2>ETFs</h2><div class="chips" id="e-per"></div><div class="chips" id="e-rank"></div></div>
+    <div class="scroll"><table id="etf"><thead></thead><tbody></tbody></table></div>
+    <p class="small muted" style="margin:10px 0 0" id="e-src"></p>
   </section>
 
   <section class="box">
-    <h2>Sparplan-Rechner</h2>
-    <p class="sub">Was aus einem monatlichen Betrag werden kann. 6 % pro Jahr ist eine übliche Annahme für Welt-ETFs über lange Zeit, keine Garantie. In einzelnen Jahren kann es auch 30 % nach unten gehen.</p>
+    <div class="bh"><h2>Krypto</h2><div class="chips" id="k-per"></div><div class="chips" id="k-rank"></div></div>
+    <div class="scroll"><table id="kr"><thead></thead><tbody></tbody></table></div>
+    <p class="small muted" style="margin:10px 0 0">Preise laufen live (jede Sekunde) von Binance, die Veränderungen kommen von CoinGecko und werden jede Minute erneuert. Krypto kann schnell 50 % und mehr verlieren.</p>
+  </section>
+
+  <section class="box">
+    <div class="bh"><h2>Sparplan-Rechner</h2></div>
     <div class="calc">
       <label for="c-rate">Pro Monat in €<input id="c-rate" type="text" inputmode="decimal" value="100"></label>
       <label for="c-years">Wie viele Jahre<input id="c-years" type="text" inputmode="numeric" value="20"></label>
@@ -124,50 +122,33 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
   </section>
 
   <section class="box">
-    <h2>Krypto kurz</h2>
-    <p class="sub">Live-Kurse in Euro von Binance, 1 Jahr von CoinGecko.</p>
-    <div class="coins" id="coins"></div>
-    <p class="small muted" style="margin:12px 0 0">Krypto kann in wenigen Wochen 50 % und mehr verlieren. Gewinne sind steuerfrei, wenn du länger als ein Jahr hältst.</p>
-  </section>
-
-  <section class="box">
-    <h2>Das Wichtigste aus den Nachrichten</h2>
-    <p class="sub">Die drei wichtigsten Meldungen, kurz. Für Langzeitanleger sind Nachrichten selten ein Grund, den Sparplan zu ändern.</p>
+    <div class="bh"><h2>Nachrichten kurz</h2></div>
     <div class="news" id="news"></div>
   </section>
 
   <details class="box tax">
     <summary><h2>Steuerregeln zum Nachlesen</h2></summary>
-    <p class="sub">Stand: Oktober 2026, zuletzt von Claude geprüft am 26.10.2026. Ändert sich ein Gesetz, aktualisiere ich diesen Teil, wenn du mir "Steuer-Update" schreibst. Keine Steuerberatung.</p>
+    <p class="small muted" style="margin:8px 0 0">Stand: Oktober 2026, zuletzt geprüft am 26.10.2026. Schreib Claude "Steuer-Update", dann wird dieser Teil aktualisiert. Keine Steuerberatung.</p>
     <div class="grid">
-      <div class="step">
-        <span class="n">ETFS UND AKTIEN</span>
-        <p><b>Steuersatz:</b> 25 % Abgeltungsteuer plus Solidaritätszuschlag, zusammen etwa 26,4 %, eventuell plus Kirchensteuer.</p>
-        <p><b>Freibetrag:</b> 1.000 € Kapitalerträge pro Jahr sind steuerfrei (Sparerpauschbetrag, verheiratet 2.000 €). Dafür beim Broker einen Freistellungsauftrag stellen.</p>
-        <p><b>Teilfreistellung:</b> Bei Aktien-ETFs sind 30 % der Gewinne und Ausschüttungen steuerfrei.</p>
-        <p><b>Vorabpauschale:</b> Bei thesaurierenden ETFs wird jedes Jahr Anfang Januar ein kleiner Betrag versteuert, auch ohne Verkauf. Er wird beim späteren Verkauf angerechnet.</p>
-        <p><b>Haltedauer:</b> Spielt bei ETFs keine Rolle, auch nach vielen Jahren fällt Steuer an.</p>
-        <p><b>Aufwand für dich:</b> Ein deutscher Broker zieht alles automatisch ab.</p>
-      </div>
-      <div class="step">
-        <span class="n">KRYPTO</span>
-        <p><b>Nach einem Jahr steuerfrei:</b> Verkaufst du erst nach mehr als 12 Monaten, ist der Gewinn komplett steuerfrei, egal wie hoch.</p>
-        <p><b>Vorher:</b> Der Gewinn zählt zum Einkommen und wird mit deinem persönlichen Steuersatz besteuert.</p>
-        <p><b>Freigrenze:</b> Liegen alle steuerpflichtigen Gewinne eines Jahres unter 1.000 €, bleibt alles steuerfrei. Ab 1.000 € ist der ganze Betrag steuerpflichtig.</p>
-        <p><b>Tausch:</b> Auch Coin gegen Coin zählt als Verkauf.</p>
-        <p><b>Staking und Belohnungen:</b> Sind beim Erhalt Einkommen. Ab 256 € im Jahr wird es steuerpflichtig.</p>
-        <p><b>Aufwand für dich:</b> Selbst in die Steuererklärung (Anlage SO), Käufe und Verkäufe aufbewahren.</p>
-      </div>
-      <div class="step">
-        <span class="n">GOLD</span>
-        <p><b>Xetra-Gold und echtes Gold:</b> Nach mehr als einem Jahr steuerfrei, weil du einen Anspruch auf echtes Gold hast.</p>
-        <p><b>Davor:</b> Wie bei Krypto, mit persönlichem Steuersatz und 1.000 € Freigrenze.</p>
-      </div>
+      <div><span class="k">ETFS</span>
+        <p><b>Steuersatz:</b> etwa 26,4 % (Abgeltungsteuer und Soli), eventuell plus Kirchensteuer.</p>
+        <p><b>Freibetrag:</b> 1.000 € im Jahr steuerfrei (verheiratet 2.000 €), per Freistellungsauftrag beim Broker.</p>
+        <p><b>Teilfreistellung:</b> Bei Aktien-ETFs sind 30 % der Erträge steuerfrei.</p>
+        <p><b>Vorabpauschale:</b> Jedes Jahr im Januar ein kleiner Betrag, auch ohne Verkauf, wird später angerechnet.</p>
+        <p><b>Haltedauer:</b> Egal, Steuer fällt immer an. Der Broker zieht sie automatisch ab.</p></div>
+      <div><span class="k">KRYPTO</span>
+        <p><b>Nach mehr als 1 Jahr:</b> Gewinn komplett steuerfrei.</p>
+        <p><b>Davor:</b> persönlicher Steuersatz. Unter 1.000 € Gewinn im Jahr bleibt alles frei, ab 1.000 € zählt der ganze Betrag.</p>
+        <p><b>Tausch:</b> Coin gegen Coin zählt als Verkauf.</p>
+        <p><b>Staking:</b> Ab 256 € im Jahr steuerpflichtig.</p>
+        <p><b>Erklärung:</b> selbst in der Anlage SO.</p></div>
+      <div><span class="k">GOLD</span>
+        <p><b>Xetra-Gold und echtes Gold:</b> nach mehr als 1 Jahr steuerfrei, davor wie Krypto.</p></div>
     </div>
-    <p class="small" style="margin:12px 0 0">Aktuell nachlesen: <a href="https://www.steuertipps.de/altersvorsorge-rente-finanzen/krypto-anlage/steuern-optimieren/themen" target="_blank" rel="noopener noreferrer">Steuertipps zu Krypto-Steuern</a> · <a href="https://www.finanztip.de/indexfonds-etf/etf-steuern/" target="_blank" rel="noopener noreferrer">Finanztip zu ETF-Steuern</a> · <a href="https://www.verbraucherzentrale.de/wissen/geld-versicherungen/sparen-und-anlegen" target="_blank" rel="noopener noreferrer">Verbraucherzentrale: Sparen und Anlegen</a></p>
+    <p class="small" style="margin:12px 0 0">Nachlesen: <a href="https://www.steuertipps.de/altersvorsorge-rente-finanzen/krypto-anlage/steuern-optimieren/themen" target="_blank" rel="noopener noreferrer">Krypto-Steuern (Steuertipps)</a> · <a href="https://www.finanztip.de/indexfonds-etf/etf-steuern/" target="_blank" rel="noopener noreferrer">ETF-Steuern (Finanztip)</a></p>
   </details>
 
-  <footer>Daten: Yahoo Finance oder Stooq (ETFs), Binance und CoinGecko (Krypto), tagesschau, BTC-ECHO, BBC und weitere (Nachrichten). Live-Charts von TradingView.</footer>
+  <footer>Daten: Yahoo Finance oder Stooq (ETFs), Binance und CoinGecko (Krypto), tagesschau, BTC-ECHO, BBC und weitere (Nachrichten, übersetzt mit MyMemory). Charts von TradingView.</footer>
 </div>
 
 <script>
@@ -177,64 +158,120 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
   const $ = (s) => document.querySelector(s);
   function el(t, c, x) { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
   const nf = (d) => new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });
-  const fEur = (v, d) => (v == null || !isFinite(v)) ? '–' : nf(d == null ? 2 : d).format(v) + ' €';
+  const fEur = (v, d) => { if (v == null || !isFinite(v)) return '–'; if (d == null) d = v >= 1 ? 2 : (v >= 0.01 ? 4 : 6); return nf(d).format(v) + ' €'; };
   const fPct = (v) => (v == null || !isFinite(v)) ? '–' : (v > 0 ? '+' : '') + nf(1).format(v) + ' %';
   const cls = (v) => v > 0 ? 'up' : v < 0 ? 'down' : '';
   const num = (v) => { let t = String(v || '').trim().replace(/\s/g, ''); if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.'); else if ((t.match(/\./g) || []).length > 1) t = t.replace(/\./g, ''); const n = parseFloat(t); return isFinite(n) ? n : NaN; };
   function ago(ms) { const m = Math.round((Date.now() - ms) / 60000); if (m < 60) return 'vor ' + Math.max(1, m) + ' Min.'; const h = Math.round(m / 60); return h < 48 ? 'vor ' + h + ' Std.' : 'vor ' + Math.round(h / 24) + ' Tagen'; }
   function setDot(id, s, t) { const e = document.getElementById(id); e.dataset.s = s; e.textContent = t; }
-  const D = { data: null, sel: null };
+  function chips(host, items, cur, pick) { host.replaceChildren(); items.forEach(([k, l]) => { const b = el('button', 'chip', l); b.type = 'button'; b.setAttribute('aria-pressed', String(k === cur)); b.addEventListener('click', () => pick(k)); host.appendChild(b); }); }
+  function cmpN(a, b, k, dir) { const x = a[k], y = b[k], nx = x == null || !isFinite(x), ny = y == null || !isFinite(y); if (nx && ny) return 0; if (nx) return 1; if (ny) return -1; return dir * (x - y); }
+  const RANK = [['best', 'Beste zuerst'], ['worst', 'Schlechteste zuerst']];
+  const D = { data: null, chart: null };
 
-  // ---------------------------------------------------------------- ETFs
-  function spark(values, w, h) {
-    const NS = 'http://www.w3.org/2000/svg';
-    const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('width', w); svg.setAttribute('height', h); svg.setAttribute('viewBox', `0 0 ${w} ${h}`); svg.setAttribute('class', 'spark'); svg.setAttribute('aria-hidden', 'true');
-    if (!values || values.length < 2) return svg;
-    const lo = Math.min(...values), hi = Math.max(...values), span = hi - lo || 1;
-    const pts = values.map((v, i) => [(i / (values.length - 1)) * (w - 2) + 1, h - 2 - ((v - lo) / span) * (h - 4)]);
-    const line = document.createElementNS(NS, 'polyline');
-    line.setAttribute('points', pts.map((p) => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' '));
-    line.setAttribute('fill', 'none'); line.setAttribute('stroke-width', '1.6'); line.setAttribute('stroke-linejoin', 'round');
-    line.setAttribute('stroke', values[values.length - 1] >= values[0] ? 'var(--up)' : 'var(--down)');
-    svg.appendChild(line); return svg;
-  }
-  function renderEtfs() {
-    const e = D.data && D.data.etfs, tb = $('#etf tbody'); tb.replaceChildren();
-    if (!e) { const tr = el('tr'); const td = el('td', 'muted', 'Noch keine ETF-Daten. Sie kommen mit dem nächsten automatischen Abruf.'); td.colSpan = 9; tr.appendChild(td); tb.appendChild(tr); return; }
-    $('#e-src').textContent = 'Stand ' + new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short', timeZone: TZ }).format(new Date(e.stand)) + (e.veraltet ? ' (veraltet)' : '') + '.';
-    e.daten.forEach((r) => {
-      const tr = el('tr'); tr.tabIndex = 0; tr.setAttribute('aria-selected', String(D.sel === r.sym));
-      const n = el('td', 'nm'); n.appendChild(el('b', '', r.name)); n.appendChild(el('span', '', r.region + ' · ' + r.art + ' · ' + r.isin)); tr.appendChild(n);
-      tr.appendChild(el('td', 'muted', r.ter));
-      tr.appendChild(el('td', '', fEur(r.preis)));
-      ['aend1d', 'aend1y', 'aend3y', 'aend5y', 'pa5y'].forEach((k) => tr.appendChild(el('td', cls(r[k]), fPct(r[k]))));
-      const sp = el('td'); sp.appendChild(spark(r.verlauf, 110, 28)); tr.appendChild(sp);
-      const open = () => openChart(r);
-      tr.addEventListener('click', open); tr.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') open(); });
-      tb.appendChild(tr);
-    });
-    const w = e.daten.find((x) => x.sym === 'VWCE') || e.daten.find((x) => x.sym === 'EUNL');
-    if (w && w.pa5y != null) {
-      $('#summary').textContent = 'Zum Vergleich: Der ' + w.name + ' lag in den letzten 5 Jahren bei ' + fPct(w.aend5y) + ', das sind im Schnitt ' + fPct(w.pa5y) + ' pro Jahr. Vergangene Renditen sind keine Garantie für die Zukunft.';
-    }
-    if (!D.sel && e.daten[0]) openChart(e.daten.find((x) => x.sym === 'VWCE') || e.daten[0]);
-  }
-  function openChart(r) {
-    D.sel = r.sym;
-    document.querySelectorAll('#etf tbody tr').forEach((tr, i) => tr.setAttribute('aria-selected', String(D.data.etfs.daten[i] && D.data.etfs.daten[i].sym === r.sym)));
+  // ---------------------------------------------------------------- Großer Chart (für ETFs und Krypto)
+  function showChart(symbol, title, sub) {
+    if (D.chart === symbol) return;
+    D.chart = symbol;
+    $('#ch-title').textContent = title; $('#ch-sub').textContent = sub || '';
     const host = $('#chart'); host.replaceChildren();
-    host.appendChild(el('p', 'small', r.name + ' · ISIN ' + r.isin + ' · per Sparplan bei deinem Broker kaufbar (in der App nach der ISIN suchen)'));
     const c = el('div', 'tradingview-widget-container');
     const w = el('div', 'tradingview-widget-container__widget'); w.style.height = '100%'; c.appendChild(w);
     const s = document.createElement('script'); s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js'; s.async = true;
-    s.textContent = JSON.stringify({ autosize: true, symbol: r.tv, interval: 'W', range: '60M', timezone: 'Europe/Berlin', theme: 'dark', style: '2', locale: 'de_DE', allow_symbol_change: false, hide_side_toolbar: true, backgroundColor: '#161d2a', support_host: 'https://www.tradingview.com' });
+    s.textContent = JSON.stringify({ autosize: true, symbol, interval: 'D', range: '12M', timezone: 'Europe/Berlin', theme: 'dark', style: '2', locale: 'de_DE', allow_symbol_change: false, hide_side_toolbar: false, withdateranges: true, backgroundColor: '#161d2a', support_host: 'https://www.tradingview.com' });
     c.appendChild(s); host.appendChild(c);
-    const a = el('a', 'small', 'Mehr Infos zu diesem ETF bei justETF'); a.href = 'https://www.justetf.com/de/etf-profile.html?isin=' + r.isin; a.target = '_blank'; a.rel = 'noopener noreferrer';
-    const p = el('p', ''); p.appendChild(a); host.appendChild(p);
+  }
+  function select(tr) { document.querySelectorAll('#etf tbody tr, #kr tbody tr').forEach((x) => x.setAttribute('aria-selected', 'false')); tr.setAttribute('aria-selected', 'true'); $('#chart').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+
+  // ---------------------------------------------------------------- ETFs
+  const E = { per: 'aend1d', rank: 'best' };
+  const E_PER = [['aend1d', 'Tag'], ['aend1w', 'Woche'], ['aend1m', 'Monat'], ['aend1y', '1 Jahr'], ['aend3y', '3 Jahre'], ['aend5y', '5 Jahre']];
+  const etfSub = (r) => r.isin + ' · Kosten ' + r.ter + ' pro Jahr · Ø ' + fPct(r.pa5y) + ' pro Jahr in 5 Jahren';
+  function renderEtfs() {
+    chips($('#e-per'), E_PER, E.per, (k) => { E.per = k; renderEtfs(); });
+    chips($('#e-rank'), RANK, E.rank, (k) => { E.rank = k; renderEtfs(); });
+    const head = el('tr');
+    [['', 'ETF', ''], ['ter', 'Kosten', 'hide-s'], ['preis', 'Kurs €', '']].concat(E_PER.map(([k, l]) => [k, l, k === 'aend3y' ? 'hide-s' : ''])).forEach(([k, l, c]) => head.appendChild(el('th', (c || '') + (k === E.per ? ' on' : ''), l)));
+    $('#etf thead').replaceChildren(head);
+    const e = D.data && D.data.etfs, tb = $('#etf tbody'); tb.replaceChildren();
+    if (!e) { const tr = el('tr'); const td = el('td', 'muted', 'Noch keine ETF-Daten.'); td.colSpan = 9; tr.appendChild(td); tb.appendChild(tr); return; }
+    $('#e-src').textContent = 'Kurse in Euro von Xetra, Stand ' + new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short', timeZone: TZ }).format(new Date(e.stand)) + '. Klicke auf einen ETF für den großen Chart. Kaufbar per Sparplan bei deinem Broker, in der App nach der ISIN suchen.';
+    e.daten.slice().sort((a, b) => cmpN(a, b, E.per, E.rank === 'best' ? -1 : 1)).forEach((r) => {
+      const tr = el('tr'); tr.tabIndex = 0; tr.setAttribute('aria-selected', String(D.chart === r.tv));
+      const n = el('td'); const nm = el('div', 'nm'); const col = el('div', 'col'); col.appendChild(el('b', '', r.name)); col.appendChild(el('span', '', r.region + ' · ' + r.isin)); nm.appendChild(col); n.appendChild(nm); tr.appendChild(n);
+      tr.appendChild(el('td', 'muted hide-s', r.ter)); tr.appendChild(el('td', '', fEur(r.preis, 2)));
+      E_PER.forEach(([k]) => tr.appendChild(el('td', cls(r[k]) + (k === E.per ? ' on' : '') + (k === 'aend3y' ? ' hide-s' : ''), fPct(r[k]))));
+      const go = () => { showChart(r.tv, r.name, etfSub(r)); select(tr); };
+      tr.addEventListener('click', go); tr.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') go(); });
+      tb.appendChild(tr);
+    });
+    if (!D.chart) { const w = e.daten.find((x) => x.sym === 'VWCE') || e.daten[0]; showChart(w.tv, w.name, etfSub(w)); }
+  }
+
+  // ---------------------------------------------------------------- Krypto (Top 20, live)
+  const K = { per: 'h24', rank: 'best', rows: [], live: {}, eurusd: null, ws: null };
+  const K_PER = [['h1', '1 Std'], ['h24', '24 Std'], ['w', '7 Tage'], ['m', '30 Tage'], ['y', '1 Jahr']];
+  const SKIP = new Set(['usdt', 'usdc', 'usde', 'dai', 'fdusd', 'tusd', 'usds', 'pyusd', 'usd1', 'steth', 'wsteth', 'wbtc', 'weth', 'weeth', 'cbbtc', 'wbeth', 'reth', 'bsc-usd', 'susde', 'buidl', 'usdtb', 'jitosol', 'msol', 'lbtc', 'solvbtc']);
+  function loadCG() {
+    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=40&page=1&price_change_percentage=1h,24h,7d,30d,1y')
+      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then((list) => {
+        K.rows = list.filter((c) => !SKIP.has((c.symbol || '').toLowerCase()) && !/usd/i.test(c.symbol || '')).slice(0, 20).map((c) => ({
+          sym: (c.symbol || '').toUpperCase(), name: c.name, img: c.image, preis: c.current_price,
+          h1: c.price_change_percentage_1h_in_currency, h24: c.price_change_percentage_24h_in_currency, w: c.price_change_percentage_7d_in_currency, m: c.price_change_percentage_30d_in_currency, y: c.price_change_percentage_1y_in_currency }));
+        renderKr(); connectLive();
+      }).catch(() => { if (!K.rows.length) fallbackKr(); });
+  }
+  function fallbackKr() {
+    const k = (D.data && D.data.kurse && D.data.kurse.daten) || [];
+    if (!k.length) return;
+    K.rows = k.map((c) => ({ sym: c.symbol, name: c.name, preis: c.preis, h24: c.aend24, w: c.aend7, y: c.aend1y }));
+    renderKr(); connectLive();
+  }
+  function renderKr() {
+    chips($('#k-per'), K_PER, K.per, (k) => { K.per = k; renderKr(); });
+    chips($('#k-rank'), RANK, K.rank, (k) => { K.rank = k; renderKr(); });
+    const head = el('tr');
+    [['', 'Coin'], ['preis', 'Preis €']].concat(K_PER).forEach(([k, l]) => head.appendChild(el('th', (k === K.per ? 'on' : '') + (k === 'm' ? ' hide-s' : ''), l)));
+    $('#kr thead').replaceChildren(head);
+    const tb = $('#kr tbody'); tb.replaceChildren();
+    if (!K.rows.length) { const tr = el('tr'); const td = el('td', 'muted', 'Lade Kurse …'); td.colSpan = 7; tr.appendChild(td); tb.appendChild(tr); return; }
+    K.rows.slice().sort((a, b) => cmpN(a, b, K.per, K.rank === 'best' ? -1 : 1)).forEach((r) => {
+      const tr = el('tr'); tr.tabIndex = 0; tr.setAttribute('aria-selected', String(D.chart === 'BINANCE:' + r.sym + 'USDT'));
+      const n = el('td'); const nm = el('div', 'nm');
+      if (r.img) { const im = el('img'); im.src = r.img; im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; nm.appendChild(im); }
+      const col = el('div', 'col'); col.appendChild(el('b', '', r.sym)); col.appendChild(el('span', '', r.name)); nm.appendChild(col); n.appendChild(nm); tr.appendChild(n);
+      const p = el('td', '', fEur(K.live[r.sym] || r.preis)); p.dataset.sym = r.sym; tr.appendChild(p);
+      K_PER.forEach(([k]) => tr.appendChild(el('td', cls(r[k]) + (k === K.per ? ' on' : '') + (k === 'm' ? ' hide-s' : ''), fPct(r[k]))));
+      const go = () => { showChart('BINANCE:' + r.sym + 'USDT', r.name + ' (' + r.sym + ')', 'Kurs in US-Dollar bei Binance'); select(tr); };
+      tr.addEventListener('click', go); tr.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') go(); });
+      tb.appendChild(tr);
+    });
+  }
+  let tries = 0, connected = '';
+  function connectLive() {
+    const syms = K.rows.map((r) => r.sym.toLowerCase());
+    const key = syms.join(','); if (key === connected) return; connected = key;
+    if (K.ws) { K.ws.onclose = null; try { K.ws.close(); } catch (e) { /* zu */ } }
+    const streams = ['eurusdt@miniTicker'].concat(syms.map((s) => s + 'usdt@miniTicker')).join('/');
+    let ws; try { ws = new WebSocket('wss://data-stream.binance.vision/stream?streams=' + streams); } catch (e) { setDot('st-live', 'warn', 'Krypto: jede Minute'); return; }
+    K.ws = ws;
+    ws.onopen = () => { tries = 0; setDot('st-live', 'ok', 'Krypto live'); };
+    ws.onmessage = (ev) => {
+      let m; try { m = JSON.parse(ev.data); } catch (e) { return; } const x = m && m.data; if (!x || !x.s) return;
+      if (x.s === 'EURUSDT') { K.eurusd = +x.c; return; }
+      if (!K.eurusd) return;
+      const sym = x.s.replace(/USDT$/, ''), eur = +x.c / K.eurusd, prev = K.live[sym];
+      K.live[sym] = eur;
+      const td = document.querySelector('#kr td[data-sym="' + sym + '"]'); if (!td) return;
+      td.textContent = fEur(eur);
+      if (prev != null && Math.abs(prev - eur) / eur > 1e-7) { td.classList.remove('fu', 'fd'); void td.offsetWidth; td.classList.add(eur > prev ? 'fu' : 'fd'); }
+    };
+    ws.onerror = () => { try { ws.close(); } catch (e) { /* zu */ } };
+    ws.onclose = () => { if (K.ws !== ws) return; tries++; setDot('st-live', tries > 3 ? 'warn' : 'off', tries > 3 ? 'Krypto: jede Minute' : 'Krypto: neuer Versuch …'); if (tries <= 3) { connected = ''; setTimeout(connectLive, 2000 * tries); } };
   }
 
   // ---------------------------------------------------------------- Sparplan-Rechner
-  let calcTouched = false;
   function calc() {
     const m = num($('#c-rate').value), y = Math.round(num($('#c-years').value)), r = num($('#c-ret').value) / 100, s0 = num($('#c-start').value) || 0;
     if (!(m >= 0) || !(y > 0) || !(y <= 60) || !isFinite(r)) { ['#r-in', '#r-out', '#r-gain'].forEach((x) => { $(x).textContent = '–'; }); $('#r-note').textContent = 'Bitte gültige Zahlen eingeben (Jahre zwischen 1 und 60).'; return; }
@@ -242,75 +279,27 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
     let v = s0; for (let i = 0; i < n; i++) v = v * (1 + mr) + m;
     const paid = s0 + m * n;
     $('#r-in').textContent = fEur(paid, 0); $('#r-out').textContent = fEur(v, 0); $('#r-gain').textContent = fEur(v - paid, 0);
-    $('#r-note').textContent = 'Vor Steuern und ohne Inflation. Tipp: Lege von jedem Gewinn deines Shops einen festen Anteil zurück, zum Beispiel 10 %, und erhöhe den Sparplan, sobald es geht.';
+    $('#r-note').textContent = '6 % pro Jahr ist eine übliche Annahme für Welt-ETFs über lange Zeit, vor Steuern und Inflation. Tipp: Von jedem Gewinn deines Shops einen festen Anteil zurücklegen, zum Beispiel 10 %.';
   }
-  ['#c-rate', '#c-years', '#c-ret', '#c-start'].forEach((s) => $(s).addEventListener('input', () => { if (s === '#c-ret') calcTouched = true; calc(); }));
+  ['#c-rate', '#c-years', '#c-ret', '#c-start'].forEach((s) => $(s).addEventListener('input', calc));
   calc();
 
-  // ---------------------------------------------------------------- Krypto (live)
-  const COINS = [['BTC', 'Bitcoin'], ['ETH', 'Ether'], ['SOL', 'Solana']];
-  const C = {};
-  function renderCoins() {
-    const host = $('#coins'); host.replaceChildren();
-    const k = (D.data && D.data.kurse && D.data.kurse.daten) || [];
-    COINS.forEach(([s, n]) => {
-      const box = el('div', 'coin'); box.id = 'c-' + s;
-      box.appendChild(el('div', 'muted small', n + ' (' + s + ')'));
-      const kk = k.find((x) => x.symbol === s) || {};
-      const live = C[s];
-      box.appendChild(el('div', 'p', fEur(live ? live.c : kk.preis)));
-      const ch = live ? live.chg : kk.aend24;
-      box.appendChild(el('div', 'small ' + cls(ch), fPct(ch) + ' heute'));
-      box.appendChild(el('div', 'small ' + cls(kk.aend1y), fPct(kk.aend1y) + ' in 1 Jahr'));
-      host.appendChild(box);
-    });
-  }
-  function onTick(s, c, o) {
-    const prev = C[s] && C[s].c;
-    C[s] = { c, chg: o > 0 ? (c / o - 1) * 100 : null };
-    const box = document.getElementById('c-' + s); if (!box) return;
-    const p = box.children[1]; p.textContent = fEur(c);
-    if (prev != null && prev !== c) { p.classList.remove('fu', 'fd'); void p.offsetWidth; p.classList.add(c > prev ? 'fu' : 'fd'); }
-    const ch = box.children[2]; ch.textContent = fPct(C[s].chg) + ' heute'; ch.className = 'small ' + cls(C[s].chg);
-  }
-  let tries = 0;
-  function connect() {
-    const streams = COINS.map(([s]) => s.toLowerCase() + 'eur@miniTicker').join('/');
-    let ws; try { ws = new WebSocket('wss://data-stream.binance.vision/stream?streams=' + streams); } catch (e) { poll(); return; }
-    ws.onopen = () => { tries = 0; setDot('st-live', 'ok', 'Krypto live'); };
-    ws.onmessage = (ev) => { let m; try { m = JSON.parse(ev.data); } catch (e) { return; } const x = m && m.data; if (x && x.s) onTick(x.s.replace(/EUR$/, ''), +x.c, +x.o); };
-    ws.onerror = () => { try { ws.close(); } catch (e) { /* zu */ } };
-    ws.onclose = () => { tries++; if (tries > 3) { poll(); return; } setDot('st-live', 'off', 'Krypto: neuer Versuch …'); setTimeout(connect, 2000 * tries); };
-  }
-  let pollT = null;
-  function poll() {
-    if (pollT) return;
-    setDot('st-live', 'warn', 'Krypto: alle 30 Sek.');
-    const url = 'https://data-api.binance.vision/api/v3/ticker/24hr?symbols=' + encodeURIComponent(JSON.stringify(COINS.map(([s]) => s + 'EUR')));
-    const run = () => fetch(url).then((r) => r.json()).then((rows) => rows.forEach((r) => onTick(r.symbol.replace(/EUR$/, ''), +r.lastPrice, +r.openPrice))).catch(() => setDot('st-live', 'off', 'Krypto nicht erreichbar'));
-    run(); pollT = setInterval(run, 30000);
-  }
-
-  // ---------------------------------------------------------------- Nachrichten (drei, kurz)
-  const TR = { t: null };
-  async function trInit() {
-    const timeout = (p) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 3000))]);
-    try { if (!('Translator' in self)) return; const av = await timeout(self.Translator.availability({ sourceLanguage: 'en', targetLanguage: 'de' })); if (av === 'available') TR.t = await timeout(self.Translator.create({ sourceLanguage: 'en', targetLanguage: 'de' })); } catch (e) { TR.t = null; /* ohne Übersetzung weiter */ }
-  }
+  // ---------------------------------------------------------------- Nachrichten (drei, auf Deutsch, kurz)
   function renderNews() {
     const host = $('#news'); host.replaceChildren();
     const all = (D.data && D.data.news && D.data.news.daten) || [];
     const imp = (n) => n.wichtig == null ? 1 : n.wichtig;
-    const recent = all.filter((n) => Date.now() - new Date(n.zeit).getTime() < 48 * 3.6e6);
     const seen = new Set();
-    const pick = recent.slice().sort((a, b) => (imp(b) - imp(a)) || ((b.sprache === 'de') - (a.sprache === 'de')) || b.zeit.localeCompare(a.zeit))
-      .filter((n) => { const k = n.titel.toLowerCase().replace(/[^a-zäöüß0-9]/g, '').slice(0, 40); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 3);
-    if (!pick.length) { host.appendChild(el('p', 'muted', 'Gerade keine wichtigen Meldungen.')); return; }
+    const pick = all.filter((n) => n.titel_de && Date.now() - new Date(n.zeit).getTime() < 48 * 3.6e6)
+      .sort((a, b) => (imp(b) - imp(a)) || b.zeit.localeCompare(a.zeit))
+      .filter((n) => { const k = n.titel_de.toLowerCase().replace(/[^a-zäöüß0-9]/g, '').slice(0, 40); if (seen.has(k)) return false; seen.add(k); return true; })
+      .slice(0, 3);
+    if (!pick.length) { host.appendChild(el('p', 'muted', 'Gerade keine wichtigen Meldungen auf Deutsch.')); return; }
     pick.forEach((n) => {
       const it = el('article', 'ni');
-      const a = el('a', '', n.titel); a.href = n.link; a.target = '_blank'; a.rel = 'noopener noreferrer'; it.appendChild(a);
-      it.appendChild(el('span', 'small muted', n.quelle + ', ' + ago(new Date(n.zeit).getTime()) + ((n.tags || []).length ? ' · ' + n.tags.join(', ') : '')));
-      if (n.sprache !== 'de' && TR.t) TR.t.translate(n.titel).then((t) => { if (a.isConnected) a.textContent = t; }).catch(() => {});
+      it.appendChild(el('span', 'src', n.quelle + ' · ' + ago(new Date(n.zeit).getTime())));
+      const a = el('a', '', n.titel_de); a.href = n.link; a.target = '_blank'; a.rel = 'noopener noreferrer'; it.appendChild(a);
+      if (n.kurz_de && n.kurz_de.slice(0, 30) !== n.titel_de.slice(0, 30)) it.appendChild(el('p', '', n.kurz_de));
       host.appendChild(it);
     });
   }
@@ -321,12 +310,11 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
       D.data = d;
       const t = d.erzeugt ? new Date(d.erzeugt).getTime() : 0;
       setDot('st-data', !t ? 'off' : (Date.now() - t > 6 * 3.6e6 ? 'warn' : 'ok'), t ? 'Daten ' + ago(t) : 'Daten: noch kein Abruf');
-      renderEtfs(); renderCoins(); renderNews();
+      renderEtfs(); renderNews(); if (!K.rows.length) fallbackKr();
     }).catch(() => setDot('st-data', 'off', 'Daten nicht ladbar'));
   }
-  load(); setInterval(load, 2 * 60000);
-  trInit().then(() => { if (TR.t && D.data) renderNews(); });
-  connect();
+  renderKr(); load(); loadCG();
+  setInterval(load, 2 * 60000); setInterval(loadCG, 60000);
 })();
 </script>
 </body>
