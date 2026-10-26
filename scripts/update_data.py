@@ -100,6 +100,8 @@ TAGS = {
     "Zinsen/Wirtschaft": ["fed ", "interest rate", "inflation", "ecb", "recession", "tariff", "jobs report", "gdp",
                           "zins", "ezb", "notenbank", "rezession", "zoll", "zölle", "konjunktur", "dax"],
     "Hack/Betrug": ["hack", "exploit", "rug pull", "scam", "stolen", "drain", "betrug", "gestohlen"],
+    "KI/Chips": ["nvidia", "artificial intelligence", " ai ", "ai chip", "openai", "semiconductor", "chipmaker", "tsmc",
+                 "künstliche intelligenz", " ki ", "halbleiter", "chip"],
     "Memecoins": ["memecoin", "meme coin", "pump.fun", "dogecoin", "pepe", "shiba", "bonk", "dogwifhat"],
 }
 
@@ -231,7 +233,7 @@ def clean(text, limit=240):
 
 
 # Wie stark kann eine Meldung Kurse bewegen? 0 = kaum, 3 = stark.
-STRONG = ["approv", "reject", "ban ", "bans ", "banned", "rate cut", "rate hike", "cuts rates",
+STRONG = ["approv", "reject", "ban ", "bans ", "banned", "drain", "stolen", "rate cut", "rate hike", "cuts rates",
           "raises rates", "lawsuit", "sues ", "charged", "sanction", "attack", "invasion", "ceasefire", "record high",
           "all-time high", "crash", "plunge", "tumbl", "soar", "surge", "delist", "listing", "bankrupt", "liquidat",
           "executive order", "tariff", "etf", "inflows", "outflows", "fed ", "sec ", "opec", "strait of hormuz",
