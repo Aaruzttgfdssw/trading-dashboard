@@ -1,73 +1,66 @@
 {
- "erzeugt": "2026-10-25T22:04:15+00:00",
+ "erzeugt": "2026-10-26T00:23:17+00:00",
  "kurse": {
-  "stand": "2026-10-25T22:04:15+00:00",
+  "stand": "2026-10-26T00:23:17+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 80394,
-    "aend24": -0.03199,
-    "aend7": -0.9344,
-    "marktkap": 1615470343978,
-    "volumen": 12944114053
+    "preis": 79993,
+    "aend24": -0.90781,
+    "aend7": -2.0325,
+    "marktkap": 1607970938700,
+    "volumen": 14248010036
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2337.73,
-    "aend24": -0.12114,
-    "aend7": -0.8521,
-    "marktkap": 285383223678,
-    "volumen": 5795273507
+    "preis": 2326.43,
+    "aend24": -1.18672,
+    "aend7": -2.7881,
+    "marktkap": 284164689563,
+    "volumen": 6428986156
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 101.39,
-    "aend24": 0.05474,
-    "aend7": -0.16,
-    "marktkap": 59747565307,
-    "volumen": 1403355917
+    "preis": 101.27,
+    "aend24": -0.92424,
+    "aend7": -2.4615,
+    "marktkap": 59727807781,
+    "volumen": 1495202457
    },
    {
     "id": "ripple",
     "symbol": "XRP",
     "name": "XRP",
-    "preis": 1.3,
-    "aend24": 0.222,
-    "aend7": 2.2471,
-    "marktkap": 82017821426,
-    "volumen": 969220772
+    "preis": 1.29,
+    "aend24": -0.27539,
+    "aend7": -0.452,
+    "marktkap": 82005273988,
+    "volumen": 995874788
    },
    {
     "id": "dogecoin",
     "symbol": "DOGE",
     "name": "Dogecoin",
-    "preis": 0.076929,
-    "aend24": -0.23426,
-    "aend7": 0.0263,
-    "marktkap": 12028421834,
-    "volumen": 315800081
+    "preis": 0.076926,
+    "aend24": -0.82846,
+    "aend7": -2.9209,
+    "marktkap": 12034700083,
+    "volumen": 339513101
    }
   ]
  },
  "kerzen": {
-  "stand": "2026-10-25T22:04:18+00:00",
+  "stand": "2026-10-26T00:23:21+00:00",
   "quelle": "Binance",
   "daten": {
    "BTC": [
-    {
-     "d": "2026-09-26",
-     "o": 84100.0,
-     "h": 84473.58,
-     "l": 83798.0,
-     "c": 84433.1
-    },
     {
      "d": "2026-09-27",
      "o": 84433.11,
@@ -268,18 +261,18 @@
      "d": "2026-10-25",
      "o": 80888.15,
      "h": 81033.69,
-     "l": 80087.7,
-     "c": 80680.0
+     "l": 79845.86,
+     "c": 80154.09
+    },
+    {
+     "d": "2026-10-26",
+     "o": 80154.09,
+     "h": 80226.0,
+     "l": 80006.0,
+     "c": 80131.39
     }
    ],
    "ETH": [
-    {
-     "d": "2026-09-26",
-     "o": 2691.62,
-     "h": 2697.79,
-     "l": 2664.79,
-     "c": 2696.33
-    },
     {
      "d": "2026-09-27",
      "o": 2696.33,
@@ -480,18 +473,18 @@
      "d": "2026-10-25",
      "o": 2358.82,
      "h": 2371.52,
-     "l": 2318.0,
-     "c": 2348.12
+     "l": 2308.7,
+     "c": 2329.87
+    },
+    {
+     "d": "2026-10-26",
+     "o": 2329.86,
+     "h": 2335.9,
+     "l": 2323.67,
+     "c": 2330.73
     }
    ],
    "SOL": [
-    {
-     "d": "2026-09-26",
-     "o": 122.15,
-     "h": 122.44,
-     "l": 119.82,
-     "c": 121.41
-    },
     {
      "d": "2026-09-27",
      "o": 121.41,
@@ -693,17 +686,17 @@
      "o": 102.37,
      "h": 102.77,
      "l": 100.37,
-     "c": 101.95
+     "c": 101.4
+    },
+    {
+     "d": "2026-10-26",
+     "o": 101.39,
+     "h": 101.65,
+     "l": 101.21,
+     "c": 101.46
     }
    ],
    "XRP": [
-    {
-     "d": "2026-09-26",
-     "o": 1.5684,
-     "h": 1.581,
-     "l": 1.5015,
-     "c": 1.5274
-    },
     {
      "d": "2026-09-27",
      "o": 1.5274,
@@ -904,18 +897,18 @@
      "d": "2026-10-25",
      "o": 1.2996,
      "h": 1.3159,
-     "l": 1.2891,
-     "c": 1.3016
+     "l": 1.2852,
+     "c": 1.2962
+    },
+    {
+     "d": "2026-10-26",
+     "o": 1.2961,
+     "h": 1.3006,
+     "l": 1.2948,
+     "c": 1.2966
     }
    ],
    "DOGE": [
-    {
-     "d": "2026-09-26",
-     "o": 0.09896,
-     "h": 0.09971,
-     "l": 0.0953,
-     "c": 0.09673
-    },
     {
      "d": "2026-09-27",
      "o": 0.09674,
@@ -1117,25 +1110,132 @@
      "o": 0.07767,
      "h": 0.07807,
      "l": 0.07595,
-     "c": 0.07737
+     "c": 0.07693
+    },
+    {
+     "d": "2026-10-26",
+     "o": 0.07693,
+     "h": 0.0772,
+     "l": 0.07675,
+     "c": 0.07703
     }
    ]
   }
  },
  "news": {
-  "stand": "2026-10-25T22:04:21+00:00",
+  "stand": "2026-10-26T00:23:23+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Standard Chartered-led Anchorpoint says it’s not rushing retail stablecoin",
+    "link": "https://cointelegraph.com/news/standard-chartered-led-anchorpoint-says-its-not-rushing-retail-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-26T00:13:29+00:00",
+    "text": "The Standard Chartered and Animoca Brands joint venture previously targeted retail access as early as the end of 2026, but its CEO declined to reaffirm that timeline.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "The Pentagon's Rare Earth Deadline Is Almost Here. Is Anyone Ready?",
+    "link": "https://oilprice.com/Energy/Energy-General/The-Pentagons-Rare-Earth-Deadline-Is-Almost-Here-Is-Anyone-Ready.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-26T00:00:00+00:00",
+    "text": "For years, the rare earth industry has been talking about January 1, 2027 as the date that changes everything. That date is now less than 75 days away. On January 1, new Pentagon procurement rules take effect that will restrict the use of…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Venezuelan opposition leader María Machado returns after months in exile",
+    "link": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-25T23:33:14+00:00",
+    "text": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.",
+    "tags": [],
+    "wichtig": 0
+   },
+   {
+    "titel": "Asia Is Building the World’s Next $15 Trillion Energy Market",
+    "link": "https://oilprice.com/Energy/Energy-General/Asia-Is-Building-the-Worlds-Next-15-Trillion-Energy-Market.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-25T23:00:00+00:00",
+    "text": "The global energy transition is increasingly becoming an Asian story, and Asia is unlikely to follow the path envisioned in Washington or Brussels. The region’s governments will have enormous influence over the future of coal, oil, natural…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Oil Prices Rise Despite Middle East Export Recovery",
+    "link": "https://oilprice.com/Energy/Crude-Oil/Oil-Prices-Rise-Despite-Middle-East-Export-Recovery.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-25T23:00:00+00:00",
+    "text": "Reports about recovering oil flows in the Persian Gulf and the Red Sea have dominated headlines over the past couple of weeks. Yet oil prices have only moved higher, suggesting barrel numbers alone are not enough to convince the world ever…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1
+   },
    {
     "titel": "Serbia's veteran ruler Vučić concedes election to student-led protest movement",
     "link": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-10-25T21:25:04+00:00",
+    "zeit": "2026-10-25T22:54:57+00:00",
     "text": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
     "tags": [],
     "wichtig": 0
+   },
+   {
+    "titel": "AI agents help rescue ETH’s Glamsterdam fork, ‘Steal My Bitcoin’ site: Hodler’s Digest",
+    "link": "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-25T22:48:40+00:00",
+    "text": "Similar to the Hugging Face hack, Ethereum researchers have set up an AI Agent message board to help rescue the Glamsterdam fork. New site says ‘Steal My Bitcoin’... if you can.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Deeply divided Israel braces for pivotal election",
+    "link": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-25T22:11:13+00:00",
+    "text": "After three years of regional war, this is a battle Israel always knew was coming, writes Lucy Williamson.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1
+   },
+   {
+    "titel": "Why Israel's election is one of the most important in its history",
+    "link": "https://www.bbc.co.uk/news/videos/c64g1wje3jjwo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-25T22:05:30+00:00",
+    "text": "Security and democracy emerge as central issues in Israel's highly anticipated general election, as Middle East correspondent Lucy Williamson reports.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1
    },
    {
     "titel": "Death toll in Nigeria village raided by gunmen rises to 48, police say",
@@ -1156,17 +1256,6 @@
     "sprache": "en",
     "zeit": "2026-10-25T19:00:00+00:00",
     "text": "The United Kingdom has invested heavily in expanding its renewable energy capacity in recent years to reduce its dependence on fossil fuels and support a green transition. However, one major problem stands in the way of it achieving this g…",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
-    "titel": "Venezuelan opposition leader María Machado returns after months in exile",
-    "link": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-25T18:29:00+00:00",
-    "text": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.",
     "tags": [],
     "wichtig": 0
    },
@@ -1691,17 +1780,6 @@
     "wichtig": 1
    },
    {
-    "titel": "Fire engulfs Hitler's mountaintop Eagle's Nest retreat",
-    "link": "https://www.bbc.co.uk/news/videos/cq98z9xxy2n2o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-24T15:56:48+00:00",
-    "text": "Police in the southern German state of Bavaria have detained a 33-year-old German man following the fire.",
-    "tags": [],
-    "wichtig": 0
-   },
-   {
     "titel": "Arthur Hayes erwartet neue Krypto-Korrektur: “Ich habe alles abgestoßen”",
     "link": "https://www.btc-echo.de/news/ich-habe-alles-abgestossen-arthur-hayes-warnt-vor-krypto-crash-239800/",
     "quelle": "BTC-ECHO",
@@ -2096,20 +2174,6 @@
     "wichtig": 1
    },
    {
-    "titel": "Who actually controls Ukraine's access to Starlink?",
-    "link": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-23T22:24:36+00:00",
-    "text": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2
-   },
-   {
     "titel": "Why Trump and Carney Haven’t Touched Energy in Their Tariff War",
     "link": "https://oilprice.com/Energy/Energy-General/Why-Trump-and-Carney-Havent-Touched-Energy-in-Their-Tariff-War.html",
     "quelle": "OilPrice",
@@ -2149,74 +2213,11 @@
      "Krieg/Konflikt"
     ],
     "wichtig": 3
-   },
-   {
-    "titel": "IRS plans lower tax disclosure penalties, including for crypto: Forbes",
-    "link": "https://cointelegraph.com/news/irs-plans-lower-penalties-for-crypto-tax-disclosures-forbes-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T20:54:17+00:00",
-    "text": "The US tax agency is targeting faster resolutions and more flexible payment options for taxpayers voluntarily disclosing past tax violations under a planned program overhaul.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1
-   },
-   {
-    "titel": "Senate Democrat Probes Tether Payments to Ex-White House Crypto Adviser’s Firm",
-    "link": "https://decrypt.co/381755/senate-democrat-tether-payments-ex-white-house-crypto-adviser",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T20:16:02+00:00",
-    "text": "Sen. Richard Blumenthal demanded Tether’s records on payments to Nxum, a firm co-owned by former White House crypto adviser Bo Hines.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 2
-   },
-   {
-    "titel": "NASA's Freeze-Resistant Moon Battery Could Eventually Reach EVs",
-    "link": "https://oilprice.com/Energy/Energy-General/NASAs-Freeze-Resistant-Moon-Battery-Could-Eventually-Reach-EVs.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-23T20:00:00+00:00",
-    "text": "The United States’ National Aeronautics and Space Administration (NASA) has developed a revolutionary new battery that could power the country’s return to the moon while potentially also revolutionizing the way that we power electric vehic…",
-    "tags": [],
-    "wichtig": 1
-   },
-   {
-    "titel": "SpaceX Filing Gives Elon Musk the Final Word on Tesla Merger He Says He’s Staying Out Of",
-    "link": "https://decrypt.co/381753/spacex-filing-elon-musk-final-word-tesla-merger",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T19:36:02+00:00",
-    "text": "SpaceX’s latest 10-Q filing quietly confirms any Tesla combination requires sign-off from its “controlling shareholder.”",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 2
-   },
-   {
-    "titel": "SEC Flags AI 'Super Intelligence' and Tokenization as Systemic Market Risks",
-    "link": "https://decrypt.co/381745/sec-ai-super-intelligence-tokenization-2027-exam-list",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-23T18:54:55+00:00",
-    "text": "The regulator's Division of Examinations named \"super intelligence and other advanced technologies\" as a focus area alongside tokenization risks.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 2
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-25T22:04:27+00:00",
+  "stand": "2026-10-26T00:23:29+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -10296,7 +10297,7 @@
   ]
  },
  "chancen": {
-  "stand": "2026-10-25T22:04:27+00:00",
+  "stand": "2026-10-26T00:23:29+00:00",
   "regeln": "Krypto: Anstieg oder Rückgang ab 8 % in 24 Stunden, 15 % in 7 Tagen, mindestens 2 Meldungen in 24 Stunden. ETFs: Tagesbewegung ab 2,5 %",
   "daten": [
    {
@@ -10324,11 +10325,11 @@
     "coin": "Bitcoin",
     "symbol": "BTC",
     "art": "Viele Meldungen",
-    "erklaerung": "In den letzten 24 Stunden gibt es 5 Meldungen, in denen Bitcoin im Titel steht.",
+    "erklaerung": "In den letzten 24 Stunden gibt es 6 Meldungen, in denen Bitcoin im Titel steht.",
     "risiko": "Mittel. Viel Aufmerksamkeit führt oft zu stärkeren Schwankungen, in beide Richtungen.",
     "belege": [
-     "Krypto-Steuer reduzieren? Wie Anleger ihre Bitcoin-Verluste nutzen können",
-     "Bitcoin ETFs Snap Two-Week Losing Streak Despite Late-Week Slide"
+     "AI agents help rescue ETH’s Glamsterdam fork, ‘Steal My Bitcoin’ site: Hodler’s Digest",
+     "Krypto-Steuer reduzieren? Wie Anleger ihre Bitcoin-Verluste nutzen können"
     ]
    }
   ]
