@@ -293,7 +293,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
   // ---------------------------------------------------------------- Nachrichten (drei, kurz)
   const TR = { t: null };
   async function trInit() {
-    try { if (!('Translator' in self)) return; const av = await self.Translator.availability({ sourceLanguage: 'en', targetLanguage: 'de' }); if (av === 'available') TR.t = await self.Translator.create({ sourceLanguage: 'en', targetLanguage: 'de' }); } catch (e) { /* ohne Übersetzung */ }
+    const timeout = (p) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 3000))]);
+    try { if (!('Translator' in self)) return; const av = await timeout(self.Translator.availability({ sourceLanguage: 'en', targetLanguage: 'de' })); if (av === 'available') TR.t = await timeout(self.Translator.create({ sourceLanguage: 'en', targetLanguage: 'de' })); } catch (e) { TR.t = null; /* ohne Übersetzung weiter */ }
   }
   function renderNews() {
     const host = $('#news'); host.replaceChildren();
@@ -322,7 +323,8 @@ footer { text-align: center; color: var(--muted); font-size: 12px; }
       renderEtfs(); renderCoins(); renderNews();
     }).catch(() => setDot('st-data', 'off', 'Daten nicht ladbar'));
   }
-  trInit().then(load); setInterval(load, 2 * 60000);
+  load(); setInterval(load, 2 * 60000);
+  trInit().then(() => { if (TR.t && D.data) renderNews(); });
   connect();
 })();
 </script>
