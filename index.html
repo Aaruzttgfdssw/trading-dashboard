@@ -5,1498 +5,319 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyTradingSinc</title>
 <style>
-/* Dunkles Screener-Layout: Liste links, Details rechts, Tabs oben */
+/* Eine ruhige Seite: oben die Regeln, darunter ETFs, Rechner, Krypto und drei Kurz-Nachrichten */
 :root {
   --bg: #10151f; --panel: #161d2a; --panel2: #1d2636; --line: #273145; --fg: #eef1f7; --muted: #97a3b8;
-  --up: #36c08e; --down: #f2697a; --accent: #8aa4ff; --warn: #f1b44c; --sel: #202b40; --r: 14px;
+  --up: #36c08e; --down: #f2697a; --accent: #8aa4ff; --warn: #f1b44c; --r: 14px;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { margin: 0; background: var(--bg); color: var(--fg); }
-body { font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-button, input, select { font: inherit; color: inherit; }
-a { color: var(--fg); }
-.num, .mono { font-variant-numeric: tabular-nums; }
-.muted { color: var(--muted); }
-.small { font-size: 12px; }
-.up { color: var(--up); } .down { color: var(--down); }
-
-header.top { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
-.bar { max-width: 1500px; margin: 0 auto; padding: 10px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; }
-.titlebar { justify-content: center; flex-direction: column; gap: 2px; padding-top: 14px; padding-bottom: 4px; text-align: center; }
-.brand { font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0; }
-.brand span { color: var(--accent); }
-.tagline { font-size: 12px; color: var(--muted); }
-.navbar { justify-content: center; padding-top: 6px; }
-.tabs { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
-.tab { background: transparent; border: 1px solid transparent; border-radius: 999px; padding: 6px 14px; cursor: pointer; color: var(--muted); }
-.tab:hover { color: var(--fg); }
-.tab[aria-selected="true"] { background: color-mix(in srgb, var(--accent) 16%, var(--panel)); border-color: color-mix(in srgb, var(--accent) 45%, transparent); color: var(--fg); }
-.tab:focus-visible, .chip:focus-visible, .row-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-.status { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; justify-content: center; }
-.dot { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+body { font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; display: flex; flex-direction: column; gap: 22px; }
+header { text-align: center; padding: 22px 16px 6px; }
+h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+h1 span { color: var(--accent); }
+.tag { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.status { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.dot { display: inline-flex; align-items: center; gap: 6px; }
 .dot::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
-.dot[data-s="live"]::before { background: var(--up); box-shadow: 0 0 0 3px color-mix(in srgb, var(--up) 25%, transparent); }
-.dot[data-s="fallback"]::before { background: var(--warn); }
-.dot[data-s="off"]::before { background: var(--down); }
-.risk { background: color-mix(in srgb, var(--warn) 9%, var(--bg)); color: #f0d9a6; font-size: 12px; }
-.risk .bar { padding: 6px 16px; justify-content: center; text-align: center; }
-
-main { max-width: 1500px; margin: 0 auto; padding: 14px 16px 40px; }
-.view[hidden] { display: none; }
-.split { display: grid; grid-template-columns: 1fr; gap: 14px; }
-@media (min-width: 1050px) { .split { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: start; } .detail { position: sticky; top: 150px; } }
-.box { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); min-width: 0; box-shadow: 0 1px 0 rgba(255,255,255,.03) inset, 0 8px 24px rgba(0,0,0,.18); }
-.box-h { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
-.box-h h2 { margin: 0; font-size: 14px; }
-.box-b { padding: 14px; }
-.tools { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-left: auto; }
-.search { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 5px 9px; width: 11rem; max-width: 100%; }
-.chip { background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-size: 12px; color: var(--muted); }
-.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-
-.scroll { overflow: auto; max-height: calc(100vh - 250px); }
+.dot[data-s="ok"]::before { background: var(--up); } .dot[data-s="warn"]::before { background: var(--warn); } .dot[data-s="off"]::before { background: var(--down); }
+.note-bar { background: color-mix(in srgb, var(--warn) 9%, var(--bg)); color: #f0d9a6; font-size: 13px; text-align: center; padding: 8px 16px; border-radius: 10px; }
+h2 { margin: 0 0 10px; font-size: 18px; }
+.sub { color: var(--muted); font-size: 13px; margin: -6px 0 12px; }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; min-width: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 12px; }
+.step { background: var(--panel2); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.step .n { font-size: 12px; color: var(--accent); font-weight: 700; letter-spacing: .04em; }
+.step b { font-size: 15px; }
+.step p { margin: 0; font-size: 14px; color: #d6dbe5; }
+.up { color: var(--up); } .down { color: var(--down); } .muted { color: var(--muted); } .small { font-size: 13px; }
+.scroll { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-th { position: sticky; top: 0; background: var(--panel); z-index: 1; text-align: right; font-weight: 500; color: var(--muted); font-size: 12px; padding: 7px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; cursor: pointer; user-select: none; }
+th { text-align: right; font-weight: 500; color: var(--muted); font-size: 12px; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
 th:first-child, td:first-child { text-align: left; }
-th[aria-sort="ascending"]::after { content: " ▲"; } th[aria-sort="descending"]::after { content: " ▼"; }
-td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
 tbody tr { cursor: pointer; }
-tbody tr:hover { background: var(--panel2); }
-tbody tr[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0 0 var(--accent); }
-.tok { display: flex; align-items: center; gap: 8px; min-width: 0; }
-.tok img { width: 20px; height: 20px; border-radius: 50%; flex: none; background: var(--panel2); }
-.tok b { font-weight: 600; }
-.badge { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
-.lvl-3 { color: #fff; background: var(--down); border-color: var(--down); }
-.lvl-2 { color: #1a1300; background: var(--warn); border-color: var(--warn); }
-.lvl-1 { color: var(--fg); background: var(--panel2); }
-@media (prefers-reduced-motion: no-preference) {
-  .fu { animation: fu .8s ease-out; } .fd { animation: fd .8s ease-out; }
-  @keyframes fu { from { background: color-mix(in srgb, var(--up) 14%, transparent); } to { background: transparent; } }
-  @keyframes fd { from { background: color-mix(in srgb, var(--down) 14%, transparent); } to { background: transparent; } }
-}
-
-.dh { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
-.dh h2 { margin: 0; font-size: 18px; }
-.big { font-size: 26px; font-weight: 700; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-top: 10px; }
-.stats div { background: var(--panel); padding: 8px 10px; display: flex; flex-direction: column; gap: 2px; }
-.stats span:first-child { font-size: 11px; color: var(--muted); }
-.stats span:last-child { font-variant-numeric: tabular-nums; }
-.chart { position: relative; margin-top: 10px; }
-.chart svg { display: block; width: 100%; height: auto; }
-.ax { fill: var(--muted); font-size: 11px; }
-.tip { position: absolute; pointer-events: none; background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; font-size: 12px; line-height: 1.5; white-space: nowrap; z-index: 3; font-variant-numeric: tabular-nums; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
-.frame { width: 100%; height: 420px; border: 0; border-radius: 8px; margin-top: 10px; background: var(--panel2); display: block; }
-.sub { margin: 16px 0 6px; font-size: 13px; font-weight: 600; }
-.tape { display: grid; grid-template-columns: auto auto 1fr 1fr 1fr; gap: 3px 12px; font-size: 12px; font-variant-numeric: tabular-nums; max-height: 260px; overflow: auto; align-items: center; }
-.tape .th { color: var(--muted); font-size: 11px; position: sticky; top: 0; background: var(--panel); }
-.tape .r { text-align: right; }
-.tape .big { font-weight: 700; }
-.whale { background: color-mix(in srgb, var(--accent) 22%, transparent); border-radius: 4px; padding: 0 4px; font-size: 10px; color: var(--fg); }
-.tape span:nth-child(3n+2), .tape span:nth-child(3n) { text-align: right; }
-.flags { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.flags li { display: flex; gap: 8px; align-items: baseline; }
-.links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.links a, .btn { display: inline-block; font-size: 12px; text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; background: var(--panel2); cursor: pointer; }
-.news { display: flex; flex-direction: column; }
-.ni { padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 3px; }
-.ni:last-child { border-bottom: 0; }
-.ni a { font-weight: 600; text-decoration: none; }
+tbody tr:hover, tbody tr[aria-selected="true"] { background: var(--panel2); }
+.nm b { display: block; font-weight: 600; }
+.nm span { font-size: 12px; color: var(--muted); }
+.spark { display: block; }
+.chartbox { margin-top: 12px; }
+.calc { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 12px; align-items: end; }
+.calc label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
+.calc input { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; color: var(--fg); font: inherit; min-width: 0; }
+.res { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 12px; margin-top: 14px; }
+.res div { background: var(--panel2); border-radius: 12px; padding: 12px; }
+.res span { display: block; font-size: 12px; color: var(--muted); }
+.res b { font-size: 22px; font-variant-numeric: tabular-nums; }
+.coins { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 12px; }
+.coin { background: var(--panel2); border-radius: 12px; padding: 14px; }
+.coin .p { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.news { display: flex; flex-direction: column; gap: 10px; }
+.ni { background: var(--panel2); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.ni a { color: var(--fg); font-weight: 600; text-decoration: none; }
 .ni a:hover { text-decoration: underline; }
-.meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); }
-.empty { padding: 28px 12px; text-align: center; color: var(--muted); }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 12px; }
-.card { background: var(--panel2); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; display: flex; flex-direction: column; gap: 6px; }
-.card h3 { margin: 0; font-size: 15px; }
-.kicker { font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
-.rk { border-top: 1px solid var(--line); padding-top: 6px; }
-.rk b { color: var(--down); }
-.note { font-size: 12px; color: var(--muted); margin-top: 10px; line-height: 1.5; }
-.form { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: 10px; }
-.form label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
-.form input, .form select { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; color: var(--fg); min-width: 0; }
-.form .wide { grid-column: 1 / -1; }
-.btn.primary { background: var(--accent); color: #0d1220; border-color: var(--accent); font-weight: 600; }
-.btn.danger { color: var(--down); }
-.okmsg { color: var(--up); font-size: 12px; } .errmsg { color: var(--down); font-size: 12px; }
-.sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 10px; }
-.sum .card b { font-size: 18px; font-variant-numeric: tabular-nums; }
-.banner { background: color-mix(in srgb, var(--accent) 14%, var(--panel)); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); border-radius: 10px; padding: 10px 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
-.strong { font-weight: 700; }
-.rankbar { display: flex; flex-wrap: wrap; gap: 6px 14px; width: 100%; }
-.toast { position: fixed; right: 16px; bottom: 16px; z-index: 50; max-width: 22rem; background: var(--panel2); border: 1px solid var(--accent); border-radius: 12px; padding: 10px 14px; font-size: 13px; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
-.valfix { display: flex; gap: 4px; align-items: center; justify-content: flex-end; }
-.valfix input { width: 6rem; background: var(--bg); border: 1px solid var(--down); border-radius: 6px; padding: 3px 6px; color: var(--fg); }
-.back { display: none; }
-@media (max-width: 1049px) { .back { display: inline-block; } }
+.btn { font: inherit; font-size: 13px; background: var(--panel2); color: var(--fg); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.btn:focus-visible, tbody tr:focus-visible, .calc input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.tax p { margin: 0 0 8px; font-size: 14px; }
+footer { text-align: center; color: var(--muted); font-size: 12px; }
+@media (prefers-reduced-motion: no-preference) { .fu { animation: fu .8s ease-out; } .fd { animation: fd .8s ease-out; }
+  @keyframes fu { from { color: var(--up); } } @keyframes fd { from { color: var(--down); } } }
 </style>
 </head>
 <body>
-<header class="top">
-  <div class="bar titlebar">
-    <h1 class="brand">My<span>Trading</span>Sinc</h1>
-    <span class="tagline">Krypto, Memecoins, ETFs und Nachrichten an einem Ort</span>
-  </div>
-  <div class="bar navbar">
-    <nav class="tabs" role="tablist" aria-label="Bereiche">
-      <button class="tab" role="tab" data-tab="krypto">Krypto</button>
-      <button class="tab" role="tab" data-tab="meme">Memecoins</button>
-      <button class="tab" role="tab" data-tab="etf">ETFs</button>
-      <button class="tab" role="tab" data-tab="news">Nachrichten</button>
-      <button class="tab" role="tab" data-tab="lage">Lage</button>
-      <button class="tab" role="tab" data-tab="trade">Handeln</button>
-      <button class="tab" role="tab" data-tab="journal">Journal</button>
-    </nav>
-    <div class="status">
-      <span class="dot" id="st-live" data-s="none">Krypto live: verbinde …</span>
-      <span class="dot" id="st-data" data-s="none">Daten: lade …</span>
-    </div>
-  </div>
-  <div class="risk"><div class="bar">Lern-Projekt, keine Anlageberatung. Hier wird nichts gekauft oder verkauft. Die meisten Privatanleger verlieren beim Trading Geld, bei Memecoins ist ein Totalverlust häufig.</div></div>
+<header>
+  <h1>My<span>Trading</span>Sinc</h1>
+  <div class="tag">Langfristig Geld anlegen, einfach erklärt</div>
+  <div class="status"><span class="dot" id="st-data">Daten: lade …</span><span class="dot" id="st-live">Krypto live: verbinde …</span></div>
 </header>
+<div class="wrap">
+  <div class="note-bar">Keine Anlageberatung. Die Seite zeigt Fakten und bewährte Grundregeln. Was zu dir passt, entscheidest du selbst.</div>
 
-<main>
-  <!-- KRYPTO -->
-  <section class="view" id="v-krypto">
-    <div class="split">
-      <div class="box">
-        <div class="box-h">
-          <h2>Krypto (Binance, live)</h2>
-          <div class="tools"><input class="search" id="k-q" type="search" placeholder="Coin suchen" aria-label="Coin suchen"></div>
-          <div class="rankbar" id="k-rank"></div>
-        </div>
-        <div class="scroll"><table id="k-table"><thead></thead><tbody></tbody></table></div>
-        <div class="box-b note" id="k-note"></div>
-      </div>
-      <div class="box detail" id="k-detail"><div class="empty">Klicke links auf einen Coin.</div></div>
+  <section class="box">
+    <h2>So legst du langfristig an</h2>
+    <p class="sub">Die Reihenfolge, nach der die meisten Ratgeber (zum Beispiel Finanztip und Verbraucherzentrale) vorgehen.</p>
+    <div class="grid">
+      <div class="step"><span class="n">ZUERST</span><b>Notgroschen</b><p>Drei Monatsausgaben auf ein Tagesgeldkonto. Dieses Geld legst du nicht an, es ist für Notfälle.</p></div>
+      <div class="step"><span class="n">BASIS</span><b>Ein Welt-ETF als Sparplan</b><p>Ein breiter ETF auf die ganze Welt, jeden Monat ein fester Betrag. Viele Tausend Firmen, sehr geringe Kosten.</p></div>
+      <div class="step"><span class="n">OPTIONAL</span><b>Etwas beimischen</b><p>Wer will, ergänzt Schwellenländer oder einen kleinen Teil Gold. Nötig ist das nicht.</p></div>
+      <div class="step"><span class="n">VORSICHT</span><b>Krypto nur klein</b><p>Krypto schwankt sehr stark. Viele begrenzen es auf einen kleinen Anteil, den sie notfalls verlieren könnten.</p></div>
     </div>
+    <p class="small muted" id="summary" style="margin:12px 0 0"></p>
   </section>
 
-  <!-- MEMECOINS -->
-  <section class="view" id="v-meme" hidden>
-    <div class="split">
-      <div class="box">
-        <div class="box-h">
-          <h2>Memecoins (DexScreener)</h2>
-          <div class="tools">
-            <div id="m-src" class="tabs"></div>
-            <select id="m-chain" class="search" style="width:auto" aria-label="Blockchain">
-              <option value="solana">Solana</option><option value="ethereum">Ethereum</option><option value="base">Base</option><option value="bsc">BNB Chain</option><option value="alle">Alle</option>
-            </select>
-            <input class="search" id="m-q" type="search" placeholder="Name oder Adresse" aria-label="Memecoin suchen">
-          </div>
-        </div>
-        <div class="box-h" style="padding-top:0;border-bottom:1px solid var(--line)"><div class="rankbar" id="m-rank"></div></div>
-        <div class="scroll"><table id="m-table"><thead></thead><tbody></tbody></table></div>
-        <div class="box-b note" id="m-note"></div>
-      </div>
-      <div class="box detail" id="m-detail"><div class="empty">Klicke links auf einen Token.</div></div>
-    </div>
+  <section class="box">
+    <h2>ETFs, die du in Deutschland kaufen kannst</h2>
+    <p class="sub">Kurse in Euro von der Börse Xetra. Klicke auf eine Zeile für den Live-Chart. <span id="e-src"></span></p>
+    <div class="scroll"><table id="etf">
+      <thead><tr><th>ETF</th><th>Kosten pro Jahr</th><th>Kurs €</th><th>Heute</th><th>1 Jahr</th><th>3 Jahre</th><th>5 Jahre</th><th>Ø pro Jahr</th><th>Verlauf 5 Jahre</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <div class="chartbox" id="chart"></div>
   </section>
 
-  <!-- ETFS -->
-  <section class="view" id="v-etf" hidden>
-    <div class="split">
-      <div class="box">
-        <div class="box-h"><h2>ETFs</h2><span class="muted small" id="e-src"></span><div class="rankbar" id="e-rank"></div></div>
-        <div class="scroll"><table id="e-table"><thead></thead><tbody></tbody></table></div>
-        <div class="box-b note">US-ETFs kannst du in der EU meist nicht direkt kaufen. Dafür gibt es UCITS-Versionen, die dasselbe abbilden. Die Werte in der Liste sind Tagesschlusskurse. Der Chart in den Details kommt live von TradingView (US-Börsenzeiten, teils verzögert).</div>
-      </div>
-      <div class="box detail" id="e-detail"><div class="empty">Klicke links auf einen ETF.</div></div>
+  <section class="box">
+    <h2>Sparplan-Rechner</h2>
+    <p class="sub">Was aus einem monatlichen Betrag werden kann. 6 % pro Jahr ist eine übliche Annahme für Welt-ETFs über lange Zeit, keine Garantie. In einzelnen Jahren kann es auch 30 % nach unten gehen.</p>
+    <div class="calc">
+      <label for="c-rate">Pro Monat in €<input id="c-rate" type="text" inputmode="decimal" value="100"></label>
+      <label for="c-years">Wie viele Jahre<input id="c-years" type="text" inputmode="numeric" value="20"></label>
+      <label for="c-ret">Rendite pro Jahr in %<input id="c-ret" type="text" inputmode="decimal" value="6"></label>
+      <label for="c-start">Startbetrag in €<input id="c-start" type="text" inputmode="decimal" value="0"></label>
     </div>
+    <div class="res">
+      <div><span>Selbst eingezahlt</span><b id="r-in">–</b></div>
+      <div><span>Mögliches Endvermögen</span><b id="r-out" class="up">–</b></div>
+      <div><span>Davon Zinseszins</span><b id="r-gain">–</b></div>
+    </div>
+    <p class="small muted" style="margin:10px 0 0" id="r-note"></p>
   </section>
 
-  <!-- NACHRICHTEN -->
-  <section class="view" id="v-news" hidden>
-    <div class="box">
-      <div class="box-h">
-        <h2>Nachrichten, neueste zuerst</h2>
-        <div class="tools"><input class="search" id="n-q" type="search" placeholder="Stichwort" aria-label="Nachrichten durchsuchen"></div>
-      </div>
-      <div class="box-b"><div id="n-tr" class="links" style="margin:0 0 8px"></div><div class="tabs" id="n-mode" style="margin-bottom:8px"></div><div class="tabs" id="n-tags" style="margin-bottom:6px"></div><p class="note" style="margin:0 0 6px">"Nur wichtige" zeigt Meldungen, die Kurse wirklich bewegen können: Zinsen, Kriege, Regulierung, ETFs, Hacks, Aussagen wichtiger Politiker. Preisprognosen, Ratgeber und Werbung sind ausgeblendet.</p><div class="news" id="n-list"></div></div>
-    </div>
+  <section class="box">
+    <h2>Krypto kurz</h2>
+    <p class="sub">Live-Kurse in Euro von Binance, 1 Jahr von CoinGecko.</p>
+    <div class="coins" id="coins"></div>
+    <p class="small muted" style="margin:12px 0 0">Krypto kann in wenigen Wochen 50 % und mehr verlieren. Gewinne sind steuerfrei, wenn du länger als ein Jahr hältst.</p>
   </section>
 
-  <!-- HANDELN -->
-  <section class="view" id="v-trade" hidden>
-    <div class="split">
-      <div class="box">
-        <div class="box-h"><h2>Handeln über Jupiter</h2><span class="muted small">Solana-Token tauschen mit deinem eigenen Wallet</span></div>
-        <div class="box-b">
-          <p class="small" id="j-state">Lade das Handelsfenster von Jupiter …</p>
-          <div class="banner" id="j-trade-banner" hidden><span>Trade erkannt. Trag ihn jetzt fürs Finanzamt ins Journal ein, die Felder sind schon vorausgefüllt.</span><a class="btn primary" href="#journal">Zum Journal</a></div>
-          <div id="jupiter-plugin" style="min-height:560px"></div>
-        </div>
-      </div>
-      <div class="box detail">
-        <div class="box-b">
-          <div class="sub" style="margin-top:0">So funktioniert es</div>
-          <ol class="small" style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:6px;line-height:1.5">
-            <li>Im Fenster links auf <b>Connect Wallet</b> klicken und dein Wallet wählen (zum Beispiel Phantom).</li>
-            <li>Oben den Token wählen, den du abgibst (meist SOL), unten den, den du bekommst. Aus den Memecoin-Details kommst du mit "Im Handelsfenster öffnen" direkt hierher.</li>
-            <li>Betrag eingeben, Preis und Gebühren prüfen, auf <b>Swap</b> klicken.</li>
-            <li>Dein Wallet öffnet sich. Erst wenn du dort bestätigst, wird gehandelt.</li>
-          </ol>
-          <div class="sub">Sicherheitsregeln</div>
-          <ul class="small" style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:6px;line-height:1.5">
-            <li>Gib deine Wiederherstellungsphrase (die 12 oder 24 Wörter) <b>niemals</b> ein, auch nicht hier, nicht bei Jupiter und nicht bei Claude. Wer danach fragt, will dich bestehlen.</li>
-            <li>Prüfe vor dem Bestätigen im Wallet, ob Token und Betrag stimmen.</li>
-            <li>Fang mit einem sehr kleinen Betrag an, zum Beispiel 5 Euro.</li>
-            <li>Lege dir eine feste Grenze pro Trade und pro Monat fest und halte sie ein.</li>
-            <li>Memecoins mit Risiko "Extrem" sind oft Fallen, aus denen man nicht mehr verkaufen kann.</li>
-          </ul>
-          <div class="sub">Gebühren</div>
-          <p class="small" style="margin:0;line-height:1.5">Jupiter nimmt je nach Token 0 bis 0,5 % (die App von Phantom etwa 0,85 %). Dazu kommt eine kleine Netzwerkgebühr von Solana. Diese Seite nimmt nichts.</p>
-          <p class="note">Das Handelsfenster kommt direkt von Jupiter. Diese Seite sieht weder deine Schlüssel noch dein Guthaben und kann nichts ohne deine Bestätigung im Wallet ausführen.</p>
-        </div>
-      </div>
-    </div>
+  <section class="box">
+    <h2>Das Wichtigste aus den Nachrichten</h2>
+    <p class="sub">Die drei wichtigsten Meldungen, kurz. Für Langzeitanleger sind Nachrichten selten ein Grund, den Sparplan zu ändern.</p>
+    <div class="news" id="news"></div>
   </section>
 
-  <!-- JOURNAL -->
-  <section class="view" id="v-journal" hidden>
-    <div class="split">
-      <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
-        <div class="box">
-          <div class="box-h"><h2>Automatisch aus deinem Wallet</h2><span class="muted small">Solana, zum Beispiel Phantom</span></div>
-          <div class="box-b">
-            <div class="form">
-              <label class="wide">Deine Wallet-Adresse (öffentlich)<input id="jw-addr" placeholder="z. B. 7xKX…" autocomplete="off" spellcheck="false"></label>
-            </div>
-            <div class="links"><button class="btn primary" type="button" id="jw-save">Speichern und abgleichen</button><button class="btn" type="button" id="jw-remove">Entfernen</button></div>
-            <p id="jw-state" class="small" style="margin:8px 0 0"></p>
-            <p class="note">Die Seite liest alle 2 Minuten aus der Blockchain, was du getauscht hast, auch Trades direkt in der Phantom-App, und trägt sie mit Wert in Euro ins Journal ein. Dafür braucht sie nur deine öffentliche Adresse, wie eine Kontonummer zum Empfangen. Gib hier niemals deine Wiederherstellungsphrase oder einen privaten Schlüssel ein. Trades bei Trade Republic oder Bitvavo kann die Seite nicht sehen, die trägst du unten ein.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-h"><h2>Trade von Hand eintragen</h2><span class="muted small">Nach jedem Kauf oder Verkauf</span></div>
-          <div class="box-b">
-            <div id="j-hint"></div>
-            <form id="jf" class="form" autocomplete="off">
-              <label>Datum und Uhrzeit<input type="datetime-local" id="jf-ts" required></label>
-              <label>Plattform<select id="jf-pl"><option>Trade Republic</option><option>Bitvavo</option><option>Jupiter (Wallet)</option><option>Binance</option><option>Andere</option></select></label>
-              <label>Anlageart<select id="jf-kl"><option value="krypto">Krypto / Memecoin</option><option value="etf">ETF / Aktie</option></select></label>
-              <label>Art<select id="jf-art"><option value="kauf">Kauf</option><option value="verkauf">Verkauf</option><option value="tausch">Tausch (Coin gegen Coin)</option></select></label>
-              <label><span id="jf-a1l">Was (z. B. BTC, SOL, SPY)</span><input id="jf-a1" required placeholder="SOL"></label>
-              <label><span id="jf-m1l">Menge</span><input id="jf-m1" type="text" inputmode="decimal" required placeholder="0,5"></label>
-              <label class="tx2" hidden>Erhalten: was<input id="jf-a2" placeholder="BONK"></label>
-              <label class="tx2" hidden>Erhalten: Menge<input id="jf-m2" type="text" inputmode="decimal" placeholder="1000000"></label>
-              <label><span id="jf-wl">Gesamtwert in €</span><input id="jf-w" type="text" inputmode="decimal" required placeholder="50,00"></label>
-              <label>Gebühren in €<input id="jf-g" type="text" inputmode="decimal" placeholder="1,00"></label>
-              <label class="wide">Transaktions-ID oder Notiz (optional)<input id="jf-n" placeholder="z. B. Signatur aus dem Wallet"></label>
-              <div class="wide links" style="margin-top:0">
-                <button class="btn primary" type="submit">Speichern</button>
-                <button class="btn" type="button" id="jf-solw">Wert aus aktuellem SOL-Kurs berechnen</button>
-                <span id="jf-msg" class="small"></span>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-h"><h2>Speicherort auf deinem Computer</h2></div>
-          <div class="box-b">
-            <p class="small" id="jfile-state" style="margin:0 0 8px">Noch kein Ordner verbunden. Deine Einträge liegen bis dahin nur in diesem Browser.</p>
-            <div class="links" style="margin-top:0">
-              <button class="btn primary" type="button" id="jfile-new">Ordner "Trading Historie" verbinden</button>
-              <button class="btn" type="button" id="jfile-csv">Steuerliste als CSV herunterladen</button>
-            </div>
-            <p class="note">Wähle im Fenster auf dem Desktop den Ordner "Trading Historie" und klicke auf "Ordner auswählen", dann auf "Änderungen speichern" oder "Zulassen". Danach speichert die Seite nach jedem Eintrag automatisch dort: das Journal und pro Jahr eine Steuerliste, die du mit Excel öffnest. Beim ersten Speichern nach dem Öffnen der Seite fragt der Browser einmal nach. Das funktioniert in Chrome und Edge am PC, nicht im Browser-Fenster neben dem Claude-Chat.</p>
-          </div>
-        </div>
+  <section class="box tax">
+    <h2>Steuerregeln zum Nachlesen</h2>
+    <p class="sub">Stand: Oktober 2026, zuletzt von Claude geprüft am 26.10.2026. Ändert sich ein Gesetz, aktualisiere ich diesen Teil, wenn du mir "Steuer-Update" schreibst. Keine Steuerberatung.</p>
+    <div class="grid">
+      <div class="step">
+        <span class="n">ETFS UND AKTIEN</span>
+        <p><b>Steuersatz:</b> 25 % Abgeltungsteuer plus Solidaritätszuschlag, zusammen etwa 26,4 %, eventuell plus Kirchensteuer.</p>
+        <p><b>Freibetrag:</b> 1.000 € Kapitalerträge pro Jahr sind steuerfrei (Sparerpauschbetrag, verheiratet 2.000 €). Dafür beim Broker einen Freistellungsauftrag stellen.</p>
+        <p><b>Teilfreistellung:</b> Bei Aktien-ETFs sind 30 % der Gewinne und Ausschüttungen steuerfrei.</p>
+        <p><b>Vorabpauschale:</b> Bei thesaurierenden ETFs wird jedes Jahr Anfang Januar ein kleiner Betrag versteuert, auch ohne Verkauf. Er wird beim späteren Verkauf angerechnet.</p>
+        <p><b>Haltedauer:</b> Spielt bei ETFs keine Rolle, auch nach vielen Jahren fällt Steuer an.</p>
+        <p><b>Aufwand für dich:</b> Ein deutscher Broker zieht alles automatisch ab.</p>
       </div>
-      <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
-        <div class="box">
-          <div class="box-h"><h2>Steuer-Übersicht Krypto</h2><div class="tools"><label class="small muted" for="jrate">Dein Steuersatz</label><input id="jrate" class="search" style="width:4.5rem" type="text" inputmode="decimal" value="30" aria-label="Persönlicher Steuersatz in Prozent"><span class="small muted">%</span><select id="jy" class="search" style="width:auto" aria-label="Jahr"></select></div></div>
-          <div class="box-b">
-            <div class="sum" id="jsum"></div>
-            <p class="note">So rechnet die Seite (Stand 2026, keine Steuerberatung): Krypto ist in Deutschland ein privates Veräußerungsgeschäft. Gewinne sind steuerfrei, wenn du länger als ein Jahr gehalten hast. Verkaufst du früher, zählt der Gewinn. Liegen alle steuerpflichtigen Gewinne und Verluste eines Jahres zusammen unter 1.000 €, bleibt alles steuerfrei (Freigrenze). Ab 1.000 € ist der ganze Betrag steuerpflichtig und kommt in die Anlage SO. Auch ein Tausch Coin gegen Coin zählt als Verkauf. Verkauft wird rechnerisch immer zuerst das, was du zuerst gekauft hast (FIFO). ETFs und Aktien bei einem deutschen Broker: Die Steuer zieht der Broker automatisch ab. Stelle dort einen Freistellungsauftrag (bis 1.000 € im Jahr steuerfrei). Die geschätzte Steuer rechnet mit deinem persönlichen Steuersatz. Den findest du in deinem letzten Steuerbescheid, für Arbeitnehmer liegt er oft zwischen 20 und 35 %. Kirchensteuer und Solidaritätszuschlag sind nicht eingerechnet.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-h"><h2>Verkäufe mit Gewinn und Verlust</h2></div>
-          <div class="scroll" style="max-height:360px"><table id="jsales"><thead><tr><th>Datum</th><th>Was</th><th>Menge</th><th>Erlös €</th><th>Kosten €</th><th>Ergebnis €</th><th>Gehalten</th><th>Steuer</th></tr></thead><tbody></tbody></table></div>
-        </div>
-        <div class="box">
-          <div class="box-h"><h2>Alle Einträge</h2><span class="muted small" id="jcount"></span></div>
-          <div class="scroll" style="max-height:360px"><table id="jall"><thead><tr><th>Datum</th><th>Art</th><th>Was</th><th>Menge</th><th>Wert €</th><th>Plattform</th><th></th></tr></thead><tbody></tbody></table></div>
-        </div>
+      <div class="step">
+        <span class="n">KRYPTO</span>
+        <p><b>Nach einem Jahr steuerfrei:</b> Verkaufst du erst nach mehr als 12 Monaten, ist der Gewinn komplett steuerfrei, egal wie hoch.</p>
+        <p><b>Vorher:</b> Der Gewinn zählt zum Einkommen und wird mit deinem persönlichen Steuersatz besteuert.</p>
+        <p><b>Freigrenze:</b> Liegen alle steuerpflichtigen Gewinne eines Jahres unter 1.000 €, bleibt alles steuerfrei. Ab 1.000 € ist der ganze Betrag steuerpflichtig.</p>
+        <p><b>Tausch:</b> Auch Coin gegen Coin zählt als Verkauf.</p>
+        <p><b>Staking und Belohnungen:</b> Sind beim Erhalt Einkommen. Ab 256 € im Jahr wird es steuerpflichtig.</p>
+        <p><b>Aufwand für dich:</b> Selbst in die Steuererklärung (Anlage SO), Käufe und Verkäufe aufbewahren.</p>
+      </div>
+      <div class="step">
+        <span class="n">GOLD</span>
+        <p><b>Xetra-Gold und echtes Gold:</b> Nach mehr als einem Jahr steuerfrei, weil du einen Anspruch auf echtes Gold hast.</p>
+        <p><b>Davor:</b> Wie bei Krypto, mit persönlichem Steuersatz und 1.000 € Freigrenze.</p>
       </div>
     </div>
+    <p class="small" style="margin:12px 0 0">Aktuell nachlesen: <a href="https://www.steuertipps.de/altersvorsorge-rente-finanzen/krypto-anlage/steuern-optimieren/themen" target="_blank" rel="noopener noreferrer">Steuertipps zu Krypto-Steuern</a> · <a href="https://www.finanztip.de/indexfonds-etf/etf-steuern/" target="_blank" rel="noopener noreferrer">Finanztip zu ETF-Steuern</a> · <a href="https://www.verbraucherzentrale.de/wissen/geld-versicherungen/sparen-und-anlegen" target="_blank" rel="noopener noreferrer">Verbraucherzentrale: Sparen und Anlegen</a></p>
   </section>
 
-  <!-- LAGE -->
-  <section class="view" id="v-lage" hidden>
-    <div class="box" style="margin-bottom:14px">
-      <div class="box-h"><h2>Einordnung von Claude</h2><span class="muted small" id="l-stand"></span></div>
-      <div class="box-b"><div class="grid" id="l-ideas"></div></div>
-    </div>
-    <div class="box">
-      <div class="box-h"><h2>Auffälligkeiten</h2><span class="muted small">automatisch nach festen Regeln, keine Empfehlung</span></div>
-      <div class="box-b"><div class="grid" id="l-signals"></div><p class="note" id="l-rules"></p></div>
-    </div>
-  </section>
-</main>
+  <footer>Daten: Yahoo Finance oder Stooq (ETFs), Binance und CoinGecko (Krypto), tagesschau, BTC-ECHO, BBC und weitere (Nachrichten). Live-Charts von TradingView.</footer>
+</div>
 
 <script>
 (function () {
   'use strict';
-  // ------------------------------------------------------------------ Helfer
   const TZ = 'Europe/Berlin';
-  const BIN_REST = 'https://data-api.binance.vision/api/v3';
-  const BIN_WS = 'wss://data-stream.binance.vision';
-  const DEX = 'https://api.dexscreener.com';
-  const $ = (s, r) => (r || document).querySelector(s);
-  function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  const $ = (s) => document.querySelector(s);
+  function el(t, c, x) { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
   const nf = (d) => new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });
-  function fP(v) {
-    if (v == null || !isFinite(v)) return '–';
-    if (v >= 1000) return nf(2).format(v);
-    if (v >= 1) return nf(v >= 100 ? 2 : 4).format(v);
-    if (v === 0) return '0';
-    const dec = Math.min(12, Math.max(4, -Math.floor(Math.log10(v)) + 3));
-    return nf(dec).format(v);
-  }
-  const fPct = (v) => (v == null || !isFinite(v)) ? '–' : (v > 0 ? '+' : '') + nf(2).format(v) + ' %';
-  const fBig = (v) => (v == null || !isFinite(v)) ? '–' : new Intl.NumberFormat('de-DE', { notation: 'compact', maximumFractionDigits: 1 }).format(v);
-  const fTime = (ms) => new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short', timeZone: TZ }).format(new Date(ms));
+  const fEur = (v, d) => (v == null || !isFinite(v)) ? '–' : nf(d == null ? 2 : d).format(v) + ' €';
+  const fPct = (v) => (v == null || !isFinite(v)) ? '–' : (v > 0 ? '+' : '') + nf(1).format(v) + ' %';
   const cls = (v) => v > 0 ? 'up' : v < 0 ? 'down' : '';
-  function ago(ms) {
-    const m = Math.round((Date.now() - ms) / 60000);
-    if (m < 1) return 'gerade eben';
-    if (m < 60) return 'vor ' + m + ' Min.';
-    const h = Math.round(m / 60);
-    if (h < 48) return 'vor ' + h + ' Std.';
-    return 'vor ' + Math.round(h / 24) + ' Tagen';
-  }
-  function getJSON(url) {
-    return fetch(url, { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
-  }
-  function setDot(id, s, text) { const e = document.getElementById(id); e.dataset.s = s; e.textContent = text; }
-  function chips(host, items, current, onPick) {
-    host.replaceChildren();
-    items.forEach(([val, label]) => {
-      const b = el('button', 'chip', label); b.type = 'button';
-      b.setAttribute('aria-pressed', String(val === current));
-      b.addEventListener('click', () => onPick(val));
-      host.appendChild(b);
-    });
-  }
-  function sortable(table, st, render) {
-    table.querySelectorAll('th').forEach((th) => {
-      th.tabIndex = 0;
-      const go = () => {
-        const k = th.dataset.k;
-        if (st.sort.k === k) st.sort.dir *= -1; else { st.sort.k = k; st.sort.dir = -1; }
-        table.querySelectorAll('th').forEach((x) => x.removeAttribute('aria-sort'));
-        th.setAttribute('aria-sort', st.sort.dir < 0 ? 'descending' : 'ascending');
-        render();
-      };
-      th.addEventListener('click', go);
-      th.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
-    });
-  }
-  function cmp(a, b, k, dir) {
-    const x = a[k], y = b[k];
-    if (typeof x === 'string' || typeof y === 'string') return dir * String(x || '').localeCompare(String(y || ''), 'de');
-    return dir * ((x == null ? -Infinity : x) - (y == null ? -Infinity : y));
-  }
-  function stat(label, value, c) { const d = el('div'); d.appendChild(el('span', '', label)); d.appendChild(el('span', c || '', value)); return d; }
+  const num = (v) => { let t = String(v || '').trim().replace(/\s/g, ''); if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.'); else if ((t.match(/\./g) || []).length > 1) t = t.replace(/\./g, ''); const n = parseFloat(t); return isFinite(n) ? n : NaN; };
+  function ago(ms) { const m = Math.round((Date.now() - ms) / 60000); if (m < 60) return 'vor ' + Math.max(1, m) + ' Min.'; const h = Math.round(m / 60); return h < 48 ? 'vor ' + h + ' Std.' : 'vor ' + Math.round(h / 24) + ' Tagen'; }
+  function setDot(id, s, t) { const e = document.getElementById(id); e.dataset.s = s; e.textContent = t; }
+  const D = { data: null, sel: null };
 
-  // ------------------------------------------------------------------ Chart (Kerzen + Volumen)
-  const S = { hover: false };
-  function drawChart(box, rows, opts) {
-    box.replaceChildren();
-    if (!rows || rows.length < 2) { box.appendChild(el('div', 'empty', 'Keine Kerzendaten.')); return; }
+  // ---------------------------------------------------------------- ETFs
+  function spark(values, w, h) {
     const NS = 'http://www.w3.org/2000/svg';
-    const mk = (n, a) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
-    const W = Math.max(box.clientWidth, 320), H = 340, mt = 10, mb = 24, volH = 54, gap = 8;
-    const priceBottom = H - mb - volH - gap;
-    let lo = Infinity, hi = -Infinity, vmax = 0;
-    rows.forEach((r) => { lo = Math.min(lo, r.l); hi = Math.max(hi, r.h); vmax = Math.max(vmax, r.v || 0); });
-    if (hi === lo) { hi += 1; lo -= 1; }
-    const pad = (hi - lo) * 0.04; lo -= pad; hi += pad;
-    const raw = (hi - lo) / 5, pow = Math.pow(10, Math.floor(Math.log10(raw)));
-    const step = [1, 2, 2.5, 5, 10].map((m) => m * pow).find((s) => s >= raw);
-    const ticks = []; for (let t = Math.ceil(lo / step) * step; t <= hi; t += step) ticks.push(t);
-    const y = (v) => mt + (priceBottom - mt) * (1 - (v - lo) / (hi - lo));
-    const svg = mk('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Kerzenchart' });
-    box.appendChild(svg);
-    const probe = mk('text', { class: 'ax' }); svg.appendChild(probe);
-    let mr = 0; ticks.forEach((t) => { probe.textContent = fP(t); mr = Math.max(mr, probe.getComputedTextLength()); });
-    svg.removeChild(probe); mr = Math.ceil(mr) + 12;
-    const ml = 6, cw = (W - ml - mr) / rows.length, bw = Math.max(1.5, cw * 0.66);
-    ticks.forEach((t) => {
-      svg.appendChild(mk('line', { x1: ml, x2: W - mr, y1: y(t), y2: y(t), stroke: 'var(--line)' }));
-      const tx = mk('text', { class: 'ax', x: W - mr + 6, y: y(t) + 4 }); tx.textContent = fP(t); svg.appendChild(tx);
+    const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('width', w); svg.setAttribute('height', h); svg.setAttribute('viewBox', `0 0 ${w} ${h}`); svg.setAttribute('class', 'spark'); svg.setAttribute('aria-hidden', 'true');
+    if (!values || values.length < 2) return svg;
+    const lo = Math.min(...values), hi = Math.max(...values), span = hi - lo || 1;
+    const pts = values.map((v, i) => [(i / (values.length - 1)) * (w - 2) + 1, h - 2 - ((v - lo) / span) * (h - 4)]);
+    const line = document.createElementNS(NS, 'polyline');
+    line.setAttribute('points', pts.map((p) => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' '));
+    line.setAttribute('fill', 'none'); line.setAttribute('stroke-width', '1.6'); line.setAttribute('stroke-linejoin', 'round');
+    line.setAttribute('stroke', values[values.length - 1] >= values[0] ? 'var(--up)' : 'var(--down)');
+    svg.appendChild(line); return svg;
+  }
+  function renderEtfs() {
+    const e = D.data && D.data.etfs, tb = $('#etf tbody'); tb.replaceChildren();
+    if (!e) { const tr = el('tr'); const td = el('td', 'muted', 'Noch keine ETF-Daten. Sie kommen mit dem nächsten automatischen Abruf.'); td.colSpan = 9; tr.appendChild(td); tb.appendChild(tr); return; }
+    $('#e-src').textContent = 'Stand ' + new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short', timeZone: TZ }).format(new Date(e.stand)) + (e.veraltet ? ' (veraltet)' : '') + '.';
+    e.daten.forEach((r) => {
+      const tr = el('tr'); tr.tabIndex = 0; tr.setAttribute('aria-selected', String(D.sel === r.sym));
+      const n = el('td', 'nm'); n.appendChild(el('b', '', r.name)); n.appendChild(el('span', '', r.region + ' · ' + r.art + ' · ' + r.isin)); tr.appendChild(n);
+      tr.appendChild(el('td', 'muted', r.ter));
+      tr.appendChild(el('td', '', fEur(r.preis)));
+      ['aend1d', 'aend1y', 'aend3y', 'aend5y', 'pa5y'].forEach((k) => tr.appendChild(el('td', cls(r[k]), fPct(r[k]))));
+      const sp = el('td'); sp.appendChild(spark(r.verlauf, 110, 28)); tr.appendChild(sp);
+      const open = () => openChart(r);
+      tr.addEventListener('click', open); tr.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') open(); });
+      tb.appendChild(tr);
     });
-    const intraday = opts && opts.intraday;
-    const lf = new Intl.DateTimeFormat('de-DE', intraday ? { hour: '2-digit', minute: '2-digit', timeZone: TZ } : { day: 'numeric', month: 'numeric', timeZone: 'UTC' });
-    const every = Math.max(1, Math.round(rows.length / 6));
-    rows.forEach((r, i) => {
-      const cx = ml + cw * i + cw / 2, col = r.c >= r.o ? 'var(--up)' : 'var(--down)';
-      svg.appendChild(mk('line', { x1: cx, x2: cx, y1: y(r.h), y2: y(r.l), stroke: col, 'stroke-width': 1 }));
-      const t = y(Math.max(r.o, r.c)), b = y(Math.min(r.o, r.c));
-      svg.appendChild(mk('rect', { x: cx - bw / 2, y: t, width: bw, height: Math.max(1, b - t), fill: col }));
-      if (vmax > 0) {
-        const vh = (r.v / vmax) * volH;
-        svg.appendChild(mk('rect', { x: cx - bw / 2, y: H - mb - vh, width: bw, height: Math.max(0.5, vh), fill: col, opacity: 0.35 }));
-      }
-      if (i % every === 0) { const tx = mk('text', { class: 'ax', x: cx, y: H - 6, 'text-anchor': 'middle' }); tx.textContent = lf.format(new Date(r.t)); svg.appendChild(tx); }
-    });
-    const last = rows[rows.length - 1];
-    const ly = y(last.c);
-    svg.appendChild(mk('line', { x1: ml, x2: W - mr, y1: ly, y2: ly, stroke: last.c >= last.o ? 'var(--up)' : 'var(--down)', 'stroke-dasharray': '3 3', opacity: 0.8 }));
-    const vline = mk('line', { y1: mt, y2: H - mb, stroke: 'var(--muted)', visibility: 'hidden' }); svg.appendChild(vline);
-    const tip = el('div', 'tip'); tip.hidden = true; box.appendChild(tip);
-    const hit = mk('rect', { x: ml, y: 0, width: W - ml - mr, height: H - mb, fill: 'transparent' }); svg.appendChild(hit);
-    const full = new Intl.DateTimeFormat('de-DE', intraday ? { dateStyle: 'short', timeStyle: 'short', timeZone: TZ } : { dateStyle: 'medium', timeZone: 'UTC' });
-    hit.addEventListener('mousemove', (ev) => {
-      S.hover = true;
-      const bb = box.getBoundingClientRect(), sx = (ev.clientX - bb.left) * (W / bb.width);
-      const i = Math.max(0, Math.min(rows.length - 1, Math.floor((sx - ml) / cw)));
-      const r = rows[i], cx = ml + cw * i + cw / 2;
-      vline.setAttribute('x1', cx); vline.setAttribute('x2', cx); vline.setAttribute('visibility', 'visible');
-      const ch = (r.c / r.o - 1) * 100;
-      tip.replaceChildren(el('div', 'muted', full.format(new Date(r.t))), el('div', '', 'Eröffnung ' + fP(r.o)), el('div', '', 'Hoch ' + fP(r.h)), el('div', '', 'Tief ' + fP(r.l)), el('div', '', 'Schluss ' + fP(r.c)), el('div', cls(ch), fPct(ch)));
-      tip.hidden = false;
-      let left = cx * (bb.width / W) + 12; if (left + tip.offsetWidth > box.clientWidth) left = cx * (bb.width / W) - tip.offsetWidth - 12;
-      tip.style.left = Math.max(0, left) + 'px';
-      tip.style.top = Math.max(0, Math.min(ev.clientY - bb.top - tip.offsetHeight / 2, box.clientHeight - tip.offsetHeight)) + 'px';
-    });
-    hit.addEventListener('mouseleave', () => { S.hover = false; tip.hidden = true; vline.setAttribute('visibility', 'hidden'); });
+    const w = e.daten.find((x) => x.sym === 'VWCE') || e.daten.find((x) => x.sym === 'EUNL');
+    if (w && w.pa5y != null) {
+      $('#summary').textContent = 'Zum Vergleich: Der ' + w.name + ' lag in den letzten 5 Jahren bei ' + fPct(w.aend5y) + ', das sind im Schnitt ' + fPct(w.pa5y) + ' pro Jahr. Vergangene Renditen sind keine Garantie für die Zukunft.';
+    }
+    if (!D.sel && e.daten[0]) openChart(e.daten.find((x) => x.sym === 'VWCE') || e.daten[0]);
+  }
+  function openChart(r) {
+    D.sel = r.sym;
+    document.querySelectorAll('#etf tbody tr').forEach((tr, i) => tr.setAttribute('aria-selected', String(D.data.etfs.daten[i] && D.data.etfs.daten[i].sym === r.sym)));
+    const host = $('#chart'); host.replaceChildren();
+    host.appendChild(el('p', 'small', r.name + ' (' + r.isin + '). Kaufen kannst du ihn bei deinem Broker, zum Beispiel per Sparplan in der App von Trade Republic. Suche dort nach der ISIN.'));
+    const c = el('div', 'tradingview-widget-container'); c.style.height = '420px';
+    const w = el('div', 'tradingview-widget-container__widget'); w.style.height = '100%'; c.appendChild(w);
+    const s = document.createElement('script'); s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js'; s.async = true;
+    s.textContent = JSON.stringify({ autosize: true, symbol: r.tv, interval: 'W', range: '60M', timezone: 'Europe/Berlin', theme: 'dark', style: '2', locale: 'de_DE', allow_symbol_change: false, hide_side_toolbar: true, backgroundColor: '#161d2a', support_host: 'https://www.tradingview.com' });
+    c.appendChild(s); host.appendChild(c);
+    const a = el('a', 'small', 'Mehr Infos zu diesem ETF bei justETF'); a.href = 'https://www.justetf.com/de/etf-profile.html?isin=' + r.isin; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    const p = el('p', ''); p.appendChild(a); host.appendChild(p);
   }
 
-  // ------------------------------------------------------------------ Daten aus GitHub (latest.json)
-  const D = { data: null, ideas: null };
-  function loadData() {
-    getJSON('data/latest.json?t=' + Date.now()).then((d) => {
-      D.data = d;
-      if (!d.erzeugt) { setDot('st-data', 'off', 'Daten: noch kein Abruf'); }
-      else {
-        const t = new Date(d.erzeugt).getTime(), old = (Date.now() - t) / 3.6e6 > 3;
-        setDot('st-data', old ? 'off' : (d.fehler ? 'fallback' : 'live'), 'Daten ' + ago(t) + (d.fehler ? ', teilweise Fehler' : ''));
-      }
-      renderEtfs(); renderNews(); renderSignals();
-      if (K.sel) renderKNews(); if (E.sel) openEtf(E.sel, true);
-    }).catch(() => setDot('st-data', 'off', 'Daten nicht ladbar'));
-    getJSON('data/einordnung.json?t=' + Date.now()).then((d) => { D.ideas = d; renderIdeas(); }).catch(() => { D.ideas = null; renderIdeas(); });
+  // ---------------------------------------------------------------- Sparplan-Rechner
+  let calcTouched = false;
+  function calc() {
+    const m = num($('#c-rate').value), y = Math.round(num($('#c-years').value)), r = num($('#c-ret').value) / 100, s0 = num($('#c-start').value) || 0;
+    if (!(m >= 0) || !(y > 0) || !(y <= 60) || !isFinite(r)) { ['#r-in', '#r-out', '#r-gain'].forEach((x) => { $(x).textContent = '–'; }); $('#r-note').textContent = 'Bitte gültige Zahlen eingeben (Jahre zwischen 1 und 60).'; return; }
+    const mr = Math.pow(1 + r, 1 / 12) - 1, n = y * 12;
+    let v = s0; for (let i = 0; i < n; i++) v = v * (1 + mr) + m;
+    const paid = s0 + m * n;
+    $('#r-in').textContent = fEur(paid, 0); $('#r-out').textContent = fEur(v, 0); $('#r-gain').textContent = fEur(v - paid, 0);
+    $('#r-note').textContent = 'Vor Steuern und ohne Inflation. Tipp: Lege von jedem Gewinn deines Shops einen festen Anteil zurück, zum Beispiel 10 %, und erhöhe den Sparplan, sobald es geht.';
+  }
+  ['#c-rate', '#c-years', '#c-ret', '#c-start'].forEach((s) => $(s).addEventListener('input', () => { if (s === '#c-ret') calcTouched = true; calc(); }));
+  calc();
+
+  // ---------------------------------------------------------------- Krypto (live)
+  const COINS = [['BTC', 'Bitcoin'], ['ETH', 'Ether'], ['SOL', 'Solana']];
+  const C = {};
+  function renderCoins() {
+    const host = $('#coins'); host.replaceChildren();
+    const k = (D.data && D.data.kurse && D.data.kurse.daten) || [];
+    COINS.forEach(([s, n]) => {
+      const box = el('div', 'coin'); box.id = 'c-' + s;
+      box.appendChild(el('div', 'muted small', n + ' (' + s + ')'));
+      const kk = k.find((x) => x.symbol === s) || {};
+      const live = C[s];
+      box.appendChild(el('div', 'p', fEur(live ? live.c : kk.preis)));
+      const ch = live ? live.chg : kk.aend24;
+      box.appendChild(el('div', 'small ' + cls(ch), fPct(ch) + ' heute'));
+      box.appendChild(el('div', 'small ' + cls(kk.aend1y), fPct(kk.aend1y) + ' in 1 Jahr'));
+      host.appendChild(box);
+    });
+  }
+  function onTick(s, c, o) {
+    const prev = C[s] && C[s].c;
+    C[s] = { c, chg: o > 0 ? (c / o - 1) * 100 : null };
+    const box = document.getElementById('c-' + s); if (!box) return;
+    const p = box.children[1]; p.textContent = fEur(c);
+    if (prev != null && prev !== c) { p.classList.remove('fu', 'fd'); void p.offsetWidth; p.classList.add(c > prev ? 'fu' : 'fd'); }
+    const ch = box.children[2]; ch.textContent = fPct(C[s].chg) + ' heute'; ch.className = 'small ' + cls(C[s].chg);
+  }
+  let tries = 0;
+  function connect() {
+    const streams = COINS.map(([s]) => s.toLowerCase() + 'eur@miniTicker').join('/');
+    let ws; try { ws = new WebSocket('wss://data-stream.binance.vision/stream?streams=' + streams); } catch (e) { poll(); return; }
+    ws.onopen = () => { tries = 0; setDot('st-live', 'ok', 'Krypto live'); };
+    ws.onmessage = (ev) => { let m; try { m = JSON.parse(ev.data); } catch (e) { return; } const x = m && m.data; if (x && x.s) onTick(x.s.replace(/EUR$/, ''), +x.c, +x.o); };
+    ws.onerror = () => { try { ws.close(); } catch (e) { /* zu */ } };
+    ws.onclose = () => { tries++; if (tries > 3) { poll(); return; } setDot('st-live', 'off', 'Krypto: neuer Versuch …'); setTimeout(connect, 2000 * tries); };
+  }
+  let pollT = null;
+  function poll() {
+    if (pollT) return;
+    setDot('st-live', 'warn', 'Krypto: alle 30 Sek.');
+    const url = 'https://data-api.binance.vision/api/v3/ticker/24hr?symbols=' + encodeURIComponent(JSON.stringify(COINS.map(([s]) => s + 'EUR')));
+    const run = () => fetch(url).then((r) => r.json()).then((rows) => rows.forEach((r) => onTick(r.symbol.replace(/EUR$/, ''), +r.lastPrice, +r.openPrice))).catch(() => setDot('st-live', 'off', 'Krypto nicht erreichbar'));
+    run(); pollT = setInterval(run, 30000);
   }
 
-  // News-Zuordnung zu Coins/ETFs
-  const NAMES = { BTC: ['bitcoin', 'btc'], ETH: ['ether', 'ethereum', 'eth'], SOL: ['solana', 'sol'], XRP: ['xrp', 'ripple'], DOGE: ['dogecoin', 'doge'], BNB: ['bnb', 'binance coin'], ADA: ['cardano', 'ada'], TRX: ['tron', 'trx'], AVAX: ['avalanche', 'avax'], LINK: ['chainlink'], DOT: ['polkadot'], PEPE: ['pepe'], SHIB: ['shiba'], SUI: ['sui'], TON: ['toncoin', 'ton'], LTC: ['litecoin'], ZEC: ['zcash', 'zec'], HYPE: ['hyperliquid', 'hype'], WIF: ['dogwifhat', 'wif'], BONK: ['bonk'], TRUMP: ['trump coin', '$trump', 'official trump'], XLM: ['stellar'], NEAR: ['near protocol'], UNI: ['uniswap'], AAVE: ['aave'], APT: ['aptos'] };
-  const ETF_WORDS = { SPY: ['s&p 500', 'stocks', 'wall street'], QQQ: ['nasdaq', 'tech stocks'], URTH: ['global stocks', 'world stocks'], GLD: ['gold'], SLV: ['silver'], USO: ['oil', 'crude', 'brent', 'opec', 'hormuz'], UNG: ['natural gas', 'lng', 'gas prices'], XLE: ['oil', 'energy', 'exxon', 'chevron'], ITA: ['defense', 'defence', 'military', 'missile', 'war ', 'nato', 'weapons'], IBIT: ['bitcoin etf', 'bitcoin'], ETHA: ['ether etf', 'ethereum'] };
-  function matchNews(words) {
-    const list = (D.data && D.data.news && D.data.news.daten) || [];
-    const res = words.map((w) => w.length <= 4 && /^[a-z$]+$/.test(w) ? new RegExp('\\b' + w.replace('$', '\\$') + '\\b', 'i') : null);
-    return list.filter((n) => {
-      const hay = (n.titel + ' ' + (n.text || '')).toLowerCase();
-      return words.some((w, i) => res[i] ? res[i].test(hay) : hay.includes(w));
-    });
+  // ---------------------------------------------------------------- Nachrichten (drei, kurz)
+  const TR = { t: null };
+  async function trInit() {
+    try { if (!('Translator' in self)) return; const av = await self.Translator.availability({ sourceLanguage: 'en', targetLanguage: 'de' }); if (av === 'available') TR.t = await self.Translator.create({ sourceLanguage: 'en', targetLanguage: 'de' }); } catch (e) { /* ohne Übersetzung */ }
   }
-  // Übersetzung ins Deutsche direkt im Browser (Chrome am PC, ohne fremden Server)
-  const TR = { t: null, state: 'unbekannt', cache: {}, queue: [], busy: false };
-  try { TR.cache = JSON.parse(localStorage.getItem('mts-tr') || '{}'); } catch (e) { TR.cache = {}; }
-  async function trInit(userClick) {
-    if (TR.t) return true;
-    if (!('Translator' in self)) { TR.state = 'nicht verfügbar'; return false; }
-    try {
-      const av = await self.Translator.availability({ sourceLanguage: 'en', targetLanguage: 'de' });
-      if (av === 'unavailable') { TR.state = 'nicht verfügbar'; return false; }
-      if (av !== 'available' && !userClick) { TR.state = 'braucht Klick'; return false; }
-      TR.t = await self.Translator.create({ sourceLanguage: 'en', targetLanguage: 'de' });
-      TR.state = 'aktiv'; return true;
-    } catch (e) { TR.state = 'braucht Klick'; return false; }
-  }
-  function trSave() { try { const k = Object.keys(TR.cache); if (k.length > 600) k.slice(0, k.length - 600).forEach((x) => delete TR.cache[x]); localStorage.setItem('mts-tr', JSON.stringify(TR.cache)); } catch (e) { /* egal */ } }
-  async function trText(t) {
-    if (!t) return t;
-    if (TR.cache[t]) return TR.cache[t];
-    if (!TR.t) return null;
-    try { const r = await TR.t.translate(t); TR.cache[t] = r; return r; } catch (e) { return null; }
-  }
-  function trApply(node, text) {
-    if (!text) return;
-    if (TR.cache[text]) { node.textContent = TR.cache[text]; return; }
-    if (!TR.t) return;
-    TR.queue.push([node, text]); trRun();
-  }
-  async function trRun() {
-    if (TR.busy) return; TR.busy = true;
-    while (TR.queue.length) { const [node, text] = TR.queue.shift(); const r = await trText(text); if (r && node.isConnected) node.textContent = r; }
-    trSave(); TR.busy = false;
-  }
-  function isGerman(n) { return n.sprache === 'de'; }
-  // Welche Coins und ETFs betrifft eine Meldung? Wird zu Knöpfen, die direkt zur Ansicht mit Chart und Handel springen.
-  function newsAssets(n) {
-    const hay = ' ' + (n.titel + ' ' + (n.text || '')).toLowerCase() + ' ';
-    const out = [];
-    Object.keys(NAMES).forEach((sym) => {
-      if (!K.map.has(sym + 'USDT')) return;
-      if (NAMES[sym].some((w) => (w.length <= 4 && /^[a-z$]+$/.test(w)) ? new RegExp('\\b' + w.replace('$', '\\$') + '\\b').test(hay) : hay.includes(w))) out.push({ typ: 'krypto', sym, label: sym });
-    });
-    const etfs = (D.data && D.data.etfs && D.data.etfs.daten) || [];
-    Object.keys(ETF_WORDS).forEach((sym) => {
-      if (!etfs.some((e) => e.sym === sym)) return;
-      if (ETF_WORDS[sym].some((w) => hay.includes(w))) { const e = etfs.find((x) => x.sym === sym); out.push({ typ: 'etf', sym, label: e.name + ' (' + sym + ')' }); }
-    });
-    return out.slice(0, 5);
-  }
-  function goAsset(a) {
-    if (a.typ === 'krypto') { show('krypto'); openK(a.sym + 'USDT', true); }
-    else { show('etf'); openEtf(a.sym, false, true); }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-  function newsList(host, items, limit) {
-    host.replaceChildren();
-    if (!items.length) { host.appendChild(el('p', 'muted small', 'Keine passenden Meldungen in den letzten Tagen.')); return; }
-    items.slice(0, limit || 999).forEach((n) => {
+  function renderNews() {
+    const host = $('#news'); host.replaceChildren();
+    const all = (D.data && D.data.news && D.data.news.daten) || [];
+    const imp = (n) => n.wichtig == null ? 1 : n.wichtig;
+    const recent = all.filter((n) => Date.now() - new Date(n.zeit).getTime() < 48 * 3.6e6);
+    const seen = new Set();
+    const pick = recent.slice().sort((a, b) => (imp(b) - imp(a)) || ((b.sprache === 'de') - (a.sprache === 'de')) || b.zeit.localeCompare(a.zeit))
+      .filter((n) => { const k = n.titel.toLowerCase().replace(/[^a-zäöüß0-9]/g, '').slice(0, 40); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 3);
+    if (!pick.length) { host.appendChild(el('p', 'muted', 'Gerade keine wichtigen Meldungen.')); return; }
+    pick.forEach((n) => {
       const it = el('article', 'ni');
-      const top = el('div', 'meta');
-      const imp = n.wichtig == null ? 2 : n.wichtig;
-      if (imp >= 3) top.appendChild(el('span', 'badge lvl-3', 'Sehr wichtig')); else if (imp === 2) top.appendChild(el('span', 'badge lvl-2', 'Wichtig'));
-      top.appendChild(el('span', '', n.quelle + ', ' + ago(new Date(n.zeit).getTime())));
-      (n.tags || []).forEach((t) => top.appendChild(el('span', 'badge', t)));
-      it.appendChild(top);
       const a = el('a', '', n.titel); a.href = n.link; a.target = '_blank'; a.rel = 'noopener noreferrer'; it.appendChild(a);
-      let tx = null;
-      if (n.text) { tx = el('span', 'muted small', n.text); it.appendChild(tx); }
-      if (!isGerman(n)) { trApply(a, n.titel); if (tx) trApply(tx, n.text); }
-      const as = newsAssets(n);
-      if (as.length) {
-        const row = el('div', 'links'); row.style.marginTop = '4px';
-        row.appendChild(el('span', 'small muted', 'Betrifft:'));
-        as.forEach((x) => { const b = el('button', 'btn', x.label + ' ansehen'); b.type = 'button'; b.addEventListener('click', () => goAsset(x)); row.appendChild(b); });
-        it.appendChild(row);
-      }
+      it.appendChild(el('span', 'small muted', n.quelle + ', ' + ago(new Date(n.zeit).getTime()) + ((n.tags || []).length ? ' · ' + n.tags.join(', ') : '')));
+      if (n.sprache !== 'de' && TR.t) TR.t.translate(n.titel).then((t) => { if (a.isConnected) a.textContent = t; }).catch(() => {});
       host.appendChild(it);
     });
   }
 
-  // ------------------------------------------------------------------ Gemeinsame Bausteine (Ranglisten, Charts)
-  // Sortiert nach einem Zeitraum, leere Werte immer nach unten
-  function cmpN(a, b, k, dir) {
-    const x = a[k], y = b[k], nx = x == null || !isFinite(x), ny = y == null || !isFinite(y);
-    if (nx && ny) return 0; if (nx) return 1; if (ny) return -1;
-    return dir * (x - y);
+  // ---------------------------------------------------------------- Laden
+  function load() {
+    fetch('data/latest.json?t=' + Date.now(), { cache: 'no-store' }).then((r) => r.json()).then((d) => {
+      D.data = d;
+      const t = d.erzeugt ? new Date(d.erzeugt).getTime() : 0;
+      setDot('st-data', !t ? 'off' : (Date.now() - t > 6 * 3.6e6 ? 'warn' : 'ok'), t ? 'Daten ' + ago(t) : 'Daten: noch kein Abruf');
+      renderEtfs(); renderCoins(); renderNews();
+    }).catch(() => setDot('st-data', 'off', 'Daten nicht ladbar'));
   }
-  function rankBar(host, periods, st, onChange) {
-    host.replaceChildren();
-    const g1 = el('div', 'tabs'), g2 = el('div', 'tabs');
-    periods.forEach(([k, l]) => { const b = el('button', 'chip', l); b.type = 'button'; b.setAttribute('aria-pressed', String(!st.manual && st.per === k)); b.addEventListener('click', () => { st.per = k; st.manual = false; onChange(); }); g1.appendChild(b); });
-    [['best', 'Beste zuerst'], ['worst', 'Schlechteste zuerst']].forEach(([k, l]) => { const b = el('button', 'chip', l); b.type = 'button'; b.setAttribute('aria-pressed', String(!st.manual && st.rank === k)); b.addEventListener('click', () => { st.rank = k; st.manual = false; onChange(); }); g2.appendChild(b); });
-    host.append(g1, g2);
-  }
-  function headRow(table, cols, st, activeKey, onSort) {
-    const tr = el('tr');
-    cols.forEach(([k, l]) => {
-      const th = el('th', '', l); th.dataset.k = k; th.tabIndex = 0;
-      if (st.manual && st.sort.k === k) th.setAttribute('aria-sort', st.sort.dir < 0 ? 'descending' : 'ascending');
-      if (!st.manual && k === activeKey) th.style.color = 'var(--accent)';
-      const go = () => { if (st.manual && st.sort.k === k) st.sort.dir *= -1; else { st.sort = { k, dir: -1 }; } st.manual = true; onSort(); };
-      th.addEventListener('click', go); th.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
-      tr.appendChild(th);
-    });
-    table.tHead.replaceChildren(tr);
-  }
-  // Profi-Chart von TradingView: zoomen, verschieben, Indikatoren und Zeichenwerkzeuge
-  function tvWidget(host, symbol, interval) {
-    host.replaceChildren();
-    const c = el('div', 'tradingview-widget-container'); c.style.height = '480px'; c.style.marginTop = '10px';
-    const w = el('div', 'tradingview-widget-container__widget'); w.style.height = '100%'; c.appendChild(w);
-    const s = document.createElement('script'); s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js'; s.async = true;
-    s.textContent = JSON.stringify({ autosize: true, symbol, interval: interval || '60', timezone: 'Europe/Berlin', theme: 'dark', style: '1', locale: 'de_DE', allow_symbol_change: false, hide_side_toolbar: false, withdateranges: true, studies: ['Volume@tv-basicstudies'], backgroundColor: '#161d2a', gridColor: 'rgba(255,255,255,0.04)', support_host: 'https://www.tradingview.com' });
-    c.appendChild(s); host.appendChild(c);
-    host.appendChild(el('p', 'note', 'Zoomen mit dem Mausrad, verschieben mit gedrückter Maustaste. Zeitraum unten oder oben wählen, Indikatoren (zum Beispiel RSI oder gleitende Durchschnitte) über "Indikatoren" oben im Chart. Chart von TradingView.'));
-  }
-
-  // ------------------------------------------------------------------ KRYPTO
-  const K = { map: new Map(), prev: new Map(), sort: { k: 'q', dir: -1 }, manual: false, per: 'chg', rank: 'best', q: '', sel: null, ws: null, sws: null, tries: 0, trades: [], dirty: false, cg: new Map(), eur: null };
-  const STABLE = new Set(['USDC', 'FDUSD', 'TUSD', 'USDP', 'DAI', 'BUSD', 'EUR', 'AEUR', 'USD1', 'USDE', 'XUSD', 'BFUSD', 'RLUSD', 'EURI', 'PYUSD', 'USDS']);
-  const K_PER = [['chg', 'Tag'], ['w', 'Woche'], ['m', 'Monat'], ['y', 'Jahr']];
-  const K_COLS = [['b', 'Coin'], ['c', 'Preis $'], ['chg', '24 Std'], ['w', '7 Tage'], ['m', '30 Tage'], ['y', '1 Jahr'], ['q', 'Volumen 24 h']];
-  function okSym(s) { if (!s.endsWith('USDT')) return false; const b = s.slice(0, -4); if (STABLE.has(b)) return false; if (/^.{2,}(UP|DOWN|BULL|BEAR)$/.test(b)) return false; return true; }
-  function putTick(s, c, o, h, l, v, q) {
-    if (s === 'EURUSDT' && c > 0) K.eur = c;
-    if (!okSym(s) || !(c > 0)) return;
-    K.map.set(s, { s, b: s.slice(0, -4), c, o, h, l, v, q, chg: o > 0 ? (c / o - 1) * 100 : null });
-    K.dirty = true;
-  }
-  function loadKAll() {
-    getJSON(BIN_REST + '/ticker/24hr?type=MINI').then((rows) => {
-      rows.forEach((r) => putTick(r.symbol, +r.lastPrice, +r.openPrice, +r.highPrice, +r.lowPrice, +r.volume, +r.quoteVolume));
-      renderK();
-      if (!K.sel) { openK('BTCUSDT'); renderNews(); }
-    }).catch(() => {});
-  }
-  function loadCG() {
-    getJSON('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&price_change_percentage=24h,7d,30d,1y')
-      .then((rows) => {
-        rows.forEach((r) => { const s = (r.symbol || '').toUpperCase(); if (!K.cg.has(s)) K.cg.set(s, { name: r.name, img: r.image, mcap: r.market_cap, w: r.price_change_percentage_7d_in_currency, m: r.price_change_percentage_30d_in_currency, y: r.price_change_percentage_1y_in_currency }); });
-        K.cgAt = Date.now(); K.dirty = true; if (K.sel) updateKHead();
-      }).catch(() => { K.cgErr = true; });
-  }
-  function connectKAll() {
-    let ws;
-    try { ws = new WebSocket(BIN_WS + '/ws/!miniTicker@arr'); } catch (e) { pollK(); return; }
-    K.ws = ws;
-    ws.onopen = () => { K.tries = 0; setDot('st-live', 'live', 'Krypto live'); };
-    ws.onmessage = (ev) => { let a; try { a = JSON.parse(ev.data); } catch (e) { return; } if (Array.isArray(a)) a.forEach((x) => putTick(x.s, +x.c, +x.o, +x.h, +x.l, +x.v, +x.q)); };
-    ws.onerror = () => { try { ws.close(); } catch (e) { /* zu */ } };
-    ws.onclose = () => { K.tries++; if (K.tries > 3) { pollK(); return; } setDot('st-live', 'off', 'Krypto: getrennt, neuer Versuch …'); setTimeout(connectKAll, 2000 * K.tries); };
-  }
-  let kPoll = null;
-  function pollK() {
-    if (kPoll) return;
-    setDot('st-live', 'fallback', 'Krypto: Ersatzmodus (alle 20 Sek.)');
-    kPoll = setInterval(loadKAll, 20000);
-    setTimeout(() => { clearInterval(kPoll); kPoll = null; K.tries = 0; connectKAll(); }, 5 * 60000);
-  }
-  function kRows() {
-    return Array.from(K.map.values()).map((r) => { const g = K.cg.get(r.b) || {}; return Object.assign({}, r, { w: g.w, m: g.m, y: g.y, name: g.name, img: g.img }); });
-  }
-  function renderK() {
-    K.dirty = false;
-    rankBar($('#k-rank'), K_PER, K, renderK);
-    headRow($('#k-table'), K_COLS, K, K.per, renderK);
-    const tb = $('#k-table tbody'), q = K.q.trim().toUpperCase();
-    let rows = kRows();
-    if (q) rows = rows.filter((r) => r.b.includes(q) || (r.name || '').toUpperCase().includes(q) || (NAMES[r.b] || []).some((n) => n.toUpperCase().includes(q)));
-    else rows = rows.sort((a, b) => b.q - a.q).slice(0, 150);
-    if (K.manual) rows.sort((a, b) => K.sort.k === 'b' ? cmp(a, b, 'b', K.sort.dir) : cmpN(a, b, K.sort.k, K.sort.dir));
-    else rows.sort((a, b) => cmpN(a, b, K.per, K.rank === 'best' ? -1 : 1));
-    rows = rows.slice(0, 150);
-    const frag = document.createDocumentFragment();
-    rows.forEach((r) => {
-      const tr = el('tr'); tr.dataset.s = r.s; tr.setAttribute('aria-selected', String(r.s === K.sel));
-      const t = el('td'); const tk = el('div', 'tok');
-      if (r.img) { const im = el('img'); im.src = r.img; im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; tk.appendChild(im); }
-      tk.appendChild(el('b', '', r.b)); if (r.name) tk.appendChild(el('span', 'muted small', r.name)); t.appendChild(tk); tr.appendChild(t);
-      const p = el('td', '', fP(r.c)); const pv = K.prev.get(r.s);
-      if (pv != null && pv !== r.c) p.className = r.c > pv ? 'fu' : 'fd';
-      tr.appendChild(p);
-      ['chg', 'w', 'm', 'y'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === K.per && !K.manual ? ' strong' : ''), fPct(r[k]))));
-      tr.appendChild(el('td', 'muted', fBig(r.q) + ' $'));
-      frag.appendChild(tr);
-    });
-    rows.forEach((r) => K.prev.set(r.s, r.c));
-    tb.replaceChildren(frag);
-    if (!rows.length) { const tr = el('tr'); const td = el('td', 'empty', K.map.size ? 'Kein Coin gefunden.' : 'Lade Kurse …'); td.colSpan = 7; tr.appendChild(td); tb.appendChild(tr); }
-    $('#k-note').textContent = (K.per !== 'chg' && !K.cgAt ? 'Woche, Monat und Jahr kommen von CoinGecko und laden noch. ' : '') + 'Gezeigt werden die 150 meistgehandelten Coins bei Binance. Tag ist live, Woche, Monat und Jahr werden alle 5 Minuten aktualisiert (CoinGecko).';
-    if (K.sel) updateKHead();
-  }
-  $('#k-table tbody').addEventListener('click', (e) => { const tr = e.target.closest('tr[data-s]'); if (tr) openK(tr.dataset.s, true); });
-  $('#k-q').addEventListener('input', (e) => { K.q = e.target.value; renderK(); });
-
-  function openK(sym, scroll) {
-    K.sel = sym; K.trades = [];
-    document.querySelectorAll('#k-table tbody tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.s === sym)));
-    const box = $('#k-detail'); box.replaceChildren();
-    const b = el('div', 'box-b'); box.appendChild(b);
-    const back = el('button', 'btn back', '← zur Liste'); back.type = 'button'; back.addEventListener('click', () => $('#k-table').scrollIntoView({ behavior: 'smooth' }));
-    b.appendChild(back);
-    const base = sym.slice(0, -4), g = K.cg.get(base) || {};
-    const dh = el('div', 'dh'); const tk = el('div', 'tok');
-    if (g.img) { const im = el('img'); im.src = g.img; im.alt = ''; im.referrerPolicy = 'no-referrer'; im.style.width = im.style.height = '28px'; tk.appendChild(im); }
-    tk.appendChild(el('h2', '', base + ' / USDT')); dh.appendChild(tk);
-    if (g.name) dh.appendChild(el('span', 'muted', g.name));
-    b.appendChild(dh);
-    const pr = el('div', 'dh'); pr.appendChild(el('span', 'big', '–')); pr.appendChild(el('span', '', '')); pr.id = 'k-head'; b.appendChild(pr);
-    const st = el('div', 'stats'); st.id = 'k-stats'; b.appendChild(st);
-    const ch = el('div'); b.appendChild(ch);
-    tvWidget(ch, 'BINANCE:' + sym, '60');
-    b.appendChild(el('div', 'sub', 'Kaufen und verkaufen'));
-    if (base === 'SOL') {
-      b.appendChild(el('p', 'small muted', 'Mit deinem Wallet über Jupiter. Jeder Tausch wird erst nach deiner Bestätigung im Wallet ausgeführt.'));
-      const js = el('p', 'small'); b.appendChild(js);
-      const jt = el('div'); jt.id = 'k-jup'; jt.style.minHeight = '480px'; b.appendChild(jt);
-      requestAnimationFrame(() => mountJup('k-jup', USDC_MINT, SOL_MINT, js));
-    } else {
-      b.appendChild(el('p', 'small', base + ' kaufst du bei deinem Broker, zum Beispiel in der App von Trade Republic oder Bitvavo. Solana-Token und Memecoins kannst du direkt hier über dein Wallet handeln: im Tab Memecoins oder bei SOL.'));
-    }
-    b.appendChild(el('div', 'sub', 'Letzte Trades bei Binance (live, jeder einzelne)'));
-    b.appendChild(el('p', 'note', 'Kauf heißt: Jemand hat zum Verkaufspreis gekauft, der Käufer war ungeduldig. Verkauf umgekehrt. Wer handelt, ist an einer Börse wie Binance anonym, das zeigt niemand. "Großer Trade" markiert ungewöhnlich große Beträge, oft von großen Anlegern.'));
-    const tp = el('div', 'tape'); tp.id = 'k-tape'; b.appendChild(tp);
-    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
-    const nw = el('div', 'news'); nw.id = 'k-news'; b.appendChild(nw);
-    const ln = el('div', 'links');
-    [['Auf Binance ansehen', 'https://www.binance.com/de/trade/' + base + '_USDT?type=spot'], ['In TradingView öffnen', 'https://www.tradingview.com/chart/?symbol=BINANCE:' + sym]].forEach(([t, u]) => { const a = el('a', '', t); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; ln.appendChild(a); });
-    b.appendChild(ln);
-    updateKHead(); renderKNews(); connectKSym();
-    if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' });
-  }
-  function updateKHead() {
-    const r = K.map.get(K.sel), h = $('#k-head'); if (!r || !h) return;
-    const g = K.cg.get(r.b) || {};
-    const lastTrade = K.trades[0];
-    h.children[0].textContent = fP(lastTrade ? lastTrade.p : r.c) + ' $';
-    h.children[1].textContent = fPct(r.chg) + ' in 24 h'; h.children[1].className = cls(r.chg);
-    $('#k-stats').replaceChildren(stat('24 h Hoch', fP(r.h)), stat('24 h Tief', fP(r.l)), stat('Volumen 24 h', fBig(r.q) + ' $'), stat('7 Tage', fPct(g.w), cls(g.w)), stat('30 Tage', fPct(g.m), cls(g.m)), stat('1 Jahr', fPct(g.y), cls(g.y)));
-  }
-  function renderKNews() {
-    const host = $('#k-news'); if (!host || !K.sel) return;
-    const base = K.sel.slice(0, -4), g = K.cg.get(base);
-    const words = NAMES[base] || [base.toLowerCase()].concat(g && g.name ? [g.name.toLowerCase()] : []);
-    newsList(host, matchNews(words).filter((n) => (n.wichtig == null ? 2 : n.wichtig) >= 1), 8);
-  }
-  function connectKSym() {
-    if (K.sws) { K.sws.onclose = null; try { K.sws.close(); } catch (e) { /* zu */ } }
-    const s = K.sel.toLowerCase();
-    let ws; try { ws = new WebSocket(BIN_WS + '/ws/' + s + '@aggTrade'); } catch (e) { return; }
-    K.sws = ws;
-    ws.onmessage = (ev) => {
-      let x; try { x = JSON.parse(ev.data); } catch (e) { return; }
-      if (x && x.data) x = x.data;
-      if (!x || x.e !== 'aggTrade' || x.s !== K.sel) return;
-      K.trades.unshift({ t: x.T, p: +x.p, q: +x.q, sell: !!x.m });
-      if (K.trades.length > 40) K.trades.length = 40;
-      tapeDirty = true;
-    };
-    ws.onclose = () => { if (K.sws === ws) setTimeout(() => { if (K.sws === ws) connectKSym(); }, 3000); };
-  }
-  let tapeDirty = false;
-  const tf = new Intl.DateTimeFormat('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: TZ });
-  function renderTape() {
-    tapeDirty = false;
-    const tp = $('#k-tape'); if (!tp) return;
-    const frag = document.createDocumentFragment();
-    ['Zeit', 'Art', 'Preis $', 'Menge', 'Wert $'].forEach((h, i) => frag.appendChild(el('span', 'th' + (i >= 2 ? ' r' : ''), h)));
-    const vals = K.trades.map((t) => t.p * t.q).sort((a, b) => a - b);
-    const big = Math.max(10000, (vals[Math.floor(vals.length / 2)] || 0) * 20);
-    K.trades.slice(0, 30).forEach((t) => {
-      const v = t.p * t.q, isBig = v >= big;
-      frag.appendChild(el('span', 'muted', tf.format(new Date(t.t)) + '.' + String(t.t % 1000).padStart(3, '0')));
-      const art = el('span', t.sell ? 'down' : 'up', t.sell ? 'Verkauf' : 'Kauf');
-      if (isBig) { art.appendChild(document.createTextNode(' ')); art.appendChild(el('span', 'whale', 'großer Trade')); }
-      frag.appendChild(art);
-      frag.appendChild(el('span', 'r ' + (t.sell ? 'down' : 'up'), fP(t.p)));
-      frag.appendChild(el('span', 'r', new Intl.NumberFormat('de-DE', { maximumFractionDigits: t.q < 1 ? 5 : 2 }).format(t.q)));
-      frag.appendChild(el('span', 'r' + (isBig ? ' big' : ''), new Intl.NumberFormat('de-DE', { maximumFractionDigits: 0 }).format(v) + ' $'));
-    });
-    tp.replaceChildren(frag);
-    updateKHead();
-  }
-
-
-  // ------------------------------------------------------------------ MEMECOINS
-  const M = { rows: [], src: 'neu', chain: 'solana', q: '', sel: null, sort: { k: 'vol', dir: -1 }, manual: false, per: 'h24', rank: 'best', loading: false, err: null, at: 0 };
-  const SRC = [['neu', 'Neu gelistet'], ['werbung', 'Meist beworben'], ['etabliert', 'Bekannte Memecoins'], ['suche', 'Suche']];
-  const M_PER_DEX = [['m5', '5 Min'], ['h1', '1 Std'], ['h6', '6 Std'], ['h24', '24 Std']];
-  const M_PER_CG = [['h24', 'Tag'], ['w', 'Woche'], ['m', 'Monat'], ['y', 'Jahr']];
-  const M_COLS_DEX = [['sym', 'Token'], ['risk', 'Risiko'], ['price', 'Preis $'], ['m5', '5 Min'], ['h1', '1 Std'], ['h24', '24 Std'], ['vol', 'Volumen'], ['liq', 'Liquidität'], ['age', 'Alter']];
-  const M_COLS_CG = [['sym', 'Token'], ['price', 'Preis $'], ['h24', '24 Std'], ['w', '7 Tage'], ['m', '30 Tage'], ['y', '1 Jahr'], ['mcap', 'Marktwert'], ['vol', 'Volumen']];
-  const isCG = () => M.src === 'etabliert';
-  function memeFlags(r) {
-    const f = []; const ageH = r.created ? (Date.now() - r.created) / 3.6e6 : null;
-    if (ageH == null) f.push(['Alter unbekannt', 2]); else if (ageH < 1) f.push(['Jünger als 1 Stunde', 3]); else if (ageH < 24) f.push(['Jünger als 24 Stunden', 2]); else if (ageH < 24 * 7) f.push(['Jünger als 7 Tage', 1]);
-    if (r.liq < 10000) f.push(['Sehr wenig Liquidität (unter 10.000 $). Große Verkäufe drücken den Preis stark.', 3]);
-    else if (r.liq < 50000) f.push(['Wenig Liquidität (unter 50.000 $)', 2]);
-    if (r.h1 != null && r.h1 > 100) f.push(['In 1 Stunde schon über +100 %. Wer jetzt kauft, kauft nach dem Anstieg.', 2]);
-    if (r.h24 != null && r.h24 < -50) f.push(['In 24 Stunden über −50 %', 2]);
-    if (r.s1 > 20 && r.s1 > r.b1 * 1.5) f.push(['Deutlich mehr Verkäufe als Käufe in der letzten Stunde', 2]);
-    if (r.liq > 0 && r.fdv / r.liq > 100) f.push(['Bewertung über 100-mal so hoch wie die Liquidität', 2]);
-    if (!r.hasLinks) f.push(['Keine Website und keine Social-Links', 1]);
-    if (r.boost) f.push(['Bezahlte Werbung auf DexScreener (' + r.boost + ' Boosts)', 1]);
-    const score = f.reduce((s, x) => s + x[1], 0);
-    return { flags: f, level: score >= 6 ? 3 : score >= 3 ? 2 : 1, label: score >= 6 ? 'Extrem' : score >= 3 ? 'Sehr hoch' : 'Hoch' };
-  }
-  function pairToRow(p, extra) {
-    const info = p.info || {};
-    const r = {
-      key: p.chainId + ':' + p.baseToken.address, chain: p.chainId, addr: p.baseToken.address, name: p.baseToken.name, sym: p.baseToken.symbol,
-      pair: p.pairAddress, url: p.url, dex: p.dexId, price: p.priceUsd != null ? +p.priceUsd : null,
-      m5: p.priceChange && p.priceChange.m5, h1: p.priceChange && p.priceChange.h1, h6: p.priceChange && p.priceChange.h6, h24: p.priceChange && p.priceChange.h24,
-      vol: p.volume ? p.volume.h24 : 0, liq: p.liquidity ? p.liquidity.usd || 0 : 0, fdv: p.fdv || 0, mcap: p.marketCap || 0,
-      created: p.pairCreatedAt || null, b1: p.txns && p.txns.h1 ? p.txns.h1.buys : 0, s1: p.txns && p.txns.h1 ? p.txns.h1.sells : 0,
-      icon: info.imageUrl || (extra && extra.icon) || null,
-      links: [].concat((info.websites || []).map((w) => ({ label: w.label || 'Website', url: w.url })), (info.socials || []).map((s) => ({ label: s.type || 'Social', url: s.url })), (extra && extra.links) || []),
-      boost: (p.boosts && p.boosts.active) || (extra && extra.boost) || 0, desc: extra && extra.desc,
-    };
-    r.hasLinks = r.links.length > 0;
-    r.age = r.created ? Date.now() - r.created : null;
-    const fl = memeFlags(r); r.risk = fl.level; r.riskInfo = fl;
-    return r;
-  }
-  async function loadMemes() {
-    if (M.loading) return; M.loading = true; M.err = null;
-    try {
-      let rows = [];
-      if (M.src === 'etabliert') {
-        const list = await getJSON('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=meme-token&order=market_cap_desc&per_page=100&page=1&price_change_percentage=1h,24h,7d,30d,1y');
-        rows = list.map((c) => ({ key: 'cg:' + c.id, cg: c.id, sym: (c.symbol || '').toUpperCase(), name: c.name, icon: c.image, price: c.current_price, h1: c.price_change_percentage_1h_in_currency, h24: c.price_change_percentage_24h_in_currency != null ? c.price_change_percentage_24h_in_currency : c.price_change_percentage_24h, w: c.price_change_percentage_7d_in_currency, m: c.price_change_percentage_30d_in_currency, y: c.price_change_percentage_1y_in_currency, mcap: c.market_cap, vol: c.total_volume }));
-      } else if (M.src === 'suche') {
-        if (M.q.trim().length < 2) { M.rows = []; return; }
-        const j = await getJSON(DEX + '/latest/dex/search?q=' + encodeURIComponent(M.q.trim()));
-        const best = new Map();
-        (j.pairs || []).forEach((p) => { if (M.chain !== 'alle' && p.chainId !== M.chain) return; const k = p.chainId + ':' + p.baseToken.address; const o = best.get(k); if (!o || ((p.liquidity || {}).usd || 0) > ((o.liquidity || {}).usd || 0)) best.set(k, p); });
-        rows = Array.from(best.values()).map((p) => pairToRow(p));
-      } else {
-        const list = await getJSON(DEX + (M.src === 'werbung' ? '/token-boosts/top/v1' : '/token-profiles/latest/v1'));
-        const extra = new Map(); const byChain = {};
-        list.forEach((x) => {
-          if (M.chain !== 'alle' && x.chainId !== M.chain) return;
-          const k = x.chainId + ':' + x.tokenAddress; if (extra.has(k)) return;
-          extra.set(k, { icon: x.icon || null, desc: x.description || '', links: (x.links || []).map((l) => ({ label: l.label || l.type || 'Link', url: l.url })), boost: x.totalAmount || x.amount || 0 });
-          (byChain[x.chainId] = byChain[x.chainId] || []).push(x.tokenAddress);
-        });
-        const res = await Promise.all(Object.keys(byChain).map((c) => getJSON(DEX + '/tokens/v1/' + c + '/' + byChain[c].slice(0, 30).join(',')).catch(() => [])));
-        const best = new Map();
-        res.flat().forEach((p) => { const k = p.chainId + ':' + p.baseToken.address; if (!extra.has(k)) return; const o = best.get(k); if (!o || ((p.liquidity || {}).usd || 0) > ((o.liquidity || {}).usd || 0)) best.set(k, p); });
-        rows = Array.from(best.entries()).map(([k, p]) => pairToRow(p, extra.get(k)));
-      }
-      M.rows = rows; M.at = Date.now();
-      if (M.sel) { const s = rows.find((r) => r.key === M.sel); if (s && !s.cg) updateMHead(s); }
-    } catch (e) { M.err = e.message; }
-    finally { M.loading = false; renderM(); }
-  }
-  function renderM() {
-    const cg = isCG();
-    const per = cg ? M_PER_CG : M_PER_DEX;
-    if (!per.some(([k]) => k === M.per)) M.per = 'h24';
-    rankBar($('#m-rank'), per, M, renderM);
-    const cols = cg ? M_COLS_CG : M_COLS_DEX;
-    headRow($('#m-table'), cols, M, M.per, renderM);
-    const tb = $('#m-table tbody');
-    const rows = M.rows.slice().sort((a, b) => M.manual ? (M.sort.k === 'sym' ? cmp(a, b, 'sym', M.sort.dir) : cmpN(a, b, M.sort.k, M.sort.dir)) : cmpN(a, b, M.per, M.rank === 'best' ? -1 : 1));
-    const frag = document.createDocumentFragment();
-    rows.forEach((r) => {
-      const tr = el('tr'); tr.dataset.key = r.key; tr.setAttribute('aria-selected', String(r.key === M.sel));
-      const t = el('td'); const tk = el('div', 'tok');
-      if (r.icon) { const im = el('img'); im.src = r.icon; im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; tk.appendChild(im); }
-      tk.appendChild(el('b', '', r.sym)); tk.appendChild(el('span', 'muted small', cg ? r.name : r.chain)); t.appendChild(tk); tr.appendChild(t);
-      if (cg) {
-        tr.appendChild(el('td', '', fP(r.price)));
-        ['h24', 'w', 'm', 'y'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === M.per && !M.manual ? ' strong' : ''), fPct(r[k]))));
-        tr.appendChild(el('td', 'muted', fBig(r.mcap) + ' $')); tr.appendChild(el('td', 'muted', fBig(r.vol) + ' $'));
-      } else {
-        const rk = el('td'); rk.appendChild(el('span', 'badge lvl-' + r.risk, r.riskInfo.label)); tr.appendChild(rk);
-        tr.appendChild(el('td', '', fP(r.price)));
-        ['m5', 'h1', 'h24'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === M.per && !M.manual ? ' strong' : ''), fPct(r[k]))));
-        tr.appendChild(el('td', '', fBig(r.vol) + ' $'));
-        tr.appendChild(el('td', r.liq < 50000 ? 'down' : '', fBig(r.liq) + ' $'));
-        tr.appendChild(el('td', 'muted', r.created ? ago(r.created).replace('vor ', '') : '–'));
-      }
-      frag.appendChild(tr);
-    });
-    tb.replaceChildren(frag);
-    if (!rows.length) {
-      const tr = el('tr'); const td = el('td', 'empty', M.loading ? 'Lade …' : M.err ? 'Datenquelle gerade nicht erreichbar (' + M.err + '). Neuer Versuch in Kürze.' : M.src === 'suche' ? 'Gib oben einen Namen oder eine Adresse ein.' : 'Keine Token gefunden.');
-      td.colSpan = cols.length; tr.appendChild(td); tb.appendChild(tr);
-    }
-    $('#m-note').textContent = (M.at ? 'Stand ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date(M.at)) + '. ' : '') +
-      (cg ? 'Die 100 größten Memecoins nach Marktwert (CoinGecko), alle 60 Sekunden aktualisiert. ' : 'Neue Token von DexScreener, alle 10 Sekunden aktualisiert. Die Charts in den Details sind live. ') +
-      (M.src === 'werbung' ? '"Meist beworben" heißt: Die Ersteller haben für Sichtbarkeit bezahlt. Das ist Werbung, kein Qualitätsmerkmal. ' : '') +
-      (cg ? '' : 'Risiko ist nie "niedrig": Die Stufen zählen Warnzeichen wie geringes Alter, wenig Liquidität und viele Verkäufe.');
-  }
-  function pickSrc(v) { M.src = v; chips($('#m-src'), SRC, M.src, pickSrc); $('#m-chain').disabled = v === 'etabliert'; M.rows = []; M.manual = false; M.per = v === 'etabliert' ? 'h24' : M.per; renderM(); loadMemes(); }
-  chips($('#m-src'), SRC, M.src, pickSrc);
-  $('#m-chain').addEventListener('change', (e) => { M.chain = e.target.value; M.rows = []; renderM(); loadMemes(); });
-  let mqT = null;
-  $('#m-q').addEventListener('input', (e) => { M.q = e.target.value; clearTimeout(mqT); mqT = setTimeout(() => { if (M.src !== 'suche') pickSrc('suche'); else loadMemes(); }, 500); });
-  $('#m-table tbody').addEventListener('click', (e) => { const tr = e.target.closest('tr[data-key]'); if (tr) openM(tr.dataset.key, true); });
-
-  const EXPLORER = { solana: 'https://solscan.io/token/', ethereum: 'https://etherscan.io/token/', base: 'https://basescan.org/token/', bsc: 'https://bscscan.com/token/' };
-  function openM(key, scroll) {
-    const r = M.rows.find((x) => x.key === key); if (!r) return;
-    M.sel = key;
-    document.querySelectorAll('#m-table tbody tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.key === key)));
-    const box = $('#m-detail'); box.replaceChildren();
-    const b = el('div', 'box-b'); box.appendChild(b);
-    const back = el('button', 'btn back', '← zur Liste'); back.type = 'button'; back.addEventListener('click', () => $('#m-table').scrollIntoView({ behavior: 'smooth' })); b.appendChild(back);
-    const dh = el('div', 'dh'); const tk = el('div', 'tok');
-    if (r.icon) { const im = el('img'); im.src = r.icon; im.alt = ''; im.referrerPolicy = 'no-referrer'; im.style.width = im.style.height = '28px'; tk.appendChild(im); }
-    tk.appendChild(el('h2', '', r.name + ' (' + r.sym + ')')); dh.appendChild(tk);
-    if (!r.cg) dh.appendChild(el('span', 'badge lvl-' + r.risk, 'Risiko: ' + r.riskInfo.label));
-    b.appendChild(dh);
-    const hd = el('div', 'dh'); hd.id = 'm-head'; b.appendChild(hd);
-    const st = el('div', 'stats'); st.id = 'm-stats'; b.appendChild(st);
-    if (r.cg) { openMcg(b, r); if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' }); return; }
-    updateMHead(r);
-    const fr = el('iframe', 'frame'); fr.title = 'Live-Chart von DexScreener';
-    fr.src = 'https://dexscreener.com/' + r.chain + '/' + r.pair + '?embed=1&theme=dark&trades=1&info=0';
-    fr.loading = 'lazy'; fr.referrerPolicy = 'no-referrer'; fr.style.height = '640px'; b.appendChild(fr);
-    b.appendChild(el('p', 'note', 'Live-Chart von DexScreener. Zoomen mit dem Mausrad, Indikatoren über das Symbol "fx" oben im Chart. Unter dem Chart siehst du jeden Kauf und Verkauf mit Betrag und Wallet-Adresse (Maker). Klickst du auf eine Adresse, siehst du, was diese Wallet sonst handelt. Wem eine Wallet gehört, ist nicht öffentlich.'));
-    if (r.chain === 'solana') {
-      b.appendChild(el('div', 'sub', 'Kaufen und verkaufen'));
-      b.appendChild(el('p', 'small muted', 'Mit deinem Wallet über Jupiter. Prüfe, ob oben im Fenster genau diese Adresse steht: ' + r.addr.slice(0, 6) + '…' + r.addr.slice(-6) + '. Jeder Tausch wird erst nach deiner Bestätigung im Wallet ausgeführt.'));
-      const js = el('p', 'small'); b.appendChild(js);
-      const jt = el('div'); jt.id = 'm-jup'; jt.style.minHeight = '480px'; b.appendChild(jt);
-      requestAnimationFrame(() => mountJup('m-jup', SOL_MINT, r.addr, js));
-    }
-    b.appendChild(el('div', 'sub', 'Warnzeichen'));
-    const ul = el('ul', 'flags');
-    if (!r.riskInfo.flags.length) ul.appendChild(el('li', 'muted', 'Keine der geprüften Warnzeichen. Das Risiko bleibt trotzdem hoch.'));
-    r.riskInfo.flags.forEach(([t, w]) => { const li = el('li'); li.appendChild(el('span', 'badge lvl-' + Math.min(3, w), w >= 3 ? 'stark' : w === 2 ? 'mittel' : 'leicht')); li.appendChild(el('span', '', t)); ul.appendChild(li); });
-    b.appendChild(ul);
-    if (r.desc) { b.appendChild(el('div', 'sub', 'Beschreibung der Ersteller')); b.appendChild(el('p', 'muted small', r.desc)); }
-    b.appendChild(el('div', 'sub', 'Vertragsadresse'));
-    const ca = el('div', 'links'); const code = el('span', 'mono small', r.addr); code.style.wordBreak = 'break-all'; ca.appendChild(code);
-    const cp = el('button', 'btn', 'Kopieren'); cp.type = 'button';
-    cp.addEventListener('click', () => { navigator.clipboard.writeText(r.addr).then(() => { cp.textContent = 'Kopiert'; }).catch(() => { cp.textContent = 'Bitte markieren und kopieren'; }); });
-    ca.appendChild(cp); b.appendChild(ca);
-    const ln = el('div', 'links');
-    [['Auf DexScreener', r.url], EXPLORER[r.chain] ? ['Im Explorer prüfen', EXPLORER[r.chain] + r.addr] : null, r.chain === 'solana' ? ['Inhaber prüfen (Bubblemaps)', 'https://app.bubblemaps.io/sol/token/' + r.addr] : null]
-      .concat(r.links.slice(0, 6).map((l) => [l.label, l.url])).filter(Boolean)
-      .forEach(([t, u]) => { if (!/^https?:\/\//.test(u)) return; const a = el('a', '', t); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; ln.appendChild(a); });
-    b.appendChild(ln);
-    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
-    const nw = el('div', 'news'); b.appendChild(nw);
-    newsList(nw, matchNews([r.name.toLowerCase(), r.sym.length > 2 ? '$' + r.sym.toLowerCase() : r.name.toLowerCase()]), 6);
-    b.appendChild(el('p', 'note', 'Vor jedem Kauf prüfen: Wer hat ihn angekündigt und steht das auch bei einer Nachrichtenseite? Halten wenige Wallets den Großteil? Ist die Liquidität gesperrt? Lässt er sich wieder verkaufen? Erfährst du es aus einer Schlagzeile, waren andere schneller.'));
-    if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' });
-  }
-  function openMcg(b, r) {
-    $('#m-head').replaceChildren(el('span', 'big', fP(r.price) + ' $'), el('span', cls(r.h24), fPct(r.h24) + ' in 24 h'));
-    $('#m-stats').replaceChildren(stat('1 Std', fPct(r.h1), cls(r.h1)), stat('7 Tage', fPct(r.w), cls(r.w)), stat('30 Tage', fPct(r.m), cls(r.m)), stat('1 Jahr', fPct(r.y), cls(r.y)), stat('Marktwert', fBig(r.mcap) + ' $'), stat('Volumen 24 h', fBig(r.vol) + ' $'));
-    const ch = el('div'); b.appendChild(ch);
-    const onBinance = K.map.has(r.sym + 'USDT');
-    if (onBinance) tvWidget(ch, 'BINANCE:' + r.sym + 'USDT', '240');
-    else ch.appendChild(el('p', 'small muted', 'Für diesen Memecoin gibt es keinen Binance-Chart. Den Verlauf siehst du bei CoinGecko.'));
-    const ln = el('div', 'links');
-    if (onBinance) { const bt = el('button', 'btn', 'Im Krypto-Tab mit Live-Trades öffnen'); bt.type = 'button'; bt.addEventListener('click', () => { show('krypto'); openK(r.sym + 'USDT', true); }); ln.appendChild(bt); }
-    const a = el('a', '', 'Auf CoinGecko'); a.href = 'https://www.coingecko.com/de/munze/' + r.cg; a.target = '_blank'; a.rel = 'noopener noreferrer'; ln.appendChild(a);
-    const s = el('button', 'btn', 'Auf DexScreener suchen (zum Handeln)'); s.type = 'button'; s.addEventListener('click', () => { $('#m-q').value = r.sym; M.q = r.sym; pickSrc('suche'); }); ln.appendChild(s);
-    b.appendChild(ln);
-    b.appendChild(el('p', 'note', 'Zum Kaufen über dein Wallet suche den Token über "Auf DexScreener suchen" und wähle den Eintrag mit der höchsten Liquidität. Achtung: Es gibt viele Kopien mit gleichem Namen. Prüfe die Adresse auf der offiziellen Seite des Projekts.'));
-    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
-    const nw = el('div', 'news'); b.appendChild(nw);
-    newsList(nw, matchNews([r.name.toLowerCase()].concat(r.sym.length > 2 ? [r.sym.toLowerCase()] : [])), 6);
-  }
-  function updateMHead(r) {
-    const hd = $('#m-head'), st = $('#m-stats'); if (!hd || !st) return;
-    hd.replaceChildren(el('span', 'big', fP(r.price) + ' $'), el('span', cls(r.h24), fPct(r.h24) + ' in 24 h'));
-    st.replaceChildren(stat('5 Min', fPct(r.m5), cls(r.m5)), stat('1 Std', fPct(r.h1), cls(r.h1)), stat('6 Std', fPct(r.h6), cls(r.h6)), stat('Volumen 24 h', fBig(r.vol) + ' $'),
-      stat('Liquidität', fBig(r.liq) + ' $', r.liq < 50000 ? 'down' : ''), stat('Marktwert', fBig(r.mcap || r.fdv) + ' $'), stat('Käufe / Verkäufe 1 h', r.b1 + ' / ' + r.s1), stat('Alter', r.created ? ago(r.created).replace('vor ', '') : '–'));
-  }
-
-  // ------------------------------------------------------------------ ETFS
-  const E = { sort: { k: 'aend1d', dir: -1 }, manual: false, per: 'aend1d', rank: 'best', sel: null };
-  const E_PER = [['aend1d', 'Tag'], ['aend1w', 'Woche'], ['aend1m', 'Monat'], ['aend1y', 'Jahr']];
-  const E_COLS = [['sym', 'ETF'], ['gruppe', 'Bereich'], ['preis', 'Preis $'], ['aend1d', '1 Tag'], ['aend1w', '1 Woche'], ['aend1m', '1 Monat'], ['aend1y', '1 Jahr']];
-  function renderEtfs() {
-    const e = D.data && D.data.etfs; const tb = $('#e-table tbody');
-    rankBar($('#e-rank'), E_PER, E, renderEtfs);
-    headRow($('#e-table'), E_COLS, E, E.per, renderEtfs);
-    if (!e) { tb.replaceChildren(); const tr = el('tr'); const td = el('td', 'empty', 'Noch keine ETF-Daten. Sie kommen mit dem nächsten automatischen Abruf.'); td.colSpan = 7; tr.appendChild(td); tb.appendChild(tr); return; }
-    $('#e-src').textContent = e.quelle + ', geprüft ' + fTime(new Date(e.stand).getTime()) + (e.veraltet ? ' (veraltet)' : '');
-    const rows = e.daten.slice().sort((a, b) => E.manual ? ((E.sort.k === 'sym' || E.sort.k === 'gruppe') ? cmp(a, b, E.sort.k, E.sort.dir) : cmpN(a, b, E.sort.k, E.sort.dir)) : cmpN(a, b, E.per, E.rank === 'best' ? -1 : 1));
-    const frag = document.createDocumentFragment();
-    rows.forEach((r) => {
-      const tr = el('tr'); tr.dataset.s = r.sym; tr.setAttribute('aria-selected', String(r.sym === E.sel));
-      const t = el('td'); const tk = el('div', 'tok'); tk.appendChild(el('b', '', r.sym)); tk.appendChild(el('span', 'muted small', r.name)); t.appendChild(tk); tr.appendChild(t);
-      tr.appendChild(el('td', 'muted', r.gruppe)); tr.appendChild(el('td', '', fP(r.preis)));
-      ['aend1d', 'aend1w', 'aend1m', 'aend1y'].forEach((k) => tr.appendChild(el('td', cls(r[k]) + (k === E.per && !E.manual ? ' strong' : ''), fPct(r[k]))));
-      frag.appendChild(tr);
-    });
-    tb.replaceChildren(frag);
-  }
-  $('#e-table tbody').addEventListener('click', (ev) => { const tr = ev.target.closest('tr[data-s]'); if (tr) openEtf(tr.dataset.s, false, true); });
-  const UCITS = { SPY: 'iShares Core S&P 500 UCITS (IE00B5BMR087)', QQQ: 'iShares Nasdaq 100 UCITS (IE00B53SZB19)', URTH: 'iShares Core MSCI World UCITS (IE00B4L5Y983)', GLD: 'Xetra-Gold, ein ETC (DE000A0S9GB0)', ITA: 'VanEck Defense UCITS (IE000YYE6WK5)' };
-  function openEtf(sym, refresh, scroll) {
-    const r = D.data && D.data.etfs && D.data.etfs.daten.find((x) => x.sym === sym); if (!r) return;
-    if (refresh && E.sel === sym && $('#e-detail .tradingview-widget-container')) {
-      const h = $('#e-head'); if (h) h.replaceChildren(el('span', 'big', fP(r.preis) + ' $'), el('span', cls(r.aend1d), fPct(r.aend1d) + ' am letzten Handelstag'));
-      return;
-    }
-    E.sel = sym;
-    document.querySelectorAll('#e-table tbody tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.s === sym)));
-    const box = $('#e-detail'); box.replaceChildren();
-    const b = el('div', 'box-b'); box.appendChild(b);
-    const back = el('button', 'btn back', '← zur Liste'); back.type = 'button'; back.addEventListener('click', () => $('#e-table').scrollIntoView({ behavior: 'smooth' })); b.appendChild(back);
-    const dh = el('div', 'dh'); dh.appendChild(el('h2', '', r.sym)); dh.appendChild(el('span', 'muted', r.name + ', ' + r.gruppe)); b.appendChild(dh);
-    const hd = el('div', 'dh'); hd.id = 'e-head'; hd.appendChild(el('span', 'big', fP(r.preis) + ' $')); hd.appendChild(el('span', cls(r.aend1d), fPct(r.aend1d) + ' am letzten Handelstag')); b.appendChild(hd);
-    const st = el('div', 'stats'); st.append(stat('1 Woche', fPct(r.aend1w), cls(r.aend1w)), stat('1 Monat', fPct(r.aend1m), cls(r.aend1m)), stat('1 Jahr', fPct(r.aend1y), cls(r.aend1y)), stat('Letzter Handelstag', r.datum)); b.appendChild(st);
-    const ch = el('div'); b.appendChild(ch); tvWidget(ch, r.tv || r.sym, 'D');
-    b.appendChild(el('div', 'sub', 'In der EU kaufen'));
-    b.appendChild(el('p', 'small', (UCITS[r.sym] ? 'Vergleichbar: ' + UCITS[r.sym] + '. ' : 'Suche bei deinem Broker nach einer UCITS-Version oder einem ETC auf ' + r.name + '. ') + 'Kaufen kannst du ETFs in der App deines Brokers, zum Beispiel Trade Republic. Bitte vor dem Kauf dort prüfen.'));
-    b.appendChild(el('div', 'sub', 'Wichtige Nachrichten dazu'));
-    const nw = el('div', 'news'); b.appendChild(nw); newsList(nw, matchNews(ETF_WORDS[r.sym] || [r.name.toLowerCase()]).filter((n) => (n.wichtig == null ? 2 : n.wichtig) >= 1), 6);
-    if (scroll && window.innerWidth < 1050) box.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  // ------------------------------------------------------------------ NACHRICHTEN
-  const N = { tag: 'Alle', q: '', only: true };
-  function trBar() {
-    const h = $('#n-tr'); if (!h) return; h.replaceChildren();
-    if (TR.state === 'aktiv') { h.appendChild(el('span', 'small okmsg', 'Englische Meldungen werden automatisch ins Deutsche übersetzt (in deinem Browser).')); return; }
-    if (TR.state === 'braucht Klick') {
-      const b = el('button', 'btn primary', 'Nachrichten auf Deutsch übersetzen'); b.type = 'button';
-      b.addEventListener('click', async () => { b.textContent = 'Lade Übersetzung …'; const ok = await trInit(true); if (ok) { try { localStorage.setItem('mts-tr-on', '1'); } catch (e) { /* egal */ } renderNews(); } else { b.textContent = 'Übersetzung hat nicht geklappt'; } });
-      h.append(b, el('span', 'small muted', 'Einmal klicken, danach übersetzt Chrome alle Meldungen selbst.')); return;
-    }
-    h.appendChild(el('span', 'small muted', 'Deutsche Quellen erscheinen auf Deutsch. Englische Meldungen übersetzt die Seite in Chrome am PC automatisch, in diesem Browser geht das nicht.'));
-  }
-  function renderNews() {
-    trBar();
-    const all = (D.data && D.data.news && D.data.news.daten) || [];
-    const imp = (n) => (n.wichtig == null ? 2 : n.wichtig);
-    const base = N.only ? all.filter((n) => imp(n) >= 2) : all;
-    chips($('#n-mode'), [['wichtig', 'Nur wichtige (' + all.filter((n) => imp(n) >= 2).length + ')'], ['alle', 'Alle (' + all.length + ')']], N.only ? 'wichtig' : 'alle', (v) => { N.only = v === 'wichtig'; renderNews(); });
-    const tags = ['Alle'].concat(Array.from(new Set(base.flatMap((n) => n.tags || []))));
-    if (!tags.includes(N.tag)) N.tag = 'Alle';
-    chips($('#n-tags'), tags.map((t) => [t, t]), N.tag, (t) => { N.tag = t; renderNews(); });
-    const q = N.q.trim().toLowerCase();
-    const items = base.filter((n) => (N.tag === 'Alle' || (n.tags || []).includes(N.tag)) && (!q || (n.titel + ' ' + (n.text || '')).toLowerCase().includes(q)));
-    newsList($('#n-list'), items);
-  }
-  $('#n-q').addEventListener('input', (e) => { N.q = e.target.value; renderNews(); });
-
-  // ------------------------------------------------------------------ LAGE
-  function renderIdeas() {
-    const host = $('#l-ideas'); host.replaceChildren();
-    const d = D.ideas;
-    if (!d || !d.punkte || !d.punkte.length) {
-      host.appendChild(el('p', 'muted', 'Noch keine Einordnung. Schreib Claude im Chat "Update", dann recherchiert Claude die aktuelle Lage und trägt sie hier ein.'));
-      $('#l-stand').textContent = ''; return;
-    }
-    $('#l-stand').textContent = 'Stand ' + fTime(new Date(d.stand).getTime()) + ', keine Empfehlung';
-    d.punkte.forEach((p) => {
-      const c = el('article', 'card');
-      c.appendChild(el('span', 'kicker', p.bereich || ''));
-      c.appendChild(el('h3', '', p.titel));
-      if (p.warum) { c.appendChild(el('span', 'kicker', 'Warum')); c.appendChild(el('p', '', p.warum)); }
-      if (p.haken) { c.appendChild(el('span', 'kicker', 'Der Haken')); c.appendChild(el('p', '', p.haken)); }
-      if (p.beobachten) { c.appendChild(el('span', 'kicker', 'Beobachten')); c.appendChild(el('p', '', p.beobachten)); }
-      if (p.quellen) c.appendChild(el('span', 'muted small', 'Quellen: ' + p.quellen));
-      host.appendChild(c);
-    });
-  }
-  function renderSignals() {
-    const host = $('#l-signals'); host.replaceChildren();
-    const ch = D.data && D.data.chancen; const list = (ch && ch.daten) || [];
-    if (!list.length) host.appendChild(el('p', 'muted', 'Gerade fällt nach den Regeln nichts Besonderes auf.'));
-    list.forEach((x) => {
-      const c = el('article', 'card');
-      c.appendChild(el('span', 'kicker', x.art)); c.appendChild(el('h3', '', x.coin + ' (' + x.symbol + ')')); c.appendChild(el('p', '', x.erklaerung));
-      (x.belege || []).forEach((t) => c.appendChild(el('p', 'muted small', 'Meldung: ' + t)));
-      const r = el('p', 'rk'); r.appendChild(el('b', '', 'Risiko: ')); r.appendChild(document.createTextNode(x.risiko)); c.appendChild(r);
-      host.appendChild(c);
-    });
-    $('#l-rules').textContent = ch ? 'Regeln: ' + ch.regeln : '';
-  }
-
-  // ------------------------------------------------------------------ HANDELN (offizielles Jupiter-Fenster)
-  const SOL_MINT = 'So11111111111111111111111111111111111111112';
-  const USDC_MINT = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v';
-  const J = { mint: null, sym: null, key: null, loading: false, queue: null };
-  function loadJupScript(cb, stateEl) {
-    if (window.Jupiter && window.Jupiter.init) { cb(); return; }
-    J.queue = cb;
-    if (J.loading) return;
-    J.loading = true;
-    if (stateEl) stateEl.textContent = 'Lade das Handelsfenster von Jupiter …';
-    const s = document.createElement('script');
-    s.src = 'https://plugin.jup.ag/plugin-v1.js';
-    s.onload = () => { J.loading = false; if (J.queue) J.queue(); };
-    s.onerror = () => { J.loading = false; if (stateEl) stateEl.textContent = 'Das Handelsfenster von Jupiter ist gerade nicht erreichbar. Du kannst direkt auf jup.ag handeln.'; };
-    document.head.appendChild(s);
-  }
-  function mountJup(targetId, inMint, outMint, stateEl) {
-    loadJupScript(() => {
-      const target = document.getElementById(targetId); if (!target) return;
-      const key = targetId + '|' + inMint + '|' + outMint;
-      if (J.key === key && target.childElementCount) return;
-      try {
-        target.replaceChildren();
-        window.Jupiter.init({ displayMode: 'integrated', integratedTargetId: targetId, formProps: { initialInputMint: inMint, initialOutputMint: outMint },
-          onSuccess: (res) => { try { window.__mtsJupiterSuccess && window.__mtsJupiterSuccess(res); } catch (e) { /* Journal optional */ } } });
-        J.key = key;
-        if (stateEl) stateEl.textContent = '';
-      } catch (e) { if (stateEl) stateEl.textContent = 'Das Handelsfenster konnte nicht starten (' + e.message + '). Du kannst direkt auf jup.ag handeln.'; }
-    }, stateEl);
-  }
-  function initJup() {
-    mountJup('jupiter-plugin', SOL_MINT, J.mint || USDC_MINT, $('#j-state'));
-    if (J.mint) setTimeout(() => { $('#j-state').textContent = 'Vorausgewählt: ' + (J.sym || 'Token') + '. Prüfe die Adresse im Fenster, bevor du tauschst.'; }, 50);
-  }
-
-  // ------------------------------------------------------------------ JOURNAL (Trades, Steuer, Datei)
-  const JR = { items: [], dir: null, perm: false, pending: null, year: String(new Date().getFullYear()) };
-  const LSKEY = 'mts-journal-v1';
-  // Deutsche Schreibweise: Komma = Dezimal, Punkt = Tausender ("1.000.000" = eine Million, "0,5" = ein halb)
-  const num = (v) => {
-    if (v == null) return NaN; let t = String(v).trim().replace(/\s/g, ''); if (!t) return NaN;
-    if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.');
-    else if ((t.match(/\./g) || []).length > 1 || /^\d{1,3}\.\d{3}$/.test(t)) t = t.replace(/\./g, '');
-    return /^-?\d*\.?\d+$/.test(t) ? parseFloat(t) : NaN;
-  };
-  const fEur = (v) => (v == null || !isFinite(v)) ? '–' : nf(2).format(v) + ' €';
-  const fQty = (v) => !isFinite(v) ? '–' : new Intl.NumberFormat('de-DE', { maximumFractionDigits: 8 }).format(v);
-  const fDate = (iso) => new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short', timeZone: TZ }).format(new Date(iso));
-  function jLoadLocal() { try { const t = localStorage.getItem(LSKEY); if (t) JR.items = JSON.parse(t).eintraege || []; } catch (e) { /* kein Speicher */ } }
-  function jPayload() { return { app: 'MyTradingSinc', version: 1, gespeichert: new Date().toISOString(), hinweis: 'Trade-Journal. Keine Steuerberatung.', eintraege: JR.items }; }
-  function jSaveLocal() { try { localStorage.setItem(LSKEY, JSON.stringify(jPayload())); } catch (e) { /* kein Speicher */ } }
-  // Datei-Griff im Browser merken (IndexedDB), damit die Datei beim nächsten Besuch wieder verbunden ist
-  function idb(mode, fn) {
-    return new Promise((res, rej) => {
-      let req; try { req = indexedDB.open('mts', 1); } catch (e) { rej(e); return; }
-      req.onupgradeneeded = () => req.result.createObjectStore('kv');
-      req.onsuccess = () => { try { const tx = req.result.transaction('kv', mode); const st = tx.objectStore('kv'); const r = fn(st); tx.oncomplete = () => res(r && r.result); tx.onerror = () => rej(tx.error); } catch (e) { rej(e); } };
-      req.onerror = () => rej(req.error);
-    });
-  }
-  const fsOk = 'showDirectoryPicker' in window;
-  function jFileState(text, err) { const e = $('#jfile-state'); e.textContent = text; e.className = 'small ' + (err ? 'errmsg' : ''); }
-  async function jEnsurePerm(ask) {
-    if (!JR.dir) return false;
-    try {
-      let p = await JR.dir.queryPermission({ mode: 'readwrite' });
-      if (p !== 'granted' && ask) p = await JR.dir.requestPermission({ mode: 'readwrite' });
-      JR.perm = p === 'granted'; return JR.perm;
-    } catch (e) { return false; }
-  }
-  async function jWriteText(name, text) {
-    const fh = await JR.dir.getFileHandle(name, { create: true });
-    const w = await fh.createWritable(); await w.write(text); await w.close();
-  }
-  async function jWriteFile(ask) {
-    if (!JR.dir) return false;
-    if (!(await jEnsurePerm(ask))) { jFileState('Ordner "' + JR.dir.name + '" ist verbunden, aber der Browser braucht deine Erlaubnis. Klicke beim nächsten Speichern auf "Zulassen".', true); return false; }
-    try {
-      await jWriteText('MyTradingSinc-Journal.json', JSON.stringify(jPayload(), null, 1));
-      const years = Array.from(new Set(JR.items.map((i) => i.ts.slice(0, 4))));
-      for (const y of years) await jWriteText('Steuerliste-' + y + '.csv', jCsv(y));
-      jFileState('Gespeichert im Ordner "' + JR.dir.name + '" um ' + new Intl.DateTimeFormat('de-DE', { timeStyle: 'medium', timeZone: TZ }).format(new Date()) + ' (Journal und ' + years.length + ' Steuerliste' + (years.length === 1 ? '' : 'n') + ').');
-      return true;
-    } catch (e) { jFileState('Speichern in den Ordner hat nicht geklappt (' + e.message + '). Deine Einträge sind im Browser gesichert.', true); return false; }
-  }
-  async function jPersist(ask) { jSaveLocal(); renderJournal(); if (JR.dir) await jWriteFile(ask); }
-  $('#jfile-new').addEventListener('click', async () => {
-    if (!fsOk) { jFileState('Dieser Browser kann nicht direkt in einen Ordner speichern. Öffne die Seite in Chrome oder Edge am PC, oder lade die CSV-Datei herunter.', true); return; }
-    try {
-      const dir = await window.showDirectoryPicker({ id: 'trading-historie', mode: 'readwrite', startIn: 'desktop' });
-      JR.dir = dir;
-      try {
-        const fh = await dir.getFileHandle('MyTradingSinc-Journal.json');
-        const data = JSON.parse(await (await fh.getFile()).text());
-        if (data && Array.isArray(data.eintraege)) { const ids = new Set(JR.items.map((x) => x.id)); data.eintraege.forEach((x) => { if (!ids.has(x.id)) JR.items.push(x); }); }
-      } catch (e) { /* noch kein Journal im Ordner */ }
-      await idb('readwrite', (st) => st.put(dir, 'dir')).catch(() => {});
-      await jPersist(true);
-    } catch (e) { if (e.name !== 'AbortError') jFileState('Ordner konnte nicht verbunden werden (' + e.message + ').', true); }
-  });
-  // Formular
-  const ART = { kauf: 'Kauf', verkauf: 'Verkauf', tausch: 'Tausch' };
-  function jFormMode() {
-    const tausch = $('#jf-art').value === 'tausch';
-    document.querySelectorAll('#jf .tx2').forEach((e) => { e.hidden = !tausch; });
-    $('#jf-a1l').textContent = tausch ? 'Abgegeben: was' : 'Was (z. B. BTC, SOL, SPY)';
-    $('#jf-m1l').textContent = tausch ? 'Abgegeben: Menge' : 'Menge';
-    $('#jf-wl').textContent = tausch ? 'Wert des Tauschs in €' : ($('#jf-art').value === 'kauf' ? 'Bezahlt in € (ohne Gebühr)' : 'Erhalten in € (vor Gebühr)');
-  }
-  $('#jf-art').addEventListener('change', jFormMode);
-  function nowLocal(d) { const x = d || new Date(); const off = x.getTimezoneOffset(); return new Date(x.getTime() - off * 60000).toISOString().slice(0, 16); }
-  function jMsg(t, ok) { const m = $('#jf-msg'); m.textContent = t; m.className = ok ? 'okmsg' : 'errmsg'; }
-  $('#jf-solw').addEventListener('click', () => {
-    const sol = K.map.get('SOLUSDT'), eur = K.eur;
-    const a1 = $('#jf-a1').value.trim().toUpperCase(), a2 = $('#jf-a2').value.trim().toUpperCase();
-    const qty = a1 === 'SOL' ? num($('#jf-m1').value) : (a2 === 'SOL' ? num($('#jf-m2').value) : NaN);
-    if (!sol || !eur) { jMsg('Der SOL- oder Euro-Kurs ist gerade nicht geladen. Öffne kurz den Tab Krypto.', false); return; }
-    if (!isFinite(qty)) { jMsg('Trage zuerst ein, wie viel SOL abgegeben oder erhalten wurde.', false); return; }
-    const v = qty * sol.c / eur;
-    $('#jf-w').value = nf(2).format(v);
-    jMsg('1 SOL ≈ ' + fEur(sol.c / eur) + ' (jetzt). Für einen älteren Trade den Kurs zum Trade-Zeitpunkt nehmen.', true);
-  });
-  $('#jf').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const it = { id: 't' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), ts: new Date($('#jf-ts').value).toISOString(), plattform: $('#jf-pl').value, klasse: $('#jf-kl').value, art: $('#jf-art').value,
-      asset: $('#jf-a1').value.trim().toUpperCase(), menge: num($('#jf-m1').value), wert: num($('#jf-w').value), gebuehr: num($('#jf-g').value) || 0, notiz: $('#jf-n').value.trim() };
-    if (it.art === 'tausch') { it.asset2 = $('#jf-a2').value.trim().toUpperCase(); it.menge2 = num($('#jf-m2').value); }
-    if (!it.asset || !(it.menge > 0) || !(it.wert >= 0) || isNaN(new Date(it.ts))) { jMsg('Bitte Datum, Was, Menge und Wert ausfüllen. Zahlen mit Komma oder Punkt.', false); return; }
-    if (it.art === 'tausch' && (!it.asset2 || !(it.menge2 > 0))) { jMsg('Beim Tausch bitte auch eintragen, was und wie viel du erhalten hast.', false); return; }
-    if (JR.pending && JR.pending.txid) it.txid = JR.pending.txid;
-    JR.items.push(it); JR.pending = null; $('#j-hint').replaceChildren();
-    ['#jf-a1', '#jf-m1', '#jf-a2', '#jf-m2', '#jf-w', '#jf-g', '#jf-n'].forEach((s) => { $(s).value = ''; });
-    $('#jf-ts').value = nowLocal();
-    jMsg('Gespeichert: ' + ART[it.art] + ' ' + fQty(it.menge) + ' ' + it.asset + (it.art === 'tausch' ? ' gegen ' + fQty(it.menge2) + ' ' + it.asset2 : '') + ' für ' + fEur(it.wert) + '. Stimmt das nicht, lösch den Eintrag unten und trag ihn neu ein.', true);
-    await jPersist(true);
-    if (!JR.dir) jFileState('Im Browser gesichert. Verbinde den Ordner "Trading Historie", damit es auch auf deinem Desktop gespeichert ist.', true);
-  });
-  // FIFO-Berechnung
-  function jCompute() {
-    const items = JR.items.slice().sort((a, b) => a.ts.localeCompare(b.ts));
-    const lots = {}, sales = [], warn = [];
-    const buy = (asset, qty, cost, ts) => { (lots[asset] = lots[asset] || []).push({ qty, unit: cost / qty, ts }); };
-    const sell = (asset, qty, proceeds, ts, klasse, ref) => {
-      let left = qty; const q = lots[asset] || [];
-      while (left > 1e-12 && q.length) {
-        const lot = q[0], take = Math.min(left, lot.qty), share = take / qty;
-        const held = (new Date(ts) - new Date(lot.ts)) / 86400000;
-        const oneYear = new Date(lot.ts); oneYear.setFullYear(oneYear.getFullYear() + 1);
-        sales.push({ ts, asset, qty: take, erloes: proceeds * share, kosten: lot.unit * take, tage: Math.floor(held), frei: new Date(ts) > oneYear, klasse, ref });
-        lot.qty -= take; left -= take; if (lot.qty <= 1e-12) q.shift();
-      }
-      if (left > 1e-9) { warn.push(asset); sales.push({ ts, asset, qty: left, erloes: proceeds * (left / qty), kosten: null, tage: null, frei: false, klasse, ref, fehlt: true }); }
-    };
-    items.forEach((it) => {
-      if (it.wert == null || !isFinite(it.wert)) { warn.push(it.asset + ' (Wert fehlt)'); return; }
-      if (it.art === 'kauf') buy(it.asset, it.menge, it.wert + (it.gebuehr || 0), it.ts);
-      else if (it.art === 'verkauf') sell(it.asset, it.menge, it.wert - (it.gebuehr || 0), it.ts, it.klasse, it.id);
-      else if (it.art === 'tausch') { sell(it.asset, it.menge, it.wert - (it.gebuehr || 0), it.ts, it.klasse, it.id); buy(it.asset2, it.menge2, it.wert, it.ts); }
-    });
-    sales.forEach((s) => { s.ergebnis = s.kosten == null ? null : s.erloes - s.kosten; });
-    return { sales, warn: Array.from(new Set(warn)) };
-  }
-  function renderJournal() {
-    const { sales, warn } = jCompute();
-    const years = Array.from(new Set([String(new Date().getFullYear())].concat(sales.map((s) => s.ts.slice(0, 4))).concat(JR.items.map((i) => i.ts.slice(0, 4))))).sort().reverse();
-    const ys = $('#jy'); ys.replaceChildren(); years.forEach((y) => { const o = el('option', '', y); o.value = y; ys.appendChild(o); }); ys.value = JR.year;
-    const ySales = sales.filter((s) => s.ts.slice(0, 4) === JR.year && s.klasse === 'krypto');
-    const pflicht = ySales.filter((s) => !s.frei && s.ergebnis != null), frei = ySales.filter((s) => s.frei && s.ergebnis != null);
-    const gew = pflicht.filter((s) => s.ergebnis > 0).reduce((a, s) => a + s.ergebnis, 0);
-    const verl = pflicht.filter((s) => s.ergebnis < 0).reduce((a, s) => a + s.ergebnis, 0);
-    const netto = gew + verl, freiSum = frei.reduce((a, s) => a + s.ergebnis, 0);
-    const card = (k, v, t, c) => { const d = el('div', 'card'); d.appendChild(el('span', 'kicker', k)); d.appendChild(el('b', c || '', v)); if (t) d.appendChild(el('span', 'muted small', t)); return d; };
-    let fz, fzc;
-    if (netto < 1000) { fz = 'Unter der Freigrenze'; fzc = 'up'; } else { fz = 'Über der Freigrenze'; fzc = 'down'; }
-    const host = $('#jsum'); host.replaceChildren(
-      card('Steuerpflichtiges Ergebnis ' + JR.year, fEur(netto), 'Gewinne ' + fEur(gew) + ', Verluste ' + fEur(verl), cls(netto)),
-      card('Freigrenze 1.000 €', fz, netto < 1000 ? (netto > 0 ? 'Noch ' + fEur(1000 - netto) + ' bis zur Grenze. Ab 1.000 € zählt der ganze Betrag.' : 'Nach heutigem Stand steuerfrei.') : 'Der ganze Betrag gehört in die Anlage SO deiner Steuererklärung.', fzc),
-      card('Geschätzte Steuer ' + JR.year, fEur(netto >= 1000 ? netto * jRate() / 100 : 0), netto >= 1000 ? 'Bei ' + jRate() + ' % Steuersatz. Das zahlst du mit der Steuererklärung nach.' : 'Unter der Freigrenze fällt keine Steuer an.', netto >= 1000 ? 'down' : 'up'),
-      card('Steuerfrei nach 1 Jahr', fEur(freiSum), 'Gewinne aus Coins, die du länger als ein Jahr gehalten hast'));
-    if (warn.length) host.appendChild(card('Bitte prüfen', warn.join(', '), 'Bei diesen Werten fehlt ein Kauf oder der Wert in Euro. Trage ihn unten bei "Alle Einträge" nach, sonst stimmt die Rechnung nicht.', 'down'));
-    const tb = $('#jsales tbody'); tb.replaceChildren();
-    sales.slice().reverse().forEach((s) => {
-      const tr = el('tr'); tr.style.cursor = 'default';
-      tr.append(el('td', '', fDate(s.ts)), el('td', '', s.asset), el('td', '', fQty(s.qty)), el('td', '', fEur(s.erloes)), el('td', '', s.kosten == null ? 'fehlt' : fEur(s.kosten)), el('td', cls(s.ergebnis), s.ergebnis == null ? '–' : fEur(s.ergebnis)),
-        el('td', 'muted', s.tage == null ? '–' : s.tage + ' Tage'), el('td', s.klasse !== 'krypto' ? 'muted' : (s.frei ? 'up' : ''), s.klasse !== 'krypto' ? 'zieht Broker ab' : s.frei ? 'steuerfrei' : 'steuerpflichtig'));
-      tb.appendChild(tr);
-    });
-    if (!sales.length) { const tr = el('tr'); const td = el('td', 'empty', 'Noch keine Verkäufe. Gewinne und Verluste erscheinen hier, sobald du etwas verkaufst oder tauschst.'); td.colSpan = 8; tr.appendChild(td); tb.appendChild(tr); }
-    const ta = $('#jall tbody'); ta.replaceChildren();
-    JR.items.slice().sort((a, b) => b.ts.localeCompare(a.ts)).forEach((it) => {
-      const tr = el('tr'); tr.style.cursor = 'default';
-      const what = it.art === 'tausch' ? it.asset + ' → ' + it.asset2 : it.asset;
-      const qty = it.art === 'tausch' ? fQty(it.menge) + ' → ' + fQty(it.menge2) : fQty(it.menge);
-      let wtd;
-      if (it.wert == null || !isFinite(it.wert)) {
-        wtd = el('td'); const wrap = el('div', 'valfix'); const inp = el('input'); inp.placeholder = 'Wert in €'; inp.setAttribute('aria-label', 'Wert in Euro nachtragen');
-        const ok = el('button', 'btn', 'OK'); ok.type = 'button';
-        ok.addEventListener('click', async () => { const v = num(inp.value); if (!(v >= 0)) { inp.focus(); return; } it.wert = v; it.notiz = 'Wert von Hand nachgetragen'; await jPersist(true); });
-        wrap.append(inp, ok); wtd.appendChild(wrap);
-      } else wtd = el('td', '', fEur(it.wert));
-      tr.append(el('td', '', fDate(it.ts)), el('td', '', ART[it.art]), el('td', '', what), el('td', '', qty), wtd, el('td', 'muted', it.plattform));
-      const td = el('td'); const del = el('button', 'btn danger', 'Löschen'); del.type = 'button';
-      del.addEventListener('click', async () => {
-        if (del.dataset.confirm !== '1') { del.dataset.confirm = '1'; del.textContent = 'Wirklich löschen?'; setTimeout(() => { if (del.isConnected) { del.dataset.confirm = ''; del.textContent = 'Löschen'; } }, 4000); return; }
-        JR.items = JR.items.filter((x) => x.id !== it.id); await jPersist(true);
-      });
-      td.appendChild(del); tr.appendChild(td); ta.appendChild(tr);
-    });
-    if (!JR.items.length) { const tr = el('tr'); const td = el('td', 'empty', 'Noch keine Einträge.'); td.colSpan = 7; tr.appendChild(td); ta.appendChild(tr); }
-    $('#jcount').textContent = JR.items.length + ' Einträge';
-  }
-  $('#jy').addEventListener('change', (e) => { JR.year = e.target.value; renderJournal(); });
-  function jRate() { const r = num($('#jrate').value); return isFinite(r) && r >= 0 && r <= 60 ? r : 30; }
-  function jTax(year) {
-    const { sales } = jCompute();
-    const ys = sales.filter((s) => s.ts.slice(0, 4) === year && s.klasse === 'krypto' && s.ergebnis != null);
-    const netto = ys.filter((s) => !s.frei).reduce((a, s) => a + s.ergebnis, 0);
-    const steuer = netto >= 1000 ? netto * jRate() / 100 : 0;
-    return { sales, netto, steuer };
-  }
-  function jCsv(year) {
-    const { sales } = jCompute();
-    const q = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
-    const n2 = (v) => v == null || !isFinite(v) ? '' : v.toFixed(2).replace('.', ',');
-    const inYear = (ts) => !year || ts.slice(0, 4) === year;
-    const t = year ? jTax(year) : null;
-    const lines = [];
-    if (t) {
-      lines.push(q('MyTradingSinc Steuerliste ' + year + ' (Schaetzung, keine Steuerberatung)'));
-      lines.push([q('Steuerpflichtiges Ergebnis Krypto EUR'), q(n2(t.netto))].join(';'));
-      lines.push([q('Freigrenze 1.000 EUR'), q(t.netto < 1000 ? 'unterschritten, steuerfrei' : 'ueberschritten, ganzer Betrag in Anlage SO')].join(';'));
-      lines.push([q('Geschaetzte Steuer EUR bei ' + jRate() + ' %'), q(n2(t.steuer))].join(';'));
-      lines.push('');
-    }
-    lines.push(['Typ', 'Datum', 'Art', 'Was', 'Menge', 'Erhalten', 'Menge erhalten', 'Wert EUR', 'Gebuehr EUR', 'Plattform', 'Anlageart', 'Transaktions-ID', 'Notiz'].map(q).join(';'));
-    JR.items.slice().sort((a, b) => a.ts.localeCompare(b.ts)).filter((it) => inYear(it.ts)).forEach((it) => lines.push(['Eintrag', fDate(it.ts), ART[it.art], it.asset, String(it.menge).replace('.', ','), it.asset2 || '', it.menge2 != null ? String(it.menge2).replace('.', ',') : '', n2(it.wert), n2(it.gebuehr), it.plattform, it.klasse, it.txid || '', it.notiz || ''].map(q).join(';')));
-    lines.push('');
-    lines.push(['Typ', 'Datum Verkauf', 'Was', 'Menge', 'Erloes EUR', 'Anschaffungskosten EUR (FIFO)', 'Ergebnis EUR', 'Haltedauer Tage', 'Steuer'].map(q).join(';'));
-    sales.filter((s) => inYear(s.ts)).forEach((s) => lines.push(['Verkauf', fDate(s.ts), s.asset, String(s.qty).replace('.', ','), n2(s.erloes), s.kosten == null ? 'fehlt' : n2(s.kosten), n2(s.ergebnis), s.tage == null ? '' : s.tage, s.klasse !== 'krypto' ? 'Broker zieht ab' : s.frei ? 'steuerfrei (ueber 1 Jahr)' : 'steuerpflichtig'].map(q).join(';')));
-    return '﻿' + lines.join('\r\n');
-  }
-  $('#jfile-csv').addEventListener('click', () => {
-    const blob = new Blob([jCsv(JR.year)], { type: 'text/csv;charset=utf-8' });
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'Steuerliste-' + JR.year + '.csv';
-    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-  });
-  $('#jrate').addEventListener('change', async () => { try { localStorage.setItem('mts-rate', String(jRate())); } catch (e) { /* egal */ } await jPersist(false); });
-  // Vorschlag nach einem Jupiter-Trade
-  function jFromJupiter(res) {
-    const qr = res && res.quoteResponseMeta && (res.quoteResponseMeta.quoteResponse || res.quoteResponseMeta);
-    JR.pending = { txid: res && res.txid };
-    const inSol = qr && qr.inputMint === SOL_MINT, outSol = qr && qr.outputMint === SOL_MINT;
-    $('#jf-ts').value = nowLocal(); $('#jf-pl').value = 'Jupiter (Wallet)'; $('#jf-kl').value = 'krypto'; $('#jf-art').value = 'tausch'; jFormMode();
-    $('#jf-n').value = res && res.txid ? 'Signatur ' + res.txid : '';
-    if (inSol) { $('#jf-a1').value = 'SOL'; if (qr.inAmount) $('#jf-m1').value = nf(6).format(+qr.inAmount / 1e9); $('#jf-a2').value = J.sym || ''; }
-    if (outSol) { $('#jf-a2').value = 'SOL'; if (qr.outAmount) $('#jf-m2').value = nf(6).format(+qr.outAmount / 1e9); $('#jf-a1').value = J.sym || ''; }
-    const h = $('#j-hint'); h.replaceChildren();
-    const bn = el('div', 'banner');
-    bn.appendChild(el('span', '', 'Ein Trade über Jupiter wurde erkannt. Prüfe die vorausgefüllten Felder, ergänze die fehlende Menge und klicke auf Speichern.'));
-    if (res && res.txid) { const a = el('a', '', 'Transaktion ansehen'); a.href = 'https://solscan.io/tx/' + res.txid; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.className = 'btn'; bn.appendChild(a); }
-    h.appendChild(bn);
-    const tb = $('#j-trade-banner');
-    if (tb) { tb.hidden = false; }
-  }
-  window.__mtsJupiterSuccess = jFromJupiter;
-  async function jInit() {
-    jLoadLocal(); $('#jf-ts').value = nowLocal(); jFormMode(); renderJournal();
-    try { const r = localStorage.getItem('mts-rate'); if (r) $('#jrate').value = r; } catch (e) { /* egal */ }
-    renderJournal();
-    try { const h = await idb('readonly', (st) => st.get('dir')); if (h) { JR.dir = h; const ok = await jEnsurePerm(false); jFileState(ok ? 'Verbunden mit dem Ordner "' + h.name + '". Neue Einträge werden automatisch dort gespeichert.' : 'Ordner "' + h.name + '" ist bekannt. Beim nächsten Speichern fragt der Browser einmal nach Erlaubnis.'); } } catch (e) { /* kein IndexedDB */ }
-    if (!fsOk) jFileState('Dieser Browser kann nicht direkt in einen Ordner speichern. Deine Einträge liegen im Browser. Öffne die Seite in Chrome oder Edge am PC für das automatische Speichern, oder lade die CSV-Datei herunter.', true);
-  }
-  jInit();
-
-  // ------------------------------------------------------------------ WALLET-ABGLEICH (Trades automatisch aus der Solana-Blockchain)
-  // Liest nur die öffentliche Adresse. Keine Schlüssel, keine Phrase, kein Zugriff auf dein Guthaben.
-  const WS = { addr: null, busy: false, seen: {}, timer: null };
-  const RPC = 'https://api.mainnet-beta.solana.com';
-  const STABLE_MINTS = { [USDC_MINT]: 'USDC', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB': 'USDT' };
-  const SWAP_LOG = /Instruction: (Swap|SwapV2|Route|RouteV2|SharedAccountsRoute|SharedAccountsRouteV2|ExactOutRoute|Buy|Sell|SwapBaseIn|SwapBaseOut)\b/;
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-  function rpc(method, params) {
-    return fetch(RPC, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method, params }) })
-      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then((j) => { if (j.error) throw new Error(j.error.message); return j.result; });
-  }
-  const symCache = {};
-  async function mintSymbol(mint) {
-    if (mint === SOL_MINT) return 'SOL';
-    if (STABLE_MINTS[mint]) return STABLE_MINTS[mint];
-    if (symCache[mint]) return symCache[mint];
-    try {
-      const pairs = await getJSON(DEX + '/tokens/v1/solana/' + mint);
-      const p = pairs && pairs[0];
-      const t = p ? (p.baseToken.address === mint ? p.baseToken : p.quoteToken) : null;
-      symCache[mint] = (t && t.symbol) || mint.slice(0, 4) + '…' + mint.slice(-4);
-    } catch (e) { symCache[mint] = mint.slice(0, 4) + '…' + mint.slice(-4); }
-    return symCache[mint];
-  }
-  async function eurAt(asset, qty, tsMs) {
-    const start = Math.floor(tsMs / 60000) * 60000;
-    if (asset === 'SOL') { const k = await getJSON(BIN_REST + '/klines?symbol=SOLEUR&interval=1m&limit=1&startTime=' + start); if (k && k[0]) return qty * (+k[0][4]); }
-    if (asset === 'USDC' || asset === 'USDT') { const k = await getJSON(BIN_REST + '/klines?symbol=EURUSDT&interval=1m&limit=1&startTime=' + start); if (k && k[0]) return qty / (+k[0][4]); }
-    return null;
-  }
-  function parseSwap(tx, owner) {
-    const meta = tx && tx.meta; if (!meta || meta.err) return null;
-    const keys = tx.transaction.message.accountKeys.map((k) => (typeof k === 'string' ? k : k.pubkey));
-    const idx = keys.indexOf(owner);
-    const d = {};
-    if (idx >= 0) { let v = meta.postBalances[idx] - meta.preBalances[idx]; if (idx === 0) v += meta.fee; d[SOL_MINT] = (d[SOL_MINT] || 0) + v / 1e9; }
-    const add = (arr, sign) => (arr || []).forEach((bal) => { if (bal.owner !== owner) return; const ui = bal.uiTokenAmount || {}; const v = ui.uiAmount != null ? ui.uiAmount : (+ui.amount / Math.pow(10, ui.decimals || 0)); d[bal.mint] = (d[bal.mint] || 0) + sign * (v || 0); });
-    add(meta.postTokenBalances, 1); add(meta.preTokenBalances, -1);
-    const out = [], inn = [];
-    Object.entries(d).forEach(([m, v]) => {
-      const min = m === SOL_MINT ? 0.0025 : 1e-12;   // kleine SOL-Beträge sind Netzwerkgebühren und Kontomiete
-      if (v < -min) out.push([m, -v]); else if (v > min) inn.push([m, v]);
-    });
-    if (out.length !== 1 || inn.length !== 1) return null;
-    return { outMint: out[0][0], outQty: out[0][1], inMint: inn[0][0], inQty: inn[0][1] };
-  }
-  function setWState(t, err) { const e = $('#jw-state'); if (e) { e.textContent = t; e.className = 'small ' + (err ? 'errmsg' : 'okmsg'); } }
-  function wSaveSeen() { try { localStorage.setItem('mts-seen', JSON.stringify(WS.seen)); } catch (e) { /* egal */ } }
-  async function jSync() {
-    if (!WS.addr || WS.busy) return;
-    WS.busy = true; setWState('Gleiche mit deinem Wallet ab …');
-    try {
-      const known = new Set(JR.items.filter((i) => i.txid).map((i) => i.txid));
-      const sigs = await rpc('getSignaturesForAddress', [WS.addr, { limit: 60 }]);
-      const fresh = sigs.filter((s) => !s.err && !known.has(s.signature) && !WS.seen[s.signature]).reverse();
-      let added = 0, missing = 0;
-      for (const s of fresh) {
-        await sleep(300);
-        let tx;
-        try { tx = await rpc('getTransaction', [s.signature, { maxSupportedTransactionVersion: 0, encoding: 'jsonParsed', commitment: 'confirmed' }]); }
-        catch (e) { if (/429|Too many/i.test(e.message)) { await sleep(3000); continue; } throw e; }
-        if (!tx) continue;
-        WS.seen[s.signature] = 1;
-        const logs = ((tx.meta && tx.meta.logMessages) || []).join('\n');
-        if (!SWAP_LOG.test(logs)) continue;
-        const sw = parseSwap(tx, WS.addr); if (!sw) continue;
-        const ts = (tx.blockTime || s.blockTime || Date.now() / 1000) * 1000;
-        const a1 = await mintSymbol(sw.outMint), a2 = await mintSymbol(sw.inMint);
-        let wert = null;
-        try { wert = await eurAt(a1, sw.outQty, ts); if (wert == null) wert = await eurAt(a2, sw.inQty, ts); } catch (e) { wert = null; }
-        if (wert == null) missing++;
-        JR.items.push({ id: 'sig-' + s.signature.slice(0, 20), ts: new Date(ts).toISOString(), plattform: 'Wallet (automatisch)', klasse: 'krypto', art: 'tausch',
-          asset: a1, menge: sw.outQty, asset2: a2, menge2: sw.inQty, wert: wert == null ? null : Math.round(wert * 100) / 100, gebuehr: 0, txid: s.signature,
-          notiz: wert == null ? 'Wert fehlt, bitte in Euro nachtragen' : 'automatisch aus der Blockchain', mintOut: sw.outMint, mintIn: sw.inMint });
-        added++;
-      }
-      wSaveSeen();
-      if (added) await jPersist(false);
-      const now = new Intl.DateTimeFormat('de-DE', { timeStyle: 'short', timeZone: TZ }).format(new Date());
-      setWState((added ? added + ' neue Trades übernommen' + (missing ? ', bei ' + missing + ' fehlt noch der Wert in Euro (siehe unten)' : '') + '. ' : 'Keine neuen Trades. ') + 'Zuletzt abgeglichen um ' + now + ', nächster Abgleich in 2 Minuten.');
-    } catch (e) { setWState('Abgleich gerade nicht möglich (' + e.message + '). Neuer Versuch in 2 Minuten.', true); }
-    finally { WS.busy = false; }
-  }
-  function wStart() {
-    try { WS.addr = localStorage.getItem('mts-wallet'); WS.seen = JSON.parse(localStorage.getItem('mts-seen') || '{}'); } catch (e) { /* egal */ }
-    // Adresse per Link übernehmen (?wallet=...), danach aus der Adresszeile entfernen
-    try {
-      const u = new URL(location.href), w = u.searchParams.get('wallet');
-      if (w && /^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(w)) { WS.addr = w; localStorage.setItem('mts-wallet', w); }
-      if (w) { u.searchParams.delete('wallet'); history.replaceState(null, '', u.pathname + u.search + u.hash); }
-    } catch (e) { /* egal */ }
-    if (WS.addr) { $('#jw-addr').value = WS.addr; jSync(); }
-    else setWState('Noch keine Wallet-Adresse eingetragen.', false);
-    clearInterval(WS.timer); WS.timer = setInterval(jSync, 2 * 60000);
-  }
-  $('#jw-save').addEventListener('click', () => {
-    const a = $('#jw-addr').value.trim();
-    if (!/^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(a)) { setWState('Das sieht nicht wie eine Solana-Adresse aus. Kopiere sie in Phantom über "Empfangen" oder das Kopier-Symbol neben deinem Konto.', true); return; }
-    WS.addr = a; try { localStorage.setItem('mts-wallet', a); } catch (e) { /* egal */ }
-    jSync();
-  });
-  $('#jw-remove').addEventListener('click', () => { WS.addr = null; $('#jw-addr').value = ''; try { localStorage.removeItem('mts-wallet'); } catch (e) { /* egal */ } setWState('Wallet entfernt. Bereits übernommene Trades bleiben im Journal.', false); });
-  // Nach einem Tausch im Handelsfenster gleich abgleichen
-  const prevSuccess = window.__mtsJupiterSuccess;
-  window.__mtsJupiterSuccess = (res) => {
-    if (WS.addr) { showToast('Trade erkannt. Er wird in wenigen Sekunden automatisch ins Journal übernommen.'); setTimeout(jSync, 8000); setTimeout(jSync, 30000); }
-    else if (prevSuccess) { prevSuccess(res); showToast('Trade erkannt. Trag deine Wallet-Adresse im Journal ein, dann geht das künftig automatisch.'); }
-  };
-  function showToast(t) {
-    let e = $('#toast'); if (!e) { e = el('div', 'toast'); e.id = 'toast'; document.body.appendChild(e); }
-    e.textContent = t; e.hidden = false; clearTimeout(showToast.t); showToast.t = setTimeout(() => { e.hidden = true; }, 7000);
-  }
-
-  // ------------------------------------------------------------------ Tabs und Start
-  const VIEWS = ['krypto', 'meme', 'etf', 'news', 'lage', 'trade', 'journal'];
-  function show(tab) {
-    if (!VIEWS.includes(tab)) tab = 'krypto';
-    VIEWS.forEach((v) => { document.getElementById('v-' + v).hidden = v !== tab; });
-    document.querySelectorAll('.tab[data-tab]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
-    if (location.hash.slice(1) !== tab) history.replaceState(null, '', '#' + tab);
-    if (tab === 'meme' && (!M.at || Date.now() - M.at > 10000)) loadMemes();
-    if (tab === 'trade') initJup();
-    if (tab === 'news') renderNews();
-    if (tab === 'etf' && !E.sel && D.data && D.data.etfs && D.data.etfs.daten.length) openEtf(D.data.etfs.daten.slice().sort((a, b) => cmpN(a, b, E.per, -1))[0].sym);
-  }
-  document.querySelectorAll('.tab[data-tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  window.addEventListener('hashchange', () => show(location.hash.slice(1)));
-
-  // Bildschirm-Updates gebündelt, damit die Seite flüssig bleibt
-  let lastK = 0;
-  function frame(ts) {
-    if (!document.getElementById('v-krypto').hidden) {
-      if (K.dirty && ts - lastK > 1000) { lastK = ts; renderK(); }
-      if (tapeDirty) renderTape();
-    }
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-  setInterval(() => { if (!document.getElementById('v-meme').hidden && M.src !== 'suche') { if (M.src !== 'etabliert' || Date.now() - M.at > 60000) loadMemes(); } }, 10000);
-
-  show(location.hash.slice(1) || 'krypto');
-  loadData(); setInterval(loadData, 2 * 60000);
-  loadKAll(); connectKAll(); loadCG(); setInterval(loadCG, 5 * 60000);
-  wStart();
-  trInit(false).then((ok) => { if (ok || TR.state === 'braucht Klick') renderNews(); });
+  trInit().then(load); setInterval(load, 2 * 60000);
+  connect();
 })();
 </script>
 </body>

@@ -32,8 +32,6 @@ COINS = [
     {"id": "bitcoin", "symbol": "BTC", "name": "Bitcoin", "binance": "BTCUSDT"},
     {"id": "ethereum", "symbol": "ETH", "name": "Ether", "binance": "ETHUSDT"},
     {"id": "solana", "symbol": "SOL", "name": "Solana", "binance": "SOLUSDT"},
-    {"id": "ripple", "symbol": "XRP", "name": "XRP", "binance": "XRPUSDT"},
-    {"id": "dogecoin", "symbol": "DOGE", "name": "Dogecoin", "binance": "DOGEUSDT"},
 ]
 
 FEEDS = [
@@ -51,17 +49,19 @@ GERMAN_FEEDS = {"tagesschau Wirtschaft", "BTC-ECHO"}
 
 # ETFs (US-Börse). Kurse kommen von Yahoo Finance, Ersatz: Stooq.
 ETFS = [
-    {"sym": "SPY", "name": "S&P 500", "gruppe": "Breiter Markt", "tv": "AMEX:SPY"},
-    {"sym": "QQQ", "name": "Nasdaq 100", "gruppe": "Breiter Markt", "tv": "NASDAQ:QQQ"},
-    {"sym": "URTH", "name": "MSCI World", "gruppe": "Breiter Markt", "tv": "AMEX:URTH"},
-    {"sym": "GLD", "name": "Gold", "gruppe": "Rohstoffe", "tv": "AMEX:GLD"},
-    {"sym": "SLV", "name": "Silber", "gruppe": "Rohstoffe", "tv": "AMEX:SLV"},
-    {"sym": "USO", "name": "Rohöl", "gruppe": "Rohstoffe", "tv": "AMEX:USO"},
-    {"sym": "UNG", "name": "Erdgas", "gruppe": "Rohstoffe", "tv": "AMEX:UNG"},
-    {"sym": "XLE", "name": "Energie-Aktien", "gruppe": "Branchen", "tv": "AMEX:XLE"},
-    {"sym": "ITA", "name": "Rüstung und Luftfahrt", "gruppe": "Branchen", "tv": "ITA"},
-    {"sym": "IBIT", "name": "Bitcoin (BlackRock)", "gruppe": "Krypto-ETFs", "tv": "NASDAQ:IBIT"},
-    {"sym": "ETHA", "name": "Ether (BlackRock)", "gruppe": "Krypto-ETFs", "tv": "NASDAQ:ETHA"},
+    # In Deutschland kaufbare ETFs (UCITS), Kurse von Xetra in Euro
+    {"sym": "EUNL", "yahoo": "EUNL.DE", "stooq": "eunl.de", "name": "iShares Core MSCI World", "isin": "IE00B4L5Y983",
+     "ter": "ca. 0,20 %", "region": "Welt (Industrieländer)", "tv": "XETR:EUNL", "art": "ETF"},
+    {"sym": "VWCE", "yahoo": "VWCE.DE", "stooq": "vwce.de", "name": "Vanguard FTSE All-World", "isin": "IE00BK5BQT80",
+     "ter": "ca. 0,19 %", "region": "Ganze Welt inkl. Schwellenländer", "tv": "XETR:VWCE", "art": "ETF"},
+    {"sym": "SXR8", "yahoo": "SXR8.DE", "stooq": "sxr8.de", "name": "iShares Core S&P 500", "isin": "IE00B5BMR087",
+     "ter": "ca. 0,07 %", "region": "USA", "tv": "XETR:SXR8", "art": "ETF"},
+    {"sym": "IS3N", "yahoo": "IS3N.DE", "stooq": "is3n.de", "name": "iShares Core MSCI EM IMI", "isin": "IE00BKM4GZ66",
+     "ter": "ca. 0,18 %", "region": "Schwellenländer", "tv": "XETR:IS3N", "art": "ETF"},
+    {"sym": "SXRV", "yahoo": "SXRV.DE", "stooq": "sxrv.de", "name": "iShares Nasdaq 100", "isin": "IE00B53SZB19",
+     "ter": "ca. 0,30 %", "region": "US-Technologie", "tv": "XETR:SXRV", "art": "ETF"},
+    {"sym": "4GLD", "yahoo": "4GLD.DE", "stooq": "4gld.de", "name": "Xetra-Gold", "isin": "DE000A0S9GB0",
+     "ter": "ca. 0,3 %", "region": "Gold", "tv": "XETR:4GLD", "art": "ETC"},
 ]
 
 # Stichworte, mit denen Meldungen einem Bereich zugeordnet werden.
@@ -130,8 +130,8 @@ def fetch_prices():
 
 def prices_coingecko():
     ids = ",".join(c["id"] for c in COINS)
-    url = ("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=" + ids +
-           "&price_change_percentage=24h,7d")
+    url = ("https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&ids=" + ids +
+           "&price_change_percentage=24h,7d,1y")
     rows = {r["id"]: r for r in json.loads(http_get(url))}
     out = []
     for c in COINS:
@@ -143,6 +143,7 @@ def prices_coingecko():
             "preis": r["current_price"],
             "aend24": r.get("price_change_percentage_24h_in_currency"),
             "aend7": r.get("price_change_percentage_7d_in_currency"),
+            "aend1y": r.get("price_change_percentage_1y_in_currency"),
             "marktkap": r.get("market_cap"),
             "volumen": r.get("total_volume"),
         })
@@ -214,7 +215,7 @@ STRONG = ["approv", "reject", "ban ", "bans ", "banned", "hack", "exploit", "rat
           "executive order", "tariff", "etf", "inflows", "outflows", "fed ", "sec ", "opec", "strait of hormuz",
           "missile", "default", "emergency", "halt", "freez", "seiz", "arrest", "merger", "acquisition", "earnings",
           "genehmig", "verbot", "angriff", "zinssenkung", "zinserhöhung", "rekordhoch", "absturz", "einbruch", "zölle",
-          "sanktion", "pleite", "insolvenz", "übernahme", "ölpreis", "notenbank"]
+          "sanktion", "pleite", "insolvenz", "übernahme", "ölpreis", "notenbank", "leitzins"]
 NOISE = ["price prediction", "prediction:", "could reach", "how to ", "guide", "best ", "top 10", "top 5", "podcast",
          "opinion", "sponsored", "review", "quiz", "explained", "what is ", "newsletter", "week in review",
          "here's why", "analyst says", "should you", "watch:", "video:", "live updates",
@@ -276,35 +277,44 @@ def fetch_news():
 
 
 # ----------------------------------------------------------------- ETFs
-def etf_yahoo(sym):
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1y&interval=1d"
+def etf_yahoo(e):
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{e['yahoo']}?range=5y&interval=1d"
     r = json.loads(http_get(url))["chart"]["result"][0]
-    q = r["indicators"]["quote"][0]
+    closes = r["indicators"]["quote"][0]["close"]
     rows = []
-    for i, ts in enumerate(r["timestamp"]):
-        vals = [q["open"][i], q["high"][i], q["low"][i], q["close"][i]]
-        if any(v is None for v in vals):
+    for ts, c in zip(r["timestamp"], closes):
+        if c is None:
             continue
-        d = datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d")
-        rows.append({"d": d, "o": round(vals[0], 4), "h": round(vals[1], 4), "l": round(vals[2], 4),
-                     "c": round(vals[3], 4), "v": q["volume"][i] or 0})
+        rows.append({"d": datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d"), "c": round(c, 4)})
     return rows
 
 
-def etf_stooq(sym):
-    url = f"https://stooq.com/q/d/l/?s={sym.lower()}.us&i=d"
+def etf_stooq(e):
+    url = f"https://stooq.com/q/d/l/?s={e['stooq']}&i=d"
     lines = http_get(url).decode("utf-8", "replace").strip().splitlines()
     rows = []
     for line in lines[1:]:
         p = line.split(",")
-        if len(p) < 5:
-            continue
-        try:
-            rows.append({"d": p[0], "o": float(p[1]), "h": float(p[2]), "l": float(p[3]), "c": float(p[4]),
-                         "v": float(p[5]) if len(p) > 5 and p[5] else 0})
-        except ValueError:
-            continue
-    return rows[-270:]
+        if len(p) >= 5:
+            try:
+                rows.append({"d": p[0], "c": float(p[4])})
+            except ValueError:
+                pass
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=5 * 366)).strftime("%Y-%m-%d")
+    return [x for x in rows if x["d"] >= cutoff]
+
+
+def _chg_since(rows, days):
+    """Veränderung in % seit einem Datum vor `days` Tagen (letzter Kurs an oder vor diesem Tag)."""
+    target = (datetime.strptime(rows[-1]["d"], "%Y-%m-%d") - timedelta(days=days)).strftime("%Y-%m-%d")
+    past = [x for x in rows if x["d"] <= target]
+    if not past:
+        # Datenreihe beginnt knapp nach dem Stichtag (z. B. "5 Jahre" bei Yahoo): bis 14 Tage Abweichung erlauben
+        first = datetime.strptime(rows[0]["d"], "%Y-%m-%d"); t = datetime.strptime(target, "%Y-%m-%d")
+        if (first - t).days > 14:
+            return None
+        past = [rows[0]]
+    return (rows[-1]["c"] / past[-1]["c"] - 1) * 100
 
 
 def fetch_etfs():
@@ -313,7 +323,7 @@ def fetch_etfs():
         rows = None
         for name, fn in (("Yahoo Finance", etf_yahoo), ("Stooq", etf_stooq)):
             try:
-                rows = fn(e["sym"])
+                rows = fn(e)
                 if len(rows) >= 2:
                     quelle.add(name)
                     break
@@ -323,13 +333,13 @@ def fetch_etfs():
         time.sleep(0.5)
         if not rows:
             continue
-        last = rows[-1]["c"]
-        def chg(n):
-            return (last / rows[-1 - n]["c"] - 1) * 100 if len(rows) > n else None
-        a1d, a1w, a1m = chg(1), chg(5), chg(21)
-        a1y = chg(250) if len(rows) > 250 else ((last / rows[0]["c"] - 1) * 100 if len(rows) > 200 else None)
-        out.append({**e, "preis": last, "aend1d": a1d, "aend1w": a1w, "aend1m": a1m, "aend1y": a1y,
-                    "datum": rows[-1]["d"], "kerzen": rows[-90:]})
+        a5 = _chg_since(rows, 5 * 365)
+        pa5 = ((1 + a5 / 100) ** (1 / 5) - 1) * 100 if a5 is not None else None
+        spark = rows[::5][-260:]
+        out.append({k: v for k, v in e.items() if k not in ("yahoo", "stooq")} | {
+            "preis": rows[-1]["c"], "datum": rows[-1]["d"], "aend1d": (rows[-1]["c"] / rows[-2]["c"] - 1) * 100,
+            "aend1y": _chg_since(rows, 365), "aend3y": _chg_since(rows, 3 * 365), "aend5y": a5, "pa5y": pa5,
+            "verlauf": [round(x["c"], 2) for x in spark]})
     if not out:
         raise RuntimeError("Keine ETF-Kurse erhalten")
     return {"stand": now_iso(), "quelle": " und ".join(sorted(quelle)), "daten": out}
@@ -400,7 +410,7 @@ def main():
     old = load_old()
     result = {"erzeugt": now_iso()}
     fresh = 0
-    for key, fn in (("kurse", fetch_prices), ("kerzen", fetch_candles), ("news", fetch_news), ("etfs", fetch_etfs)):
+    for key, fn in (("kurse", fetch_prices), ("news", fetch_news), ("etfs", fetch_etfs)):
         print(f"Hole {key} ...")
         try:
             result[key] = fn()
@@ -411,7 +421,6 @@ def main():
                 result[key] = dict(old[key])
                 result[key]["veraltet"] = True
             result.setdefault("fehler", []).append(f"{key}: {e}")
-    result["chancen"] = build_signals(result.get("kurse"), result.get("news"), result.get("etfs"))
     if fresh == 0:
         print("Keine Quelle erreichbar, nichts geschrieben.")
         return 1
@@ -420,7 +429,7 @@ def main():
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=1)
     os.replace(tmp, OUT)
-    print(f"Fertig: {fresh} von 4 Quellen frisch, geschrieben nach data/latest.json")
+    print(f"Fertig: {fresh} von 3 Quellen frisch, geschrieben nach data/latest.json")
     return 0
 
 
