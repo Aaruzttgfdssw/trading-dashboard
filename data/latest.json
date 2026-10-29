@@ -1,59 +1,126 @@
 {
- "erzeugt": "2026-10-28T23:38:35+00:00",
+ "erzeugt": "2026-10-29T02:53:59+00:00",
  "kurse": {
-  "stand": "2026-10-28T23:38:35+00:00",
+  "stand": "2026-10-29T02:53:59+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 72820,
-    "aend24": 0.3692,
-    "aend7": -4.2104,
-    "aend1y": -28.1319,
-    "marktkap": 1464039277841,
-    "volumen": 23291211537
+    "preis": 71593,
+    "aend24": -1.52095,
+    "aend7": -4.8843,
+    "aend1y": -28.8835,
+    "marktkap": 1439381935309,
+    "volumen": 23640799767
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2114.02,
-    "aend24": 0.29947,
-    "aend7": -5.5444,
-    "aend1y": -40.7533,
-    "marktkap": 258269594743,
-    "volumen": 8770779903
+    "preis": 2066.73,
+    "aend24": -2.41315,
+    "aend7": -6.3498,
+    "aend1y": -41.7343,
+    "marktkap": 252498805757,
+    "volumen": 9283003105
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 91.76,
-    "aend24": 0.9806,
-    "aend7": -5.2972,
-    "aend1y": -47.1496,
-    "marktkap": 54131778262,
-    "volumen": 2414015434
+    "preis": 89.51,
+    "aend24": -1.94925,
+    "aend7": -6.7743,
+    "aend1y": -48.4728,
+    "marktkap": 52808350838,
+    "volumen": 2521223304
    }
   ]
  },
  "news": {
-  "stand": "2026-10-28T23:38:37+00:00",
+  "stand": "2026-10-29T02:54:02+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Microsoft profits soar days after announcing thousands of layoffs",
+    "link": "https://www.bbc.co.uk/news/articles/c6m24klyjr8no?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-29T01:27:40+00:00",
+    "text": "The week, the Windows developer said it would offer buyouts to 60,000 workers as it looks to curb costs.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "The week, the Windows developer said it would offer buyouts to 60,000 workers as it looks to curb costs."
+   },
    {
     "titel": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
     "link": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-10-28T23:21:48+00:00",
+    "zeit": "2026-10-29T01:14:01+00:00",
     "text": "The defeated Brazilian candidate claims to be the victim of a coup d’état and political persecution, recycling unsubstantiated allegations of “electoral fraud”.",
     "tags": [],
     "wichtig": 0,
     "kurz": "The defeated Brazilian candidate claims to be the victim of a coup d’état and political persecution, recycling unsubstantiated allegations of “electoral fraud”."
+   },
+   {
+    "titel": "Fed’s hawkish rate hold keeps pressure on Bitcoin: Analysts",
+    "link": "https://cointelegraph.com/markets/bitcoin-faces-fresh-pressure-after-feds-hawkish-rate-hold-analysts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-29T01:12:01+00:00",
+    "text": "Traders are pricing in a 78% chance of a December rate hike, while analysts say Treasury yields, the US dollar and upcoming inflation data could determine Bitcoin’s next move.",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1,
+    "kurz": "Traders are pricing in a 78% chance of a December rate hike, while analysts say Treasury yields, the US dollar and upcoming inflation data could determine Bitcoin’s next move."
+   },
+   {
+    "titel": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
+    "link": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-29T00:00:25+00:00",
+    "text": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget."
+   },
+   {
+    "titel": "'I live with a ghost': Japan's haunted homes attract bargain hunters",
+    "link": "https://www.bbc.co.uk/news/articles/cqwy78elyrlzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-29T00:00:15+00:00",
+    "text": "Properties where someone has died in tragic circumstances can have big reductions in price.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Properties where someone has died in tragic circumstances can have big reductions in price."
+   },
+   {
+    "titel": "Peace Talks Won’t Save Oil Buyers From $100-Plus Oil",
+    "link": "https://oilprice.com/Energy/Crude-Oil/Peace-Talks-Wont-Save-Oil-Buyers-From-100-Plus-Oil.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-29T00:00:00+00:00",
+    "text": "Middle East nations have renewed their diplomatic efforts, with high-level delegations from Saudi Arabia, Turkey and Pakistan having met with Iranian officials in Tehran on Monday to explore a regional security framework in a bid to de-esc…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Middle East nations have renewed their diplomatic efforts, with high-level delegations from Saudi Arabia, Turkey and Pakistan having met with Iranian officials in Tehran on Monday to explore a region…",
+    "titel_de": "Friedensgespräche werden Ölkäufer nicht vor Öl im Wert von 100 $ plus retten",
+    "kurz_de": "Die Länder des Nahen Ostens haben ihre diplomatischen Bemühungen erneuert. Hochrangige Delegationen aus Saudi-Arabien, der Türkei und Pakistan haben sich am Montag in Teheran mit iranischen Beamten getroffen, um eine Region zu erkunden..."
    },
    {
     "titel": "Oil Refineries Become Prime Targets as Global Fuel Shortage Worsens",
@@ -1016,21 +1083,6 @@
     "kurz_de": "Hacker erbeuteten 2025 Kryptowährungen im Wert von mehr als 3,4 Milliarden US-Dollar."
    },
    {
-    "titel": "China’s Refiners Turn to Africa and Brazil Crude as Freight Rates Ease",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Refiners-Turn-to-Africa-and-Brazil-Crude-as-Freight-Rates-Ease.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-28T14:30:00+00:00",
-    "text": "China’s refiners are buying crude oil from West Africa and Brazil after freight rates eased in the past two weeks, while competition for Russian supply is stronger and Iranian barrels have disappeared. Following a decline in shipping rates…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "China’s refiners are buying crude oil from West Africa and Brazil after freight rates eased in the past two weeks, while competition for Russian supply is stronger and Iranian barrels have disappeare…"
-   },
-   {
     "titel": "Israel's election result is messy - here's why",
     "link": "https://www.bbc.co.uk/news/videos/c893zeknlvnno?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -1219,66 +1271,11 @@
     "kurz": "Your day-ahead look for Oct. 28, 2026",
     "titel_de": "Meinungsverschiedenheiten und mehr: 3 Dinge, auf die Sie bei der Fed-Sitzung achten sollten",
     "kurz_de": "Ihr Day-Ahead-Look für den 28. Oktober 2026"
-   },
-   {
-    "titel": "XRP Ledger developers propose creating wallets with zero XRP for stablecoin payments",
-    "link": "https://www.coindesk.com/tech/2026/10/28/xrp-ledger-developers-propose-creating-wallets-with-zero-xrp-for-stablecoin-payments",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-28T11:52:14+00:00",
-    "text": "An experimental change would let companies cover the reserve for customer and AI-agent accounts, allowing users to start with stablecoins without first acquiring XRP.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "An experimental change would let companies cover the reserve for customer and AI-agent accounts, allowing users to start with stablecoins without first acquiring XRP."
-   },
-   {
-    "titel": "Bitcoin rebounds above $81,000 as Asian chip rally spills into crypto, pepe jumps 9%",
-    "link": "https://www.coindesk.com/markets/2026/10/28/bitcoin-rebounds-above-usd81-000-as-asian-chip-rally-spills-into-crypto-pepe-jumps-9",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-28T11:32:31+00:00",
-    "text": "Bitcoin rose above $81,400 as Asian chip stocks rallied, with frog-themed memecoin pepe adding 9%.",
-    "tags": [
-     "KI/Chips",
-     "Memecoins"
-    ],
-    "wichtig": 2,
-    "kurz": "Bitcoin rose above $81,400 as Asian chip stocks rallied, with frog-themed memecoin pepe adding 9%.",
-    "titel_de": "Bitcoin erholt sich über 81.000 $, da die asiatische Chip-Rallye in Krypto eindringt, Pepe springt um 9%",
-    "kurz_de": "Bitcoin stieg über $ 81.400, als asiatische Chip-Aktien anstiegen, wobei Memecoin-Pepé im Frosch-Stil um 9 % zulegte."
-   },
-   {
-    "titel": "Settlement concerns prompt Euronext to halt CoinShares’ Zcash ETP ahead of debut",
-    "link": "https://cointelegraph.com/news/euronext-suspends-coinshares-zcash-etp-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-28T11:24:07+00:00",
-    "text": "A Euronext spokesperson told Cointelegraph the suspension was due to “operational settlement requirements” and remains in effect until settlement operations are supported by the CSD.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "A Euronext spokesperson told Cointelegraph the suspension was due to “operational settlement requirements” and remains in effect until settlement operations are supported by the CSD."
-   },
-   {
-    "titel": "Live updates: Bitcoin trading just above $81,000 as Fed delivers hold on rates",
-    "link": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-28T11:23:34+00:00",
-    "text": "Strategy's preferred stocks, STRC among them, are moving to daily dividends after a successful shareholder vote.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 0,
-    "kurz": "Strategy's preferred stocks, STRC among them, are moving to daily dividends after a successful shareholder vote."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-28T23:38:48+00:00",
+  "stand": "2026-10-29T02:54:15+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
