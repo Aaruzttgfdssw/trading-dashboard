@@ -1,48 +1,610 @@
 {
- "erzeugt": "2026-10-30T14:31:58+00:00",
+ "erzeugt": "2026-10-30T19:42:45+00:00",
  "kurse": {
-  "stand": "2026-10-30T14:31:59+00:00",
+  "stand": "2026-10-30T19:42:45+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 68891,
-    "aend24": -4.41621,
-    "aend7": -6.1382,
-    "aend1y": -29.2475,
-    "marktkap": 1385077844662,
-    "volumen": 151738268390
+    "preis": 68558,
+    "aend24": -5.2705,
+    "aend7": -6.3338,
+    "aend1y": -28.8755,
+    "marktkap": 1378383169990,
+    "volumen": 175255915061
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1992.58,
-    "aend24": -4.61165,
-    "aend7": -7.6167,
-    "aend1y": -41.8911,
-    "marktkap": 243441988413,
-    "volumen": 23618590539
+    "preis": 1998.28,
+    "aend24": -4.42873,
+    "aend7": -7.2761,
+    "aend1y": -40.6846,
+    "marktkap": 244138507041,
+    "volumen": 25015993786
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 84.72,
-    "aend24": -6.24681,
-    "aend7": -9.0956,
-    "aend1y": -49.396,
-    "marktkap": 49990837590,
-    "volumen": 5219753530
+    "preis": 84.53,
+    "aend24": -5.65562,
+    "aend7": -9.7682,
+    "aend1y": -48.6751,
+    "marktkap": 49878087121,
+    "volumen": 5333588774
    }
   ]
  },
  "news": {
-  "stand": "2026-10-30T14:32:01+00:00",
+  "stand": "2026-10-30T19:42:48+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Reddit Stock Plunges 30% as Google's AI Search Hits Traffic and User Growth",
+    "link": "https://decrypt.co/382276/reddit-stock-plunges-30-googles-ai-search",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T19:31:02+00:00",
+    "text": "Reddit shares are down 44% this week after CEO Steve Huffman warned that Google's AI-powered search features are cutting referrals, while weaker user growth and disappointing fourth-quarter guidance added to investor concerns.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "Reddit shares are down 44% this week after CEO Steve Huffman warned that Google's AI-powered search features are cutting referrals, while weaker user growth and disappointing fourth-quarter guidance…",
+    "titel_de": "Reddit-Aktie sinkt um 30 %, da Googles KI-Suche den Traffic und das Nutzerwachstum erreicht",
+    "kurz_de": "Die Reddit-Aktien sind diese Woche um 44 % gesunken, nachdem CEO Steve Huffman davor gewarnt hatte, dass die KI-gestützten Suchfunktionen von Google die Weiterempfehlungen reduzieren, während das schwächere Nutzerwachstum und die enttäuschenden Prognosen für das vierte Quartal..."
+   },
+   {
+    "titel": "Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B",
+    "link": "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T19:01:58+00:00",
+    "text": "The stablecoin issuer’s US Treasury holdings are comparable to those of major foreign holders, while its Bitcoin reserves were valued at $8.37 billion at the end of September.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The stablecoin issuer’s US Treasury holdings are comparable to those of major foreign holders, while its Bitcoin reserves were valued at $8.37 billion at the end of September."
+   },
+   {
+    "titel": "Binance Hack: Why Bitcoin Didn't Crash Like It Did in 2018",
+    "link": "https://decrypt.co/382257/binance-hack-why-bitcoin-didnt-crash",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T18:45:03+00:00",
+    "text": "Binance lost about $6.4 billion, the largest crypto hack on record, yet Bitcoin fell about 3%, against nearly 11% in 2018 when the exchange was last attacked.",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 3,
+    "kurz": "Binance lost about $6.4 billion, the largest crypto hack on record, yet Bitcoin fell about 3%, against nearly 11% in 2018 when the exchange was last attacked.",
+    "titel_de": "Binance Hack: Warum Bitcoin nicht so abstürzte wie 2018",
+    "kurz_de": "Binance verlor etwa 6,4 Milliarden $, der größte Krypto-Hack seit Beginn der Aufzeichnungen, doch Bitcoin fiel um etwa 3 %, gegenüber fast 11 % im Jahr 2018, als die Börse zuletzt angegriffen wurde."
+   },
+   {
+    "titel": "Chevron Profits Nearly Triple to $9.9 Billion",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/Chevron-Profits-Nearly-Triple-to-99-Billion.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-30T18:30:00+00:00",
+    "text": "Chevron's third-quarter profit nearly tripled to $9.9 billion, with its refineries doing much of the heavy lifting despite processing just 3% more crude than a year earlier. The company reported earnings of $5.06 per share Friday, up from…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Chevron's third-quarter profit nearly tripled to $9.9 billion, with its refineries doing much of the heavy lifting despite processing just 3% more crude than a year earlier."
+   },
+   {
+    "titel": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+    "link": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T18:17:27+00:00",
+    "text": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race."
+   },
+   {
+    "titel": "$8 Million Crypto Kidnapping Lands Texas Brothers 15-Year Prison Terms",
+    "link": "https://decrypt.co/382269/crypto-kidnapping-texas-brothers-15-year-prison",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T18:16:02+00:00",
+    "text": "Raymond and Isiah Garcia held a Minnesota family at gunpoint for more than nine hours, forcing the father to transfer over $8 million in crypto, in one of the clearest “wrench attack” prosecutions yet.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Raymond and Isiah Garcia held a Minnesota family at gunpoint for more than nine hours, forcing the father to transfer over $8 million in crypto, in one of the clearest “wrench attack” prosecutions ye…"
+   },
+   {
+    "titel": "City of London chief tops UK Black Powerlist",
+    "link": "https://www.bbc.co.uk/news/articles/c98rz4pxm4ymo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-30T18:00:24+00:00",
+    "text": "Ian Thomas, who heads the City of London Corporation, tops the Black Powerlist in its 21st year.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Ian Thomas, who heads the City of London Corporation, tops the Black Powerlist in its 21st year."
+   },
+   {
+    "titel": "Water Tank Rupture Triggers Safety Concerns at Tajikistan’s Rogun Dam",
+    "link": "https://oilprice.com/Alternative-Energy/Hydroelectric/Water-Tank-Rupture-Triggers-Safety-Concerns-at-Tajikistans-Rogun-Dam.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-30T18:00:00+00:00",
+    "text": "A recent industrial “incident” disrupted work on the Rogun Dam in Tajikistan. Depending on which source is to be believed, either no one was harmed or at least five people were injured. According to Tajikistan’s State Service for the Super…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "A recent industrial “incident” disrupted work on the Rogun Dam in Tajikistan."
+   },
+   {
+    "titel": "Binance-Hack: Was Kunden jetzt wissen müssen",
+    "link": "https://www.btc-echo.de/news/binance-hack-was-kunden-jetzt-wissen-muessen-240125/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-30T18:00:00+00:00",
+    "text": "Der Notfallfonds von Binance deckt nur ein Fünftel des Schadens. Drei Milliarden US-Dollar sind eingefroren, den Rest trägt die Börse. Was bedeutet das für Anleger? Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Der Notfallfonds von Binance deckt nur ein Fünftel des Schadens.",
+    "titel_de": "Binance-Hack: Was Kunden jetzt wissen müssen",
+    "kurz_de": "Der Notfallfonds von Binance deckt nur ein Fünftel des Schadens."
+   },
+   {
+    "titel": "Secret Service, FBI Join Binance Hack Probe as Circle Freezes $823 Million",
+    "link": "https://decrypt.co/382268/secret-service-fbi-binance-hack-probe",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:50:26+00:00",
+    "text": "Binance says it has set aside $6.34 billion to cover losses from the breach and the FBI and Secret Service are now working with the exchange as investigators trace the stolen funds.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Binance says it has set aside $6.34 billion to cover losses from the breach and the FBI and Secret Service are now working with the exchange as investigators trace the stolen funds.",
+    "titel_de": "Geheimdienst, FBI tritt Binance Hack Probe bei, als Circle 823 Millionen $ einfriert",
+    "kurz_de": "Binance sagt, dass es 6,34 Milliarden $ beiseite gelegt hat, um die Verluste aus dem Verstoß zu decken, und das FBI und der Geheimdienst arbeiten jetzt mit der Börse zusammen, während die Ermittler die gestohlenen Gelder aufspüren."
+   },
+   {
+    "titel": "Coinbase leads crypto stock selloff following $6.3B Binance hack",
+    "link": "https://cointelegraph.com/markets/coinbase-leads-crypto-stock-selloff-shares-tumble?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:48:27+00:00",
+    "text": "Circle, Strategy and other crypto-linked stocks fell sharply Friday, a day after Binance disclosed a $6.3 billion security breach.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Circle, Strategy and other crypto-linked stocks fell sharply Friday, a day after Binance disclosed a $6.3 billion security breach."
+   },
+   {
+    "titel": "US tech stocks see sharp falls as AI spending nears $1tn",
+    "link": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:47:01+00:00",
+    "text": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months."
+   },
+   {
+    "titel": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+    "link": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:39:43+00:00",
+    "text": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 3,
+    "kurz": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
+    "titel_de": "Krypto-Gigant Binance versucht, 6,3 Milliarden $ wiederherzustellen, die bei einem Hackerangriff im Zusammenhang mit Nordkorea gestohlen wurden",
+    "kurz_de": "Der Cyberangriff, den das Unternehmen als komplex bezeichnet, gilt als der größte seiner Art."
+   },
+   {
+    "titel": "Können die Midterms zum Krypto-Problem werden? Grayscale hält dagegen",
+    "link": "https://www.btc-echo.de/news/koennen-die-midterms-zum-krypto-problem-werden-grayscale-haelt-dagegen-240155/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-30T17:34:00+00:00",
+    "text": "Die US-Zwischenwahlen könnten am Krypto-Markt zu Turbulenzen führen. Der Vermögensverwalter Grayscale sieht darin aber kein strukturelles Problem. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 1,
+    "kurz": "Die US-Zwischenwahlen könnten am Krypto-Markt zu Turbulenzen führen.",
+    "titel_de": "Können die Midterms zum Krypto-Problem werden? Grayscale hält dagegen",
+    "kurz_de": "Die US-Zwischenwahlen könnten am Krypto-Markt zu Turbulenzen führen."
+   },
+   {
+    "titel": "ExxonMobil Profits Double to $15.4 Billion",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/ExxonMobil-Profits-Double-to-154-Billion.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:27:04+00:00",
+    "text": "ExxonMobil reported $15.4 billion in third-quarter profit Friday, more than double its earnings a year earlier, with its Gulf Coast refineries running at full capacity and diesel prices doing the rest. The company earned $3.72 per share, o…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "ExxonMobil reported $15.4 billion in third-quarter profit Friday, more than double its earnings a year earlier, with its Gulf Coast refineries running at full capacity and diesel prices doing the res…"
+   },
+   {
+    "titel": "G20 'family photo' cancelled after protests over presence of Russian minister",
+    "link": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:25:20+00:00",
+    "text": "European foreign ministers refused to be pictured with Sergei Lavrov at the summit being held in Atlanta.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "European foreign ministers refused to be pictured with Sergei Lavrov at the summit being held in Atlanta."
+   },
+   {
+    "titel": "Marktbericht: Schwaches Ende einer starken Börsenwoche",
+    "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-geldanlage-amazon-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-10-30T17:22:12+00:00",
+    "text": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war. Auslöser sind der hohe Ölpreis, aber auch schwache Tech-Vorgaben aus Übersee.",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe",
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 2,
+    "kurz": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war.",
+    "titel_de": "Marktbericht: Schwaches Ende einer starken Börsenwoche",
+    "kurz_de": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war."
+   },
+   {
+    "titel": "Trezor warnt vor möglicher Manipulation: Diese Kunden sollten jetzt handeln",
+    "link": "https://www.btc-echo.de/news/trezor-warnt-vor-moeglicher-manipulation-diese-kunden-sollten-jetzt-handeln-240172/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-30T17:19:41+00:00",
+    "text": "Trezor warnt Kunden vor möglicherweise manipulierten Hardware-Wallets. Ein verdächtiges Bauteil könnte sensible Daten ausspähen, weshalb bestimmte Käufer dringend handeln sollten. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Trezor warnt Kunden vor möglicherweise manipulierten Hardware-Wallets.",
+    "titel_de": "Trezor warnt vor möglicher Manipulation: Diese Kunden sollten jetzt handeln",
+    "kurz_de": "Trezor warnt Kunden vor möglicherweise manipulierten Hardware-Wallets."
+   },
+   {
+    "titel": "U.S. Oil, Gas Drillers Still on Hold",
+    "link": "https://oilprice.com/Energy/Energy-General/US-Oil-Gas-Drillers-Still-on-Hold.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:09:57+00:00",
+    "text": "The total number of active drilling rigs for oil and gas in the United States remained unchanged again this week, according to new data that Baker Hughes published on Friday, with the total rig count in the US staying at 603, up 57 from th…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "The total number of active drilling rigs for oil and gas in the United States remained unchanged again this week, according to new data that Baker Hughes published on Friday, with the total rig count…"
+   },
+   {
+    "titel": "Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem",
+    "link": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:09:31+00:00",
+    "text": "Bitcoin faces mounting quantum security concerns as Ripple secures a US banking charter, USDC gains ground in Europe and VanEck adds BTC to a new ETF.",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 1,
+    "kurz": "Bitcoin faces mounting quantum security concerns as Ripple secures a US banking charter, USDC gains ground in Europe and VanEck adds BTC to a new ETF."
+   },
+   {
+    "titel": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
+    "link": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:07:19+00:00",
+    "text": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September."
+   },
+   {
+    "titel": "Canada stops using 'avalanche dogs' for rescues in Rocky Mountains, stirring outrage",
+    "link": "https://www.bbc.co.uk/news/articles/cwdd8q8e9e9yo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T17:00:32+00:00",
+    "text": "A 55-year-old dog rescue programme that has found missing hikers and children in the Canadian wilderness was axed as part of government budget cuts.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "A 55-year-old dog rescue programme that has found missing hikers and children in the Canadian wilderness was axed as part of government budget cuts."
+   },
+   {
+    "titel": "Recap: How Binance’s record $6.3B hack unfolded",
+    "link": "https://cointelegraph.com/news/recap-binances-record-63b-hack-unfolded?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:53:46+00:00",
+    "text": "A recap of Cointelegraph’s live coverage of the Binance hack, including early breach reports and the exchange’s full reimbursement pledge.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "A recap of Cointelegraph’s live coverage of the Binance hack, including early breach reports and the exchange’s full reimbursement pledge."
+   },
+   {
+    "titel": "Oil Traders Brace for a Wild Week as Brent Approaches $120",
+    "link": "https://oilprice.com/Energy/Oil-Prices/Oil-Traders-Brace-for-a-Wild-Week-as-Brent-Approaches-120.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:51:00+00:00",
+    "text": "Fears of renewed U.S.-Iran hostilities are intensifying, with rising Hormuz attacks, reported explosions at Iran's Jask port and military repositioning overshadowing diplomatic efforts. Friday, October 30, 2026 With only several days left…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Fears of renewed U.S.-Iran hostilities are intensifying, with rising Hormuz attacks, reported explosions at Iran's Jask port and military repositioning overshadowing diplomatic efforts.",
+    "titel_de": "Ölhändler machen sich für eine wilde Woche bereit, während sich Brent $ 120 nähert",
+    "kurz_de": "Die Befürchtungen vor erneuten Feindseligkeiten zwischen den USA und dem Iran verschärfen sich, wobei zunehmende Angriffe auf Hormus, gemeldete Explosionen im Hafen von Jask und eine militärische Neupositionierung die diplomatischen Bemühungen überschatten."
+   },
+   {
+    "titel": "As it happened: Binance’s record $6.3B crypto hack",
+    "link": "https://cointelegraph.com/news/live-updates-binance-63b-hack-linked-to-north-koreas-tradertraitor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:49:50+00:00",
+    "text": "How Binance’s $6.3 billion hack unfolded, from the first onchain alerts to $3 billion in frozen funds and a widening security investigation.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "How Binance’s $6.3 billion hack unfolded, from the first onchain alerts to $3 billion in frozen funds and a widening security investigation."
+   },
+   {
+    "titel": "Binance Sets Aside $6.34B to Cover Hack Losses, CEO Says 'Your Assets Are Safe'",
+    "link": "https://decrypt.co/382237/binance-sets-aside-6-34b-to-cover-hack-losses-ceo-says-your-assets-are-safe",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:34:21+00:00",
+    "text": "Richard Teng said the attacker used a self-destruct mechanism and an EIP-7702 delegation that bypassed Binance's normal approval controls.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Richard Teng said the attacker used a self-destruct mechanism and an EIP-7702 delegation that bypassed Binance's normal approval controls."
+   },
+   {
+    "titel": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
+    "link": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:31:17+00:00",
+    "text": "CEO Richard Teng said hackers erased evidence and bypassed security checks. Binance plans to publish its proof of reserves Monday.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "CEO Richard Teng said hackers erased evidence and bypassed security checks."
+   },
+   {
+    "titel": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+    "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:26:11+00:00",
+    "text": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers."
+   },
+   {
+    "titel": "Elon Musk, CZ Trade Blows Over SpaceX Shares After $6.4B Binance Hack",
+    "link": "https://decrypt.co/382236/elon-musk-cz-trade-blows-spacex-shares-binance-hack",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:25:06+00:00",
+    "text": "After Musk appeared to mock Binance’s $6.3 billion hack, CZ reminded him that the exchange’s $500 million bet on his Twitter takeover is now worth over $1 billion in SpaceX shares.",
+    "tags": [
+     "Prominente",
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "After Musk appeared to mock Binance’s $6.3 billion hack, CZ reminded him that the exchange’s $500 million bet on his Twitter takeover is now worth over $1 billion in SpaceX shares."
+   },
+   {
+    "titel": "Krypto-Börse KuCoin verlässt den russischen Markt",
+    "link": "https://www.btc-echo.de/news/krypto-hammer-darum-sperrt-kucoin-russische-anleger-aus-240120/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-30T16:24:18+00:00",
+    "text": "Die Krypto-Börse KuCoin verlässt Russland und Belarus – als dritte Börse in diesem Monat. So geht es für betroffene Anleger weiter. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die Krypto-Börse KuCoin verlässt Russland und Belarus – als dritte Börse in diesem Monat.",
+    "titel_de": "Krypto-Börse KuCoin verlässt den russischen Markt",
+    "kurz_de": "Die Krypto-Börse KuCoin verlässt Russland und Belarus – als dritte Börse in diesem Monat."
+   },
+   {
+    "titel": "Bitcoin risks worst October in 12 years as tech sell-off spreads to gold",
+    "link": "https://cointelegraph.com/markets/bitcoin-risks-worst-october-in-12-years-as-tech-sell-off-spreads-to-gold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:06:28+00:00",
+    "text": "Bitcoin circled $77,000 as crypto markets navigated US stock-market downside, while the gold price fell to its lowest in a year.",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Bitcoin circled $77,000 as crypto markets navigated US stock-market downside, while the gold price fell to its lowest in a year."
+   },
+   {
+    "titel": "Yorkshire Water boss resigns after firm downgraded",
+    "link": "https://www.bbc.co.uk/news/articles/ckzd623pldqgo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:04:55+00:00",
+    "text": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced."
+   },
+   {
+    "titel": "America’s LNG Boom Faces Its Biggest Test Yet",
+    "link": "https://oilprice.com/Energy/Energy-General/Americas-LNG-Boom-Faces-Its-Biggest-Test-Yet.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-30T16:00:00+00:00",
+    "text": "A decade ago, the United States was only beginning to emerge from an energy outlook that had once assumed steadily rising dependence on imported natural gas. For years, the prevailing concern was that domestic production would struggle to…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "A decade ago, the United States was only beginning to emerge from an energy outlook that had once assumed steadily rising dependence on imported natural gas."
+   },
+   {
+    "titel": "Bitcoin-Kurs: Darum muss der Kurs jetzt Stärke zeigen",
+    "link": "https://www.btc-echo.de/news/bitcoin-kurs-darum-muss-der-kurs-jetzt-staerke-zeigen-240101/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-30T16:00:00+00:00",
+    "text": "Bitcoin (BTC) folgt der Schwäche am US-Aktienmarkt. Der Binance-Hack hat die schwierige charttechnische Lage nochmals verstärkt. Darauf müssen Anleger mit Blick auf die Kursentwicklung nun achten. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Bitcoin (BTC) folgt der Schwäche am US-Aktienmarkt.",
+    "titel_de": "Bitcoin-Kurs: Darum muss der Kurs jetzt Stärke zeigen",
+    "kurz_de": "Bitcoin (BTC) folgt der Schwäche am US-Aktienmarkt."
+   },
+   {
+    "titel": "Japan to Overtake China As World’s Top LNG Importer This Year",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/Japan-to-Overtake-China-As-Worlds-Top-LNG-Importer-This-Year.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-30T15:30:00+00:00",
+    "text": "Japan is expected to overtake China as the world’s largest importer of liquefied natural gas (LNG) this year, for the first time since 2022, as high LNG prices and sufficient storage in China limit purchases, analysts at ICIS and Kpler say…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Japan is expected to overtake China as the world’s largest importer of liquefied natural gas (LNG) this year, for the first time since 2022, as high LNG prices and sufficient storage in China limit p…"
+   },
+   {
+    "titel": "Democratic senator blames Egypt press crackdown on US military aid decision",
+    "link": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T15:17:11+00:00",
+    "text": "Chris Murphy said waiving a human rights condition on aid paved the way for arrests of journalists.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Chris Murphy said waiving a human rights condition on aid paved the way for arrests of journalists."
+   },
+   {
+    "titel": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+    "link": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T15:09:29+00:00",
+    "text": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority."
+   },
+   {
+    "titel": "Six dead after helicopter crashes in northern Indian state",
+    "link": "https://www.bbc.co.uk/news/articles/cr93zxyn9eqeo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T15:06:05+00:00",
+    "text": "The aircraft reportedly took off from the Hindu pilgrimage site of Badrinath on Friday afternoon before losing contact.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "The aircraft reportedly took off from the Hindu pilgrimage site of Badrinath on Friday afternoon before losing contact."
+   },
+   {
+    "titel": "Spain transport minister says he won't resign over high-speed rail disaster",
+    "link": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T15:03:39+00:00",
+    "text": "Óscar Puente has been facing calls to resign after two high-speed trains collided earlier in the week, killing at least 69 people.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Óscar Puente has been facing calls to resign after two high-speed trains collided earlier in the week, killing at least 69 people."
+   },
+   {
+    "titel": "Pope Leo XIV becomes first pontiff to vote in a US election",
+    "link": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T14:48:22+00:00",
+    "text": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress."
+   },
    {
     "titel": "European Gas Tops 101 Euros for First Time Since 2022",
     "link": "https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Tops-101-Euros-for-First-Time-Since-2022.html",
@@ -56,18 +618,6 @@
     ],
     "wichtig": 1,
     "kurz": "Europe’s benchmark natural gas prices have topped 101 euros per megawatt-hour (MWh) for the first time since the 2022 crisis as winter looms amid historically low European gas storage levels."
-   },
-   {
-    "titel": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
-    "link": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:19:43+00:00",
-    "text": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September."
    },
    {
     "titel": "What is EIP-7702? The Ethereum Upgrade Behind the $6.4B Binance Hack",
@@ -96,18 +646,6 @@
     ],
     "wichtig": 1,
     "kurz": "Analysts at Cantor Fitzgerald, TD Cowen and Compass Point say the $6.3 billion Binance hack is unlikely to derail the crypto market's recovery."
-   },
-   {
-    "titel": "Live updates: Binance says $6.34B set aside to cover hack losses",
-    "link": "https://cointelegraph.com/news/live-updates-binance-63b-hack-linked-to-north-koreas-tradertraitor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:12:26+00:00",
-    "text": "Follow live updates as Binance says $6.3 billion in assets have been stolen in a major hack. Around $3 billion in stolen funds have been frozen.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Follow live updates as Binance says $6.3 billion in assets have been stolen in a major hack."
    },
    {
     "titel": "Inflationsrate geht im Oktober auf 2,8 Prozent zurück",
@@ -158,18 +696,6 @@
     "kurz_de": "Vier Tage nachdem Russland seine umfassenden Bemühungen zur Unterwerfung der Ukraine gestartet hatte, feuerten die US-Regierung und andere westliche Verbündete eine Breitseite von Finanzsanktionen ab, die darauf abzielten, die Geldbörse des Kremls für..."
    },
    {
-    "titel": "Yorkshire Water boss resigns after firm downgraded",
-    "link": "https://www.bbc.co.uk/news/articles/ckzd623pldqgo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-30T13:59:16+00:00",
-    "text": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced."
-   },
-   {
     "titel": "Wie der VW-Vorstand die Laune bei den Skoda-Mitarbeitern drückt",
     "link": "https://www.tagesschau.de/wirtschaft/unternehmen/skoda-144.html",
     "quelle": "tagesschau Wirtschaft",
@@ -182,34 +708,6 @@
     "kurz": "Während die Konzernmutter Volkswagen viele Probleme hat, erwirtschaftet die tschechische Tochter Skoda passable Gewinne.",
     "titel_de": "Wie der VW-Vorstand die Laune bei den Skoda-Mitarbeitern drückt",
     "kurz_de": "Während die Konzernmutter Volkswagen viele Probleme hat, erwirtschaftet die tschechische Tochter Skoda passable Gewinne."
-   },
-   {
-    "titel": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-    "link": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T13:46:16+00:00",
-    "text": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race."
-   },
-   {
-    "titel": "Marktbericht: Zweifel am KI-Boom wachsen",
-    "link": "https://www.tagesschau.de/wirtschaft/finanzen/mb-mittag-amazon-intel-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T13:44:00+00:00",
-    "text": "US-Techkonzerne investieren schwindelerregende Summen in Künstliche Intelligenz - doch halten die Einnahmen mit? Weitere enttäuschende Bilanzen drücken die Technologiebörse Nasdaq ins Minus, was auch deutsche Anleger spüren.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "US-Techkonzerne investieren schwindelerregende Summen in Künstliche Intelligenz - doch halten die Einnahmen mit?",
-    "titel_de": "Marktbericht: Zweifel am KI-Boom wachsen",
-    "kurz_de": "US-Techkonzerne investieren schwindelerregende Summen in Künstliche Intelligenz - doch halten die Einnahmen mit?"
    },
    {
     "titel": "Will gold’s ‘infinite mint bug’ make Bitcoin more valuable?",
@@ -250,18 +748,6 @@
     ],
     "wichtig": 1,
     "kurz": "Binance is working with law enforcement to recover $3 billion that is frozen, after setting aside more than $6.3 billion from the company’s funds to cover the shortfall."
-   },
-   {
-    "titel": "Spain transport minister says he won't resign over high-speed rail disaster",
-    "link": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T13:03:34+00:00",
-    "text": "Óscar Puente has been facing calls to resign after two high-speed trains collided earlier in the week, killing at least 69 people.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Óscar Puente has been facing calls to resign after two high-speed trains collided earlier in the week, killing at least 69 people."
    },
    {
     "titel": "Israel Extradites Alleged Nomad Bridge Exploiter to US Over $2.8M Theft: Report",
@@ -384,20 +870,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Cyber correspondent Joe Tidy explains more about what is suspected to be the biggest hack in history."
-   },
-   {
-    "titel": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
-    "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T12:25:53+00:00",
-    "text": "Several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water."
    },
    {
     "titel": "TRM and Chainalysis Tie $6.4B Binance Hack to North Korea's TraderTraitor",
@@ -629,13 +1101,13 @@
     "bereich": "Krypto",
     "sprache": "en",
     "zeit": "2026-10-30T11:00:10+00:00",
-    "text": "Security experts say attackers could have drained Binance’s wallets without EIP-7702, but the Ethereum upgrade may have helped bypass withdrawal safeguards.",
+    "text": "Security experts said attackers could have drained Binance’s wallets without EIP-7702, but the Ethereum upgrade may have helped bypass withdrawal safeguards.",
     "tags": [
      "Krieg/Konflikt",
      "Hack/Betrug"
     ],
     "wichtig": 2,
-    "kurz": "Security experts say attackers could have drained Binance’s wallets without EIP-7702, but the Ethereum upgrade may have helped bypass withdrawal safeguards."
+    "kurz": "Security experts said attackers could have drained Binance’s wallets without EIP-7702, but the Ethereum upgrade may have helped bypass withdrawal safeguards."
    },
    {
     "titel": "Binance hacker’s Bitcoin haul tops Coinbase’s corporate treasury",
@@ -667,18 +1139,6 @@
     "kurz_de": "Die Arbeitslosigkeit ist im Oktober zurückgegangen, die übliche Herbstbelebung aber nahezu ausgeblieben."
    },
    {
-    "titel": "Helicopter carrying six people crashes in northern Indian state",
-    "link": "https://www.bbc.co.uk/news/articles/cr93zxyn9eqeo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T10:07:58+00:00",
-    "text": "The aircraft reportedly took off from the Hindu pilgrimage site of Badrinath on Friday afternoon before losing contact.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "The aircraft reportedly took off from the Hindu pilgrimage site of Badrinath on Friday afternoon before losing contact."
-   },
-   {
     "titel": "Trezor Warns CryptoBilis Buyers After Report of Hardware Implant in Safe 5",
     "link": "https://decrypt.co/382216/trezor-warns-cryptobilis-buyers-after-report-of-hardware-implant-in-safe-5",
     "quelle": "Decrypt",
@@ -689,20 +1149,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The hardware wallet manufacturer has yet to examine the device, but is treating the report as credible and told buyers to move their funds."
-   },
-   {
-    "titel": "Wall Street Banks Raise Oil Price Forecasts as Supply Fears Deepen",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Wall-Street-Banks-Raise-Oil-Price-Forecasts-as-Supply-Fears-Deepen.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T10:00:00+00:00",
-    "text": "Brent Crude oil prices are set to end the year at about $105 per barrel, bank ANZ said on Friday as it hiked its projection by $10 a barrel on the assumption that Middle East oil exports, shipping availability, and fuel supplies will remai…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Brent Crude oil prices are set to end the year at about $105 per barrel, bank ANZ said on Friday as it hiked its projection by $10 a barrel on the assumption that Middle East oil exports, shipping av…"
    },
    {
     "titel": "Weltspartag 2026: Bitcoin-Sparplan statt Sparbuch – lohnt sich das?",
@@ -833,34 +1279,19 @@
     "kurz": "Trezor urged customers who bought devices from CryptoBilis since March to move their funds after a report of a suspected hardware implant."
    },
    {
-    "titel": "High Oil Prices Set to Trigger New Wave of North Sea Mergers",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/High-Oil-Prices-Set-to-Trigger-New-Wave-of-North-Sea-Mergers.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T08:45:00+00:00",
-    "text": "High oil and gas prices are going to drive further consolidation in the UK sector of the North, according to analysts, who also said tax considerations would play a role in stimulating M&A appetite in the region. The expectations come from…",
-    "tags": [
-     "Regulierung",
-     "Rohstoffe"
-    ],
-    "wichtig": 3,
-    "kurz": "High oil and gas prices are going to drive further consolidation in the UK sector of the North, according to analysts, who also said tax considerations would play a role in stimulating M&A appetite i…"
-   },
-   {
-    "titel": "Live updates: Binance finds more breaches in $6.3 billion hack; AI spending fears hit tech",
+    "titel": "Live updates: Bitcoin falls below $77,000 as Binance exploit combines with tech woes",
     "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
     "quelle": "CoinDesk",
     "bereich": "Krypto",
     "sprache": "en",
     "zeit": "2026-10-30T08:36:52+00:00",
-    "text": "A $6.3 billion Binance hack adds to crypto jitters, while weak earnings outlooks and mounting concerns over AI spending push QQQ down more than 2%.",
+    "text": "The $6.3 billion Binance hack added to crypto jitters, while weak earnings outlooks and mounting concerns over AI spending pushed the Nasdaq down more than 2%.",
     "tags": [
      "Hack/Betrug",
      "KI/Chips"
     ],
     "wichtig": 0,
-    "kurz": "A $6.3 billion Binance hack adds to crypto jitters, while weak earnings outlooks and mounting concerns over AI spending push QQQ down more than 2%."
+    "kurz": "The $6.3 billion Binance hack added to crypto jitters, while weak earnings outlooks and mounting concerns over AI spending pushed the Nasdaq down more than 2%."
    },
    {
     "titel": "Strategy macht 19,5 Milliarden US-Dollar Gewinn",
@@ -891,426 +1322,11 @@
     "kurz": "In Deutschland werden viel zu wenig Wohnungen gebaut.",
     "titel_de": "Fehlende Wohnungen: Was hat der \"Bau-Turbo\" bislang gebracht?",
     "kurz_de": "In Deutschland werden viel zu wenig Wohnungen gebaut."
-   },
-   {
-    "titel": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
-    "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T07:54:07+00:00",
-    "text": "The hacker dumped FUN and other smaller tokens into markets too small to absorb large selling, leading to price crashes.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "The hacker dumped FUN and other smaller tokens into markets too small to absorb large selling, leading to price crashes."
-   },
-   {
-    "titel": "Human rights lawyer couple sentenced to 10 years' prison in Pakistan",
-    "link": "https://www.bbc.co.uk/news/articles/crq5nplyvlg8o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T07:53:38+00:00",
-    "text": "Imaan Mazari and Hadi Ali Chattha were charged over an incident in 2024, when England's cricket team was touring Pakistan.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Imaan Mazari and Hadi Ali Chattha were charged over an incident in 2024, when England's cricket team was touring Pakistan."
-   },
-   {
-    "titel": "How video game remakes tap the power of nostalgia",
-    "link": "https://www.bbc.co.uk/news/articles/cm9qz428nnljo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-30T07:45:00+00:00",
-    "text": "Video games are good at triggering nostalgia, a key reason why classic games keep getting remade.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Video games are good at triggering nostalgia, a key reason why classic games keep getting remade."
-   },
-   {
-    "titel": "Bitcoin fällt nach Binance-Hack – HYPE legt kräftig zu",
-    "link": "https://www.btc-echo.de/news/bitcoin-faellt-nach-binance-hack-hype-legt-kraeftig-zu-240093/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T07:36:57+00:00",
-    "text": "Der Milliarden-Hack bei Binance belastet den Krypto-Markt. Bitcoin fällt unter 79.000 US-Dollar, BNB verliert mehr als fünf Prozent. Nur HYPE stemmt sich gegen den Abverkauf. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Der Milliarden-Hack bei Binance belastet den Krypto-Markt.",
-    "titel_de": "Bitcoin fällt nach Binance-Hack – HYPE legt kräftig zu",
-    "kurz_de": "Der Milliarden-Hack bei Binance belastet den Krypto-Markt."
-   },
-   {
-    "titel": "Houthis Claim Fresh Strikes on Saudi Oil Refineries and Aramco Facilities",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Fresh-Strikes-on-Saudi-Oil-Refineries-and-Aramco-Facilities.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T07:30:00+00:00",
-    "text": "The Yemeni Houthis claimed a fresh series of attacks on Saudi targets, including oil infrastructure: two refineries and a facility at the Abqaiq oil field. The Houthis struck the Ras Tanura refinery and the Rabigh refinery, the Houthis’ sp…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "The Yemeni Houthis claimed a fresh series of attacks on Saudi targets, including oil infrastructure: two refineries and a facility at the Abqaiq oil field.",
-    "titel_de": "Houthis fordern neue Angriffe auf saudische Ölraffinerien und Aramco-Einrichtungen",
-    "kurz_de": "Die jemenitischen Houthis behaupteten eine neue Serie von Angriffen auf saudische Ziele, einschließlich der Ölinfrastruktur: zwei Raffinerien und eine Anlage im Ölfeld Abqaiq."
-   },
-   {
-    "titel": "Milliardenschwerer Hackerangriff auf Kryptobörse Binance",
-    "link": "https://www.tagesschau.de/wirtschaft/technologie/hackerangriff-kryptoboerse-binance-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T07:24:20+00:00",
-    "text": "Die weltgrößte Kryptobörse Binance ist offenbar Opfer einer massiven Cyberattacke geworden. Betroffen sind Digitalwährungen im Wert von mehr als sechs Milliarden Dollar. Was bedeutet das für Kunden?",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 3,
-    "kurz": "Die weltgrößte Kryptobörse Binance ist offenbar Opfer einer massiven Cyberattacke geworden.",
-    "titel_de": "Milliardenschwerer Hackerangriff auf Kryptobörse Binance",
-    "kurz_de": "Die weltgrößte Kryptobörse Binance ist offenbar Opfer einer massiven Cyberattacke geworden."
-   },
-   {
-    "titel": "Binance-Hack: Angreifer erbeuten 6,3 Milliarden US-Dollar",
-    "link": "https://www.btc-echo.de/news/binance-hack-angreifer-erbeuten-63-milliarden-us-dollar-240091/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T06:49:28+00:00",
-    "text": "Binance ist Opfer eines der größten Krypto-Hacks geworden. Der Schaden liegt laut Börse bei rund 6,3 Milliarden US-Dollar. Das ist bislang bekannt. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Binance ist Opfer eines der größten Krypto-Hacks geworden.",
-    "titel_de": "Binance-Hack: Angreifer erbeuten 6,3 Milliarden US-Dollar",
-    "kurz_de": "Binance ist Opfer eines der größten Krypto-Hacks geworden."
-   },
-   {
-    "titel": "EU-Kanada-Gipfel: Zusammenarbeit bei KI verstärken",
-    "link": "https://www.tagesschau.de/ausland/amerika/eu-kanada-ki-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T06:38:08+00:00",
-    "text": "Gemeinsam unabhängiger werden - das ist das große Ziel der angestrebten neuen Allianz zwischen Kanada und der EU. Ein Beispiel: die Zusammenarbeit im Bereich Künstlicher Intelligenz. Von Giselle Ucar.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "Gemeinsam unabhängiger werden - das ist das große Ziel der angestrebten neuen Allianz zwischen Kanada und der EU.",
-    "titel_de": "EU-Kanada-Gipfel: Zusammenarbeit bei KI verstärken",
-    "kurz_de": "Gemeinsam unabhängiger werden - das ist das große Ziel der angestrebten neuen Allianz zwischen Kanada und der EU."
-   },
-   {
-    "titel": "Bitcoin, ether and XRP selloff wipes out $1.5 billion in leveraged crypto bets",
-    "link": "https://www.coindesk.com/markets/2026/10/30/bitcoin-ether-and-xrp-selloff-wipes-out-usd1-5-billion-in-leveraged-crypto-bets",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T06:22:00+00:00",
-    "text": "Bets on rising prices accounted for nearly 84% of forced closures, with Binance handling almost half the total. A rebound has since started catching short sellers.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Bets on rising prices accounted for nearly 84% of forced closures, with Binance handling almost half the total."
-   },
-   {
-    "titel": "Oil Prices Head for Fourth Monthly Gain as Middle East Tensions Escalate",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-Fourth-Monthly-Gain-as-Middle-East-Tensions-Escalate.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T06:20:00+00:00",
-    "text": "Crude oil prices were set for another weekly gain today, also extending their monthly rise to four months in a row amid continued fears of escalation in the Middle East and Houthi attacks on Saudi infrastructure. At the time of writing, Br…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Crude oil prices were set for another weekly gain today, also extending their monthly rise to four months in a row amid continued fears of escalation in the Middle East and Houthi attacks on Saudi in…",
-    "titel_de": "Die Ölpreise steigen im vierten Monat, da die Spannungen im Nahen Osten eskalieren",
-    "kurz_de": "Die Rohölpreise wurden heute für einen weiteren wöchentlichen Anstieg festgesetzt, der auch ihren monatlichen Anstieg auf vier Monate in Folge verlängerte, inmitten anhaltender Ängste vor einer Eskalation im Nahen Osten und Houthi-Angriffen auf Saudi-Arabien in..."
-   },
-   {
-    "titel": "Syrians struggle with soaring prices as crisis challenges post-Assad recovery",
-    "link": "https://www.bbc.co.uk/news/articles/cmn4egvez1yzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T06:02:23+00:00",
-    "text": "End of subsidies and rising prices drive discontent, testing support for Ahmed al-Sharaa's government.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "End of subsidies and rising prices drive discontent, testing support for Ahmed al-Sharaa's government."
-   },
-   {
-    "titel": "Strategy eyes more Bitcoin buys as Saylor touts $30B credit capacity",
-    "link": "https://cointelegraph.com/news/strategy-30-billion-digital-credit-capacity-bitcoin-buys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T05:53:07+00:00",
-    "text": "Michael Saylor says Strategy could create up to $30 billion in digital credit without new common-stock fundraising or further Bitcoin price gains, as the company plans more BTC purchases.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Michael Saylor says Strategy could create up to $30 billion in digital credit without new common-stock fundraising or further Bitcoin price gains, as the company plans more BTC purchases."
-   },
-   {
-    "titel": "North Korea’s TraderTraitor linked to $6.3B Binance hack",
-    "link": "https://cointelegraph.com/news/north-korea-linked-to-63b-binance-hack-by-crypto-investigators?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T05:51:41+00:00",
-    "text": "TRM Labs says it has high confidence in the attribution, while ZachXBT identified stolen funds from the Binance and Bitget hacks converging at the same address.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "TRM Labs says it has high confidence in the attribution, while ZachXBT identified stolen funds from the Binance and Bitget hacks converging at the same address."
-   },
-   {
-    "titel": "EU-Kanada-Gipfel: \"Die neue Allianz ist keine Marketing-Übung\"",
-    "link": "https://www.tagesschau.de/ausland/amerika/eu-kanada-zweiter-tag-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T05:46:43+00:00",
-    "text": "Beim EU-Kanada-Gipfel ging es auf europäischer Seite bislang viel darum, wie die neue Allianz denn heißen soll. Kanadas Premier Carney sagt dazu: \"Der Name ist egal.\" Heute sollen konkrete Vereinbarungen folgen. Von Martin Ganslmeier.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Beim EU-Kanada-Gipfel ging es auf europäischer Seite bislang viel darum, wie die neue Allianz denn heißen soll.",
-    "titel_de": "EU-Kanada-Gipfel: \"Die neue Allianz ist keine Marketing-Übung\"",
-    "kurz_de": "Beim EU-Kanada-Gipfel ging es auf europäischer Seite bislang viel darum, wie die neue Allianz denn heißen soll."
-   },
-   {
-    "titel": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
-    "link": "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T05:45:27+00:00",
-    "text": "A set of fixes would tighten who can hold permissioned tokens on the network. The XRP Ledger Foundation says no users were affected.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "A set of fixes would tighten who can hold permissioned tokens on the network."
-   },
-   {
-    "titel": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
-    "link": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T05:43:07+00:00",
-    "text": "CoinDCX has restricted new futures positions after Binance’s security incident disrupted a key liquidity provider. Deposits, withdrawals and customer funds remain unaffected, the exchange said.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "CoinDCX has restricted new futures positions after Binance’s security incident disrupted a key liquidity provider."
-   },
-   {
-    "titel": "Bitcoin-Kurs auf 3,7 Millionen Dollar bis 2036? Bitwise wird noch bullisher",
-    "link": "https://www.btc-echo.de/news/bitcoin-auf-37-millionen-bitwise-noch-bullisher-240031/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T05:00:00+00:00",
-    "text": "Bitwise erwartet im Bull Case eine mehr als 4.000-prozentige Bitcoin-Rendite binnen zehn Jahren. Warum der Vermögensverwalter seine BTC-Prognose nach oben korrigiert. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Bitwise erwartet im Bull Case eine mehr als 4.000-prozentige Bitcoin-Rendite binnen zehn Jahren.",
-    "titel_de": "Bitcoin-Kurs auf 3,7 Millionen Dollar bis 2036? Bitwise wird noch bullisher",
-    "kurz_de": "Bitwise erwartet im Bull Case eine mehr als 4.000-prozentige Bitcoin-Rendite binnen zehn Jahren."
-   },
-   {
-    "titel": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
-    "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T04:50:42+00:00",
-    "text": "All 18,270 coins sit in 19 wallets, 17 of them holding exactly 1,000 BTC each, and none has moved since Thursday night, a CoinDesk trace of the blockchain shows.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "All 18,270 coins sit in 19 wallets, 17 of them holding exactly 1,000 BTC each, and none has moved since Thursday night, a CoinDesk trace of the blockchain shows.",
-    "titel_de": "Binance-Hacker spaltet $ 1,4 Milliarden Bitcoin in 19 Wallets auf, die niemand einfrieren kann",
-    "kurz_de": "Alle 18.270 Coins befinden sich in 19 Wallets, von denen 17 jeweils genau 1.000 BTC enthalten, und keiner hat sich seit Donnerstagabend bewegt, wie eine CoinDesk-Spur der Blockchain zeigt."
-   },
-   {
-    "titel": "Standard Chartered sees more pain after $6 billion Binance hack sends bitcoin lower",
-    "link": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T04:00:43+00:00",
-    "text": "Bitcoin and ether slid after a suspected $6.3 billion Binance security breach and a Polymarket exploit. Standard Chartered says crypto prices may remain under pressure before finding a base.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Bitcoin and ether slid after a suspected $6.3 billion Binance security breach and a Polymarket exploit.",
-    "titel_de": "Binance-Hack im Wert von 6 Milliarden $ sendet Bitcoin, Ether-Taumeln; Standard Chartered erwartet mehr Schmerzen",
-    "kurz_de": "Bitcoin und Ether rutschten nach einer mutmaßlichen Binance-Sicherheitsverletzung in Höhe von 6,3 Milliarden $ und einem Polymarket-Exploit ab."
-   },
-   {
-    "titel": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
-    "link": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T03:56:40+00:00",
-    "text": "The withdrawals suggest the fallout from the multibillion-dollar breach is spreading beyond Binance.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "The withdrawals suggest the fallout from the multibillion-dollar breach is spreading beyond Binance."
-   },
-   {
-    "titel": "Binance hack could accelerate shift to DEXs: Standard Chartered",
-    "link": "https://cointelegraph.com/news/binance-hack-could-accelerate-shift-to-dexs-standard-chartered?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T03:47:01+00:00",
-    "text": "Standard Chartered’s Geoffrey Kendrick says the breach could accelerate a shift toward decentralized trading and strengthen his case for Uniswap’s UNI token reaching $100 by 2030.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Standard Chartered’s Geoffrey Kendrick says the breach could accelerate a shift toward decentralized trading and strengthen his case for Uniswap’s UNI token reaching $100 by 2030."
-   },
-   {
-    "titel": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
-    "link": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T03:36:11+00:00",
-    "text": "Security researchers suggested that the hermit kingdom's Lazarus Group was behind Thursday's nearly $6 billion hack of the world's largest crypto exchange.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Security researchers suggested that the hermit kingdom's Lazarus Group was behind Thursday's nearly $6 billion hack of the world's largest crypto exchange."
-   },
-   {
-    "titel": "New York police will now investigate Cornell sex complaints, governor says",
-    "link": "https://www.bbc.co.uk/news/articles/cmwy42j9wewlo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T03:32:44+00:00",
-    "text": "The change was announced amid backlash over the school's handling of gang rape allegations involving a fraternity on campus.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The change was announced amid backlash over the school's handling of gang rape allegations involving a fraternity on campus."
-   },
-   {
-    "titel": "Record number of purges as Xi emphasises 'party discipline' at China political gathering",
-    "link": "https://www.bbc.co.uk/news/articles/cq5ynw94k7kzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T03:24:12+00:00",
-    "text": "Xi's anti-corruption campaign has become \"an effort to consolidate and maintain authority\", observers say.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Xi's anti-corruption campaign has become \"an effort to consolidate and maintain authority\", observers say."
-   },
-   {
-    "titel": "Three dead after two helicopters collide midair near Oregon airport",
-    "link": "https://www.bbc.co.uk/news/articles/cked3p81303yo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T03:05:17+00:00",
-    "text": "The collision involving a Robinson R22 and an Airbus helicopter occurred on Thursday afternoon, with both aircraft crashing in a field adjacent to a highway.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The collision involving a Robinson R22 and an Airbus helicopter occurred on Thursday afternoon, with both aircraft crashing in a field adjacent to a highway."
-   },
-   {
-    "titel": "FDP-Politiker zur Krypto-Haltefrist: “Die Abschaffung ist ein tiefer Vertrauensbruch“",
-    "link": "https://www.btc-echo.de/news/fdp-politiker-zur-krypto-haltefrist-die-abschaffung-ist-ein-tiefer-vertrauensbruch-240048/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T03:00:00+00:00",
-    "text": "Seit Monaten wird über die Zukunft der Krypto-Haltefrist diskutiert. Verliert Deutschland damit einen seiner wichtigsten Standortvorteile? Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Seit Monaten wird über die Zukunft der Krypto-Haltefrist diskutiert.",
-    "titel_de": "FDP-Politiker zur Krypto-Haltefrist: “Die Abschaffung ist ein tiefer Vertrauensbruch“",
-    "kurz_de": "Seit Monaten wird über die Zukunft der Krypto-Haltefrist diskutiert."
-   },
-   {
-    "titel": "More than 43 million ballots cast so far in midterms early voting surge",
-    "link": "https://www.bbc.co.uk/news/articles/c30rlxkjv2yko?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T01:44:24+00:00",
-    "text": "Hispanic voters have helped drive the early voting numbers, which appear to outpace overall turnout for previous elections in some battleground counties.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Hispanic voters have helped drive the early voting numbers, which appear to outpace overall turnout for previous elections in some battleground counties."
-   },
-   {
-    "titel": "Mushroom murderer fails to overturn convictions in Australian court challenge",
-    "link": "https://www.bbc.co.uk/news/articles/ck8dz8j5n993o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T01:35:40+00:00",
-    "text": "Erin Patterson argued her trial was unfair due to seven grounds but three appeal judges dismissed them all.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Erin Patterson argued her trial was unfair due to seven grounds but three appeal judges dismissed them all."
-   },
-   {
-    "titel": "Student-backed election winners demand sweeping resignations in Serbia",
-    "link": "https://www.bbc.co.uk/news/articles/cmx2dwzp0z0vo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T00:17:28+00:00",
-    "text": "Days after ousting Aleksandar Vučić's party from power, Student List MPs call for top figures to stand down.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Days after ousting Aleksandar Vučić's party from power, Student List MPs call for top figures to stand down."
-   },
-   {
-    "titel": "Binance hack drained wallets backing customer assets, reserve data shows",
-    "link": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T00:17:10+00:00",
-    "text": "Binance’s own reserve data lists the drained wallets as backing customer balances, leaving its ether backing an estimated 6% short until the exchange replaces what was stolen.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "Binance’s own reserve data lists the drained wallets as backing customer balances, leaving its ether backing an estimated 6% short until the exchange replaces what was stolen.",
-    "titel_de": "Binance Hack entwässerte Geldbörsen, die Kundenvermögen sichern, Reservedaten zeigen",
-    "kurz_de": "Die eigenen Reservedaten von Binance listen die geleerten Wallets als Backing-Kundenguthaben auf, so dass der Ether-Backing schätzungsweise 6 % kurz bleibt, bis die Börse das, was gestohlen wurde, ersetzt."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-30T14:32:12+00:00",
+  "stand": "2026-10-30T19:43:00+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -1321,15 +1337,15 @@
     "region": "Welt (Industrieländer)",
     "tv": "XETR:EUNL",
     "art": "ETF",
-    "preis": 130.05,
+    "preis": 129.685,
     "datum": "2026-10-30",
-    "aend1d": -1.0725696029210363,
-    "aend1w": 0.16173752310537637,
-    "aend1m": 0.7085608084562933,
-    "aend1y": 16.214646351816285,
-    "aend3y": 74.29704881121506,
-    "aend5y": 71.37096774193547,
-    "pa5y": 11.374931476441507,
+    "aend1d": -1.3502205994218808,
+    "aend1w": -0.11937769562538891,
+    "aend1m": 0.42591086847099113,
+    "aend1y": 15.888476833028008,
+    "aend3y": 73.80786447583563,
+    "aend5y": 70.88999578325954,
+    "pa5y": 11.312343910745026,
     "verlauf": [
      75.89,
      77.14,
@@ -1596,15 +1612,15 @@
     "region": "Ganze Welt inkl. Schwellenländer",
     "tv": "XETR:VWCE",
     "art": "ETF",
-    "preis": 169.38,
+    "preis": 168.9,
     "datum": "2026-10-30",
-    "aend1d": -1.2015865608959397,
-    "aend1w": 0.04725339633784298,
-    "aend1m": -0.23559901048415544,
-    "aend1y": 16.284498146368254,
-    "aend3y": 73.58065177290429,
-    "aend5y": 67.66976836270047,
-    "pa5y": 10.889634719369191,
+    "aend1d": -1.4815678954736344,
+    "aend1w": -0.23626698168931481,
+    "aend1m": -0.5183178230651397,
+    "aend1y": 15.95496361389539,
+    "aend3y": 73.08874769419964,
+    "aend5y": 67.19461492773708,
+    "pa5y": 10.826714111584801,
     "verlauf": [
      101.02,
      102.46,
@@ -1871,15 +1887,15 @@
     "region": "USA",
     "tv": "XETR:SXR8",
     "art": "ETF",
-    "preis": 737.02,
+    "preis": 734.62,
     "datum": "2026-10-30",
-    "aend1d": -1.211698790981952,
-    "aend1w": -0.13820389138800016,
-    "aend1m": 0.5786184120745608,
-    "aend1y": 16.15394313812015,
-    "aend3y": 78.37746260709618,
-    "aend5y": 81.89491349737159,
-    "pa5y": 12.710431108335474,
+    "aend1d": -1.5333887354904374,
+    "aend1w": -0.4633895181832881,
+    "aend1m": 0.25109855618330457,
+    "aend1y": 15.77570446952028,
+    "aend3y": 77.79660196524516,
+    "aend5y": 81.30259878081887,
+    "pa5y": 12.636930234818067,
     "verlauf": [
      405.19,
      413.6,
@@ -2146,15 +2162,15 @@
     "region": "Schwellenländer",
     "tv": "XETR:IS3N",
     "art": "ETF",
-    "preis": 44.9,
+    "preis": 44.964,
     "datum": "2026-10-30",
-    "aend1d": -2.28083920954123,
-    "aend1w": -1.3338607247236678,
-    "aend1m": -6.971925826168035,
-    "aend1y": 15.314482368954984,
-    "aend3y": 68.6701728024042,
-    "aend5y": 42.96631216964912,
-    "pa5y": 7.41050115853068,
+    "aend1d": -2.1415513188822177,
+    "aend1w": -1.193223020634182,
+    "aend1m": -6.839324562312243,
+    "aend1y": 15.4788504507281,
+    "aend3y": 68.91059353869271,
+    "aend5y": 43.17009488632746,
+    "pa5y": 7.44110408065104,
     "verlauf": [
      31.41,
      31.5,
@@ -2421,15 +2437,15 @@
     "region": "US-Technologie",
     "tv": "XETR:SXRV",
     "art": "ETF",
-    "preis": 1472.0,
+    "preis": 1465.4,
     "datum": "2026-10-30",
-    "aend1d": -2.7612630466375965,
-    "aend1w": -1.4461703267273696,
-    "aend1m": -4.872689672999875,
-    "aend1y": 14.641744548286596,
-    "aend3y": 90.89612242251329,
-    "aend5y": 90.45154612498382,
-    "pa5y": 13.751439309722159,
+    "aend1d": -3.1972519487382667,
+    "aend1w": -1.8880557043384982,
+    "aend1m": -5.299211580716035,
+    "aend1y": 14.127725856697836,
+    "aend3y": 90.04020230839063,
+    "aend5y": 89.59761935567346,
+    "pa5y": 13.649250504831878,
     "verlauf": [
      772.9,
      797.8,
@@ -2696,15 +2712,15 @@
     "region": "Gold",
     "tv": "XETR:4GLD",
     "art": "ETC",
-    "preis": 112.64,
+    "preis": 112.37,
     "datum": "2026-10-30",
-    "aend1d": -2.560553633217988,
-    "aend1w": -1.8900792613883777,
-    "aend1m": -4.34782608695653,
-    "aend1y": 1.3314141777617916,
-    "aend3y": 85.84392014519055,
-    "aend5y": 126.48489966622432,
-    "pa5y": 17.76272602505258,
+    "aend1d": -2.7941176470588136,
+    "aend1w": -2.12525041372702,
+    "aend1m": -4.577105978260865,
+    "aend1y": 1.0885210507376897,
+    "aend3y": 85.39844910080845,
+    "aend5y": 125.94201150118631,
+    "pa5y": 17.706215964494643,
     "verlauf": [
      49.73,
      50.59,
@@ -2971,15 +2987,15 @@
     "region": "Welt (Industrieländer)",
     "tv": "XETR:XDWD",
     "art": "ETF",
-    "preis": 142.47,
+    "preis": 141.945,
     "datum": "2026-10-30",
-    "aend1d": -1.0384468447192097,
-    "aend1w": 0.24979769904653892,
-    "aend1m": 0.8244577332719993,
-    "aend1y": 16.454144188327604,
-    "aend3y": 74.73263343799057,
-    "aend5y": 71.57205134998435,
-    "pa5y": 11.401056285427448,
+    "aend1d": -1.4031188136005346,
+    "aend1w": -0.11962143334623976,
+    "aend1m": 0.4529209865185235,
+    "aend1y": 16.0250122609122,
+    "aend3y": 74.08874607535321,
+    "aend5y": 70.93981068908211,
+    "pa5y": 11.318832725332095,
     "verlauf": [
      83.04,
      84.4,
@@ -3246,15 +3262,15 @@
     "region": "Ganze Welt inkl. Schwellenländer",
     "tv": "XETR:IUSQ",
     "art": "ETF",
-    "preis": 108.54,
+    "preis": 108.26,
     "datum": "2026-10-30",
-    "aend1d": -1.255458515283836,
-    "aend1w": 0.03686635944701866,
-    "aend1m": -0.12881854987117913,
-    "aend1y": 16.409266409266433,
-    "aend3y": 74.10972088546679,
-    "aend5y": 68.25298403348319,
-    "pa5y": 10.966670405515844,
+    "aend1d": -1.5101892285298346,
+    "aend1w": -0.22119815668202314,
+    "aend1m": -0.3864556496135485,
+    "aend1y": 16.10896610896613,
+    "aend3y": 73.6605710619185,
+    "aend5y": 67.81894279956595,
+    "pa5y": 10.90935922336065,
     "verlauf": [
      64.51,
      65.51,
@@ -3521,15 +3537,15 @@
     "region": "Ganze Welt inkl. Schwellenländer",
     "tv": "XETR:VGWL",
     "art": "ETF",
-    "preis": 163.6,
+    "preis": 163.14,
     "datum": "2026-10-30",
-    "aend1d": -1.1957965937915316,
-    "aend1w": 0.0366882719823991,
-    "aend1m": -0.23173557750945095,
-    "aend1y": 14.630044843049328,
-    "aend3y": 65.87245260062862,
-    "aend5y": 54.107008289374534,
-    "pa5y": 9.034635955893243,
+    "aend1d": -1.47360792366229,
+    "aend1w": -0.24458847988260146,
+    "aend1m": -0.5122575923893202,
+    "aend1y": 14.30773542600896,
+    "aend3y": 65.40606306397648,
+    "aend5y": 53.67370007535794,
+    "pa5y": 8.973251557373851,
     "verlauf": [
      106.16,
      107.64,
@@ -3796,15 +3812,15 @@
     "region": "Deutschland",
     "tv": "XETR:EXS1",
     "art": "ETF",
-    "preis": 213.1,
+    "preis": 212.7,
     "datum": "2026-10-30",
-    "aend1d": -0.7221057535523046,
-    "aend1w": 2.723547842853713,
-    "aend1m": 2.624608716590404,
-    "aend1y": 6.6780136163396175,
-    "aend3y": 71.99354317998386,
-    "aend5y": 58.88756337608112,
-    "pa5y": 9.702867837726892,
+    "aend1d": -0.908455625436766,
+    "aend1w": 2.5307302964569844,
+    "aend1m": 2.4319768841801093,
+    "aend1y": 6.477773327993597,
+    "aend3y": 71.67070217917674,
+    "aend5y": 58.589322994333415,
+    "pa5y": 9.661653261297243,
     "verlauf": [
      134.12,
      136.06,
@@ -4071,15 +4087,15 @@
     "region": "Europa",
     "tv": "XETR:EXSA",
     "art": "ETF",
-    "preis": 64.16,
+    "preis": 64.08,
     "datum": "2026-10-30",
-    "aend1d": -0.2642623970153912,
-    "aend1w": 1.9221604447974494,
-    "aend1m": 2.051853030062034,
-    "aend1y": 12.541659358007372,
-    "aend3y": 49.55710955710955,
-    "aend5y": 35.116352532378635,
-    "pa5y": 6.204173269715207,
+    "aend1d": -0.3886211720814603,
+    "aend1w": 1.79507545671167,
+    "aend1m": 1.924606330523293,
+    "aend1y": 12.401333099456235,
+    "aend3y": 49.37062937062937,
+    "aend5y": 34.94787827735073,
+    "pa5y": 6.177675219192769,
     "verlauf": [
      47.48,
      47.94,
@@ -4346,15 +4362,15 @@
     "region": "Technologie weltweit",
     "tv": "XETR:XDWT",
     "art": "ETF",
-    "preis": 127.2,
+    "preis": 125.94,
     "datum": "2026-10-30",
-    "aend1d": -3.328773369813054,
-    "aend1w": -0.857365549493383,
-    "aend1m": -5.102954341987454,
-    "aend1y": 18.811881188118807,
-    "aend3y": 123.7467018469657,
-    "aend5y": 129.68580715059588,
-    "pa5y": 18.09372780675822,
+    "aend1d": -4.286365709074335,
+    "aend1w": -1.839438815276706,
+    "aend1m": -6.042972247090416,
+    "aend1y": 17.634971044274227,
+    "aend3y": 121.53034300791555,
+    "aend5y": 127.41061755146261,
+    "pa5y": 17.858835978180167,
     "verlauf": [
      55.38,
      57.57,
@@ -4621,13 +4637,13 @@
     "region": "Rüstung",
     "tv": "XETR:DFEN",
     "art": "ETF",
-    "preis": 52.74,
+    "preis": 52.71,
     "datum": "2026-10-30",
-    "aend1d": -1.4389833675948371,
-    "aend1w": 4.044190175577045,
-    "aend1m": 2.4674567709345396,
-    "aend1y": -3.811781871238362,
-    "aend3y": 141.98210598761182,
+    "aend1d": -1.4950476546439884,
+    "aend1w": 3.9850069047149494,
+    "aend1m": 2.4091703905187556,
+    "aend1y": -3.8664964435527915,
+    "aend3y": 141.84445973847212,
     "aend5y": null,
     "pa5y": null,
     "verlauf": [
@@ -4823,15 +4839,15 @@
     "region": "Saubere Energie",
     "tv": "XETR:IQQH",
     "art": "ETF",
-    "preis": 7.891,
+    "preis": 7.863,
     "datum": "2026-10-30",
-    "aend1d": -2.1696007934540185,
-    "aend1w": -3.697827678789367,
-    "aend1m": -8.806194383450826,
-    "aend1y": -7.696806644051934,
-    "aend3y": 12.103992044324485,
-    "aend5y": -37.76813880126183,
-    "pa5y": -9.050030456428338,
+    "aend1d": -2.516736920406648,
+    "aend1w": -4.039541127654389,
+    "aend1m": -9.129781578643248,
+    "aend1y": -8.024330331032859,
+    "aend3y": 11.706208268219932,
+    "aend5y": -37.98895899053627,
+    "pa5y": -9.114666658375736,
     "verlauf": [
      12.68,
      12.24,
@@ -5098,15 +5114,15 @@
     "region": "KI (Künstliche Intelligenz)",
     "tv": "XETR:XAIX",
     "art": "ETF",
-    "preis": 206.35,
+    "preis": 205.3,
     "datum": "2026-10-30",
-    "aend1d": -3.416803182775574,
-    "aend1w": -2.7568331762488185,
-    "aend1m": -6.311010215664026,
-    "aend1y": 28.71132734530939,
-    "aend3y": 136.99322384288504,
-    "aend5y": 138.72049976862564,
-    "pa5y": 19.00848949964409,
+    "aend1d": -3.908261174818628,
+    "aend1w": -3.251649387370392,
+    "aend1m": -6.787741203178199,
+    "aend1y": 28.056387225548907,
+    "aend3y": 135.78729757666247,
+    "aend5y": 137.50578435909304,
+    "pa5y": 18.887128674118525,
     "verlauf": [
      86.44,
      89.47,
@@ -5373,15 +5389,15 @@
     "region": "KI-Chips (Halbleiter)",
     "tv": "XETR:VVSM",
     "art": "ETF",
-    "preis": 87.43,
+    "preis": 86.19,
     "datum": "2026-10-30",
-    "aend1d": -6.661684637557375,
-    "aend1w": 0.24077046548958148,
-    "aend1m": -13.298294327647753,
-    "aend1y": 61.967395331604315,
-    "aend3y": 258.02620802620805,
-    "aend5y": 285.748952128833,
-    "pa5y": 30.996879688810974,
+    "aend1d": -7.985480943738665,
+    "aend1w": -1.1809218069250171,
+    "aend1m": -14.527965093216988,
+    "aend1y": 59.67024824008893,
+    "aend3y": 252.9484029484029,
+    "aend5y": 280.2779616148246,
+    "pa5y": 30.62317370836938,
     "verlauf": [
      22.66,
      24.86,
@@ -5648,15 +5664,15 @@
     "region": "KI und Robotik",
     "tv": "XETR:2B76",
     "art": "ETF",
-    "preis": 18.468,
+    "preis": 18.324,
     "datum": "2026-10-30",
-    "aend1d": -3.842549203373946,
-    "aend1w": -2.265029635901783,
-    "aend1m": -4.340619496529586,
-    "aend1y": 25.581395348837212,
-    "aend3y": 89.88278840222084,
-    "aend5y": 52.60287555775904,
-    "pa5y": 8.820957644070848,
+    "aend1d": -4.592314901593242,
+    "aend1w": -3.0270956816257355,
+    "aend1m": -5.08650160571843,
+    "aend1y": 24.60220318237456,
+    "aend3y": 88.40222085132635,
+    "aend5y": 51.41298958849778,
+    "pa5y": 8.65072457302567,
     "verlauf": [
      12.1,
      12.71,
