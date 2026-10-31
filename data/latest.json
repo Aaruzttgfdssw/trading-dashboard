@@ -1,48 +1,102 @@
 {
- "erzeugt": "2026-10-31T19:18:07+00:00",
+ "erzeugt": "2026-10-31T22:41:54+00:00",
  "kurse": {
-  "stand": "2026-10-31T19:18:07+00:00",
+  "stand": "2026-10-31T22:41:54+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 69261,
-    "aend24": 1.08952,
-    "aend7": -3.3172,
-    "aend1y": -29.0343,
-    "marktkap": 1392521367403,
-    "volumen": 57620101824
+    "preis": 69252,
+    "aend24": 0.93151,
+    "aend7": -3.6503,
+    "aend1y": -29.1806,
+    "marktkap": 1392345187376,
+    "volumen": 42922716157
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2013.52,
-    "aend24": 0.95828,
-    "aend7": -2.9017,
-    "aend1y": -41.116,
-    "marktkap": 246005893895,
-    "volumen": 4662523993
+    "preis": 2016.11,
+    "aend24": 1.02948,
+    "aend7": -3.9115,
+    "aend1y": -41.6639,
+    "marktkap": 246346433384,
+    "volumen": 4031150933
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 85.68,
-    "aend24": 1.61357,
-    "aend7": -4.4527,
-    "aend1y": -48.2614,
-    "marktkap": 50557652043,
-    "volumen": 1810632316
+    "preis": 85.5,
+    "aend24": 0.02086,
+    "aend7": -5.5918,
+    "aend1y": -48.7248,
+    "marktkap": 50455036819,
+    "volumen": 1602404179
    }
   ]
  },
  "news": {
-  "stand": "2026-10-31T19:18:09+00:00",
+  "stand": "2026-10-31T22:41:57+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+    "link": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T22:11:45+00:00",
+    "text": "The Federal Bureau of Investigation (FBI) says North Korea was responsible for the hack.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "The Federal Bureau of Investigation (FBI) says North Korea was responsible for the hack."
+   },
+   {
+    "titel": "Thousands demonstrate in Paris as protests spread across Europe",
+    "link": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T21:29:01+00:00",
+    "text": "More than 320,000 people demonstrated across France against the rising cost of living and poor public services, with clashes between some protesters and police.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "More than 320,000 people demonstrated across France against the rising cost of living and poor public services, with clashes between some protesters and police."
+   },
+   {
+    "titel": "U.S. Intelligence: China Could Put Laser Weapons in Space by 2030",
+    "link": "https://oilprice.com/Geopolitics/International/US-Intelligence-China-Could-Put-Laser-Weapons-in-Space-by-2030.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-31T21:00:00+00:00",
+    "text": "A new United States intelligence report warns that China is developing energy weapons and spaceplanes that it could use for military operations in outer space, with the capability of using directed-energy weapons in orbit by the end of the…",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "A new United States intelligence report warns that China is developing energy weapons and spaceplanes that it could use for military operations in outer space, with the capability of using directed-e…"
+   },
+   {
+    "titel": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+    "link": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T19:22:26+00:00",
+    "text": "One evacuated couple says they crossed minefields in Oleshky in search of food.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "One evacuated couple says they crossed minefields in Oleshky in search of food."
+   },
    {
     "titel": "Jackdaw Approval Sparks Fierce Debate Over Britain's Energy Future",
     "link": "https://oilprice.com/Energy/Energy-General/Jackdaw-Approval-Sparks-Fierce-Debate-Over-Britains-Energy-Future.html",
@@ -118,18 +172,18 @@
     "kurz": "The artificial intelligence boom is creating an energy monster."
    },
    {
-    "titel": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-    "link": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+    "titel": "Emotional reunions with loved ones for Oleshky evacuees",
+    "link": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-10-31T16:32:08+00:00",
-    "text": "Two analytics firms say they have robust intelligence pointing to a North Korean state-backed group as the likely culprit.",
+    "zeit": "2026-10-31T16:55:47+00:00",
+    "text": "The BBC's Dan Johnson travelled to the northern Ukrainian border with Belarus after evacuated Oleshky residents arrived in buses and ambulances following a temporary ceasefire.",
     "tags": [
-     "Hack/Betrug"
+     "Krieg/Konflikt"
     ],
     "wichtig": 1,
-    "kurz": "Two analytics firms say they have robust intelligence pointing to a North Korean state-backed group as the likely culprit."
+    "kurz": "The BBC's Dan Johnson travelled to the northern Ukrainian border with Belarus after evacuated Oleshky residents arrived in buses and ambulances following a temporary ceasefire."
    },
    {
     "titel": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
@@ -442,22 +496,6 @@
     "kurz_de": "Die Next Technology Holding nannte Börsensicherheits- und Quantencomputerrisiken bei der Autorisierung von Verkäufen oder Darlehen gegenüber ihren 5.833 BTC."
    },
    {
-    "titel": "US approves sale of 500 Patriot missiles to Ukraine",
-    "link": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T12:21:25+00:00",
-    "text": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
-    "titel_de": "USA genehmigt Verkauf von 500 Patriot-Raketen an die Ukraine",
-    "kurz_de": "Die in Amerika hergestellten Abfangjäger sind die einzige wirksame Waffe, um die ballistischen Raketen Russlands abzuschießen."
-   },
-   {
     "titel": "The $6.3 billion Binance hack paradox: Centralization made the hack possible, but also saved $3 billion",
     "link": "https://www.coindesk.com/business/2026/10/31/the-usd6-3-billion-binance-hack-paradox-centralization-made-the-hack-possible-but-also-saved-usd3-billion",
     "quelle": "CoinDesk",
@@ -703,6 +741,32 @@
     "kurz": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become."
    },
    {
+    "titel": "The Indian chef who brought curry to America - then vanished",
+    "link": "https://www.bbc.co.uk/news/articles/crm941n0413o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T02:02:16+00:00",
+    "text": "Indian chef Ranji Smile opened America’s first Indian restaurant in 1901 - then became a fake prince.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Indian chef Ranji Smile opened America’s first Indian restaurant in 1901 - then became a fake prince."
+   },
+   {
+    "titel": "Responsible or panicked? Meet the people around the world already preparing for crisis",
+    "link": "https://www.bbc.co.uk/news/articles/ckreypn92w49o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T01:32:33+00:00",
+    "text": "Filter straws to a disposable toilet - people in the US, Japan, Sweden and Netherlands on what's in their emergency stashes.",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Filter straws to a disposable toilet - people in the US, Japan, Sweden and Netherlands on what's in their emergency stashes."
+   },
+   {
     "titel": "Global nature talks reach deal but money remains an issue",
     "link": "https://www.bbc.co.uk/news/articles/cw1l32qyj8pqo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -741,20 +805,16 @@
     "kurz": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday."
    },
    {
-    "titel": "How has the ceasefire in Russian-occupied Oleshky been unfolding?",
-    "link": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=RSS&at_campaign=rss",
+    "titel": "He questioned Thailand's monarchy dressed as Harry Potter. Now he's in jail for 34 years",
+    "link": "https://www.bbc.co.uk/news/articles/cmjwepvd0qq9o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-10-30T23:19:17+00:00",
-    "text": "Ukraine correspondent Dan Johnson explains the temporary ceasefire in the devastated town of Oleshky.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Ukraine correspondent Dan Johnson explains the temporary ceasefire in the devastated town of Oleshky.",
-    "titel_de": "Wie hat sich der Waffenstillstand im russisch besetzten Oleshky entwickelt?",
-    "kurz_de": "Der Ukraine-Korrespondent Dan Johnson erklärt den vorübergehenden Waffenstillstand in der zerstörten Stadt Oleshky."
+    "zeit": "2026-10-30T23:26:16+00:00",
+    "text": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years."
    },
    {
     "titel": "Europe Is Now Seriously Rethinking Its Oil Refinery Phase Down",
@@ -1196,18 +1256,6 @@
     "kurz": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September."
    },
    {
-    "titel": "Canada stops using 'avalanche dogs' for rescues in Rocky Mountains, stirring outrage",
-    "link": "https://www.bbc.co.uk/news/articles/cwdd8q8e9e9yo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T17:00:32+00:00",
-    "text": "A 55-year-old dog rescue programme that has found missing hikers and children in the Canadian wilderness was axed as part of government budget cuts.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "A 55-year-old dog rescue programme that has found missing hikers and children in the Canadian wilderness was axed as part of government budget cuts."
-   },
-   {
     "titel": "Recap: How Binance’s record $6.3B hack unfolded",
     "link": "https://cointelegraph.com/news/recap-binances-record-63b-hack-unfolded?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
@@ -1277,66 +1325,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "CEO Richard Teng said hackers erased evidence and bypassed security checks."
-   },
-   {
-    "titel": "Elon Musk, CZ Trade Blows Over SpaceX Shares After $6.4B Binance Hack",
-    "link": "https://decrypt.co/382236/elon-musk-cz-trade-blows-spacex-shares-binance-hack",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:25:06+00:00",
-    "text": "After Musk appeared to mock Binance’s $6.3 billion hack, CZ reminded him that the exchange’s $500 million bet on his Twitter takeover is now worth over $1 billion in SpaceX shares.",
-    "tags": [
-     "Prominente",
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "After Musk appeared to mock Binance’s $6.3 billion hack, CZ reminded him that the exchange’s $500 million bet on his Twitter takeover is now worth over $1 billion in SpaceX shares."
-   },
-   {
-    "titel": "Krypto-Börse KuCoin verlässt den russischen Markt",
-    "link": "https://www.btc-echo.de/news/krypto-hammer-darum-sperrt-kucoin-russische-anleger-aus-240120/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T16:24:18+00:00",
-    "text": "Die Krypto-Börse KuCoin verlässt Russland und Belarus – als dritte Börse in diesem Monat. So geht es für betroffene Anleger weiter. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Die Krypto-Börse KuCoin verlässt Russland und Belarus – als dritte Börse in diesem Monat.",
-    "titel_de": "Krypto-Börse KuCoin verlässt den russischen Markt",
-    "kurz_de": "Die Krypto-Börse KuCoin verlässt Russland und Belarus – als dritte Börse in diesem Monat."
-   },
-   {
-    "titel": "Bitcoin risks worst October in 12 years as tech sell-off spreads to gold",
-    "link": "https://cointelegraph.com/markets/bitcoin-risks-worst-october-in-12-years-as-tech-sell-off-spreads-to-gold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:06:28+00:00",
-    "text": "Bitcoin circled $77,000 as crypto markets navigated US stock-market downside, while the gold price fell to its lowest in a year.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Bitcoin circled $77,000 as crypto markets navigated US stock-market downside, while the gold price fell to its lowest in a year."
-   },
-   {
-    "titel": "Yorkshire Water boss resigns after firm downgraded",
-    "link": "https://www.bbc.co.uk/news/articles/ckzd623pldqgo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:04:55+00:00",
-    "text": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-31T19:18:20+00:00",
+  "stand": "2026-10-31T22:42:09+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
