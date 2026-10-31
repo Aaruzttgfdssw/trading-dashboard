@@ -1,48 +1,266 @@
 {
- "erzeugt": "2026-10-31T15:04:24+00:00",
+ "erzeugt": "2026-10-31T19:18:07+00:00",
  "kurse": {
-  "stand": "2026-10-31T15:04:24+00:00",
+  "stand": "2026-10-31T19:18:07+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 69073,
-    "aend24": -0.17043,
-    "aend7": -3.929,
-    "aend1y": -29.633,
-    "marktkap": 1388808845519,
-    "volumen": 76221388266
+    "preis": 69261,
+    "aend24": 1.08952,
+    "aend7": -3.3172,
+    "aend1y": -29.0343,
+    "marktkap": 1392521367403,
+    "volumen": 57620101824
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2004.42,
-    "aend24": -0.31981,
-    "aend7": -5.1031,
-    "aend1y": -41.7735,
-    "marktkap": 244942491725,
-    "volumen": 7252056411
+    "preis": 2013.52,
+    "aend24": 0.95828,
+    "aend7": -2.9017,
+    "aend1y": -41.116,
+    "marktkap": 246005893895,
+    "volumen": 4662523993
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 85.41,
-    "aend24": 0.42801,
-    "aend7": -5.5721,
-    "aend1y": -49.1171,
-    "marktkap": 50414453655,
-    "volumen": 2234844397
+    "preis": 85.68,
+    "aend24": 1.61357,
+    "aend7": -4.4527,
+    "aend1y": -48.2614,
+    "marktkap": 50557652043,
+    "volumen": 1810632316
    }
   ]
  },
  "news": {
-  "stand": "2026-10-31T15:04:33+00:00",
+  "stand": "2026-10-31T19:18:09+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Jackdaw Approval Sparks Fierce Debate Over Britain's Energy Future",
+    "link": "https://oilprice.com/Energy/Energy-General/Jackdaw-Approval-Sparks-Fierce-Debate-Over-Britains-Energy-Future.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-31T19:00:00+00:00",
+    "text": "The United Kingdom approved the development of the Jackdaw North Sea gas field on the 21st of October following years of legal battles and political uncertainty. Jackdaw is a large offshore natural gas field in the North Sea, owned by Adur…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "The United Kingdom approved the development of the Jackdaw North Sea gas field on the 21st of October following years of legal battles and political uncertainty.",
+    "titel_de": "Die Zustimmung von Jackdaw entfacht eine heftige Debatte über die Energiezukunft Großbritanniens",
+    "kurz_de": "Das Vereinigte Königreich genehmigte die Entwicklung des Jackdaw-Gasfeldes in der Nordsee am 21. Oktober nach jahrelangen Rechtsstreitigkeiten und politischer Unsicherheit."
+   },
+   {
+    "titel": "Bitcoin's white paper turns 18, and small businesses are still paying for the bailouts it answered",
+    "link": "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T18:00:00+00:00",
+    "text": "Eighteen years after Satoshi published the Bitcoin white paper, business owners are still covering the cost of a system built on bailouts, and they can protect part of their surplus by keeping it in bitcoin, argues Onramp CEO Michael Tangu…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Eighteen years after Satoshi published the Bitcoin white paper, business owners are still covering the cost of a system built on bailouts, and they can protect part of their surplus by keeping it in…"
+   },
+   {
+    "titel": "USDT-Zwangsumtausch: Diese Steuerfalle droht jetzt",
+    "link": "https://www.btc-echo.de/news/usdt-zwangsumtausch-diese-steuerfalle-droht-jetzt-240047/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-31T18:00:00+00:00",
+    "text": "Krypto-Börsen wandeln Stablecoin-Guthaben automatisch um. Welche Steuerfolgen drohen und warum Tethers Vormachtstellung auf dem Spiel steht. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "Krypto-Börsen wandeln Stablecoin-Guthaben automatisch um.",
+    "titel_de": "USDT-Zwangsumtausch: Diese Steuerfalle droht jetzt",
+    "kurz_de": "Krypto-Börsen wandeln Stablecoin-Guthaben automatisch um."
+   },
+   {
+    "titel": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
+    "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T17:53:35+00:00",
+    "text": "Oleshky residents had been without food, water and electricity, with many resorting to cooking garden weeds to survive.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Oleshky residents had been without food, water and electricity, with many resorting to cooking garden weeds to survive.",
+    "titel_de": "Evakuierte aus der von Russland besetzten Stadt, in der die Bewohner Unkraut aßen, kommen in der Ukraine an",
+    "kurz_de": "Die Bewohner verließen die zerstörte Stadt am Freitag nach einem von der US-First Lady Melania Trump vermittelten Waffenstillstand."
+   },
+   {
+    "titel": "DARPA Backs Project to Measure AI Energy Use at Every Stage of the Workflow",
+    "link": "https://oilprice.com/Energy/Energy-General/DARPA-Backs-Project-to-Measure-AI-Energy-Use-at-Every-Stage-of-the-Workflow.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-31T17:00:00+00:00",
+    "text": "The artificial intelligence boom is creating an energy monster. The indiscriminate integration of machine learning into everything from from our energy grids to our electric toothbrushes – no, really – has created a global race to build up…",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "The artificial intelligence boom is creating an energy monster."
+   },
+   {
+    "titel": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+    "link": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T16:32:08+00:00",
+    "text": "Two analytics firms say they have robust intelligence pointing to a North Korean state-backed group as the likely culprit.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Two analytics firms say they have robust intelligence pointing to a North Korean state-backed group as the likely culprit."
+   },
+   {
+    "titel": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
+    "link": "https://www.tagesschau.de/wirtschaft/technologie/salz-142.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-10-31T16:21:31+00:00",
+    "text": "Ein Bergbaukonzern aus Hessen kontrolliert rund 30 Prozent des Weltmarktes für hochreine Pharmasalze. Was dort abgebaut wird, ist für viele Menschen überlebenswichtig. Von Christof Dörr.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Ein Bergbaukonzern aus Hessen kontrolliert rund 30 Prozent des Weltmarktes für hochreine Pharmasalze.",
+    "titel_de": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
+    "kurz_de": "Ein Bergbaukonzern aus Hessen kontrolliert rund 30 Prozent des Weltmarktes für hochreine Pharmasalze."
+   },
+   {
+    "titel": "A stolen iPhone, $14,000 in losses and London's crypto theft problem",
+    "link": "https://www.coindesk.com/business/2026/11/01/a-stolen-iphone-usd14-000-in-losses-and-london-s-crypto-theft-problem",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T16:09:30+00:00",
+    "text": "Two strangers befriended Magnus Ahmad outside a London bar. Hours later, thieves had emptied his crypto wallets, accessed his bank accounts and disabled his laptop.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Two strangers befriended Magnus Ahmad outside a London bar.",
+    "titel_de": "Ein gestohlenes iPhone, 14.000 $ Verluste und Londons Kryptodiebstahlproblem",
+    "kurz_de": "Zwei Fremde freuten sich vor einer Londoner Bar mit Magnus Ahmad."
+   },
+   {
+    "titel": "Traders are already placing leveraged bets on Anthropic’s IPO using crypto contracts",
+    "link": "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T16:00:00+00:00",
+    "text": "Trade.xyz’s new ANT contract fell about 20% in its first hour on Hyperliquid. There are no shares behind it, and U.S. traders are locked out.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Trade.xyz’s new ANT contract fell about 20% in its first hour on Hyperliquid."
+   },
+   {
+    "titel": "Milliardenhack bei Binance: Das sagen die Experten zum historischen Krypto-Raub",
+    "link": "https://www.btc-echo.de/news/milliardenhack-bei-binance-das-sagen-die-experten-zum-krypto-raub-240121/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-31T16:00:00+00:00",
+    "text": "Selbst die weltweit größte Krypto-Börse bleibt von Hackern nicht verschont. Sind die eigenen Bestände auf einer Hardware-Wallet besser aufgehoben? Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Selbst die weltweit größte Krypto-Börse bleibt von Hackern nicht verschont.",
+    "titel_de": "Milliardenhack bei Binance: Das sagen die Experten zum historischen Krypto-Raub",
+    "kurz_de": "Selbst die weltweit größte Krypto-Börse bleibt von Hackern nicht verschont."
+   },
+   {
+    "titel": "Binance says 90% of stolen assets replenished, targets Sunday withdrawals",
+    "link": "https://cointelegraph.com/news/binance-hack-90-percent-replenished?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T15:36:01+00:00",
+    "text": "Less-liquid tokens make up the remaining shortfall as Binance continues buying replacement assets through market and over-the-counter trades.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Less-liquid tokens make up the remaining shortfall as Binance continues buying replacement assets through market and over-the-counter trades.",
+    "titel_de": "Binance sagt, dass 90% der gestohlenen Vermögenswerte aufgefüllt wurden, zielt auf Sonntagsabhebungen ab",
+    "kurz_de": "Weniger liquide Token bilden den verbleibenden Fehlbetrag, da Binance weiterhin Ersatzwerte durch Markt- und außerbörsliche Geschäfte kauft."
+   },
+   {
+    "titel": "Bitcoin held up better than expected after Binance hack, Strive CEO says",
+    "link": "https://cointelegraph.com/markets/bitcoin-binance-hack-strive-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T15:26:46+00:00",
+    "text": "Strive CEO Matt Cole says the Binance hack has not changed his long-term case for Bitcoin, but cautions it is too early to call a market bottom.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Strive CEO Matt Cole says the Binance hack has not changed his long-term case for Bitcoin, but cautions it is too early to call a market bottom."
+   },
+   {
+    "titel": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
+    "link": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T15:24:10+00:00",
+    "text": "Binance is absorbing all losses through corporate funds, futures reserves, and SAFU, keeping user balances intact.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Binance is absorbing all losses through corporate funds, futures reserves, and SAFU, keeping user balances intact.",
+    "titel_de": "Binance sagt, dass es 90% der gestohlenen Krypto nach massiven 6,3 Milliarden $ Verletzung ersetzt hat",
+    "kurz_de": "Binance absorbiert alle Verluste über Unternehmensfonds, Futures-Reserven und SAFU und hält die Benutzerbilanzen intakt."
+   },
+   {
+    "titel": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
+    "link": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T15:16:20+00:00",
+    "text": "Government data shows that more than 10,000 people have contracted the rare virus.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Government data shows that more than 10,000 people have contracted the rare virus."
+   },
+   {
+    "titel": "Here’s what happened in crypto today",
+    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T15:09:55+00:00",
+    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "Need to know what happened in crypto today?"
+   },
    {
     "titel": "Binance Hack: Everything You Need to Know About the Biggest Crypto Heist in History",
     "link": "https://decrypt.co/382306/binance-hack-everything-you-need-to-know",
@@ -85,23 +303,6 @@
     ],
     "wichtig": 1,
     "kurz": "The government of Senegal has ambitious energy diversification aims, with plans to develop both the country’s oil and gas sector and grow its renewable energy capacity."
-   },
-   {
-    "titel": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
-    "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T14:53:34+00:00",
-    "text": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
-    "titel_de": "Evakuierte aus der von Russland besetzten Stadt, in der die Bewohner Unkraut aßen, kommen in der Ukraine an",
-    "kurz_de": "Die Bewohner verließen die zerstörte Stadt am Freitag nach einem von der US-First Lady Melania Trump vermittelten Waffenstillstand."
    },
    {
     "titel": "Uber tests how tokenization can put idle cash to work with HSBC, Franklin Templeton",
@@ -502,20 +703,6 @@
     "kurz": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become."
    },
    {
-    "titel": "Responsible or panicked? Meet the people around the world already preparing for crisis",
-    "link": "https://www.bbc.co.uk/news/articles/ckreypn92w49o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T01:32:33+00:00",
-    "text": "Filter straws to a disposable toilet - people in the US, Japan, Sweden and Netherlands on what's in their emergency stashes.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Filter straws to a disposable toilet - people in the US, Japan, Sweden and Netherlands on what's in their emergency stashes."
-   },
-   {
     "titel": "Global nature talks reach deal but money remains an issue",
     "link": "https://www.bbc.co.uk/news/articles/cw1l32qyj8pqo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -552,18 +739,6 @@
     ],
     "wichtig": 1,
     "kurz": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday."
-   },
-   {
-    "titel": "He questioned Thailand's monarchy dressed as Harry Potter. Now he's in jail for 34 years",
-    "link": "https://www.bbc.co.uk/news/articles/cmjwepvd0qq9o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T23:26:16+00:00",
-    "text": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years."
    },
    {
     "titel": "How has the ceasefire in Russian-occupied Oleshky been unfolding?",
@@ -1157,185 +1332,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced."
-   },
-   {
-    "titel": "America’s LNG Boom Faces Its Biggest Test Yet",
-    "link": "https://oilprice.com/Energy/Energy-General/Americas-LNG-Boom-Faces-Its-Biggest-Test-Yet.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:00:00+00:00",
-    "text": "A decade ago, the United States was only beginning to emerge from an energy outlook that had once assumed steadily rising dependence on imported natural gas. For years, the prevailing concern was that domestic production would struggle to…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "A decade ago, the United States was only beginning to emerge from an energy outlook that had once assumed steadily rising dependence on imported natural gas."
-   },
-   {
-    "titel": "Bitcoin-Kurs: Darum muss der Kurs jetzt Stärke zeigen",
-    "link": "https://www.btc-echo.de/news/bitcoin-kurs-darum-muss-der-kurs-jetzt-staerke-zeigen-240101/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T16:00:00+00:00",
-    "text": "Bitcoin (BTC) folgt der Schwäche am US-Aktienmarkt. Der Binance-Hack hat die schwierige charttechnische Lage nochmals verstärkt. Darauf müssen Anleger mit Blick auf die Kursentwicklung nun achten. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Bitcoin (BTC) folgt der Schwäche am US-Aktienmarkt.",
-    "titel_de": "Bitcoin-Kurs: Darum muss der Kurs jetzt Stärke zeigen",
-    "kurz_de": "Bitcoin (BTC) folgt der Schwäche am US-Aktienmarkt."
-   },
-   {
-    "titel": "Japan to Overtake China As World’s Top LNG Importer This Year",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Japan-to-Overtake-China-As-Worlds-Top-LNG-Importer-This-Year.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T15:30:00+00:00",
-    "text": "Japan is expected to overtake China as the world’s largest importer of liquefied natural gas (LNG) this year, for the first time since 2022, as high LNG prices and sufficient storage in China limit purchases, analysts at ICIS and Kpler say…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Japan is expected to overtake China as the world’s largest importer of liquefied natural gas (LNG) this year, for the first time since 2022, as high LNG prices and sufficient storage in China limit p…"
-   },
-   {
-    "titel": "Spain transport minister says he won't resign over high-speed rail disaster",
-    "link": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T15:03:39+00:00",
-    "text": "Óscar Puente has been facing calls to resign after two high-speed trains collided earlier in the week, killing at least 69 people.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Óscar Puente has been facing calls to resign after two high-speed trains collided earlier in the week, killing at least 69 people."
-   },
-   {
-    "titel": "Pope Leo XIV becomes first pontiff to vote in a US election",
-    "link": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:48:22+00:00",
-    "text": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress."
-   },
-   {
-    "titel": "European Gas Tops 101 Euros for First Time Since 2022",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Tops-101-Euros-for-First-Time-Since-2022.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:30:00+00:00",
-    "text": "Europe’s benchmark natural gas prices have topped 101 euros per megawatt-hour (MWh) for the first time since the 2022 crisis as winter looms amid historically low European gas storage levels. The front-month price at the Dutch Title Transf…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Europe’s benchmark natural gas prices have topped 101 euros per megawatt-hour (MWh) for the first time since the 2022 crisis as winter looms amid historically low European gas storage levels."
-   },
-   {
-    "titel": "What is EIP-7702? The Ethereum Upgrade Behind the $6.4B Binance Hack",
-    "link": "https://decrypt.co/resources/what-is-eip-7702-the-ethereum-upgrade-behind-the-6-4b-binance-hack",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:17:34+00:00",
-    "text": "EIP-7702 lets ordinary Ethereum wallets run smart contract code, enabling batched and sponsored transactions. Here's how it works.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 0,
-    "kurz": "EIP-7702 lets ordinary Ethereum wallets run smart contract code, enabling batched and sponsored transactions."
-   },
-   {
-    "titel": "Wall Street analysts urge investors to buy crypto stocks after $6.3 billion Binance hack",
-    "link": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:13:34+00:00",
-    "text": "Analysts at Cantor Fitzgerald, TD Cowen and Compass Point say the $6.3 billion Binance hack is unlikely to derail the crypto market's recovery.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Analysts at Cantor Fitzgerald, TD Cowen and Compass Point say the $6.3 billion Binance hack is unlikely to derail the crypto market's recovery."
-   },
-   {
-    "titel": "Inflationsrate geht im Oktober auf 2,8 Prozent zurück",
-    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T14:08:37+00:00",
-    "text": "Die hohe Inflation in Deutschland ‌hat sich im Oktober spürbar abgeschwächt. Dafür sorgen vor allem die fallenden Preise an den Zapfsäulen. Doch Ökonomen geben noch keine Entwarnung.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 1,
-    "kurz": "Die hohe Inflation in Deutschland ‌hat sich im Oktober spürbar abgeschwächt.",
-    "titel_de": "Inflationsrate geht im Oktober auf 2,8 Prozent zurück",
-    "kurz_de": "Die hohe Inflation in Deutschland ‌hat sich im Oktober spürbar abgeschwächt."
-   },
-   {
-    "titel": "Here’s what happened in crypto today",
-    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:07:42+00:00",
-    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Need to know what happened in crypto today?"
-   },
-   {
-    "titel": "Trump Considers Lifting Sanctions on Putin’s ‘Slush Fund’",
-    "link": "https://oilprice.com/Geopolitics/Europe/Trump-Considers-Lifting-Sanctions-on-Putins-Slush-Fund.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T14:00:00+00:00",
-    "text": "Four days after Russia launched its all-out effort to subjugate Ukraine, the US government and other Western allies fired a broadside of financial sanctions aimed at punishing the Kremlin’s wallet for the assault. The Russian Central Bank…",
-    "tags": [
-     "Prominente",
-     "Regulierung",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 3,
-    "kurz": "Four days after Russia launched its all-out effort to subjugate Ukraine, the US government and other Western allies fired a broadside of financial sanctions aimed at punishing the Kremlin’s wallet fo…",
-    "titel_de": "Trump erwägt Aufhebung der Sanktionen gegen Putins \"Slush Fund\"",
-    "kurz_de": "Vier Tage nachdem Russland seine umfassenden Bemühungen zur Unterwerfung der Ukraine gestartet hatte, feuerten die US-Regierung und andere westliche Verbündete eine Breitseite von Finanzsanktionen ab, die darauf abzielten, die Geldbörse des Kremls für..."
-   },
-   {
-    "titel": "Wie der VW-Vorstand die Laune bei den Skoda-Mitarbeitern drückt",
-    "link": "https://www.tagesschau.de/wirtschaft/unternehmen/skoda-144.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T13:51:43+00:00",
-    "text": "Während die Konzernmutter Volkswagen viele Probleme hat, erwirtschaftet die tschechische Tochter Skoda passable Gewinne. Doch das ist für den Hersteller nicht automatisch von Vorteil. Von André Berthold.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Während die Konzernmutter Volkswagen viele Probleme hat, erwirtschaftet die tschechische Tochter Skoda passable Gewinne.",
-    "titel_de": "Wie der VW-Vorstand die Laune bei den Skoda-Mitarbeitern drückt",
-    "kurz_de": "Während die Konzernmutter Volkswagen viele Probleme hat, erwirtschaftet die tschechische Tochter Skoda passable Gewinne."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-31T15:04:44+00:00",
+  "stand": "2026-10-31T19:18:20+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
