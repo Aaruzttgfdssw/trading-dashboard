@@ -1,48 +1,142 @@
 {
- "erzeugt": "2026-10-30T23:16:35+00:00",
+ "erzeugt": "2026-10-31T02:38:18+00:00",
  "kurse": {
-  "stand": "2026-10-30T23:16:35+00:00",
+  "stand": "2026-10-31T02:38:19+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 68742,
-    "aend24": -2.30841,
-    "aend7": -5.4299,
-    "aend1y": -28.6986,
-    "marktkap": 1382088780527,
-    "volumen": 180940725648
+    "preis": 68955,
+    "aend24": -0.14241,
+    "aend7": -4.0395,
+    "aend1y": -29.2305,
+    "marktkap": 1386351242911,
+    "volumen": 179649880198
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1996.45,
-    "aend24": -1.38894,
-    "aend7": -6.811,
-    "aend1y": -40.791,
-    "marktkap": 243914926857,
-    "volumen": 18332280511
+    "preis": 2001.7,
+    "aend24": 1.26834,
+    "aend7": -5.4916,
+    "aend1y": -41.4432,
+    "marktkap": 244538673816,
+    "volumen": 13427019083
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 85.56,
-    "aend24": -0.77039,
-    "aend7": -7.5239,
-    "aend1y": -47.4618,
-    "marktkap": 50483462738,
-    "volumen": 4011670904
+    "preis": 86.3,
+    "aend24": 1.54349,
+    "aend7": -5.4406,
+    "aend1y": -47.9231,
+    "marktkap": 50914440609,
+    "volumen": 2940063181
    }
   ]
  },
  "news": {
-  "stand": "2026-10-30T23:16:39+00:00",
+  "stand": "2026-10-31T02:38:21+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+    "link": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T02:12:19+00:00",
+    "text": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become."
+   },
+   {
+    "titel": "Global nature talks reach deal but money remains an issue",
+    "link": "https://www.bbc.co.uk/news/articles/cw1l32qyj8pqo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T01:27:05+00:00",
+    "text": "Countries have been trying to get a global agreement to halt nature decline back on track.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Countries have been trying to get a global agreement to halt nature decline back on track."
+   },
+   {
+    "titel": "Police deployed during stand-off over control of top Poland court",
+    "link": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T01:11:43+00:00",
+    "text": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them."
+   },
+   {
+    "titel": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
+    "link": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T00:48:56+00:00",
+    "text": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday."
+   },
+   {
+    "titel": "US approves sale of 500 Patriot missiles to Ukraine",
+    "link": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T00:40:43+00:00",
+    "text": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
+    "titel_de": "USA genehmigt Verkauf von 500 Patriot-Raketen an die Ukraine",
+    "kurz_de": "Die in Amerika hergestellten Abfangjäger sind die einzige wirksame Waffe, um die ballistischen Raketen Russlands abzuschießen."
+   },
+   {
+    "titel": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+    "link": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T00:29:58+00:00",
+    "text": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race."
+   },
+   {
+    "titel": "How has the ceasefire in Russian-occupied Oleshky been unfolding?",
+    "link": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T23:19:17+00:00",
+    "text": "Ukraine correspondent Dan Johnson explains the temporary ceasefire in the devastated town of Oleshky.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Ukraine correspondent Dan Johnson explains the temporary ceasefire in the devastated town of Oleshky.",
+    "titel_de": "Wie hat sich der Waffenstillstand im russisch besetzten Oleshky entwickelt?",
+    "kurz_de": "Der Ukraine-Korrespondent Dan Johnson erklärt den vorübergehenden Waffenstillstand in der zerstörten Stadt Oleshky."
+   },
    {
     "titel": "Europe Is Now Seriously Rethinking Its Oil Refinery Phase Down",
     "link": "https://oilprice.com/Energy/Crude-Oil/Europe-Is-Now-Seriously-Rethinking-Its-Oil-Refinery-Phase-Down.html",
@@ -56,22 +150,6 @@
     ],
     "wichtig": 1,
     "kurz": "Over the past couple of decades, Europe has pursued some of the world’s most ambitious clean energy policies, aiming to become the first climate-neutral continent by 2050."
-   },
-   {
-    "titel": "US approves sale of 500 Patriot missiles to Ukraine",
-    "link": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T22:20:52+00:00",
-    "text": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
-    "titel_de": "USA genehmigt Verkauf von 500 Patriot-Raketen an die Ukraine",
-    "kurz_de": "Die in Amerika hergestellten Abfangjäger sind die einzige wirksame Waffe, um die ballistischen Raketen Russlands abzuschießen."
    },
    {
     "titel": "G20 'family photo' cancelled after protests over presence of Russian minister",
@@ -153,18 +231,6 @@
     "kurz_de": "Der Cyberangriff, den das Unternehmen als komplex bezeichnet, gilt als der größte seiner Art."
    },
    {
-    "titel": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-    "link": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T20:55:18+00:00",
-    "text": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race."
-   },
-   {
     "titel": "Intel Stock Suffers Worst Crash in 50 Years as Weak Forecast Overshadows AI Chip Demand",
     "link": "https://decrypt.co/382287/intel-stock-suffers-worst-crash-in-50-years-as-weak-forecast-overshadows-ai-chip-demand",
     "quelle": "Decrypt",
@@ -179,18 +245,6 @@
     "kurz": "Intel beat third-quarter earnings expectations, but warned of a prolonged PC slump, sending shares to their worst daily decline in 50 years.",
     "titel_de": "Die Intel-Aktie erleidet den schlimmsten Absturz seit 50 Jahren, da die schwache Prognose die Nachfrage nach KI-Chips überschattet",
     "kurz_de": "Intel übertraf die Gewinnerwartungen für das dritte Quartal, warnte jedoch vor einem anhaltenden Einbruch des PC-Marktes und schickte die Aktien auf ihren schlimmsten täglichen Rückgang seit 50 Jahren."
-   },
-   {
-    "titel": "Police deployed during stand-off over control of top Poland court",
-    "link": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T20:52:01+00:00",
-    "text": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them."
    },
    {
     "titel": "They strangled us, says founder of Russian newspaper shut under pressure from authorities",
@@ -960,18 +1014,6 @@
     "kurz": "The exchange said it set aside more than $6.34 billion to cover losses and would include the assets in its next proof-of-reserves report."
    },
    {
-    "titel": "Swedish academic says he has been barred from UK over event with Palestine Action founder",
-    "link": "https://www.bbc.co.uk/news/articles/ck1l32jdlvl1o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T12:36:55+00:00",
-    "text": "Andreas Malm was due to appear on a panel alongside a co-founder of the proscribed group next week.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Andreas Malm was due to appear on a panel alongside a co-founder of the proscribed group next week."
-   },
-   {
     "titel": "Experte zum Krypto-Angriff: \"Drei Milliarden sind definitiv weg\"",
     "link": "https://www.tagesschau.de/wirtschaft/technologie/hackerangriff-binance-interview-100.html",
     "quelle": "tagesschau Wirtschaft",
@@ -1025,8 +1067,8 @@
    {
     "titel": "What we know about Binance's $6.3bn hack",
     "link": "https://www.bbc.co.uk/news/videos/cv2d62e34rw5o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
     "sprache": "en",
     "zeit": "2026-10-30T12:27:28+00:00",
     "text": "Cyber correspondent Joe Tidy explains more about what is suspected to be the biggest hack in history.",
@@ -1077,8 +1119,8 @@
    {
     "titel": "Google value plunges by $500bn as its own AI search hits ad sales",
     "link": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
     "sprache": "en",
     "zeit": "2026-10-30T12:04:02+00:00",
     "text": "Google spooked investors so badly that its stock hit a six-month low, after it revealed its AI own search summaries were affecting ad revenue.",
@@ -1259,6 +1301,20 @@
     "kurz_de": "Die Arbeitslosigkeit ist im Oktober zurückgegangen, die übliche Herbstbelebung aber nahezu ausgeblieben."
    },
    {
+    "titel": "What's at stake for Trump in the US midterms?",
+    "link": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-30T10:19:48+00:00",
+    "text": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency."
+   },
+   {
     "titel": "Trezor Warns CryptoBilis Buyers After Report of Hardware Implant in Safe 5",
     "link": "https://decrypt.co/382216/trezor-warns-cryptobilis-buyers-after-report-of-hardware-implant-in-safe-5",
     "quelle": "Decrypt",
@@ -1269,69 +1325,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The hardware wallet manufacturer has yet to examine the device, but is treating the report as credible and told buyers to move their funds."
-   },
-   {
-    "titel": "Weltspartag 2026: Bitcoin-Sparplan statt Sparbuch – lohnt sich das?",
-    "link": "https://www.btc-echo.de/news/bitcoin-sparplan-weltspartag-2026-239977/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T10:00:00+00:00",
-    "text": "Die Deutschen sparen weiterhin überdurchschnittlich viel. Zugleich setzen immer mehr Krypto-Anleger auf regelmäßige Bitcoin-Käufe. Doch wie rentabel ist ein Sparplan tatsächlich? Ein Blick auf historische Renditen, die DCA-Strategie und ak…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Die Deutschen sparen weiterhin überdurchschnittlich viel.",
-    "titel_de": "Weltspartag 2026: Bitcoin-Sparplan statt Sparbuch – lohnt sich das?",
-    "kurz_de": "Die Deutschen sparen weiterhin überdurchschnittlich viel."
-   },
-   {
-    "titel": "THORChain’s RUNE jumps 13% after Binance’s record $6.3B hack",
-    "link": "https://cointelegraph.com/markets/rune-token-surges-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T09:52:29+00:00",
-    "text": "North Korean hackers previously used THORChain to move funds stolen from Bybit and Bitget, prompting calls for the protocol to intervene.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "North Korean hackers previously used THORChain to move funds stolen from Bybit and Bitget, prompting calls for the protocol to intervene."
-   },
-   {
-    "titel": "Deutsche Wirtschaft wächst überraschend im Sommer",
-    "link": "https://www.tagesschau.de/wirtschaft/konjunktur/entwicklung-bip-deutschland-sommer-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T09:50:45+00:00",
-    "text": "Nach einem starken Halbjahr hat sich auch im Sommer die Erholung der deutschen Wirtschaft fortgesetzt. Dabei hatten viele Experten mit einer Stagnation gerechnet. Die privaten Ausgaben sind jedoch weiterhin verhalten.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Nach einem starken Halbjahr hat sich auch im Sommer die Erholung der deutschen Wirtschaft fortgesetzt.",
-    "titel_de": "Deutsche Wirtschaft wächst überraschend im Sommer",
-    "kurz_de": "Nach einem starken Halbjahr hat sich auch im Sommer die Erholung der deutschen Wirtschaft fortgesetzt."
-   },
-   {
-    "titel": "Krise in Automobilbranche: Gewinn bei Audi bricht drastisch ein",
-    "link": "https://www.tagesschau.de/wirtschaft/unternehmen/automobil-audi-gewinneinbruch-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T09:42:12+00:00",
-    "text": "Auch der Autobauer Audi steckt in der Krise: Der Gewinn brach im dritten Quartal deutlich ein. Grund ist unter anderem das schwache China-Geschäft. Neue Automodelle sollen positive Impulse bringen.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Auch der Autobauer Audi steckt in der Krise: Der Gewinn brach im dritten Quartal deutlich ein.",
-    "titel_de": "Krise in Automobilbranche: Gewinn bei Audi bricht drastisch ein",
-    "kurz_de": "Auch der Autobauer Audi steckt in der Krise: Der Gewinn brach im dritten Quartal deutlich ein."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-30T23:16:50+00:00",
+  "stand": "2026-10-31T02:38:32+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
