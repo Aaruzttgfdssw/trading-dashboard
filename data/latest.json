@@ -1,48 +1,188 @@
 {
- "erzeugt": "2026-10-31T02:38:18+00:00",
+ "erzeugt": "2026-10-31T08:53:40+00:00",
  "kurse": {
-  "stand": "2026-10-31T02:38:19+00:00",
+  "stand": "2026-10-31T08:53:41+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 68955,
-    "aend24": -0.14241,
-    "aend7": -4.0395,
-    "aend1y": -29.2305,
-    "marktkap": 1386351242911,
-    "volumen": 179649880198
+    "preis": 68985,
+    "aend24": -0.84488,
+    "aend7": -4.249,
+    "aend1y": -29.5055,
+    "marktkap": 1386982328254,
+    "volumen": 164763648395
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2001.7,
-    "aend24": 1.26834,
-    "aend7": -5.4916,
-    "aend1y": -41.4432,
-    "marktkap": 244538673816,
-    "volumen": 13427019083
+    "preis": 1999.06,
+    "aend24": 0.57833,
+    "aend7": -5.677,
+    "aend1y": -41.4674,
+    "marktkap": 244244557559,
+    "volumen": 10420193084
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 86.3,
-    "aend24": 1.54349,
-    "aend7": -5.4406,
-    "aend1y": -47.9231,
-    "marktkap": 50914440609,
-    "volumen": 2940063181
+    "preis": 85.09,
+    "aend24": -2.00754,
+    "aend7": -6.4388,
+    "aend1y": -48.503,
+    "marktkap": 50226148896,
+    "volumen": 2641702385
    }
   ]
  },
  "news": {
-  "stand": "2026-10-31T02:38:21+00:00",
+  "stand": "2026-10-31T08:53:45+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+    "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T08:49:35+00:00",
+    "text": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
+    "titel_de": "Hunderte wurden während des seltenen Waffenstillstands in der Ukraine aus dem von Russland besetzten Oleshky evakuiert",
+    "kurz_de": "Auch Hunderte von Menschen sollen sich trotz der Gefahren in der Frontstadt aufgehalten haben."
+   },
+   {
+    "titel": "Coinbase-Aktie tief im Minus: So liefen die Geschäfte im dritten Quartal",
+    "link": "https://www.btc-echo.de/news/coinbase-aktie-tief-im-minus-so-liefen-die-geschaefte-im-dritten-quartal-240180/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-31T08:00:00+00:00",
+    "text": "Coinbase verdient im dritten Quartal deutlich mehr als im Vorjahr. Neue Geschäftsbereiche gewinnen an Bedeutung. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Coinbase verdient im dritten Quartal deutlich mehr als im Vorjahr.",
+    "titel_de": "Coinbase-Aktie tief im Minus: So liefen die Geschäfte im dritten Quartal",
+    "kurz_de": "Coinbase verdient im dritten Quartal deutlich mehr als im Vorjahr."
+   },
+   {
+    "titel": "KI bei der Geldanlage: Wie sicher sind ChatGPT-Anlagetipps?",
+    "link": "https://www.tagesschau.de/wirtschaft/finanzen/ki-geldanlage-chatgpt-anlagetipps-risiken-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-10-31T07:45:19+00:00",
+    "text": "Immer mehr Menschen holen sich bei der Geldanlage Rat von ChatGPT oder Claude. Experten sehen in den KI-Anlagetipps durchaus Potenzial, warnen aber auch vor Fehlern und Risiken. Von Angela Göpfert.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "Immer mehr Menschen holen sich bei der Geldanlage Rat von ChatGPT oder Claude.",
+    "titel_de": "KI bei der Geldanlage: Wie sicher sind ChatGPT-Anlagetipps?",
+    "kurz_de": "Immer mehr Menschen holen sich bei der Geldanlage Rat von ChatGPT oder Claude."
+   },
+   {
+    "titel": "Nach Binance-Hack: Bitcoin fällt Richtung 76.000 US-Dollar",
+    "link": "https://www.btc-echo.de/news/nach-binance-hack-bitcoin-faellt-richtung-76-000-us-dollar-240185/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-31T07:44:26+00:00",
+    "text": "Bitcoin gibt nach dem Binance-Hack weiter nach. Der Kurs nähert sich dabei einer Marke, die für viele der jüngsten Käufer entscheidend werden könnte. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Bitcoin gibt nach dem Binance-Hack weiter nach.",
+    "titel_de": "Nach Binance-Hack: Bitcoin fällt Richtung 76.000 US-Dollar",
+    "kurz_de": "Bitcoin gibt nach dem Binance-Hack weiter nach."
+   },
+   {
+    "titel": "Krypto-Schock bei Binance: Warum der Rekord-Hack keine Ausrede verdient",
+    "link": "https://www.btc-echo.de/news/krypto-schock-bei-binance-warum-der-hack-keine-ausrede-verdient-240114/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-31T07:00:00+00:00",
+    "text": "Der Binance-Hack ist der größte Krypto-Raub aller Zeiten. Die Börse spricht von einem komplexen Angriff, als Ausrede taugt das nicht. Ein Kommentar. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Der Binance-Hack ist der größte Krypto-Raub aller Zeiten.",
+    "titel_de": "Krypto-Schock bei Binance: Warum der Rekord-Hack keine Ausrede verdient",
+    "kurz_de": "Der Binance-Hack ist der größte Krypto-Raub aller Zeiten."
+   },
+   {
+    "titel": "Spain train disaster clouds Sánchez chances of re-election",
+    "link": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T05:44:21+00:00",
+    "text": "The Spanish PM is hit by a succession of crises just weeks before a snap general election.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The Spanish PM is hit by a succession of crises just weeks before a snap general election."
+   },
+   {
+    "titel": "Bitcoin stolen from Binance tops Tesla’s holdings and is over twice El Salvador’s reserve",
+    "link": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-10-31T05:01:32+00:00",
+    "text": "The 18,270 BTC haul is worth about $1.4 billion and comes within 442 coins of SpaceX’s disclosed holdings. Blockchain investigators link the attack to North Korea.",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 3,
+    "kurz": "The 18,270 BTC haul is worth about $1.4 billion and comes within 442 coins of SpaceX’s disclosed holdings.",
+    "titel_de": "Bitcoin, der aus Binance gestohlen wurde, übersteigt Teslas Bestände und ist mehr als doppelt so hoch wie die Reserve von El Salvador",
+    "kurz_de": "Die 18.270 BTC sind etwa 1,4 Milliarden $ wert und liegen innerhalb von 442 Münzen der von SpaceX offengelegten Bestände."
+   },
+   {
+    "titel": "“Nie wieder ein Allzeithoch”: Kann der McRib Bitcoin noch retten?",
+    "link": "https://www.btc-echo.de/news/nie-wieder-ein-allzeithoch-kann-der-mcrib-bitcoin-noch-retten-240022/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-10-31T03:00:00+00:00",
+    "text": "Auf Bitcoin könnten schwere Monate zukommen. Warum der Kurs seine besten Tage hinter sich haben soll – und manche ihre Hoffnungen nun auf den McRib setzen. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Auf Bitcoin könnten schwere Monate zukommen.",
+    "titel_de": "“Nie wieder ein Allzeithoch”: Kann der McRib Bitcoin noch retten?",
+    "kurz_de": "Auf Bitcoin könnten schwere Monate zukommen."
+   },
+   {
+    "titel": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
+    "link": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T02:39:25+00:00",
+    "text": "A century-old paper mill in Témiscaming, Quebec is indefinitely closed after the US imposed 50% tariffs on its products, putting hundreds out of work.",
+    "tags": [
+     "Prominente",
+     "Zinsen/Wirtschaft",
+     "Hack/Betrug"
+    ],
+    "wichtig": 3,
+    "kurz": "A century-old paper mill in Témiscaming, Quebec is indefinitely closed after the US imposed 50% tariffs on its products, putting hundreds out of work.",
+    "titel_de": "Trumps Zölle könnten diese kanadische Stadt zum Erliegen bringen - ihre Bewohner kämpfen darum, sie zu retten",
+    "kurz_de": "Eine jahrhundertealte Papierfabrik in Témiscaming, Quebec, wird auf unbestimmte Zeit geschlossen, nachdem die USA 50 % Zölle auf ihre Produkte verhängt haben, wodurch Hunderte arbeitslos werden."
+   },
    {
     "titel": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
     "link": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
@@ -660,20 +800,6 @@
     "kurz": "CEO Richard Teng said hackers erased evidence and bypassed security checks."
    },
    {
-    "titel": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
-    "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:26:11+00:00",
-    "text": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers."
-   },
-   {
     "titel": "Elon Musk, CZ Trade Blows Over SpaceX Shares After $6.4B Binance Hack",
     "link": "https://decrypt.co/382236/elon-musk-cz-trade-blows-spacex-shares-binance-hack",
     "quelle": "Decrypt",
@@ -1067,8 +1193,8 @@
    {
     "titel": "What we know about Binance's $6.3bn hack",
     "link": "https://www.bbc.co.uk/news/videos/cv2d62e34rw5o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
     "sprache": "en",
     "zeit": "2026-10-30T12:27:28+00:00",
     "text": "Cyber correspondent Joe Tidy explains more about what is suspected to be the biggest hack in history.",
@@ -1215,121 +1341,11 @@
     ],
     "wichtig": 2,
     "kurz": "Bitcoin held above $76,000 after a $6.3 billion Binance hack and a tech-stock sell-off, as momentum indicators pointed to a possible rebound."
-   },
-   {
-    "titel": "Streeting denies 'kicking can down the road' in defence spending row",
-    "link": "https://www.bbc.co.uk/news/articles/cw62yrzxjnk4o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-30T11:23:38+00:00",
-    "text": "The government is under pressure to set out a path to greater defence spending, as ministers unveil plans to boost UK firms.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The government is under pressure to set out a path to greater defence spending, as ministers unveil plans to boost UK firms."
-   },
-   {
-    "titel": "Stripe lässt KI-Agenten erstmals selbst bezahlen",
-    "link": "https://www.btc-echo.de/news/stripe-laesst-ki-agenten-erstmals-selbst-bezahlen-240102/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T11:10:07+00:00",
-    "text": "Stripe treibt das Bezahlen mit KI-Agenten voran. Bei einem neuen Shoppingdienst können sie erstmals selbstständig mit Stablecoins einkaufen. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Stripe treibt das Bezahlen mit KI-Agenten voran.",
-    "titel_de": "Stripe lässt KI-Agenten erstmals selbst bezahlen",
-    "kurz_de": "Stripe treibt das Bezahlen mit KI-Agenten voran."
-   },
-   {
-    "titel": "Crypto liquidations jump to $1.57 billion as Binance hack sends bitcoin, ether lower",
-    "link": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T11:09:24+00:00",
-    "text": "Bitcoin traded near $77,350 after $6.3 billion Binance hack, with crypto futures liquidations jumping to $1.57 billion.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "Bitcoin traded near $77,350 after $6.3 billion Binance hack, with crypto futures liquidations jumping to $1.57 billion."
-   },
-   {
-    "titel": "EIP-7702 didn’t cause Binance hack, but may have amplified losses",
-    "link": "https://cointelegraph.com/news/binance-hack-security-ethereum-eip-7702-role?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T11:00:10+00:00",
-    "text": "Security experts said attackers could have drained Binance’s wallets without EIP-7702, but the Ethereum upgrade may have helped bypass withdrawal safeguards.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "Security experts said attackers could have drained Binance’s wallets without EIP-7702, but the Ethereum upgrade may have helped bypass withdrawal safeguards."
-   },
-   {
-    "titel": "Binance hacker’s Bitcoin haul tops Coinbase’s corporate treasury",
-    "link": "https://cointelegraph.com/news/binance-hacker-bitcoin-holdings-exceed-coinbase-btc-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T10:54:30+00:00",
-    "text": "The attackers held 18,270 BTC early Friday, topping Coinbase’s reported corporate holdings, and an Ether stash exceeding 500,000 ETH.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "The attackers held 18,270 BTC early Friday, topping Coinbase’s reported corporate holdings, and an Ether stash exceeding 500,000 ETH."
-   },
-   {
-    "titel": "Fast drei Millionen Arbeitslose im Oktober",
-    "link": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/arbeitslose-statistik-oktober-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T10:32:55+00:00",
-    "text": "Die Arbeitslosigkeit ist im Oktober zurückgegangen, die übliche Herbstbelebung aber nahezu ausgeblieben. Im Vergleich zum Vorjahr gibt es sogar mehr Arbeitslose. Als Grund nennt BA-Chefin Nahles die wirtschaftlichen Rahmenbedingungen.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Die Arbeitslosigkeit ist im Oktober zurückgegangen, die übliche Herbstbelebung aber nahezu ausgeblieben.",
-    "titel_de": "Fast drei Millionen Arbeitslose im Oktober",
-    "kurz_de": "Die Arbeitslosigkeit ist im Oktober zurückgegangen, die übliche Herbstbelebung aber nahezu ausgeblieben."
-   },
-   {
-    "titel": "What's at stake for Trump in the US midterms?",
-    "link": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T10:19:48+00:00",
-    "text": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency."
-   },
-   {
-    "titel": "Trezor Warns CryptoBilis Buyers After Report of Hardware Implant in Safe 5",
-    "link": "https://decrypt.co/382216/trezor-warns-cryptobilis-buyers-after-report-of-hardware-implant-in-safe-5",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T10:07:29+00:00",
-    "text": "The hardware wallet manufacturer has yet to examine the device, but is treating the report as credible and told buyers to move their funds.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The hardware wallet manufacturer has yet to examine the device, but is treating the report as credible and told buyers to move their funds."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-31T02:38:32+00:00",
+  "stand": "2026-10-31T08:53:56+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
