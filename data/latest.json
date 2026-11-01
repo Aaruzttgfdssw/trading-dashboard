@@ -1,48 +1,184 @@
 {
- "erzeugt": "2026-11-01T01:29:32+00:00",
+ "erzeugt": "2026-11-01T08:02:33+00:00",
  "kurse": {
-  "stand": "2026-11-01T01:29:33+00:00",
+  "stand": "2026-11-01T08:02:33+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 69309,
-    "aend24": 0.30689,
-    "aend7": -3.9962,
-    "aend1y": -29.1927,
-    "marktkap": 1393487646655,
-    "volumen": 35829325904
+    "preis": 69533,
+    "aend24": 0.80642,
+    "aend7": -3.1885,
+    "aend1y": -29.1966,
+    "marktkap": 1397998756514,
+    "volumen": 44196541776
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2021.47,
-    "aend24": 1.02838,
-    "aend7": -4.0493,
-    "aend1y": -41.2226,
-    "marktkap": 246998369126,
-    "volumen": 3819034796
+    "preis": 2026.12,
+    "aend24": 1.23011,
+    "aend7": -2.999,
+    "aend1y": -41.1621,
+    "marktkap": 247541209439,
+    "volumen": 3856778423
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 85.45,
-    "aend24": -0.80307,
-    "aend7": -6.442,
-    "aend1y": -48.8807,
-    "marktkap": 50422401521,
-    "volumen": 1446315781
+    "preis": 85.27,
+    "aend24": -0.0244,
+    "aend7": -5.6875,
+    "aend1y": -48.5275,
+    "marktkap": 50323517522,
+    "volumen": 1231280973
    }
   ]
  },
  "news": {
-  "stand": "2026-11-01T01:29:36+00:00",
+  "stand": "2026-11-01T08:02:35+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Wie KI Entwicklung und Alltag verändert - kreativ auf Knopfdruck?",
+    "link": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-01T08:00:49+00:00",
+    "text": "Ob bei der Entwicklung neuer Produkte, in der Werbung oder bei der Gestaltung des eigenen Zuhauses: KI ist im Alltag angekommen. Sie spart oft Zeit, wirft aber auch Fragen nach Kreativität, Arbeitsplätzen und Vertrauen auf. Von Anke Heinha…",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "Ob bei der Entwicklung neuer Produkte, in der Werbung oder bei der Gestaltung des eigenen Zuhauses: KI ist im Alltag angekommen.",
+    "titel_de": "Wie KI Entwicklung und Alltag verändert - kreativ auf Knopfdruck?",
+    "kurz_de": "Ob bei der Entwicklung neuer Produkte, in der Werbung oder bei der Gestaltung des eigenen Zuhauses: KI ist im Alltag angekommen."
+   },
+   {
+    "titel": "FBI blames North Korea for record $6.3B Binance hack",
+    "link": "https://cointelegraph.com/news/fbi-blames-north-korea-for-record-63b-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-01T07:44:38+00:00",
+    "text": "US agency seeks private-sector help to block further money-laundering of stolen digital assets.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "US agency seeks private-sector help to block further money-laundering of stolen digital assets."
+   },
+   {
+    "titel": "Shops looted as German cost of living protests turn violent",
+    "link": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T07:36:18+00:00",
+    "text": "The protests in cities across Germany - including Berlin, Hamburg and Frankfurt - came on the same day hundreds of thousands also protested in France.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The protests in cities across Germany - including Berlin, Hamburg and Frankfurt - came on the same day hundreds of thousands also protested in France."
+   },
+   {
+    "titel": "India's opposition holds mega rally seeking election chief's resignation",
+    "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T07:00:55+00:00",
+    "text": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls."
+   },
+   {
+    "titel": "Democrats are used to heartbreak in Texas - could Talarico turn the tide?",
+    "link": "https://www.bbc.co.uk/news/articles/cmy0r2y6zeddo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T06:03:57+00:00",
+    "text": "The state's $500m Senate race may be the most closely watched in the US midterms, and is about far more than control of Congress.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The state's $500m Senate race may be the most closely watched in the US midterms, and is about far more than control of Congress."
+   },
+   {
+    "titel": "Watch: Heidi Klum as giant severed hand for Halloween bash",
+    "link": "https://www.bbc.co.uk/news/videos/cj040yd1xdrlo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T05:26:02+00:00",
+    "text": "The supermodel and TV host provided a gory new shock at her New York event.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The supermodel and TV host provided a gory new shock at her New York event."
+   },
+   {
+    "titel": "Warnstreiks der IG Metall kurz nach Mitternacht angelaufen",
+    "link": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ig-metall-warnstreiks-108.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-01T03:48:45+00:00",
+    "text": "Die IG Metall hat \"starke Warnstreiks\" angekündigt - und in der Nacht damit begonnen. Die Gewerkschaft will damit Druck in den Tarifverhandlungen machen. Betroffen sind wichtige Industriezweige wie Auto oder Maschinenbau.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die IG Metall hat \"starke Warnstreiks\" angekündigt - und in der Nacht damit begonnen.",
+    "titel_de": "Warnstreiks der IG Metall kurz nach Mitternacht angelaufen",
+    "kurz_de": "Die IG Metall hat \"starke Warnstreiks\" angekündigt - und in der Nacht damit begonnen."
+   },
+   {
+    "titel": "Cyberangriff auf Chainalysis: Kundendaten abgegriffen",
+    "link": "https://www.btc-echo.de/news/cyberangriff-auf-chainalysis-kundendaten-abgegriffen-240210/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-01T03:30:00+00:00",
+    "text": "Das Blockchain-Analyseunternehmen Chainalysis ist Opfer eines Cyberangriffs geworden. Unbekannte Angreifer verschafften sich Zugriff auf interne Systeme und Tools. Dabei wurden auch Kundendaten kompromittiert. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Das Blockchain-Analyseunternehmen Chainalysis ist Opfer eines Cyberangriffs geworden.",
+    "titel_de": "Cyberangriff auf Chainalysis: Kundendaten abgegriffen",
+    "kurz_de": "Das Blockchain-Analyseunternehmen Chainalysis ist Opfer eines Cyberangriffs geworden."
+   },
+   {
+    "titel": "Krypto-News: Binance-Beben, Bitcoin-Korrektur und ein XRP-Bekenntnis",
+    "link": "https://www.btc-echo.de/news/krypto-news-binance-hack-bitcoin-korrektur-und-xrp-240192/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-01T03:00:00+00:00",
+    "text": "Der Binance-Milliardenhack erschüttert den Markt, Bitcoin fällt zeitweise auf 76.000 US-Dollar und Ripple-CEO Brad Garlinghouse begegnet der Kritik – die Krypto-News der Woche. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Der Binance-Milliardenhack erschüttert den Markt, Bitcoin fällt zeitweise auf 76.000 US-Dollar und Ripple-CEO Brad Garlinghouse begegnet der Kritik – die Krypto-News der Woche.",
+    "titel_de": "Krypto-News: Binance-Beben, Bitcoin-Korrektur und ein XRP-Bekenntnis",
+    "kurz_de": "Der Binance-Milliardenhack erschüttert den Markt, Bitcoin fällt zeitweise auf 76.000 US-Dollar und Ripple-CEO Brad Garlinghouse begegnet der Kritik – die Krypto-News der Woche."
+   },
+   {
+    "titel": "These firms you've never heard of are feeding fears the AI bubble could burst",
+    "link": "https://www.bbc.co.uk/news/articles/cje36degrgv5o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T01:37:26+00:00",
+    "text": "The amount of debt held by data centres is measured in the tens of billions of pounds.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "The amount of debt held by data centres is measured in the tens of billions of pounds."
+   },
    {
     "titel": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
     "link": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
@@ -71,18 +207,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary."
-   },
-   {
-    "titel": "India's opposition set to hold mega rally seeking election chief's resignation",
-    "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-01T00:12:07+00:00",
-    "text": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls."
    },
    {
     "titel": "I've been stuck on a tiny Pacific island for years and can't get a transit visa to fly home",
@@ -534,18 +658,6 @@
     "kurz": "The Bitcoin white paper achieved a lot of what Satoshi Nakamoto set out to accomplish, but the cultural impact it had may outweigh Bitcoin itself, writes CoinDesk's Nikhilesh De."
    },
    {
-    "titel": "Watch: Blood donors get a Halloween fright in Thailand",
-    "link": "https://www.bbc.co.uk/news/videos/cmze42el49d9o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T12:50:45+00:00",
-    "text": "Thai Red Cross workers dressed up as part of a Halloween-themed blood drive in the country's capital Bangkok.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Thai Red Cross workers dressed up as part of a Halloween-themed blood drive in the country's capital Bangkok."
-   },
-   {
     "titel": "A Nasdaq-listed company may sell $450 million bitcoin, citing Binance hack and quantum fears",
     "link": "https://www.coindesk.com/markets/2026/10/31/a-nasdaq-listed-company-may-sell-usd450-million-bitcoin-citing-binance-hack-and-quantum-fears",
     "quelle": "CoinDesk",
@@ -808,32 +920,6 @@
     "kurz": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become."
    },
    {
-    "titel": "The Indian chef who brought curry to America - then vanished",
-    "link": "https://www.bbc.co.uk/news/articles/crm941n0413o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T02:02:16+00:00",
-    "text": "Indian chef Ranji Smile opened America’s first Indian restaurant in 1901 - then became a fake prince.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Indian chef Ranji Smile opened America’s first Indian restaurant in 1901 - then became a fake prince."
-   },
-   {
-    "titel": "Responsible or panicked? Meet the people around the world already preparing for crisis",
-    "link": "https://www.bbc.co.uk/news/articles/ckreypn92w49o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T01:32:33+00:00",
-    "text": "Filter straws to a disposable toilet - people in the US, Japan, Sweden and Netherlands on what's in their emergency stashes.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Filter straws to a disposable toilet - people in the US, Japan, Sweden and Netherlands on what's in their emergency stashes."
-   },
-   {
     "titel": "Global nature talks reach deal but money remains an issue",
     "link": "https://www.bbc.co.uk/news/articles/cw1l32qyj8pqo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -870,18 +956,6 @@
     ],
     "wichtig": 1,
     "kurz": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday."
-   },
-   {
-    "titel": "He questioned Thailand's monarchy dressed as Harry Potter. Now he's in jail for 34 years",
-    "link": "https://www.bbc.co.uk/news/articles/cmjwepvd0qq9o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T23:26:16+00:00",
-    "text": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years."
    },
    {
     "titel": "Europe Is Now Seriously Rethinking Its Oil Refinery Phase Down",
@@ -1249,85 +1323,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "ExxonMobil reported $15.4 billion in third-quarter profit Friday, more than double its earnings a year earlier, with its Gulf Coast refineries running at full capacity and diesel prices doing the res…"
-   },
-   {
-    "titel": "Marktbericht: Schwaches Ende einer starken Börsenwoche",
-    "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-geldanlage-amazon-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-10-30T17:22:12+00:00",
-    "text": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war. Auslöser sind der hohe Ölpreis, aber auch schwache Tech-Vorgaben aus Übersee.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe",
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 2,
-    "kurz": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war.",
-    "titel_de": "Marktbericht: Schwaches Ende einer starken Börsenwoche",
-    "kurz_de": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war."
-   },
-   {
-    "titel": "Trezor warnt vor möglicher Manipulation: Diese Kunden sollten jetzt handeln",
-    "link": "https://www.btc-echo.de/news/trezor-warnt-vor-moeglicher-manipulation-diese-kunden-sollten-jetzt-handeln-240172/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-30T17:19:41+00:00",
-    "text": "Trezor warnt Kunden vor möglicherweise manipulierten Hardware-Wallets. Ein verdächtiges Bauteil könnte sensible Daten ausspähen, weshalb bestimmte Käufer dringend handeln sollten. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Trezor warnt Kunden vor möglicherweise manipulierten Hardware-Wallets.",
-    "titel_de": "Trezor warnt vor möglicher Manipulation: Diese Kunden sollten jetzt handeln",
-    "kurz_de": "Trezor warnt Kunden vor möglicherweise manipulierten Hardware-Wallets."
-   },
-   {
-    "titel": "U.S. Oil, Gas Drillers Still on Hold",
-    "link": "https://oilprice.com/Energy/Energy-General/US-Oil-Gas-Drillers-Still-on-Hold.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T17:09:57+00:00",
-    "text": "The total number of active drilling rigs for oil and gas in the United States remained unchanged again this week, according to new data that Baker Hughes published on Friday, with the total rig count in the US staying at 603, up 57 from th…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The total number of active drilling rigs for oil and gas in the United States remained unchanged again this week, according to new data that Baker Hughes published on Friday, with the total rig count…"
-   },
-   {
-    "titel": "Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem",
-    "link": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T17:09:31+00:00",
-    "text": "Bitcoin faces mounting quantum security concerns as Ripple secures a US banking charter, USDC gains ground in Europe and VanEck adds BTC to a new ETF.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 1,
-    "kurz": "Bitcoin faces mounting quantum security concerns as Ripple secures a US banking charter, USDC gains ground in Europe and VanEck adds BTC to a new ETF."
-   },
-   {
-    "titel": "Recap: How Binance’s record $6.3B hack unfolded",
-    "link": "https://cointelegraph.com/news/recap-binances-record-63b-hack-unfolded?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:53:46+00:00",
-    "text": "A recap of Cointelegraph’s live coverage of the Binance hack, including early breach reports and the exchange’s full reimbursement pledge.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "A recap of Cointelegraph’s live coverage of the Binance hack, including early breach reports and the exchange’s full reimbursement pledge."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-01T01:29:46+00:00",
+  "stand": "2026-11-01T08:02:45+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
