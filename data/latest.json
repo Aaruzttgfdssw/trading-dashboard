@@ -1,48 +1,115 @@
 {
- "erzeugt": "2026-10-31T22:41:54+00:00",
+ "erzeugt": "2026-11-01T01:29:32+00:00",
  "kurse": {
-  "stand": "2026-10-31T22:41:54+00:00",
+  "stand": "2026-11-01T01:29:33+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 69252,
-    "aend24": 0.93151,
-    "aend7": -3.6503,
-    "aend1y": -29.1806,
-    "marktkap": 1392345187376,
-    "volumen": 42922716157
+    "preis": 69309,
+    "aend24": 0.30689,
+    "aend7": -3.9962,
+    "aend1y": -29.1927,
+    "marktkap": 1393487646655,
+    "volumen": 35829325904
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2016.11,
-    "aend24": 1.02948,
-    "aend7": -3.9115,
-    "aend1y": -41.6639,
-    "marktkap": 246346433384,
-    "volumen": 4031150933
+    "preis": 2021.47,
+    "aend24": 1.02838,
+    "aend7": -4.0493,
+    "aend1y": -41.2226,
+    "marktkap": 246998369126,
+    "volumen": 3819034796
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 85.5,
-    "aend24": 0.02086,
-    "aend7": -5.5918,
-    "aend1y": -48.7248,
-    "marktkap": 50455036819,
-    "volumen": 1602404179
+    "preis": 85.45,
+    "aend24": -0.80307,
+    "aend7": -6.442,
+    "aend1y": -48.8807,
+    "marktkap": 50422401521,
+    "volumen": 1446315781
    }
   ]
  },
  "news": {
-  "stand": "2026-10-31T22:41:57+00:00",
+  "stand": "2026-11-01T01:29:36+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
+    "link": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-01T01:10:05+00:00",
+    "text": "While the FBI listed hundreds of addresses in its notice, Chainalysis said the Binance attackers have already used \"thousands addresses,\" and expects this number to continue growing.",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "While the FBI listed hundreds of addresses in its notice, Chainalysis said the Binance attackers have already used \"thousands addresses,\" and expects this number to continue growing.",
+    "titel_de": "Das FBI bestätigt Nordkoreas Rolle beim Binance-Hack im Wert von 6 Milliarden $ und bittet die DeFi-Community, BTC-, ETH- und SOL-Adressen zu blockieren",
+    "kurz_de": "Während das FBI in seiner Mitteilung Hunderte von Adressen aufführte, sagte Chainalysis, dass die Binance-Angreifer bereits \"Tausende von Adressen\" verwendet haben, und erwartet, dass diese Zahl weiter steigen wird."
+   },
+   {
+    "titel": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
+    "link": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T00:55:06+00:00",
+    "text": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary."
+   },
+   {
+    "titel": "India's opposition set to hold mega rally seeking election chief's resignation",
+    "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T00:12:07+00:00",
+    "text": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls."
+   },
+   {
+    "titel": "I've been stuck on a tiny Pacific island for years and can't get a transit visa to fly home",
+    "link": "https://www.bbc.co.uk/news/articles/cmq5npz5l5geo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-10-31T23:06:13+00:00",
+    "text": "Ruchira Ranasingha, 50, has been stranded in the Cook Islands since 2023 and wants to return to Sri Lanka.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Ruchira Ranasingha, 50, has been stranded in the Cook Islands since 2023 and wants to return to Sri Lanka."
+   },
+   {
+    "titel": "Chevron Raises Exploration Spending By 50%",
+    "link": "https://oilprice.com/Energy/Crude-Oil/Chevron-Raises-Exploration-Spending-By-50.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-10-31T23:00:00+00:00",
+    "text": "After years of focusing on growing exploration and production in the U.S. Gulf of Mexico and the Permian shale basin, U.S. oil and gas supermajor Chevron returns to high-impact frontier exploration as it seeks to renew its portfolio with d…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "After years of focusing on growing exploration and production in the U.S."
+   },
    {
     "titel": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
     "link": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
@@ -942,8 +1009,8 @@
    {
     "titel": "US tech stocks see sharp falls as AI spending nears $1tn",
     "link": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
     "sprache": "en",
     "zeit": "2026-10-30T20:34:46+00:00",
     "text": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
@@ -1244,18 +1311,6 @@
     "kurz": "Bitcoin faces mounting quantum security concerns as Ripple secures a US banking charter, USDC gains ground in Europe and VanEck adds BTC to a new ETF."
    },
    {
-    "titel": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
-    "link": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T17:07:19+00:00",
-    "text": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September."
-   },
-   {
     "titel": "Recap: How Binance’s record $6.3B hack unfolded",
     "link": "https://cointelegraph.com/news/recap-binances-record-63b-hack-unfolded?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
@@ -1268,68 +1323,11 @@
     ],
     "wichtig": 1,
     "kurz": "A recap of Cointelegraph’s live coverage of the Binance hack, including early breach reports and the exchange’s full reimbursement pledge."
-   },
-   {
-    "titel": "Oil Traders Brace for a Wild Week as Brent Approaches $120",
-    "link": "https://oilprice.com/Energy/Oil-Prices/Oil-Traders-Brace-for-a-Wild-Week-as-Brent-Approaches-120.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:51:00+00:00",
-    "text": "Fears of renewed U.S.-Iran hostilities are intensifying, with rising Hormuz attacks, reported explosions at Iran's Jask port and military repositioning overshadowing diplomatic efforts. Friday, October 30, 2026 With only several days left…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Fears of renewed U.S.-Iran hostilities are intensifying, with rising Hormuz attacks, reported explosions at Iran's Jask port and military repositioning overshadowing diplomatic efforts.",
-    "titel_de": "Ölhändler machen sich für eine wilde Woche bereit, während sich Brent $ 120 nähert",
-    "kurz_de": "Die Befürchtungen vor erneuten Feindseligkeiten zwischen den USA und dem Iran verschärfen sich, wobei zunehmende Angriffe auf Hormus, gemeldete Explosionen im Hafen von Jask und eine militärische Neupositionierung die diplomatischen Bemühungen überschatten."
-   },
-   {
-    "titel": "As it happened: Binance’s record $6.3B crypto hack",
-    "link": "https://cointelegraph.com/news/live-updates-binance-63b-hack-linked-to-north-koreas-tradertraitor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:49:50+00:00",
-    "text": "How Binance’s $6.3 billion hack unfolded, from the first onchain alerts to $3 billion in frozen funds and a widening security investigation.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "How Binance’s $6.3 billion hack unfolded, from the first onchain alerts to $3 billion in frozen funds and a widening security investigation."
-   },
-   {
-    "titel": "Binance Sets Aside $6.34B to Cover Hack Losses, CEO Says 'Your Assets Are Safe'",
-    "link": "https://decrypt.co/382237/binance-sets-aside-6-34b-to-cover-hack-losses-ceo-says-your-assets-are-safe",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:34:21+00:00",
-    "text": "Richard Teng said the attacker used a self-destruct mechanism and an EIP-7702 delegation that bypassed Binance's normal approval controls.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Richard Teng said the attacker used a self-destruct mechanism and an EIP-7702 delegation that bypassed Binance's normal approval controls."
-   },
-   {
-    "titel": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
-    "link": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T16:31:17+00:00",
-    "text": "CEO Richard Teng said hackers erased evidence and bypassed security checks. Binance plans to publish its proof of reserves Monday.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "CEO Richard Teng said hackers erased evidence and bypassed security checks."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-10-31T22:42:09+00:00",
+  "stand": "2026-11-01T01:29:46+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
