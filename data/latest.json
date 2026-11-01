@@ -1,48 +1,90 @@
 {
- "erzeugt": "2026-11-01T19:39:45+00:00",
+ "erzeugt": "2026-11-01T23:06:15+00:00",
  "kurse": {
-  "stand": "2026-11-01T19:39:45+00:00",
+  "stand": "2026-11-01T23:06:15+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 69654,
-    "aend24": 0.65856,
-    "aend7": -3.5828,
-    "aend1y": -29.3746,
-    "marktkap": 1400428793166,
-    "volumen": 53649889316
+    "preis": 69752,
+    "aend24": 0.85679,
+    "aend7": -2.9728,
+    "aend1y": -29.2193,
+    "marktkap": 1402351409015,
+    "volumen": 64985522032
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2022.06,
-    "aend24": 0.50066,
-    "aend7": -4.0309,
-    "aend1y": -41.492,
-    "marktkap": 247055368787,
-    "volumen": 4199809498
+    "preis": 2027.78,
+    "aend24": 0.83866,
+    "aend7": -3.0458,
+    "aend1y": -41.6398,
+    "marktkap": 247722171249,
+    "volumen": 4164599163
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 84.05,
-    "aend24": -1.8238,
-    "aend7": -7.4805,
-    "aend1y": -49.0729,
-    "marktkap": 49600716485,
-    "volumen": 1270421816
+    "preis": 84.09,
+    "aend24": -1.30591,
+    "aend7": -7.2174,
+    "aend1y": -49.4602,
+    "marktkap": 49635849686,
+    "volumen": 1323453283
    }
   ]
  },
  "news": {
-  "stand": "2026-11-01T19:39:48+00:00",
+  "stand": "2026-11-01T23:06:19+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
+    "link": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T21:55:01+00:00",
+    "text": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
+    "titel_de": "Russische Streiks schneiden die Stromversorgung für Tausende in der Ukraine ab, da der Waffenstillstand von Kherson endet",
+    "kurz_de": "Ein seltener humanitärer Waffenstillstand ermöglichte es Zivilisten, die von Russland besetzte Stadt Oleshky zu evakuieren."
+   },
+   {
+    "titel": "Democrat endorses Republican candidate in key Michigan Senate race as party spat erupts",
+    "link": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T21:16:45+00:00",
+    "text": "Haley Stevens, who lost out on the Democratic Senate nomination to Abdul El-Sayed, endorses his opponent days before the vote.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Haley Stevens, who lost out on the Democratic Senate nomination to Abdul El-Sayed, endorses his opponent days before the vote."
+   },
+   {
+    "titel": "Massive AI Data Center Sparks Backlash Despite Clean Energy Promises",
+    "link": "https://oilprice.com/Energy/Energy-General/Massive-AI-Data-Center-Sparks-Backlash-Despite-Clean-Energy-Promises.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-01T20:00:00+00:00",
+    "text": "As more governments put increasing pressure on tech companies to develop more sustainable data centres, to ensure they do not place a further burden on the grid, several tech firms are investing in developing new energy capacity and incorp…",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "As more governments put increasing pressure on tech companies to develop more sustainable data centres, to ensure they do not place a further burden on the grid, several tech firms are investing in d…"
+   },
    {
     "titel": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
     "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
@@ -56,18 +98,6 @@
     ],
     "wichtig": 0,
     "kurz": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years."
-   },
-   {
-    "titel": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
-    "link": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-01T19:17:34+00:00",
-    "text": "Haley Stevens, who lost out on the Democratic Senate nomination to Abdul El-Sayed, endorses his opponent days before the vote.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Haley Stevens, who lost out on the Democratic Senate nomination to Abdul El-Sayed, endorses his opponent days before the vote."
    },
    {
     "titel": "Peaceful protests in Germany spiral into violence and looting",
@@ -633,18 +663,6 @@
     "kurz": "While the FBI listed hundreds of addresses in its notice, Chainalysis said the Binance attackers have already used \"thousands addresses,\" and expects this number to continue growing.",
     "titel_de": "Das FBI bestätigt Nordkoreas Rolle beim Binance-Hack im Wert von 6 Milliarden $ und bittet die DeFi-Community, BTC-, ETH- und SOL-Adressen zu blockieren",
     "kurz_de": "Während das FBI in seiner Mitteilung Hunderte von Adressen aufführte, sagte Chainalysis, dass die Binance-Angreifer bereits \"Tausende von Adressen\" verwendet haben, und erwartet, dass diese Zahl weiter steigen wird."
-   },
-   {
-    "titel": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
-    "link": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-01T00:55:06+00:00",
-    "text": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary."
    },
    {
     "titel": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
@@ -1297,28 +1315,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The Spanish PM is hit by a succession of crises just weeks before a snap general election."
-   },
-   {
-    "titel": "Bitcoin stolen from Binance tops Tesla’s holdings and is over twice El Salvador’s reserve",
-    "link": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-31T05:01:32+00:00",
-    "text": "The 18,270 BTC haul is worth about $1.4 billion and comes within 442 coins of SpaceX’s disclosed holdings. Blockchain investigators link the attack to North Korea.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 3,
-    "kurz": "The 18,270 BTC haul is worth about $1.4 billion and comes within 442 coins of SpaceX’s disclosed holdings.",
-    "titel_de": "Bitcoin, der aus Binance gestohlen wurde, übersteigt Teslas Bestände und ist mehr als doppelt so hoch wie die Reserve von El Salvador",
-    "kurz_de": "Die 18.270 BTC sind etwa 1,4 Milliarden $ wert und liegen innerhalb von 442 Münzen der von SpaceX offengelegten Bestände."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-01T19:40:00+00:00",
+  "stand": "2026-11-01T23:06:32+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
