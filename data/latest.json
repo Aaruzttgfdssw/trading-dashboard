@@ -1,48 +1,255 @@
 {
- "erzeugt": "2026-11-01T15:07:50+00:00",
+ "erzeugt": "2026-11-01T19:39:45+00:00",
  "kurse": {
-  "stand": "2026-11-01T15:07:51+00:00",
+  "stand": "2026-11-01T19:39:45+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 69618,
-    "aend24": 0.85552,
-    "aend7": -2.8993,
-    "aend1y": -29.063,
-    "marktkap": 1399676673874,
-    "volumen": 46965738080
+    "preis": 69654,
+    "aend24": 0.65856,
+    "aend7": -3.5828,
+    "aend1y": -29.3746,
+    "marktkap": 1400428793166,
+    "volumen": 53649889316
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2026.62,
-    "aend24": 1.09669,
-    "aend7": -2.6658,
-    "aend1y": -41.3347,
-    "marktkap": 247605068574,
-    "volumen": 4189519700
+    "preis": 2022.06,
+    "aend24": 0.50066,
+    "aend7": -4.0309,
+    "aend1y": -41.492,
+    "marktkap": 247055368787,
+    "volumen": 4199809498
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 84.74,
-    "aend24": -0.78821,
-    "aend7": -5.7163,
-    "aend1y": -48.7648,
-    "marktkap": 50000449157,
-    "volumen": 1155149726
+    "preis": 84.05,
+    "aend24": -1.8238,
+    "aend7": -7.4805,
+    "aend1y": -49.0729,
+    "marktkap": 49600716485,
+    "volumen": 1270421816
    }
   ]
  },
  "news": {
-  "stand": "2026-11-01T15:07:55+00:00",
+  "stand": "2026-11-01T19:39:48+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
+    "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-01T19:30:00+00:00",
+    "text": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years. Here's what to know.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 0,
+    "kurz": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years."
+   },
+   {
+    "titel": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
+    "link": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T19:17:34+00:00",
+    "text": "Haley Stevens, who lost out on the Democratic Senate nomination to Abdul El-Sayed, endorses his opponent days before the vote.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Haley Stevens, who lost out on the Democratic Senate nomination to Abdul El-Sayed, endorses his opponent days before the vote."
+   },
+   {
+    "titel": "Peaceful protests in Germany spiral into violence and looting",
+    "link": "https://www.bbc.co.uk/news/videos/cqgm0der7zkmo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T18:51:56+00:00",
+    "text": "Thousands joined largely orderly demonstrations earlier in the day, before violence erupted in Frankfurt, Berlin, Cologne and Hamburg.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Thousands joined largely orderly demonstrations earlier in the day, before violence erupted in Frankfurt, Berlin, Cologne and Hamburg."
+   },
+   {
+    "titel": "U.S. Labs Look to New Materials to Close China's Nuclear Lead",
+    "link": "https://oilprice.com/Energy/Energy-General/US-Labs-Look-to-New-Materials-to-Close-Chinas-Nuclear-Lead.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-01T18:00:00+00:00",
+    "text": "The United States is racing to reestablish itself as a frontrunner in the global nuclear energy sector. While the country still maintains its status as the world’s largest nuclear power producer, it likely won’t be able to hold onto that a…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The United States is racing to reestablish itself as a frontrunner in the global nuclear energy sector."
+   },
+   {
+    "titel": "Nach dem Binance-Hack: Wie sicher sind Kryptowährungen noch auf den Börsen?",
+    "link": "https://www.btc-echo.de/news/binance-hack-wie-sicher-sind-krypto-coins-auf-boersen-240200/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-01T18:00:00+00:00",
+    "text": "Der Krypto-Milliardendiebstahl weckt neue Zweifel an der Sicherheit von Binance und anderen großen Börsen. Gehören Bitcoin, Ethereum und Co. doch auf Hardware-Wallets? Das sagt die BTC-ECHO Redaktion. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "Der Krypto-Milliardendiebstahl weckt neue Zweifel an der Sicherheit von Binance und anderen großen Börsen.",
+    "titel_de": "Nach dem Binance-Hack: Wie sicher sind Kryptowährungen noch auf den Börsen?",
+    "kurz_de": "Der Krypto-Milliardendiebstahl weckt neue Zweifel an der Sicherheit von Binance und anderen großen Börsen."
+   },
+   {
+    "titel": "Armed police start patrols in Sydney after Bondi Beach attack",
+    "link": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T17:56:47+00:00",
+    "text": "The new police unit is a security measure in response to last year's deadly shooting attack at a Hanukkah festival.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The new police unit is a security measure in response to last year's deadly shooting attack at a Hanukkah festival.",
+    "titel_de": "Bewaffnete Polizei startet Patrouillen in Sydney nach Bondi Beach Angriff",
+    "kurz_de": "Die neue Polizeieinheit ist eine Sicherheitsmaßnahme als Reaktion auf den tödlichen Schießangriff auf ein Chanukka-Fest im letzten Jahr."
+   },
+   {
+    "titel": "Lindsay Clancy is back in court - where will her case go next?",
+    "link": "https://www.bbc.co.uk/news/articles/ck3r5z3pw928o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T17:29:08+00:00",
+    "text": "The Massachusetts mother, accused of murdering her three children, is expected back in court as she awaits a decision on whether her case will be retried.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The Massachusetts mother, accused of murdering her three children, is expected back in court as she awaits a decision on whether her case will be retried."
+   },
+   {
+    "titel": "Israeli strikes in Gaza kill eight including child, hospitals say",
+    "link": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T17:06:32+00:00",
+    "text": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say."
+   },
+   {
+    "titel": "University of Cambridge scientist among those who died in Spanish train crash",
+    "link": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-01T17:05:18+00:00",
+    "text": "Marta Shahbazi was an \"inspiring, talented and passionate scientist\", says the laboratory where she worked.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Marta Shahbazi was an \"inspiring, talented and passionate scientist\", says the laboratory where she worked."
+   },
+   {
+    "titel": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
+    "link": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-01T17:00:00+00:00",
+    "text": "The researchers say any approval an agent can reach is unreliable, and they built Countersign, an app tying approval to a physical action the agent can’t fake.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "The researchers say any approval an agent can reach is unreliable, and they built Countersign, an app tying approval to a physical action the agent can’t fake.",
+    "titel_de": "KI-Agenten haben Krypto-Ausgabenlimits ohne menschliche Zustimmung umgangen, finden Forscher in einem neuen Test",
+    "kurz_de": "Die Forscher sagen, dass jede Genehmigung, die ein Agent erreichen kann, unzuverlässig ist, und sie haben Countersign entwickelt, eine App, die die Genehmigung an eine physische Aktion bindet, die der Agent nicht fälschen kann."
+   },
+   {
+    "titel": "Thousands of jobs at Virgin Media O2 to be cut",
+    "link": "https://www.bbc.co.uk/news/articles/c6rry8x9d9qko?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-01T16:57:14+00:00",
+    "text": "The broadband provider has not finalised the number of roles to be axed but it will likely be a sizeable chunk of its workforce, the BBC understands.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The broadband provider has not finalised the number of roles to be axed but it will likely be a sizeable chunk of its workforce, the BBC understands."
+   },
+   {
+    "titel": "Grüner Flugkraftstoff: Wird Fliegen in Zukunft teurer?",
+    "link": "https://www.tagesschau.de/wirtschaft/energie/umweltfreundlich-fliegen-flugverkehr-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-01T16:22:32+00:00",
+    "text": "Die EU schreibt Quoten für nachhaltiges Kerosin vor. Doch es gibt kaum Anlagen, die es herstellen - und teuer ist die Herstellung bislang auch. Airlines warnen davor, dass das Fliegen für alle verteuern könnte. Von Timo Spicker.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die EU schreibt Quoten für nachhaltiges Kerosin vor.",
+    "titel_de": "Grüner Flugkraftstoff: Wird Fliegen in Zukunft teurer?",
+    "kurz_de": "Die EU schreibt Quoten für nachhaltiges Kerosin vor."
+   },
+   {
+    "titel": "Bitcoin ETF Investors Head for the Exits After Record Binance Hack",
+    "link": "https://decrypt.co/382309/bitcoin-etf-investors-exits-record-binance-hack",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-01T16:01:02+00:00",
+    "text": "Bitcoin ETFs saw $643.2 million in outflows Friday, the first full trading session after the $6.4 billion Binance hack, ending October with roughly $516 million in net outflows.",
+    "tags": [
+     "ETF",
+     "Hack/Betrug"
+    ],
+    "wichtig": 3,
+    "kurz": "Bitcoin ETFs saw $643.2 million in outflows Friday, the first full trading session after the $6.4 billion Binance hack, ending October with roughly $516 million in net outflows.",
+    "titel_de": "Bitcoin ETF-Investoren gehen nach dem Record Binance Hack zu den Exits",
+    "kurz_de": "Bitcoin-ETFs verzeichneten am Freitag Abflüsse in Höhe von 643,2 Millionen $, die erste vollständige Handelssitzung nach dem Binance-Hack von 6,4 Milliarden $, der im Oktober mit Nettoabflüssen von rund 516 Millionen $ endete."
+   },
+   {
+    "titel": "Azerbaijan’s Renewable Energy Boom Is Transforming Its Power Sector",
+    "link": "https://oilprice.com/Energy/Energy-General/Azerbaijans-Renewable-Energy-Boom-Is-Transforming-Its-Power-Sector.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-01T16:00:00+00:00",
+    "text": "Azerbaijan, long known as a major oil and gas power, has ventured into renewable energy in recent years and is rapidly ramping up its capacity. As host of COP29, Azerbaijan’s government announced an ambitious climate target and encouraged…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Azerbaijan, long known as a major oil and gas power, has ventured into renewable energy in recent years and is rapidly ramping up its capacity."
+   },
+   {
+    "titel": "Bitcoin-Miner im KI-Boom: Wer verdient hier wirklich?",
+    "link": "https://www.btc-echo.de/news/bitcoin-miner-im-ki-boom-wer-verdient-hier-wirklich-240012/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-01T16:00:00+00:00",
+    "text": "Tech-Konzerne suchen händeringend nach Strom für ihre KI-Rechenzentren suchen, aber viele Bitcoin-Miner sitzen längst an der Quelle. Das eröffnet ihnen völlig neue Verdienstmöglichkeiten. Wie groß das Potenzial wirklich ist. Source: BTC-EC…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Tech-Konzerne suchen händeringend nach Strom für ihre KI-Rechenzentren suchen, aber viele Bitcoin-Miner sitzen längst an der Quelle.",
+    "titel_de": "Bitcoin-Miner im KI-Boom: Wer verdient hier wirklich?",
+    "kurz_de": "Tech-Konzerne suchen händeringend nach Strom für ihre KI-Rechenzentren suchen, aber viele Bitcoin-Miner sitzen längst an der Quelle."
+   },
    {
     "titel": "The key races to watch for the 2026 election",
     "link": "https://www.coindesk.com/policy/2026/11/01/the-key-races-to-watch-for-the-2026-election",
@@ -411,20 +618,6 @@
     "kurz_de": "Der Binance-Milliardenhack erschüttert den Markt, Bitcoin fällt zeitweise auf 76.000 US-Dollar und Ripple-CEO Brad Garlinghouse begegnet der Kritik – die Krypto-News der Woche."
    },
    {
-    "titel": "These firms you've never heard of are feeding fears the AI bubble could burst",
-    "link": "https://www.bbc.co.uk/news/articles/cje36degrgv5o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-01T01:37:26+00:00",
-    "text": "The amount of debt held by data centres is measured in the tens of billions of pounds.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "The amount of debt held by data centres is measured in the tens of billions of pounds."
-   },
-   {
     "titel": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
     "link": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
     "quelle": "CoinDesk",
@@ -510,18 +703,6 @@
     "kurz": "Airbnb hosts must stop asking guests to wash-up or take out bins under rules coming into force in November."
    },
    {
-    "titel": "I've been stuck on a tiny Pacific island for years and can't get a transit visa to fly home",
-    "link": "https://www.bbc.co.uk/news/articles/cmq5npz5l5geo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T23:06:13+00:00",
-    "text": "Ruchira Ranasingha, 50, has been stranded in the Cook Islands since 2023 and wants to return to Sri Lanka.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Ruchira Ranasingha, 50, has been stranded in the Cook Islands since 2023 and wants to return to Sri Lanka."
-   },
-   {
     "titel": "Chevron Raises Exploration Spending By 50%",
     "link": "https://oilprice.com/Energy/Crude-Oil/Chevron-Raises-Exploration-Spending-By-50.html",
     "quelle": "OilPrice",
@@ -560,20 +741,6 @@
     ],
     "wichtig": 1,
     "kurz": "A new United States intelligence report warns that China is developing energy weapons and spaceplanes that it could use for military operations in outer space, with the capability of using directed-e…"
-   },
-   {
-    "titel": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
-    "link": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T19:22:26+00:00",
-    "text": "One evacuated couple says they crossed minefields in Oleshky in search of food.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "One evacuated couple says they crossed minefields in Oleshky in search of food."
    },
    {
     "titel": "Jackdaw Approval Sparks Fierce Debate Over Britain's Energy Future",
@@ -1147,186 +1314,11 @@
     "kurz": "The 18,270 BTC haul is worth about $1.4 billion and comes within 442 coins of SpaceX’s disclosed holdings.",
     "titel_de": "Bitcoin, der aus Binance gestohlen wurde, übersteigt Teslas Bestände und ist mehr als doppelt so hoch wie die Reserve von El Salvador",
     "kurz_de": "Die 18.270 BTC sind etwa 1,4 Milliarden $ wert und liegen innerhalb von 442 Münzen der von SpaceX offengelegten Bestände."
-   },
-   {
-    "titel": "“Nie wieder ein Allzeithoch”: Kann der McRib Bitcoin noch retten?",
-    "link": "https://www.btc-echo.de/news/nie-wieder-ein-allzeithoch-kann-der-mcrib-bitcoin-noch-retten-240022/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-10-31T03:00:00+00:00",
-    "text": "Auf Bitcoin könnten schwere Monate zukommen. Warum der Kurs seine besten Tage hinter sich haben soll – und manche ihre Hoffnungen nun auf den McRib setzen. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Auf Bitcoin könnten schwere Monate zukommen.",
-    "titel_de": "“Nie wieder ein Allzeithoch”: Kann der McRib Bitcoin noch retten?",
-    "kurz_de": "Auf Bitcoin könnten schwere Monate zukommen."
-   },
-   {
-    "titel": "The fight to save Canadian town threatened by Trump's tariffs",
-    "link": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T02:39:25+00:00",
-    "text": "A century-old paper mill in Témiscaming, Quebec is indefinitely closed after the US imposed 50% tariffs on its products, putting hundreds out of work.",
-    "tags": [
-     "Prominente",
-     "Zinsen/Wirtschaft",
-     "Hack/Betrug"
-    ],
-    "wichtig": 3,
-    "kurz": "A century-old paper mill in Témiscaming, Quebec is indefinitely closed after the US imposed 50% tariffs on its products, putting hundreds out of work.",
-    "titel_de": "Trumps Zölle könnten diese kanadische Stadt zum Erliegen bringen - ihre Bewohner kämpfen darum, sie zu retten",
-    "kurz_de": "Eine jahrhundertealte Papierfabrik in Témiscaming, Quebec, wird auf unbestimmte Zeit geschlossen, nachdem die USA 50 % Zölle auf ihre Produkte verhängt haben, wodurch Hunderte arbeitslos werden."
-   },
-   {
-    "titel": "Global nature talks reach deal but money remains an issue",
-    "link": "https://www.bbc.co.uk/news/articles/cw1l32qyj8pqo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T01:27:05+00:00",
-    "text": "Countries have been trying to get a global agreement to halt nature decline back on track.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Countries have been trying to get a global agreement to halt nature decline back on track."
-   },
-   {
-    "titel": "Police deployed during stand-off over control of top Poland court",
-    "link": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-31T01:11:43+00:00",
-    "text": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them."
-   },
-   {
-    "titel": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
-    "link": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-31T00:48:56+00:00",
-    "text": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday."
-   },
-   {
-    "titel": "He questioned Thailand's monarchy dressed as Harry Potter. Now he's in jail for 34 years",
-    "link": "https://www.bbc.co.uk/news/articles/cmjwepvd0qq9o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T23:26:16+00:00",
-    "text": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years."
-   },
-   {
-    "titel": "Europe Is Now Seriously Rethinking Its Oil Refinery Phase Down",
-    "link": "https://oilprice.com/Energy/Crude-Oil/Europe-Is-Now-Seriously-Rethinking-Its-Oil-Refinery-Phase-Down.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T23:00:00+00:00",
-    "text": "Over the past couple of decades, Europe has pursued some of the world’s most ambitious clean energy policies, aiming to become the first climate-neutral continent by 2050. Hardly surprisingly, Europe is now further along the clean energy t…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Over the past couple of decades, Europe has pursued some of the world’s most ambitious clean energy policies, aiming to become the first climate-neutral continent by 2050."
-   },
-   {
-    "titel": "G20 'family photo' cancelled after protests over presence of Russian minister",
-    "link": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-10-30T22:11:52+00:00",
-    "text": "UK Foreign Secretary Ed Miliband confronted his Russian counterpart at the meeting and accused his government of killing innocent civilians in Ukraine.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "UK Foreign Secretary Ed Miliband confronted his Russian counterpart at the meeting and accused his government of killing innocent civilians in Ukraine."
-   },
-   {
-    "titel": "Binance hackers raced to move billions before it could be frozen",
-    "link": "https://cointelegraph.com/magazine/binance-hackers-raced-to-move-billions-before-could-be-frozen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T22:00:00+00:00",
-    "text": "Attackers raced to convert stolen stablecoins into crypto that issuers could not freeze as industry players like Tether and Circle moved to immobilize billions of dollars in assets.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "Attackers raced to convert stolen stablecoins into crypto that issuers could not freeze as industry players like Tether and Circle moved to immobilize billions of dollars in assets.",
-    "titel_de": "Binance-Hacker rasten, um Milliarden zu bewegen, bevor sie eingefroren werden konnten",
-    "kurz_de": "Angreifer rasten, um gestohlene Stablecoins in Krypto umzuwandeln, die Emittenten nicht einfrieren konnten, da Branchenakteure wie Tether und Circle Milliarden von Dollar an Vermögenswerten immobilisierten."
-   },
-   {
-    "titel": "Gasoline Up 34% and Heating Oil Up 74% as Voters Head to the Midterms",
-    "link": "https://oilprice.com/Energy/Gas-Prices/Gasoline-Up-34-and-Heating-Oil-Up-74-as-Voters-Head-to-the-Midterms.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-10-30T22:00:00+00:00",
-    "text": "The results of the upcoming midterm elections will reveal just how much power global energy markets have over state-level politics – and how much changing political regimes can cost the global energy sector in return. As voters head to the…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The results of the upcoming midterm elections will reveal just how much power global energy markets have over state-level politics – and how much changing political regimes can cost the global energy…"
-   },
-   {
-    "titel": "Binance Hack Shows Why Offshore Exchanges Need US Oversight, CFTC Chair Says",
-    "link": "https://decrypt.co/382285/binance-hack-why-offshore-exchanges-need-us-oversight-cftc-chair",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-10-30T21:16:04+00:00",
-    "text": "Michael Selig said the record $6.4 billion theft shows why offshore exchanges should register with the CFTC and adopt U.S.-grade cybersecurity standards.",
-    "tags": [
-     "Regulierung",
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "Michael Selig said the record $6.4 billion theft shows why offshore exchanges should register with the CFTC and adopt U.S.-grade cybersecurity standards.",
-    "titel_de": "Binance Hack zeigt, warum Offshore-Börsen in den USA beaufsichtigt werden müssen, sagt der CFTC-Vorsitzende",
-    "kurz_de": "Michael Selig sagte, der rekordverdächtige Diebstahl von 6,4 Milliarden $ zeige, warum sich Offshore-Börsen bei der CFTC registrieren und Cybersicherheitsstandards auf US-Niveau übernehmen sollten."
-   },
-   {
-    "titel": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-    "link": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-10-30T21:13:14+00:00",
-    "text": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 3,
-    "kurz": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
-    "titel_de": "Krypto-Gigant Binance versucht, 6,3 Milliarden $ wiederherzustellen, die bei einem Hackerangriff im Zusammenhang mit Nordkorea gestohlen wurden",
-    "kurz_de": "Der Cyberangriff, den das Unternehmen als komplex bezeichnet, gilt als der größte seiner Art."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-01T15:08:07+00:00",
+  "stand": "2026-11-01T19:40:00+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
