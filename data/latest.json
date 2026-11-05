@@ -1,59 +1,172 @@
 {
- "erzeugt": "2026-11-04T23:15:22+00:00",
+ "erzeugt": "2026-11-05T03:37:09+00:00",
  "kurse": {
-  "stand": "2026-11-04T23:15:22+00:00",
+  "stand": "2026-11-05T03:37:09+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 71565,
-    "aend24": 2.89658,
-    "aend7": -0.7378,
-    "aend1y": -19.5323,
-    "marktkap": 1438679001829,
-    "volumen": 35993766933
+    "preis": 71657,
+    "aend24": 5.51455,
+    "aend7": 0.7845,
+    "aend1y": -20.2882,
+    "marktkap": 1440654683419,
+    "volumen": 33361734330
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2158.67,
-    "aend24": 5.49347,
-    "aend7": 3.1198,
-    "aend1y": -24.0903,
-    "marktkap": 263753903013,
-    "volumen": 15425575128
+    "preis": 2159.77,
+    "aend24": 8.20825,
+    "aend7": 5.0837,
+    "aend1y": -25.4059,
+    "marktkap": 263875747476,
+    "volumen": 14631116544
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 84.99,
-    "aend24": 1.85998,
-    "aend7": -6.424,
-    "aend1y": -36.1731,
-    "marktkap": 50164993008,
-    "volumen": 3524560766
+    "preis": 85.87,
+    "aend24": 6.16137,
+    "aend7": -3.3862,
+    "aend1y": -36.8235,
+    "marktkap": 50671042655,
+    "volumen": 3368839178
    }
   ]
  },
  "news": {
-  "stand": "2026-11-04T23:15:25+00:00",
+  "stand": "2026-11-05T03:37:12+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Krypto auf eigener Wallet? Frankreich will ab 100.000 Euro genauer hinsehen",
+    "link": "https://www.btc-echo.de/news/krypto-auf-eigener-wallet-frankreich-will-ab-100-000-euro-genauer-hinsehen-240412/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-05T03:30:00+00:00",
+    "text": "Frankreich möchte selbstverwahrte Kryptowährungen stärker unter die Lupe nehmen. Eine geplante Meldepflicht könnte für Anleger teuer werden. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Frankreich möchte selbstverwahrte Kryptowährungen stärker unter die Lupe nehmen.",
+    "titel_de": "Krypto auf eigener Wallet? Frankreich will ab 100.000 Euro genauer hinsehen",
+    "kurz_de": "Frankreich möchte selbstverwahrte Kryptowährungen stärker unter die Lupe nehmen."
+   },
+   {
+    "titel": "Gerd Kommer: Warum der einstige Krypto-Kritiker jetzt selbst Bitcoin kauft",
+    "link": "https://www.btc-echo.de/news/gerd-kommer-warum-der-krypto-kritiker-jetzt-selbst-bitcoin-kauft-240368/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-05T03:00:00+00:00",
+    "text": "Solana und XRP kommen für Gerd Kommer nicht infrage. Weshalb er nur auf zwei Kryptowährungen im Portfolio setzt, erklärt der ETF-Pionier im Interview. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 1,
+    "kurz": "Solana und XRP kommen für Gerd Kommer nicht infrage.",
+    "titel_de": "Gerd Kommer: Warum der einstige Krypto-Kritiker jetzt selbst Bitcoin kauft",
+    "kurz_de": "Solana und XRP kommen für Gerd Kommer nicht infrage."
+   },
+   {
+    "titel": "India warns AI-powered hackers targeting crypto exchanges at ‘machine speed’",
+    "link": "https://cointelegraph.com/news/india-warns-ai-powered-hackers-targeting-crypto-exchanges-at-machine-speed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-05T01:51:21+00:00",
+    "text": "India’s cybersecurity agency says a threat actor is escalating an AI-assisted hacking campaign targeting crypto exchanges and other financial firms.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 1,
+    "kurz": "India’s cybersecurity agency says a threat actor is escalating an AI-assisted hacking campaign targeting crypto exchanges and other financial firms."
+   },
+   {
+    "titel": "Africa’s LNG Exports Set to Soar 175% as Buyers Flee Hormuz",
+    "link": "https://oilprice.com/Energy/Natural-Gas/Africas-LNG-Exports-Set-to-Soar-175-as-Buyers-Flee-Hormuz.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-05T01:00:00+00:00",
+    "text": "Energy buyers burned by the Strait of Hormuz are turning to Africa, and the money is following. The African Energy Chamber projects that Africa’s upstream sector will attract ~$40 billion a year through 2030, lifting the continent’s hydroc…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 3,
+    "kurz": "Energy buyers burned by the Strait of Hormuz are turning to Africa, and the money is following.",
+    "titel_de": "Afrikas LNG-Exporte werden um 175 % steigen, da die Käufer vor Hormuz fliehen",
+    "kurz_de": "Energiekäufer, die von der Straße von Hormus verbrannt wurden, wenden sich an Afrika, und das Geld folgt."
+   },
+   {
+    "titel": "Australia's oldest department store David Jones folds after 188 years",
+    "link": "https://www.bbc.co.uk/news/articles/cky93z5y0171o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-05T00:59:22+00:00",
+    "text": "The brand's 38 physical stores and online site will continue to operate while receivers review its operations.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The brand's 38 physical stores and online site will continue to operate while receivers review its operations."
+   },
+   {
+    "titel": "Interest rates expected to rise for first time in over three years",
+    "link": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-05T00:00:09+00:00",
+    "text": "Most analysts are predicting an increase from 3.75% to 4%, the first increase in more than three years.",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1,
+    "kurz": "Most analysts are predicting an increase from 3.75% to 4%, the first increase in more than three years."
+   },
+   {
+    "titel": "Butane’s Perfect Storm Sends Prices to Decade Highs",
+    "link": "https://oilprice.com/Energy/Natural-Gas/Butanes-Perfect-Storm-Sends-Prices-to-Decade-Highs.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-05T00:00:00+00:00",
+    "text": "Butane prices are surging across the world. Northwest European November butane prices have reached $1,125/t by early November, their highest level in 30 years, having exceeded even the peaks following Russia’s invasion of Ukraine. In Asia,…",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Butane prices are surging across the world."
+   },
    {
     "titel": "Pound rises to its highest level since the Brexit referendum",
     "link": "https://www.bbc.co.uk/news/articles/c6lykq2qjn2vo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Wirtschaft",
     "bereich": "Wirtschaft",
     "sprache": "en",
-    "zeit": "2026-11-04T23:02:24+00:00",
+    "zeit": "2026-11-04T23:30:28+00:00",
     "text": "Pound reaches highest level against a basket of currencies since the Brexit referendum a decade ago",
     "tags": [],
     "wichtig": 0,
     "kurz": "Pound reaches highest level against a basket of currencies since the Brexit referendum a decade ago"
+   },
+   {
+    "titel": "Mercado Bitcoin says phased reopening to begin Monday, will cover losses",
+    "link": "https://cointelegraph.com/news/mercado-bitcoin-phased-reopening-to-begin-monday-pledges-to-cover-losses?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-04T23:20:17+00:00",
+    "text": "Customers will initially be able to view their holdings, while withdrawals and trading remain suspended pending security checks.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Customers will initially be able to view their holdings, while withdrawals and trading remain suspended pending security checks."
    },
    {
     "titel": "Qatar Becomes Largest Buyer of U.S. LNG Amid Hormuz Crisis",
@@ -207,7 +320,7 @@
     "kurz": "Musk spent nearly $500m in the 2026 US midterm elections, an individual election spending record."
    },
    {
-    "titel": "How Aussie Bitcoiners can avoid 2027’s shock CGT hike: Part 1",
+    "titel": "How Aussie Bitcoiners can avoid 2027’s shock CGT hike",
     "link": "https://cointelegraph.com/magazine/how-aussie-bitcoiners-can-avoid-2027s-shock-cgt-increase-part-1?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
     "bereich": "Krypto",
@@ -891,20 +1004,6 @@
     "kurz_de": "Der frühere niederländische Zentralbankchef Knot ist nun offiziell für den EZB-Chefsessel nominiert."
    },
    {
-    "titel": "UAE-Controlled Moeve Sells Algerian Upstream Assets",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/UAE-Controlled-Moeve-Sells-Algerian-Upstream-Assets.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-04T14:30:00+00:00",
-    "text": "Spanish energy firm Moeve has agreed to sell its upstream oil and gas assets in Algeria to units of Indonesia’s state energy firm Pertamina in a deal that sees Moeve, majority owned by Abu Dhabi’s fund Mubadala, exiting the upstream busine…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Spanish energy firm Moeve has agreed to sell its upstream oil and gas assets in Algeria to units of Indonesia’s state energy firm Pertamina in a deal that sees Moeve, majority owned by Abu Dhabi’s fu…"
-   },
-   {
     "titel": "The election changes Washington. The work on crypto continues",
     "link": "https://www.coindesk.com/opinion/2026/11/04/the-election-changes-washington-the-work-on-crypto-continues",
     "quelle": "CoinDesk",
@@ -943,21 +1042,6 @@
     ],
     "wichtig": 0,
     "kurz": "The biggest losers were the AI data center stocks following victories for several candidates who campaigned expressly against the sector."
-   },
-   {
-    "titel": "Democrats Win Texas Oil Regulator Seat for First Time Since 1990",
-    "link": "https://oilprice.com/Energy/Crude-Oil/Democrats-Win-Texas-Oil-Regulator-Seat-for-First-Time-Since-1990.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-04T14:00:00+00:00",
-    "text": "Texas voters on Tuesday elected a Democrat to the Railroad Commission, the regulator of the state’s oil and gas industry, for the first time since 1990. They also elected a Democratic governor who promised to halt new data center construct…",
-    "tags": [
-     "Regulierung",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Texas voters on Tuesday elected a Democrat to the Railroad Commission, the regulator of the state’s oil and gas industry, for the first time since 1990."
    },
    {
     "titel": "France backs reporting for self-custodied crypto worth 100K euros or more",
@@ -1211,92 +1295,11 @@
     ],
     "wichtig": 2,
     "kurz": "Zach Pandl highlighted institutional custody safeguards as crypto markets recovered some losses following the record $6.3 billion Binance hack."
-   },
-   {
-    "titel": "Bitcoin rebounds from midterm dip as DeFi leads gains",
-    "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-rebounds-from-midterm-dip-as-defi-leads-gains",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-04T10:38:58+00:00",
-    "text": "Bitcoin recovered from a dip to around $75,600 as Democrats won Congress, while DeFi tokens led gains and Trump-linked coins fell.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 2,
-    "kurz": "Bitcoin recovered from a dip to around $75,600 as Democrats won Congress, while DeFi tokens led gains and Trump-linked coins fell."
-   },
-   {
-    "titel": "Judge Orders Bitcoin Wallet Returned to Family of Convicted Canadian Killer",
-    "link": "https://decrypt.co/382484/judge-orders-bitcoin-wallet-returned-to-family-of-convicted-canadian-killer",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-04T10:35:01+00:00",
-    "text": "A Nova Scotia judge found prosecutors failed to link William Sandeson's Bitcoin to the 2015 murder of fellow student Taylor Samson.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "A Nova Scotia judge found prosecutors failed to link William Sandeson's Bitcoin to the 2015 murder of fellow student Taylor Samson."
-   },
-   {
-    "titel": "Justin Sun seeks $264K sanctions over World Liberty’s UAE disclosure",
-    "link": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-04T10:30:42+00:00",
-    "text": "Sun plans to refile his token-freeze lawsuit in California state court after the sanctions motion is resolved. A hearing is set for Dec. 10.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 2,
-    "kurz": "Sun plans to refile his token-freeze lawsuit in California state court after the sanctions motion is resolved."
-   },
-   {
-    "titel": "ZachXBT names French bank Crédit Mutuel Arkéa as suspected victim of $133 million crypto theft",
-    "link": "https://www.coindesk.com/business/2026/11/04/zachxbt-names-french-bank-credit-mutuel-arkea-as-suspected-victim-of-usd133-million-crypto-theft",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-04T10:18:50+00:00",
-    "text": "Blockchain sleuth ZachXBT says the French bank may have lost more than $133 million from crypto exchange accounts. Crypto.com confirms it has blocked funds linked to the theft.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Blockchain sleuth ZachXBT says the French bank may have lost more than $133 million from crypto exchange accounts."
-   },
-   {
-    "titel": "Elon Musk floats space data centers as Democratic sweep puts pressure on AI trade",
-    "link": "https://www.coindesk.com/markets/2026/11/04/elon-musk-floats-space-data-centers-as-democratic-sweep-puts-pressure-on-ai-trade",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-04T10:03:33+00:00",
-    "text": "Texas election result raises fears of data centre restrictions, while Musk and Palihapitiya draw attention to the space economy.",
-    "tags": [
-     "Prominente",
-     "KI/Chips"
-    ],
-    "wichtig": 2,
-    "kurz": "Texas election result raises fears of data centre restrictions, while Musk and Palihapitiya draw attention to the space economy."
-   },
-   {
-    "titel": "Ethereum-Rivale? Robinhood Chain nimmt mehr Gebühren ein als das Mainnet",
-    "link": "https://www.btc-echo.de/news/ethereum-rivale-robinhood-chain-nimmt-mehr-gebuehren-ein-als-das-mainnet-240309/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-04T10:00:00+00:00",
-    "text": "Das Ethereum-Netzwerk wächst, doch beim Token kommt immer weniger an. Die On-Chain-Daten zeigen, warum Anleger zunehmend an der Bewertung von ETH zweifeln. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Das Ethereum-Netzwerk wächst, doch beim Token kommt immer weniger an.",
-    "titel_de": "Ethereum-Rivale? Robinhood Chain nimmt mehr Gebühren ein als das Mainnet",
-    "kurz_de": "Das Ethereum-Netzwerk wächst, doch beim Token kommt immer weniger an."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-04T23:15:36+00:00",
+  "stand": "2026-11-05T03:37:22+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
