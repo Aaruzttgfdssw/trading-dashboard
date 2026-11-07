@@ -1,48 +1,119 @@
 {
- "erzeugt": "2026-11-07T18:10:00+00:00",
+ "erzeugt": "2026-11-07T21:50:18+00:00",
  "kurse": {
-  "stand": "2026-11-07T18:10:02+00:00",
+  "stand": "2026-11-07T21:50:19+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 67986,
-    "aend24": 0.14522,
-    "aend7": -2.269,
-    "aend1y": -24.9887,
-    "marktkap": 1367140337377,
-    "volumen": 11792429942
+    "preis": 67841,
+    "aend24": -0.20752,
+    "aend7": -2.5085,
+    "aend1y": -26.8135,
+    "marktkap": 1364222227604,
+    "volumen": 10234984508
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2004.66,
-    "aend24": 0.473,
-    "aend7": -0.7092,
-    "aend1y": -32.3603,
-    "marktkap": 244965088147,
-    "volumen": 4178096372
+    "preis": 1998.08,
+    "aend24": -0.09728,
+    "aend7": -1.195,
+    "aend1y": -35.3752,
+    "marktkap": 244160564370,
+    "volumen": 4000209318
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 80.49,
-    "aend24": -0.33883,
-    "aend7": -6.3987,
-    "aend1y": -42.8411,
-    "marktkap": 47573981328,
-    "volumen": 870544628
+    "preis": 79.91,
+    "aend24": -1.10134,
+    "aend7": -7.1359,
+    "aend1y": -45.762,
+    "marktkap": 47230029842,
+    "volumen": 798498508
    }
   ]
  },
  "news": {
-  "stand": "2026-11-07T18:10:06+00:00",
+  "stand": "2026-11-07T21:50:21+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "What we know so far after Krakow gun attack",
+    "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T21:13:24+00:00",
+    "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
+    "titel_de": "Was wir bisher nach dem Krakauer Schusswaffenangriff wissen",
+    "kurz_de": "Sechs Menschen wurden bei einer zufälligen Schießerei auf dem Hauptplatz der Stadt getötet, und drei Leichen wurden später in seinem Haus gefunden."
+   },
+   {
+    "titel": "Egypt Eyes Billions in New Investment to Revive Oil and Gas Production",
+    "link": "https://oilprice.com/Energy/Energy-General/Egypt-Eyes-Billions-in-New-Investment-to-Revive-Oil-and-Gas-Production.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-07T20:00:00+00:00",
+    "text": "The Egyptian government is doubling down on its plans to accelerate the development of its oil and gas resources. Egypt now aims to achieve a production capacity of 6.6 billion cubic feet per day by 2027, supported by increased drilling, n…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "The Egyptian government is doubling down on its plans to accelerate the development of its oil and gas resources."
+   },
+   {
+    "titel": "Paraguay's former president charged after bank collapse",
+    "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T19:17:22+00:00",
+    "text": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money."
+   },
+   {
+    "titel": "Binance users in some European countries told to pull crypto before fees kick in, with accounts closing by year end",
+    "link": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-07T19:13:16+00:00",
+    "text": "Affected accounts are reportedly set to close on Dec. 31. Users in Spain, France, and Poland say they've received similar notices.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Affected accounts are reportedly set to close on Dec."
+   },
+   {
+    "titel": "US offers $20m reward for information about Iran's nuclear programme",
+    "link": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T18:14:38+00:00",
+    "text": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities.",
+    "tags": [
+     "Prominente",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities.",
+    "titel_de": "Die USA bieten eine Belohnung von 20 Mio. $ für Informationen über das iranische Atomprogramm",
+    "kurz_de": "Donald Trump hat wiederholt die Aussicht auf erneute Angriffe auf die iranischen Atomanlagen angesprochen."
+   },
    {
     "titel": "Trump-Backed Trade Corridor Advances Despite Geopolitical Resistance",
     "link": "https://oilprice.com/Geopolitics/Asia/Trump-Backed-Trade-Corridor-Advances-Despite-Geopolitical-Resistance.html",
@@ -98,6 +169,20 @@
     ],
     "wichtig": 1,
     "kurz": "Treasury billed the move as part of its campaign against Iran, but the order rests on MEXC's alleged role in Russian illicit finance."
+   },
+   {
+    "titel": "Houthis say at least 25 killed in Saudi air strike",
+    "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T17:09:24+00:00",
+    "text": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
    },
    {
     "titel": "Apple Completes the Set: Every Magnificent Seven Stock Opts Out of OKX-ICE Venue",
@@ -459,18 +544,6 @@
     "tags": [],
     "wichtig": 1,
     "kurz": "The 82-year-old appeared in court in Florida after the FBI searched two Los Angeles-area storage units he rented."
-   },
-   {
-    "titel": "Paraguay's president impeached and under house arrest after bank collapse",
-    "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-07T07:20:00+00:00",
-    "text": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money."
    },
    {
     "titel": "Pope in 'pretty good health' as he starts Latin America tour",
@@ -1217,82 +1290,11 @@
     "kurz": "Fast 12.000 gefälschte Internetadressen geben sich als bekannte Krypto-Marken aus.",
     "titel_de": "Über vier Millionen Krypto-Zugänge kompromittiert – Binance ist kein Einzelfall",
     "kurz_de": "Fast 12.000 gefälschte Internetadressen geben sich als bekannte Krypto-Marken aus."
-   },
-   {
-    "titel": "Thailand moves to block Bitget as crypto exchange's local acquisition faces uncertainty",
-    "link": "https://www.coindesk.com/business/2026/11/05/thailand-moves-to-block-bitget-as-crypto-exchange-s-local-acquisition-faces-uncertainty",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T14:33:49+00:00",
-    "text": "Thailand’s SEC filed a criminal complaint against Bitget’s operator, alleging it ran an unlicensed crypto exchange for Thai users from 2022 to 2025.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 2,
-    "kurz": "Thailand’s SEC filed a criminal complaint against Bitget’s operator, alleging it ran an unlicensed crypto exchange for Thai users from 2022 to 2025.",
-    "titel_de": "Thailand versucht, Bitget zu blockieren, da die lokale Akquisition der Kryptobörse mit Unsicherheiten konfrontiert ist",
-    "kurz_de": "Thailands SEC reichte eine Strafanzeige gegen den Betreiber von Bitget ein und behauptete, dass er von 2022 bis 2025 eine nicht lizenzierte Krypto-Börse für thailändische Nutzer betrieben habe."
-   },
-   {
-    "titel": "What Democrats’ US midterm sweep means for the CLARITY Act",
-    "link": "https://cointelegraph.com/magazine/clarity-act-faces-new-test-under-democratic-congress?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T14:30:00+00:00",
-    "text": "The CLARITY Act faces a new test as Democrats control Congress, raising questions over consumer protections, ethics and what the crypto industry may have to concede.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The CLARITY Act faces a new test as Democrats control Congress, raising questions over consumer protections, ethics and what the crypto industry may have to concede."
-   },
-   {
-    "titel": "Europe's Grid Spending Is Up 155% Since 2019",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Europes-Grid-Spending-Is-Up-155-Since-2019.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-06T14:30:00+00:00",
-    "text": "Most European countries expect higher investments in their grid infrastructure through 2030 after more than doubling annual investments since 2019, the European Union Agency for the Cooperation of Energy Regulators (ACER) said in a report…",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Most European countries expect higher investments in their grid infrastructure through 2030 after more than doubling annual investments since 2019, the European Union Agency for the Cooperation of En…"
-   },
-   {
-    "titel": "$3.1B in Stolen Binance Crypto Has Yet to Be Laundered: Elliptic",
-    "link": "https://decrypt.co/382711/3-1b-in-stolen-binance-crypto-has-yet-to-be-laundered-elliptic",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T14:04:18+00:00",
-    "text": "The attackers have used more than 20,000 wallets on 16 blockchains so far, but the bulk of the stolen ETH and Bitcoin hasn't moved.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 3,
-    "kurz": "The attackers have used more than 20,000 wallets on 16 blockchains so far, but the bulk of the stolen ETH and Bitcoin hasn't moved.",
-    "titel_de": "3,1 Mrd. $ an gestohlener Binance-Krypto muss noch gewaschen werden: Elliptic",
-    "kurz_de": "Die Angreifer haben bisher mehr als 20.000 Wallets auf 16 Blockchains verwendet, aber der Großteil der gestohlenen ETH und Bitcoin hat sich nicht bewegt."
-   },
-   {
-    "titel": "Nigeria sets new crypto licensing rules, bans algorithmic stablecoins",
-    "link": "https://cointelegraph.com/news/nigeria-algorithmic-stablecoin-ban-crypto-licensing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T13:57:14+00:00",
-    "text": "Nigeria has banned algorithmic stablecoins and introduced reserve requirements for issuers as it expands central bank oversight of crypto payment services.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Nigeria has banned algorithmic stablecoins and introduced reserve requirements for issuers as it expands central bank oversight of crypto payment services."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-07T18:10:19+00:00",
+  "stand": "2026-11-07T21:50:31+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
