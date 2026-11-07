@@ -1,48 +1,142 @@
 {
- "erzeugt": "2026-11-07T00:21:53+00:00",
+ "erzeugt": "2026-11-07T06:22:40+00:00",
  "kurse": {
-  "stand": "2026-11-07T00:21:54+00:00",
+  "stand": "2026-11-07T06:22:40+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 68085,
-    "aend24": 0.46354,
-    "aend7": -1.4052,
-    "aend1y": -25.182,
-    "marktkap": 1369038095815,
-    "volumen": 26068310026
+    "preis": 68155,
+    "aend24": 1.04663,
+    "aend7": -1.501,
+    "aend1y": -25.5273,
+    "marktkap": 1370518916720,
+    "volumen": 23207573813
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2010.73,
-    "aend24": 0.84754,
-    "aend7": 0.1266,
-    "aend1y": -32.5506,
-    "marktkap": 245700842770,
-    "volumen": 9416636874
+    "preis": 2013.27,
+    "aend24": 1.43995,
+    "aend7": 0.4391,
+    "aend1y": -32.6604,
+    "marktkap": 246031141017,
+    "volumen": 8488426450
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 80.91,
-    "aend24": 1.28462,
-    "aend7": -5.98,
-    "aend1y": -42.0532,
-    "marktkap": 47766658191,
-    "volumen": 2107247989
+    "preis": 80.85,
+    "aend24": 1.18118,
+    "aend7": -5.7089,
+    "aend1y": -42.2022,
+    "marktkap": 47786248213,
+    "volumen": 1817019281
    }
   ]
  },
  "news": {
-  "stand": "2026-11-07T00:21:57+00:00",
+  "stand": "2026-11-07T06:22:44+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Ethereum schlägt Alarm: Acht Risiken bedrohen Glamsterdam-Upgrade",
+    "link": "https://www.btc-echo.de/news/ethereum-schlaegt-alarm-acht-risiken-bedrohen-glamsterdam-upgrade-240555/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-07T03:30:00+00:00",
+    "text": "Manche Anwendungen hängen an den alten Gebührenregeln. Jetzt könnten die Upgrade-Pläne noch einmal geändert werden. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Manche Anwendungen hängen an den alten Gebührenregeln.",
+    "titel_de": "Ethereum schlägt Alarm: Acht Risiken bedrohen Glamsterdam-Upgrade",
+    "kurz_de": "Manche Anwendungen hängen an den alten Gebührenregeln."
+   },
+   {
+    "titel": "Paraguay's President Santiago Peña impeached and arrested",
+    "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T03:25:00+00:00",
+    "text": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money."
+   },
+   {
+    "titel": "Verdächtiges Timing: Schafft Trump seine Bitcoin schon beiseite?",
+    "link": "https://www.btc-echo.de/news/verdaechtiges-timing-schafft-trump-seine-bitcoin-schon-beiseite-240472/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-07T03:00:00+00:00",
+    "text": "Trumps Krypto-Geschäfte könnten für ihn zunehmend zum Problem werden. Nach dem Wahlsieg der Demokraten flossen im Hintergrund auch schon die ersten Bitcoin. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 2,
+    "kurz": "Trumps Krypto-Geschäfte könnten für ihn zunehmend zum Problem werden.",
+    "titel_de": "Verdächtiges Timing: Schafft Trump seine Bitcoin schon beiseite?",
+    "kurz_de": "Trumps Krypto-Geschäfte könnten für ihn zunehmend zum Problem werden."
+   },
+   {
+    "titel": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
+    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-07T02:54:24+00:00",
+    "text": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar. Doch nun zeigt sich: Die Pünktlichkeit auf der Ausweichstrecke ist selbst für Bahnverhältnisse unterdurchschnittlich. Von Andre Kartschall.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar.",
+    "titel_de": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
+    "kurz_de": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar."
+   },
+   {
+    "titel": "This man refused life-saving treatment because of his religion - days later the rules changed",
+    "link": "https://www.bbc.co.uk/news/articles/cx5ynly549njo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T01:27:47+00:00",
+    "text": "Jehovah's Witness leaders relaxed strict rules on blood transfusions, but the change came 23 days too late for Isaac Valdez.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Jehovah's Witness leaders relaxed strict rules on blood transfusions, but the change came 23 days too late for Isaac Valdez."
+   },
+   {
+    "titel": "The young Somali woman changing how the world sees Mogadishu",
+    "link": "https://www.bbc.co.uk/news/articles/cq0k0lg48705o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T01:19:49+00:00",
+    "text": "For some tourists, the contrast between Somalia's reputation and what they experience on the ground can be striking.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "For some tourists, the contrast between Somalia's reputation and what they experience on the ground can be striking."
+   },
+   {
+    "titel": "Cornell faculty pass no-confidence vote over leadership's handling of Jane Doe allegations",
+    "link": "https://www.bbc.co.uk/news/articles/c933xxl8yv0go?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-06T23:46:08+00:00",
+    "text": "Friday's resolution by academic staff is largely symbolic as they do not have the power to remove those in charge of the university.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Friday's resolution by academic staff is largely symbolic as they do not have the power to remove those in charge of the university."
+   },
    {
     "titel": "Wall Street’s “Energy Transition” Funds Are Packed With Natural Gas",
     "link": "https://oilprice.com/Energy/Natural-Gas/Wall-Streets-Energy-Transition-Funds-Are-Packed-With-Natural-Gas.html",
@@ -923,20 +1017,6 @@
     "kurz": "Thursday marked a massive reversal and historic selloff for AI stocks, and crypto was not immune."
    },
    {
-    "titel": "US midterm results spark fears in Israel over future of two countries' ties",
-    "link": "https://www.bbc.co.uk/news/articles/cx30ee8018lvo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T13:23:44+00:00",
-    "text": "Staunch US support of Israel has been raised as one of the reasons why Republicans performed so badly.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Staunch US support of Israel has been raised as one of the reasons why Republicans performed so badly."
-   },
-   {
     "titel": "Ethereum devs won’t fork Glamsterdam on Hoodi until smart contract risks resolved",
     "link": "https://cointelegraph.com/news/ethereum-devs-fork-glamsterdam-hoodi-smart-contract-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
@@ -1219,89 +1299,11 @@
     "kurz": "Deutsche Industriebetriebe haben im September überraschend mehr produziert als im Vormonat.",
     "titel_de": "Industrieproduktion wächst überraschend - Autobranche legt zu",
     "kurz_de": "Deutsche Industriebetriebe haben im September überraschend mehr produziert als im Vormonat."
-   },
-   {
-    "titel": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
-    "link": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T10:40:57+00:00",
-    "text": "Experts say blockchain records show repeated wallet drains but cannot establish Binance’s internal signing controls or transaction limits.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Experts say blockchain records show repeated wallet drains but cannot establish Binance’s internal signing controls or transaction limits."
-   },
-   {
-    "titel": "Homes and temples glow across India as Diwali celebrations begin",
-    "link": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T10:21:30+00:00",
-    "text": "Millions of Indians will mark the festival of lights with glowing lamps, fireworks and traditional sweets",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Millions of Indians will mark the festival of lights with glowing lamps, fireworks and traditional sweets"
-   },
-   {
-    "titel": "Zcash's NU7 Upgrade Goes Live, Recycling 60% of Fees to Fund Future Block Rewards",
-    "link": "https://decrypt.co/382692/zcashs-nu7-upgrade-goes-live-recycling-60-of-fees-to-fund-future-block-rewards",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T10:13:27+00:00",
-    "text": "The Network Sustainability Mechanism will reissue removed ZEC from 2031 within the 21 million cap, as the community debates its dev fund.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The Network Sustainability Mechanism will reissue removed ZEC from 2031 within the 21 million cap, as the community debates its dev fund."
-   },
-   {
-    "titel": "What to know about the presidential wiretapping scandal rocking Indonesia",
-    "link": "https://www.bbc.co.uk/news/articles/cwkg55155mrro?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T10:10:38+00:00",
-    "text": "The scandal involves senior members of President Prabowo Subianto's government, and hint at growing tensions among its elites.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The scandal involves senior members of President Prabowo Subianto's government, and hint at growing tensions among its elites."
-   },
-   {
-    "titel": "USDC-Emittent Circle öffnet seine Bücher",
-    "link": "https://www.btc-echo.de/news/usdc-emittent-circle-warum-anleger-trotz-gewinn-zoegern-240445/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-06T10:00:00+00:00",
-    "text": "Trotz guter Quartalszahlen zeigen sich die Circle-Aktionäre verhalten. Aus diesem Grund muss sich der Stablecoin-Riese jetzt behaupten. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Trotz guter Quartalszahlen zeigen sich die Circle-Aktionäre verhalten.",
-    "titel_de": "USDC-Emittent Circle öffnet seine Bücher",
-    "kurz_de": "Trotz guter Quartalszahlen zeigen sich die Circle-Aktionäre verhalten."
-   },
-   {
-    "titel": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
-    "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T09:53:27+00:00",
-    "text": "Bitcoin recovered above $76,000 Friday after dropping below that level during Thursday's tech-driven market rout.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 2,
-    "kurz": "Bitcoin recovered above $76,000 Friday after dropping below that level during Thursday's tech-driven market rout."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-07T00:22:09+00:00",
+  "stand": "2026-11-07T06:22:54+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
