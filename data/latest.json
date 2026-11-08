@@ -1,48 +1,196 @@
 {
- "erzeugt": "2026-11-08T14:25:41+00:00",
+ "erzeugt": "2026-11-08T18:57:48+00:00",
  "kurse": {
-  "stand": "2026-11-08T14:25:41+00:00",
+  "stand": "2026-11-08T18:57:48+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 68023,
-    "aend24": -0.08059,
-    "aend7": -2.5629,
-    "aend1y": -25.6312,
-    "marktkap": 1368018393192,
-    "volumen": 9446054669
+    "preis": 68128,
+    "aend24": 0.24218,
+    "aend7": -3.0369,
+    "aend1y": -25.6381,
+    "marktkap": 1370028711698,
+    "volumen": 9652682424
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2005.47,
-    "aend24": -0.36018,
-    "aend7": -1.1596,
-    "aend1y": -34.448,
-    "marktkap": 245096277401,
-    "volumen": 3462656324
+    "preis": 2006.12,
+    "aend24": 0.03801,
+    "aend7": -1.721,
+    "aend1y": -33.7958,
+    "marktkap": 245150081417,
+    "volumen": 3466236089
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 79.9,
-    "aend24": -0.92867,
-    "aend7": -5.9771,
-    "aend1y": -44.013,
-    "marktkap": 47227987263,
-    "volumen": 784247870
+    "preis": 80.36,
+    "aend24": -0.16691,
+    "aend7": -5.9238,
+    "aend1y": -43.1037,
+    "marktkap": 47501755765,
+    "volumen": 839726327
    }
   ]
  },
  "news": {
-  "stand": "2026-11-08T14:25:45+00:00",
+  "stand": "2026-11-08T18:57:51+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+    "link": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T18:22:53+00:00",
+    "text": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more."
+   },
+   {
+    "titel": "How Big Oil Became the AI Industry's Favorite Customer",
+    "link": "https://oilprice.com/Energy/Energy-General/How-Big-Oil-Became-the-AI-Industrys-Favorite-Customer.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-08T18:00:00+00:00",
+    "text": "Artificial intelligence companies are deepening their ties with the fossil fuel industries as some of the biggest names in the tech world make massive deals with energy companies, both to power their energy-hungry data centers and to embed…",
+    "tags": [
+     "Rohstoffe",
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "Artificial intelligence companies are deepening their ties with the fossil fuel industries as some of the biggest names in the tech world make massive deals with energy companies, both to power their…"
+   },
+   {
+    "titel": "Bitcoin-Prognose 2040: So hoch steigt der BTC-Kurs laut den Experten",
+    "link": "https://www.btc-echo.de/news/bitcoin-prognose-2040-das-erwarten-die-experten-239767/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-08T18:00:00+00:00",
+    "text": "Der Bitcoin-Kurs mag kurzfristig erneut unter 80.000 US-Dollar korrigieren, aber wie verändert die Kryptowährung unsere Welt bis zum Jahr 2040? Ein Blick in die Zukunft. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Der Bitcoin-Kurs mag kurzfristig erneut unter 80.000 US-Dollar korrigieren, aber wie verändert die Kryptowährung unsere Welt bis zum Jahr 2040?",
+    "titel_de": "Bitcoin-Prognose 2040: So hoch steigt der BTC-Kurs laut den Experten",
+    "kurz_de": "Der Bitcoin-Kurs mag kurzfristig erneut unter 80.000 US-Dollar korrigieren, aber wie verändert die Kryptowährung unsere Welt bis zum Jahr 2040?"
+   },
+   {
+    "titel": "Seven dead and more than 100 injured after trains collide in Egypt",
+    "link": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T17:35:13+00:00",
+    "text": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza."
+   },
+   {
+    "titel": "Footage shows derailed carriages after fatal train crash in Egypt",
+    "link": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T16:05:57+00:00",
+    "text": "It is yet unclear what caused the accident but Egyptian President Abdel Fattah al-Sisi said an investigation is underway and will \"hold accountable anyone who proves their negligence\".",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "It is yet unclear what caused the accident but Egyptian President Abdel Fattah al-Sisi said an investigation is underway and will \"hold accountable anyone who proves their negligence\"."
+   },
+   {
+    "titel": "How New York Plans to Turn Waste Heat Into Clean Energy",
+    "link": "https://oilprice.com/Energy/Energy-General/How-New-York-Plans-to-Turn-Waste-Heat-Into-Clean-Energy.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-08T16:00:00+00:00",
+    "text": "District heating has been around for almost 150 years, with the first commercial system established in New York in 1877, yet it is still not widely used. The original systems used steam produced by a central fossil-fuel boiler. However, sy…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "District heating has been around for almost 150 years, with the first commercial system established in New York in 1877, yet it is still not widely used."
+   },
+   {
+    "titel": "Blockchain-Ermittler Albert Querenberger: “Eine hundertprozentige Sicherheit gibt es nicht”",
+    "link": "https://www.btc-echo.de/news/binance-hack-blockchain-ermittler-warnt-vor-gefahr-krypto-anleger-240499/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-08T16:00:00+00:00",
+    "text": "Angriffe auf Wallets und Börsen mehren sich, doch wie können Anleger noch sicher sein? Forensiker Albert Querenberger erklärt im Interview, warum selbst Hardware Wallets keinen vollständigen Schutz bieten und wie sich gestohlene Kryptowähr…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Angriffe auf Wallets und Börsen mehren sich, doch wie können Anleger noch sicher sein?",
+    "titel_de": "Blockchain-Ermittler Albert Querenberger: “Eine hundertprozentige Sicherheit gibt es nicht”",
+    "kurz_de": "Angriffe auf Wallets und Börsen mehren sich, doch wie können Anleger noch sicher sein?"
+   },
+   {
+    "titel": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
+    "link": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-08T15:37:25+00:00",
+    "text": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March."
+   },
+   {
+    "titel": "Viele Gebäude weiterhin ohne Elementarschadenversicherung",
+    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/klimaschaeden-versicherungen-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-08T15:28:00+00:00",
+    "text": "Immer häufiger führen Starkregen und Überschwemmungen zu teuren Schäden an Häusern. Nur gut die Hälfte der Gebäude in Deutschland sind gegen solche Folgen abgesichert. Experten sehen Handlungsbedarf. Von Katharina Wilhelm.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Immer häufiger führen Starkregen und Überschwemmungen zu teuren Schäden an Häusern.",
+    "titel_de": "Viele Gebäude weiterhin ohne Elementarschadenversicherung",
+    "kurz_de": "Immer häufiger führen Starkregen und Überschwemmungen zu teuren Schäden an Häusern."
+   },
+   {
+    "titel": "Bitcoin im Quantenzeitalter: Entwickler schlägt “finanzielle Landminen” vor",
+    "link": "https://www.btc-echo.de/news/bitcoin-im-quantenzeitalter-finanzielle-landminen-240589/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-08T14:47:00+00:00",
+    "text": "Quantencomputer bedrohen vor allem alte Bitcoin-Adressen von Satoshi Nakamoto. Welchen gewieften Plan ein Entwickler nun entworfen hat, um den Spieß umzudrehen und Angreifern ihre BTC zu entwenden. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Quantencomputer bedrohen vor allem alte Bitcoin-Adressen von Satoshi Nakamoto.",
+    "titel_de": "Bitcoin im Quantenzeitalter: Entwickler schlägt “finanzielle Landminen” vor",
+    "kurz_de": "Quantencomputer bedrohen vor allem alte Bitcoin-Adressen von Satoshi Nakamoto."
+   },
+   {
+    "titel": "Homes and temples glow across India to mark Diwali",
+    "link": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T14:42:09+00:00",
+    "text": "Millions of Indians are marking the festival of lights with glowing lamps, fireworks and traditional sweets.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Millions of Indians are marking the festival of lights with glowing lamps, fireworks and traditional sweets."
+   },
    {
     "titel": "This Bitcoin Developer’s Idea Would Make Quantum Attacks a Losing Bet",
     "link": "https://decrypt.co/382761/bitcoin-developer-quantum-landmines-losing-bet",
@@ -58,6 +206,20 @@
     "kurz": "Cory Fields wants future quantum attackers to post Bitcoin as collateral before touching vulnerable wallets, giving prepared owners a chance to recover their coins and collect a potentially costly pe…",
     "titel_de": "Die Idee dieses Bitcoin-Entwicklers würde Quantenangriffe zu einer verlorenen Wette machen",
     "kurz_de": "Cory Fields möchte, dass zukünftige Quantenangreifer Bitcoin als Sicherheit hinterlegen, bevor sie verwundbare Geldbörsen berühren, was den vorbereiteten Besitzern die Möglichkeit gibt, ihre Münzen zurückzubekommen und eine potenziell kostspielige Münze einzusammeln..."
+   },
+   {
+    "titel": "Iran executes three men for 'armed unrest' after January protests",
+    "link": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T13:37:50+00:00",
+    "text": "It is claimed Hassan Dioband, Hamid Kazemi and Reza Zanganeh were part of anti-government protests earlier this year.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "It is claimed Hassan Dioband, Hamid Kazemi and Reza Zanganeh were part of anti-government protests earlier this year."
    },
    {
     "titel": "Here’s what happened in crypto today",
@@ -126,34 +288,6 @@
     "kurz": "Binnen einer Woche verlieren die Ethereum Spot ETFs zusammen 365 Millionen US-Dollar.",
     "titel_de": "Ethereum ETFs brechen ein: Kann der ETH-Kurs die 2.200 Dollar verteidigen?",
     "kurz_de": "Binnen einer Woche verlieren die Ethereum Spot ETFs zusammen 365 Millionen US-Dollar."
-   },
-   {
-    "titel": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
-    "link": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-08T11:25:32+00:00",
-    "text": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March."
-   },
-   {
-    "titel": "What we know so far after Krakow gun attack",
-    "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-08T11:22:17+00:00",
-    "text": "Six people were killed in a random shooting in Krakow's main square, and three bodies were later found at the home of the attacker.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Six people were killed in a random shooting in Krakow's main square, and three bodies were later found at the home of the attacker.",
-    "titel_de": "Was wir bisher nach dem Krakauer Schusswaffenangriff wissen",
-    "kurz_de": "Sechs Menschen wurden bei einer zufälligen Schießerei auf dem Hauptplatz der Stadt getötet, und drei Leichen wurden später in seinem Haus gefunden."
    },
    {
     "titel": "Bitcoin-Jagd auf Metaplanet: Strive fehlen nur noch 876 BTC für Platz 2",
@@ -337,7 +471,7 @@
     "kurz_de": "Die Kriege in der Ukraine und im Nahen Osten haben zu einem Anstieg der Verkäufe von Elektrofahrzeugen geführt, um eine Kraftstoffinflation im Einzelhandel und die Zerstörung der Gasnachfrage zugunsten anderer Stromerzeugungsquellen zu vermeiden."
    },
    {
-    "titel": "Labubu hype seemed unstoppable, now the fluffy monster mania is dying",
+    "titel": "He spent $50,000 on Labubus but now the craze is dying",
     "link": "https://www.bbc.co.uk/news/articles/cmvg652l927lo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Wirtschaft",
     "bereich": "Wirtschaft",
@@ -347,20 +481,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes."
-   },
-   {
-    "titel": "Israel's president tasks opposition leader Eisenkot with forming government",
-    "link": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-07T22:19:59+00:00",
-    "text": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election."
    },
    {
     "titel": "The U.S. Has $50 Billion for Nuclear Waste and Nowhere to Put It",
@@ -901,32 +1021,6 @@
     "kurz": "Jehovah's Witness leaders relaxed strict rules on blood transfusions, but the change came 23 days too late for Isaac Valdez."
    },
    {
-    "titel": "The young Somali woman changing how the world sees Mogadishu",
-    "link": "https://www.bbc.co.uk/news/articles/cq0k0lg48705o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-07T01:19:49+00:00",
-    "text": "For some tourists, the contrast between Somalia's reputation and what they experience on the ground can be striking.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "For some tourists, the contrast between Somalia's reputation and what they experience on the ground can be striking."
-   },
-   {
-    "titel": "With Stephen Miller pick, Trump readies for a battle",
-    "link": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T23:24:15+00:00",
-    "text": "The US president's promotion of Miller, a loyal partisan firebrand to be his new chief of staff sets up likely clashes with Congress.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "The US president's promotion of Miller, a loyal partisan firebrand to be his new chief of staff sets up likely clashes with Congress."
-   },
-   {
     "titel": "Wall Street’s “Energy Transition” Funds Are Packed With Natural Gas",
     "link": "https://oilprice.com/Energy/Natural-Gas/Wall-Streets-Energy-Transition-Funds-Are-Packed-With-Natural-Gas.html",
     "quelle": "OilPrice",
@@ -1191,108 +1285,11 @@
     "kurz": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
     "titel_de": "Warum die Midterms in den USA einen Ausverkauf von KI-Aktien auslösten",
     "kurz_de": "Die Angst vor mehr KI-Regulierung scheint bei Investoren Angst ausgelöst zu haben, aber die Besorgnis über die Branche wächst seit einiger Zeit."
-   },
-   {
-    "titel": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
-    "link": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T18:22:42+00:00",
-    "text": "Bitcoin treasury company Strive reported $509 million in third-quarter net income and purchased 15,124 BTC in October, bringing its total holdings to 43,124 BTC.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Bitcoin treasury company Strive reported $509 million in third-quarter net income and purchased 15,124 BTC in October, bringing its total holdings to 43,124 BTC."
-   },
-   {
-    "titel": "U.S. Oil, Gas Drillers See Minor Uptick as Oil Prices Crash",
-    "link": "https://oilprice.com/Energy/Energy-General/US-Oil-Gas-Drillers-See-Minor-Uptick-as-Oil-Prices-Crash.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-06T18:21:00+00:00",
-    "text": "The total number of active drilling rigs for oil and gas in the United States rose slightly this week, according to new data that Baker Hughes published on Friday, with the total rig count in the US rising to 604, up 56 from this same time…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "The total number of active drilling rigs for oil and gas in the United States rose slightly this week, according to new data that Baker Hughes published on Friday, with the total rig count in the US…",
-    "titel_de": "Öl- und Gasbohrer in den USA sehen einen leichten Anstieg, da die Ölpreise abstürzen",
-    "kurz_de": "Die Gesamtzahl der aktiven Bohranlagen für Öl und Gas in den Vereinigten Staaten ist in dieser Woche leicht gestiegen, so neue Daten, die Baker Hughes am Freitag veröffentlicht hat, wobei die Gesamtzahl der Bohranlagen in den USA..."
-   },
-   {
-    "titel": "Bitcoin-Kurs: Können die Bullen die Korrekturausweitung abwenden?",
-    "link": "https://www.btc-echo.de/news/bitcoin-kurs-koennen-die-bullen-die-korrekturausweitung-abwenden-240519/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-06T18:00:00+00:00",
-    "text": "Bitcoin (BTC) muss sich dem historischen Abverkauf von US-Technologieaktien fügen und rutscht kurzfristig unter die 75.000 US-Dollar ab. Muss die Käuferseite die Segel streichen? Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Bitcoin (BTC) muss sich dem historischen Abverkauf von US-Technologieaktien fügen und rutscht kurzfristig unter die 75.000 US-Dollar ab.",
-    "titel_de": "Bitcoin-Kurs: Können die Bullen die Korrekturausweitung abwenden?",
-    "kurz_de": "Bitcoin (BTC) muss sich dem historischen Abverkauf von US-Technologieaktien fügen und rutscht kurzfristig unter die 75.000 US-Dollar ab."
-   },
-   {
-    "titel": "Bitcoin price dips under $75K as crypto markets miss tech-stock rebound",
-    "link": "https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T17:49:33+00:00",
-    "text": "BTC price action stayed weak after US nonfarm payrolls data significantly beat forecasts, increasing bets of a December interest-rate hike.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "BTC price action stayed weak after US nonfarm payrolls data significantly beat forecasts, increasing bets of a December interest-rate hike."
-   },
-   {
-    "titel": "Spain's rail authorities face European fraud probe after Urda rail disaster",
-    "link": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T17:44:02+00:00",
-    "text": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people."
-   },
-   {
-    "titel": "US Sanctions 45 More Targets Tied to Alleged Crypto Scam Empire Prince Group",
-    "link": "https://decrypt.co/382730/us-sanctions-45-more-targets-tied-to-alleged-crypto-scam-empire-prince-group",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T17:42:31+00:00",
-    "text": "OFAC targeted offshore companies and associates it says helped Prince Group executives hide assets and dodge earlier sanctions.",
-    "tags": [
-     "Regulierung",
-     "Hack/Betrug"
-    ],
-    "wichtig": 3,
-    "kurz": "OFAC targeted offshore companies and associates it says helped Prince Group executives hide assets and dodge earlier sanctions.",
-    "titel_de": "US-Sanktionen 45 weitere Ziele im Zusammenhang mit angeblichem Krypto-Betrug Empire Prince Group",
-    "kurz_de": "OFAC zielte auf Offshore-Unternehmen und assoziierte Unternehmen ab, von denen es sagt, dass sie den Führungskräften der Prince Group geholfen haben, Vermögenswerte zu verstecken und früheren Sanktionen auszuweichen."
-   },
-   {
-    "titel": "U.S. prediction markets regulator issues demand that clashes directly with courts",
-    "link": "https://www.coindesk.com/policy/2026/11/06/u-s-prediction-markets-regulator-issues-demand-that-clashes-directly-with-courts",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T17:42:28+00:00",
-    "text": "The Commodity Futures Trading Commission said regulated exchanges can't cut off customers state-by-state, but firms like Kalshi are under court orders to do so.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 2,
-    "kurz": "The Commodity Futures Trading Commission said regulated exchanges can't cut off customers state-by-state, but firms like Kalshi are under court orders to do so."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-08T14:25:55+00:00",
+  "stand": "2026-11-08T18:58:04+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
