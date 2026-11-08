@@ -1,48 +1,108 @@
 {
- "erzeugt": "2026-11-08T01:06:23+00:00",
+ "erzeugt": "2026-11-08T07:19:33+00:00",
  "kurse": {
-  "stand": "2026-11-08T01:06:23+00:00",
+  "stand": "2026-11-08T07:19:33+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 67924,
-    "aend24": -0.20811,
-    "aend7": -2.3434,
-    "aend1y": -26.6373,
-    "marktkap": 1365898144540,
-    "volumen": 9748592426
+    "preis": 67964,
+    "aend24": -0.25686,
+    "aend7": -2.709,
+    "aend1y": -25.9069,
+    "marktkap": 1366722328221,
+    "volumen": 9308438863
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2005.0,
-    "aend24": -0.20727,
-    "aend7": -0.8906,
-    "aend1y": -34.7989,
-    "marktkap": 245006800389,
-    "volumen": 3571380494
+    "preis": 2003.19,
+    "aend24": -0.51279,
+    "aend7": -1.6282,
+    "aend1y": -34.9428,
+    "marktkap": 244791328336,
+    "volumen": 3614797060
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 80.19,
-    "aend24": -0.93633,
-    "aend7": -6.3412,
-    "aend1y": -44.7306,
-    "marktkap": 47397389947,
-    "volumen": 747685046
+    "preis": 79.87,
+    "aend24": -1.22379,
+    "aend7": -6.9809,
+    "aend1y": -44.8081,
+    "marktkap": 47207197020,
+    "volumen": 752138694
    }
   ]
  },
  "news": {
-  "stand": "2026-11-08T01:06:27+00:00",
+  "stand": "2026-11-08T07:19:36+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Michael Saylor warnt: KI-Angriffe bedrohen Bitcoin nicht, aber Krypto-Börsen umso mehr",
+    "link": "https://www.btc-echo.de/news/michael-saylor-ki-bedroht-krypto-boersen-nicht-bitcoin-240574/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-08T07:00:00+00:00",
+    "text": "Cyberkriminelle erbeuten Milliarden bei Krypto-Börsen durch KI-gestützte Angriffe. Michael Saylor schlägt Alarm, aber verteidigt das Bitcoin-Netzwerk als solches gegen Kritik. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Cyberkriminelle erbeuten Milliarden bei Krypto-Börsen durch KI-gestützte Angriffe.",
+    "titel_de": "Michael Saylor warnt: KI-Angriffe bedrohen Bitcoin nicht, aber Krypto-Börsen umso mehr",
+    "kurz_de": "Cyberkriminelle erbeuten Milliarden bei Krypto-Börsen durch KI-gestützte Angriffe."
+   },
+   {
+    "titel": "Houthis say at least 33 killed in Saudi air strike",
+    "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T04:03:12+00:00",
+    "text": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
+   },
+   {
+    "titel": "Krypto-News: KI-Crash, Bitcoin-Grüße aus Moskau und Klingbeils neuer Überwachungsplan",
+    "link": "https://www.btc-echo.de/news/krypto-news-ki-crash-bitcoin-in-russland-und-klingsbeils-plan-240571/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-08T03:00:00+00:00",
+    "text": "Die \"Blaue Welle\" erschüttert KI-Aktien, die russische Zentralbank gibt grünes Licht für Bitcoin und das Bundesfinanzministerium strebt nach einer strengeren Überwachung von Anlegern – die Krypto-News der Woche. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Die \"Blaue Welle\" erschüttert KI-Aktien, die russische Zentralbank gibt grünes Licht für Bitcoin und das Bundesfinanzministerium strebt nach einer strengeren Überwachung von Anlegern – die Krypto-New…",
+    "titel_de": "Krypto-News: KI-Crash, Bitcoin-Grüße aus Moskau und Klingbeils neuer Überwachungsplan",
+    "kurz_de": "Die \"Blaue Welle\" erschüttert KI-Aktien, die russische Zentralbank gibt grünes Licht für Bitcoin und das Bundesfinanzministerium strebt nach einer strengeren Überwachung von Anlegern – die Krypto-New…"
+   },
+   {
+    "titel": "What we know so far after Krakow gun attack",
+    "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T01:47:41+00:00",
+    "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of the attacker.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of the attacker.",
+    "titel_de": "Was wir bisher nach dem Krakauer Schusswaffenangriff wissen",
+    "kurz_de": "Sechs Menschen wurden bei einer zufälligen Schießerei auf dem Hauptplatz der Stadt getötet, und drei Leichen wurden später in seinem Haus gefunden."
+   },
    {
     "titel": "Wars May Spur Faster Electrification",
     "link": "https://oilprice.com/Energy/Energy-General/Wars-May-Spur-Faster-Electrification.html",
@@ -73,22 +133,6 @@
     "kurz": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes."
    },
    {
-    "titel": "What we know so far after Krakow gun attack",
-    "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-07T22:58:49+00:00",
-    "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
-    "titel_de": "Was wir bisher nach dem Krakauer Schusswaffenangriff wissen",
-    "kurz_de": "Sechs Menschen wurden bei einer zufälligen Schießerei auf dem Hauptplatz der Stadt getötet, und drei Leichen wurden später in seinem Haus gefunden."
-   },
-   {
     "titel": "Israel's president tasks opposition leader Eisenkot with forming government",
     "link": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -113,6 +157,18 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Finland and the United States are exemplifying two opposing approaches to managing the mounting problem of spent nuclear fuel."
+   },
+   {
+    "titel": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
+    "link": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T21:36:16+00:00",
+    "text": "The national mood is low, and faith in politics even lower - with voters deserting the major parties at the polls.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The national mood is low, and faith in politics even lower - with voters deserting the major parties at the polls."
    },
    {
     "titel": "Egypt Eyes Billions in New Investment to Revive Oil and Gas Production",
@@ -226,20 +282,6 @@
     "kurz": "Treasury billed the move as part of its campaign against Iran, but the order rests on MEXC's alleged role in Russian illicit finance."
    },
    {
-    "titel": "Houthis say at least 25 killed in Saudi air strike",
-    "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-07T17:09:24+00:00",
-    "text": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
-   },
-   {
     "titel": "Apple Completes the Set: Every Magnificent Seven Stock Opts Out of OKX-ICE Venue",
     "link": "https://decrypt.co/382768/apple-meta-every-magnificent-seven-stock-opts-out-okx-ice-venue",
     "quelle": "Decrypt",
@@ -351,20 +393,6 @@
     "kurz": "Die Zahl junger Erwachsener ohne Berufsabschluss ist alarmierend.",
     "titel_de": "Millionen junge Menschen ohne Berufsausbildung in Deutschland",
     "kurz_de": "Die Zahl junger Erwachsener ohne Berufsabschluss ist alarmierend."
-   },
-   {
-    "titel": "No clear winner after tight New Zealand general election",
-    "link": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-07T15:56:28+00:00",
-    "text": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament."
    },
    {
     "titel": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
@@ -1264,37 +1292,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Coinbase, Robinhood and Circle are expanding into stablecoins, payments and prediction markets, but their latest earnings show how hard it is to escape crypto's boom-and-bust cycles."
-   },
-   {
-    "titel": "PM tells firms to publish salaries in job adverts ahead of new law",
-    "link": "https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-06T15:25:43+00:00",
-    "text": "The government argues the change will help jobseekers and could help to prevent pay discrimination.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "The government argues the change will help jobseekers and could help to prevent pay discrimination."
-   },
-   {
-    "titel": "New wave of bomb threats hit European airlines",
-    "link": "https://www.bbc.co.uk/news/articles/cq62yy064vjpo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T15:25:35+00:00",
-    "text": "No link has been established between the threats against the airlines and those against the media outlets.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "No link has been established between the threats against the airlines and those against the media outlets."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-08T01:06:39+00:00",
+  "stand": "2026-11-08T07:19:48+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
