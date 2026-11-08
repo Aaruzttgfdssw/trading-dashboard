@@ -1,55 +1,84 @@
 {
- "erzeugt": "2026-11-07T21:50:18+00:00",
+ "erzeugt": "2026-11-08T01:06:23+00:00",
  "kurse": {
-  "stand": "2026-11-07T21:50:19+00:00",
+  "stand": "2026-11-08T01:06:23+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 67841,
-    "aend24": -0.20752,
-    "aend7": -2.5085,
-    "aend1y": -26.8135,
-    "marktkap": 1364222227604,
-    "volumen": 10234984508
+    "preis": 67924,
+    "aend24": -0.20811,
+    "aend7": -2.3434,
+    "aend1y": -26.6373,
+    "marktkap": 1365898144540,
+    "volumen": 9748592426
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1998.08,
-    "aend24": -0.09728,
-    "aend7": -1.195,
-    "aend1y": -35.3752,
-    "marktkap": 244160564370,
-    "volumen": 4000209318
+    "preis": 2005.0,
+    "aend24": -0.20727,
+    "aend7": -0.8906,
+    "aend1y": -34.7989,
+    "marktkap": 245006800389,
+    "volumen": 3571380494
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 79.91,
-    "aend24": -1.10134,
-    "aend7": -7.1359,
-    "aend1y": -45.762,
-    "marktkap": 47230029842,
-    "volumen": 798498508
+    "preis": 80.19,
+    "aend24": -0.93633,
+    "aend7": -6.3412,
+    "aend1y": -44.7306,
+    "marktkap": 47397389947,
+    "volumen": 747685046
    }
   ]
  },
  "news": {
-  "stand": "2026-11-07T21:50:21+00:00",
+  "stand": "2026-11-08T01:06:27+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Wars May Spur Faster Electrification",
+    "link": "https://oilprice.com/Energy/Energy-General/Wars-May-Spur-Faster-Electrification.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-08T00:00:00+00:00",
+    "text": "The wars in Ukraine and the Middle East have prompted an increase in EV sales to avoid retail fuel inflation and gas demand destruction in favor of other power generation sources. With COP31 starting next week, some participants have signa…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 2,
+    "kurz": "The wars in Ukraine and the Middle East have prompted an increase in EV sales to avoid retail fuel inflation and gas demand destruction in favor of other power generation sources.",
+    "titel_de": "Kriege können zu einer schnelleren Elektrifizierung führen",
+    "kurz_de": "Die Kriege in der Ukraine und im Nahen Osten haben zu einem Anstieg der Verkäufe von Elektrofahrzeugen geführt, um eine Kraftstoffinflation im Einzelhandel und die Zerstörung der Gasnachfrage zugunsten anderer Stromerzeugungsquellen zu vermeiden."
+   },
+   {
+    "titel": "Labubu hype seemed unstoppable, now the fluffy monster mania is dying",
+    "link": "https://www.bbc.co.uk/news/articles/cmvg652l927lo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-07T23:02:35+00:00",
+    "text": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes."
+   },
    {
     "titel": "What we know so far after Krakow gun attack",
     "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-11-07T21:13:24+00:00",
+    "zeit": "2026-11-07T22:58:49+00:00",
     "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
     "tags": [
      "Krieg/Konflikt"
@@ -58,6 +87,32 @@
     "kurz": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
     "titel_de": "Was wir bisher nach dem Krakauer Schusswaffenangriff wissen",
     "kurz_de": "Sechs Menschen wurden bei einer zufälligen Schießerei auf dem Hauptplatz der Stadt getötet, und drei Leichen wurden später in seinem Haus gefunden."
+   },
+   {
+    "titel": "Israel's president tasks opposition leader Eisenkot with forming government",
+    "link": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T22:19:59+00:00",
+    "text": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election."
+   },
+   {
+    "titel": "The U.S. Has $50 Billion for Nuclear Waste and Nowhere to Put It",
+    "link": "https://oilprice.com/Alternative-Energy/Nuclear-Power/The-US-Has-50-Billion-for-Nuclear-Waste-and-Nowhere-to-Put-It.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-07T22:00:00+00:00",
+    "text": "Finland and the United States are exemplifying two opposing approaches to managing the mounting problem of spent nuclear fuel. Finland is about to open the world’s first permanent nuclear waste disposal facility. The United States is stuck…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Finland and the United States are exemplifying two opposing approaches to managing the mounting problem of spent nuclear fuel."
    },
    {
     "titel": "Egypt Eyes Billions in New Investment to Revive Oil and Gas Production",
@@ -104,13 +159,13 @@
     "bereich": "Welt",
     "sprache": "en",
     "zeit": "2026-11-07T18:14:38+00:00",
-    "text": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities.",
+    "text": "Donald Trump has repeatedly raised the prospect of renewing strikes against Iran's nuclear facilities.",
     "tags": [
      "Prominente",
      "Krieg/Konflikt"
     ],
     "wichtig": 2,
-    "kurz": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities.",
+    "kurz": "Donald Trump has repeatedly raised the prospect of renewing strikes against Iran's nuclear facilities.",
     "titel_de": "Die USA bieten eine Belohnung von 20 Mio. $ für Informationen über das iranische Atomprogramm",
     "kurz_de": "Donald Trump hat wiederholt die Aussicht auf erneute Angriffe auf die iranischen Atomanlagen angesprochen."
    },
@@ -1235,66 +1290,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "No link has been established between the threats against the airlines and those against the media outlets."
-   },
-   {
-    "titel": "Watch: Is it the end of the road for Tesla's Cybertruck?",
-    "link": "https://www.bbc.co.uk/news/videos/cv8ezz9ll7nyo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T15:02:03+00:00",
-    "text": "The car company's CEO Elon Musk has said production will halt in Texas, to focus on the firm's self-driving Cybercabs.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 0,
-    "kurz": "The car company's CEO Elon Musk has said production will halt in Texas, to focus on the firm's self-driving Cybercabs."
-   },
-   {
-    "titel": "Trump’s Iran Strategy Reaches a Critical Crossroads After Midterm Defeat",
-    "link": "https://oilprice.com/Geopolitics/Middle-East/Trumps-Iran-Strategy-Reaches-a-Critical-Crossroads-After-Midterm-Defeat.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-06T15:00:00+00:00",
-    "text": "President Donald Trump spent the final weeks of the US midterm campaign predicting that the war with Iran would end \"right after the election.\" With the votes now in, his Republican Party is reeling from losing both chambers of Congress in…",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 3,
-    "kurz": "President Donald Trump spent the final weeks of the US midterm campaign predicting that the war with Iran would end \"right after the election.\" With the votes now in, his Republican Party is reeling…"
-   },
-   {
-    "titel": "Kenyan doomsday cult leader given life sentence for murdering 191 people",
-    "link": "https://www.bbc.co.uk/news/articles/cm5yne5984l0o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-06T14:46:03+00:00",
-    "text": "Paul Mackenzie ordered his followers to starve their children to death in a forest so they could \"meet Jesus\".",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Paul Mackenzie ordered his followers to starve their children to death in a forest so they could \"meet Jesus\"."
-   },
-   {
-    "titel": "Über vier Millionen Krypto-Zugänge kompromittiert – Binance ist kein Einzelfall",
-    "link": "https://www.btc-echo.de/news/millionen-krypto-zugange-kompromittiert-binance-ist-kein-einzelfall-240530/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-06T14:45:03+00:00",
-    "text": "Fast 12.000 gefälschte Internetadressen geben sich als bekannte Krypto-Marken aus. Doch auch manch offizielle Startseite zeigt Lücken. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Fast 12.000 gefälschte Internetadressen geben sich als bekannte Krypto-Marken aus.",
-    "titel_de": "Über vier Millionen Krypto-Zugänge kompromittiert – Binance ist kein Einzelfall",
-    "kurz_de": "Fast 12.000 gefälschte Internetadressen geben sich als bekannte Krypto-Marken aus."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-07T21:50:31+00:00",
+  "stand": "2026-11-08T01:06:39+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
