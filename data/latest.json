@@ -1,48 +1,120 @@
 {
- "erzeugt": "2026-11-08T18:57:48+00:00",
+ "erzeugt": "2026-11-08T22:44:10+00:00",
  "kurse": {
-  "stand": "2026-11-08T18:57:48+00:00",
+  "stand": "2026-11-08T22:44:11+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 68128,
-    "aend24": 0.24218,
-    "aend7": -3.0369,
-    "aend1y": -25.6381,
-    "marktkap": 1370028711698,
-    "volumen": 9652682424
+    "preis": 66730,
+    "aend24": -1.69274,
+    "aend7": -4.8878,
+    "aend1y": -27.4495,
+    "marktkap": 1341921784113,
+    "volumen": 12964425514
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 2006.12,
-    "aend24": 0.03801,
-    "aend7": -1.721,
-    "aend1y": -33.7958,
-    "marktkap": 245150081417,
-    "volumen": 3466236089
+    "preis": 1904.99,
+    "aend24": -4.81215,
+    "aend7": -6.0909,
+    "aend1y": -37.4674,
+    "marktkap": 232791500871,
+    "volumen": 6079526348
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 80.36,
-    "aend24": -0.16691,
-    "aend7": -5.9238,
-    "aend1y": -43.1037,
-    "marktkap": 47501755765,
-    "volumen": 839726327
+    "preis": 77.07,
+    "aend24": -3.69586,
+    "aend7": -9.1019,
+    "aend1y": -45.6481,
+    "marktkap": 45556627974,
+    "volumen": 1384996386
    }
   ]
  },
  "news": {
-  "stand": "2026-11-08T18:57:51+00:00",
+  "stand": "2026-11-08T22:44:13+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Doctor who treated victims of Krakow shooting speaks to the BBC",
+    "link": "https://www.bbc.co.uk/news/videos/c63elgqqz5y0o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T22:05:12+00:00",
+    "text": "Two doctors were eating near the city's Main Market Square when a gunman began firing at random.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Two doctors were eating near the city's Main Market Square when a gunman began firing at random."
+   },
+   {
+    "titel": "Democratic Win Set to Reshuffle U.S. Energy Policy",
+    "link": "https://oilprice.com/Energy/Energy-General/Democratic-Win-Set-to-Reshuffle-US-Energy-Policy.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-08T22:00:00+00:00",
+    "text": "The blue wave in the midterm elections that will put Democrats in charge of the House and Senate could reshape U.S. energy policies. Democrats in charge of both chambers of Congress and its key committees, Democratic governors in key data-…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The blue wave in the midterm elections that will put Democrats in charge of the House and Senate could reshape U.S."
+   },
+   {
+    "titel": "The Global Race to Harness Solar Power From Space",
+    "link": "https://oilprice.com/Energy/Energy-General/The-Global-Race-to-Harness-Solar-Power-From-Space.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-08T20:00:00+00:00",
+    "text": "Several countries around the globe are racing to develop space-based solar power (SBSP) systems to harness solar power from space. On Earth, solar power has become a popular form of renewable energy production. However, tapping solar power…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Several countries around the globe are racing to develop space-based solar power (SBSP) systems to harness solar power from space."
+   },
+   {
+    "titel": "Seven dead and more than 100 injured after trains collide in Egypt",
+    "link": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T19:58:02+00:00",
+    "text": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza."
+   },
+   {
+    "titel": "What the election results mean for crypto: State of Crypto",
+    "link": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-08T19:30:00+00:00",
+    "text": "Democrats had an astoundingly good night, smashing all expectations. Is that actually bad news for the industry?",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Democrats had an astoundingly good night, smashing all expectations."
+   },
+   {
+    "titel": "Stablecoin growth has stalled. The payments boom hasn't",
+    "link": "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-08T19:16:42+00:00",
+    "text": "Stablecoin supply has barely grown this year, even as payments using the tokens surge. Circle's latest earnings offer another example of the divergence between dollars outstanding and activity on blockchain networks.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Stablecoin supply has barely grown this year, even as payments using the tokens surge."
+   },
    {
     "titel": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
     "link": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss",
@@ -68,7 +140,9 @@
      "KI/Chips"
     ],
     "wichtig": 2,
-    "kurz": "Artificial intelligence companies are deepening their ties with the fossil fuel industries as some of the biggest names in the tech world make massive deals with energy companies, both to power their…"
+    "kurz": "Artificial intelligence companies are deepening their ties with the fossil fuel industries as some of the biggest names in the tech world make massive deals with energy companies, both to power their…",
+    "titel_de": "Wie Big Oil zum Lieblingskunden der KI-Branche wurde",
+    "kurz_de": "Unternehmen für künstliche Intelligenz vertiefen ihre Beziehungen zur fossilen Brennstoffindustrie, da einige der größten Namen der Tech-Welt massive Geschäfte mit Energieunternehmen abschließen, um ihre..."
    },
    {
     "titel": "Bitcoin-Prognose 2040: So hoch steigt der BTC-Kurs laut den Experten",
@@ -85,28 +159,16 @@
     "kurz_de": "Der Bitcoin-Kurs mag kurzfristig erneut unter 80.000 US-Dollar korrigieren, aber wie verändert die Kryptowährung unsere Welt bis zum Jahr 2040?"
    },
    {
-    "titel": "Seven dead and more than 100 injured after trains collide in Egypt",
-    "link": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-08T17:35:13+00:00",
-    "text": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza."
-   },
-   {
     "titel": "Footage shows derailed carriages after fatal train crash in Egypt",
     "link": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
     "zeit": "2026-11-08T16:05:57+00:00",
-    "text": "It is yet unclear what caused the accident but Egyptian President Abdel Fattah al-Sisi said an investigation is underway and will \"hold accountable anyone who proves their negligence\".",
+    "text": "At least seven people died when two trains collided, causing several carriages to derail and fall down an embankment.",
     "tags": [],
     "wichtig": 1,
-    "kurz": "It is yet unclear what caused the accident but Egyptian President Abdel Fattah al-Sisi said an investigation is underway and will \"hold accountable anyone who proves their negligence\"."
+    "kurz": "At least seven people died when two trains collided, causing several carriages to derail and fall down an embankment."
    },
    {
     "titel": "How New York Plans to Turn Waste Heat Into Clean Energy",
@@ -1009,18 +1071,6 @@
     "kurz": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions."
    },
    {
-    "titel": "This man refused life-saving treatment because of his religion - days later the rules changed",
-    "link": "https://www.bbc.co.uk/news/articles/cx5ynly549njo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-07T01:27:47+00:00",
-    "text": "Jehovah's Witness leaders relaxed strict rules on blood transfusions, but the change came 23 days too late for Isaac Valdez.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Jehovah's Witness leaders relaxed strict rules on blood transfusions, but the change came 23 days too late for Isaac Valdez."
-   },
-   {
     "titel": "Wall Street’s “Energy Transition” Funds Are Packed With Natural Gas",
     "link": "https://oilprice.com/Energy/Natural-Gas/Wall-Streets-Energy-Transition-Funds-Are-Packed-With-Natural-Gas.html",
     "quelle": "OilPrice",
@@ -1221,75 +1271,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "For much of the past decade, energy debates often pitted fossil fuels against clean energy."
-   },
-   {
-    "titel": "Wirtschaft vor acht vom 06.11.2026",
-    "link": "https://www.tagesschau.de/video/video-1679460.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-06T18:51:48+00:00",
-    "text": "Wirtschaft vor acht vom 06.11.2026",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Wirtschaft vor acht vom 06.11.2026",
-    "titel_de": "Wirtschaft vor acht vom 06.11.2026",
-    "kurz_de": "Wirtschaft vor acht vom 06.11.2026"
-   },
-   {
-    "titel": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout",
-    "link": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T18:47:45+00:00",
-    "text": "The rules allow retail investors to trade BTC, ETH and USDT through regulated intermediaries, with Moscow Exchange planning to launch crypto trading in December.",
-    "tags": [
-     "Regulierung",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "The rules allow retail investors to trade BTC, ETH and USDT through regulated intermediaries, with Moscow Exchange planning to launch crypto trading in December.",
-    "titel_de": "Russland schließt Krypto-Handelsregeln vor dem Rollout am 17. November ab",
-    "kurz_de": "Die Regeln ermöglichen es Kleinanlegern, BTC, ETH und USDT über regulierte Vermittler zu handeln, wobei die Moskauer Börse plant, im Dezember mit dem Kryptohandel zu beginnen."
-   },
-   {
-    "titel": "Bitcoin ETFs Bleed $430 Million as Tech Rout Tests Wall Street Buyers",
-    "link": "https://decrypt.co/382733/bitcoin-etfs-bleed-430-million-tech-rout-tests-wall-street",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T18:36:03+00:00",
-    "text": "Fidelity and BlackRock led Thursday's Bitcoin ETF withdrawals as a technology-stock selloff rattled risk assets.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 2,
-    "kurz": "Fidelity and BlackRock led Thursday's Bitcoin ETF withdrawals as a technology-stock selloff rattled risk assets.",
-    "titel_de": "Bitcoin-ETFs bluten 430 Millionen $, da Tech-Route Wall-Street-Käufer testet",
-    "kurz_de": "Fidelity und BlackRock führten die Bitcoin-ETF-Abhebungen am Donnerstag als rasselnde risikoreiche Vermögenswerte für den Ausverkauf von Technologieaktien an."
-   },
-   {
-    "titel": "Why the US midterms sparked an AI stock selloff",
-    "link": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-06T18:32:16+00:00",
-    "text": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
-    "tags": [
-     "Regulierung",
-     "KI/Chips"
-    ],
-    "wichtig": 2,
-    "kurz": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
-    "titel_de": "Warum die Midterms in den USA einen Ausverkauf von KI-Aktien auslösten",
-    "kurz_de": "Die Angst vor mehr KI-Regulierung scheint bei Investoren Angst ausgelöst zu haben, aber die Besorgnis über die Branche wächst seit einiger Zeit."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-08T18:58:04+00:00",
+  "stand": "2026-11-08T22:44:26+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
