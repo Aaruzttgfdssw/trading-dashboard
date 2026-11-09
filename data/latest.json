@@ -1,50 +1,116 @@
 {
- "erzeugt": "2026-11-08T22:44:10+00:00",
+ "erzeugt": "2026-11-09T02:02:18+00:00",
  "kurse": {
-  "stand": "2026-11-08T22:44:11+00:00",
+  "stand": "2026-11-09T02:02:18+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 66730,
-    "aend24": -1.69274,
-    "aend7": -4.8878,
-    "aend1y": -27.4495,
-    "marktkap": 1341921784113,
-    "volumen": 12964425514
+    "preis": 67297,
+    "aend24": -0.84615,
+    "aend7": -3.7998,
+    "aend1y": -26.2138,
+    "marktkap": 1353469057618,
+    "volumen": 16768740594
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1904.99,
-    "aend24": -4.81215,
-    "aend7": -6.0909,
-    "aend1y": -37.4674,
-    "marktkap": 232791500871,
-    "volumen": 6079526348
+    "preis": 1918.02,
+    "aend24": -4.16803,
+    "aend7": -5.7202,
+    "aend1y": -36.7477,
+    "marktkap": 234411818329,
+    "volumen": 8350988470
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 77.07,
-    "aend24": -3.69586,
-    "aend7": -9.1019,
-    "aend1y": -45.6481,
-    "marktkap": 45556627974,
-    "volumen": 1384996386
+    "preis": 78.59,
+    "aend24": -1.58285,
+    "aend7": -6.659,
+    "aend1y": -44.0496,
+    "marktkap": 46465830407,
+    "volumen": 1750875039
    }
   ]
  },
  "news": {
-  "stand": "2026-11-08T22:44:13+00:00",
+  "stand": "2026-11-09T02:02:21+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
    {
-    "titel": "Doctor who treated victims of Krakow shooting speaks to the BBC",
+    "titel": "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
+    "link": "https://www.bbc.co.uk/news/articles/c3dxw10rjn9no?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-09T00:50:06+00:00",
+    "text": "Jensen Huang also admitted to having been \"unfaithful\" to his wife and says he will cooperate with a security investigation.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "Jensen Huang also admitted to having been \"unfaithful\" to his wife and says he will cooperate with a security investigation."
+   },
+   {
+    "titel": "Doing these things now will help you save money at Christmas",
+    "link": "https://www.bbc.co.uk/news/articles/ck7vppll151mo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-09T00:09:14+00:00",
+    "text": "Small decisions made now can make a big difference to your festive finances, charities say, so here are some tips.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Small decisions made now can make a big difference to your festive finances, charities say, so here are some tips."
+   },
+   {
+    "titel": "Iraq’s 5 Million Bpd Oil Claim Complicates Its OPEC Quota Push",
+    "link": "https://oilprice.com/Energy/Crude-Oil/Iraqs-5-Million-Bpd-Oil-Claim-Complicates-Its-OPEC-Quota-Push.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-09T00:00:00+00:00",
+    "text": "Iraq's campaign for a larger OPEC production allocation has taken a complicated turn after Oil Minister Basim Mohammed Khudair said the country is already producing more than 5 million barrels per day, more than half a million barrels abov…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Iraq's campaign for a larger OPEC production allocation has taken a complicated turn after Oil Minister Basim Mohammed Khudair said the country is already producing more than 5 million barrels per da…",
+    "titel_de": "Iraks 5-Millionen-Bpd-Ölanspruch erschwert den OPEC-Quotenschub",
+    "kurz_de": "Iraks Kampagne für eine größere OPEC-Produktionszuteilung hat eine komplizierte Wendung genommen, nachdem Ölminister Basim Mohammed Khudair sagte, das Land produziere bereits mehr als 5 Millionen Barrel pro Tag..."
+   },
+   {
+    "titel": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+    "link": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T23:34:18+00:00",
+    "text": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more."
+   },
+   {
+    "titel": "Vitalik ‘pivots’ ETH to store of value, crypto suffers after US midterms: Hodler’s Digest",
+    "link": "https://cointelegraph.com/magazine/vitaliks-pivots-to-eth-as-a-store-of-value-us-election-weighs-on-crypto-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-08T22:59:06+00:00",
+    "text": "Vitalik Buterin wants Ethereum to embrace a store of value narrative, upsetting Bitcoin maxis. The crypto industry faces an uncertain future following the US elections.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Vitalik Buterin wants Ethereum to embrace a store of value narrative, upsetting Bitcoin maxis."
+   },
+   {
+    "titel": "'I treat all these people like they are victims', says doctor who treated Krakow shooting suspect",
     "link": "https://www.bbc.co.uk/news/videos/c63elgqqz5y0o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
@@ -66,6 +132,20 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The blue wave in the midterm elections that will put Democrats in charge of the House and Senate could reshape U.S."
+   },
+   {
+    "titel": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
+    "link": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-08T21:37:36+00:00",
+    "text": "Footage authenticated by BBC Verify shows damage to the building in the capital's central financial district.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Footage authenticated by BBC Verify shows damage to the building in the capital's central financial district."
    },
    {
     "titel": "The Global Race to Harness Solar Power From Space",
@@ -114,18 +194,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Stablecoin supply has barely grown this year, even as payments using the tokens surge."
-   },
-   {
-    "titel": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
-    "link": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-08T18:22:53+00:00",
-    "text": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more."
    },
    {
     "titel": "How Big Oil Became the AI Industry's Favorite Customer",
@@ -460,20 +528,6 @@
     "kurz": "Cyberkriminelle erbeuten Milliarden bei Krypto-Börsen durch KI-gestützte Angriffe.",
     "titel_de": "Michael Saylor warnt: KI-Angriffe bedrohen Bitcoin nicht, aber Krypto-Börsen umso mehr",
     "kurz_de": "Cyberkriminelle erbeuten Milliarden bei Krypto-Börsen durch KI-gestützte Angriffe."
-   },
-   {
-    "titel": "Houthis say at least 33 killed in Saudi air strike",
-    "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-08T04:03:12+00:00",
-    "text": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
    },
    {
     "titel": "Krypto-News: KI-Crash, Bitcoin-Grüße aus Moskau und Klingbeils neuer Überwachungsplan",
@@ -1071,6 +1125,18 @@
     "kurz": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions."
    },
    {
+    "titel": "This man refused life-saving treatment because of his religion - days later the rules changed",
+    "link": "https://www.bbc.co.uk/news/articles/cx5ynly549njo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-07T01:27:47+00:00",
+    "text": "Jehovah's Witness leaders relaxed strict rules on blood transfusions, but the change came 23 days too late for Isaac Valdez.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Jehovah's Witness leaders relaxed strict rules on blood transfusions, but the change came 23 days too late for Isaac Valdez."
+   },
+   {
     "titel": "Wall Street’s “Energy Transition” Funds Are Packed With Natural Gas",
     "link": "https://oilprice.com/Energy/Natural-Gas/Wall-Streets-Energy-Transition-Funds-Are-Packed-With-Natural-Gas.html",
     "quelle": "OilPrice",
@@ -1209,73 +1275,11 @@
     "kurz": "Some of the world's biggest oil traders are asking Washington for permission to put sanctioned tankers back to work, as a global vessel shortage pushes oil transportation costs to extraordinary level…",
     "titel_de": "Ölhändler wollen, dass die USA sanktionierte Tanker freigeben, da die Frachtkosten steigen",
     "kurz_de": "Einige der größten Ölhändler der Welt bitten Washington um die Erlaubnis, sanktionierte Tanker wieder in Betrieb zu nehmen, da ein globaler Schiffsmangel die Öltransportkosten auf ein außergewöhnliches Niveau treibt..."
-   },
-   {
-    "titel": "Apple, Meta reject OKX–ICE tokenized stock plans, leaving crypto firms as the ones to watch",
-    "link": "https://www.coindesk.com/policy/2026/11/06/apple-meta-reject-okx-ice-tokenized-stock-plans-leaving-crypto-firms-as-the-ones-to-watch",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T20:09:18+00:00",
-    "text": "Strategy, Coinbase, Circle and Robinhood are among six companies from the venture’s initial selection with no disclosed objection, after 90% of issuers opted out.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Strategy, Coinbase, Circle and Robinhood are among six companies from the venture’s initial selection with no disclosed objection, after 90% of issuers opted out."
-   },
-   {
-    "titel": "US 401(k) proposal leaves door open to altcoins, but hurdles remain",
-    "link": "https://cointelegraph.com/news/us-401k-proposal-leaves-door-open-altcoins-hurdles?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T20:04:27+00:00",
-    "text": "While the proposal doesn’t exclude altcoins and smaller cryptocurrencies, experts say they could face challenges getting into retirement plans.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "While the proposal doesn’t exclude altcoins and smaller cryptocurrencies, experts say they could face challenges getting into retirement plans."
-   },
-   {
-    "titel": "Why a Hyperliquid Treasury Firm Wants to Become a US Futures Broker",
-    "link": "https://decrypt.co/382754/why-hyperliquid-treasury-wants-us-futures-broker",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T19:46:03+00:00",
-    "text": "Hyperliquid Strategies has applied to become a U.S. futures commission merchant, a move that could let Americans trade perpetual futures on permissioned Hyperliquid markets, pending regulatory approval.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Hyperliquid Strategies has applied to become a U.S."
-   },
-   {
-    "titel": "Paraguay Protests Over Bank Lockout Intensify as Impeachment Vote Nears",
-    "link": "https://decrypt.co/382740/paraguay-protests-bitcoin-impeachment-vote-nears",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-06T19:16:03+00:00",
-    "text": "Savers locked out of Ueno Bank burned their cards, booed a former presidential candidate out of the crowd, and watched Congress move to remove President Peña.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Savers locked out of Ueno Bank burned their cards, booed a former presidential candidate out of the crowd, and watched Congress move to remove President Peña."
-   },
-   {
-    "titel": "Energy Reliability Is Becoming More Important Than Energy Politics",
-    "link": "https://oilprice.com/Energy/Energy-General/Energy-Reliability-Is-Becoming-More-Important-Than-Energy-Politics.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-06T19:00:00+00:00",
-    "text": "For much of the past decade, energy debates often pitted fossil fuels against clean energy. Governments announced dates for phasing out technologies, investors tried to anticipate which industries would lose favor, and energy policy increa…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "For much of the past decade, energy debates often pitted fossil fuels against clean energy."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-08T22:44:26+00:00",
+  "stand": "2026-11-09T02:02:31+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
