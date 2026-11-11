@@ -1,48 +1,223 @@
 {
- "erzeugt": "2026-11-10T23:39:31+00:00",
+ "erzeugt": "2026-11-11T03:03:09+00:00",
  "kurse": {
-  "stand": "2026-11-10T23:39:31+00:00",
+  "stand": "2026-11-11T03:03:09+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 65952,
-    "aend24": -1.47836,
-    "aend7": -5.4051,
-    "aend1y": -30.2995,
-    "marktkap": 1326313334367,
-    "volumen": 27331202035
+    "preis": 65877,
+    "aend24": -1.14089,
+    "aend7": -4.3374,
+    "aend1y": -30.6711,
+    "marktkap": 1324440033431,
+    "volumen": 28455738655
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1834.5,
-    "aend24": -3.34035,
-    "aend7": -10.7418,
-    "aend1y": -42.2904,
-    "marktkap": 224188303618,
-    "volumen": 12267250326
+    "preis": 1841.56,
+    "aend24": -2.58135,
+    "aend7": -9.0681,
+    "aend1y": -42.5577,
+    "marktkap": 225003415195,
+    "volumen": 12582984879
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 74.41,
-    "aend24": -3.43265,
-    "aend7": -11.4928,
-    "aend1y": -49.9524,
-    "marktkap": 43993810451,
-    "volumen": 2564218397
+    "preis": 74.42,
+    "aend24": -3.03123,
+    "aend7": -9.4406,
+    "aend1y": -50.3653,
+    "marktkap": 44008573707,
+    "volumen": 2709779778
    }
   ]
  },
  "news": {
-  "stand": "2026-11-10T23:39:35+00:00",
+  "stand": "2026-11-11T03:03:12+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Bitcoin vor der Trendwende? Gefährliche Warnsignale und ein Funken Hoffnung",
+    "link": "https://www.btc-echo.de/news/bitcoin-vor-der-trendwende-gefaehrliche-warnsignale-und-ein-funken-hoffnung-240679/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T03:00:00+00:00",
+    "text": "Der Kursrutsch setzt Bitcoin-Anleger und Miner zunehmend unter Druck. Einige Großinvestoren nutzen die Schwäche jedoch für Zukäufe und wecken damit Hoffnung auf eine Trendwende. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Der Kursrutsch setzt Bitcoin-Anleger und Miner zunehmend unter Druck.",
+    "titel_de": "Bitcoin vor der Trendwende? Gefährliche Warnsignale und ein Funken Hoffnung",
+    "kurz_de": "Der Kursrutsch setzt Bitcoin-Anleger und Miner zunehmend unter Druck."
+   },
+   {
+    "titel": "Headquarters of Haitian gang destroyed, El Salvador's president says",
+    "link": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T02:47:59+00:00",
+    "text": "The infamous 400 Mawozo gang was targeted by the El Salvador military which has deployed thousands of troops to combat Haiti's gang violence crisis.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "The infamous 400 Mawozo gang was targeted by the El Salvador military which has deployed thousands of troops to combat Haiti's gang violence crisis."
+   },
+   {
+    "titel": "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
+    "link": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T02:41:16+00:00",
+    "text": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material."
+   },
+   {
+    "titel": "LNbits rushes emergency patch after reported Bitcoin wallet thefts",
+    "link": "https://cointelegraph.com/news/lnbits-rushes-emergency-patch-after-reported-bitcoin-wallet-thefts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T01:16:58+00:00",
+    "text": "The project warned that installations running older versions were vulnerable and urged operators to replace potentially exposed credentials even after upgrading.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "The project warned that installations running older versions were vulnerable and urged operators to replace potentially exposed credentials even after upgrading."
+   },
+   {
+    "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
+    "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T01:14:40+00:00",
+    "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year."
+   },
+   {
+    "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+    "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T01:01:20+00:00",
+    "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
+    "titel_de": "Drei vom Iran unterstützte Verdächtige planten Angriffe, einschließlich des RAF Fairford-Vorfalls, sagen die USA",
+    "kurz_de": "Das US-Justizministerium sagt, dass die Männer in eine Reihe von Anschlägen verwickelt waren, darunter ein schwerer Vorfall in der Nähe des britischen Luftwaffenstützpunkts, der von den US-Streitkräften genutzt wird."
+   },
+   {
+    "titel": "Middle East Oil Flows Far from Normal Despite Signs of Oversupply",
+    "link": "https://oilprice.com/Energy/Crude-Oil/Middle-East-Oil-Flows-Far-from-Normal-Despite-Signs-of-Oversupply.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T01:00:00+00:00",
+    "text": "Crude oil flows through the Strait of Hormuz and the whole Middle Eastern region have recovered to close to pre-war levels, vessel-tracking services have been signaling for over a month now. Middle Eastern benchmarks have been weakening fo…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Crude oil flows through the Strait of Hormuz and the whole Middle Eastern region have recovered to close to pre-war levels, vessel-tracking services have been signaling for over a month now.",
+    "titel_de": "Öl aus dem Nahen Osten fließt trotz Anzeichen von Überversorgung bei weitem nicht normal",
+    "kurz_de": "Rohölströme durch die Straße von Hormus und die gesamte Region des Nahen Ostens haben sich auf Vorkriegsniveau erholt, Schiffsverfolgungsdienste signalisieren seit über einem Monat."
+   },
+   {
+    "titel": "Robot vessels take on the dangerous work of mine hunting",
+    "link": "https://www.bbc.co.uk/news/articles/cj5yn24llxd6o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-11T00:19:13+00:00",
+    "text": "The conflict in the Gulf is an opportunity for the US to test its autonomous mine-hunting systems.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The conflict in the Gulf is an opportunity for the US to test its autonomous mine-hunting systems."
+   },
+   {
+    "titel": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
+    "link": "https://www.bbc.co.uk/news/articles/c8wy9y37z30vo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T00:18:07+00:00",
+    "text": "Forecasters warn that this year's El Niño could be one of the strongest on record, with heavy rain and flooding in Kenya.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Forecasters warn that this year's El Niño could be one of the strongest on record, with heavy rain and flooding in Kenya."
+   },
+   {
+    "titel": "Stickers and building sets help drive toy sales ahead of Christmas rush",
+    "link": "https://www.bbc.co.uk/news/articles/cx5ynyg6j375o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-11T00:16:44+00:00",
+    "text": "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity."
+   },
+   {
+    "titel": "Poundland hopeful for last-minute rescue deal to stave off collapse",
+    "link": "https://www.bbc.co.uk/news/articles/c3702jjkez4ko?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-11T00:02:07+00:00",
+    "text": "The BBC understands the discount chain, which has been edging towards administration, will be given more time to find a buyer.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The BBC understands the discount chain, which has been edging towards administration, will be given more time to find a buyer."
+   },
+   {
+    "titel": "South Sudan Courts Oil Investors as Sudan’s Warring Forces Take Their Share",
+    "link": "https://oilprice.com/Energy/Crude-Oil/South-Sudan-Courts-Oil-Investors-as-Sudans-Warring-Forces-Take-Their-Share.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T00:00:00+00:00",
+    "text": "South Sudan is courting fresh capital for 14 exploration blocks and a production increase from roughly 170,000 barrels per day to 230,000, which investors would find impossible to control once those barrels left the country. Captive to nei…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "South Sudan is courting fresh capital for 14 exploration blocks and a production increase from roughly 170,000 barrels per day to 230,000, which investors would find impossible to control once those…"
+   },
+   {
+    "titel": "CFTC warns Kalshi of imminent charges over notification of contracts: Politico",
+    "link": "https://cointelegraph.com/news/cftc-warns-kalshi-imminent-charges-over-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-10T23:49:51+00:00",
+    "text": "The prediction markets operator says the issue involves procedural errors affecting a handful of contracts, many of which weren’t live, according to Politico.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "The prediction markets operator says the issue involves procedural errors affecting a handful of contracts, many of which weren’t live, according to Politico."
+   },
    {
     "titel": "Global banks commit $270M to stablecoin venture targeting 2027 launch",
     "link": "https://cointelegraph.com/news/banks-270m-project-faro-stablecoin-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -101,18 +276,6 @@
     ],
     "wichtig": 1,
     "kurz": "The Bitcoin miner says its Boden facility could generate $45 million annually, but a June letter of intent remains nonbinding as executives negotiate financing and customer protections for the projec…"
-   },
-   {
-    "titel": "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
-    "link": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T22:17:45+00:00",
-    "text": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material."
    },
    {
     "titel": "Here’s what happened in crypto today",
@@ -322,6 +485,20 @@
     ],
     "wichtig": 1,
     "kurz": "The Plume affiliate plans to offer tokenized US stocks, ETFs and bonds through self-custodial wallets, with traditional shareholder rights preserved."
+   },
+   {
+    "titel": "US Army soldier suspected of spying for Russia arrested in UK",
+    "link": "https://www.bbc.co.uk/news/articles/c6d7q77xgw0vo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-10T20:20:04+00:00",
+    "text": "The 41-year-old senior soldier is accused of national security offences and is being questioned in London.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The 41-year-old senior soldier is accused of national security offences and is being questioned in London."
    },
    {
     "titel": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
@@ -968,21 +1145,6 @@
     "kurz": "After fading into the background when the war with Iran began, the US diplomatic push to end Russia’s invasion of Ukraine is intensifying again, with the first US-Ukraine-Russia talks since February…"
    },
    {
-    "titel": "Iran War Set to Drive A Drop in Global Fossil Fuel Emissions in 2026",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Drive-A-Drop-in-Global-Fossil-Fuel-Emissions-in-2026.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T14:30:00+00:00",
-    "text": "Global carbon dioxide emissions from fossil fuels are expected to drop by 0.4% in 2026 from a year earlier, due to the oil shock from the Iran war and increased solar and wind power generation, new research by the Global Carbon Project sho…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Global carbon dioxide emissions from fossil fuels are expected to drop by 0.4% in 2026 from a year earlier, due to the oil shock from the Iran war and increased solar and wind power generation, new r…"
-   },
-   {
     "titel": "Anthropic Sets IPO Price Range at $70 to $78, Valuing Company at Up to $1.4 Trillion",
     "link": "https://decrypt.co/382939/anthropic-sets-ipo-price-range-at-70-to-78-valuing-company-at-up-to-1-4-trillion",
     "quelle": "Decrypt",
@@ -1124,21 +1286,6 @@
     "kurz": "Bitcoin Opportunity Fund co-founder Mark Moss says that with banks and ETFs widening access to Bitcoin he expects a new record high in 2027."
    },
    {
-    "titel": "Tribunal Hearings Begin in UK-Argentina Row Over Falklands Oil Project",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Tribunal-Hearings-Begin-in-UK-Argentina-Row-Over-Falklands-Oil-Project.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T13:30:00+00:00",
-    "text": "The Hamburg-based International Tribunal for the Law of the Sea on Tuesday begins hearings of Argentina’s complaint about the UK’s oil drilling project north of the Falkland Islands, which Argentinian President Javier Milei claims is unlaw…",
-    "tags": [
-     "Regulierung",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "The Hamburg-based International Tribunal for the Law of the Sea on Tuesday begins hearings of Argentina’s complaint about the UK’s oil drilling project north of the Falkland Islands, which Argentinia…"
-   },
-   {
     "titel": "Morning Minute: Vitalik Recasts ETH as a Store of Value",
     "link": "https://decrypt.co/382931/morning-minute-vitalik-recasts-eth-as-a-store-of-value",
     "quelle": "Decrypt",
@@ -1149,161 +1296,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "It’s a big shift for Ethereum from the “ultrasound money” days."
-   },
-   {
-    "titel": "French wartime resistance heroine Solange Alexandre dies aged 104",
-    "link": "https://www.bbc.co.uk/news/articles/cjdx3x7wg941o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T13:23:54+00:00",
-    "text": "With 30 men under her orders, she organised sabotage operations, sheltered Allied airmen and joined the fight against the occupying German forces.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "With 30 men under her orders, she organised sabotage operations, sheltered Allied airmen and joined the fight against the occupying German forces."
-   },
-   {
-    "titel": "California police investigate after 27 fall ill at half-marathon running event",
-    "link": "https://www.bbc.co.uk/news/articles/cq0ldlyd556go?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T13:22:12+00:00",
-    "text": "A local hospital says runners had \"unusual\" symptoms after racing on an atypically hot day.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "A local hospital says runners had \"unusual\" symptoms after racing on an atypically hot day."
-   },
-   {
-    "titel": "Bitcoin may benefit as global tightening slows, Binance Research says",
-    "link": "https://cointelegraph.com/markets/bitcoin-price-global-tightening-binance-research?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T13:15:59+00:00",
-    "text": "Binance Research says Bitcoin could find support as global monetary tightening slows, even as markets price in a December Fed rate hike.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 1,
-    "kurz": "Binance Research says Bitcoin could find support as global monetary tightening slows, even as markets price in a December Fed rate hike."
-   },
-   {
-    "titel": "Krypto-Hype bei Telegram: Warum GRAM jetzt an einer entscheidenden Marke steht",
-    "link": "https://www.btc-echo.de/news/krypto-hype-bei-telegram-warum-gram-jetzt-an-einer-entscheidenden-marke-steht-240662/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-10T13:00:00+00:00",
-    "text": "Nicht nur Telegram-Gründer Pavel Durov freut sich über den Zuwachs bei Wallets – auch der GRAM-Kurs steigt. Ist die Erholung nachhaltig? Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Nicht nur Telegram-Gründer Pavel Durov freut sich über den Zuwachs bei Wallets – auch der GRAM-Kurs steigt.",
-    "titel_de": "Krypto-Hype bei Telegram: Warum GRAM jetzt an einer entscheidenden Marke steht",
-    "kurz_de": "Nicht nur Telegram-Gründer Pavel Durov freut sich über den Zuwachs bei Wallets – auch der GRAM-Kurs steigt."
-   },
-   {
-    "titel": "Binance Warns of Apple iOS Flaw That Could Expose iPhone Users' Private Keys",
-    "link": "https://decrypt.co/382928/binance-warns-of-apple-ios-flaw-that-could-expose-iphone-users-private-keys",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T12:45:34+00:00",
-    "text": "Apple has not publicly confirmed the \"worse_query\" bug, which a researcher published days before its latest iOS security update.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Apple has not publicly confirmed the \"worse_query\" bug, which a researcher published days before its latest iOS security update."
-   },
-   {
-    "titel": "Ripple Prime head Marc Asch to step down, Noel Kimmel named successor",
-    "link": "https://www.coindesk.com/business/2026/11/09/ripple-prime-head-marc-asch-to-step-down-noel-kimmel-named-successor",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T12:38:20+00:00",
-    "text": "Asch is stepping down as head of the institutional prime brokerage.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Asch is stepping down as head of the institutional prime brokerage."
-   },
-   {
-    "titel": "Bitcoin breaks with stocks, declines as ETF outflows mount, MARA reduces holdings",
-    "link": "https://www.coindesk.com/daybook-us/2026/11/10/bitcoin-breaks-with-stocks-declines-as-etf-outflows-mount-mara-sells-holdings",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T12:15:00+00:00",
-    "text": "Your day-ahead look for Nov. 10, 2026",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 2,
-    "kurz": "Your day-ahead look for Nov. 10, 2026"
-   },
-   {
-    "titel": "Binance Halts MEXC Transfers as FinCEN Cuts Exchange Off From US Financial System",
-    "link": "https://decrypt.co/382926/binance-halts-mexc-transfers-as-fincen-cuts-exchange-off-from-us-financial-system",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T12:13:27+00:00",
-    "text": "The exchange will reject withdrawals to MEXC and hold deposits from it for review, after FinCEN tied it to $16 billion in suspicious flows.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "The exchange will reject withdrawals to MEXC and hold deposits from it for review, after FinCEN tied it to $16 billion in suspicious flows."
-   },
-   {
-    "titel": "Bund will offenbar E-Auto-Prämie um 917 Millionen Euro aufstocken",
-    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/e-autos-kaufpraemie-bundesregierung-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-10T12:11:01+00:00",
-    "text": "Sie soll Menschen mit niedrigem oder mittlerem Einkommen den Umstieg erleichtern: Und tatsächlich ist die E-Auto-Prämie des Bundes ein voller Erfolg. Daher soll sie im kommenden Jahr noch mal um mehr als 900 Millionen aufgestockt werden.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Sie soll Menschen mit niedrigem oder mittlerem Einkommen den Umstieg erleichtern: Und tatsächlich ist die E-Auto-Prämie des Bundes ein voller Erfolg.",
-    "titel_de": "Bund will offenbar E-Auto-Prämie um 917 Millionen Euro aufstocken",
-    "kurz_de": "Sie soll Menschen mit niedrigem oder mittlerem Einkommen den Umstieg erleichtern: Und tatsächlich ist die E-Auto-Prämie des Bundes ein voller Erfolg."
-   },
-   {
-    "titel": "Australien will nach Hackerangriff strengere Regeln für KI-Firmen",
-    "link": "https://www.tagesschau.de/wirtschaft/australien-ki-regulieren-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-10T12:00:03+00:00",
-    "text": "Ein KI-Sicherheitsvorfall hat kürzlich einen Schock in Australien ausgelöst - jetzt reagiert die Regierung: Die Regeln für KI-Entwickler sollen verschärft werden. Auch im Strafrecht werden Änderungen geprüft.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Ein KI-Sicherheitsvorfall hat kürzlich einen Schock in Australien ausgelöst - jetzt reagiert die Regierung: Die Regeln für KI-Entwickler sollen verschärft werden.",
-    "titel_de": "Australien will nach Hackerangriff strengere Regeln für KI-Firmen",
-    "kurz_de": "Ein KI-Sicherheitsvorfall hat kürzlich einen Schock in Australien ausgelöst - jetzt reagiert die Regierung: Die Regeln für KI-Entwickler sollen verschärft werden."
-   },
-   {
-    "titel": "Was die Midterm-Wahlen für die US-Krypto-Regulierung bedeuten",
-    "link": "https://www.btc-echo.de/news/midterms-2026-krypto-regulierung-clarity-act-240286/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-10T11:52:25+00:00",
-    "text": "Nach den Midterms wird es eng für den CLARITY Act. Doch für die Krypto-Branche könnte die Wahl 2028 weitreichendere Folgen haben. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Nach den Midterms wird es eng für den CLARITY Act.",
-    "titel_de": "Was die Midterm-Wahlen für die US-Krypto-Regulierung bedeuten",
-    "kurz_de": "Nach den Midterms wird es eng für den CLARITY Act."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-10T23:39:46+00:00",
+  "stand": "2026-11-11T03:03:24+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
