@@ -1,48 +1,924 @@
 {
- "erzeugt": "2026-11-11T10:56:40+00:00",
+ "erzeugt": "2026-11-11T18:27:57+00:00",
  "kurse": {
-  "stand": "2026-11-11T10:56:40+00:00",
+  "stand": "2026-11-11T18:27:57+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 66452,
-    "aend24": 0.59145,
-    "aend7": -5.9898,
-    "aend1y": -29.9869,
-    "marktkap": 1336388922285,
-    "volumen": 29717631700
+    "preis": 67126,
+    "aend24": 2.34593,
+    "aend7": -7.4914,
+    "aend1y": -27.9528,
+    "marktkap": 1349921314309,
+    "volumen": 23048415884
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1848.75,
-    "aend24": -0.6683,
-    "aend7": -11.3667,
-    "aend1y": -42.4749,
-    "marktkap": 225935538582,
-    "volumen": 12386899172
+    "preis": 1882.95,
+    "aend24": 3.60692,
+    "aend7": -14.1105,
+    "aend1y": -40.0072,
+    "marktkap": 230113851250,
+    "volumen": 8347686876
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 75.23,
-    "aend24": -0.0798,
-    "aend7": -10.3656,
-    "aend1y": -49.2125,
-    "marktkap": 44491551277,
-    "volumen": 2640740945
+    "preis": 76.8,
+    "aend24": 3.84902,
+    "aend7": -11.7583,
+    "aend1y": -46.8935,
+    "marktkap": 45418440653,
+    "volumen": 1846353941
    }
   ]
  },
  "news": {
-  "stand": "2026-11-11T10:56:43+00:00",
+  "stand": "2026-11-11T18:28:00+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Missing 11-month-old baby found buried alive in a crate in South Carolina",
+    "link": "https://www.bbc.co.uk/news/articles/c8e391xzg6z2o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T18:10:57+00:00",
+    "text": "Officials say the child was found close to his father's home on Tuesday, a day after he was taken, and is being cared for in hospital.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Officials say the child was found close to his father's home on Tuesday, a day after he was taken, and is being cared for in hospital."
+   },
+   {
+    "titel": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
+    "link": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T18:04:58+00:00",
+    "text": "Talks in Abu Dhabi centred around Europe's security framework, with US envoys due to meet Putin and Zelensky on Thursday.",
+    "tags": [
+     "Prominente",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Talks in Abu Dhabi centred around Europe's security framework, with US envoys due to meet Putin and Zelensky on Thursday.",
+    "titel_de": "Gespräche zwischen Russland und der Ukraine wenden sich der Nachkriegssicherheit zu, enden aber ohne Durchbruch",
+    "kurz_de": "Die Gespräche in Abu Dhabi konzentrierten sich auf den europäischen Sicherheitsrahmen, wobei die US-Gesandten am Donnerstag mit Putin und Selenskyj zusammentreffen werden."
+   },
+   {
+    "titel": "Crude Is Back at 80% in the Gulf, but Refined Products Are Stuck at 35%",
+    "link": "https://oilprice.com/Energy/Energy-General/Crude-Is-Back-at-80-in-the-Gulf-but-Refined-Products-Are-Stuck-at-35.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T18:00:00+00:00",
+    "text": "The story in the Strait of Hormuz has been that Middle Eastern crude exports have recovered to about 80% to 85% of pre-war levels, including pipeline shipments, while refined-product exports remain muted. The uneven recovery shows how Gulf…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "The story in the Strait of Hormuz has been that Middle Eastern crude exports have recovered to about 80% to 85% of pre-war levels, including pipeline shipments, while refined-product exports remain m…",
+    "titel_de": "Rohöl ist im Golf wieder bei 80 %, aber raffinierte Produkte stecken bei 35 % fest",
+    "kurz_de": "Im Zusammenhang mit der Straße von Hormus hat sich der Export von Rohöl aus dem Nahen Osten wieder auf etwa 80 % bis 85 % des Vorkriegsniveaus erholt, einschließlich der Lieferungen über Pipelines, während der Export von Raffinerieprodukten weiterhin …"
+   },
+   {
+    "titel": "Cardano an wichtiger Unterstützung – droht ADA der nächste Kursrutsch?",
+    "link": "https://www.btc-echo.de/news/cardano-an-wichtiger-unterstuetzung-droht-ada-der-naechste-kursrutsch-240766/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T18:00:00+00:00",
+    "text": "Die Kryptowährung Cardano (ADA) versucht, das Ende der Kurskorrektur einzuläuten. Gelingt den Bullen der Turnaround? Alle relevanten Chartmarken verrät diese Kursanalyse. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die Kryptowährung Cardano (ADA) versucht, das Ende der Kurskorrektur einzuläuten.",
+    "titel_de": "Cardano an wichtiger Unterstützung – droht ADA der nächste Kursrutsch?",
+    "kurz_de": "Die Kryptowährung Cardano (ADA) versucht, das Ende der Kurskorrektur einzuläuten."
+   },
+   {
+    "titel": "Bitcoin Faces First Back-to-Back Annual Losses in History, But There's a Catch",
+    "link": "https://decrypt.co/383049/bitcoin-first-back-to-back-annual-losses-history",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T17:56:02+00:00",
+    "text": "Bitcoin is heading toward its first consecutive losing years, breaking an 18-year pattern. But there's some nuance in the data.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Bitcoin is heading toward its first consecutive losing years, breaking an 18-year pattern."
+   },
+   {
+    "titel": "Spain sees widespread disruption in first general strike for 14 years",
+    "link": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T17:44:32+00:00",
+    "text": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections."
+   },
+   {
+    "titel": "European Gas Prices Rebound on Iran War Uncertainty",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Prices-Rebound-on-Iran-War-Uncertainty.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T17:30:00+00:00",
+    "text": "European benchmark natural gas prices rebounded on Wednesday from the one-month low hit on Tuesday, as uncertainty about the Iran war returned to the energy markets following steep selloffs in recent days. The front-month price at the Dutc…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "European benchmark natural gas prices rebounded on Wednesday from the one-month low hit on Tuesday, as uncertainty about the Iran war returned to the energy markets following steep selloffs in recent…",
+    "titel_de": "Europäische Gaspreise erholen sich aufgrund der Unsicherheit im Zusammenhang mit dem Krieg im Iran",
+    "kurz_de": "Die europäischen Referenzpreise für Erdgas erholten sich am Mittwoch von ihrem am Dienstag erreichten Monatstief, da die Unsicherheit über den Krieg im Iran nach den starken Verkäufen in den letzten …"
+   },
+   {
+    "titel": "Marktbericht: DAX pirscht sich ans Rekordhoch heran",
+    "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-11T17:13:36+00:00",
+    "text": "Im Handelsverlauf hatte es ausgesehen, als würde dem DAX die Luft ausgehen. Doch dann endet der Handelstag mit einem Index nahe am Rekordhoch. Die Wirtschaftsweisen schüren Optimismus, zudem treten die KI-Sorgen in den Hintergrund.",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 2,
+    "kurz": "Im Handelsverlauf hatte es ausgesehen, als würde dem DAX die Luft ausgehen.",
+    "titel_de": "Marktbericht: DAX pirscht sich ans Rekordhoch heran",
+    "kurz_de": "Im Handelsverlauf hatte es ausgesehen, als würde dem DAX die Luft ausgehen."
+   },
+   {
+    "titel": "What Are Solana Privacy Rings? Inside Helius’ Privacy Protocol for Solana",
+    "link": "https://decrypt.co/resources/what-are-solana-privacy-rings-inside-helius-privacy-protocol-for-solana",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T17:09:18+00:00",
+    "text": "Solana Privacy Rings encrypt balances and transfer amounts without leaving Solana. Here's how they work, and how they compare.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Solana Privacy Rings encrypt balances and transfer amounts without leaving Solana."
+   },
+   {
+    "titel": "Germany Bets Big on Natural Gas to Keep the Lights On",
+    "link": "https://oilprice.com/Energy/Energy-General/Germany-Bets-Big-on-Natural-Gas-to-Keep-the-Lights-On.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T17:00:00+00:00",
+    "text": "Gas-fired projects secured all 5.16 gigawatts (GW) of derated capacity in Germany's first capacity auction, with more than half going to developments at existing coal sites. The results show how the search for dependable backup power is gi…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Gas-fired projects secured all 5.16 gigawatts (GW) of derated capacity in Germany's first capacity auction, with more than half going to developments at existing coal sites."
+   },
+   {
+    "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+    "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:59:34+00:00",
+    "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
+    "titel_de": "Drei vom Iran unterstützte Verdächtige planten Angriffe, einschließlich des RAF Fairford-Vorfalls, sagen die USA",
+    "kurz_de": "Das US-Justizministerium sagt, dass die Männer in eine Reihe von Anschlägen verwickelt waren, darunter ein schwerer Vorfall in der Nähe des britischen Luftwaffenstützpunkts, der von den US-Streitkräften genutzt wird."
+   },
+   {
+    "titel": "A High-Severity Bug Could Have Stalled Bitcoin Mining—Bitcoin Core Has a Fix",
+    "link": "https://decrypt.co/383044/bitcoin-core-patches-bug-could-have-stalled-btc-mining",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:58:57+00:00",
+    "text": "Three bugs—spanning denial-of-service and privacy issues rather than coin theft—have all been patched, with the most serious capable of halting a miner’s ability to build new blocks.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Three bugs—spanning denial-of-service and privacy issues rather than coin theft—have all been patched, with the most serious capable of halting a miner’s ability to build new blocks."
+   },
+   {
+    "titel": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
+    "link": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:45:11+00:00",
+    "text": "Bessent is now one of several Trump administration officials to live on military bases due to safety concerns.",
+    "tags": [
+     "Prominente",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Bessent is now one of several Trump administration officials to live on military bases due to safety concerns.",
+    "titel_de": "US-Finanzminister Scott Bessent zieht nach angeblichen iranischen Drohungen um",
+    "kurz_de": "Bessent ist jetzt einer von mehreren Beamten der Trump-Administration, die aus Sicherheitsgründen auf Militärstützpunkten leben."
+   },
+   {
+    "titel": "Indonesia's vice president resigns amid signs ruling alliance is fraying",
+    "link": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:38:07+00:00",
+    "text": "The news comes at a turbulent time for Prabowo, who faces a growing rift with his predecessor Joko Widodo.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The news comes at a turbulent time for Prabowo, who faces a growing rift with his predecessor Joko Widodo."
+   },
+   {
+    "titel": "Brent Jumps Nearly 3% as Iran Denies Any Talks With Washington",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Jumps-3-to-94-as-Iran-Denies-Any-Talks-With-Washington.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:30:00+00:00",
+    "text": "Brent crude rose nearly 3% on Wednesday to $93.90per barrel at 11:18 a.m. ET, more than doubling its 1.4% gain at 9:27 a.m., as Iran denied it is negotiating with Washington and analysts saw no near-term end to the war. WTI rose nearly 2%…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Brent crude rose nearly 3% on Wednesday to $93.90per barrel at 11:18 a.m."
+   },
+   {
+    "titel": "Was bringt Elysium als erste Layer 2 für Hyperliquid wirklich?",
+    "link": "https://www.btc-echo.de/news/was-bringt-elysium-als-erste-layer-2-fuer-hyperliquid-wirklich-240668/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T16:30:00+00:00",
+    "text": "Hyperliquid hat seine Smart-Contract-Ebene bewusst ausgebremst, um das Orderbuch zu schützen. Eine neue Blockchain soll das Problem jetzt lösen, ohne Hyperliquid Kapital abzuziehen. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Hyperliquid hat seine Smart-Contract-Ebene bewusst ausgebremst, um das Orderbuch zu schützen.",
+    "titel_de": "Was bringt Elysium als erste Layer 2 für Hyperliquid wirklich?",
+    "kurz_de": "Hyperliquid hat seine Smart-Contract-Ebene bewusst ausgebremst, um das Orderbuch zu schützen."
+   },
+   {
+    "titel": "Bitcoin hovers near $74K as stocks rise despite US bond yield rebound",
+    "link": "https://cointelegraph.com/markets/bitcoin-74k-stocks-us-bond-yield-inflation-cpi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:26:00+00:00",
+    "text": "Bitcoin traded in a narrow range as investors bought the dip in tech stocks and US bond yields climbed on high CPI inflation data.",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1,
+    "kurz": "Bitcoin traded in a narrow range as investors bought the dip in tech stocks and US bond yields climbed on high CPI inflation data."
+   },
+   {
+    "titel": "OKX-ICE Tokenized Stock Venue Sets Launch, Turning to Crypto Companies After Big Tech Opts Out",
+    "link": "https://decrypt.co/383040/okx-ice-tokenized-stock-venue-sets-launch-crypto-companies-big-tech-opts-out",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:14:01+00:00",
+    "text": "OKXICE will open its tokenized securities venue Nov. 23 with more than 70 assets, led by crypto companies like Coinbase, Circle, Robinhood and Strategy, after 67 companies objected to having their shares listed.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "OKXICE will open its tokenized securities venue Nov."
+   },
+   {
+    "titel": "Altcoins verlieren massiv: Warum Krypto-Anleger weiter zittern",
+    "link": "https://www.btc-echo.de/news/altcoins-verlieren-massiv-warum-krypto-anleger-weiter-zittern-240775/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T16:02:14+00:00",
+    "text": "Für viele Altcoin-Anleger ist das Jahr bislang von Verlusten geprägt. Diese Kryptowährungen haben besonders stark an Wert verloren. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Für viele Altcoin-Anleger ist das Jahr bislang von Verlusten geprägt.",
+    "titel_de": "Altcoins verlieren massiv: Warum Krypto-Anleger weiter zittern",
+    "kurz_de": "Für viele Altcoin-Anleger ist das Jahr bislang von Verlusten geprägt."
+   },
+   {
+    "titel": "Crypto Long & Short: The GENIUS Act’s guarantees don’t cover DeFi lending",
+    "link": "https://www.coindesk.com/coindesk-indices/2026/11/11/crypto-long-and-short-the-genius-act-s-guarantees-don-t-cover-defi-lending",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:00:45+00:00",
+    "text": "Institutions weighing DeFi lending tend to ask which markets are safest. Mike Hathaway and Joseph Quintilian of Ajna argue the better question is who can change a loan’s terms after the money is lent, and why a fully backed stablecoin offe…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Institutions weighing DeFi lending tend to ask which markets are safest."
+   },
+   {
+    "titel": "How a Super El Niño Could Reshape Global Coal Markets",
+    "link": "https://oilprice.com/Energy/Energy-General/How-a-Super-El-Nio-Could-Reshape-Global-Coal-Markets.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T16:00:00+00:00",
+    "text": "Most countries are finding ways to reduce their use of coal and coal-burning power plants as they strive to meet climate commitments. The pariah fossil fuel has wide-ranging impacts on human health and the environment, from extraction thro…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Most countries are finding ways to reduce their use of coal and coal-burning power plants as they strive to meet climate commitments."
+   },
+   {
+    "titel": "Saudi Crude Output Jumps 26% as Riyadh Reports Near Pre-War Production",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Crude-Output-Jumps-26-as-Riyadh-Reports-Near-Pre-War-Production.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T15:30:00+00:00",
+    "text": "Saudi Arabia told OPEC it raised crude production in October to 10.563 million barrels per day, back near pre-war levels and slightly above its OPEC quota of about 10.5 million bpd, Bloomberg columnist Javier Blas reported on Wednesday. Ou…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Saudi Arabia told OPEC it raised crude production in October to 10.563 million barrels per day, back near pre-war levels and slightly above its OPEC quota of about 10.5 million bpd, Bloomberg columni…"
+   },
+   {
+    "titel": "Metall- und Elektroindustrie: 24-Stunden-Streiks rücken näher",
+    "link": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/warnstreik-ig-metall-122.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-11T15:23:22+00:00",
+    "text": "Die IG Metall-Bezirke sprechen sich für 24-Stunden-Streiks in der Metall- und Elektroindustrie aus. Bisher gab es das erst einmal. Im Tarifstreit der Branche liegen die Positionen weit auseinander.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die IG Metall-Bezirke sprechen sich für 24-Stunden-Streiks in der Metall- und Elektroindustrie aus.",
+    "titel_de": "Metall- und Elektroindustrie: 24-Stunden-Streiks rücken näher",
+    "kurz_de": "Die IG Metall-Bezirke sprechen sich für 24-Stunden-Streiks in der Metall- und Elektroindustrie aus."
+   },
+   {
+    "titel": "Iran War Breathes New Life Into Turkmenistan’s $10 Billion Pipeline Dream",
+    "link": "https://oilprice.com/Energy/Energy-General/Iran-War-Breathes-New-Life-Into-Turkmenistans-10-Billion-Pipeline-Dream.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T15:00:00+00:00",
+    "text": "At an energy forum in Ashgabat in late October, Turkmenistan made an unexpected announcement. After years of delays and speculation that the project would be canceled, the forum audience was told the Turkmenistan-Afghanistan-Pakistan-India…",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "At an energy forum in Ashgabat in late October, Turkmenistan made an unexpected announcement."
+   },
+   {
+    "titel": "Kidnapper, 74, escapes from house arrest in Argentina by abseiling from balcony",
+    "link": "https://www.bbc.co.uk/news/articles/c933gn6710lyo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T14:56:11+00:00",
+    "text": "Leonardo Bertulazzi, a former member of the Marxist guerrilla group the Red Brigades, was about to be extradited to his home country of Italy.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Leonardo Bertulazzi, a former member of the Marxist guerrilla group the Red Brigades, was about to be extradited to his home country of Italy."
+   },
+   {
+    "titel": "Bleiben Krypto-Gewinne steuerfrei? Neue Wende bei der Haltefrist",
+    "link": "https://www.btc-echo.de/news/bleiben-krypto-gewinne-steuerfrei-neue-wende-bei-der-haltefrist-240768/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T14:49:54+00:00",
+    "text": "Überraschende Wende bei der Krypto-Steuer: Die Abschaffung der einjährigen Krypto-Haltefrist könnte vorerst vom Tisch sein. Von der Union kam zuletzt deutlicher Widerstand. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 2,
+    "kurz": "Überraschende Wende bei der Krypto-Steuer: Die Abschaffung der einjährigen Krypto-Haltefrist könnte vorerst vom Tisch sein.",
+    "titel_de": "Bleiben Krypto-Gewinne steuerfrei? Neue Wende bei der Haltefrist",
+    "kurz_de": "Überraschende Wende bei der Krypto-Steuer: Die Abschaffung der einjährigen Krypto-Haltefrist könnte vorerst vom Tisch sein."
+   },
+   {
+    "titel": "India Approves $7.3 Billion High-Capacity Power Link to Back Renewables",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/India-Approves-73-Billion-High-Capacity-Power-Link-to-Back-Renewables.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T14:30:00+00:00",
+    "text": "India has just approved plans for a high-capacity power transmission corridor to help bring electricity from generation to demand centers. The 1,150-kilovolt (kV) system, which will be India’s highest-voltage power corridor, is expected to…",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "India has just approved plans for a high-capacity power transmission corridor to help bring electricity from generation to demand centers."
+   },
+   {
+    "titel": "Decrypt Becomes First News Publisher to Offer Perps Trading, Powered by Solana's Phoenix",
+    "link": "https://decrypt.co/382992/decrypt-becomes-first-news-publisher-to-offer-perps-trading-powered-by-solanas-phoenix",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T14:02:55+00:00",
+    "text": "The integration brings perpetual futures trading into Decrypt, so readers can trade crypto, stocks and commodities without leaving the news.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The integration brings perpetual futures trading into Decrypt, so readers can trade crypto, stocks and commodities without leaving the news."
+   },
+   {
+    "titel": "Deutsche Bank launches crypto custody for companies and institutions",
+    "link": "https://cointelegraph.com/news/deutsche-bank-debuts-digital-asset-custody-services-eu?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T14:02:18+00:00",
+    "text": "Clients can store and transfer Bitcoin, Ether and select stablecoins through the bank, which manages their wallets and private keys.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Clients can store and transfer Bitcoin, Ether and select stablecoins through the bank, which manages their wallets and private keys."
+   },
+   {
+    "titel": "DAX auf der Blockchain: Deutsche Börse macht alle 40 Aktien zu Token",
+    "link": "https://www.btc-echo.de/news/dax-auf-der-blockchain-deutsche-boerse-macht-alle-40-aktien-zu-token-240760/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T13:40:33+00:00",
+    "text": "Die Deutsche Börse bringt alle DAX-40-Aktien als Token auf die Blockchain. Für wen sich die tokenisierten Aktien eignen. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1,
+    "kurz": "Die Deutsche Börse bringt alle DAX-40-Aktien als Token auf die Blockchain.",
+    "titel_de": "DAX auf der Blockchain: Deutsche Börse macht alle 40 Aktien zu Token",
+    "kurz_de": "Die Deutsche Börse bringt alle DAX-40-Aktien als Token auf die Blockchain."
+   },
+   {
+    "titel": "Here’s what happened in crypto today",
+    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:38:15+00:00",
+    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "Need to know what happened in crypto today?"
+   },
+   {
+    "titel": "Wirtschaftsweise korrigieren Wachstumsprognose deutlich nach oben",
+    "link": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftsweise-jahresgutachten-2026-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-11T13:30:06+00:00",
+    "text": "Die Wirtschaft wächst wieder stärker - doch der Sachverständigenrat der Bundesregierung fordert harte Sparmaßnahmen. Und bringt eine Art \"Soli\" für Verteidigung ins Spiel. Von Alina Leimbach.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die Wirtschaft wächst wieder stärker - doch der Sachverständigenrat der Bundesregierung fordert harte Sparmaßnahmen.",
+    "titel_de": "Wirtschaftsweise korrigieren Wachstumsprognose deutlich nach oben",
+    "kurz_de": "Die Wirtschaft wächst wieder stärker - doch der Sachverständigenrat der Bundesregierung fordert harte Sparmaßnahmen."
+   },
+   {
+    "titel": "Paraguay bank collapse shows stablecoins can offer a lifeline... of sorts",
+    "link": "https://cointelegraph.com/magazine/paraguay-bank-collapse-shows-stablecoins-can-offer-a-lifeline-of-sorts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:30:00+00:00",
+    "text": "Ueno’s collapse exposed the fragility of digital banking in Paraguay, as customers scrambled for access to their money and stablecoins offered a lifeline.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Ueno’s collapse exposed the fragility of digital banking in Paraguay, as customers scrambled for access to their money and stablecoins offered a lifeline."
+   },
+   {
+    "titel": "Ukrainian Drone Attack Sparks Fire at Russia’s Key Baltic Oil Export Hub",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/Ukrainian-Drone-Attack-Sparks-Fire-at-Russias-Key-Baltic-Oil-Export-Hub.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:30:00+00:00",
+    "text": "A Ukrainian drone attack hit the key Russian commodity export hub Ust-Luga on the Baltic Sea early on Wednesday, as Russia and Ukraine continue to trade strikes on each other’s energy infrastructure amid ongoing U.S.-mediated talks in Abu…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 3,
+    "kurz": "A Ukrainian drone attack hit the key Russian commodity export hub Ust-Luga on the Baltic Sea early on Wednesday, as Russia and Ukraine continue to trade strikes on each other’s energy infrastructure…"
+   },
+   {
+    "titel": "Bitcoin Covenants Part 5: MATT and OP_CHECKCONTRACTVERIFY — How Bitcoin could carry state across transactions",
+    "link": "https://cointelegraph.com/research/bitcoin-covenants-part-5-matt-op-ccv?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:26:18+00:00",
+    "text": "OP_CCV embeds contract state directly into Taproot output keys and enforces valid state transitions onchain. This makes it possible to achieve stateful contracts and compact fraud proofs.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "OP_CCV embeds contract state directly into Taproot output keys and enforces valid state transitions onchain."
+   },
+   {
+    "titel": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
+    "link": "https://www.bbc.co.uk/news/articles/cmkg5jr59835o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:25:47+00:00",
+    "text": "Mada Masr editor-in-chief Lina Attalah is being tried on the charge of \"publishing false news\" and potentially faces imprisonment.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Mada Masr editor-in-chief Lina Attalah is being tried on the charge of \"publishing false news\" and potentially faces imprisonment."
+   },
+   {
+    "titel": "Four grizzly bears killed in Canada after fatal attack on mother and daughter",
+    "link": "https://www.bbc.co.uk/news/articles/cwg5r8zrm11mo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:24:29+00:00",
+    "text": "The sow and her three cubs were responsible for killing Jennifer Balcarras, 48, and her daughter Selah Reed, 20, earlier this month.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The sow and her three cubs were responsible for killing Jennifer Balcarras, 48, and her daughter Selah Reed, 20, earlier this month."
+   },
+   {
+    "titel": "CoreWeave stock jumps 15% premarket after Q3 revenue beats estimates",
+    "link": "https://cointelegraph.com/markets/coreweave-stock-surges-pre-market-q3-revenue?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:02:30+00:00",
+    "text": "CoreWeave’s third-quarter revenue rose 168% to $3.66 billion, beating analyst estimates by 3.4%. Its revenue backlog reached $132.5 billion.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "CoreWeave’s third-quarter revenue rose 168% to $3.66 billion, beating analyst estimates by 3.4%."
+   },
+   {
+    "titel": "OKXICE to debut tokenized stock trading with Strategy, Coinbase, Circle this month",
+    "link": "https://www.coindesk.com/business/2026/11/10/okxice-to-debut-tokenized-stock-trading-with-strategy-coinbase-circle-this-month",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T13:00:00+00:00",
+    "text": "After initial issuer pushback, the blockchain venue is set to start trading on Nov. 23 and said will list over 70 assets, including Strategy’s common and preferred shares and 59 of Direxion's ETFs.",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 1,
+    "kurz": "After initial issuer pushback, the blockchain venue is set to start trading on Nov."
+   },
+   {
+    "titel": "Zcash unter 1.000 US-Dollar: Wie tief fällt der Kurs noch?",
+    "link": "https://www.btc-echo.de/news/zcash-unter-1-000-us-dollar-wie-tief-faellt-der-kurs-noch-240753/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T13:00:00+00:00",
+    "text": "Zcash rutscht unter 1.000 US-Dollar und fällt deutlich stärker als der übrige Markt. Was hinter dem Ausverkauf steckt und welche Marke jetzt über den weiteren Verlauf entscheidet. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Zcash rutscht unter 1.000 US-Dollar und fällt deutlich stärker als der übrige Markt.",
+    "titel_de": "Zcash unter 1.000 US-Dollar: Wie tief fällt der Kurs noch?",
+    "kurz_de": "Zcash rutscht unter 1.000 US-Dollar und fällt deutlich stärker als der übrige Markt."
+   },
+   {
+    "titel": "Meet Spiko, the largest tokenized fund in the world you’ve probably never heard about",
+    "link": "https://www.coindesk.com/business/2026/11/11/meet-spiko-the-largest-tokenized-fund-in-the-world-you-ve-probably-never-heard-about",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:57:36+00:00",
+    "text": "The firm’s flagship Spiko Amundi Overnight Swap Fund (SAFO) held $2.39 billion in assets under management as of late last month.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The firm’s flagship Spiko Amundi Overnight Swap Fund (SAFO) held $2.39 billion in assets under management as of late last month."
+   },
+   {
+    "titel": "Morning Minute: What Anthropic’s $1.4 Trillion IPO Means for Crypto",
+    "link": "https://decrypt.co/383001/morning-minute-what-anthropics-1-4-trillion-ipo-means-for-crypto",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:55:18+00:00",
+    "text": "Hint: if it plays out similarly to the SpaceX IPO, it means the Bitcoin bottom is very close.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Hint: if it plays out similarly to the SpaceX IPO, it means the Bitcoin bottom is very close."
+   },
+   {
+    "titel": "Kenya discharges last Ebola patient in major milestone towards virus-free status",
+    "link": "https://www.bbc.co.uk/news/articles/cwe9kzv0g0v7o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:53:11+00:00",
+    "text": "The country begins a 42-day countdown to being declared Ebola-free, provided no new cases are recorded.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The country begins a 42-day countdown to being declared Ebola-free, provided no new cases are recorded."
+   },
+   {
+    "titel": "Kraken Parent Payward Brings 200 UK and EU Stocks Onchain as xStocks",
+    "link": "https://decrypt.co/383000/kraken-parent-payward-brings-200-uk-and-eu-stocks-onchain-as-xstocks",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:46:24+00:00",
+    "text": "The expansion takes xStocks past 1,500 tokenized assets, though the new UK tokens still can't be bought by investors in the UK.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The expansion takes xStocks past 1,500 tokenized assets, though the new UK tokens still can't be bought by investors in the UK."
+   },
+   {
+    "titel": "FSB urgest Turkey to tighten crypto oversight, set stablecoin rules",
+    "link": "https://cointelegraph.com/news/fsb-turkey-crypto-oversight-stablecoin-regulation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:44:10+00:00",
+    "text": "The Financial Stability Board cited progress on crypto licensing and urged stronger enforcement and cooperation with foreign regulators.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "The Financial Stability Board cited progress on crypto licensing and urged stronger enforcement and cooperation with foreign regulators."
+   },
+   {
+    "titel": "Digital Fairness Act - EU will digitalen Verbraucherschutz stärken",
+    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/eu-digital-fairness-act-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-11T12:40:59+00:00",
+    "text": "Die EU-Kommission will mit einem Digital Fairness Act (DFA) Verbraucher in der digitalen Welt schützen. Der nun vorgestellte Entwurf soll unlautere Praktiken unterbinden. Die deutschen Verleger sind nicht begeistert.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die EU-Kommission will mit einem Digital Fairness Act (DFA) Verbraucher in der digitalen Welt schützen.",
+    "titel_de": "Digital Fairness Act - EU will digitalen Verbraucherschutz stärken",
+    "kurz_de": "Die EU-Kommission will mit einem Digital Fairness Act (DFA) Verbraucher in der digitalen Welt schützen."
+   },
+   {
+    "titel": "Bundeskartellamt kritisiert Gebührenpolitik von PayPal",
+    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/paypal-bundeskartellamt-gebuehren-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-11T12:34:37+00:00",
+    "text": "Wer etwas mit PayPal kauft, muss dafür keine Gebühren zahlen. Onlinehändler dagegen tragen womöglich überhöhte Kosten. Aus Sicht des Bundeskartellamts könnte das günstigere Zahlungsanbieter benachteiligen.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Wer etwas mit PayPal kauft, muss dafür keine Gebühren zahlen.",
+    "titel_de": "Bundeskartellamt kritisiert Gebührenpolitik von PayPal",
+    "kurz_de": "Wer etwas mit PayPal kauft, muss dafür keine Gebühren zahlen."
+   },
+   {
+    "titel": "Zcash falls below $1,000 for first time since September",
+    "link": "https://cointelegraph.com/markets/zcash-falls-1k-grayscales-1m-ecosystem-commitment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:31:44+00:00",
+    "text": "Zcash fell nearly 15% amid a broader sell-off in privacy coins, a day after Grayscale pledged $1 million to ecosystem initiatives.",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 1,
+    "kurz": "Zcash fell nearly 15% amid a broader sell-off in privacy coins, a day after Grayscale pledged $1 million to ecosystem initiatives."
+   },
+   {
+    "titel": "Schools in Italy, Scotland and Northern Ireland hit by threats in suspected bomb hoax",
+    "link": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:30:29+00:00",
+    "text": "More than 6,000 Italian schools received a threat. Authorities in all three countries say there appears to be no risk to the public. It is not known if the incidents are linked.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "More than 6,000 Italian schools received a threat."
+   },
+   {
+    "titel": "India Eyes 50% Wind Power Capacity Boost Without Acquiring More Land",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/India-Eyes-50-Wind-Power-Capacity-Boost-Without-Acquiring-More-Land.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:30:00+00:00",
+    "text": "India’s wind turbine manufacturers are in discussions with state and federal authorities about a plan to repower old turbines with higher-capacity, higher-efficiency new ones to boost power output without sacrificing more land. Modern turb…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "India’s wind turbine manufacturers are in discussions with state and federal authorities about a plan to repower old turbines with higher-capacity, higher-efficiency new ones to boost power output wi…"
+   },
+   {
+    "titel": "Wie trotz Blockade der Straße von Hormus Öl aus der Region fließt",
+    "link": "https://www.tagesschau.de/wirtschaft/energie/iran-krieg-oel-golfstaaten-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-11T12:21:57+00:00",
+    "text": "Trotz der Blockade der Straße von Hormus ist zuletzt wieder mehr Öl auf den Weltmarkt gelangt. Eine NDR-Analyse von Schiffsdaten zeigt, warum die Preise dennoch hoch blieben. Von Katharina Bews und Alice Pesavento.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Trotz der Blockade der Straße von Hormus ist zuletzt wieder mehr Öl auf den Weltmarkt gelangt.",
+    "titel_de": "Wie trotz Blockade der Straße von Hormus Öl aus der Region fließt",
+    "kurz_de": "Trotz der Blockade der Straße von Hormus ist zuletzt wieder mehr Öl auf den Weltmarkt gelangt."
+   },
+   {
+    "titel": "Live news: Bitcoin remains under pressure as CoreWeave, Nvidia lead AI rebound",
+    "link": "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:21:24+00:00",
+    "text": "The DRAM ETF jumps 8% and semiconductor stocks gain more than 4%, while bitcoin continues to test its 200-day moving average.",
+    "tags": [
+     "ETF",
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "The DRAM ETF jumps 8% and semiconductor stocks gain more than 4%, while bitcoin continues to test its 200-day moving average."
+   },
+   {
+    "titel": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+    "link": "https://www.coindesk.com/daybook-us/2026/11/11/bitcoin-barely-flinches-at-hot-cpi-as-etf-selling-slows",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:19:30+00:00",
+    "text": "Your day-ahead look for Nov. 11, 2026",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 2,
+    "kurz": "Your day-ahead look for Nov. 11, 2026"
+   },
+   {
+    "titel": "Nvidia Sheds $430B in Two Days as Jensen Huang Faces Calls to Resign",
+    "link": "https://decrypt.co/382991/nvidia-sheds-430b-in-two-days-as-jensen-huang-faces-calls-to-resign",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:15:46+00:00",
+    "text": "Nvidia's independent directors have hired Wachtell Lipton to investigate its CEO's ties to an alleged Chinese spy, as pressure mounts.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "Nvidia's independent directors have hired Wachtell Lipton to investigate its CEO's ties to an alleged Chinese spy, as pressure mounts."
+   },
+   {
+    "titel": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
+    "link": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T12:14:12+00:00",
+    "text": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis."
+   },
+   {
+    "titel": "Barclays boosts BlackRock Bitcoin ETF stake 48% as banks expand holdings",
+    "link": "https://cointelegraph.com/news/barclays-blackrock-ibit-boost-key-q3-filings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T11:56:23+00:00",
+    "text": "Barclays reported a $187 million stake as of Sept. 30, while Citigroup disclosed a new $119 million position in Fidelity’s Bitcoin ETF.",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 2,
+    "kurz": "Barclays reported a $187 million stake as of Sept."
+   },
+   {
+    "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth",
+    "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T11:47:22+00:00",
+    "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year."
+   },
+   {
+    "titel": "Bitcoin sits out stock rebound as ETF outflows extend to fourth day",
+    "link": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T11:37:04+00:00",
+    "text": "Bitcoin held steady near $74,000 as Tuesday's hot inflation figure lifted the odds on a U.S. interest-rate increase to around 90%. ETF outflows extended to a fourth day and liquidations jumped.",
+    "tags": [
+     "ETF",
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 3,
+    "kurz": "Bitcoin held steady near $74,000 as Tuesday's hot inflation figure lifted the odds on a U.S."
+   },
+   {
+    "titel": "Transport workers in Chile block highways in protest over surging fuel prices",
+    "link": "https://www.bbc.co.uk/news/articles/c6e3d895zne7o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-11T11:34:50+00:00",
+    "text": "Hundreds of bus and lorry drivers are blocking traffic along major highway routes across the country.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Hundreds of bus and lorry drivers are blocking traffic along major highway routes across the country."
+   },
+   {
+    "titel": "Kraken parent adds over 200 tokenized UK and EU stocks to xStocks",
+    "link": "https://cointelegraph.com/news/kraken-xstocks-200-tokenized-uk-eu-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T11:30:36+00:00",
+    "text": "The expansion adds more than 200 tokenized UK and EU equities, including all 40 companies in Germany’s DAX index, as xStocks plans further expansion into Hong Kong.",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1,
+    "kurz": "The expansion adds more than 200 tokenized UK and EU equities, including all 40 companies in Germany’s DAX index, as xStocks plans further expansion into Hong Kong."
+   },
+   {
+    "titel": "RWE and KKR Seal $16 Billion UK Offshore Wind Mega-Deal",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/RWE-and-KKR-Seal-16-Billion-UK-Offshore-Wind-Mega-Deal.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-11T11:30:00+00:00",
+    "text": "German energy company RWE and global investment firm KKR will invest $16 billion (£12 billion) in offshore wind projects in the UK in what is likely the biggest renewable energy investment in Britain ever. RWE and KKR expect to deliver the…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "German energy company RWE and global investment firm KKR will invest $16 billion (£12 billion) in offshore wind projects in the UK in what is likely the biggest renewable energy investment in Britain…"
+   },
+   {
+    "titel": "Ledger-Chef warnt “Jeder wird irgendwann gehackt”",
+    "link": "https://www.btc-echo.de/news/ledger-chef-warnt-jeder-wird-irgendwann-gehackt-240744/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-11T11:24:11+00:00",
+    "text": "Ledger-CEO Pascal Gauthier räumt ein: Perfekte Sicherheit gibt es nicht, auch nicht bei Ledger. Immerhin kam es beim Wallet-Hersteller jüngst zu Angriffen. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Krieg/Konflikt",
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Ledger-CEO Pascal Gauthier räumt ein: Perfekte Sicherheit gibt es nicht, auch nicht bei Ledger.",
+    "titel_de": "Ledger-Chef warnt “Jeder wird irgendwann gehackt”",
+    "kurz_de": "Ledger-CEO Pascal Gauthier räumt ein: Perfekte Sicherheit gibt es nicht, auch nicht bei Ledger."
+   },
+   {
+    "titel": "Bitcoin short-term holders send 47K BTC to exchanges at a loss",
+    "link": "https://cointelegraph.com/markets/bitcoin-speculators-btc-exchanges-unrealized-loss-727k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T11:05:26+00:00",
+    "text": "Bitcoin fell to an 11-week low of $72,670 after slipping below short-term holders’ average cost basis of about $75,700, according to CryptoQuant.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Bitcoin fell to an 11-week low of $72,670 after slipping below short-term holders’ average cost basis of about $75,700, according to CryptoQuant."
+   },
+   {
+    "titel": "\"Tankrabatt\" drückt Inflation im Oktober",
+    "link": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-tankrabatt-spritpreise-oktober-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-11T11:00:32+00:00",
+    "text": "Die Teuerungsrate ist im Oktober in Deutschland zurückgegangen. Der \"Tankrabatt\" zeigt offenbar Wirkung. Energie - vor allem Heizöl - bleibt aber teuer. Und auch einige Lebensmittel kosten wieder mehr.",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1,
+    "kurz": "Die Teuerungsrate ist im Oktober in Deutschland zurückgegangen.",
+    "titel_de": "\"Tankrabatt\" drückt Inflation im Oktober",
+    "kurz_de": "Die Teuerungsrate ist im Oktober in Deutschland zurückgegangen."
+   },
    {
     "titel": "Avalanche Won Over the NYSE. Now It Has to ‘Capture Value’ for AVAX",
     "link": "https://decrypt.co/382988/avalanche-won-over-the-nyse-now-it-has-to-capture-value-for-avax",
@@ -56,7 +932,19 @@
     "kurz": "The New York Stock Exchange will use Avalanche infrastructure, but experts say that won't necessarily boost AVAX's price."
    },
    {
-    "titel": "Bitcoin holds steady as CoreWeave earnings revive AI outlook, Anthropic said to raise IPO valuation",
+    "titel": "Kraken's xStocks adds 200 UK and EU shares as its assets top $1.1 billion",
+    "link": "https://www.coindesk.com/business/2026/11/11/kraken-s-xstocks-adds-200-uk-and-eu-shares-as-its-assets-top-usd1-1-billion",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-11T10:51:34+00:00",
+    "text": "Payward says xStocks holds over $1.1 billion. Each token is backed by a share but gives no ownership of the underlying company.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Payward says xStocks holds over $1.1 billion."
+   },
+   {
+    "titel": "Bitcoin stuck under $74,000 as CoreWeave earnings revive AI outlook, Anthropic said to raise IPO valuation",
     "link": "https://www.coindesk.com/markets/2026/11/11/coreweave-earnings-revive-ai-outlook-as-anthropic-weighs-higher-ipo-valuation",
     "quelle": "CoinDesk",
     "bereich": "Krypto",
@@ -86,22 +974,8 @@
     "kurz": "Robert Barr planned to have accomplices force a crypto investor to install remote-access software so he could drain the wallet from prison."
    },
    {
-    "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
-    "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T10:15:12+00:00",
-    "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year."
-   },
-   {
     "titel": "Zahl der arbeitslosen Akademiker auf Höchststand",
-    "link": "https://www.tagesschau.de/wirtschaft/arbeitslosigkeit-akademiker-rekord-100.html",
+    "link": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/arbeitslosigkeit-akademiker-rekord-100.html",
     "quelle": "tagesschau Wirtschaft",
     "bereich": "Wirtschaft",
     "sprache": "de",
@@ -178,32 +1052,16 @@
     "kurz": "Bitmine booked $6.2 billion in unrealized losses on digital assets."
    },
    {
-    "titel": "Tearful Smith switches allegiance to Netherlands",
-    "link": "https://www.bbc.co.uk/sport/swimming/articles/cmx27n60n3wno?at_medium=RSS&at_campaign=rss",
+    "titel": "Watch: Vinícius Jr's surprise message to boy who received prosthetic legs after Sudan drone strike",
+    "link": "https://www.bbc.co.uk/news/videos/cm894wg251pzo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-11-11T09:45:14+00:00",
-    "text": "Tatjana Smith, South Africa's most decorated Olympian, switches allegiance to the Netherlands.",
+    "zeit": "2026-11-11T09:28:36+00:00",
+    "text": "Real Madrid player Vinícius Jr sent a surprise message to 13-year-old fan Zaher who lost both his legs after being hit by a drone in Khartoum, in 2024.",
     "tags": [],
     "wichtig": 0,
-    "kurz": "Tatjana Smith, South Africa's most decorated Olympian, switches allegiance to the Netherlands."
-   },
-   {
-    "titel": "Marktbericht: DAX macht sich wieder nach oben auf",
-    "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-11T09:42:50+00:00",
-    "text": "Zur Wochenmitte hat der DAX seine Rekordjagd wieder aufgenommen. Neue Zuversicht im Technologiesektor stützt die Kurse. Besonders gut kommen die Zahlen von Siemens Energy an.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 1,
-    "kurz": "Zur Wochenmitte hat der DAX seine Rekordjagd wieder aufgenommen.",
-    "titel_de": "Marktbericht: DAX macht sich wieder nach oben auf",
-    "kurz_de": "Zur Wochenmitte hat der DAX seine Rekordjagd wieder aufgenommen."
+    "kurz": "Real Madrid player Vinícius Jr sent a surprise message to 13-year-old fan Zaher who lost both his legs after being hit by a drone in Khartoum, in 2024."
    },
    {
     "titel": "Update Wirtschaft vom 11.11.2026",
@@ -367,20 +1225,6 @@
     "kurz": "The billionaire tech executive finds himself mired in a personal and national security scandal."
    },
    {
-    "titel": "US warns Madagascar over growing military ties with Russia",
-    "link": "https://www.bbc.co.uk/news/articles/crkgv58pknyeo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T07:30:15+00:00",
-    "text": "US general warns the Sahel model-like security deal with Russia could lead to greater instability in Africa.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "US general warns the Sahel model-like security deal with Russia could lead to greater instability in Africa."
-   },
-   {
     "titel": "Poland's Orlen Becomes First Buyer to Cancel Long-Term Qatar LNG Deal",
     "link": "https://oilprice.com/Latest-Energy-News/World-News/Polands-Orlen-Becomes-First-Buyer-to-Cancel-Long-Term-Qatar-LNG-Deal.html",
     "quelle": "OilPrice",
@@ -429,20 +1273,6 @@
     "kurz_de": "Mehr als 30 Tage im Jahr melden sich ältere Arbeitnehmer krank - etwa doppelt so viel wie der Durchschnitt."
    },
    {
-    "titel": "Here’s what happened in crypto today",
-    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-11T06:00:00+00:00",
-    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Need to know what happened in crypto today?"
-   },
-   {
     "titel": "Initia confirms second exploit in 3 weeks, $3.27M stolen in latest attack",
     "link": "https://cointelegraph.com/news/initia-second-crypto-exploit-three-weeks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
@@ -456,867 +1286,11 @@
     ],
     "wichtig": 3,
     "kurz": "Initia said an attacker exploited compromised cloud credentials to move $3.27 million in crypto assets, with about $2.16 million remaining frozen on its halted network."
-   },
-   {
-    "titel": "Oil Prices Rise as Iran Peace Optimism Fades",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rise-as-Iran-Peace-Optimism-Fades.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-11T05:45:00+00:00",
-    "text": "Crude oil prices reversed their fall from earlier this week as traders grew less optimistic about a peace deal between the United States and Iran amid continuing tanker attacks in the Strait of Hormuz, with a record number of such attacks…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Crude oil prices reversed their fall from earlier this week as traders grew less optimistic about a peace deal between the United States and Iran amid continuing tanker attacks in the Strait of Hormu…"
-   },
-   {
-    "titel": "\"Digital Fairness Act\": Neue EU-Regeln für Influencer und Onlineshops?",
-    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/digital-fairness-act-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-11T05:28:10+00:00",
-    "text": "Die EU-Kommission legt heute einen Vorschlag für mehr Verbraucherschutz im Netz vor. Das Gesetz soll die Regeln für Werbung sowie Algorithmen verschärfen und nimmt Influencer, Onlineshops und Ticketverkäufer ins Visier. Von K. Schmid.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Die EU-Kommission legt heute einen Vorschlag für mehr Verbraucherschutz im Netz vor.",
-    "titel_de": "\"Digital Fairness Act\": Neue EU-Regeln für Influencer und Onlineshops?",
-    "kurz_de": "Die EU-Kommission legt heute einen Vorschlag für mehr Verbraucherschutz im Netz vor."
-   },
-   {
-    "titel": "Across Protocol restores website after hackers hijack domain",
-    "link": "https://cointelegraph.com/news/across-protocol-restores-website-after-hackers-hijack-domain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-11T04:42:30+00:00",
-    "text": "The cross-chain bridge said a social engineering attack targeting domain registrar Namecheap allowed hackers to redirect users to a phishing site.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "The cross-chain bridge said a social engineering attack targeting domain registrar Namecheap allowed hackers to redirect users to a phishing site."
-   },
-   {
-    "titel": "Kennedys sue to block Trump's arch, arguing it would cast shadow on JFK's grave",
-    "link": "https://www.bbc.co.uk/news/articles/cw8dvpmzp2p4o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T03:44:06+00:00",
-    "text": "Nine members of the political dynasty say the 250ft structure would cast a shadow on gravesites.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "Nine members of the political dynasty say the 250ft structure would cast a shadow on gravesites."
-   },
-   {
-    "titel": "Grayscale investiert eine Million US-Dollar in Zcash",
-    "link": "https://www.btc-echo.de/news/grayscale-invesmtiert-eine-million-us-dollar-in-zcash-240727/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-11T03:30:00+00:00",
-    "text": "Grayscale will ein Jahr lang alle Gebühren seines Zcash-Fonds in das Ökosystem stecken. Ganz uneigennützig dürfte das allerdings nicht sein. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 1,
-    "kurz": "Grayscale will ein Jahr lang alle Gebühren seines Zcash-Fonds in das Ökosystem stecken.",
-    "titel_de": "Grayscale investiert eine Million US-Dollar in Zcash",
-    "kurz_de": "Grayscale will ein Jahr lang alle Gebühren seines Zcash-Fonds in das Ökosystem stecken."
-   },
-   {
-    "titel": "Crypto ally Tom Emmer elected House GOP minority whip",
-    "link": "https://cointelegraph.com/news/crypto-ally-tom-emmer-elected-house-gop-minority-whip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-11T03:07:45+00:00",
-    "text": "The Minnesota lawmaker, who helped establish the Congressional Crypto Caucus, will stay on as Republican whip after Democrats won the midterms.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "The Minnesota lawmaker, who helped establish the Congressional Crypto Caucus, will stay on as Republican whip after Democrats won the midterms."
-   },
-   {
-    "titel": "Bitcoin vor der Trendwende? Gefährliche Warnsignale und ein Funken Hoffnung",
-    "link": "https://www.btc-echo.de/news/bitcoin-vor-der-trendwende-gefaehrliche-warnsignale-und-ein-funken-hoffnung-240679/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-11T03:00:00+00:00",
-    "text": "Der Kursrutsch setzt Bitcoin-Anleger und Miner zunehmend unter Druck. Einige Großinvestoren nutzen die Schwäche jedoch für Zukäufe und wecken damit Hoffnung auf eine Trendwende. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Der Kursrutsch setzt Bitcoin-Anleger und Miner zunehmend unter Druck.",
-    "titel_de": "Bitcoin vor der Trendwende? Gefährliche Warnsignale und ein Funken Hoffnung",
-    "kurz_de": "Der Kursrutsch setzt Bitcoin-Anleger und Miner zunehmend unter Druck."
-   },
-   {
-    "titel": "Headquarters of Haitian gang destroyed, El Salvador's president says",
-    "link": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T02:47:59+00:00",
-    "text": "The infamous 400 Mawozo gang was targeted by the El Salvador military which has deployed thousands of troops to combat Haiti's gang violence crisis.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "The infamous 400 Mawozo gang was targeted by the El Salvador military which has deployed thousands of troops to combat Haiti's gang violence crisis."
-   },
-   {
-    "titel": "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
-    "link": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T02:41:16+00:00",
-    "text": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material."
-   },
-   {
-    "titel": "Judge allows Trump's $10bn defamation case against BBC to proceed",
-    "link": "https://www.bbc.co.uk/news/articles/cm93rpy6lx0do?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T01:18:09+00:00",
-    "text": "But the court dismisses the other part of Trump's lawsuit that alleged the BBC had violated a Florida law.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "But the court dismisses the other part of Trump's lawsuit that alleged the BBC had violated a Florida law."
-   },
-   {
-    "titel": "LNbits rushes emergency patch after reported Bitcoin wallet thefts",
-    "link": "https://cointelegraph.com/news/lnbits-rushes-emergency-patch-after-reported-bitcoin-wallet-thefts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-11T01:16:58+00:00",
-    "text": "The project warned that installations running older versions were vulnerable and urged operators to replace potentially exposed credentials even after upgrading.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "The project warned that installations running older versions were vulnerable and urged operators to replace potentially exposed credentials even after upgrading."
-   },
-   {
-    "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
-    "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T01:01:20+00:00",
-    "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
-    "titel_de": "Drei vom Iran unterstützte Verdächtige planten Angriffe, einschließlich des RAF Fairford-Vorfalls, sagen die USA",
-    "kurz_de": "Das US-Justizministerium sagt, dass die Männer in eine Reihe von Anschlägen verwickelt waren, darunter ein schwerer Vorfall in der Nähe des britischen Luftwaffenstützpunkts, der von den US-Streitkräften genutzt wird."
-   },
-   {
-    "titel": "Middle East Oil Flows Far from Normal Despite Signs of Oversupply",
-    "link": "https://oilprice.com/Energy/Crude-Oil/Middle-East-Oil-Flows-Far-from-Normal-Despite-Signs-of-Oversupply.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-11T01:00:00+00:00",
-    "text": "Crude oil flows through the Strait of Hormuz and the whole Middle Eastern region have recovered to close to pre-war levels, vessel-tracking services have been signaling for over a month now. Middle Eastern benchmarks have been weakening fo…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Crude oil flows through the Strait of Hormuz and the whole Middle Eastern region have recovered to close to pre-war levels, vessel-tracking services have been signaling for over a month now.",
-    "titel_de": "Öl aus dem Nahen Osten fließt trotz Anzeichen von Überversorgung bei weitem nicht normal",
-    "kurz_de": "Rohölströme durch die Straße von Hormus und die gesamte Region des Nahen Ostens haben sich auf Vorkriegsniveau erholt, Schiffsverfolgungsdienste signalisieren seit über einem Monat."
-   },
-   {
-    "titel": "'They will kill you too': Sonia Gandhi's turbulent journey in Indian politics",
-    "link": "https://www.bbc.co.uk/news/articles/c687z7g4xr97o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T00:26:02+00:00",
-    "text": "Sonia Gandhi's memoir revisits love, loss and political inheritance, offering a deeply personal defence of her family and its legacy.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Sonia Gandhi's memoir revisits love, loss and political inheritance, offering a deeply personal defence of her family and its legacy."
-   },
-   {
-    "titel": "Vinícius Jr sends message to Sudan boy who received prosthetic legs after BBC report sparks appeal",
-    "link": "https://www.bbc.co.uk/news/articles/cqm26mmpp2p1o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T00:19:42+00:00",
-    "text": "Double amputee Zaher told the BBC last year about his favourite footballer and a dream of being able to walk again.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Double amputee Zaher told the BBC last year about his favourite footballer and a dream of being able to walk again."
-   },
-   {
-    "titel": "Robot vessels take on the dangerous work of mine hunting",
-    "link": "https://www.bbc.co.uk/news/articles/cj5yn24llxd6o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-11T00:19:13+00:00",
-    "text": "The conflict in the Gulf is an opportunity for the US to test its autonomous mine-hunting systems.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The conflict in the Gulf is an opportunity for the US to test its autonomous mine-hunting systems."
-   },
-   {
-    "titel": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
-    "link": "https://www.bbc.co.uk/news/articles/c8wy9y37z30vo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T00:18:07+00:00",
-    "text": "Forecasters warn that this year's El Niño could be one of the strongest on record, with heavy rain and flooding in Kenya.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Forecasters warn that this year's El Niño could be one of the strongest on record, with heavy rain and flooding in Kenya."
-   },
-   {
-    "titel": "Antidepressant escitalopram more effective at preventing relapse, analysis finds",
-    "link": "https://www.bbc.co.uk/news/articles/cv62yyng00jyo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-11T00:17:42+00:00",
-    "text": "Three pills came top and outperformed Prozac for preventing relapse in a large number of patients.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Three pills came top and outperformed Prozac for preventing relapse in a large number of patients."
-   },
-   {
-    "titel": "South Sudan Courts Oil Investors as Sudan’s Warring Forces Take Their Share",
-    "link": "https://oilprice.com/Energy/Crude-Oil/South-Sudan-Courts-Oil-Investors-as-Sudans-Warring-Forces-Take-Their-Share.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-11T00:00:00+00:00",
-    "text": "South Sudan is courting fresh capital for 14 exploration blocks and a production increase from roughly 170,000 barrels per day to 230,000, which investors would find impossible to control once those barrels left the country. Captive to nei…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "South Sudan is courting fresh capital for 14 exploration blocks and a production increase from roughly 170,000 barrels per day to 230,000, which investors would find impossible to control once those…"
-   },
-   {
-    "titel": "CFTC warns Kalshi of imminent charges over notification of contracts: Politico",
-    "link": "https://cointelegraph.com/news/cftc-warns-kalshi-imminent-charges-over-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T23:49:51+00:00",
-    "text": "The prediction markets operator says the issue involves procedural errors affecting a handful of contracts, many of which weren’t live, according to Politico.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "The prediction markets operator says the issue involves procedural errors affecting a handful of contracts, many of which weren’t live, according to Politico."
-   },
-   {
-    "titel": "Global banks commit $270M to stablecoin venture targeting 2027 launch",
-    "link": "https://cointelegraph.com/news/banks-270m-project-faro-stablecoin-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T23:08:28+00:00",
-    "text": "Project Faro, backed by Goldman Sachs, Citigroup and BBVA, has secured $270 million in funding to launch a US dollar stablecoin in the first half of 2027.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "Project Faro, backed by Goldman Sachs, Citigroup and BBVA, has secured $270 million in funding to launch a US dollar stablecoin in the first half of 2027."
-   },
-   {
-    "titel": "Midterm Results Could Trip Trump’s Energy Independence Plans",
-    "link": "https://oilprice.com/Energy/Energy-General/Midterm-Results-Could-Trip-Trumps-Energy-Independence-Plans.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T23:00:00+00:00",
-    "text": "The Democratic Party’s decisive victory in the U.S. midterm elections has been widely called bad news for Trump policies, but now, it could interfere with legislation that previously drew support from both parties in Congress—and the GOP’s…",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "The Democratic Party’s decisive victory in the U.S."
-   },
-   {
-    "titel": "Nvidia hires major US law firm to investigate alleged Chinese spy affair",
-    "link": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-10T22:52:15+00:00",
-    "text": "The appointment was made after it emerged Jensen Huang had an affair with a woman believed to be a spy for China.",
-    "tags": [
-     "Regulierung",
-     "KI/Chips"
-    ],
-    "wichtig": 2,
-    "kurz": "The appointment was made after it emerged Jensen Huang had an affair with a woman believed to be a spy for China.",
-    "titel_de": "Nvidia beauftragt eine große US-Anwaltskanzlei mit der Untersuchung der angeblichen chinesischen Spionageaffäre",
-    "kurz_de": "Die Ernennung erfolgte, nachdem sich herausstellte, dass Jensen Huang eine Affäre mit einer Frau hatte, von der angenommen wird, dass sie eine Spionin für China ist."
-   },
-   {
-    "titel": "Bitcoin Miner HIVE Eyes $45 Million in Annual Revenue From AI Deal",
-    "link": "https://decrypt.co/382982/bitcoin-miner-hive-eyes-45-million-ai-data-center",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T22:46:02+00:00",
-    "text": "The Bitcoin miner says its Boden facility could generate $45 million annually, but a June letter of intent remains nonbinding as executives negotiate financing and customer protections for the project.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "The Bitcoin miner says its Boden facility could generate $45 million annually, but a June letter of intent remains nonbinding as executives negotiate financing and customer protections for the projec…"
-   },
-   {
-    "titel": "A ‘Geologic Freak’ in Arkansas Is Big Oil’s New Lithium Bet",
-    "link": "https://oilprice.com/Metals/Commodities/A-Geologic-Freak-in-Arkansas-Is-Big-Oils-New-Lithium-Bet.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T22:00:00+00:00",
-    "text": "The world is electrifying at an unprecedented pace, and it’s only going to keep speeding up. COP 31, the latest iteration of the United Nations’ annual climate conference, kicked off today in Antalya, Türkiye, and achieving 35 percent glob…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The world is electrifying at an unprecedented pace, and it’s only going to keep speeding up."
-   },
-   {
-    "titel": "API Shows Sharp Build in US Crude Oil, Distillate Inventories",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/API-Shows-Sharp-Build-in-US-Crude-Oil-Distillate-Inventories.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T21:59:00+00:00",
-    "text": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 9.0 million barrels in the week ending November 6. In the week prior, US crude oil inventories fell by 5.267 million barrels. Commerci…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 9.0 million barrels in the week ending November 6."
-   },
-   {
-    "titel": "Trump Media Posts $410 Million Profit. Bitcoin Gains Did the Heavy Lifting",
-    "link": "https://decrypt.co/382967/trump-media-posts-410-million-profit-bitcoin-gains",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T21:36:03+00:00",
-    "text": "Truth Social’s parent booked $409.7 million in quarterly income largely from crypto investments, even as its stock remained more than 94% below its March 2024 peak.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 2,
-    "kurz": "Truth Social’s parent booked $409.7 million in quarterly income largely from crypto investments, even as its stock remained more than 94% below its March 2024 peak.",
-    "titel_de": "Trump Media erzielt einen Gewinn von $ 410 Millionen. Bitcoin-Gewinne haben das schwere Heben",
-    "kurz_de": "Die Muttergesellschaft von Truth Social verbuchte vierteljährliche Einnahmen in Höhe von 409,7 Mio. $, die hauptsächlich aus Kryptoinvestitionen stammten, obwohl die Aktie mehr als 94 % unter dem Höchststand vom März 2024 blieb."
-   },
-   {
-    "titel": "Can crypto trust firms compete with banks in US derivatives settlements?",
-    "link": "https://cointelegraph.com/news/crypto-trust-firms-compete-banks-us-derivatives-settlements?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T21:34:40+00:00",
-    "text": "Crypto custodians are moving into a market handling billions in daily settlements, but regulatory relief and a shift in congressional control leave questions over their long-term role.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Crypto custodians are moving into a market handling billions in daily settlements, but regulatory relief and a shift in congressional control leave questions over their long-term role."
-   },
-   {
-    "titel": "Across Protocol warns users to avoid app amid reports of drained wallets",
-    "link": "https://cointelegraph.com/news/across-protocol-warns-avoid-app-drained-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T21:24:36+00:00",
-    "text": "The protocol is investigating a potential security incident affecting its domain, while several users have reported losing funds after interacting with the platform.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "The protocol is investigating a potential security incident affecting its domain, while several users have reported losing funds after interacting with the platform.",
-    "titel_de": "Across Protocol warnt Benutzer, die App inmitten von Berichten über entwässerte Wallets zu vermeiden",
-    "kurz_de": "Das Protokoll untersucht einen potenziellen Sicherheitsvorfall, der seine Domain betrifft, während mehrere Benutzer gemeldet haben, dass sie nach der Interaktion mit der Plattform Geld verloren haben."
-   },
-   {
-    "titel": "Why does Australia want Brits to swap Sydney for the outback?",
-    "link": "https://www.bbc.co.uk/news/articles/cm1j3jdp7w54o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T21:17:00+00:00",
-    "text": "Australia wants changes to UK deal that would push backpackers out of Bondi and into remote regions.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Australia wants changes to UK deal that would push backpackers out of Bondi and into remote regions."
-   },
-   {
-    "titel": "Ava Labs exec says NYSE deal marks end of blockchain’s ‘general purpose era’",
-    "link": "https://cointelegraph.com/interview/ava-labs-nyse-general-purpose-chains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T21:07:44+00:00",
-    "text": "Ava Labs’ John Nahas said the collaboration with the NYSE shows institutions moving past pilots toward purpose-built onchain market infrastructure.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Ava Labs’ John Nahas said the collaboration with the NYSE shows institutions moving past pilots toward purpose-built onchain market infrastructure."
-   },
-   {
-    "titel": "Houthis Launch Another Attack on Pumping Stations Along Crucial Saudi East-West",
-    "link": "https://oilprice.com/Energy/Energy-General/Houthis-Launch-Another-Attack-on-Pumping-Stations-Along-Crucial-Saudi-East-West.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T21:00:00+00:00",
-    "text": "On Tuesday the Houthis launched another major missile salvo deep inside Saudi Arabia, however Saudi authorities have yet to acknowledge the fresh attack, or to publicly assess possible damage - though there are reports of missile alerts in…",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "On Tuesday the Houthis launched another major missile salvo deep inside Saudi Arabia, however Saudi authorities have yet to acknowledge the fresh attack, or to publicly assess possible damage - thoug…",
-    "titel_de": "Houthis starten einen weiteren Angriff auf Pumpstationen entlang des entscheidenden saudischen Ost-West",
-    "kurz_de": "Am Dienstag starteten die Houthis eine weitere große Raketensalve tief in Saudi-Arabien, aber die saudischen Behörden müssen den erneuten Angriff noch anerkennen oder mögliche Schäden öffentlich bewerten - thoug..."
-   },
-   {
-    "titel": "Spain's king and queen attend memorial service for rail crash victims",
-    "link": "https://www.bbc.co.uk/news/articles/ckjwew54yd4wo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:46:40+00:00",
-    "text": "Sixty-nine people died in the collision near Toledo two weeks ago and 28 are still in hospital.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Sixty-nine people died in the collision near Toledo two weeks ago and 28 are still in hospital."
-   },
-   {
-    "titel": "Nvidia Erases 2026 Gains as Republicans Threaten Jensen Huang With Subpoena",
-    "link": "https://decrypt.co/382974/nvidia-erases-2026-gains-republicans-threaten-ceo-subpoena",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:45:50+00:00",
-    "text": "The chipmaker has erased its 2026 gains as a suspected Chinese espionage case brings fresh scrutiny of CEO Jensen Huang.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "The chipmaker has erased its 2026 gains as a suspected Chinese espionage case brings fresh scrutiny of CEO Jensen Huang."
-   },
-   {
-    "titel": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
-    "link": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:36:33+00:00",
-    "text": "U.S. Senator Elizabeth Warren argued the administration is not doing enough about staff insider trading, questioning whether CFTC enforcement action was sufficient.",
-    "tags": [
-     "Prominente",
-     "Regulierung"
-    ],
-    "wichtig": 0,
-    "kurz": "U.S. Senator Elizabeth Warren argued the administration is not doing enough about staff insider trading, questioning whether CFTC enforcement action was sufficient."
-   },
-   {
-    "titel": "Watch: E-bike battery explodes into massive fireball inside Oregon home",
-    "link": "https://www.bbc.co.uk/news/videos/cr0qkqqkn3j7o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:31:17+00:00",
-    "text": "Surveillance footage from inside the home shows a mother and son noticing smoke coming from the battery before it suddenly bursts into flames.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Surveillance footage from inside the home shows a mother and son noticing smoke coming from the battery before it suddenly bursts into flames."
-   },
-   {
-    "titel": "Kimber Digital Securities gains broker-dealer status for tokenized assets",
-    "link": "https://cointelegraph.com/news/kimber-digital-securities-broker-dealer-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:26:02+00:00",
-    "text": "The Plume affiliate plans to offer tokenized US stocks, ETFs and bonds through self-custodial wallets, with traditional shareholder rights preserved.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 1,
-    "kurz": "The Plume affiliate plans to offer tokenized US stocks, ETFs and bonds through self-custodial wallets, with traditional shareholder rights preserved."
-   },
-   {
-    "titel": "US Army soldier suspected of spying for Russia arrested in UK",
-    "link": "https://www.bbc.co.uk/news/articles/c6d7q77xgw0vo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:20:04+00:00",
-    "text": "The 41-year-old senior soldier is accused of national security offences and is being questioned in London.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "The 41-year-old senior soldier is accused of national security offences and is being questioned in London."
-   },
-   {
-    "titel": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
-    "link": "https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:16:03+00:00",
-    "text": "An SGLang flaw let an attacker reach internal systems and potentially view confidential AI requests, exposing the limits of hardware-backed privacy protections.",
-    "tags": [
-     "Regulierung",
-     "Krieg/Konflikt",
-     "KI/Chips"
-    ],
-    "wichtig": 2,
-    "kurz": "An SGLang flaw let an attacker reach internal systems and potentially view confidential AI requests, exposing the limits of hardware-backed privacy protections.",
-    "titel_de": "Near AI Breach enthüllt Benutzerdetails und Daten von 18 KI-Agenten",
-    "kurz_de": "Ein SGLang-Fehler ermöglicht es einem Angreifer, interne Systeme zu erreichen und möglicherweise vertrauliche KI-Anfragen anzuzeigen, wodurch die Grenzen des hardwaregestützten Datenschutzes offengelegt werden."
-   },
-   {
-    "titel": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
-    "link": "https://www.coindesk.com/business/2026/11/10/former-nyse-president-says-stock-issuers-hold-the-key-to-tokenization-as-bullish-builds-its-platform",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:15:08+00:00",
-    "text": "Stacey Cunningham, who recently joined digital asset platform Bullish as President, sees the company’s planned Equiniti acquisition and focus on stock issuers as key to its tokenization ambitions.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Stacey Cunningham, who recently joined digital asset platform Bullish as President, sees the company’s planned Equiniti acquisition and focus on stock issuers as key to its tokenization ambitions."
-   },
-   {
-    "titel": "British Airways Owner Warns Green Fuel Mandates Could Kill European Aviation",
-    "link": "https://oilprice.com/Energy/Energy-General/British-Airways-Owner-Warns-Green-Fuel-Mandates-Could-Kill-European-Aviation.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T20:00:00+00:00",
-    "text": "The chief executive of British Airways’ parent company has said planned environmental charges on airlines would “kill” the European aviation industry and push up fares. Luis Gallego, the chief executive of International Airlines Group (IAG…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The chief executive of British Airways’ parent company has said planned environmental charges on airlines would “kill” the European aviation industry and push up fares."
-   },
-   {
-    "titel": "Elon Musk Calls Claude Opus 5.5 a 'Masterpiece', Admits Grok 4.8 Won't Match It",
-    "link": "https://decrypt.co/382956/elon-musk-calls-claude-opus-5-5-masterpiece-grok-wont-match",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T19:46:02+00:00",
-    "text": "Elon Musk says the incoming Grok 4.8 will trail Anthropic’s Claude Opus 5.5, praising his rival’s model while predicting Grok 5 could surpass it in two or three months.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "Elon Musk says the incoming Grok 4.8 will trail Anthropic’s Claude Opus 5.5, praising his rival’s model while predicting Grok 5 could surpass it in two or three months."
-   },
-   {
-    "titel": "Turkey Wants COP31 to Focus on Electrification Instead of Fossil Fuel Cuts",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Turkey-Wants-COP31-to-Focus-on-Electrification-Instead-of-Fossil-Fuel-Cuts.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T19:30:00+00:00",
-    "text": "Turkey wants nearly 200 countries attending COP31 to commit to increasing electricity's share of global energy consumption to 35% by 2035, up from roughly 20% today. The proposed pledge, however, contains no requirement to actually reduce…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Turkey wants nearly 200 countries attending COP31 to commit to increasing electricity's share of global energy consumption to 35% by 2035, up from roughly 20% today."
-   },
-   {
-    "titel": "Violence erupts in Bangladesh as ousted PM's supporters stage protest",
-    "link": "https://www.bbc.co.uk/news/articles/cwkg5g5pjpyko?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T19:26:42+00:00",
-    "text": "Supporters of Sheikh Hasina want her to return from exile in India.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Supporters of Sheikh Hasina want her to return from exile in India."
-   },
-   {
-    "titel": "Grayscale Bets $1 Million on Zcash as Privacy Coin Tumbles",
-    "link": "https://decrypt.co/382962/grayscale-bets-1-million-on-zcash-as-privacy-coin-tumbles",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T19:16:02+00:00",
-    "text": "Grayscale plans to direct $1 million from its Zcash ETF fees to ecosystem nonprofits and launched a national ad campaign, as ZEC fell more than 11%.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 2,
-    "kurz": "Grayscale plans to direct $1 million from its Zcash ETF fees to ecosystem nonprofits and launched a national ad campaign, as ZEC fell more than 11%.",
-    "titel_de": "Graustufen-Wetten $ 1 Million auf Zcash als Privacy Coin Tumbles",
-    "kurz_de": "Grayscale plant, $ 1 Million von seinen Zcash-ETF-Gebühren an gemeinnützige Organisationen des Ökosystems zu leiten und startete eine nationale Werbekampagne, da ZEC um mehr als 11 % sank."
-   },
-   {
-    "titel": "U.S. Midterm Shake-Up Could Reshape Global Oil and Gas Markets",
-    "link": "https://oilprice.com/Energy/Energy-General/US-Midterm-Shake-Up-Could-Reshape-Global-Oil-and-Gas-Markets.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T19:00:00+00:00",
-    "text": "The 2026 US midterm elections have delivered a significant political setback to President Donald Trump, but their implications for US policy and global energy markets are far from straightforward. Democratic control of Congress will constr…",
-    "tags": [
-     "Prominente",
-     "Rohstoffe"
-    ],
-    "wichtig": 3,
-    "kurz": "The 2026 US midterm elections have delivered a significant political setback to President Donald Trump, but their implications for US policy and global energy markets are far from straightforward."
-   },
-   {
-    "titel": "Wirtschaft vor acht vom 10.11.2026",
-    "link": "https://www.tagesschau.de/video/video-1681634.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-10T18:52:27+00:00",
-    "text": "Wirtschaft vor acht vom 10.11.2026",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Wirtschaft vor acht vom 10.11.2026",
-    "titel_de": "Wirtschaft vor acht vom 10.11.2026",
-    "kurz_de": "Wirtschaft vor acht vom 10.11.2026"
-   },
-   {
-    "titel": "'If I tell you to run, run': BBC joins a Ukrainian drone unit as it protects a front-line city",
-    "link": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T18:35:35+00:00",
-    "text": "Slovyansk continues to be bombarded by Russian forces, making it almost uninhabitable with less than 10% of its pre-war population remaining.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Slovyansk continues to be bombarded by Russian forces, making it almost uninhabitable with less than 10% of its pre-war population remaining."
-   },
-   {
-    "titel": "Goldman, Citi and Global Banks Commit $270 Million to Challenge Crypto’s Stablecoin Giants",
-    "link": "https://decrypt.co/382953/goldman-citi-global-banks-270-million-challenge-crypto-stablecoin-giants",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T18:33:37+00:00",
-    "text": "The funding, backing a U.S.-incorporated issuer codenamed “Project Faro,” covers five years of operations as traditional lenders move to challenge crypto-native giants Tether and Circle.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The funding, backing a U.S.-incorporated issuer codenamed “Project Faro,” covers five years of operations as traditional lenders move to challenge crypto-native giants Tether and Circle."
-   },
-   {
-    "titel": "Mercado Bitcoin to resume cash withdrawals after $49M hack",
-    "link": "https://cointelegraph.com/news/pix-withdrawals-resume-mercado-bitcoin-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T18:12:07+00:00",
-    "text": "Starting next week, customers can deposit and withdraw money through Brazil’s instant payment system. Crypto transfers remain suspended.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 1,
-    "kurz": "Starting next week, customers can deposit and withdraw money through Brazil’s instant payment system."
-   },
-   {
-    "titel": "Anti-homosexuality laws in Trinidad and Tobago overturned",
-    "link": "https://www.bbc.co.uk/news/articles/cm0e0evlpp87o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T18:04:18+00:00",
-    "text": "The ruling brings to an end an 11-year legal battle by dual-citizen Jason Jones.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The ruling brings to an end an 11-year legal battle by dual-citizen Jason Jones."
-   },
-   {
-    "titel": "Why are these purple flowers shutting down streets in Sydney?",
-    "link": "https://www.bbc.co.uk/news/videos/c862y2dxdq45o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-10T18:03:52+00:00",
-    "text": "Jacaranda trees typically flower for six weeks every spring, drawing visitors to Australia from across the globe.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Jacaranda trees typically flower for six weeks every spring, drawing visitors to Australia from across the globe."
-   },
-   {
-    "titel": "The Truth Behind Iraq’s Oil Rebound And The Secret Red Sea Plan",
-    "link": "https://oilprice.com/Energy/Crude-Oil/The-Truth-Behind-Iraqs-Oil-Rebound-And-The-Secret-Red-Sea-Plan.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T18:00:00+00:00",
-    "text": "No country aside from Iran itself has felt the economic consequences of the U.S./Israel-Iran war more than Iraq. Over 90 percent of its annual budget historically comes from oil and around 95 percent of that historically had to pass throug…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "No country aside from Iran itself has felt the economic consequences of the U.S./Israel-Iran war more than Iraq.",
-    "titel_de": "Die Wahrheit hinter Iraks Öl-Erholung und dem geheimen Plan für das Rote Meer",
-    "kurz_de": "Kein Land außer dem Iran selbst hat die wirtschaftlichen Folgen des US/Israel-Iran-Krieges mehr zu spüren bekommen als der Irak."
-   },
-   {
-    "titel": "Ukrainian Strikes Disrupt 30% of Russia's Oil Refining Capacity",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Ukrainian-Strikes-Disrupt-30-of-Russias-Oil-Refining-Capacity.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-10T18:00:00+00:00",
-    "text": "Ukrainian drone strikes have disrupted refineries representing roughly 30% of Russia's total oil-processing capacity since late October, dealing another blow to Moscow's fuel supplies just as it attempts to increase diesel exports under a…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Ukrainian drone strikes have disrupted refineries representing roughly 30% of Russia's total oil-processing capacity since late October, dealing another blow to Moscow's fuel supplies just as it atte…",
-    "titel_de": "Ukrainische Schläge stören 30 % der russischen Ölraffineriekapazität",
-    "kurz_de": "Ukrainische Drohnenangriffe haben seit Ende Oktober Raffinerien gestört, die etwa 30 % der gesamten russischen Ölverarbeitungskapazität ausmachen, und Moskaus Treibstoffvorräten einen weiteren Schlag versetzt, so wie sie es taten..."
-   },
-   {
-    "titel": "Andauernde Abflüsse aus Krypto-ETFs: Wir halten die Füße still",
-    "link": "https://www.btc-echo.de/news/andauernde-abfluesse-aus-krypto-etfs-wir-halten-die-fuesse-still-240659/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-10T18:00:00+00:00",
-    "text": "Der Krypto-Markt fügt sich der Schwäche am US‑Finanzmarkt nach dem Wahlsieg der Demokraten. Das Musterdepot weist im Wochenvergleich moderate Kursabschläge auf. Frische Impulse könnte der zeitnahe Handelsstart des KI‑Unternehmens Anthropic…",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 2,
-    "kurz": "Der Krypto-Markt fügt sich der Schwäche am US‑Finanzmarkt nach dem Wahlsieg der Demokraten.",
-    "titel_de": "Andauernde Abflüsse aus Krypto-ETFs: Wir halten die Füße still",
-    "kurz_de": "Der Krypto-Markt fügt sich der Schwäche am US‑Finanzmarkt nach dem Wahlsieg der Demokraten."
-   },
-   {
-    "titel": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-    "link": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-10T17:56:12+00:00",
-    "text": "The AI company behind the Claude chatbot will offer its shares at between $70 and $78, which is lower than what was expected.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "The AI company behind the Claude chatbot will offer its shares at between $70 and $78, which is lower than what was expected."
-   },
-   {
-    "titel": "Ripple verliert Chef seines 1,25-Milliarden-Dollar-Zukaufs",
-    "link": "https://www.btc-echo.de/news/ripple-verliert-chef-seines-125-milliarden-dollar-zukaufs-240719/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-10T17:32:37+00:00",
-    "text": "Seit der Übernahme hat Ripple Prime seinen Umsatz verdreifacht. Nun soll ein neuer Chef das Wachstum fortsetzen. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Seit der Übernahme hat Ripple Prime seinen Umsatz verdreifacht.",
-    "titel_de": "Ripple verliert Chef seines 1,25-Milliarden-Dollar-Zukaufs",
-    "kurz_de": "Seit der Übernahme hat Ripple Prime seinen Umsatz verdreifacht."
-   },
-   {
-    "titel": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
-    "link": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T17:32:22+00:00",
-    "text": "The venture, known as Project Faro, plans to issue a dollar-denominated stablecoin and is expected to be incorporated in the U.S.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The venture, known as Project Faro, plans to issue a dollar-denominated stablecoin and is expected to be incorporated in the U.S."
-   },
-   {
-    "titel": "Hot US inflation raises odds of half-point Fed hike in December",
-    "link": "https://cointelegraph.com/news/hot-us-inflation-raises-rate-hike-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T17:31:09+00:00",
-    "text": "US inflation came in above forecasts in October, increasing expectations of a bigger rate hike in December and raising concerns for crypto investors.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 2,
-    "kurz": "US inflation came in above forecasts in October, increasing expectations of a bigger rate hike in December and raising concerns for crypto investors.",
-    "titel_de": "Heiße US-Inflation erhöht die Wahrscheinlichkeit einer halben Zinserhöhung der Fed im Dezember",
-    "kurz_de": "Die US-Inflation lag im Oktober über den Prognosen, was die Erwartungen einer größeren Zinserhöhung im Dezember erhöhte und Bedenken für Krypto-Investoren aufkommen ließ."
-   },
-   {
-    "titel": "Polymarket US trading volume jumps 266% despite regulatory battles",
-    "link": "https://cointelegraph.com/news/polymarket-us-trading-volume-jumps-regulatory-battles?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T17:07:48+00:00",
-    "text": "Trading volume on Polymarket’s US exchange surged from June to October, fueled by sports betting, even as the platform faces mounting regulatory scrutiny.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Trading volume on Polymarket’s US exchange surged from June to October, fueled by sports betting, even as the platform faces mounting regulatory scrutiny."
-   },
-   {
-    "titel": "Crypto is now teamed up with U.S. government in two legal battles over perps",
-    "link": "https://www.coindesk.com/news-analysis/2026/11/10/crypto-teams-up-with-u-s-government-to-defend-stock-perps-in-legal-fight",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-10T17:07:22+00:00",
-    "text": "Twice now, crypto firms have found themselves on the side of the U.S. Commodity Futures Trading Commission in holding that perpetual futures aren't swaps.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Twice now, crypto firms have found themselves on the side of the U.S."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-11T10:56:53+00:00",
+  "stand": "2026-11-11T18:28:12+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
@@ -1327,15 +1301,15 @@
     "region": "Welt (Industrieländer)",
     "tv": "XETR:EUNL",
     "art": "ETF",
-    "preis": 130.02,
+    "preis": 130.955,
     "datum": "2026-11-11",
-    "aend1d": 1.0649047804119682,
-    "aend1w": -0.3525444512568865,
-    "aend1m": -1.6862003780718227,
-    "aend1y": 16.76695105523127,
-    "aend3y": 68.56816885339418,
-    "aend5y": 67.28854121098276,
-    "pa5y": 10.839163319942703,
+    "aend1d": 1.791682860474153,
+    "aend1w": 0.3640404659718044,
+    "aend1m": -0.9792060491493282,
+    "aend1y": 17.606645711719814,
+    "aend3y": 69.78037649743298,
+    "aend5y": 68.4915467949873,
+    "pa5y": 10.998120087416098,
     "verlauf": [
      77.25,
      78.39,
@@ -1602,15 +1576,15 @@
     "region": "Ganze Welt inkl. Schwellenländer",
     "tv": "XETR:VWCE",
     "art": "ETF",
-    "preis": 169.66,
+    "preis": 170.92,
     "datum": "2026-11-11",
-    "aend1d": 1.2170385395537497,
-    "aend1w": -0.11774402449076238,
-    "aend1m": -2.2019829375144018,
-    "aend1y": 16.99075989518686,
-    "aend3y": 68.21336506047987,
-    "aend5y": 64.04950686520982,
-    "pa5y": 10.406587281780055,
+    "aend1d": 1.9687388139840056,
+    "aend1w": 0.624043329800994,
+    "aend1m": -1.4756744293290325,
+    "aend1y": 17.859605571645275,
+    "aend3y": 69.46262145548283,
+    "aend5y": 65.26783987623281,
+    "pa5y": 10.570091794735825,
     "verlauf": [
      102.8,
      104.08,
@@ -1877,15 +1851,15 @@
     "region": "USA",
     "tv": "XETR:SXR8",
     "art": "ETF",
-    "preis": 734.48,
+    "preis": 740.56,
     "datum": "2026-11-11",
-    "aend1d": 1.159683772690978,
-    "aend1w": -0.5362656410812017,
-    "aend1m": -2.6766311549265787,
-    "aend1y": 16.814046695082396,
-    "aend3y": 71.15559387598165,
-    "aend5y": 76.23149458934186,
-    "pa5y": 11.99966015710363,
+    "aend1d": 1.9970801311186337,
+    "aend1w": 0.2870917068414247,
+    "aend1m": -1.8709916785922487,
+    "aend1y": 17.781029327565356,
+    "aend3y": 72.57241395381351,
+    "aend5y": 77.69033279746623,
+    "pa5y": 12.184475070996026,
     "verlauf": [
      414.19,
      421.77,
@@ -2152,15 +2126,15 @@
     "region": "Schwellenländer",
     "tv": "XETR:IS3N",
     "art": "ETF",
-    "preis": 45.614,
+    "preis": 46.074,
     "datum": "2026-11-11",
-    "aend1d": 2.3837313700843854,
-    "aend1w": 1.229471815357286,
-    "aend1m": -6.430901146690193,
-    "aend1y": 17.64675539048799,
-    "aend3y": 65.06477527683288,
-    "aend5y": 41.20232788509162,
-    "pa5y": 7.144127177642634,
+    "aend1d": 3.4162327168252737,
+    "aend1w": 2.2503328894806884,
+    "aend1m": -5.487292047016357,
+    "aend1y": 18.833178582482212,
+    "aend3y": 66.7293913295216,
+    "aend5y": 42.62630014858839,
+    "pa5y": 7.3593623227784954,
     "verlauf": [
      32.2,
      32.03,
@@ -2427,15 +2401,15 @@
     "region": "US-Technologie",
     "tv": "XETR:SXRV",
     "art": "ETF",
-    "preis": 1455.0,
+    "preis": 1472.6,
     "datum": "2026-11-11",
-    "aend1d": 2.0193521245267076,
-    "aend1w": -0.12355848434925099,
-    "aend1m": -7.853071564281189,
-    "aend1y": 15.807067812798458,
-    "aend3y": 77.4390243902439,
-    "aend5y": 82.12542245587684,
-    "pa5y": 12.738983423288675,
+    "aend1d": 3.253400645070803,
+    "aend1w": 1.0845689181768314,
+    "aend1m": -6.738442051931603,
+    "aend1y": 17.20789557465774,
+    "aend3y": 79.58536585365852,
+    "aend5y": 84.32845162097884,
+    "pa5y": 13.010416364115285,
     "verlauf": [
      792.6,
      817.2,
@@ -2702,15 +2676,15 @@
     "region": "Gold",
     "tv": "XETR:4GLD",
     "art": "ETC",
-    "preis": 116.81,
+    "preis": 115.99,
     "datum": "2026-11-11",
-    "aend1d": 0.6462174737204895,
-    "aend1w": 0.6982758620689644,
-    "aend1m": -2.6745542409598366,
-    "aend1y": 2.43795492414276,
-    "aend3y": 99.98287964389661,
-    "aend5y": 123.23936932632584,
-    "pa5y": 17.42326647246941,
+    "aend1d": -0.06031363088058184,
+    "aend1w": -0.008620689655181035,
+    "aend1m": -3.357773704382605,
+    "aend1y": 1.718845917740941,
+    "aend3y": 98.57901044341723,
+    "aend5y": 121.67224080267557,
+    "pa5y": 17.257940567145912,
     "verlauf": [
      52.21,
      52.7,
@@ -2977,15 +2951,15 @@
     "region": "Welt (Industrieländer)",
     "tv": "XETR:XDWD",
     "art": "ETF",
-    "preis": 142.295,
+    "preis": 143.35,
     "datum": "2026-11-11",
-    "aend1d": 1.0438487484466519,
-    "aend1w": -0.3466629315778458,
-    "aend1m": -1.7231853028524147,
-    "aend1y": 16.941978961209703,
-    "aend3y": 68.77194230951702,
-    "aend5y": 67.33107551917965,
-    "pa5y": 10.84479907681779,
+    "aend1d": 1.7930055032842285,
+    "aend1w": 0.39218432663352676,
+    "aend1m": -0.9945438220871572,
+    "aend1y": 17.80900723208414,
+    "aend3y": 70.0232469873802,
+    "aend5y": 68.57169735882782,
+    "pa5y": 11.008678325788178,
     "verlauf": [
      84.5,
      85.78,
@@ -3252,15 +3226,15 @@
     "region": "Ganze Welt inkl. Schwellenländer",
     "tv": "XETR:IUSQ",
     "art": "ETF",
-    "preis": 108.76,
+    "preis": 109.56,
     "datum": "2026-11-11",
-    "aend1d": 1.2097524660338754,
-    "aend1w": -0.128558310376492,
-    "aend1m": -2.1414432247615633,
-    "aend1y": 17.198275862068968,
-    "aend3y": 68.72479056779402,
-    "aend5y": 64.48880822746521,
-    "pa5y": 10.465654689043902,
+    "aend1d": 1.9542155220547253,
+    "aend1w": 0.60606060606061,
+    "aend1m": -1.421630376102212,
+    "aend1y": 18.060344827586206,
+    "aend3y": 69.96587030716725,
+    "aend5y": 65.69872958257712,
+    "pa5y": 10.627687882571246,
     "verlauf": [
      65.72,
      66.54,
@@ -3527,15 +3501,15 @@
     "region": "Ganze Welt inkl. Schwellenländer",
     "tv": "XETR:VGWL",
     "art": "ETF",
-    "preis": 163.94,
+    "preis": 165.08,
     "datum": "2026-11-11",
-    "aend1d": 1.197530864197538,
-    "aend1w": -0.13401559454191414,
-    "aend1m": -2.160420148006692,
-    "aend1y": 15.385698198198195,
-    "aend3y": 60.82009024916617,
-    "aend5y": 50.87428676605927,
-    "pa5y": 8.573301985781434,
+    "aend1d": 1.9012345679012332,
+    "aend1w": 0.56042884990255,
+    "aend1m": -1.4800668417283336,
+    "aend1y": 16.188063063063062,
+    "aend3y": 61.938395134392785,
+    "aend5y": 51.923430885330404,
+    "pa5y": 8.723882340642387,
     "verlauf": [
      108.06,
      109.34,
@@ -3802,15 +3776,15 @@
     "region": "Deutschland",
     "tv": "XETR:EXS1",
     "art": "ETF",
-    "preis": 218.8,
+    "preis": 219.65,
     "datum": "2026-11-11",
-    "aend1d": 0.7830492860433136,
-    "aend1w": 0.3439578078422434,
-    "aend1m": 4.99040307101728,
-    "aend1y": 9.685181471826754,
-    "aend3y": 71.5809284818068,
-    "aend5y": 60.2930402930403,
-    "pa5y": 9.89626519582487,
+    "aend1d": 1.1745739290649482,
+    "aend1w": 0.7337766567301118,
+    "aend1m": 5.398272552783112,
+    "aend1y": 10.111289352316021,
+    "aend3y": 72.24749058971143,
+    "aend5y": 60.91575091575092,
+    "pa5y": 9.981518401815737,
     "verlauf": [
      136.4,
      137.66,
@@ -4077,15 +4051,15 @@
     "region": "Europa",
     "tv": "XETR:EXSA",
     "art": "ETF",
-    "preis": 65.5,
+    "preis": 65.75,
     "datum": "2026-11-11",
-    "aend1d": 0.4447170679343859,
-    "aend1w": 0.4601226993864893,
-    "aend1m": 4.067365745154117,
-    "aend1y": 13.715277777777768,
-    "aend3y": 49.321782742505405,
-    "aend5y": 35.70910597741634,
-    "pa5y": 6.297193409665058,
+    "aend1d": 0.8280938506364244,
+    "aend1w": 0.8435582822085896,
+    "aend1m": 4.464569431204324,
+    "aend1y": 14.149305555555557,
+    "aend3y": 49.89171321098824,
+    "aend5y": 36.227079664353056,
+    "pa5y": 6.378212706058184,
     "verlauf": [
      48.14,
      48.42,
@@ -4352,15 +4326,15 @@
     "region": "Technologie weltweit",
     "tv": "XETR:XDWT",
     "art": "ETF",
-    "preis": 122.12,
+    "preis": 123.54,
     "datum": "2026-11-11",
-    "aend1d": 2.58736559139785,
-    "aend1w": -1.6905490259217504,
-    "aend1m": -10.442945145203876,
-    "aend1y": 18.494081117795467,
-    "aend3y": 98.31113998051318,
-    "aend5y": 110.47914512237158,
-    "pa5y": 16.049110027837866,
+    "aend1d": 3.7802419354838745,
+    "aend1w": -0.5474158750603753,
+    "aend1m": -9.40158404224113,
+    "aend1y": 19.871919270327965,
+    "aend3y": 100.61708346865865,
+    "aend5y": 112.92657704239919,
+    "pa5y": 16.31774510256452,
     "verlauf": [
      57.35,
      59.13,
@@ -4627,13 +4601,13 @@
     "region": "Rüstung",
     "tv": "XETR:DFEN",
     "art": "ETF",
-    "preis": 51.23,
+    "preis": 51.14,
     "datum": "2026-11-11",
-    "aend1d": 0.5890437855880615,
-    "aend1w": 2.275903373926913,
-    "aend1m": 0.8464566929133888,
-    "aend1y": -3.6849031772889673,
-    "aend3y": 124.69298245614033,
+    "aend1d": 0.4123306499116408,
+    "aend1w": 2.096226791774791,
+    "aend1m": 0.6692913385826893,
+    "aend1y": -3.8541079150216206,
+    "aend3y": 124.29824561403508,
     "aend5y": null,
     "pa5y": null,
     "verlauf": [
@@ -4831,15 +4805,15 @@
     "region": "Saubere Energie",
     "tv": "XETR:IQQH",
     "art": "ETF",
-    "preis": 8.409,
+    "preis": 8.436,
     "datum": "2026-11-11",
-    "aend1d": 0.8636200071968414,
-    "aend1w": -1.6030891645213985,
-    "aend1m": -4.983050847457616,
-    "aend1y": -4.475746904464383,
-    "aend3y": 20.85369359011211,
-    "aend5y": -32.66335682254964,
-    "pa5y": -7.604612227883201,
+    "aend1d": 1.1874775098956514,
+    "aend1w": -1.2871518839222995,
+    "aend1m": -4.677966101694908,
+    "aend1y": -4.169033284107703,
+    "aend3y": 21.24173613107214,
+    "aend5y": -32.447149263292765,
+    "pa5y": -7.545354822210104,
     "verlauf": [
      12.36,
      12.23,
@@ -5106,15 +5080,15 @@
     "region": "KI (Künstliche Intelligenz)",
     "tv": "XETR:XAIX",
     "art": "ETF",
-    "preis": 201.65,
+    "preis": 204.25,
     "datum": "2026-11-11",
-    "aend1d": 2.0909275010125628,
-    "aend1w": -0.8847382649299518,
-    "aend1m": -10.298042704626331,
-    "aend1y": 28.35773392743477,
-    "aend3y": 115.96872657170398,
-    "aend5y": 124.47957252588222,
-    "pa5y": 17.553446171900667,
+    "aend1d": 3.4072498987444355,
+    "aend1w": 0.3932170066355489,
+    "aend1m": -9.141459074733104,
+    "aend1y": 30.012730744748573,
+    "aend3y": 118.75334689943236,
+    "aend5y": 127.37392853167093,
+    "pa5y": 17.855032809893267,
     "verlauf": [
      89.2,
      90.25,
@@ -5381,15 +5355,15 @@
     "region": "KI-Chips (Halbleiter)",
     "tv": "XETR:VVSM",
     "art": "ETF",
-    "preis": 84.72,
+    "preis": 86.44,
     "datum": "2026-11-11",
-    "aend1d": 5.399353072903712,
-    "aend1w": 2.940461725394905,
-    "aend1m": -13.76221498371335,
-    "aend1y": 63.86847195357832,
-    "aend3y": 213.08203991130821,
-    "aend5y": 237.12693991245524,
-    "pa5y": 27.5142414407934,
+    "aend1d": 7.5391888529485085,
+    "aend1w": 5.030376670716885,
+    "aend1m": -12.011400651465799,
+    "aend1y": 67.19535783365569,
+    "aend3y": 219.43828529194383,
+    "aend5y": 243.97134898527656,
+    "pa5y": 28.027850464331205,
     "verlauf": [
      24.77,
      26.01,
@@ -5656,15 +5630,15 @@
     "region": "KI und Robotik",
     "tv": "XETR:2B76",
     "art": "ETF",
-    "preis": 18.112,
+    "preis": 18.306,
     "datum": "2026-11-11",
-    "aend1d": 2.722323049001796,
-    "aend1w": -0.6363835856923572,
-    "aend1m": -9.222133119486786,
-    "aend1y": 28.03619397709598,
-    "aend3y": 76.1182419292104,
-    "aend5y": 42.0549019607843,
-    "pa5y": 7.273202214126129,
+    "aend1d": 3.8225952813067066,
+    "aend1w": 0.42791310072416433,
+    "aend1m": -8.249799518845236,
+    "aend1y": 29.407606390499087,
+    "aend3y": 78.00466744457408,
+    "aend5y": 43.5764705882353,
+    "pa5y": 7.5020273715076025,
     "verlauf": [
      12.6,
      12.97,
