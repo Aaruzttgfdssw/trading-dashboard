@@ -1,48 +1,237 @@
 {
- "erzeugt": "2026-11-14T16:54:31+00:00",
+ "erzeugt": "2026-11-14T21:07:24+00:00",
  "kurse": {
-  "stand": "2026-11-14T16:54:31+00:00",
+  "stand": "2026-11-14T21:07:24+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 59321,
-    "aend24": -4.60423,
-    "aend7": -13.5805,
-    "aend1y": -31.8447,
-    "marktkap": 1192202989623,
-    "volumen": 31140084915
+    "preis": 58691,
+    "aend24": -5.68666,
+    "aend7": -14.3664,
+    "aend1y": -32.2173,
+    "marktkap": 1180383219449,
+    "volumen": 34404295102
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1656.02,
-    "aend24": -5.16986,
-    "aend7": -18.1571,
-    "aend1y": -42.296,
-    "marktkap": 202179111648,
-    "volumen": 11554026864
+    "preis": 1619.38,
+    "aend24": -7.8524,
+    "aend7": -19.9135,
+    "aend1y": -44.2202,
+    "marktkap": 197918705866,
+    "volumen": 13535037638
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 65.88,
-    "aend24": -8.56645,
-    "aend7": -17.9695,
-    "aend1y": -47.8711,
-    "marktkap": 38932371694,
-    "volumen": 3152577777
+    "preis": 64.13,
+    "aend24": -11.14896,
+    "aend7": -21.1781,
+    "aend1y": -50.5947,
+    "marktkap": 37938300307,
+    "volumen": 3585677048
    }
   ]
  },
  "news": {
-  "stand": "2026-11-14T16:54:34+00:00",
+  "stand": "2026-11-14T21:07:26+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Second catch attempt as SpaceX Starship rocket heads back to Earth",
+    "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T21:05:14+00:00",
+    "text": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean."
+   },
+   {
+    "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+    "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T20:41:45+00:00",
+    "text": "The US has not confirmed the Ukrainian president's comments which follow meetings US envoys had with him and Russia's Vladimir Putin.",
+    "tags": [
+     "Prominente",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The US has not confirmed the Ukrainian president's comments which follow meetings US envoys had with him and Russia's Vladimir Putin.",
+    "titel_de": "Laut Selenskyj hat die USA vorgeschlagen, dass die Ukraine den Donbass abtritt, um der NATO beizutreten",
+    "kurz_de": "Die USA haben die Äußerungen des ukrainischen Präsidenten, die auf Treffen von US-Gesandten mit ihm und dem russischen Präsidenten Wladimir Putin folgten, nicht bestätigt."
+   },
+   {
+    "titel": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+    "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T20:23:06+00:00",
+    "text": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
+   },
+   {
+    "titel": "How telecoms upgrade work sparked US flight chaos",
+    "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T20:03:48+00:00",
+    "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
+   },
+   {
+    "titel": "Iran War Accelerates Southeast Asia’s Renewable Energy Push",
+    "link": "https://oilprice.com/Energy/Energy-General/Iran-War-Accelerates-Southeast-Asias-Renewable-Energy-Push.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-14T20:00:00+00:00",
+    "text": "Several countries in Asia have recognised the need to accelerate the deployment of renewable energy to reduce reliance on fossil fuel imports and support energy diversification. The ongoing conflict in the Middle East has significantly red…",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Several countries in Asia have recognised the need to accelerate the deployment of renewable energy to reduce reliance on fossil fuel imports and support energy diversification."
+   },
+   {
+    "titel": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
+    "link": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T19:14:33+00:00",
+    "text": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday."
+   },
+   {
+    "titel": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
+    "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T19:12:25+00:00",
+    "text": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
+   },
+   {
+    "titel": "Italy fines Meta €805m over accessing users' photos",
+    "link": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T18:28:06+00:00",
+    "text": "The social media giant is accused of not informing 20 million users it had access to their photos.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The social media giant is accused of not informing 20 million users it had access to their photos."
+   },
+   {
+    "titel": "Philippines wins first Eurovision Song Contest Asia",
+    "link": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T18:17:58+00:00",
+    "text": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra."
+   },
+   {
+    "titel": "The Week Jensen Huang Fell: How a Spy Scandal Toppled Nvidia’s CEO",
+    "link": "https://decrypt.co/383280/the-week-jensen-huang-fell-how-spy-scandal-toppled-nvidia-ceo",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-14T18:01:02+00:00",
+    "text": "In a matter of days, the executive synonymous with the AI boom resigned after 33 years amid reports of affairs and suspected Chinese intelligence ties—sending Nvidia’s stock reeling and leaving the chipmaker leaderless.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "In a matter of days, the executive synonymous with the AI boom resigned after 33 years amid reports of affairs and suspected Chinese intelligence ties—sending Nvidia’s stock reeling and leaving the c…"
+   },
+   {
+    "titel": "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'",
+    "link": "https://www.bbc.co.uk/news/articles/cmwy05gg75lvo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T18:00:10+00:00",
+    "text": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution."
+   },
+   {
+    "titel": "Singapore Makes a $65 Billion Bet on the Future of Gold",
+    "link": "https://oilprice.com/Metals/Gold/Singapore-Makes-a-65-Billion-Bet-on-the-Future-of-Gold.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-14T18:00:00+00:00",
+    "text": "For three years, the gold story was about who was buying. In 2026, it has become a story about where the metal sleeps at night. On Tuesday, the Monetary Authority of Singapore opened its national currency vault, with room for 500 tons of b…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "For three years, the gold story was about who was buying."
+   },
+   {
+    "titel": "Bitcoin-Treasuries: Ist das Modell noch zukunftssicher?",
+    "link": "https://www.btc-echo.de/news/bitcoin-treasuries-ist-das-modell-noch-zukunftssicher-240751/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-14T18:00:00+00:00",
+    "text": "Treasuries wie Strategy laufen zur Zeit gegen Windmühlen. Warum das Geschäftsmodell nach dem MSCI-Aus anfängt zu bröckeln. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Treasuries wie Strategy laufen zur Zeit gegen Windmühlen.",
+    "titel_de": "Bitcoin-Treasuries: Ist das Modell noch zukunftssicher?",
+    "kurz_de": "Treasuries wie Strategy laufen zur Zeit gegen Windmühlen."
+   },
+   {
+    "titel": "OpenAI, Anthropic, Google and Other AI Giants Face Lawsuit Demanding Development Freeze",
+    "link": "https://decrypt.co/383270/openai-anthropic-google-ai-giants-lawsuit-development-freeze",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-14T17:01:02+00:00",
+    "text": "Four nonprofit advocacy groups want a California court to stop major AI developers from building stronger models, alleging their technology could cause catastrophic harm worldwide.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "Four nonprofit advocacy groups want a California court to stop major AI developers from building stronger models, alleging their technology could cause catastrophic harm worldwide.",
+    "titel_de": "OpenAI, Anthropic, Google und andere KI-Giganten stehen vor einer Klage, die eine Entwicklungssperre fordert",
+    "kurz_de": "Vier gemeinnützige Interessengruppen wollen, dass ein kalifornisches Gericht verhindert, dass große KI-Entwickler leistungsstärkere Modelle entwickeln, da sie behaupten, dass ihre Technologie weltweit katastrophale Schäden verursachen könnte."
+   },
    {
     "titel": "Bitcoin slides to 3-month low of $65,000 as analyst flags fourth capitulation wave",
     "link": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
@@ -70,18 +259,6 @@
     "kurz": "Decentralized Finance total value locked on MegaETH dropped significantly from over $245 million to $8.8 million.",
     "titel_de": "Das Ethereum-Skalierungsprojekt MegaETH reduziert seine Belegschaft um 20 %, während es sein KI-Geschäft vorantreibt",
     "kurz_de": "Der Gesamtwert der auf MegaETH gebundenen dezentralen Finanzmittel ist erheblich gesunken, von über 245 Millionen US-Dollar auf 8,8 Millionen US-Dollar."
-   },
-   {
-    "titel": "Italy fines Meta €805m over accessing users' photos",
-    "link": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T16:29:48+00:00",
-    "text": "The social media giant is accused of not informing about 20 million users it had access to their photos.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The social media giant is accused of not informing about 20 million users it had access to their photos."
    },
    {
     "titel": "What Is Canton Network? The Privacy Blockchain Built for Wall Street",
@@ -162,20 +339,6 @@
     "kurz": "The plan follows Kazakhstan's first sale of tokenized central bank notes as the country expands its crypto market."
    },
    {
-    "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-    "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T15:15:57+00:00",
-    "text": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia."
-   },
-   {
     "titel": "UK, Singapore, and Thailand central banks test cross-border FX settlement as stablecoins gain ground",
     "link": "https://www.coindesk.com/policy/2026/11/14/uk-singapore-and-thailand-central-banks-test-cross-border-fx-settlement-as-stablecoins-gain-ground",
     "quelle": "CoinDesk",
@@ -202,32 +365,6 @@
     "kurz": "Vor einem Jahr starteten in den USA die ersten XRP-ETFs.",
     "titel_de": "Ein Jahr XRP-ETFs: Ist die Party schon vorbei?",
     "kurz_de": "Vor einem Jahr starteten in den USA die ersten XRP-ETFs."
-   },
-   {
-    "titel": "What we know about the ground stop and what to do if you're affected",
-    "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T14:20:57+00:00",
-    "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
-   },
-   {
-    "titel": "Second catch attempt for SpaceX Starship rocket",
-    "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T14:18:41+00:00",
-    "text": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean."
    },
    {
     "titel": "OpenAI Launches ChatGPT Wallet to Let AI Agents Shop—Without Crypto",
@@ -311,18 +448,6 @@
     "kurz": "Charles Hoskinson ist mal wieder in Clinch mit Anlegern geraten.",
     "titel_de": "Cardano-Absturz: Hoskinson sieht seine Arbeit als erledigt",
     "kurz_de": "Charles Hoskinson ist mal wieder in Clinch mit Anlegern geraten."
-   },
-   {
-    "titel": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
-    "link": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T11:30:10+00:00",
-    "text": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday."
    },
    {
     "titel": "Here’s what happened in crypto today",
@@ -560,18 +685,6 @@
     "kurz_de": "Die provokativen Beiträge und militärischen Drohungen des 52-jährigen Generals haben Gerüchte über eine dynastische Nachfolge geschürt."
    },
    {
-    "titel": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-    "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T23:40:45+00:00",
-    "text": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
-   },
-   {
     "titel": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
     "link": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
     "quelle": "CoinDesk",
@@ -770,20 +883,19 @@
     "kurz": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners."
    },
    {
-    "titel": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
+    "titel": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
     "link": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
     "sprache": "en",
     "zeit": "2026-11-13T19:53:57+00:00",
-    "text": "Scott Bessent suggests Howard Lutnick’s commerce department failed to ban exports of Nvidia's chips to a firm thought to have links with China.",
+    "text": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
     "tags": [
      "Prominente",
-     "Regulierung",
      "KI/Chips"
     ],
     "wichtig": 2,
-    "kurz": "Scott Bessent suggests Howard Lutnick’s commerce department failed to ban exports of Nvidia's chips to a firm thought to have links with China.",
+    "kurz": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
     "titel_de": "Die Auswirkungen des Nvidia-Skandals weiten sich aus, da Trumps Finanzminister einen Kabinettskollegen beschuldigt",
     "kurz_de": "Scott Bessent weist darauf hin, dass es dem Handelsministerium unter Howard Lutnick nicht gelungen ist, den Export von Nvidia-Chips an ein Unternehmen zu verbieten, von dem angenommen wird, dass es Verbindungen zu China hat."
    },
@@ -830,30 +942,6 @@
     "kurz": "Wirtschaft vor acht vom 13.11.2026",
     "titel_de": "Wirtschaft vor acht vom 13.11.2026",
     "kurz_de": "Wirtschaft vor acht vom 13.11.2026"
-   },
-   {
-    "titel": "Democratic Senate leader Schumer set to face leadership challenge",
-    "link": "https://www.bbc.co.uk/news/articles/cmy4930jq749o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T19:03:10+00:00",
-    "text": "Maryland Senator Van Hollen says \"new leadership\" is needed for Democrats following the party's recent midterm successes.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Maryland Senator Van Hollen says \"new leadership\" is needed for Democrats following the party's recent midterm successes."
-   },
-   {
-    "titel": "Eurovision is finally coming to Asia - meet the stars gearing up to take the stage",
-    "link": "https://www.bbc.co.uk/news/articles/cw4gn0ky2pgdo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T19:01:36+00:00",
-    "text": "On Saturday, the biggest and longest-running international song contest will make a leap into unknown territory.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "On Saturday, the biggest and longest-running international song contest will make a leap into unknown territory."
    },
    {
     "titel": "Beijing Turns to Soft Power as Washington Expands Central Asia Ties",
@@ -909,18 +997,6 @@
     ],
     "wichtig": 3,
     "kurz": "The Federal Reserve is examining whether AI will lower prices or keep inflation elevated, a question that could shape interest rates and the outlook for crypto."
-   },
-   {
-    "titel": "The Peruvian city that has embraced Pope Leo as one of its own",
-    "link": "https://www.bbc.co.uk/news/articles/cwg7l8n7dx5mo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T18:34:45+00:00",
-    "text": "Pope Leo XIV is in Peru as part of his Latin America tour, just weeks after having surgery for lung cancer.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Pope Leo XIV is in Peru as part of his Latin America tour, just weeks after having surgery for lung cancer."
    },
    {
     "titel": "Germany Eyes €4 Billion Buyout of RWE and E.ON’s Urenco Stake",
@@ -1011,20 +1087,6 @@
     "kurz": "The bipartisan slate—two Republicans and two Democrats, Trump’s first Democratic picks for either agency—would refill commissions that have driven crypto policy since the Clarity Act’s collapse.",
     "titel_de": "Trumps erste demokratische Kandidaten für die SEC und die CFTC könnten die Aufsichtsbehörden für Kryptowährungen neu gestalten",
     "kurz_de": "Die parteiübergreifende Liste – zwei Republikaner und zwei Demokraten, Trumps erste demokratische Kandidaten für beide Behörden – würde die Kommissionen neu besetzen, die seit dem Scheitern des Clarity Act die Kryptopolitik bestimmt haben."
-   },
-   {
-    "titel": "Estonia bans Russian athletes as backlash intensifies",
-    "link": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T17:54:33+00:00",
-    "text": "Estonia is the latest country to say it will not allow Russian or Belarusian athletes to compete on its territory as a result of the ongoing war in Ukraine.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Estonia is the latest country to say it will not allow Russian or Belarusian athletes to compete on its territory as a result of the ongoing war in Ukraine."
    },
    {
     "titel": "Iraq’s Oil Production Soars to 2019 High as Hormuz Flows Surge",
@@ -1252,65 +1314,11 @@
     "kurz": "Nakamoto hat bei Kraken mehr Schulden als sie an der Börse wert ist.",
     "titel_de": "Bitcoin-Treasury Unternehmen schuldet Kraken mehr als sie selbst wert ist",
     "kurz_de": "Nakamoto hat bei Kraken mehr Schulden als sie an der Börse wert ist."
-   },
-   {
-    "titel": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
-    "link": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T15:09:40+00:00",
-    "text": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef."
-   },
-   {
-    "titel": "US-Erzeugerpreise auf Vierjahreshoch: Was das für Bitcoin bedeutet",
-    "link": "https://www.btc-echo.de/news/us-erzeugerpreise-auf-vierjahreshoch-was-das-fuer-bitcoin-bedeutet-240929/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-13T14:47:33+00:00",
-    "text": "Die US-Erzeugerpreise erreichen den höchsten Stand seit vier Jahren, steigen im Monatsvergleich aber weniger stark als erwartet. Für den angeschlagenen Bitcoin-Markt ist das ein kleiner Lichtblick. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Die US-Erzeugerpreise erreichen den höchsten Stand seit vier Jahren, steigen im Monatsvergleich aber weniger stark als erwartet.",
-    "titel_de": "US-Erzeugerpreise auf Vierjahreshoch: Was das für Bitcoin bedeutet",
-    "kurz_de": "Die US-Erzeugerpreise erreichen den höchsten Stand seit vier Jahren, steigen im Monatsvergleich aber weniger stark als erwartet."
-   },
-   {
-    "titel": "EU-Emissionshandel: Mehr kostenlose Verschmutzungsrechte für die Industrie",
-    "link": "https://www.tagesschau.de/wirtschaft/industrie-emissionen-co2-zertifikate-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-13T14:35:01+00:00",
-    "text": "Europas Industrie soll nicht mehr so stark durch das System des Emissionshandels belastet werden. EU-Parlament und Mitgliedstaaten haben sich darauf verständigt, zusätzliche kostenlose Emissionszertifikate auszugeben. Von Andreas Meyer-Fei…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Europas Industrie soll nicht mehr so stark durch das System des Emissionshandels belastet werden.",
-    "titel_de": "EU-Emissionshandel: Mehr kostenlose Verschmutzungsrechte für die Industrie",
-    "kurz_de": "Europas Industrie soll nicht mehr so stark durch das System des Emissionshandels belastet werden."
-   },
-   {
-    "titel": "How Global Energy Markets Survived Eight Months of Iran War Disruptions",
-    "link": "https://oilprice.com/Energy/Energy-General/How-Global-Energy-Markets-Survived-Eight-Months-of-Iran-War-Disruptions.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-13T14:30:00+00:00",
-    "text": "Six months ago, I wrote that Americans were experiencing the Iran war primarily through higher prices, while much of the rest of the world was confronting something more serious: actual shortages of fuel and other critical products. In “Th…",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Six months ago, I wrote that Americans were experiencing the Iran war primarily through higher prices, while much of the rest of the world was confronting something more serious: actual shortages of…"
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-14T16:54:46+00:00",
+  "stand": "2026-11-14T21:07:37+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
