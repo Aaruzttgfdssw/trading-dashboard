@@ -1,48 +1,130 @@
 {
- "erzeugt": "2026-11-13T23:33:30+00:00",
+ "erzeugt": "2026-11-14T03:35:23+00:00",
  "kurse": {
-  "stand": "2026-11-13T23:33:31+00:00",
+  "stand": "2026-11-14T03:35:24+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 61790,
-    "aend24": -4.19461,
-    "aend7": -9.8898,
-    "aend1y": -30.7947,
-    "marktkap": 1242685229810,
-    "volumen": 39565396240
+    "preis": 60496,
+    "aend24": -3.35998,
+    "aend7": -11.0096,
+    "aend1y": -31.9332,
+    "marktkap": 1217128132982,
+    "volumen": 32936729273
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1745.39,
-    "aend24": -4.2458,
-    "aend7": -13.823,
-    "aend1y": -39.2829,
-    "marktkap": 213313866237,
-    "volumen": 13604256168
+    "preis": 1710.0,
+    "aend24": -3.36473,
+    "aend7": -14.9314,
+    "aend1y": -40.5914,
+    "marktkap": 209060164591,
+    "volumen": 12803906519
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 70.58,
-    "aend24": -4.40999,
-    "aend7": -13.5752,
-    "aend1y": -45.0718,
-    "marktkap": 41747677055,
-    "volumen": 3229586257
+    "preis": 68.08,
+    "aend24": -4.81076,
+    "aend7": -15.9811,
+    "aend1y": -47.1527,
+    "marktkap": 40271036674,
+    "volumen": 3283377102
    }
   ]
  },
  "news": {
-  "stand": "2026-11-13T23:33:34+00:00",
+  "stand": "2026-11-14T03:35:27+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Kraken verdient zwei Drittel weniger und sucht neue Geschäftsfelder",
+    "link": "https://www.btc-echo.de/news/kraken-verdient-zwei-drittel-weniger-und-sucht-neue-geschaeftsfelder-240960/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-14T03:30:00+00:00",
+    "text": "Das Handelsgeschäft der Krypto-Börse schrumpft deutlich. Die Antwort darauf besteht unter anderem aus tokenisierten Aktien und künstlicher Intelligenz. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Das Handelsgeschäft der Krypto-Börse schrumpft deutlich.",
+    "titel_de": "Kraken verdient zwei Drittel weniger und sucht neue Geschäftsfelder",
+    "kurz_de": "Das Handelsgeschäft der Krypto-Börse schrumpft deutlich."
+   },
+   {
+    "titel": "“Bitcoin befindet sich in einem langfristigen Bärenmarkt”",
+    "link": "https://www.btc-echo.de/news/bitcoin-befindet-sich-in-einem-langfristigen-baerenmarkt-240917/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-14T03:00:00+00:00",
+    "text": "Bitcoin ist kurzzeitig auf 68.000 US-Dollar abgerutscht. Peter Schiff fühlt sich in seiner Warnung bestätigt, Analyst Benjamin Cowen hielte selbst einen Fall auf 54.000 US-Dollar für eine gute Nachricht. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Bitcoin ist kurzzeitig auf 68.000 US-Dollar abgerutscht.",
+    "titel_de": "“Bitcoin befindet sich in einem langfristigen Bärenmarkt”",
+    "kurz_de": "Bitcoin ist kurzzeitig auf 68.000 US-Dollar abgerutscht."
+   },
+   {
+    "titel": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
+    "link": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T00:03:56+00:00",
+    "text": "Jojo was poached as an infant and grew up in captivity. His keepers want to find him a friend - but it's not straightforward.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Jojo was poached as an infant and grew up in captivity."
+   },
+   {
+    "titel": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+    "link": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T00:03:52+00:00",
+    "text": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
+    "titel_de": "Verhaftete Generäle und ein bedrohter Vizepräsident: Der Sohn des Präsidenten schürt das Fieber der Nachfolge in Uganda",
+    "kurz_de": "Die provokativen Beiträge und militärischen Drohungen des 52-jährigen Generals haben Gerüchte über eine dynastische Nachfolge geschürt."
+   },
+   {
+    "titel": "Setback for SpaceX Starship rocket's double-catch test",
+    "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T00:01:01+00:00",
+    "text": "Elon Musk’s company aborted an attempted catch of the rocket’s booster - instead it came down in the ocean.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "Elon Musk’s company aborted an attempted catch of the rocket’s booster - instead it came down in the ocean."
+   },
+   {
+    "titel": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+    "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-13T23:40:45+00:00",
+    "text": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
+   },
    {
     "titel": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
     "link": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
@@ -56,6 +138,18 @@
     ],
     "wichtig": 1,
     "kurz": "Contracts that sell power to a 4% slice of the world’s bitcoin mining at $44 a megawatt-hour expire on Dec."
+   },
+   {
+    "titel": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
+    "link": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-13T23:11:51+00:00",
+    "text": "A new wave of youth dissent swept India this summer, fuelled by frustration and irreverent online satire.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "A new wave of youth dissent swept India this summer, fuelled by frustration and irreverent online satire."
    },
    {
     "titel": "How the Jensen Huang scandal created a headache for business-friendly Singapore",
@@ -165,13 +259,13 @@
     "bereich": "Welt",
     "sprache": "en",
     "zeit": "2026-11-13T21:15:24+00:00",
-    "text": "A cargo ship has collided with a docked cruise ship in New Orleans, with reports suggesting more than 120 people were on board the cruise ship.",
+    "text": "All passengers have been accounted for after a cargo ship collided with a docked cruise ship.",
     "tags": [],
     "wichtig": 0,
-    "kurz": "A cargo ship has collided with a docked cruise ship in New Orleans, with reports suggesting more than 120 people were on board the cruise ship."
+    "kurz": "All passengers have been accounted for after a cargo ship collided with a docked cruise ship."
    },
    {
-    "titel": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
+    "titel": "Microsoft 'deeply sorry' for global outage as it reports broad recovery",
     "link": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
@@ -280,20 +374,6 @@
     ],
     "wichtig": 1,
     "kurz": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners."
-   },
-   {
-    "titel": "SpaceX to attempt double catch of huge Starship rocket",
-    "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T20:12:02+00:00",
-    "text": "Elon Musk’s company will try to grab both parts of the rocket for the first time.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "Elon Musk’s company will try to grab both parts of the rocket for the first time."
    },
    {
     "titel": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
@@ -1211,97 +1291,11 @@
     ],
     "wichtig": 0,
     "kurz": "Equity markets are falling as well, with interest rates and the dollar surging amid an increasingly hawkish Federal Reserve."
-   },
-   {
-    "titel": "Weltweit mehr Urlaubsanträge vor Start des Videospiels \"GTA VI\"",
-    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/weltweit-mehr-urlaubsantraege-start-gta6-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-13T09:12:03+00:00",
-    "text": "13 Jahre nach seiner letzten Version steht das neue Videospiel \"Grand Theft Auto VI\" vor der Premiere. Software-Anbieter berichten von weltweit gestiegenen Urlaubsanträgen im Vorfeld. Der Entwickler hofft auf ein Milliardengeschäft.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "13 Jahre nach seiner letzten Version steht das neue Videospiel \"Grand Theft Auto VI\" vor der Premiere.",
-    "titel_de": "Weltweit mehr Urlaubsanträge vor Start des Videospiels \"GTA VI\"",
-    "kurz_de": "13 Jahre nach seiner letzten Version steht das neue Videospiel \"Grand Theft Auto VI\" vor der Premiere."
-   },
-   {
-    "titel": "Update Wirtschaft vom 13.11.2026",
-    "link": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1683034.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-13T09:11:38+00:00",
-    "text": "Update Wirtschaft vom 13.11.2026",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Update Wirtschaft vom 13.11.2026",
-    "titel_de": "Update Wirtschaft vom 13.11.2026",
-    "kurz_de": "Update Wirtschaft vom 13.11.2026"
-   },
-   {
-    "titel": "Jane Street boosts Fidelity Bitcoin ETF holdings nearly 8x, trims IBIT",
-    "link": "https://cointelegraph.com/news/jane-street-add-fidelity-bitcoin-etf-ibit-cut-q3-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-13T09:05:10+00:00",
-    "text": "Jane Street ended Q3 with 19% fewer shares in BlackRock’s Bitcoin ETF, and a higher share price lifted the stake’s value to $957 million.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 2,
-    "kurz": "Jane Street ended Q3 with 19% fewer shares in BlackRock’s Bitcoin ETF, and a higher share price lifted the stake’s value to $957 million.",
-    "titel_de": "Jane Street erhöht die Bestände des Fidelity-Bitcoin-ETF um fast das Achtfache und reduziert IBIT",
-    "kurz_de": "Jane Street beendete das dritte Quartal mit 19 % weniger Anteilen am Bitcoin-ETF von BlackRock, und ein höherer Aktienkurs hob den Wert der Beteiligung auf 957 Millionen US-Dollar."
-   },
-   {
-    "titel": "Krypto-Börse Binance meldet vollständige Rückzahlung aller Verluste",
-    "link": "https://www.btc-echo.de/news/krypto-borse-binance-meldet-rueckzahlung-aller-verluste-240898/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-13T08:59:54+00:00",
-    "text": "Binance-Kunden sollen durch den größten Krypto-Diebstahl der Geschichte keinen Cent verlieren. Noch steht der kryptografische Nachweis über die Deckung aber aus. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Binance-Kunden sollen durch den größten Krypto-Diebstahl der Geschichte keinen Cent verlieren.",
-    "titel_de": "Krypto-Börse Binance meldet vollständige Rückzahlung aller Verluste",
-    "kurz_de": "Binance-Kunden sollen durch den größten Krypto-Diebstahl der Geschichte keinen Cent verlieren."
-   },
-   {
-    "titel": "Welche Folgen Nvidias Absturz für die KI-Branche hat",
-    "link": "https://www.tagesschau.de/wirtschaft/nvidia-ruecktritt-folgen-ki-branche-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-13T08:26:55+00:00",
-    "text": "Mit dem Abgang von Nvidia-Gründer Huang verliert das Unternehmen seinen visionären Vordenker. Was bedeutet das jetzt für das Unternehmen selbst und die Konkurrenz? Von R. Spiegelhauer.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 2,
-    "kurz": "Mit dem Abgang von Nvidia-Gründer Huang verliert das Unternehmen seinen visionären Vordenker.",
-    "titel_de": "Welche Folgen Nvidias Absturz für die KI-Branche hat",
-    "kurz_de": "Mit dem Abgang von Nvidia-Gründer Huang verliert das Unternehmen seinen visionären Vordenker."
-   },
-   {
-    "titel": "Microsoft 365 outage hits Outlook email and Teams calendars worldwide",
-    "link": "https://cointelegraph.com/news/microsoft-365-global-outage-outlook-teams-ai-services?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-13T08:26:01+00:00",
-    "text": "Microsoft began a wider patch rollout Friday as the outage disrupted government email and Microsoft 365 connectors in ChatGPT and Claude.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Microsoft began a wider patch rollout Friday as the outage disrupted government email and Microsoft 365 connectors in ChatGPT and Claude."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-13T23:33:47+00:00",
+  "stand": "2026-11-14T03:35:40+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
