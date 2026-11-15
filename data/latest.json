@@ -1,48 +1,222 @@
 {
- "erzeugt": "2026-11-15T15:22:47+00:00",
+ "erzeugt": "2026-11-15T20:28:53+00:00",
  "kurse": {
-  "stand": "2026-11-15T15:22:47+00:00",
+  "stand": "2026-11-15T20:28:53+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 58713,
-    "aend24": -1.01726,
-    "aend7": -14.4574,
-    "aend1y": -32.6315,
-    "marktkap": 1180862746061,
-    "volumen": 47889965759
+    "preis": 58831,
+    "aend24": -0.9443,
+    "aend7": -14.3776,
+    "aend1y": -32.3272,
+    "marktkap": 1183225322086,
+    "volumen": 44645969259
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1641.85,
-    "aend24": -1.35961,
-    "aend7": -18.9557,
-    "aend1y": -43.2031,
-    "marktkap": 200669096278,
-    "volumen": 19015321008
+    "preis": 1654.58,
+    "aend24": -0.01659,
+    "aend7": -18.2878,
+    "aend1y": -43.0288,
+    "marktkap": 202203576183,
+    "volumen": 17374677112
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 64.69,
-    "aend24": -3.10038,
-    "aend7": -19.79,
-    "aend1y": -49.4391,
-    "marktkap": 38273671663,
-    "volumen": 4847759903
+    "preis": 64.89,
+    "aend24": -0.55338,
+    "aend7": -19.8136,
+    "aend1y": -49.6015,
+    "marktkap": 38398045323,
+    "volumen": 4539908509
    }
   ]
  },
  "news": {
-  "stand": "2026-11-15T15:22:49+00:00",
+  "stand": "2026-11-15T20:28:55+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "The $130 Billion Oil Boom Fueled by the Iran War",
+    "link": "https://oilprice.com/Energy/Crude-Oil/The-130-Billion-Oil-Boom-Fueled-by-the-Iran-War.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-15T20:00:00+00:00",
+    "text": "Several oil and gas companies in the United States have benefited from increased trade following the war in Iran that began in February, and from subsequent restrictions on international energy trade. Many countries have been forced to tur…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Several oil and gas companies in the United States have benefited from increased trade following the war in Iran that began in February, and from subsequent restrictions on international energy trade.",
+    "titel_de": "Der Ölboom im Wert von 130 Milliarden US-Dollar, der durch den Krieg im Iran angeheizt wurde",
+    "kurz_de": "Mehrere Öl- und Gasunternehmen in den Vereinigten Staaten haben von dem verstärkten Handel nach dem im Februar begonnenen Krieg im Iran und den anschließenden Beschränkungen des internationalen Energiehandels profitiert."
+   },
+   {
+    "titel": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+    "link": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T19:32:39+00:00",
+    "text": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks.",
+    "tags": [
+     "Prominente",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks.",
+    "titel_de": "Selenskyj fordert die USA und Musk auf, die Starlink-Beschränkungen aufzuheben und sich auf die „richtige Seite der Geschichte“ zu stellen",
+    "kurz_de": "Der ukrainische Präsident sagt, dass die Beschränkungen nach wie vor bestehen und es schwierig machen, die russischen Angriffe zu stoppen."
+   },
+   {
+    "titel": "Ronaldinho makes comeback in Ravenna win",
+    "link": "https://www.bbc.co.uk/sport/football/articles/ckregz4g823xo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T19:31:48+00:00",
+    "text": "Brazil legend Ronaldinho makes his comeback aged 46 for Ravenna, playing the first half of their Italian third-tier derby against Forli.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Brazil legend Ronaldinho makes his comeback aged 46 for Ravenna, playing the first half of their Italian third-tier derby against Forli."
+   },
+   {
+    "titel": "Did prediction markets call the U.S. midterm election?: State of Crypto",
+    "link": "https://www.coindesk.com/policy/2026/11/15/did-prediction-markets-call-the-u-s-midterm-election-state-of-crypto",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-15T19:30:00+00:00",
+    "text": "Prediction markets and polls largely aligned by the end of the 2026 election cycle, and both had notable misses.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Prediction markets and polls largely aligned by the end of the 2026 election cycle, and both had notable misses."
+   },
+   {
+    "titel": "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
+    "link": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T19:20:53+00:00",
+    "text": "The US transport secretary says that normal air-traffic operations may not be restored until Monday.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The US transport secretary says that normal air-traffic operations may not be restored until Monday."
+   },
+   {
+    "titel": "Pope Leo rides in helicopter cockpit during Peru trip",
+    "link": "https://www.bbc.co.uk/news/videos/c6pw4rl00lrjo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T18:38:11+00:00",
+    "text": "The Pope took to the skies before arriving in Cusco on the penultimate day of his Latin America tour.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The Pope took to the skies before arriving in Cusco on the penultimate day of his Latin America tour."
+   },
+   {
+    "titel": "Bitcoin für ein Eigenheim verkaufen? Jack Mallers warnt vor einem teuren Fehler",
+    "link": "https://www.btc-echo.de/news/bitcoin-fuer-eigenheim-verkaufen-jack-mallers-warnt-240867/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-15T18:00:00+00:00",
+    "text": "Sollte man Bitcoin für die eigenen vier Wände opfern? Strike-CEO Jack Mallers warnt vor Fiat-Illusionen – und erklärt, wie man beim Immobilienkauf bares Geld spart. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Sollte man Bitcoin für die eigenen vier Wände opfern?",
+    "titel_de": "Bitcoin für ein Eigenheim verkaufen? Jack Mallers warnt vor einem teuren Fehler",
+    "kurz_de": "Sollte man Bitcoin für die eigenen vier Wände opfern?"
+   },
+   {
+    "titel": "Czechs rally against plan to switch funding of public media",
+    "link": "https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T17:23:40+00:00",
+    "text": "Protesters say the move will stifle media freedom, while the government insists broadcasters need to cut costs.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Protesters say the move will stifle media freedom, while the government insists broadcasters need to cut costs."
+   },
+   {
+    "titel": "Clothing factories shut in Bangladesh as workers strike over pay",
+    "link": "https://www.bbc.co.uk/news/articles/cx5y1pzr9604o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T16:15:20+00:00",
+    "text": "Workers are striking over demands for a minimum wage of 30,000 taka (£182) a month.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Workers are striking over demands for a minimum wage of 30,000 taka (£182) a month."
+   },
+   {
+    "titel": "How Wall Street Is Racing to Claim the Onchain Dollar",
+    "link": "https://decrypt.co/383284/how-wall-street-racing-onchain-dollar-stablecoins",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-15T16:01:02+00:00",
+    "text": "From Goldman and Citi’s $270 million “Project Faro” to SoFi, Anchorage, Mastercard, Visa and Circle, traditional finance is racing to claim the onchain dollar once dominated by Tether and Circle.",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "From Goldman and Citi’s $270 million “Project Faro” to SoFi, Anchorage, Mastercard, Visa and Circle, traditional finance is racing to claim the onchain dollar once dominated by Tether and Circle."
+   },
+   {
+    "titel": "How Brazil Plans to Accelerate the Global Shift Away From Fossil Fuels",
+    "link": "https://oilprice.com/Energy/Energy-General/How-Brazil-Plans-to-Accelerate-the-Global-Shift-Away-From-Fossil-Fuels.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-15T16:00:00+00:00",
+    "text": "Brazil has launched two roadmaps to encourage other countries around the globe to accelerate the phasing out of fossil fuels and plan for a green transition. The roadmaps offer broad frameworks to encourage countries to develop their own,…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Brazil has launched two roadmaps to encourage other countries around the globe to accelerate the phasing out of fossil fuels and plan for a green transition."
+   },
+   {
+    "titel": "XRP-Prognose bis 2030: Welche Kursziele Experten für realistisch halten",
+    "link": "https://www.btc-echo.de/news/xrp-prognose-bis-2030-welche-kursziele-experten-fuer-realistisch-halten-240862/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-15T16:00:00+00:00",
+    "text": "Die Kursziele für XRP reichen von solidem Wachstum bis zu spektakulären Höhenflügen. Eine Analyse zeigt, welche Szenarien plausibel sind und wo die ökonomischen Grenzen liegen. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Die Kursziele für XRP reichen von solidem Wachstum bis zu spektakulären Höhenflügen.",
+    "titel_de": "XRP-Prognose bis 2030: Welche Kursziele Experten für realistisch halten",
+    "kurz_de": "Die Kursziele für XRP reichen von solidem Wachstum bis zu spektakulären Höhenflügen."
+   },
+   {
+    "titel": "Judge blocks Trump closure of 'Trash Island' Washington DC golf course on Sunday",
+    "link": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T15:57:03+00:00",
+    "text": "The temporary order is part of a months-long challenge to the US president's plans to upgrade East Potomac Golf Links into a championship course.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "The temporary order is part of a months-long challenge to the US president's plans to upgrade East Potomac Golf Links into a championship course."
+   },
    {
     "titel": "Quallenzucht: Ein Geschäftsmodell, das sich lohnt",
     "link": "https://www.tagesschau.de/wirtschaft/unternehmen/quallenzucht-100.html",
@@ -100,18 +274,6 @@
     "kurz": "Nach mehreren Fällen von Insiderwetten untersucht der US-Kongress den Umgang mit Prognosemärkten.",
     "titel_de": "Prognosemärkte: US-Kongress berät über neue Verbote",
     "kurz_de": "Nach mehreren Fällen von Insiderwetten untersucht der US-Kongress den Umgang mit Prognosemärkten."
-   },
-   {
-    "titel": "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
-    "link": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T14:33:59+00:00",
-    "text": "The lawsuit filed by New Orleans officials also requests that the tanker involved in the collision with the cruise ship be seized and sold to pay for damages.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "The lawsuit filed by New Orleans officials also requests that the tanker involved in the collision with the cruise ship be seized and sold to pay for damages."
    },
    {
     "titel": "Enterprise blockchain is going to come back from the dead",
@@ -315,18 +477,6 @@
     "kurz_de": "Erst SpaceX, dann Anthropic: Der nächste Mega-IPO lenkt die Aufmerksamkeit der Anleger auf sich."
    },
    {
-    "titel": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
-    "link": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T09:57:25+00:00",
-    "text": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the Pope served as bishop from 2015 to 2023.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the Pope served as bishop from 2015 to 2023."
-   },
-   {
     "titel": "Nach Markteinbruch: Bitcoin dreht wieder nach oben",
     "link": "https://www.btc-echo.de/news/nach-markteinbruch-bitcoin-dreht-wieder-nach-oben-241009/",
     "quelle": "BTC-ECHO",
@@ -339,20 +489,6 @@
     "kurz": "Der Krypto-Markt ist über Nacht eingebrochen.",
     "titel_de": "Nach Markteinbruch: Bitcoin dreht wieder nach oben",
     "kurz_de": "Der Krypto-Markt ist über Nacht eingebrochen."
-   },
-   {
-    "titel": "Fifth Canadian soldier dies from injuries caused by large fire at military base",
-    "link": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T09:26:37+00:00",
-    "text": "Pte William Douglas Dal Bianco died from his injuries on Friday, a month after a fire that tore through CFB Wainwright.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Pte William Douglas Dal Bianco died from his injuries on Friday, a month after a fire that tore through CFB Wainwright."
    },
    {
     "titel": "Israel kills Hamas commander in strike on Gaza camp, officials say",
@@ -381,20 +517,6 @@
     "kurz": "The South Korean crypto exchange said potentially exposed information includes passwords, bank account numbers, national identification numbers and crypto wallet addresses."
    },
    {
-    "titel": "Copper wire upgrade behind US flight suspension, transport secretary says",
-    "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T07:10:31+00:00",
-    "text": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
-   },
-   {
     "titel": "RWA protocol stUSDT winds down three years after $2.3B TVL peak",
     "link": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
@@ -405,20 +527,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed."
-   },
-   {
-    "titel": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
-    "link": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T03:21:04+00:00",
-    "text": "It is the latest development in a months-long challenge to the US president's plans for East Potomac Golf Links.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "It is the latest development in a months-long challenge to the US president's plans for East Potomac Golf Links."
    },
    {
     "titel": "Hoffnung bei der Krypto-Steuer – Schock für Strategy",
@@ -501,22 +609,6 @@
     "kurz": "European Union leaders are among the most enthusiastic proponents of maximum electrification to reduce dependence on imported energy commodities."
    },
    {
-    "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-    "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T22:37:25+00:00",
-    "text": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
-    "titel_de": "Laut Selenskyj hat die USA vorgeschlagen, dass die Ukraine den Donbass abtritt, um der NATO beizutreten",
-    "kurz_de": "Die USA haben die Äußerungen des ukrainischen Präsidenten, die auf Treffen von US-Gesandten mit ihm und dem russischen Präsidenten Wladimir Putin folgten, nicht bestätigt."
-   },
-   {
     "titel": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
     "link": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -572,30 +664,6 @@
     "kurz": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday."
    },
    {
-    "titel": "Italy fines Meta €805m over accessing users' photos",
-    "link": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T18:28:06+00:00",
-    "text": "The social media giant is accused of not informing 20 million users it had access to their photos.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The social media giant is accused of not informing 20 million users it had access to their photos."
-   },
-   {
-    "titel": "Philippines wins first Eurovision Song Contest Asia",
-    "link": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T18:17:58+00:00",
-    "text": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra."
-   },
-   {
     "titel": "The Week Jensen Huang Fell: How a Spy Scandal Toppled Nvidia’s CEO",
     "link": "https://decrypt.co/383280/the-week-jensen-huang-fell-how-spy-scandal-toppled-nvidia-ceo",
     "quelle": "Decrypt",
@@ -608,18 +676,6 @@
     ],
     "wichtig": 1,
     "kurz": "In a matter of days, the executive synonymous with the AI boom resigned after 33 years amid reports of affairs and suspected Chinese intelligence ties—sending Nvidia’s stock reeling and leaving the c…"
-   },
-   {
-    "titel": "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'",
-    "link": "https://www.bbc.co.uk/news/articles/cmwy05gg75lvo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T18:00:10+00:00",
-    "text": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution."
    },
    {
     "titel": "Singapore Makes a $65 Billion Bet on the Future of Gold",
@@ -734,32 +790,6 @@
     "kurz_de": "Nicole Nowak kündigte ihren sicheren Konzernjob und setzte voll auf Bitcoin."
    },
    {
-    "titel": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-    "link": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T15:53:55+00:00",
-    "text": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says."
-   },
-   {
-    "titel": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
-    "link": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T15:42:54+00:00",
-    "text": "The foreign ministry in Abuja says 6 Nigerians with underlying health problems have died this year while transiting through Addis Ababa.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The foreign ministry in Abuja says 6 Nigerians with underlying health problems have died this year while transiting through Addis Ababa."
-   },
-   {
     "titel": "Kazakhstan plans tokenized government bonds in first quarter after $22 million note sale",
     "link": "https://www.coindesk.com/business/2026/11/14/kazakhstan-plans-tokenized-government-bonds-in-first-quarter-after-usd22-million-note-sale",
     "quelle": "CoinDesk",
@@ -864,18 +894,6 @@
     "kurz": "Charles Hoskinson ist mal wieder in Clinch mit Anlegern geraten.",
     "titel_de": "Cardano-Absturz: Hoskinson sieht seine Arbeit als erledigt",
     "kurz_de": "Charles Hoskinson ist mal wieder in Clinch mit Anlegern geraten."
-   },
-   {
-    "titel": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
-    "link": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T10:42:20+00:00",
-    "text": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April."
    },
    {
     "titel": "Microsoft confirms global outage resolved, rules out cyberattack",
@@ -1270,29 +1288,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Two Bitcoin mining rewards from September 2010 moved minutes apart."
-   },
-   {
-    "titel": "Trump Extends Jones Act Waiver For Another 90 Days",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Extends-Jones-Act-Waiver-For-Another-90-Days.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-13T19:30:00+00:00",
-    "text": "President Donald Trump extended the Jones Act waiver for another 90 days on Friday, keeping foreign-flagged tankers eligible to move oil and other commodities between U.S. ports as the war with Iran continues to drive up fuel costs. The ex…",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "President Donald Trump extended the Jones Act waiver for another 90 days on Friday, keeping foreign-flagged tankers eligible to move oil and other commodities between U.S.",
-    "titel_de": "Trump verlängert die Ausnahmeregelung vom Jones Act um weitere 90 Tage",
-    "kurz_de": "Präsident Donald Trump hat am Freitag die Ausnahmeregelung vom Jones Act um weitere 90 Tage verlängert, sodass Tanker unter ausländischer Flagge weiterhin Öl und andere Rohstoffe zwischen US-Häfen transportieren dürfen."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-15T15:22:59+00:00",
+  "stand": "2026-11-15T20:29:06+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
