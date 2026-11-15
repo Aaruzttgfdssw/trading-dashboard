@@ -1,59 +1,109 @@
 {
- "erzeugt": "2026-11-14T21:07:24+00:00",
+ "erzeugt": "2026-11-15T01:02:57+00:00",
  "kurse": {
-  "stand": "2026-11-14T21:07:24+00:00",
+  "stand": "2026-11-15T01:02:57+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 58691,
-    "aend24": -5.68666,
-    "aend7": -14.3664,
-    "aend1y": -32.2173,
-    "marktkap": 1180383219449,
-    "volumen": 34404295102
+    "preis": 57523,
+    "aend24": -7.06562,
+    "aend7": -16.2687,
+    "aend1y": -33.0518,
+    "marktkap": 1156904020786,
+    "volumen": 40440315916
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1619.38,
-    "aend24": -7.8524,
-    "aend7": -19.9135,
-    "aend1y": -44.2202,
-    "marktkap": 197918705866,
-    "volumen": 13535037638
+    "preis": 1578.46,
+    "aend24": -9.76621,
+    "aend7": -22.1732,
+    "aend1y": -44.1748,
+    "marktkap": 192916765412,
+    "volumen": 16148398708
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 64.13,
-    "aend24": -11.14896,
-    "aend7": -21.1781,
-    "aend1y": -50.5947,
-    "marktkap": 37938300307,
-    "volumen": 3585677048
+    "preis": 62.97,
+    "aend24": -10.45407,
+    "aend7": -22.5493,
+    "aend1y": -50.013,
+    "marktkap": 37249012533,
+    "volumen": 4008504898
    }
   ]
  },
  "news": {
-  "stand": "2026-11-14T21:07:26+00:00",
+  "stand": "2026-11-15T01:02:59+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
    {
-    "titel": "Second catch attempt as SpaceX Starship rocket heads back to Earth",
-    "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+    "titel": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
+    "link": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-11-14T21:05:14+00:00",
-    "text": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean.",
+    "zeit": "2026-11-15T00:06:55+00:00",
+    "text": "Fear and misinformation surrounds the Ebola outbreak in DR Congo - Dr Kamwanga's mother was not immune.",
     "tags": [],
     "wichtig": 0,
-    "kurz": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean."
+    "kurz": "Fear and misinformation surrounds the Ebola outbreak in DR Congo - Dr Kamwanga's mother was not immune."
+   },
+   {
+    "titel": "Judo champion shakes up French presidential race with surprise candidacy",
+    "link": "https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T00:06:51+00:00",
+    "text": "Teddy Riner is one of the most popular figures in modern-day France, and one in five voters say they could support him.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Teddy Riner is one of the most popular figures in modern-day France, and one in five voters say they could support him."
+   },
+   {
+    "titel": "Beauty advent calendars can cost hundreds - but are they value for money?",
+    "link": "https://www.bbc.co.uk/news/articles/cqn83l442724o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-15T00:01:07+00:00",
+    "text": "Beauty calendars have become a Christmas staple and have become particularly popular with female shoppers.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Beauty calendars have become a Christmas staple and have become particularly popular with female shoppers."
+   },
+   {
+    "titel": "Electrifying Ambitions Meet Tough Reality in Europe",
+    "link": "https://oilprice.com/Energy/Energy-General/Electrifying-Ambitions-Meet-Tough-Reality-in-Europe.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-15T00:00:00+00:00",
+    "text": "European Union leaders are among the most enthusiastic proponents of maximum electrification to reduce dependence on imported energy commodities. A lot of EU policy pursues precisely that. Yet EU electricity prices last week surged to over…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "European Union leaders are among the most enthusiastic proponents of maximum electrification to reduce dependence on imported energy commodities."
+   },
+   {
+    "titel": "How telecoms upgrade work sparked US flight chaos",
+    "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T23:11:27+00:00",
+    "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
    },
    {
     "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
@@ -61,16 +111,44 @@
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-11-14T20:41:45+00:00",
-    "text": "The US has not confirmed the Ukrainian president's comments which follow meetings US envoys had with him and Russia's Vladimir Putin.",
+    "zeit": "2026-11-14T22:37:25+00:00",
+    "text": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
     "tags": [
-     "Prominente",
      "Krieg/Konflikt"
     ],
-    "wichtig": 2,
-    "kurz": "The US has not confirmed the Ukrainian president's comments which follow meetings US envoys had with him and Russia's Vladimir Putin.",
+    "wichtig": 1,
+    "kurz": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
     "titel_de": "Laut Selenskyj hat die USA vorgeschlagen, dass die Ukraine den Donbass abtritt, um der NATO beizutreten",
     "kurz_de": "Die USA haben die Äußerungen des ukrainischen Präsidenten, die auf Treffen von US-Gesandten mit ihm und dem russischen Präsidenten Wladimir Putin folgten, nicht bestätigt."
+   },
+   {
+    "titel": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
+    "link": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-14T22:09:40+00:00",
+    "text": "SpaceX has performed the historic catch using mechanical arms nicknamed \"chopsticks\".",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "SpaceX has performed the historic catch using mechanical arms nicknamed \"chopsticks\"."
+   },
+   {
+    "titel": "Nvidia Without Huang: What a Pause in AI Deals Means for Metals",
+    "link": "https://oilprice.com/Metals/Commodities/Nvidia-Without-Huang-What-a-Pause-in-AI-Deals-Means-for-Metals.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-14T22:00:00+00:00",
+    "text": "Copper slid to its lowest in almost four months on Friday and was heading for a fifth straight weekly loss, with traders blaming Nvidia’s (Nasdaq: NVDA) loss of Jensen Huang for the latest leg down. The exit is a convenient culprit, but th…",
+    "tags": [
+     "Rohstoffe",
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "Copper slid to its lowest in almost four months on Friday and was heading for a fifth straight weekly loss, with traders blaming Nvidia’s (Nasdaq: NVDA) loss of Jensen Huang for the latest leg down.",
+    "titel_de": "Nvidia ohne Huang: Was eine Pause bei KI-Geschäften für Metalle bedeutet",
+    "kurz_de": "Kupfer fiel am Freitag auf den niedrigsten Stand seit fast vier Monaten und steuerte auf den fünften Wochenverlust in Folge zu, wobei die Händler den Verlust von Jensen Huang bei Nvidia (Nasdaq: NVDA) für den jüngsten Rückgang verantwortlich machten."
    },
    {
     "titel": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
@@ -83,20 +161,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
-   },
-   {
-    "titel": "How telecoms upgrade work sparked US flight chaos",
-    "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T20:03:48+00:00",
-    "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
    },
    {
     "titel": "Iran War Accelerates Southeast Asia’s Renewable Energy Push",
@@ -233,7 +297,7 @@
     "kurz_de": "Vier gemeinnützige Interessengruppen wollen, dass ein kalifornisches Gericht verhindert, dass große KI-Entwickler leistungsstärkere Modelle entwickeln, da sie behaupten, dass ihre Technologie weltweit katastrophale Schäden verursachen könnte."
    },
    {
-    "titel": "Bitcoin slides to 3-month low of $65,000 as analyst flags fourth capitulation wave",
+    "titel": "Bitcoin crashes to 3-month low below $64,000 as analyst flags fourth capitulation wave",
     "link": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
     "quelle": "CoinDesk",
     "bereich": "Krypto",
@@ -241,7 +305,7 @@
     "zeit": "2026-11-14T16:33:29+00:00",
     "text": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check.",
     "tags": [],
-    "wichtig": 0,
+    "wichtig": 1,
     "kurz": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check."
    },
    {
@@ -713,8 +777,8 @@
    {
     "titel": "How the Jensen Huang scandal created a headache for business-friendly Singapore",
     "link": "https://www.bbc.co.uk/news/articles/ck1exevgql4qo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
     "sprache": "en",
     "zeit": "2026-11-13T23:00:31+00:00",
     "text": "The scandal has cast a spotlight on Singapore's success as a chip hub - and a location for alleged illicit trade.",
@@ -1157,21 +1221,6 @@
     "kurz_de": "Die Ölpreise erholten sich am Freitag im frühen Handel, da die geopolitischen Risiken wieder zunehmen und der Optimismus hinsichtlich möglicher Friedensabkommen nachlässt."
    },
    {
-    "titel": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
-    "link": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-13T16:40:31+00:00",
-    "text": "The fact the question of European security now features in discussions is viewed in Moscow as a victory, BBC Russia Editor Steve Rosenberg says.",
-    "tags": [
-     "Prominente",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "The fact the question of European security now features in discussions is viewed in Moscow as a victory, BBC Russia Editor Steve Rosenberg says."
-   },
-   {
     "titel": "Anleger ziehen weiter Geld aus den Krypto-ETFs ab",
     "link": "https://www.btc-echo.de/news/anleger-ziehen-weiter-geld-aus-den-krypto-etfs-ab-240952/",
     "quelle": "BTC-ECHO",
@@ -1255,70 +1304,11 @@
     ],
     "wichtig": 2,
     "kurz": "Bitcoin is down 21% this year as investors weigh Anthropic’s anticipated listing, Nvidia’s leadership upheaval and rising Fed rate hike expectations."
-   },
-   {
-    "titel": "Chainlink: Moody’s testet Kreditratings auf der Blockchain – kann LINK profitieren?",
-    "link": "https://www.btc-echo.de/news/chainlink-moodys-testet-kreditratings-auf-der-blockchain-kann-link-profitieren-240750/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-13T16:00:00+00:00",
-    "text": "Chainlink schließt erfolgreich ein Pilotprojekt mit Moody’s ab und baut seine Stellung als führender Infrastrukturanbieter für tokenisierte Assets weiter aus. Was der Test zeigt und warum der LINK-Kurs davon bislang wenig spürt. Source: BT…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Chainlink schließt erfolgreich ein Pilotprojekt mit Moody’s ab und baut seine Stellung als führender Infrastrukturanbieter für tokenisierte Assets weiter aus.",
-    "titel_de": "Chainlink: Moody’s testet Kreditratings auf der Blockchain – kann LINK profitieren?",
-    "kurz_de": "Chainlink schließt erfolgreich ein Pilotprojekt mit Moody’s ab und baut seine Stellung als führender Infrastrukturanbieter für tokenisierte Assets weiter aus."
-   },
-   {
-    "titel": "Strategy-CEO kritisiert MSCI scharf – und spielt Ausschluss herunter",
-    "link": "https://www.btc-echo.de/news/strategy-ceo-kritisiert-msci-scharf-und-spielt-ausschluss-herunter-240916/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-13T15:54:22+00:00",
-    "text": "Nach dem Ausschluss von Strategy aus den MSCI-Indizes geht CEO Phong Le zum Gegenangriff über. Er wirft dem Indexanbieter eine Kampagne gegen Bitcoin vor. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Nach dem Ausschluss von Strategy aus den MSCI-Indizes geht CEO Phong Le zum Gegenangriff über.",
-    "titel_de": "Strategy-CEO kritisiert MSCI scharf – und spielt Ausschluss herunter",
-    "kurz_de": "Nach dem Ausschluss von Strategy aus den MSCI-Indizes geht CEO Phong Le zum Gegenangriff über."
-   },
-   {
-    "titel": "Iran Rules Out Return of UN Nuclear Inspectors as U.S. War Talks Stall",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Rules-Out-Return-of-UN-Nuclear-Inspectors-as-US-War-Talks-Stall.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-13T15:30:00+00:00",
-    "text": "Iran continues to divert attempts by the International Atomic Energy Agency (IAEA) to access and verify the Iranian stockpile of enriched uranium and rules out any engagement with the UN’s agency’s inspectors amid the standoff in the war w…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Iran continues to divert attempts by the International Atomic Energy Agency (IAEA) to access and verify the Iranian stockpile of enriched uranium and rules out any engagement with the UN’s agency’s i…"
-   },
-   {
-    "titel": "Bitcoin-Treasury Unternehmen schuldet Kraken mehr als sie selbst wert ist",
-    "link": "https://www.btc-echo.de/news/bitcoin-treasury-unternehmen-schuldet-kraken-mehr-als-sie-selbst-wert-ist-240937/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-13T15:10:27+00:00",
-    "text": "Nakamoto hat bei Kraken mehr Schulden als sie an der Börse wert ist. Eine Woche vor der ersten Rückzahlung verschafft ihr die Börse nun Aufschub. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Nakamoto hat bei Kraken mehr Schulden als sie an der Börse wert ist.",
-    "titel_de": "Bitcoin-Treasury Unternehmen schuldet Kraken mehr als sie selbst wert ist",
-    "kurz_de": "Nakamoto hat bei Kraken mehr Schulden als sie an der Börse wert ist."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-14T21:07:37+00:00",
+  "stand": "2026-11-15T01:03:10+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
