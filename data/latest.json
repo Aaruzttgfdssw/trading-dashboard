@@ -1,48 +1,146 @@
 {
- "erzeugt": "2026-11-15T01:02:57+00:00",
+ "erzeugt": "2026-11-15T07:52:12+00:00",
  "kurse": {
-  "stand": "2026-11-15T01:02:57+00:00",
+  "stand": "2026-11-15T07:52:12+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 57523,
-    "aend24": -7.06562,
-    "aend7": -16.2687,
-    "aend1y": -33.0518,
-    "marktkap": 1156904020786,
-    "volumen": 40440315916
+    "preis": 57934,
+    "aend24": -4.67655,
+    "aend7": -14.8814,
+    "aend1y": -33.0419,
+    "marktkap": 1165186092052,
+    "volumen": 46779303011
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1578.46,
-    "aend24": -9.76621,
-    "aend7": -22.1732,
-    "aend1y": -44.1748,
-    "marktkap": 192916765412,
-    "volumen": 16148398708
+    "preis": 1611.48,
+    "aend24": -6.15504,
+    "aend7": -19.7028,
+    "aend1y": -43.5823,
+    "marktkap": 196957797875,
+    "volumen": 18590073947
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 62.97,
-    "aend24": -10.45407,
-    "aend7": -22.5493,
-    "aend1y": -50.013,
-    "marktkap": 37249012533,
-    "volumen": 4008504898
+    "preis": 63.22,
+    "aend24": -7.21648,
+    "aend7": -20.9358,
+    "aend1y": -50.6581,
+    "marktkap": 37404611497,
+    "volumen": 4533161617
    }
   ]
  },
  "news": {
-  "stand": "2026-11-15T01:02:59+00:00",
+  "stand": "2026-11-15T07:52:15+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Warum Azubis in der Autoindustrie anfangen - trotz Krisenstimmung",
+    "link": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ausbildung-volkswagen-trotz-krise-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-15T07:41:03+00:00",
+    "text": "Unzählige Arbeitsplätze in Gefahr, Werke vor dem Aus, milliardenschwere Sparprogramme: Es ist ein schwieriger Zeitpunkt für den Berufseinstieg in der deutschen Autoindustrie. Warum sich dieser dennoch lohnen kann. Von Christof Dörr.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Unzählige Arbeitsplätze in Gefahr, Werke vor dem Aus, milliardenschwere Sparprogramme: Es ist ein schwieriger Zeitpunkt für den Berufseinstieg in der deutschen Autoindustrie.",
+    "titel_de": "Warum Azubis in der Autoindustrie anfangen - trotz Krisenstimmung",
+    "kurz_de": "Unzählige Arbeitsplätze in Gefahr, Werke vor dem Aus, milliardenschwere Sparprogramme: Es ist ein schwieriger Zeitpunkt für den Berufseinstieg in der deutschen Autoindustrie."
+   },
+   {
+    "titel": "Copper wire upgrade behind US flight suspension, transport secretary says",
+    "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T07:10:31+00:00",
+    "text": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
+   },
+   {
+    "titel": "RWA protocol stUSDT winds down three years after $2.3B TVL peak",
+    "link": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-15T06:27:26+00:00",
+    "text": "The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed."
+   },
+   {
+    "titel": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
+    "link": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T03:21:04+00:00",
+    "text": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links.",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links."
+   },
+   {
+    "titel": "Hoffnung bei der Krypto-Steuer – Schock für Strategy",
+    "link": "https://www.btc-echo.de/news/hoffnung-bei-der-krypto-steuer-schock-fuer-strategy-241001/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-15T03:00:00+00:00",
+    "text": "Die Bitcoin-Haltefrist wackelt, Strategy fliegt aus wichtigen Aktienindizes und die Deutsche Bank startet ihre Krypto-Verwahrung. Die wichtigsten News der Woche. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "Die Bitcoin-Haltefrist wackelt, Strategy fliegt aus wichtigen Aktienindizes und die Deutsche Bank startet ihre Krypto-Verwahrung.",
+    "titel_de": "Hoffnung bei der Krypto-Steuer – Schock für Strategy",
+    "kurz_de": "Die Bitcoin-Haltefrist wackelt, Strategy fliegt aus wichtigen Aktienindizes und die Deutsche Bank startet ihre Krypto-Verwahrung."
+   },
+   {
+    "titel": "XRP crashes to its lowest since November 2024 as money leaves crypto",
+    "link": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-15T02:50:57+00:00",
+    "text": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets.",
+    "tags": [
+     "ETF"
+    ],
+    "wichtig": 2,
+    "kurz": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets.",
+    "titel_de": "XRP stürzt auf den niedrigsten Stand seit November 2024, da Geld aus dem Kryptomarkt abfließt",
+    "kurz_de": "Der XRP ist auf sein niedrigstes Niveau seit November 2024 gefallen, da Abflüsse aus ETFs und ein schrumpfendes Angebot an Stablecoins den Druck auf die Kryptomärkte verstärken."
+   },
+   {
+    "titel": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+    "link": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T02:49:45+00:00",
+    "text": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the pope served as bishop from 2015 to 2023.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the pope served as bishop from 2015 to 2023."
+   },
    {
     "titel": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
     "link": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=RSS&at_campaign=rss",
@@ -151,18 +249,6 @@
     "kurz_de": "Kupfer fiel am Freitag auf den niedrigsten Stand seit fast vier Monaten und steuerte auf den fünften Wochenverlust in Folge zu, wobei die Händler den Verlust von Jensen Huang bei Nvidia (Nasdaq: NVDA) für den jüngsten Rückgang verantwortlich machten."
    },
    {
-    "titel": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-    "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T20:23:06+00:00",
-    "text": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
-   },
-   {
     "titel": "Iran War Accelerates Southeast Asia’s Renewable Energy Push",
     "link": "https://oilprice.com/Energy/Energy-General/Iran-War-Accelerates-Southeast-Asias-Renewable-Energy-Push.html",
     "quelle": "OilPrice",
@@ -187,20 +273,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday."
-   },
-   {
-    "titel": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
-    "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-14T19:12:25+00:00",
-    "text": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
    },
    {
     "titel": "Italy fines Meta €805m over accessing users' photos",
@@ -297,7 +369,7 @@
     "kurz_de": "Vier gemeinnützige Interessengruppen wollen, dass ein kalifornisches Gericht verhindert, dass große KI-Entwickler leistungsstärkere Modelle entwickeln, da sie behaupten, dass ihre Technologie weltweit katastrophale Schäden verursachen könnte."
    },
    {
-    "titel": "Bitcoin crashes to 3-month low below $64,000 as analyst flags fourth capitulation wave",
+    "titel": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
     "link": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
     "quelle": "CoinDesk",
     "bereich": "Krypto",
@@ -557,20 +629,6 @@
     "kurz_de": "Microsoft führte den Ausfall auf ein Problem bei der Erweiterung der Netzwerkkapazität zurück und bestätigte, dass die Störung nichts mit Cyberangriffen oder KI-Agenten zu tun hatte."
    },
    {
-    "titel": "Microsoft: Systeme nach Störung komplett wiederhergestellt",
-    "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-stoerung-behoben-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-14T10:17:44+00:00",
-    "text": "Probleme bei Microsoft hatten zentrale Cloud-Dienste stundenlang lahmgelegt - Unternehmen und Verbraucher weltweit waren betroffen. Laut Microsoft laufen nun alle Systeme wieder. Hinweise auf böswillige Aktivitäten gebe es nicht.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Probleme bei Microsoft hatten zentrale Cloud-Dienste stundenlang lahmgelegt - Unternehmen und Verbraucher weltweit waren betroffen.",
-    "titel_de": "Microsoft: Systeme nach Störung komplett wiederhergestellt",
-    "kurz_de": "Probleme bei Microsoft hatten zentrale Cloud-Dienste stundenlang lahmgelegt - Unternehmen und Verbraucher weltweit waren betroffen."
-   },
-   {
     "titel": "“Wenn Bitcoin scheitert, ist es vorbei”: Was der Bitfinex-Manager für die Finanzwelt erwartet",
     "link": "https://www.btc-echo.de/news/wenn-bitcoin-scheitert-ist-es-vorbei-was-bitfinex-manager-fuer-finanzwelt-erwartet-240600/",
     "quelle": "BTC-ECHO",
@@ -643,8 +701,8 @@
    {
     "titel": "Microsoft says services fully restored after day-long global outage",
     "link": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
     "sprache": "en",
     "zeit": "2026-11-14T06:42:27+00:00",
     "text": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says.",
@@ -1247,68 +1305,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Bitcoin was down about 4% on the day amid a tepid market reaction to October’s US PPI reading, which came in below expected levels."
-   },
-   {
-    "titel": "India's Road Fuel Demand Won't Peak Until 2034",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Road-Fuel-Demand-Wont-Peak-Until-2034.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-13T16:30:00+00:00",
-    "text": "India’s fuel demand for road transportation is nearly a decade away from peaking despite rising sales of electric two- and three-wheelers, as commercial transport and conventional fleets will keep using greater volumes of gasoline and dies…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "India’s fuel demand for road transportation is nearly a decade away from peaking despite rising sales of electric two- and three-wheelers, as commercial transport and conventional fleets will keep us…"
-   },
-   {
-    "titel": "Germany Is Dismantling a Nord Stream Power Plant for Ukraine",
-    "link": "https://oilprice.com/Energy/Energy-General/Germany-Is-Dismantling-a-Nord-Stream-Power-Plant-for-Ukraine.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-13T16:10:00+00:00",
-    "text": "A power plant built at the landfall of the Nord Stream gas pipelines in northeastern Germany was shut down after the pipelines were sabotaged. Now the facility is being dismantled and sent to Ukraine. The Greifswald industrial power plant…",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "A power plant built at the landfall of the Nord Stream gas pipelines in northeastern Germany was shut down after the pipelines were sabotaged."
-   },
-   {
-    "titel": "Cyberangriff auf Quantum Systems: Wie wurde der Drohnenhersteller zum Ziel?",
-    "link": "https://www.tagesschau.de/wirtschaft/unternehmen/quantum-systems-cyberangriff-102.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-13T16:02:19+00:00",
-    "text": "Nach dem Cyberangriff auf den bayerischen Drohnenhersteller Quantum Systems läuft die Suche nach den Tätern. Vieles deutet auf einen russischen Hintergrund hin. Das Unternehmen ist wichtiger Ausrüster des ukrainischen Militärs. Von Stephan…",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Nach dem Cyberangriff auf den bayerischen Drohnenhersteller Quantum Systems läuft die Suche nach den Tätern.",
-    "titel_de": "Cyberangriff auf Quantum Systems: Wie wurde der Drohnenhersteller zum Ziel?",
-    "kurz_de": "Nach dem Cyberangriff auf den bayerischen Drohnenhersteller Quantum Systems läuft die Suche nach den Tätern."
-   },
-   {
-    "titel": "Bitcoin heads for sixth weekly loss as Anthropic’s blockbuster IPO looms",
-    "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-heads-for-sixth-weekly-loss-as-anthropic-s-blockbuster-ipo-looms",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-13T16:01:27+00:00",
-    "text": "Bitcoin is down 21% this year as investors weigh Anthropic’s anticipated listing, Nvidia’s leadership upheaval and rising Fed rate hike expectations.",
-    "tags": [
-     "Zinsen/Wirtschaft",
-     "KI/Chips"
-    ],
-    "wichtig": 2,
-    "kurz": "Bitcoin is down 21% this year as investors weigh Anthropic’s anticipated listing, Nvidia’s leadership upheaval and rising Fed rate hike expectations."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-15T01:03:10+00:00",
+  "stand": "2026-11-15T07:52:27+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
