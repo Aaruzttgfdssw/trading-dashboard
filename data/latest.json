@@ -1,48 +1,198 @@
 {
- "erzeugt": "2026-11-15T20:28:53+00:00",
+ "erzeugt": "2026-11-16T00:16:40+00:00",
  "kurse": {
-  "stand": "2026-11-15T20:28:53+00:00",
+  "stand": "2026-11-16T00:16:40+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 58831,
-    "aend24": -0.9443,
-    "aend7": -14.3776,
-    "aend1y": -32.3272,
-    "marktkap": 1183225322086,
-    "volumen": 44645969259
+    "preis": 59014,
+    "aend24": 1.12547,
+    "aend7": -12.2431,
+    "aend1y": -31.6063,
+    "marktkap": 1187015729784,
+    "volumen": 37477178900
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1654.58,
-    "aend24": -0.01659,
-    "aend7": -18.2878,
-    "aend1y": -43.0288,
-    "marktkap": 202203576183,
-    "volumen": 17374677112
+    "preis": 1657.31,
+    "aend24": 3.25209,
+    "aend7": -13.7214,
+    "aend1y": -42.0743,
+    "marktkap": 202596388319,
+    "volumen": 13883061308
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 64.89,
-    "aend24": -0.55338,
-    "aend7": -19.8136,
-    "aend1y": -49.6015,
-    "marktkap": 38398045323,
-    "volumen": 4539908509
+    "preis": 65.63,
+    "aend24": 2.76993,
+    "aend7": -15.6646,
+    "aend1y": -47.9402,
+    "marktkap": 38832230442,
+    "volumen": 3788388998
    }
   ]
  },
  "news": {
-  "stand": "2026-11-15T20:28:55+00:00",
+  "stand": "2026-11-16T00:16:42+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
+    "link": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-16T00:03:29+00:00",
+    "text": "The US transport secretary says that normal air-traffic operations may not be restored until Monday.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The US transport secretary says that normal air-traffic operations may not be restored until Monday."
+   },
+   {
+    "titel": "Mexican drug lord Miguel Angel Felix Gallardo dies age 80",
+    "link": "https://www.bbc.co.uk/news/articles/c51k9nkwrndxo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T23:52:10+00:00",
+    "text": "Known as the 'Boss of Bosses', he was the head of all-powerful Guadalajara Cartel in the 1980s before his arrest broke up his drug organisation.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Known as the 'Boss of Bosses', he was the head of all-powerful Guadalajara Cartel in the 1980s before his arrest broke up his drug organisation."
+   },
+   {
+    "titel": "Jensen Huang weighs Nvidia comeback days after shock exit: FT",
+    "link": "https://cointelegraph.com/news/jensen-huang-weighs-nvidia-comeback-days-after-shock-exit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-15T23:47:45+00:00",
+    "text": "Silicon Valley executives are reportedly organizing a campaign to bring Huang back and are looking to gain White House support.",
+    "tags": [
+     "Prominente",
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "Silicon Valley executives are reportedly organizing a campaign to bring Huang back and are looking to gain White House support.",
+    "titel_de": "Jensen Huang erwägt Nvidia-Comeback wenige Tage nach seinem überraschenden Ausstieg: FT",
+    "kurz_de": "Berichten zufolge organisieren Führungskräfte aus dem Silicon Valley eine Kampagne, um Huang zurückzuholen, und versuchen, die Unterstützung des Weißen Hauses zu gewinnen."
+   },
+   {
+    "titel": "Steering failure preceded New Orleans cruise ship collision, says NTSB",
+    "link": "https://www.bbc.co.uk/news/articles/c65y131w1534o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T22:57:27+00:00",
+    "text": "Preliminary findings by National Transportation Safety Board investigators suggest the tanker suffered a \"steering casualty\" before colliding with the cruise ship on Friday.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Preliminary findings by National Transportation Safety Board investigators suggest the tanker suffered a \"steering casualty\" before colliding with the cruise ship on Friday."
+   },
+   {
+    "titel": "US sellers drive Bitcoin crash, Jensen plots Nvidia comeback: Hodler’s Digest",
+    "link": "https://cointelegraph.com/magazine/us-sellers-drive-bitcoin-crash-jensen-plots-comeback-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-15T22:50:59+00:00",
+    "text": "Anchorage Digital data suggests the Bitcoin selloff is being driven by US investors. A “war room” has been set up by supporters to reinstate Nvidia boss Jensen Huang.",
+    "tags": [
+     "Krieg/Konflikt",
+     "KI/Chips"
+    ],
+    "wichtig": 3,
+    "kurz": "Anchorage Digital data suggests the Bitcoin selloff is being driven by US investors.",
+    "titel_de": "US-Verkäufer treiben den Bitcoin-Crash voran, Jensen plant das Comeback von Nvidia: Hodler’s Digest",
+    "kurz_de": "Daten von Anchorage Digital deuten darauf hin, dass die Bitcoin-Verkäufe von US-Anlegern getragen werden."
+   },
+   {
+    "titel": "Cut national insurance for under-25s to create jobs, Milburn report to say",
+    "link": "https://www.bbc.co.uk/news/articles/c6p9dzmj514ko?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-15T22:30:03+00:00",
+    "text": "The report being launched this week will suggest gradually reducing employment costs over five years.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The report being launched this week will suggest gradually reducing employment costs over five years."
+   },
+   {
+    "titel": "Police ban protests near 10 schools and five universities in Paris",
+    "link": "https://www.bbc.co.uk/news/articles/cqm2j0jvep4eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T22:28:54+00:00",
+    "text": "The order will be in place from 16 to 20 November, Paris police chief Patrice Faure says.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 2,
+    "kurz": "The order will be in place from 16 to 20 November, Paris police chief Patrice Faure says.",
+    "titel_de": "Polizei verbietet Proteste in der Nähe von 10 Schulen und fünf Universitäten in Paris",
+    "kurz_de": "Die Anordnung gilt vom 16. bis 20. November, so der Pariser Polizeipräsident Patrice Faure."
+   },
+   {
+    "titel": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+    "link": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T22:24:20+00:00",
+    "text": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions."
+   },
+   {
+    "titel": "UK will have 'voice' but no vote on EU food rules in Brexit reset",
+    "link": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-15T22:00:24+00:00",
+    "text": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal."
+   },
+   {
+    "titel": "Asia Is Building 73% of the World's New Nuclear Capacity",
+    "link": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Asia-Is-Building-73-of-the-Worlds-New-Nuclear-Capacity.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-15T22:00:00+00:00",
+    "text": "The Middle East crisis and the spiking oil and gas prices have shifted the Asian nations’ priorities to energy security and generating electricity with homegrown resources. Renewable energy capacity is soaring, not only in the top emerging…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "The Middle East crisis and the spiking oil and gas prices have shifted the Asian nations’ priorities to energy security and generating electricity with homegrown resources."
+   },
+   {
+    "titel": "Czechs rally against plan to switch funding of public media",
+    "link": "https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-15T21:03:40+00:00",
+    "text": "Protesters say the move will stifle media freedom, while the government insists broadcasters need to cut costs.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Protesters say the move will stifle media freedom, while the government insists broadcasters need to cut costs."
+   },
    {
     "titel": "The $130 Billion Oil Boom Fueled by the Iran War",
     "link": "https://oilprice.com/Energy/Crude-Oil/The-130-Billion-Oil-Boom-Fueled-by-the-Iran-War.html",
@@ -67,27 +217,15 @@
     "bereich": "Welt",
     "sprache": "en",
     "zeit": "2026-11-15T19:32:39+00:00",
-    "text": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks.",
+    "text": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks.",
     "tags": [
      "Prominente",
      "Krieg/Konflikt"
     ],
     "wichtig": 2,
-    "kurz": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks.",
+    "kurz": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks.",
     "titel_de": "Selenskyj fordert die USA und Musk auf, die Starlink-Beschränkungen aufzuheben und sich auf die „richtige Seite der Geschichte“ zu stellen",
     "kurz_de": "Der ukrainische Präsident sagt, dass die Beschränkungen nach wie vor bestehen und es schwierig machen, die russischen Angriffe zu stoppen."
-   },
-   {
-    "titel": "Ronaldinho makes comeback in Ravenna win",
-    "link": "https://www.bbc.co.uk/sport/football/articles/ckregz4g823xo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T19:31:48+00:00",
-    "text": "Brazil legend Ronaldinho makes his comeback aged 46 for Ravenna, playing the first half of their Italian third-tier derby against Forli.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Brazil legend Ronaldinho makes his comeback aged 46 for Ravenna, playing the first half of their Italian third-tier derby against Forli."
    },
    {
     "titel": "Did prediction markets call the U.S. midterm election?: State of Crypto",
@@ -100,18 +238,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Prediction markets and polls largely aligned by the end of the 2026 election cycle, and both had notable misses."
-   },
-   {
-    "titel": "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
-    "link": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T19:20:53+00:00",
-    "text": "The US transport secretary says that normal air-traffic operations may not be restored until Monday.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The US transport secretary says that normal air-traffic operations may not be restored until Monday."
    },
    {
     "titel": "Pope Leo rides in helicopter cockpit during Peru trip",
@@ -138,18 +264,6 @@
     "kurz": "Sollte man Bitcoin für die eigenen vier Wände opfern?",
     "titel_de": "Bitcoin für ein Eigenheim verkaufen? Jack Mallers warnt vor einem teuren Fehler",
     "kurz_de": "Sollte man Bitcoin für die eigenen vier Wände opfern?"
-   },
-   {
-    "titel": "Czechs rally against plan to switch funding of public media",
-    "link": "https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T17:23:40+00:00",
-    "text": "Protesters say the move will stifle media freedom, while the government insists broadcasters need to cut costs.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Protesters say the move will stifle media freedom, while the government insists broadcasters need to cut costs."
    },
    {
     "titel": "Clothing factories shut in Bangladesh as workers strike over pay",
@@ -204,20 +318,6 @@
     "kurz_de": "Die Kursziele für XRP reichen von solidem Wachstum bis zu spektakulären Höhenflügen."
    },
    {
-    "titel": "Judge blocks Trump closure of 'Trash Island' Washington DC golf course on Sunday",
-    "link": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T15:57:03+00:00",
-    "text": "The temporary order is part of a months-long challenge to the US president's plans to upgrade East Potomac Golf Links into a championship course.",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "The temporary order is part of a months-long challenge to the US president's plans to upgrade East Potomac Golf Links into a championship course."
-   },
-   {
     "titel": "Quallenzucht: Ein Geschäftsmodell, das sich lohnt",
     "link": "https://www.tagesschau.de/wirtschaft/unternehmen/quallenzucht-100.html",
     "quelle": "tagesschau Wirtschaft",
@@ -244,20 +344,6 @@
     ],
     "wichtig": 1,
     "kurz": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
-   },
-   {
-    "titel": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-    "link": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T14:56:21+00:00",
-    "text": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions."
    },
    {
     "titel": "Prognosemärkte: US-Kongress berät über neue Verbote",
@@ -489,20 +575,6 @@
     "kurz": "Der Krypto-Markt ist über Nacht eingebrochen.",
     "titel_de": "Nach Markteinbruch: Bitcoin dreht wieder nach oben",
     "kurz_de": "Der Krypto-Markt ist über Nacht eingebrochen."
-   },
-   {
-    "titel": "Israel kills Hamas commander in strike on Gaza camp, officials say",
-    "link": "https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-15T08:17:41+00:00",
-    "text": "Both Hamas and IDF officials confirm the death of Samir Abu Younis, commander of the Rafah Brigade.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Both Hamas and IDF officials confirm the death of Samir Abu Younis, commander of the Rafah Brigade."
    },
    {
     "titel": "Coinone warns of phishing, identity theft after customer data breach",
@@ -1217,82 +1289,11 @@
     ],
     "wichtig": 1,
     "kurz": "Coinbase’s trust company received final clearance as lawmakers seek records on crypto firms’ compliance and potential conflicts of interest."
-   },
-   {
-    "titel": "China’s $3.2 Billion AI Pipeline Still Calls for Nvidia Chips Washington Restricts",
-    "link": "https://decrypt.co/383266/china-ai-pipeline-nvidia-chips-washington-restricts",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-13T20:45:03+00:00",
-    "text": "Chinese data center projects are still being designed around restricted Nvidia processors, even as Beijing pushes domestic alternatives.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "Chinese data center projects are still being designed around restricted Nvidia processors, even as Beijing pushes domestic alternatives."
-   },
-   {
-    "titel": "IT-Störungen: Microsoft sieht \"deutliche Verbesserung\" der Lage",
-    "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-stoerung-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-13T20:21:45+00:00",
-    "text": "Nach den weltweiten IT-Störungen scheint sich die Lage vor allem in Nordamerika und Europa zu entspannen. Das US-Technologieunternehmen Microsoft spricht von zum Teil \"umfassenden Verbesserungen\".",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Nach den weltweiten IT-Störungen scheint sich die Lage vor allem in Nordamerika und Europa zu entspannen.",
-    "titel_de": "IT-Störungen: Microsoft sieht \"deutliche Verbesserung\" der Lage",
-    "kurz_de": "Nach den weltweiten IT-Störungen scheint sich die Lage vor allem in Nordamerika und Europa zu entspannen."
-   },
-   {
-    "titel": "JPMorgan’s Bitcoin and Crypto-Linked Holdings Approach $1 Billion",
-    "link": "https://decrypt.co/383267/jpmorgan-bitcoin-crypto-linked-holdings-approach-1-billion",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-13T20:16:03+00:00",
-    "text": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 1,
-    "kurz": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners."
-   },
-   {
-    "titel": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
-    "link": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-13T19:53:57+00:00",
-    "text": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
-    "tags": [
-     "Prominente",
-     "KI/Chips"
-    ],
-    "wichtig": 2,
-    "kurz": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
-    "titel_de": "Die Auswirkungen des Nvidia-Skandals weiten sich aus, da Trumps Finanzminister einen Kabinettskollegen beschuldigt",
-    "kurz_de": "Scott Bessent weist darauf hin, dass es dem Handelsministerium unter Howard Lutnick nicht gelungen ist, den Export von Nvidia-Chips an ein Unternehmen zu verbieten, von dem angenommen wird, dass es Verbindungen zu China hat."
-   },
-   {
-    "titel": "Dormant Bitcoin Wallets Wake Up After 16 Years, Moving $6.9 Million",
-    "link": "https://decrypt.co/383264/dormant-bitcoin-wallets-wake-up-after-16-years",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-13T19:36:03+00:00",
-    "text": "Two Bitcoin mining rewards from September 2010 moved minutes apart. The coins are worth nearly 1.15 million times their original market value.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Two Bitcoin mining rewards from September 2010 moved minutes apart."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-15T20:29:06+00:00",
+  "stand": "2026-11-16T00:16:52+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
