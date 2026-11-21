@@ -1,48 +1,244 @@
 {
- "erzeugt": "2026-11-21T16:05:10+00:00",
+ "erzeugt": "2026-11-21T21:38:53+00:00",
  "kurse": {
-  "stand": "2026-11-21T16:05:10+00:00",
+  "stand": "2026-11-21T21:38:53+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 54547,
-    "aend24": 1.89073,
-    "aend7": -9.2287,
-    "aend1y": -29.2462,
-    "marktkap": 1097232912206,
-    "volumen": 63879947990
+    "preis": 54990,
+    "aend24": 2.57618,
+    "aend7": -8.2014,
+    "aend1y": -28.3779,
+    "marktkap": 1106277990326,
+    "volumen": 52586673079
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1531.06,
-    "aend24": 3.17838,
-    "aend7": -9.2727,
-    "aend1y": -38.9831,
-    "marktkap": 187155016984,
-    "volumen": 23377898548
+    "preis": 1534.82,
+    "aend24": 4.03942,
+    "aend7": -8.2732,
+    "aend1y": -38.817,
+    "marktkap": 187634502986,
+    "volumen": 17230573092
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 63.96,
-    "aend24": 3.37646,
-    "aend7": -5.1132,
-    "aend1y": -45.3164,
-    "marktkap": 37863730144,
-    "volumen": 4301413998
+    "preis": 64.17,
+    "aend24": 2.89023,
+    "aend7": -2.6038,
+    "aend1y": -45.0096,
+    "marktkap": 37987520020,
+    "volumen": 3496772947
    }
   ]
  },
  "news": {
-  "stand": "2026-11-21T16:05:12+00:00",
+  "stand": "2026-11-21T21:38:55+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+    "link": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-21T21:05:29+00:00",
+    "text": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities."
+   },
+   {
+    "titel": "Scheitert die UN-Klimakonferenz in Antalya?",
+    "link": "https://www.tagesschau.de/wissen/klima/klimakonferenz/cop31-haengepartie-abschlusserklaerung-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-21T20:21:36+00:00",
+    "text": "Dass eine Weltklimakonferenz pünktlich endet, passiert praktisch nie. Auch die COP31 in Antalya ist schon seit mehr als 24 Stunden in der Verlängerung. Droht ein Rückfall bei den Klimazielen - oder sogar ein Scheitern?",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Dass eine Weltklimakonferenz pünktlich endet, passiert praktisch nie.",
+    "titel_de": "Scheitert die UN-Klimakonferenz in Antalya?",
+    "kurz_de": "Dass eine Weltklimakonferenz pünktlich endet, passiert praktisch nie."
+   },
+   {
+    "titel": "EU und Indonesien unterzeichnen Freihandelsabkommen",
+    "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-21T20:17:57+00:00",
+    "text": "Fast zehn Jahre haben die Verhandlungen gedauert: Nun haben die EU und Indonesien ein Freihandelsabkommen unterzeichnet, mit dem die Zölle auf fast alle Waren wegfallen sollen. Davon könnte auch die Autobranche profitieren.",
+    "tags": [
+     "Zinsen/Wirtschaft"
+    ],
+    "wichtig": 1,
+    "kurz": "Fast zehn Jahre haben die Verhandlungen gedauert: Nun haben die EU und Indonesien ein Freihandelsabkommen unterzeichnet, mit dem die Zölle auf fast alle Waren wegfallen sollen.",
+    "titel_de": "EU und Indonesien unterzeichnen Freihandelsabkommen",
+    "kurz_de": "Fast zehn Jahre haben die Verhandlungen gedauert: Nun haben die EU und Indonesien ein Freihandelsabkommen unterzeichnet, mit dem die Zölle auf fast alle Waren wegfallen sollen."
+   },
+   {
+    "titel": "Trump’s Coal Revival Is Costing Americans More Than Expected",
+    "link": "https://oilprice.com/Energy/Coal/Trumps-Coal-Revival-Is-Costing-Americans-More-Than-Expected.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-21T20:00:00+00:00",
+    "text": "United States President Trump has doubled down on his support for fossil fuels since coming into office almost two years ago, including the most polluting of them all – coal. Just as many coal plants were on their way to retirement, Trump…",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "United States President Trump has doubled down on his support for fossil fuels since coming into office almost two years ago, including the most polluting of them all – coal."
+   },
+   {
+    "titel": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+    "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-21T19:33:49+00:00",
+    "text": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement."
+   },
+   {
+    "titel": "Russia-bound ship attacked in Gulf of Finland",
+    "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-21T19:20:22+00:00",
+    "text": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+    "titel_de": "Nach Russland fahrendes Schiff im Finnischen Meerbusen angegriffen",
+    "kurz_de": "Die finnischen Streitkräfte geben an, dass wahrscheinlich die Ukraine hinter dem Drohnenangriff auf das Schiff steckte."
+   },
+   {
+    "titel": "Thanksgiving Gas Prices Could Break a Record Despite Recent Plunge",
+    "link": "https://oilprice.com/Latest-Energy-News/World-News/Thanksgiving-Gas-Prices-Could-Break-a-Record-Despite-Recent-Plunge.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-21T19:10:00+00:00",
+    "text": "Gasoline prices have fallen nearly 60 cents in a month, but Americans heading out for Thanksgiving could still pay more at the pump than during any previous Thanksgiving. The national average fell to $3.69 per gallon on Friday, according t…",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Gasoline prices have fallen nearly 60 cents in a month, but Americans heading out for Thanksgiving could still pay more at the pump than during any previous Thanksgiving."
+   },
+   {
+    "titel": "GTA 6 Leaker Dangles a PC Port Behind a $15 Million Crypto Pump",
+    "link": "https://decrypt.co/383756/gta-6-leaker-dangles-pc-port-15-million-crypto-pump",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-21T18:01:02+00:00",
+    "text": "The anonymous leaker, Cyberleek, released a 209 GB Xbox build but is withholding the executable that could enable a PC port until its CYBERLEEK token hits $15 million.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The anonymous leaker, Cyberleek, released a 209 GB Xbox build but is withholding the executable that could enable a PC port until its CYBERLEEK token hits $15 million."
+   },
+   {
+    "titel": "Britain's Net Zero Revolution Has a China Problem",
+    "link": "https://oilprice.com/Energy/Energy-General/Britains-Net-Zero-Revolution-Has-a-China-Problem.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-21T18:00:00+00:00",
+    "text": "The Labour government has been accused of “capitulation” in its trade relations with China as Britain’s transition to net zero faces a number of security risks. A new report, published shortly before President Trump’s momentous trilateral…",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 1,
+    "kurz": "The Labour government has been accused of “capitulation” in its trade relations with China as Britain’s transition to net zero faces a number of security risks."
+   },
+   {
+    "titel": "Roboter statt Memecoin: Wie Krypto Maschinen finanziert",
+    "link": "https://www.btc-echo.de/news/roboter-statt-memecoin-wie-krypto-maschinen-finanziert-241277/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-21T18:00:00+00:00",
+    "text": "Ein neues Projekt aus Deutschland verschafft Hardware-Gründern Startkapital über eigene Token. Jeder Handel bringt ihnen Geld. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Memecoins"
+    ],
+    "wichtig": 1,
+    "kurz": "Ein neues Projekt aus Deutschland verschafft Hardware-Gründern Startkapital über eigene Token.",
+    "titel_de": "Roboter statt Memecoin: Wie Krypto Maschinen finanziert",
+    "kurz_de": "Ein neues Projekt aus Deutschland verschafft Hardware-Gründern Startkapital über eigene Token."
+   },
+   {
+    "titel": "Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave",
+    "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-21T17:50:00+00:00",
+    "text": "The selloff wiped out $1.8 billion in leveraged crypto positions, mostly from bullish bets on rising prices.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "The selloff wiped out $1.8 billion in leveraged crypto positions, mostly from bullish bets on rising prices."
+   },
+   {
+    "titel": "Fraudsters Used Fake Crypto Exchanges to Steal $37 Million, SEC Alleges",
+    "link": "https://decrypt.co/383752/fraudsters-fake-crypto-exchanges-steal-37-million-sec",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-21T17:01:02+00:00",
+    "text": "The agency says eight Colorado-registered entities, likely run from overseas, posed as legitimate advisers and crypto platforms—even faking SEC certificates and filings—to defraud U.S. investors of more than $37 million.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 2,
+    "kurz": "The agency says eight Colorado-registered entities, likely run from overseas, posed as legitimate advisers and crypto platforms—even faking SEC certificates and filings—to defraud U.S.",
+    "titel_de": "SEC behauptet, Betrüger hätten mit gefälschten Krypto-Börsen 37 Millionen US-Dollar gestohlen",
+    "kurz_de": "Die Behörde gibt an, dass acht in Colorado registrierte Unternehmen, die wahrscheinlich aus dem Ausland betrieben werden, sich als legitime Berater und Krypto-Plattformen ausgaben – und sogar SEC-Zertifikate und -Anmeldungen fälschten –, um US-Bürger zu betrügen."
+   },
+   {
+    "titel": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
+    "link": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-21T16:41:00+00:00",
+    "text": "The withdrawal carried a valid signature, which Onchain Lens said points to a possible compromise of the key validators use to approve vault payouts.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "The withdrawal carried a valid signature, which Onchain Lens said points to a possible compromise of the key validators use to approve vault payouts.",
+    "titel_de": "Der FLIP des Cross-Chain-Protokolls Chainflip stürzt nach mutmaßlicher Entleerung eines Vaults in Höhe von 4,86 Millionen US-Dollar um 30 % ab",
+    "kurz_de": "Die Auszahlung trug eine gültige Signatur, was laut Onchain Lens auf eine mögliche Kompromittierung des Schlüssels hindeutet, den die Validierer verwenden, um Auszahlungen aus dem Vault zu genehmigen."
+   },
+   {
+    "titel": "FBI reportedly investigating apparent hack of its criminal database",
+    "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-21T16:35:15+00:00",
+    "text": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "The National Crime Information Center database is used by federal and local law enforcement to share information."
+   },
    {
     "titel": "Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It",
     "link": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
@@ -114,18 +310,6 @@
     "kurz_de": "Die EU-Staaten ringen um einen neuen Budgetplan."
    },
    {
-    "titel": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-    "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T14:54:24+00:00",
-    "text": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement."
-   },
-   {
     "titel": "Is the AI Bubble Finally Popping? Nvidia Crashes 48% as Wall Street Experts Sound the Alarm",
     "link": "https://decrypt.co/383754/ai-bubble-finally-popping-nvidia-crashes-48-wall-street-alarm",
     "quelle": "Decrypt",
@@ -154,18 +338,6 @@
     ],
     "wichtig": 1,
     "kurz": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine."
-   },
-   {
-    "titel": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-    "link": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T13:15:21+00:00",
-    "text": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities.",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities."
    },
    {
     "titel": "Zoll an der Wallet? Was das Zollfinanzgerechtigkeitsgesetz für Bitcoiner bedeutet",
@@ -369,20 +541,6 @@
     "kurz": "Lange mussten GTA-Fans auf den sechsten Teil der Videospiel-Reihe warten - jetzt trägt der Hype Früchte.",
     "titel_de": "GTA VI spielt laut Konzern fast vier Milliarden Dollar am ersten Tag ein",
     "kurz_de": "Lange mussten GTA-Fans auf den sechsten Teil der Videospiel-Reihe warten - jetzt trägt der Hype Früchte."
-   },
-   {
-    "titel": "FBI reportedly investigating apparent hack of its criminal database",
-    "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T09:34:20+00:00",
-    "text": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "The National Crime Information Center database is used by federal and local law enforcement to share information."
    },
    {
     "titel": "Bitcoin-Kurs fällt unter 56.000 Dollar, Ethereum und XRP stürzen ab",
@@ -692,20 +850,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The court has upheld the 2020 beating of the black music producer as an aggravated circumstance of racism."
-   },
-   {
-    "titel": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
-    "link": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T22:14:17+00:00",
-    "text": "Orla Guerin speaks to seven people trapped in the key city of Taiz, cut off from the outside world for weeks.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Orla Guerin speaks to seven people trapped in the key city of Taiz, cut off from the outside world for weeks."
    },
    {
     "titel": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment",
@@ -1146,152 +1290,11 @@
     "kurz": "Bis zu 365 Meter hoch ist ein Windrad, das jetzt in der Lausitz in Betrieb gegangen ist - laut den Ingenieuren ein Rekord.",
     "titel_de": "Weltgrößtes Windrad in Betrieb: Sind Höhenwindräder die Zukunft?",
     "kurz_de": "Bis zu 365 Meter hoch ist ein Windrad, das jetzt in der Lausitz in Betrieb gegangen ist - laut den Ingenieuren ein Rekord."
-   },
-   {
-    "titel": "Anthropic-Aktie stürzt ab - KI-Angst an der Börse",
-    "link": "https://www.tagesschau.de/wirtschaft/boerse/anthropic-ki-tech-werte-boersen-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-20T16:20:16+00:00",
-    "text": "Erst legt der KI-Entwickler Anthropic einen der größten Börsengänge der Geschichte hin. Gleichzeitig geraten Technologie- und KI-Aktien weltweit unter Druck. Wie passt das zusammen? Von Michelle Goddemeier.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Erst legt der KI-Entwickler Anthropic einen der größten Börsengänge der Geschichte hin.",
-    "titel_de": "Anthropic-Aktie stürzt ab - KI-Angst an der Börse",
-    "kurz_de": "Erst legt der KI-Entwickler Anthropic einen der größten Börsengänge der Geschichte hin."
-   },
-   {
-    "titel": "Bitcoin fällt unter 60.000 US-Dollar: Der Tech-Ausverkauf schlägt durch",
-    "link": "https://www.btc-echo.de/news/bitcoin-faellt-unter-60-000-us-dollar-der-tech-ausverkauf-schlaegt-durch-241343/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-20T16:14:23+00:00",
-    "text": "Der Ausverkauf bei den Technologiewerten reißt den Krypto-Markt mit. Binnen einer Stunde wurden Positionen im dreistelligen Millionenbereich liquidiert. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Der Ausverkauf bei den Technologiewerten reißt den Krypto-Markt mit.",
-    "titel_de": "Bitcoin fällt unter 60.000 US-Dollar: Der Tech-Ausverkauf schlägt durch",
-    "kurz_de": "Der Ausverkauf bei den Technologiewerten reißt den Krypto-Markt mit."
-   },
-   {
-    "titel": "Fed-Gouverneur warnt vor KI-Agenten: Bankansturm ist in Minuten möglich",
-    "link": "https://www.btc-echo.de/news/fed-gouverneur-warnt-vor-ki-agenten-bankansturm-ist-in-minuten-moeglich-241100/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-20T16:00:00+00:00",
-    "text": "Software, die Zinsunterschiede erkennt und sofort Geld verschiebt, könnte Banken überfordern. Im Krypto-Bereich läuft das längst und erste Tests zeigen ein beunruhigendes Verhalten. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 1,
-    "kurz": "Software, die Zinsunterschiede erkennt und sofort Geld verschiebt, könnte Banken überfordern.",
-    "titel_de": "Fed-Gouverneur warnt vor KI-Agenten: Bankansturm ist in Minuten möglich",
-    "kurz_de": "Software, die Zinsunterschiede erkennt und sofort Geld verschiebt, könnte Banken überfordern."
-   },
-   {
-    "titel": "US Senate advances prediction market restrictions with DEATH BETS Act",
-    "link": "https://cointelegraph.com/news/us-senate-advances-prediction-market-restrictions-with-death-bets-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T15:55:22+00:00",
-    "text": "The Senate-approved bill would ban prediction market contracts tied to war, assassination and death amid concerns over potential insider trading on military events.",
-    "tags": [
-     "Regulierung",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "The Senate-approved bill would ban prediction market contracts tied to war, assassination and death amid concerns over potential insider trading on military events."
-   },
-   {
-    "titel": "Bitcoin price drops to $60K as Anthropic drops to $87 in tech sell-off",
-    "link": "https://cointelegraph.com/markets/bitcoin-hits-new-20-week-low-anthropic-drops-87-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T15:52:06+00:00",
-    "text": "Bitcoin price strength felt pressure from falling US equities as traders reassessed AI prospects after Anthropic’s IPO.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "Bitcoin price strength felt pressure from falling US equities as traders reassessed AI prospects after Anthropic’s IPO."
-   },
-   {
-    "titel": "Airbnb's divisive new house rules come into force",
-    "link": "https://www.bbc.co.uk/news/articles/cmx278n2genyo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-20T15:48:35+00:00",
-    "text": "New rules on what Airbnb hosts can reasonably ask guests to do could mean fewer chores but higher costs for customers.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "New rules on what Airbnb hosts can reasonably ask guests to do could mean fewer chores but higher costs for customers."
-   },
-   {
-    "titel": "Senate Passes Bill Banning Prediction Market Bets on War, Terrorism and Death",
-    "link": "https://decrypt.co/383700/senate-passes-bill-banning-prediction-market-bets-on-war-terrorism-and-death",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T15:42:51+00:00",
-    "text": "Sen. Adam Schiff's DEATH BETS Act would bar U.S.-regulated exchanges from listing contracts tied to war, assassinations or deaths.",
-    "tags": [
-     "Regulierung",
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Sen. Adam Schiff's DEATH BETS Act would bar U.S.-regulated exchanges from listing contracts tied to war, assassinations or deaths."
-   },
-   {
-    "titel": "China’s Oil Imports from Persian Gulf Jump to Wartime High",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Oil-Imports-from-Persian-Gulf-Jump-to-Wartime-High.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T15:36:00+00:00",
-    "text": "China’s crude oil imports from the Persian Gulf surged by 42.4% in October from September, to the highest level since the Iran war began, as supply via the Strait of Hormuz rebounded and Gulf producers slashed prices for their crude to att…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "China’s crude oil imports from the Persian Gulf surged by 42.4% in October from September, to the highest level since the Iran war began, as supply via the Strait of Hormuz rebounded and Gulf produce…"
-   },
-   {
-    "titel": "DBS bets it can lose the deposit and keep the client",
-    "link": "https://cointelegraph.com/news/dbs-bets-it-can-lose-the-deposit-and-keep-the-client?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T15:32:30+00:00",
-    "text": "The Singapore bank earned a record $208 million in transaction services fees in the third quarter — now it’s helping companies turn deposits into stablecoins they can spend without it.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The Singapore bank earned a record $208 million in transaction services fees in the third quarter — now it’s helping companies turn deposits into stablecoins they can spend without it."
-   },
-   {
-    "titel": "What we know about the latest Russian missile strikes on Ukraine",
-    "link": "https://www.bbc.co.uk/news/videos/c65y19wy3xl8o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T15:14:01+00:00",
-    "text": "Russia struck bridges and railway stations in the capital Kyiv in a major attack.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Russia struck bridges and railway stations in the capital Kyiv in a major attack."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-21T16:05:23+00:00",
+  "stand": "2026-11-21T21:39:05+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
