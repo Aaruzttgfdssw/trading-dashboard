@@ -1,46 +1,46 @@
 {
- "erzeugt": "2026-11-21T21:38:53+00:00",
+ "erzeugt": "2026-11-22T01:35:35+00:00",
  "kurse": {
-  "stand": "2026-11-21T21:38:53+00:00",
+  "stand": "2026-11-22T01:35:35+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 54990,
-    "aend24": 2.57618,
-    "aend7": -8.2014,
-    "aend1y": -28.3779,
-    "marktkap": 1106277990326,
-    "volumen": 52586673079
+    "preis": 54714,
+    "aend24": 2.01654,
+    "aend7": -6.2678,
+    "aend1y": -29.3656,
+    "marktkap": 1100745393898,
+    "volumen": 50433138495
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1534.82,
-    "aend24": 4.03942,
-    "aend7": -8.2732,
-    "aend1y": -38.817,
-    "marktkap": 187634502986,
-    "volumen": 17230573092
+    "preis": 1533.42,
+    "aend24": 4.02822,
+    "aend7": -4.9284,
+    "aend1y": -39.1694,
+    "marktkap": 187447566907,
+    "volumen": 15902314210
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 64.17,
-    "aend24": 2.89023,
-    "aend7": -2.6038,
-    "aend1y": -45.0096,
-    "marktkap": 37987520020,
-    "volumen": 3496772947
+    "preis": 63.96,
+    "aend24": 2.34273,
+    "aend7": -0.0314,
+    "aend1y": -45.386,
+    "marktkap": 37864355131,
+    "volumen": 3292788518
    }
   ]
  },
  "news": {
-  "stand": "2026-11-21T21:38:55+00:00",
+  "stand": "2026-11-22T01:35:37+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
    {
@@ -49,11 +49,99 @@
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-11-21T21:05:29+00:00",
+    "zeit": "2026-11-22T01:25:03+00:00",
     "text": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities.",
     "tags": [],
     "wichtig": 1,
     "kurz": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities."
+   },
+   {
+    "titel": "FBI reportedly investigating apparent hack of its criminal database",
+    "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T00:10:44+00:00",
+    "text": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "The National Crime Information Center database is used by federal and local law enforcement to share information."
+   },
+   {
+    "titel": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
+    "link": "https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T00:10:37+00:00",
+    "text": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?"
+   },
+   {
+    "titel": "How a teen gamer and his mother helped rescue a missing girl",
+    "link": "https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T00:09:58+00:00",
+    "text": "When 16-year-old Landon Tresp met a teenage girl in an online game, it led to him and his mother helping the FBI rescue her from kidnapping.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "When 16-year-old Landon Tresp met a teenage girl in an online game, it led to him and his mother helping the FBI rescue her from kidnapping."
+   },
+   {
+    "titel": "AI Boom Forces Massive Investment in Power Grids Worldwide",
+    "link": "https://oilprice.com/Energy/Crude-Oil/AI-Boom-Forces-Massive-Investment-in-Power-Grids-Worldwide.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-22T00:00:00+00:00",
+    "text": "The information technology industry is driving massive growth in global electricity demand, which is set to rise by more than 10,000 TWh over the next ten years. For this electricity to reach demand hubs, grids around the world will need u…",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "The information technology industry is driving massive growth in global electricity demand, which is set to rise by more than 10,000 TWh over the next ten years."
+   },
+   {
+    "titel": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+    "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-21T22:19:43+00:00",
+    "text": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement."
+   },
+   {
+    "titel": "Lock of former US President George Washington's hair sells for $4,000",
+    "link": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-21T22:01:19+00:00",
+    "text": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner."
+   },
+   {
+    "titel": "Wind Could Cut the Cost of Round-the-Clock Solar Power by 18%, Ember Says",
+    "link": "https://oilprice.com/Alternative-Energy/Wind-Power/Wind-Could-Cut-the-Cost-of-Round-the-Clock-Solar-Power-by-18-Ember-Says.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-21T22:00:00+00:00",
+    "text": "A new report from Ember Energy shows the enormous cost-saving potential of wind energy. While solar power and battery storage have taken off on a global level, wind power has been slower to expand. But according to the new report from the…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "A new report from Ember Energy shows the enormous cost-saving potential of wind energy."
    },
    {
     "titel": "Scheitert die UN-Klimakonferenz in Antalya?",
@@ -98,18 +186,6 @@
     ],
     "wichtig": 1,
     "kurz": "United States President Trump has doubled down on his support for fossil fuels since coming into office almost two years ago, including the most polluting of them all – coal."
-   },
-   {
-    "titel": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-    "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T19:33:49+00:00",
-    "text": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement."
    },
    {
     "titel": "Russia-bound ship attacked in Gulf of Finland",
@@ -224,20 +300,6 @@
     "kurz": "The withdrawal carried a valid signature, which Onchain Lens said points to a possible compromise of the key validators use to approve vault payouts.",
     "titel_de": "Der FLIP des Cross-Chain-Protokolls Chainflip stürzt nach mutmaßlicher Entleerung eines Vaults in Höhe von 4,86 Millionen US-Dollar um 30 % ab",
     "kurz_de": "Die Auszahlung trug eine gültige Signatur, was laut Onchain Lens auf eine mögliche Kompromittierung des Schlüssels hindeutet, den die Validierer verwenden, um Auszahlungen aus dem Vault zu genehmigen."
-   },
-   {
-    "titel": "FBI reportedly investigating apparent hack of its criminal database",
-    "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T16:35:15+00:00",
-    "text": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "The National Crime Information Center database is used by federal and local law enforcement to share information."
    },
    {
     "titel": "Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It",
@@ -713,18 +775,6 @@
     "kurz": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars."
    },
    {
-    "titel": "ANC fights to keep control of South Africa's key cities after election setback",
-    "link": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T00:34:51+00:00",
-    "text": "The ANC appears reluctant to replicate its national power-sharing deal with the pro-business DA at the local level.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The ANC appears reluctant to replicate its national power-sharing deal with the pro-business DA at the local level."
-   },
-   {
     "titel": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
     "link": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -752,30 +802,6 @@
     "kurz": "Oil prices have traded in a narrow range over the past few sessions as forecasts of a coming surplus collide with continued attacks and stalled diplomacy in the Middle East.",
     "titel_de": "Ölpreise zwischen drohendem Überangebot und Unruhen im Nahen Osten",
     "kurz_de": "Die Ölpreise haben sich in den letzten Sitzungen in einer engen Spanne bewegt, da die Prognosen eines bevorstehenden Überangebots auf anhaltende Angriffe und eine stagnierende Diplomatie im Nahen Osten treffen."
-   },
-   {
-    "titel": "A new Nepal, an old neighbour - Balendra Shah's India test on first visit",
-    "link": "https://www.bbc.co.uk/news/articles/c6jre8xd83qgo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T23:28:17+00:00",
-    "text": "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart."
-   },
-   {
-    "titel": "These dead pets were meant to be cremated - then their bodies appeared on a livestream",
-    "link": "https://www.bbc.co.uk/news/articles/cmn502ek17yvo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T23:20:33+00:00",
-    "text": "Grieving Filipinos confront a distressing reality: their dogs and cats may not have received the send-off they paid for.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Grieving Filipinos confront a distressing reality: their dogs and cats may not have received the send-off they paid for."
    },
    {
     "titel": "US declassifies more UFO footage filmed in the Middle East",
@@ -1264,37 +1290,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Bitcoin broke below $60,000 Friday as crypto sentiment collapsed and AI-linked stocks sank after Anthropic’s IPO."
-   },
-   {
-    "titel": "Norway’s Gas Sales Surge Nearly 20% as Europe Braces for Winter",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Norways-Gas-Sales-Surge-Nearly-20-as-Europe-Braces-for-Winter.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T16:30:00+00:00",
-    "text": "Norway’s daily gas sales jumped nearly 20% in October and were 5.6% above year-earlier levels. The rebound comes as the EU heads into winter with its gas storage facilities less than 70% full. Norway sold 11 billion cubic meters of natural…",
-    "tags": [],
-    "wichtig": 1,
-    "kurz": "Norway’s daily gas sales jumped nearly 20% in October and were 5.6% above year-earlier levels."
-   },
-   {
-    "titel": "Weltgrößtes Windrad in Betrieb: Sind Höhenwindräder die Zukunft?",
-    "link": "https://www.tagesschau.de/wirtschaft/energie/groesstes-windrad-lausitz-100.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-20T16:25:17+00:00",
-    "text": "Bis zu 365 Meter hoch ist ein Windrad, das jetzt in der Lausitz in Betrieb gegangen ist - laut den Ingenieuren ein Rekord. Aber rechnen sich solche Riesenanlagen überhaupt? Und was sagen Anwohner? Von Mirja Fiedler.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Bis zu 365 Meter hoch ist ein Windrad, das jetzt in der Lausitz in Betrieb gegangen ist - laut den Ingenieuren ein Rekord.",
-    "titel_de": "Weltgrößtes Windrad in Betrieb: Sind Höhenwindräder die Zukunft?",
-    "kurz_de": "Bis zu 365 Meter hoch ist ein Windrad, das jetzt in der Lausitz in Betrieb gegangen ist - laut den Ingenieuren ein Rekord."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-21T21:39:05+00:00",
+  "stand": "2026-11-22T01:35:50+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
