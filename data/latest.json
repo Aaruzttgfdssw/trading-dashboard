@@ -1,48 +1,329 @@
 {
- "erzeugt": "2026-11-22T08:51:04+00:00",
+ "erzeugt": "2026-11-22T16:54:13+00:00",
  "kurse": {
-  "stand": "2026-11-22T08:51:04+00:00",
+  "stand": "2026-11-22T16:54:13+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 54326,
-    "aend24": 2.9135,
-    "aend7": -8.3494,
-    "aend1y": -30.1353,
-    "marktkap": 1093160281641,
-    "volumen": 33888946088
+    "preis": 55769,
+    "aend24": 1.98043,
+    "aend7": -6.0898,
+    "aend1y": -27.959,
+    "marktkap": 1121830039812,
+    "volumen": 27810219462
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1532.94,
-    "aend24": 3.16286,
-    "aend7": -7.1524,
-    "aend1y": -39.7874,
-    "marktkap": 187439218070,
-    "volumen": 9625497787
+    "preis": 1567.96,
+    "aend24": 2.26588,
+    "aend7": -5.0207,
+    "aend1y": -37.4698,
+    "marktkap": 191670325815,
+    "volumen": 7349434849
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 63.49,
-    "aend24": 3.34578,
-    "aend7": -1.8971,
-    "aend1y": -45.9896,
-    "marktkap": 37591614611,
-    "volumen": 2119131642
+    "preis": 64.29,
+    "aend24": -0.17818,
+    "aend7": -1.5125,
+    "aend1y": -44.7143,
+    "marktkap": 38062043704,
+    "volumen": 1709622938
    }
   ]
  },
  "news": {
-  "stand": "2026-11-22T08:51:06+00:00",
+  "stand": "2026-11-22T16:54:16+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+    "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T16:05:25+00:00",
+    "text": "Libya's eastern government says it is working with Russia to investigate the incident.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Libya's eastern government says it is working with Russia to investigate the incident.",
+    "titel_de": "Nach Angaben von Beamten wurde die Explosion auf einem russischen Schiff im Hafen von Libyen durch einen mutmaßlichen Drohnenangriff verursacht.",
+    "kurz_de": "Die Regierung im Osten Libyens erklärt, sie arbeite mit Russland zusammen, um den Vorfall zu untersuchen."
+   },
+   {
+    "titel": "The $25 Billion Problem Facing Australia’s Hydropower Revolution",
+    "link": "https://oilprice.com/Energy/Energy-General/The-25-Billion-Problem-Facing-Australias-Hydropower-Revolution.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-22T16:00:00+00:00",
+    "text": "The Australian government aims to develop the country’s hydropower and Pumped Hydro Energy Storage (PHES) as part of its Powering Australia Plan, which targets 82 per cent renewable electricity by 2030 and net-zero emissions by 2050. As pa…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The Australian government aims to develop the country’s hydropower and Pumped Hydro Energy Storage (PHES) as part of its Powering Australia Plan, which targets 82 per cent renewable electricity by 20…"
+   },
+   {
+    "titel": "Kursverfall bei Strategy: Die Lage bei MSTR und STRC",
+    "link": "https://www.btc-echo.de/news/kursverfall-bei-strategy-die-lage-bei-mstr-und-strc-241304/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T16:00:00+00:00",
+    "text": "Der Kursverfall bei Strategy hat sich im November beschleunigt, Ende des Monats fliegt die Aktie aus den MSCI-Indizes. Saylor stellt derweil den Geldfluss um. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Der Kursverfall bei Strategy hat sich im November beschleunigt, Ende des Monats fliegt die Aktie aus den MSCI-Indizes.",
+    "titel_de": "Kursverfall bei Strategy: Die Lage bei MSTR und STRC",
+    "kurz_de": "Der Kursverfall bei Strategy hat sich im November beschleunigt, Ende des Monats fliegt die Aktie aus den MSCI-Indizes."
+   },
+   {
+    "titel": "Gebrauchte Elektroautos: Alternative oder Schrott?",
+    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/gebrauchte-elektroautos-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-22T15:36:15+00:00",
+    "text": "Elektroautos sind gefragter denn je - auch angesichts steigender Kraftstoffpreise. Mit Verzögerung zeigt sich der Boom nun bei Gebrauchtwagenhändlern, allerdings mit Einschränkungen. Von Jörn Kersten.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Elektroautos sind gefragter denn je - auch angesichts steigender Kraftstoffpreise.",
+    "titel_de": "Gebrauchte Elektroautos: Alternative oder Schrott?",
+    "kurz_de": "Elektroautos sind gefragter denn je - auch angesichts steigender Kraftstoffpreise."
+   },
+   {
+    "titel": "883 Millionen Dollar Schulden: Muss Trump Media tausende Bitcoin verkaufen?",
+    "link": "https://www.btc-echo.de/news/schuldenfalle-muss-trump-media-tausende-bitcoin-verkaufen-241375/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T14:34:00+00:00",
+    "text": "Nach einem Kurssturz der Aktie droht Trump Media ein hoher Mittelabfluss durch Wandelanleihen. Wie das Management seine 15.649 Bitcoin retten will. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Prominente"
+    ],
+    "wichtig": 2,
+    "kurz": "Nach einem Kurssturz der Aktie droht Trump Media ein hoher Mittelabfluss durch Wandelanleihen.",
+    "titel_de": "883 Millionen Dollar Schulden: Muss Trump Media tausende Bitcoin verkaufen?",
+    "kurz_de": "Nach einem Kurssturz der Aktie droht Trump Media ein hoher Mittelabfluss durch Wandelanleihen."
+   },
+   {
+    "titel": "The future of onchain FX could start with users, not institutional liquidity",
+    "link": "https://cointelegraph.com/opinion/future-onchain-fx-could-start-with-users-not-institutional-liquidity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T14:30:00+00:00",
+    "text": "Onchain FX does not need to recreate the trillion-dollar institutional market to become useful. Real demand can make smaller markets work first.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Onchain FX does not need to recreate the trillion-dollar institutional market to become useful."
+   },
+   {
+    "titel": "Three killed and dozens missing after fire at Indonesian factory",
+    "link": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T14:05:20+00:00",
+    "text": "At least three people were killed and many more feared dead after a fire at a confectionary factory.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "At least three people were killed and many more feared dead after a fire at a confectionary factory."
+   },
+   {
+    "titel": "Google's Quantum Chip Beats Classical Limits in 'Impossible' Game",
+    "link": "https://decrypt.co/383743/googles-quantum-chip-beats-classical-limits-in-impossible-game-tests-105-qubits",
+    "quelle": "Decrypt",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T14:01:02+00:00",
+    "text": "Google’s Willow quantum processor beat the classical ceiling in a four-qubit coordination game, revealing a promising hardware test rather than commercial quantum computing.",
+    "tags": [
+     "Prominente",
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "Google’s Willow quantum processor beat the classical ceiling in a four-qubit coordination game, revealing a promising hardware test rather than commercial quantum computing.",
+    "titel_de": "Googles Quantenchip übertrifft die klassischen Grenzen in einem „unmöglichen“ Spiel",
+    "kurz_de": "Googles Quantenprozessor Willow hat in einem Vier-Qubit-Koordinationsspiel die klassische Grenze überschritten und damit eher einen vielversprechenden Hardware-Test als kommerzielles Quantencomputing demonstriert."
+   },
+   {
+    "titel": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
+    "link": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T14:00:00+00:00",
+    "text": "Quantum computers can’t break Bitcoin network’s security yet, but Leo Fan warns that upgrading it and moving funds could take longer than expected.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Quantum computers can’t break Bitcoin network’s security yet, but Leo Fan warns that upgrading it and moving funds could take longer than expected."
+   },
+   {
+    "titel": "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills",
+    "link": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-22T13:50:21+00:00",
+    "text": "Chris O'Shea says the number of people unable or unwilling to pay their energy bills will increase when prices jump in the new year.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Chris O'Shea says the number of people unable or unwilling to pay their energy bills will increase when prices jump in the new year."
+   },
+   {
+    "titel": "Gold-Prognose bis Ende 2028: Klettert das Edelmetall auf 5.600 Dollar?",
+    "link": "https://www.btc-echo.de/news/gold-prognose-bis-2028-edelmetall-auf-5-600-dollar-241369/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T13:00:00+00:00",
+    "text": "Der Goldpreis fiel zuletzt auf ein Jahrestief von 3.500 US-Dollar. Warum die Analysten von Goldman Sachs dennoch optimistisch bleiben. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Der Goldpreis fiel zuletzt auf ein Jahrestief von 3.500 US-Dollar.",
+    "titel_de": "Gold-Prognose bis Ende 2028: Klettert das Edelmetall auf 5.600 Dollar?",
+    "kurz_de": "Der Goldpreis fiel zuletzt auf ein Jahrestief von 3.500 US-Dollar."
+   },
+   {
+    "titel": "Bitcoin-Kurs fällt auf Kraken unter 17.000 Dollar",
+    "link": "https://www.btc-echo.de/news/bitcoin-kurs-faellt-auf-kraken-unter-17-000-dollar-241372/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T12:23:40+00:00",
+    "text": "Auf der Krypto-Börse Kraken rutschte der Bitcoin-Kurs am Samstagmorgen zeitweise auf das Bärenmarkt-Level von 2022. Wie kam es zum historischen Crash? Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Auf der Krypto-Börse Kraken rutschte der Bitcoin-Kurs am Samstagmorgen zeitweise auf das Bärenmarkt-Level von 2022.",
+    "titel_de": "Bitcoin-Kurs fällt auf Kraken unter 17.000 Dollar",
+    "kurz_de": "Auf der Krypto-Börse Kraken rutschte der Bitcoin-Kurs am Samstagmorgen zeitweise auf das Bärenmarkt-Level von 2022."
+   },
+   {
+    "titel": "Here’s what happened in crypto today",
+    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T11:25:27+00:00",
+    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+    "tags": [
+     "Regulierung"
+    ],
+    "wichtig": 1,
+    "kurz": "Need to know what happened in crypto today?"
+   },
+   {
+    "titel": "Russia-bound ship still on fire after attack in Gulf of Finland",
+    "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T11:25:14+00:00",
+    "text": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+    "titel_de": "Nach Russland fahrendes Schiff im Finnischen Meerbusen angegriffen",
+    "kurz_de": "Die finnischen Streitkräfte geben an, dass wahrscheinlich die Ukraine hinter dem Drohnenangriff auf das Schiff steckte."
+   },
+   {
+    "titel": "XRP im freien Fall: Warum der Altcoin nicht von Ripples Boom profitiert",
+    "link": "https://www.btc-echo.de/news/xrp-kurs-faellt-trotz-ripple-boom-wie-kann-das-sein-241225/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T10:30:00+00:00",
+    "text": "Obwohl Ripple in letzter Zeit viele Erfolge feiert, fällt der XRP-Kurs rasant. Aus diesen Gründen profitiert der Coin nicht zwangsweise vom Erfolg der Firma. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Obwohl Ripple in letzter Zeit viele Erfolge feiert, fällt der XRP-Kurs rasant.",
+    "titel_de": "XRP im freien Fall: Warum der Altcoin nicht von Ripples Boom profitiert",
+    "kurz_de": "Obwohl Ripple in letzter Zeit viele Erfolge feiert, fällt der XRP-Kurs rasant."
+   },
+   {
+    "titel": "Sind Einzelaktien eine Kostenfalle oder eine Goldgrube?",
+    "link": "https://www.tagesschau.de/wirtschaft/finanzen/boerse-investment-einzelaktien-etf-100.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-22T10:25:29+00:00",
+    "text": "Einzelaktien bieten etwas, was ein Welt-ETF kaum kann: Die Chance darauf, das Depot individueller zu gestalten und höhere Renditen zu erzielen. Gleichzeitig sind sie riskanter, zeitintensiver und komplexer. Von L.-M. Hiltscher und J. Bartl…",
+    "tags": [
+     "Rohstoffe"
+    ],
+    "wichtig": 1,
+    "kurz": "Einzelaktien bieten etwas, was ein Welt-ETF kaum kann: Die Chance darauf, das Depot individueller zu gestalten und höhere Renditen zu erzielen.",
+    "titel_de": "Sind Einzelaktien eine Kostenfalle oder eine Goldgrube?",
+    "kurz_de": "Einzelaktien bieten etwas, was ein Welt-ETF kaum kann: Die Chance darauf, das Depot individueller zu gestalten und höhere Renditen zu erzielen."
+   },
+   {
+    "titel": "Krypto-Reserve in Russland: Kommunistische Partei fordert Bitcoin-Integration",
+    "link": "https://www.btc-echo.de/news/krypto-reserve-in-russland-kommunisten-fordern-bitcoin-241366/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T09:56:04+00:00",
+    "text": "Russlands Kommunistische Partei will beschlagnahmte Kryptowährungen in die Staatsreserven aufnehmen. Wie realistisch ist der Bitcoin-Vorstoß? Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Russlands Kommunistische Partei will beschlagnahmte Kryptowährungen in die Staatsreserven aufnehmen.",
+    "titel_de": "Krypto-Reserve in Russland: Kommunistische Partei fordert Bitcoin-Integration",
+    "kurz_de": "Russlands Kommunistische Partei will beschlagnahmte Kryptowährungen in die Staatsreserven aufnehmen."
+   },
+   {
+    "titel": "Bitcoin briefly drops to $17K on Kraken, exchange upholds trades",
+    "link": "https://cointelegraph.com/news/bitcoin-17k-kraken-canadian-dollar-market-trades-stand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T09:33:06+00:00",
+    "text": "Kraken said all orders were processed correctly and found no evidence of a security breach or compromised accounts.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Kraken said all orders were processed correctly and found no evidence of a security breach or compromised accounts."
+   },
+   {
+    "titel": "South Korea education minister resigns over exam cheating scandal",
+    "link": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T09:20:45+00:00",
+    "text": "Choi Kyo-jin admits last-minute measures to stop AI-assisted cheating during the college entrance exam caused chaos.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Choi Kyo-jin admits last-minute measures to stop AI-assisted cheating during the college entrance exam caused chaos."
+   },
+   {
+    "titel": "“Bitcoin ist unterbewertet”: Die ideale Einstiegschance für Anleger?",
+    "link": "https://www.btc-echo.de/news/bitcoin-ist-unterbewertet-ideale-einstiegschance-241365/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T09:12:39+00:00",
+    "text": "Der gestrige Krypto-Crash stürzte den Bitcoin-Kurs zweitweise unter 56.000 Dollar. Warum die Kryptowährung selten so attraktiv bewertet war. Source: BTC-ECHO BTC-ECHO",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "Der gestrige Krypto-Crash stürzte den Bitcoin-Kurs zweitweise unter 56.000 Dollar.",
+    "titel_de": "“Bitcoin ist unterbewertet”: Die ideale Einstiegschance für Anleger?",
+    "kurz_de": "Der gestrige Krypto-Crash stürzte den Bitcoin-Kurs zweitweise unter 56.000 Dollar."
+   },
    {
     "titel": "South Korean exchanges halt CYBER transfers amid suspected bridge exploit",
     "link": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -55,7 +336,9 @@
      "Hack/Betrug"
     ],
     "wichtig": 2,
-    "kurz": "Cyber reported unexpected minting of CYBER tokens on Solana, followed by tokens moving out of its Ethereum bridge lockbox, prompting an investigation."
+    "kurz": "Cyber reported unexpected minting of CYBER tokens on Solana, followed by tokens moving out of its Ethereum bridge lockbox, prompting an investigation.",
+    "titel_de": "Südkoreanische Börsen stoppen CYBER-Transfers wegen Verdachts auf Bridge-Exploit",
+    "kurz_de": "Cyber berichtete über ein unerwartetes Mining von CYBER-Token auf Solana, gefolgt von einer Bewegung der Token aus dem Lockbox-System der Ethereum-Bridge, was eine Untersuchung veranlasste."
    },
    {
     "titel": "MP criticises Guernsey and Jersey company ownership register plans",
@@ -72,26 +355,14 @@
    {
     "titel": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
     "link": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
     "sprache": "en",
     "zeit": "2026-11-22T07:12:41+00:00",
     "text": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\".",
     "tags": [],
     "wichtig": 0,
     "kurz": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\"."
-   },
-   {
-    "titel": "New draft deal aims to avert collapse of talks at COP31 climate summit",
-    "link": "https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T06:54:06+00:00",
-    "text": "The UN COP31 meeting in Turkey enters a second day of overtime as countries struggle to reach an agreement.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The UN COP31 meeting in Turkey enters a second day of overtime as countries struggle to reach an agreement."
    },
    {
     "titel": "Ethereum-Absturz auf 1.000 Dollar bis Montag: “Es besteht eine reale Gefahr”",
@@ -108,18 +379,6 @@
     "kurz_de": "Der jüngste Krypto-Abverkauf belastete Ethereum stärker als Bitcoin."
    },
    {
-    "titel": "Three killed and dozens missing after fire at Indonesian factory",
-    "link": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T06:05:00+00:00",
-    "text": "At least three people were killed and 36 are still missing after a fire at a confectionary factory.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "At least three people were killed and 36 are still missing after a fire at a confectionary factory."
-   },
-   {
     "titel": "Chainflip confirms $12M hack, offers attacker 10% bounty",
     "link": "https://cointelegraph.com/news/chainflip-12m-crypto-hack-10-percent-bounty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "quelle": "Cointelegraph",
@@ -132,7 +391,9 @@
      "Krieg/Konflikt"
     ],
     "wichtig": 3,
-    "kurz": "Chainflip offered the attacker a 10% bounty to return 90% of the stolen funds by Nov."
+    "kurz": "Chainflip offered the attacker a 10% bounty to return 90% of the stolen funds by Nov.",
+    "titel_de": "Chainflip bestätigt Hack in Höhe von 12 Mio. USD und bietet dem Angreifer eine Belohnung von 10 %",
+    "kurz_de": "Chainflip bot dem Angreifer eine Belohnung von 10 % an, wenn er 90 % der gestohlenen Gelder bis November zurückgibt."
    },
    {
     "titel": "IG Metall weitet Warnstreiks in norddeutscher Metall- und Elektroindustrie aus",
@@ -187,18 +448,6 @@
     ],
     "wichtig": 1,
     "kurz": "The National Crime Information Center database is used by federal and local law enforcement to share information."
-   },
-   {
-    "titel": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-    "link": "https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T00:10:37+00:00",
-    "text": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?"
    },
    {
     "titel": "How a teen gamer and his mother helped rescue a missing girl",
@@ -305,22 +554,6 @@
     ],
     "wichtig": 1,
     "kurz": "United States President Trump has doubled down on his support for fossil fuels since coming into office almost two years ago, including the most polluting of them all – coal."
-   },
-   {
-    "titel": "Russia-bound ship attacked in Gulf of Finland",
-    "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T19:20:22+00:00",
-    "text": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-    "titel_de": "Nach Russland fahrendes Schiff im Finnischen Meerbusen angegriffen",
-    "kurz_de": "Die finnischen Streitkräfte geben an, dass wahrscheinlich die Ukraine hinter dem Drohnenangriff auf das Schiff steckte."
    },
    {
     "titel": "Thanksgiving Gas Prices Could Break a Record Despite Recent Plunge",
@@ -600,20 +833,6 @@
     "kurz_de": "Der US-Senat verabschiedet den DEATH BETS Act und setzt neue Grenzen für Polymarket und Kalshi."
    },
    {
-    "titel": "Here’s what happened in crypto today",
-    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-21T11:18:52+00:00",
-    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 1,
-    "kurz": "Need to know what happened in crypto today?"
-   },
-   {
     "titel": "Krypto-Milliarden in Luft aufgelöst: Bitwise-Experte nennt den Schuldigen",
     "link": "https://www.btc-echo.de/news/krypto-milliarden-in-luft-aufgeloest-bitwise-experte-nennt-die-grunde-241344/",
     "quelle": "BTC-ECHO",
@@ -882,18 +1101,6 @@
     "kurz_de": "Der Markt für tokenisierte Wertpapiere wächst rasant, die Regeln dafür fehlen."
    },
    {
-    "titel": "They were fined $811m for conning detained migrants, but the scams didn't stop",
-    "link": "https://www.bbc.co.uk/news/articles/cqgm0zlkgrm2o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T01:02:39+00:00",
-    "text": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars."
-   },
-   {
     "titel": "Can AI really help spot Black Friday deals? We put it to the test",
     "link": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Wirtschaft",
@@ -1096,206 +1303,11 @@
     "kurz": "Nvidia shares fell about 13% to a 52-week low after reports that SEC enforcement staff are examining potential accounting issues, adding to pressure on the chipmaker after Jensen Huang’s resignation.",
     "titel_de": "Nvidia-Aktien fallen nach Bericht über SEC-Untersuchung der Rechnungslegung auf 52-Wochen-Tief",
     "kurz_de": "Die Nvidia-Aktie fiel um rund 13 % auf ein 52-Wochen-Tief, nachdem Berichte bekannt wurden, wonach die Aufsichtsbehörde der SEC potenzielle Bilanzierungsprobleme untersucht. Dies erhöht den Druck auf den Chiphersteller nach dem Rücktritt von Jensen Huang."
-   },
-   {
-    "titel": "Wrapped Monero token crashes 99.8% amid suspected $13.5M exploit",
-    "link": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T19:37:27+00:00",
-    "text": "Bitquery traced $13.5 million in suspicious sales of the wrapped Monero token, as its operator blamed a security breach and promised to reimburse affected traders.",
-    "tags": [
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "Bitquery traced $13.5 million in suspicious sales of the wrapped Monero token, as its operator blamed a security breach and promised to reimburse affected traders.",
-    "titel_de": "Wrapped-Monero-Token stürzt inmitten eines mutmaßlichen Exploits in Höhe von 13,5 Mio. USD um 99,8 % ab",
-    "kurz_de": "Bitquery hat verdächtige Verkäufe des Wrapped-Monero-Tokens im Wert von 13,5 Millionen US-Dollar aufgedeckt, wobei der Betreiber eine Sicherheitslücke als Ursache angab und versprach, den betroffenen Tradern das Geld zurückzuerstatten."
-   },
-   {
-    "titel": "SBF’s 'The Altruists' Plot Twist: FTX’s Anthropic Shares Would Be Worth $43 Billion",
-    "link": "https://decrypt.co/383739/sbf-altruists-ftx-anthropic-shares-worth-43-billion",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T19:36:03+00:00",
-    "text": "Anthropic’s IPO made FTX’s liquidated AI bet a $43 billion what-if, just as Netflix premiered its Sam Bankman-Fried drama.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "Anthropic’s IPO made FTX’s liquidated AI bet a $43 billion what-if, just as Netflix premiered its Sam Bankman-Fried drama."
-   },
-   {
-    "titel": "Wirtschaft vor acht vom 20.11.2026",
-    "link": "https://www.tagesschau.de/video/video-1687280.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-20T19:10:55+00:00",
-    "text": "Wirtschaft vor acht vom 20.11.2026",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Wirtschaft vor acht vom 20.11.2026",
-    "titel_de": "Wirtschaft vor acht vom 20.11.2026",
-    "kurz_de": "Wirtschaft vor acht vom 20.11.2026"
-   },
-   {
-    "titel": "US Data Center Boom Faces a New Political Reality",
-    "link": "https://oilprice.com/Energy/Energy-General/US-Data-Center-Boom-Faces-a-New-Political-Reality.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T19:00:00+00:00",
-    "text": "Starting in January, Democratic governors will lead US states that together hold 77% of the 300 gigawatts (GW) of data center capacity announced for 2027-2030, including the five largest markets: Texas, Virginia, Pennsylvania, Ohio and Geo…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Starting in January, Democratic governors will lead US states that together hold 77% of the 300 gigawatts (GW) of data center capacity announced for 2027-2030, including the five largest markets: Tex…"
-   },
-   {
-    "titel": "Miami or Vice City? Tour the real-world inspiration for GTA 6",
-    "link": "https://www.bbc.co.uk/news/videos/c8wy5d43zp9qo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T18:48:48+00:00",
-    "text": "BBC News Mundo’s Rafael Rojas visits the real-life Miami locations that inspired Vice City, GTA 6’s fictionalised setting.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "BBC News Mundo’s Rafael Rojas visits the real-life Miami locations that inspired Vice City, GTA 6’s fictionalised setting."
-   },
-   {
-    "titel": "Cathie Wood Bets $91M on Anthropic IPO While Paring Crypto Exposure",
-    "link": "https://decrypt.co/383737/cathie-wood-bets-91m-anthropic-ipo-paring-crypto-exposure",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T18:46:03+00:00",
-    "text": "The firm bought 934,968 Anthropic shares across six ETFs on the Claude maker’s Nasdaq debut while trimming a combined $4.1 million from its Ethereum and Solana staking ETFs.",
-    "tags": [
-     "ETF"
-    ],
-    "wichtig": 1,
-    "kurz": "The firm bought 934,968 Anthropic shares across six ETFs on the Claude maker’s Nasdaq debut while trimming a combined $4.1 million from its Ethereum and Solana staking ETFs."
-   },
-   {
-    "titel": "Sky Protocol sees $2 billion in stablecoin withdrawals, disputes illicit fund claims",
-    "link": "https://cointelegraph.com/news/sky-protocol-sees-2b-in-stablecoin-withdrawals-disputes-illicit-fund-claims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T18:37:10+00:00",
-    "text": "Sky says its USDS stablecoin held its $1 value despite more than $2 billion in withdrawals, as it disputes a report linking the protocol to illicit activity.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Sky says its USDS stablecoin held its $1 value despite more than $2 billion in withdrawals, as it disputes a report linking the protocol to illicit activity."
-   },
-   {
-    "titel": "Saudi Arabia Expands Oil Storage in Japan as Tokyo Restocks",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Expands-Oil-Storage-in-Japan-as-Tokyo-Restocks.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T18:30:00+00:00",
-    "text": "Japan plans to buy up to 8 million barrels of Saudi crude for the national petroleum reserve it drew down during the Hormuz crisis, under a deal the two countries announced on Friday that makes the purchases subject to favorable market con…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Japan plans to buy up to 8 million barrels of Saudi crude for the national petroleum reserve it drew down during the Hormuz crisis, under a deal the two countries announced on Friday that makes the p…",
-    "titel_de": "Saudi-Arabien erweitert seine Öllager in Japan, während Tokio seine Lagerbestände auffüllt",
-    "kurz_de": "Japan plant, im Rahmen eines Abkommens, das die beiden Länder am Freitag bekannt gaben, bis zu 8 Millionen Barrel saudisches Rohöl für die nationale Erdölreserve zu kaufen, die es während der Hormus-Krise abgebaut hat."
-   },
-   {
-    "titel": "Google Gives Gemini Control of Mac Apps, But Its New AI Agent Comes With Risks",
-    "link": "https://decrypt.co/383733/google-gives-gemini-control-mac-apps-ai-agent",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T18:16:02+00:00",
-    "text": "Gemini's new Mac computer-use feature navigates apps, files, and websites in a separate window, but Google's own documentation warns about prompt injection.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "Gemini's new Mac computer-use feature navigates apps, files, and websites in a separate window, but Google's own documentation warns about prompt injection."
-   },
-   {
-    "titel": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
-    "link": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T18:13:52+00:00",
-    "text": "Bitcoin is closing in on its $57,700 summer low as Delphi Digital strategist warns the Fed could make matters worse and STS Digital sees cash as the place to hide.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 2,
-    "kurz": "Bitcoin is closing in on its $57,700 summer low as Delphi Digital strategist warns the Fed could make matters worse and STS Digital sees cash as the place to hide."
-   },
-   {
-    "titel": "U.S. Oil Drillers Pick Up the Pace Just as Oil Prices Fall",
-    "link": "https://oilprice.com/Energy/Energy-General/US-Oil-Drillers-Pick-Up-the-Pace-Just-as-Oil-Prices-Fall.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T18:09:09+00:00",
-    "text": "The total number of active drilling rigs for oil and gas in the United States rose this week, according to new data that Baker Hughes published on Friday, with the total rig count in the US rising to 607, up 53 from this same time last yea…",
-    "tags": [
-     "Rohstoffe"
-    ],
-    "wichtig": 1,
-    "kurz": "The total number of active drilling rigs for oil and gas in the United States rose this week, according to new data that Baker Hughes published on Friday, with the total rig count in the US rising to…"
-   },
-   {
-    "titel": "XRP-Kurs: Diese psychologische Kursmarke entscheidet alles",
-    "link": "https://www.btc-echo.de/news/xrp-kurs-diese-psychologische-kursmarke-entscheidet-alles-241222/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-20T18:00:00+00:00",
-    "text": "Die Kryptowährung Ripple (XRP) rutscht auf ein neues Jahrestief ab. War das schon die finale Kapitulation oder droht weiteres Ungemach? Das sagt der Chart. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "Die Kryptowährung Ripple (XRP) rutscht auf ein neues Jahrestief ab.",
-    "titel_de": "XRP-Kurs: Diese psychologische Kursmarke entscheidet alles",
-    "kurz_de": "Die Kryptowährung Ripple (XRP) rutscht auf ein neues Jahrestief ab."
-   },
-   {
-    "titel": "Ethereum verschiebt Glamsterdam: 15.000 Programme könnten brechen",
-    "link": "https://www.btc-echo.de/news/ethereum-verschiebt-glamsterdam-15-000-programme-koennten-brechen-241350/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-20T17:54:46+00:00",
-    "text": "Eigentlich sollte Ethereums nächstes großes Upgrade im Dezember starten, doch tausende Programme würden dabei schlicht aufhören zu funktionieren. Die Entwickler ziehen Konsequenzen. Source: BTC-ECHO BTC-ECHO",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Eigentlich sollte Ethereums nächstes großes Upgrade im Dezember starten, doch tausende Programme würden dabei schlicht aufhören zu funktionieren.",
-    "titel_de": "Ethereum verschiebt Glamsterdam: 15.000 Programme könnten brechen",
-    "kurz_de": "Eigentlich sollte Ethereums nächstes großes Upgrade im Dezember starten, doch tausende Programme würden dabei schlicht aufhören zu funktionieren."
-   },
-   {
-    "titel": "UK to explore even closer ties with EU after agreeing deal, says Burnham",
-    "link": "https://www.bbc.co.uk/news/articles/c6jreyqgw4e9o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-20T17:49:48+00:00",
-    "text": "The UK-EU deal agreed on Friday covers British food exports, emissions trading and a youth experience scheme.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The UK-EU deal agreed on Friday covers British food exports, emissions trading and a youth experience scheme."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-22T08:51:16+00:00",
+  "stand": "2026-11-22T16:54:28+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
