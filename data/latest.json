@@ -1,48 +1,167 @@
 {
- "erzeugt": "2026-11-22T01:35:35+00:00",
+ "erzeugt": "2026-11-22T08:51:04+00:00",
  "kurse": {
-  "stand": "2026-11-22T01:35:35+00:00",
+  "stand": "2026-11-22T08:51:04+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 54714,
-    "aend24": 2.01654,
-    "aend7": -6.2678,
-    "aend1y": -29.3656,
-    "marktkap": 1100745393898,
-    "volumen": 50433138495
+    "preis": 54326,
+    "aend24": 2.9135,
+    "aend7": -8.3494,
+    "aend1y": -30.1353,
+    "marktkap": 1093160281641,
+    "volumen": 33888946088
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1533.42,
-    "aend24": 4.02822,
-    "aend7": -4.9284,
-    "aend1y": -39.1694,
-    "marktkap": 187447566907,
-    "volumen": 15902314210
+    "preis": 1532.94,
+    "aend24": 3.16286,
+    "aend7": -7.1524,
+    "aend1y": -39.7874,
+    "marktkap": 187439218070,
+    "volumen": 9625497787
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 63.96,
-    "aend24": 2.34273,
-    "aend7": -0.0314,
-    "aend1y": -45.386,
-    "marktkap": 37864355131,
-    "volumen": 3292788518
+    "preis": 63.49,
+    "aend24": 3.34578,
+    "aend7": -1.8971,
+    "aend1y": -45.9896,
+    "marktkap": 37591614611,
+    "volumen": 2119131642
    }
   ]
  },
  "news": {
-  "stand": "2026-11-22T01:35:37+00:00",
+  "stand": "2026-11-22T08:51:06+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "South Korean exchanges halt CYBER transfers amid suspected bridge exploit",
+    "link": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T07:24:05+00:00",
+    "text": "Cyber reported unexpected minting of CYBER tokens on Solana, followed by tokens moving out of its Ethereum bridge lockbox, prompting an investigation.",
+    "tags": [
+     "Hack/Betrug"
+    ],
+    "wichtig": 2,
+    "kurz": "Cyber reported unexpected minting of CYBER tokens on Solana, followed by tokens moving out of its Ethereum bridge lockbox, prompting an investigation."
+   },
+   {
+    "titel": "MP criticises Guernsey and Jersey company ownership register plans",
+    "link": "https://www.bbc.co.uk/news/articles/cqkgmy2nxy4lo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-22T07:22:05+00:00",
+    "text": "Sir Andrew Mitchell says access should be easier for people tackling financial crime.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Sir Andrew Mitchell says access should be easier for people tackling financial crime."
+   },
+   {
+    "titel": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
+    "link": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-22T07:12:41+00:00",
+    "text": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\".",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\"."
+   },
+   {
+    "titel": "New draft deal aims to avert collapse of talks at COP31 climate summit",
+    "link": "https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T06:54:06+00:00",
+    "text": "The UN COP31 meeting in Turkey enters a second day of overtime as countries struggle to reach an agreement.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The UN COP31 meeting in Turkey enters a second day of overtime as countries struggle to reach an agreement."
+   },
+   {
+    "titel": "Ethereum-Absturz auf 1.000 Dollar bis Montag: “Es besteht eine reale Gefahr”",
+    "link": "https://www.btc-echo.de/news/ethereum-crash-auf-1-000-dollar-eine-reale-gefahr-241361/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T06:30:00+00:00",
+    "text": "Der jüngste Krypto-Abverkauf belastete Ethereum stärker als Bitcoin. Warum Peter Schiff nun warnt, dass es für ETH-Anleger noch schlimmer kommen könnte. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Der jüngste Krypto-Abverkauf belastete Ethereum stärker als Bitcoin.",
+    "titel_de": "Ethereum-Absturz auf 1.000 Dollar bis Montag: “Es besteht eine reale Gefahr”",
+    "kurz_de": "Der jüngste Krypto-Abverkauf belastete Ethereum stärker als Bitcoin."
+   },
+   {
+    "titel": "Three killed and dozens missing after fire at Indonesian factory",
+    "link": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T06:05:00+00:00",
+    "text": "At least three people were killed and 36 are still missing after a fire at a confectionary factory.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "At least three people were killed and 36 are still missing after a fire at a confectionary factory."
+   },
+   {
+    "titel": "Chainflip confirms $12M hack, offers attacker 10% bounty",
+    "link": "https://cointelegraph.com/news/chainflip-12m-crypto-hack-10-percent-bounty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T05:28:43+00:00",
+    "text": "Chainflip offered the attacker a 10% bounty to return 90% of the stolen funds by Nov. 23, promising to treat the return as a white-hat recovery and withdraw law enforcement complaints.",
+    "tags": [
+     "Regulierung",
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 3,
+    "kurz": "Chainflip offered the attacker a 10% bounty to return 90% of the stolen funds by Nov."
+   },
+   {
+    "titel": "IG Metall weitet Warnstreiks in norddeutscher Metall- und Elektroindustrie aus",
+    "link": "https://www.tagesschau.de/wirtschaft/unternehmen/ig-metall-warnstreik-102.html",
+    "quelle": "tagesschau Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "de",
+    "zeit": "2026-11-22T03:50:01+00:00",
+    "text": "Bundesweit hatten am Freitag Beschäftigte der Metall- und Elektroindustrie ihre Arbeit niedergelegt. Im Norden will die IG Metall Küste jetzt nachlegen: Nochmal soll für 24 Stunden gestreikt werden - teils schon ab heute Abend.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Bundesweit hatten am Freitag Beschäftigte der Metall- und Elektroindustrie ihre Arbeit niedergelegt.",
+    "titel_de": "IG Metall weitet Warnstreiks in norddeutscher Metall- und Elektroindustrie aus",
+    "kurz_de": "Bundesweit hatten am Freitag Beschäftigte der Metall- und Elektroindustrie ihre Arbeit niedergelegt."
+   },
+   {
+    "titel": "Rekord-IPO von Anthropic: Saugt der KI-Hype dem Krypto-Markt das Geld ab?",
+    "link": "https://www.btc-echo.de/news/hoffnung-bei-der-krypto-steuer-schock-fuer-strategy-2-241290/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T03:00:00+00:00",
+    "text": "Anthropic feiert den größten Börsengang aller Zeiten, Deutschland könnte im Movie2k-Prozess weitere 40.000 Bitcoin erhalten und Ledger warnt Wallet-Käufer in Berlin. Die wichtigsten News der Woche. Source: BTC-ECHO BTC-ECHO",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Anthropic feiert den größten Börsengang aller Zeiten, Deutschland könnte im Movie2k-Prozess weitere 40.000 Bitcoin erhalten und Ledger warnt Wallet-Käufer in Berlin.",
+    "titel_de": "Rekord-IPO von Anthropic: Saugt der KI-Hype dem Krypto-Markt das Geld ab?",
+    "kurz_de": "Anthropic feiert den größten Börsengang aller Zeiten, Deutschland könnte im Movie2k-Prozess weitere 40.000 Bitcoin erhalten und Ledger warnt Wallet-Käufer in Berlin."
+   },
    {
     "titel": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
     "link": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
@@ -94,6 +213,18 @@
     "kurz": "When 16-year-old Landon Tresp met a teenage girl in an online game, it led to him and his mother helping the FBI rescue her from kidnapping."
    },
    {
+    "titel": "Employers are being asked to give interview feedback - here's what applicants want",
+    "link": "https://www.bbc.co.uk/news/articles/cm2d94le23xyo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-22T00:04:07+00:00",
+    "text": "People say they often hear nothing back after applying for jobs. But could employers be forced to respond to every applicant?",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "People say they often hear nothing back after applying for jobs."
+   },
+   {
     "titel": "AI Boom Forces Massive Investment in Power Grids Worldwide",
     "link": "https://oilprice.com/Energy/Crude-Oil/AI-Boom-Forces-Massive-Investment-in-Power-Grids-Worldwide.html",
     "quelle": "OilPrice",
@@ -106,18 +237,6 @@
     ],
     "wichtig": 1,
     "kurz": "The information technology industry is driving massive growth in global electricity demand, which is set to rise by more than 10,000 TWh over the next ten years."
-   },
-   {
-    "titel": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-    "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T22:19:43+00:00",
-    "text": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement."
    },
    {
     "titel": "Lock of former US President George Washington's hair sells for $4,000",
@@ -775,6 +894,20 @@
     "kurz": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars."
    },
    {
+    "titel": "Can AI really help spot Black Friday deals? We put it to the test",
+    "link": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-21T00:06:11+00:00",
+    "text": "We put four AI models to the test to see if they could save us money on a new TV.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "We put four AI models to the test to see if they could save us money on a new TV."
+   },
+   {
     "titel": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
     "link": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -995,18 +1128,6 @@
     "kurz": "Anthropic’s IPO made FTX’s liquidated AI bet a $43 billion what-if, just as Netflix premiered its Sam Bankman-Fried drama."
    },
    {
-    "titel": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
-    "link": "https://www.bbc.co.uk/news/articles/cq702ez8d4lwo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T19:27:49+00:00",
-    "text": "Nikhil Gupta pleaded guilty to murder-for-hire, conspiracy to commit murder-for-hire, and conspiracy to commit money laundering in February.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Nikhil Gupta pleaded guilty to murder-for-hire, conspiracy to commit murder-for-hire, and conspiracy to commit money laundering in February."
-   },
-   {
     "titel": "Wirtschaft vor acht vom 20.11.2026",
     "link": "https://www.tagesschau.de/video/video-1687280.html",
     "quelle": "tagesschau Wirtschaft",
@@ -1170,131 +1291,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The UK-EU deal agreed on Friday covers British food exports, emissions trading and a youth experience scheme."
-   },
-   {
-    "titel": "Wrapped Monero Token Collapses 99% After $13 Million Hack Blamed on Web Host",
-    "link": "https://decrypt.co/383732/wrapped-monero-token-collapses-99-after-13-million-hack-blamed-on-web-host",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T17:41:45+00:00",
-    "text": "Wagyu’s XMR1 token fell more than 99% after an attacker moved 5.2 million tokens out of its deployer account and sold a fraction of them for $13.5 million.",
-    "tags": [
-     "Krieg/Konflikt",
-     "Hack/Betrug"
-    ],
-    "wichtig": 2,
-    "kurz": "Wagyu’s XMR1 token fell more than 99% after an attacker moved 5.2 million tokens out of its deployer account and sold a fraction of them for $13.5 million."
-   },
-   {
-    "titel": "Lufthansa to Slash 1,000 Jobs as Airlines Reel from High Fuel Costs",
-    "link": "https://oilprice.com/Latest-Energy-News/World-News/Lufthansa-to-Slash-1000-Jobs-as-Airlines-Reel-from-High-Fuel-Costs.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T17:30:00+00:00",
-    "text": "Europe’s biggest airline group, Lufthansa, plans to eliminate as many as 1,000 jobs and reduce capacity on short and medium-haul destinations, Bloomberg reported on Friday, citing a letter to employees it had seen. Lufthansa and all other…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Europe’s biggest airline group, Lufthansa, plans to eliminate as many as 1,000 jobs and reduce capacity on short and medium-haul destinations, Bloomberg reported on Friday, citing a letter to employe…"
-   },
-   {
-    "titel": "Marktbericht: Ausverkauf geht weiter - auch im DAX",
-    "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html",
-    "quelle": "tagesschau Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "de",
-    "zeit": "2026-11-20T17:17:33+00:00",
-    "text": "An den Finanzmärkten rollt eine Verkaufswelle durch den vom Erfolg verwöhnten Technologiesektor. Der DAX folgt den Verlusten an der Wall Street und schließt mit dem höchsten Wochenminus seit Monaten.",
-    "tags": [
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 1,
-    "kurz": "An den Finanzmärkten rollt eine Verkaufswelle durch den vom Erfolg verwöhnten Technologiesektor.",
-    "titel_de": "Marktbericht: Ausverkauf geht weiter - auch im DAX",
-    "kurz_de": "An den Finanzmärkten rollt eine Verkaufswelle durch den vom Erfolg verwöhnten Technologiesektor."
-   },
-   {
-    "titel": "Tankers Are Being Hit Daily. So Why Is Oil Falling?",
-    "link": "https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T17:11:05+00:00",
-    "text": "Brent tumbled 5% to $91 this week, as recovering Gulf oil flows outweigh tanker attacks, Houthi threats and escalating geopolitical tensions. Friday, November 20, 2026 Oil prices are set to post a 5% weekly drop as sentiment is still swaye…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Brent tumbled 5% to $91 this week, as recovering Gulf oil flows outweigh tanker attacks, Houthi threats and escalating geopolitical tensions."
-   },
-   {
-    "titel": "The 2026 Midterms Have Changed the Battle for American Energy",
-    "link": "https://oilprice.com/Energy/Energy-General/The-2026-Midterms-Have-Changed-the-Battle-for-American-Energy.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T17:00:00+00:00",
-    "text": "The 2026 midterm elections produced a major political shift in Washington. Democrats will control both chambers of Congress when the new session begins in January, during President Donald Trump’s final two years in the White House. That co…",
-    "tags": [
-     "Prominente"
-    ],
-    "wichtig": 1,
-    "kurz": "The 2026 midterm elections produced a major political shift in Washington."
-   },
-   {
-    "titel": "Bitcoin falls below $60K for first time since July amid broader market selloff",
-    "link": "https://cointelegraph.com/markets/bitcoin-falls-below-60k-for-first-time-since-july-amid-broader-market-selloff?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "quelle": "Cointelegraph",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T16:55:51+00:00",
-    "text": "Bitcoin fell nearly 6% as US stocks declined, with the Nasdaq dropping more than 2% and Anthropic shares losing almost 10%.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Bitcoin fell nearly 6% as US stocks declined, with the Nasdaq dropping more than 2% and Anthropic shares losing almost 10%."
-   },
-   {
-    "titel": "Cost of living protests sweep across Europe",
-    "link": "https://www.bbc.co.uk/news/videos/c6dx12ppeqn4o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T16:45:34+00:00",
-    "text": "Thousands marched across European cities on Friday to protest against the cost of living and other issues.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Thousands marched across European cities on Friday to protest against the cost of living and other issues."
-   },
-   {
-    "titel": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
-    "link": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-20T16:41:52+00:00",
-    "text": "The trade deal is unlikely lower food prices for shoppers, but should boost the economy more than other post-Brexit agreements.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The trade deal is unlikely lower food prices for shoppers, but should boost the economy more than other post-Brexit agreements."
-   },
-   {
-    "titel": "Bitcoin Breaks Below $60K as Crypto Fear Index Hits Worst Level Since February",
-    "link": "https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T16:35:59+00:00",
-    "text": "Bitcoin broke below $60,000 Friday as crypto sentiment collapsed and AI-linked stocks sank after Anthropic’s IPO.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Bitcoin broke below $60,000 Friday as crypto sentiment collapsed and AI-linked stocks sank after Anthropic’s IPO."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-22T01:35:50+00:00",
+  "stand": "2026-11-22T08:51:16+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
