@@ -1,63 +1,208 @@
 {
- "erzeugt": "2026-11-22T16:54:13+00:00",
+ "erzeugt": "2026-11-22T22:18:25+00:00",
  "kurse": {
-  "stand": "2026-11-22T16:54:13+00:00",
+  "stand": "2026-11-22T22:18:25+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 55769,
-    "aend24": 1.98043,
-    "aend7": -6.0898,
-    "aend1y": -27.959,
-    "marktkap": 1121830039812,
-    "volumen": 27810219462
+    "preis": 55452,
+    "aend24": 1.02288,
+    "aend7": -6.5051,
+    "aend1y": -27.8809,
+    "marktkap": 1115456143943,
+    "volumen": 25193573006
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1567.96,
-    "aend24": 2.26588,
-    "aend7": -5.0207,
-    "aend1y": -37.4698,
-    "marktkap": 191670325815,
-    "volumen": 7349434849
+    "preis": 1562.95,
+    "aend24": 1.94994,
+    "aend7": -5.8595,
+    "aend1y": -37.2785,
+    "marktkap": 191058012954,
+    "volumen": 7047646295
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 64.29,
-    "aend24": -0.17818,
-    "aend7": -1.5125,
-    "aend1y": -44.7143,
-    "marktkap": 38062043704,
-    "volumen": 1709622938
+    "preis": 64.03,
+    "aend24": 0.08522,
+    "aend7": -2.0924,
+    "aend1y": -44.3011,
+    "marktkap": 37908493151,
+    "volumen": 1652232671
    }
   ]
  },
  "news": {
-  "stand": "2026-11-22T16:54:16+00:00",
+  "stand": "2026-11-22T22:18:27+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Miley Cyrus marries Maxx Morando in California ceremony",
+    "link": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T21:22:40+00:00",
+    "text": "The couple have been together for four years and were engaged in 2025.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The couple have been together for four years and were engaged in 2025."
+   },
    {
     "titel": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
     "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
     "bereich": "Welt",
     "sprache": "en",
-    "zeit": "2026-11-22T16:05:25+00:00",
-    "text": "Libya's eastern government says it is working with Russia to investigate the incident.",
+    "zeit": "2026-11-22T20:28:09+00:00",
+    "text": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
     "tags": [
      "Krieg/Konflikt"
     ],
     "wichtig": 2,
-    "kurz": "Libya's eastern government says it is working with Russia to investigate the incident.",
+    "kurz": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
     "titel_de": "Nach Angaben von Beamten wurde die Explosion auf einem russischen Schiff im Hafen von Libyen durch einen mutmaßlichen Drohnenangriff verursacht.",
     "kurz_de": "Die Regierung im Osten Libyens erklärt, sie arbeite mit Russland zusammen, um den Vorfall zu untersuchen."
+   },
+   {
+    "titel": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
+    "link": "https://www.bbc.co.uk/news/articles/c6vg29g7dlyno?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T20:26:24+00:00",
+    "text": "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats."
+   },
+   {
+    "titel": "California’s Wildfire Crisis Is Threatening Its Energy Future",
+    "link": "https://oilprice.com/Energy/Energy-General/Californias-Wildfire-Crisis-Is-Threatening-Its-Energy-Future.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-22T20:00:00+00:00",
+    "text": "The cost of natural disasters is hitting utilities hard as they need to invest more heavily in strengthening transmission infrastructure and financially supporting recovery efforts. In California, several utilities have seen costs increase…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The cost of natural disasters is hitting utilities hard as they need to invest more heavily in strengthening transmission infrastructure and financially supporting recovery efforts."
+   },
+   {
+    "titel": "More on the pending oversight hearings: State of Crypto",
+    "link": "https://www.coindesk.com/",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T19:30:00+00:00",
+    "text": "New letters show the widening range of Congressional committees that will be probing the presidential administration — and the crypto collateral that may be swept up.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "New letters show the widening range of Congressional committees that will be probing the presidential administration — and the crypto collateral that may be swept up."
+   },
+   {
+    "titel": "What's next after no deal at COP31 climate talks?",
+    "link": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T18:57:24+00:00",
+    "text": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had been due to end.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had been due to end."
+   },
+   {
+    "titel": "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
+    "link": "https://www.bbc.co.uk/news/articles/cvglrx764gdxo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T18:29:46+00:00",
+    "text": "The Army says \"swift action\" is necessary to protect its personnel and nearby communities around its ammunition plant in Iowa.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The Army says \"swift action\" is necessary to protect its personnel and nearby communities around its ammunition plant in Iowa."
+   },
+   {
+    "titel": "COP31 fails to reach major climate deal as talks expose deep divisions",
+    "link": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T18:17:59+00:00",
+    "text": "The talks fail to make a breakthrough on tackling climate change after a row about mentioning fossil fuels.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "The talks fail to make a breakthrough on tackling climate change after a row about mentioning fossil fuels."
+   },
+   {
+    "titel": "Google Backs Superhot Geothermal in 50 MW Oregon Power Deal",
+    "link": "https://oilprice.com/Energy/Energy-General/Google-Backs-Superhot-Geothermal-in-50-MW-Oregon-Power-Deal.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-22T18:00:00+00:00",
+    "text": "The runaway energy demand driven by the artificial intelligence era is pushing Big Tech to pursue an all-of-the-above approach to energy generation. At the same time that the sector is causing a natural gas boom and extending the life of f…",
+    "tags": [
+     "Rohstoffe",
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "The runaway energy demand driven by the artificial intelligence era is pushing Big Tech to pursue an all-of-the-above approach to energy generation.",
+    "titel_de": "Google unterstützt Superhot Geothermal bei einem 50-MW-Stromvertrag in Oregon",
+    "kurz_de": "Der unaufhaltsame Energiebedarf, der durch das Zeitalter der künstlichen Intelligenz angetrieben wird, zwingt die Big-Tech-Unternehmen dazu, einen umfassenden Ansatz für die Energieerzeugung zu verfolgen."
+   },
+   {
+    "titel": "Krypto nach dem Kurssturz: So würde ein Experte jetzt 100.000 Euro investieren",
+    "link": "https://www.btc-echo.de/news/krypto-nach-dem-kurssturz-so-wuerde-ein-experte-jetzt-100-000-euro-investieren-241296/",
+    "quelle": "BTC-ECHO",
+    "bereich": "Krypto",
+    "sprache": "de",
+    "zeit": "2026-11-22T18:00:00+00:00",
+    "text": "Nach einem schwierigen Börsenjahr stellt sich die Frage, wo sich noch Chancen bieten. 21Shares-Experte Bernhard Wenger erklärt exklusiv, wie er 100.000 Euro anlegen würde und was Bitcoin für eine Jahresendrallye braucht. Source: BTC-ECHO B…",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Nach einem schwierigen Börsenjahr stellt sich die Frage, wo sich noch Chancen bieten.",
+    "titel_de": "Krypto nach dem Kurssturz: So würde ein Experte jetzt 100.000 Euro investieren",
+    "kurz_de": "Nach einem schwierigen Börsenjahr stellt sich die Frage, wo sich noch Chancen bieten."
+   },
+   {
+    "titel": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
+    "link": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T17:57:43+00:00",
+    "text": "The BBC's Sarah Rainsford reports from the scene of a collapsed residential building in Ukraine's Kyiv region.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "The BBC's Sarah Rainsford reports from the scene of a collapsed residential building in Ukraine's Kyiv region."
+   },
+   {
+    "titel": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
+    "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T17:18:26+00:00",
+    "text": "Finnish defence forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 2,
+    "kurz": "Finnish defence forces say that Ukraine was likely behind the drone strike on Saturday.",
+    "titel_de": "Nach Russland fahrendes Schiff im Finnischen Meerbusen angegriffen",
+    "kurz_de": "Die finnischen Streitkräfte geben an, dass wahrscheinlich die Ukraine hinter dem Drohnenangriff auf das Schiff steckte."
    },
    {
     "titel": "The $25 Billion Problem Facing Australia’s Hydropower Revolution",
@@ -223,22 +368,6 @@
     ],
     "wichtig": 1,
     "kurz": "Need to know what happened in crypto today?"
-   },
-   {
-    "titel": "Russia-bound ship still on fire after attack in Gulf of Finland",
-    "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T11:25:14+00:00",
-    "text": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 2,
-    "kurz": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-    "titel_de": "Nach Russland fahrendes Schiff im Finnischen Meerbusen angegriffen",
-    "kurz_de": "Die finnischen Streitkräfte geben an, dass wahrscheinlich die Ukraine hinter dem Drohnenangriff auf das Schiff steckte."
    },
    {
     "titel": "XRP im freien Fall: Warum der Altcoin nicht von Ripples Boom profitiert",
@@ -448,18 +577,6 @@
     ],
     "wichtig": 1,
     "kurz": "The National Crime Information Center database is used by federal and local law enforcement to share information."
-   },
-   {
-    "titel": "How a teen gamer and his mother helped rescue a missing girl",
-    "link": "https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T00:09:58+00:00",
-    "text": "When 16-year-old Landon Tresp met a teenage girl in an online game, it led to him and his mother helping the FBI rescue her from kidnapping.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "When 16-year-old Landon Tresp met a teenage girl in an online game, it led to him and his mother helping the FBI rescue her from kidnapping."
    },
    {
     "titel": "Employers are being asked to give interview feedback - here's what applicants want",
@@ -738,6 +855,20 @@
     "kurz": "Tech stocks are buckling after Anthropic’s historic IPO and Nvidia’s leadership crisis, while Bitcoin has slipped below $60,000.",
     "titel_de": "Platzt die KI-Blase endlich? Nvidia bricht um 48 % ein, während Wall-Street-Experten Alarm schlagen",
     "kurz_de": "Die Technologieaktien geben nach dem historischen Börsengang von Anthropic und der Führungskrise bei Nvidia nach, während Bitcoin unter 60.000 US-Dollar gefallen ist."
+   },
+   {
+    "titel": "OpenAI, Anthropic and rivals seek AI agent rules to prevent commerce chaos",
+    "link": "https://www.coindesk.com/tech/2026/11/21/openai-anthropic-and-rivals-seek-ai-agent-rules-to-prevent-commerce-chaos",
+    "quelle": "CoinDesk",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-21T14:00:00+00:00",
+    "text": "OpenAI, Anthropic, and other technology giants are backing standards designed to enable agents to work together without putting any one company in control.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 1,
+    "kurz": "OpenAI, Anthropic, and other technology giants are backing standards designed to enable agents to work together without putting any one company in control."
    },
    {
     "titel": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
@@ -1144,18 +1275,6 @@
     "kurz_de": "Die Ölpreise haben sich in den letzten Sitzungen in einer engen Spanne bewegt, da die Prognosen eines bevorstehenden Überangebots auf anhaltende Angriffe und eine stagnierende Diplomatie im Nahen Osten treffen."
    },
    {
-    "titel": "US declassifies more UFO footage filmed in the Middle East",
-    "link": "https://www.bbc.co.uk/news/videos/cqdr1x8mypnko?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T23:15:20+00:00",
-    "text": "The Pentagon has released an eighth tranche of UFO records, which includes three video clips recorded in 2020, 2023 and 2026.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The Pentagon has released an eighth tranche of UFO records, which includes three video clips recorded in 2020, 2023 and 2026."
-   },
-   {
     "titel": "In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest",
     "link": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss",
     "quelle": "BBC Welt",
@@ -1180,134 +1299,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The mammoth figure surpasses every video game launch and single-day film box office record."
-   },
-   {
-    "titel": "Kalshi races to get ahead of New York order that could shut down exchange",
-    "link": "https://www.coindesk.com/policy/2026/11/20/kalshi-races-to-get-ahead-of-new-york-order-that-could-shut-down-exchange",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T22:51:14+00:00",
-    "text": "The U.S. prediction market firm asked a New York court to give the company a chance to argue against a pending restraining order stemming from a new court loss.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The U.S. prediction market firm asked a New York court to give the company a chance to argue against a pending restraining order stemming from a new court loss."
-   },
-   {
-    "titel": "Tech stock sell-off drags markets down as Anthropic shares slide",
-    "link": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T22:42:47+00:00",
-    "text": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory."
-   },
-   {
-    "titel": "French police officers sentenced for beating of music producer Michel Zecler",
-    "link": "https://www.bbc.co.uk/news/articles/ck9d7e9wvvweo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T22:37:09+00:00",
-    "text": "The court has upheld the 2020 beating of the black music producer as an aggravated circumstance of racism.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The court has upheld the 2020 beating of the black music producer as an aggravated circumstance of racism."
-   },
-   {
-    "titel": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment",
-    "link": "https://www.coindesk.com/business/2026/11/20/fairmint-plans-tokenized-stock-venue-on-canton-ethereum-under-sec-experiment",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T22:05:31+00:00",
-    "text": "The firm is the latest to join in building blockchain-based stock markets under the agency’s five-year \"innovation exemption\" for tokenized trading.",
-    "tags": [
-     "Regulierung"
-    ],
-    "wichtig": 2,
-    "kurz": "The firm is the latest to join in building blockchain-based stock markets under the agency’s five-year \"innovation exemption\" for tokenized trading.",
-    "titel_de": "Fairmint plant Handelsplatz für tokenisierte Aktien auf Canton, Ethereum im Rahmen eines SEC-Experiments",
-    "kurz_de": "Das Unternehmen ist das jüngste, das sich am Aufbau von Blockchain-basierten Aktienmärkten im Rahmen der fünfjährigen „Innovationsausnahme“ der Behörde für den tokenisierten Handel beteiligt."
-   },
-   {
-    "titel": "Argentine Energy Firms Rush to Sell Bonds Before the 2027 Election",
-    "link": "https://oilprice.com/Energy/Energy-General/Argentine-Energy-Firms-Rush-to-Sell-Bonds-Before-the-2027-Election.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-20T22:00:00+00:00",
-    "text": "Argentina’s energy sector is having a banner year. The first half of 2026 saw the South American nation’s best energy trade balance in half a decade as exports boomed thanks to a drop in exports out of the Middle East and strong production…",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Argentina’s energy sector is having a banner year."
-   },
-   {
-    "titel": "What the new UK-EU deal could mean for future post-Brexit relations",
-    "link": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T21:43:22+00:00",
-    "text": "The BBC's political and Europe editors analyse the new agreements between the UK and EU.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The BBC's political and Europe editors analyse the new agreements between the UK and EU."
-   },
-   {
-    "titel": "Claude Claims Historic Math Breakthrough One Day After Anthropic IPO",
-    "link": "https://decrypt.co/383747/claude-historic-math-breakthrough-anthropic-ipo",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T21:36:02+00:00",
-    "text": "Levent Alpöge claims Claude helped prove a 167-year-old math conjecture, but independent checks remain pending, and the release just after Anthropic’s IPO has prompted questions about its unusual publication timing.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Levent Alpöge claims Claude helped prove a 167-year-old math conjecture, but independent checks remain pending, and the release just after Anthropic’s IPO has prompted questions about its unusual pub…"
-   },
-   {
-    "titel": "Trump threatens ban on US firms building AI data centres overseas",
-    "link": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T20:54:12+00:00",
-    "text": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time.",
-    "tags": [
-     "Prominente",
-     "Regulierung",
-     "KI/Chips"
-    ],
-    "wichtig": 3,
-    "kurz": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time.",
-    "titel_de": "Trump droht mit Verbot für US-Unternehmen, KI-Rechenzentren im Ausland zu errichten",
-    "kurz_de": "Der US-Präsident gab nur wenige Einzelheiten zu der möglichen Politik bekannt und sagte, dass andere Mitglieder seines Teams zum ersten Mal davon hörten."
-   },
-   {
-    "titel": "Nvidia Shares Sink to 52-Week Low After Report SEC Is Probing Accounting",
-    "link": "https://decrypt.co/383744/nvidia-shares-sink-52-week-low-sec-probing-accounting",
-    "quelle": "Decrypt",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-20T20:36:54+00:00",
-    "text": "Nvidia shares fell about 13% to a 52-week low after reports that SEC enforcement staff are examining potential accounting issues, adding to pressure on the chipmaker after Jensen Huang’s resignation.",
-    "tags": [
-     "Regulierung",
-     "KI/Chips"
-    ],
-    "wichtig": 3,
-    "kurz": "Nvidia shares fell about 13% to a 52-week low after reports that SEC enforcement staff are examining potential accounting issues, adding to pressure on the chipmaker after Jensen Huang’s resignation.",
-    "titel_de": "Nvidia-Aktien fallen nach Bericht über SEC-Untersuchung der Rechnungslegung auf 52-Wochen-Tief",
-    "kurz_de": "Die Nvidia-Aktie fiel um rund 13 % auf ein 52-Wochen-Tief, nachdem Berichte bekannt wurden, wonach die Aufsichtsbehörde der SEC potenzielle Bilanzierungsprobleme untersucht. Dies erhöht den Druck auf den Chiphersteller nach dem Rücktritt von Jensen Huang."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-22T16:54:28+00:00",
+  "stand": "2026-11-22T22:18:39+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
