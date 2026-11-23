@@ -1,48 +1,201 @@
 {
- "erzeugt": "2026-11-22T22:18:25+00:00",
+ "erzeugt": "2026-11-23T02:57:35+00:00",
  "kurse": {
-  "stand": "2026-11-22T22:18:25+00:00",
+  "stand": "2026-11-23T02:57:35+00:00",
   "quelle": "CoinGecko",
   "daten": [
    {
     "id": "bitcoin",
     "symbol": "BTC",
     "name": "Bitcoin",
-    "preis": 55452,
-    "aend24": 1.02288,
-    "aend7": -6.5051,
-    "aend1y": -27.8809,
-    "marktkap": 1115456143943,
-    "volumen": 25193573006
+    "preis": 55026,
+    "aend24": 1.53499,
+    "aend7": -6.3326,
+    "aend1y": -28.4218,
+    "marktkap": 1106630355465,
+    "volumen": 25149598316
    },
    {
     "id": "ethereum",
     "symbol": "ETH",
     "name": "Ether",
-    "preis": 1562.95,
-    "aend24": 1.94994,
-    "aend7": -5.8595,
-    "aend1y": -37.2785,
-    "marktkap": 191058012954,
-    "volumen": 7047646295
+    "preis": 1548.56,
+    "aend24": 1.77297,
+    "aend7": -5.8259,
+    "aend1y": -38.3702,
+    "marktkap": 189288552387,
+    "volumen": 7343748614
    },
    {
     "id": "solana",
     "symbol": "SOL",
     "name": "Solana",
-    "preis": 64.03,
-    "aend24": 0.08522,
-    "aend7": -2.0924,
-    "aend1y": -44.3011,
-    "marktkap": 37908493151,
-    "volumen": 1652232671
+    "preis": 63.7,
+    "aend24": 0.54951,
+    "aend7": -2.193,
+    "aend1y": -45.0188,
+    "marktkap": 37700322397,
+    "volumen": 1687099328
    }
   ]
  },
  "news": {
-  "stand": "2026-11-22T22:18:27+00:00",
+  "stand": "2026-11-23T02:57:37+00:00",
   "quelle": "CoinDesk, Cointelegraph, Decrypt, BBC Welt, BBC Wirtschaft, OilPrice, tagesschau Wirtschaft, BTC-ECHO",
   "daten": [
+   {
+    "titel": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
+    "link": "https://www.bbc.co.uk/news/articles/c6vg29g7dlyno?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-23T01:23:43+00:00",
+    "text": "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats."
+   },
+   {
+    "titel": "Energy bills will soar - here's how you can ease the pain",
+    "link": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-23T01:05:07+00:00",
+    "text": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure.",
+    "tags": [],
+    "wichtig": 1,
+    "kurz": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure."
+   },
+   {
+    "titel": "Half of wallets on Trump’s dinner list got tokens from non-US exchanges",
+    "link": "https://cointelegraph.com/news/half-wallets-trumps-dinner-list-got-tokens-from-non-us-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-23T00:53:49+00:00",
+    "text": "Public Citizen traced 66 of 130 qualifying wallets to exchanges that restrict US users, raising questions over who is attending Trump’s memecoin dinner on Sunday.",
+    "tags": [
+     "Prominente",
+     "Memecoins"
+    ],
+    "wichtig": 3,
+    "kurz": "Public Citizen traced 66 of 130 qualifying wallets to exchanges that restrict US users, raising questions over who is attending Trump’s memecoin dinner on Sunday.",
+    "titel_de": "Die Hälfte der Wallets auf Trumps Dinner-Liste hat Token von Börsen außerhalb der USA erhalten",
+    "kurz_de": "Public Citizen hat 66 von 130 qualifizierten Wallets zu Börsen zurückverfolgt, die US-Nutzer einschränken, was Fragen darüber aufwirft, wer am Sonntag an Trumps Memecoin-Dinner teilnimmt."
+   },
+   {
+    "titel": "COP31 fails to reach major climate deal as talks expose deep divisions",
+    "link": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-23T00:50:35+00:00",
+    "text": "Hopes for an agreement on tackling climate change collapsed after a row about mentioning fossil fuels",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Hopes for an agreement on tackling climate change collapsed after a row about mentioning fossil fuels"
+   },
+   {
+    "titel": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
+    "link": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-23T00:33:36+00:00",
+    "text": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\".",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\"."
+   },
+   {
+    "titel": "What is going on with Poundland?",
+    "link": "https://www.bbc.co.uk/news/articles/cm4g10p2r0g9o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-23T00:22:27+00:00",
+    "text": "Poundland has a matter of days to find a buyer or face collapsing into administration. Why?",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Poundland has a matter of days to find a buyer or face collapsing into administration."
+   },
+   {
+    "titel": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
+    "link": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Wirtschaft",
+    "bereich": "Wirtschaft",
+    "sprache": "en",
+    "zeit": "2026-11-23T00:08:00+00:00",
+    "text": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated.",
+    "tags": [
+     "KI/Chips"
+    ],
+    "wichtig": 2,
+    "kurz": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated.",
+    "titel_de": "In San Francisco herrscht ein KI-Boom, aber die Sorgen vor einem Zusammenbruch nehmen zu",
+    "kurz_de": "KI-Mitarbeiter im Epizentrum der Branche – San Francisco – befürchten, dass der Sektor überhitzt ist."
+   },
+   {
+    "titel": "Oil Markets Are Betting on a Surplus That Hasn't Arrived Yet",
+    "link": "https://oilprice.com/Energy/Oil-Prices/Oil-Markets-Are-Betting-on-a-Surplus-That-Hasnt-Arrived-Yet.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-23T00:00:00+00:00",
+    "text": "Oil prices have traded in a narrow range over the past few sessions as forecasts of a coming surplus collide with continued attacks and stalled diplomacy in the Middle East. A run of agency reports this month has pushed expectations toward…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Oil prices have traded in a narrow range over the past few sessions as forecasts of a coming surplus collide with continued attacks and stalled diplomacy in the Middle East.",
+    "titel_de": "Die Ölmärkte setzen auf einen Überschuss, der noch nicht eingetreten ist",
+    "kurz_de": "Die Ölpreise haben sich in den letzten Sitzungen in einer engen Spanne bewegt, da Prognosen eines bevorstehenden Überangebots auf anhaltende Angriffe und eine stagnierende Diplomatie im Nahen Osten treffen."
+   },
+   {
+    "titel": "Will Bitcoin’s big rebound hold? More tampered Ledgers found: Hodler’s Digest",
+    "link": "https://cointelegraph.com/magazine/will-bitcoins-big-rebound-hold-more-tampered-ledgers-found-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "quelle": "Cointelegraph",
+    "bereich": "Krypto",
+    "sprache": "en",
+    "zeit": "2026-11-22T22:47:09+00:00",
+    "text": "Bitcoin rebounds sharply from its new cycle low, but is $55,111 really the bottom? Ledger investigates new reports of tampered devices in Berlin and the UAE.",
+    "tags": [],
+    "wichtig": 0,
+    "kurz": "Bitcoin rebounds sharply from its new cycle low, but is $55,111 really the bottom?"
+   },
+   {
+    "titel": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
+    "link": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&at_campaign=rss",
+    "quelle": "BBC Welt",
+    "bereich": "Welt",
+    "sprache": "en",
+    "zeit": "2026-11-22T22:37:43+00:00",
+    "text": "The BBC's Sarah Rainsford reports from the scene of a collapsed residential building in Ukraine's Kyiv region.",
+    "tags": [
+     "Krieg/Konflikt"
+    ],
+    "wichtig": 1,
+    "kurz": "The BBC's Sarah Rainsford reports from the scene of a collapsed residential building in Ukraine's Kyiv region."
+   },
+   {
+    "titel": "U.S. Energy Exports Hit Records as Global Competition Intensifies",
+    "link": "https://oilprice.com/Energy/Energy-General/US-Energy-Exports-Hit-Records-as-Global-Competition-Intensifies.html",
+    "quelle": "OilPrice",
+    "bereich": "Rohstoffe",
+    "sprache": "en",
+    "zeit": "2026-11-22T22:00:00+00:00",
+    "text": "Rising U.S. oil and gas production and export capacity, along with a shift in global energy trade flows from the war in Iran, helped the United States hit record highs in crude, fuels, and LNG exports this year. In the decade since 2016, w…",
+    "tags": [
+     "Krieg/Konflikt",
+     "Rohstoffe"
+    ],
+    "wichtig": 2,
+    "kurz": "Rising U.S. oil and gas production and export capacity, along with a shift in global energy trade flows from the war in Iran, helped the United States hit record highs in crude, fuels, and LNG export…",
+    "titel_de": "US-Energieexporte erreichen Rekordwerte, während sich der globale Wettbewerb verschärft",
+    "kurz_de": "Die steigende Öl- und Gasförderung und -exportkapazität in den USA sowie die Verlagerung der globalen Energiehandelsströme aufgrund des Krieges im Iran haben dazu beigetragen, dass die USA bei den Exporten von Rohöl, Brennstoffen und LNG Rekordhöchststände erreicht haben …"
+   },
    {
     "titel": "Miley Cyrus marries Maxx Morando in California ceremony",
     "link": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss",
@@ -70,18 +223,6 @@
     "kurz": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
     "titel_de": "Nach Angaben von Beamten wurde die Explosion auf einem russischen Schiff im Hafen von Libyen durch einen mutmaßlichen Drohnenangriff verursacht.",
     "kurz_de": "Die Regierung im Osten Libyens erklärt, sie arbeite mit Russland zusammen, um den Vorfall zu untersuchen."
-   },
-   {
-    "titel": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
-    "link": "https://www.bbc.co.uk/news/articles/c6vg29g7dlyno?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T20:26:24+00:00",
-    "text": "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats."
    },
    {
     "titel": "California’s Wildfire Crisis Is Threatening Its Energy Future",
@@ -132,18 +273,6 @@
     "kurz": "The Army says \"swift action\" is necessary to protect its personnel and nearby communities around its ammunition plant in Iowa."
    },
    {
-    "titel": "COP31 fails to reach major climate deal as talks expose deep divisions",
-    "link": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T18:17:59+00:00",
-    "text": "The talks fail to make a breakthrough on tackling climate change after a row about mentioning fossil fuels.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The talks fail to make a breakthrough on tackling climate change after a row about mentioning fossil fuels."
-   },
-   {
     "titel": "Google Backs Superhot Geothermal in 50 MW Oregon Power Deal",
     "link": "https://oilprice.com/Energy/Energy-General/Google-Backs-Superhot-Geothermal-in-50-MW-Oregon-Power-Deal.html",
     "quelle": "OilPrice",
@@ -173,20 +302,6 @@
     "kurz": "Nach einem schwierigen Börsenjahr stellt sich die Frage, wo sich noch Chancen bieten.",
     "titel_de": "Krypto nach dem Kurssturz: So würde ein Experte jetzt 100.000 Euro investieren",
     "kurz_de": "Nach einem schwierigen Börsenjahr stellt sich die Frage, wo sich noch Chancen bieten."
-   },
-   {
-    "titel": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
-    "link": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T17:57:43+00:00",
-    "text": "The BBC's Sarah Rainsford reports from the scene of a collapsed residential building in Ukraine's Kyiv region.",
-    "tags": [
-     "Krieg/Konflikt"
-    ],
-    "wichtig": 1,
-    "kurz": "The BBC's Sarah Rainsford reports from the scene of a collapsed residential building in Ukraine's Kyiv region."
    },
    {
     "titel": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
@@ -480,18 +595,6 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "Sir Andrew Mitchell says access should be easier for people tackling financial crime."
-   },
-   {
-    "titel": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
-    "link": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-22T07:12:41+00:00",
-    "text": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\".",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\"."
    },
    {
     "titel": "Ethereum-Absturz auf 1.000 Dollar bis Montag: “Es besteht eine reale Gefahr”",
@@ -1201,109 +1304,11 @@
     "tags": [],
     "wichtig": 0,
     "kurz": "The 30-year-old LA resident was convicted of arson leading to wildfires that killed 12 people and destroyed more than 6,800 buildings."
-   },
-   {
-    "titel": "Bitcoin tanks below $57,000 for the first time in two years, and its not alone",
-    "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
-    "quelle": "CoinDesk",
-    "bereich": "Krypto",
-    "sprache": "en",
-    "zeit": "2026-11-21T04:10:07+00:00",
-    "text": "BTC's sell-off deepened on Saturday, with prices hitting two-year lows under $57,000.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "BTC's sell-off deepened on Saturday, with prices hitting two-year lows under $57,000."
-   },
-   {
-    "titel": "Lagarde sieht nur ein kurzes Zeitfenster für Europas Tokenisierung",
-    "link": "https://www.btc-echo.de/news/lagarde-sieht-nur-ein-kurzes-zeitfenster-fuer-europas-tokenisierung-241334/",
-    "quelle": "BTC-ECHO",
-    "bereich": "Krypto",
-    "sprache": "de",
-    "zeit": "2026-11-21T03:30:00+00:00",
-    "text": "Der Markt für tokenisierte Wertpapiere wächst rasant, die Regeln dafür fehlen. Die EZB-Chefin sieht nur noch wenig Zeit, bevor sich das Problem verfestigt. Source: BTC-ECHO BTC-ECHO",
-    "tags": [
-     "Prominente",
-     "Zinsen/Wirtschaft"
-    ],
-    "wichtig": 3,
-    "kurz": "Der Markt für tokenisierte Wertpapiere wächst rasant, die Regeln dafür fehlen.",
-    "titel_de": "Lagarde sieht nur ein kurzes Zeitfenster für Europas Tokenisierung",
-    "kurz_de": "Der Markt für tokenisierte Wertpapiere wächst rasant, die Regeln dafür fehlen."
-   },
-   {
-    "titel": "Can AI really help spot Black Friday deals? We put it to the test",
-    "link": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-21T00:06:11+00:00",
-    "text": "We put four AI models to the test to see if they could save us money on a new TV.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "We put four AI models to the test to see if they could save us money on a new TV."
-   },
-   {
-    "titel": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
-    "link": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-21T00:01:39+00:00",
-    "text": "Plans to shutter the troubled facility date back to 2019, when the city council first voted to close it but delays arose over where to place inmates.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "Plans to shutter the troubled facility date back to 2019, when the city council first voted to close it but delays arose over where to place inmates."
-   },
-   {
-    "titel": "Oil Prices Caught Between a Looming Glut and Middle East Turmoil",
-    "link": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Caught-Between-a-Looming-Glut-and-Middle-East-Turmoil.html",
-    "quelle": "OilPrice",
-    "bereich": "Rohstoffe",
-    "sprache": "en",
-    "zeit": "2026-11-21T00:00:00+00:00",
-    "text": "Oil prices have traded in a narrow range over the past few sessions as forecasts of a coming surplus collide with continued attacks and stalled diplomacy in the Middle East. A run of agency reports this month has pushed expectations toward…",
-    "tags": [
-     "Krieg/Konflikt",
-     "Rohstoffe"
-    ],
-    "wichtig": 2,
-    "kurz": "Oil prices have traded in a narrow range over the past few sessions as forecasts of a coming surplus collide with continued attacks and stalled diplomacy in the Middle East.",
-    "titel_de": "Ölpreise zwischen drohendem Überangebot und Unruhen im Nahen Osten",
-    "kurz_de": "Die Ölpreise haben sich in den letzten Sitzungen in einer engen Spanne bewegt, da die Prognosen eines bevorstehenden Überangebots auf anhaltende Angriffe und eine stagnierende Diplomatie im Nahen Osten treffen."
-   },
-   {
-    "titel": "In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest",
-    "link": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Welt",
-    "bereich": "Welt",
-    "sprache": "en",
-    "zeit": "2026-11-20T23:08:57+00:00",
-    "text": "A mathematician at Anthropic says he used an AI to prove the famed Riemann hypothesis, though verification will take some time.",
-    "tags": [
-     "KI/Chips"
-    ],
-    "wichtig": 1,
-    "kurz": "A mathematician at Anthropic says he used an AI to prove the famed Riemann hypothesis, though verification will take some time."
-   },
-   {
-    "titel": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
-    "link": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o?at_medium=RSS&at_campaign=rss",
-    "quelle": "BBC Wirtschaft",
-    "bereich": "Wirtschaft",
-    "sprache": "en",
-    "zeit": "2026-11-20T22:53:24+00:00",
-    "text": "The mammoth figure surpasses every video game launch and single-day film box office record.",
-    "tags": [],
-    "wichtig": 0,
-    "kurz": "The mammoth figure surpasses every video game launch and single-day film box office record."
    }
   ]
  },
  "etfs": {
-  "stand": "2026-11-22T22:18:39+00:00",
+  "stand": "2026-11-23T02:57:47+00:00",
   "quelle": "Yahoo Finance",
   "daten": [
    {
